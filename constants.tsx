@@ -462,7 +462,7 @@ export const buttonClasses = {
   "Default": "",
   "Primary": "btn-primary",
   "Secondary": "btn-secondary",
-  "Tertiary": "btn-accent",
+  "Tertiary": "btn-accent bg-[#F6AB00]",
 };
 
 export function getButtonClasses(style: ButtonType) {

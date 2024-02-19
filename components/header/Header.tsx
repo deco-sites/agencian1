@@ -78,6 +78,8 @@ function Header({
   const platform = usePlatform();
   const items = navItems ?? [];
 
+  // console.log('Header - items: ', items)
+
   return (
     <>
       <header style={{ height: headerHeight }}>
@@ -86,7 +88,7 @@ function Header({
           searchbar={searchbar}
           platform={platform}
         >
-          <div class="bg-base-100 fixed w-full z-50">
+          <div class="fixed w-full z-50 n1-header__desktop">
             {alerts && alerts.length > 0 && <Alert alerts={alerts} />}
             <Navbar
               items={items}

@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  body{
+    @apply bg-primary
+  }
 
   /* Allow changing font family via CMS */
   html {
@@ -39,6 +42,45 @@
     @apply border-l border-transparent duration-200 whitespace-pre-line text-center;
     @apply flex flex-col items-center justify-start gap-8 py-10 px-8 lg:px-12;
   }
+
+  .text-base-150{color: #F3F4F7;}
+
+  .n1-container{     
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 120px;
+  }
+
+  .n1-btn-header-item--rounded{
+    border: none;
+    border-radius: 100px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .n1-font-size--16{    
+    font-family: 'ArchimotoV01-Medium';
+    font-size: 16px;
+    line-height: 20px;    
+    text-transform: uppercase;
+  }
+  
+  .n1-grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, auto));
+  }
+
+  .n1-header__desktop{
+    background: linear-gradient(180deg, #0C1F59 -18.75%, rgba(12, 31, 89, 0.00) 100%);
+    backdrop-filter: blur(135px);
+    color: #fff;
+  }
+
+  .moveFromTop:hover { transform: translateY(20px) }
+  /* @keyframes moveFromTop {
+      from { transform: translateY(20px) }
+  }   */
 }
 
 .group:disabled .group-disabled\:animate-progress {
