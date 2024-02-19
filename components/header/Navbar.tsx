@@ -24,6 +24,8 @@ function Navbar({ items, searchbar, logo, buttons, logoPosition = "left" }: {
 }) {
   const platform = usePlatform();
 
+  // console.log('Navibar - items: ', items)
+
   return (
     <>
       {/* Mobile Version */}
@@ -60,9 +62,9 @@ function Navbar({ items, searchbar, logo, buttons, logoPosition = "left" }: {
       </div>
 
       {/* Desktop Version */}
-      <div class="hidden lg:grid lg:grid-cols-3 items-center border-b border-base-200 w-full px-6">
+      <div class="hidden lg:grid lg:n1-grid-cols-3 items-center w-full py-6 n1-container">
         <ul
-          class={`flex gap-6 col-span-1 ${
+          class={`flex gap-8 col-span-1 ${
             logoPosition === "left" ? "justify-center" : "justify-start"
           }`}
         >
