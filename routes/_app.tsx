@@ -39,6 +39,42 @@ export default defineApp(async (_req, ctx) => {
         type="module"
         dangerouslySetInnerHTML={{ __html: `(${sw})();` }}
       />
+
+      <style 
+        dangerouslySetInnerHTML={{
+          __html:`
+            @font-face{
+              font-family: 'ArchimotoN1-Black';
+              src: url(${asset("/fonts/ArchimotoN1-Black.ttf")}) format('woff2');
+              font-weight: normal;
+              font-style: normal;
+              font-display: swap;                           
+            }
+            @font-face{
+              font-family: 'ArchimotoV01-Medium';
+              src: url(${asset("/fonts/ArchimotoV01-Medium.ttf")}) format('woff2');
+              font-weight: normal;
+              font-style: normal;
+              font-display: swap;                           
+            };
+            @font-face{
+              font-family: 'ArchimotoN1-Regular';
+              src: url(${asset("/fonts/ArchimotoN1-Regular.ttf")}) format('woff2');
+              font-weight: normal;
+              font-style: normal;
+              font-display: swap;                           
+            };
+
+            @font-face{
+              font-family: 'ArchimotoN1-Thin';
+              src: url(${asset("/fonts/ArchimotoN1-Thin.ttf")}) format('woff2');
+              font-weight: normal;
+              font-style: normal;
+              font-display: swap;                           
+            };       
+          `
+        }}
+      />
     </>
   );
 });

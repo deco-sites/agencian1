@@ -73,9 +73,11 @@ export interface Social {
     | "Instagram"
     | "Facebook"
     | "Linkedin"
+    | "Youtube"
     | "WhatsApp"
     | "Discord"
-    | "Tiktok";
+    | "Tiktok"
+    | "Email";
   /** @format color */
   iconColor?: string;
   /** @description width of the SVG line */

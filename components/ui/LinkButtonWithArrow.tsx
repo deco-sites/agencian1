@@ -6,7 +6,7 @@ interface Props{
 function LinkButtonWithArrow( {url, name}:Props ){
     return(
         <a href={url} class="btn bg-accent n1-btn-header-item--rounded">
-            <span class="text-primary n1-font-size--16">
+            <span class="text-primary text-16 pt-[5px]">
                 {name}
             </span>
             <div class="rounded-[50%] p-[5px] bg-[#F8BC33]">

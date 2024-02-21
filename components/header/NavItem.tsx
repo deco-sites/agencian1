@@ -23,7 +23,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
         (  
           // <ItemLegend nameItemScape={nameItemScape} url={url} name={name} />
           <>
-            <li class={`group flex items-center n1-font-size--16 uppercase is-${nameItemScape}`}>
+            <li class={`group flex items-center text-16 uppercase is-${nameItemScape}`}>
             <img class="w-[36px] h-[24px]" src='/image/header-sub-menu-pt-br.png' />
               <a href={url} class="overflow-y-hidden h-5">
                 <span class="-translate-y-5 group-hover:translate-y-0 transition-all text-xs font-thin flex moveFromTop duration-500">
@@ -77,7 +77,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
         )
         :
         (
-          <li class={`group flex justify-between n1-font-size--16 uppercase is-${nameItemScape} items-center pt-3`}>
+          <li class={`group flex justify-between text-16 uppercase is-${nameItemScape} items-center pt-3`}>
             <a href={url} class="overflow-y-hidden h-5">
               <span class="-translate-y-5 group-hover:translate-y-0 transition-all text-xs flex moveFromTop duration-500 font-black">
                 {name}

@@ -6,6 +6,27 @@ export default {
   content: ["./**/*.tsx"],
   theme: {
     container: { center: true },
+    colors:{
+      "base-150" : "#F3F4F7",
+      "base-400" : "#9B9B9B"
+    },
+    fontFamily:{
+      'noto-sans': 'Noto Sans',
+      'archimoto-thin': 'ArchimotoN1-Thin',
+      'archimoto-regular': 'ArchimotoN1-Regular',
+      'archimoto-medium': 'ArchimotoV01-Medium',
+      'archimoto-black': 'ArchimotoN1-Black',
+    },
+    fontSize:{
+      12: ['12px', '22.4px'],
+      14: ['14px', '19.6px'],
+      16: ['16px', '22px'],
+      18: ['18px', '21.6px'],
+      24: ['24px', '28.8px'],
+      32: ['32px', '38.4px'],
+      48: ['48px', '57.6px'],
+
+    },
     extend: {
       animation: {
         sliding: "sliding 30s linear infinite",
@@ -16,6 +37,11 @@ export default {
           "100%": { transform: "translateX(-50%)" },
         },
       },
+      screens:{
+        'mobile'    : {'max': '767px'},
+        'tablet'    : {'min' : '768px', 'max': '1023px'},
+        'portatil'  : {'min' : '1024px','max': '1280px'},
+      }
     },
   },
 };

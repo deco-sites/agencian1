@@ -1,4 +1,5 @@
 import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
+import CertificationImage from "$store/components/footer/CertificationImage.tsx";
 
 export type Item = {
   label: string;
@@ -19,32 +20,47 @@ export default function FooterItems(
         <>
           {/* Tablet and Desktop view */}
           <ul
-            class={`hidden md:flex flex-row gap-6 lg:gap-10 ${
-              justify && "lg:justify-between"
-            }`}
+            class={`
+              mobile:[&>*:not(:first-of-type)]:mt-[40px] mobile:[&>*:not(:first-of-type)]:mb-[40px] 
+              [&>*:not(:first-of-type)]:mb-[22px] md:gap-x-[50px] md:grid md:n1-grid-cols-3-200 
+              portatil:[&>*:last-of-type]:col-end-3 portatil:[&>*:last-of-type]:mt-[20px] portatil:n1-grid-cols-2-200 
+              ${justify && "lg:justify-between"}`}
           >
-            {sections.map((section) => (
-              <li>
-                <div class="flex flex-col gap-2">
-                  <span class="font-medium text-lg">
-                    {section.label}
-                  </span>
-                  <ul class={`flex flex-col gap-2 flex-wrap text-sm`}>
-                    {section.items?.map((item) => (
-                      <li>
-                        <a href={item.href} class="block py-1 link link-hover">
-                          {item.label}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </li>
-            ))}
+            {sections.map((section) => {
+              return(
+                <li>
+                  <div class="flex flex-col gap-2">
+                    <span class="mobile:text-18 md:text-24 font-archimoto-medium uppercase text-base-150  mb-[10px] font-black">
+                      {section.label}
+                    </span>
+                    <ul class={`flex flex-col ${section.label === 'Certificações' ? 'gap-y-[10px]' : 'gap-y-[16px] md:gap-y-[22px]' } flex-wrap text-sm`}>
+                      {section.items?.map((item) => {
+                        return(
+                          <>
+                            { item.label?.split('-')[0] === 'vtex' || item.label?.split('-')[0] === 'deco' 
+                              ? (<CertificationImage linkname={`/image/footer-img-${item.label}.png`} />)
+                              :
+                              (
+                                <li>
+                                  <a href={item.href} class="text-[14px] leading-[21.6px] block py-1 link link-hover md:text-16 font-noto-sans font-normal text-base-150">
+                                    {item.label}
+                                  </a>
+                                </li>                              
+                              )
+                            }
+
+                          </>
+                        )
+                      })}
+                    </ul>
+                  </div>
+                </li>
+              )
+            })}
           </ul>
 
           {/* Mobile view */}
-          <ul class="flex flex-col md:hidden gap-4">
+          <ul class="hidden gap-4">
             {sections.map((section) => (
               <li>
                 <div class="collapse collapse-arrow ">

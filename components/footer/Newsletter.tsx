@@ -44,34 +44,36 @@ function Newsletter(
 
   return (
     <div
-      class={`flex ${
+      class={`flex -order-1 ${
         tiled
-          ? "flex-col gap-4 lg:flex-row lg:w-full lg:justify-between"
-          : "flex-col gap-4"
+          ? "flex-col lg:flex-row lg:w-full lg:justify-between"
+          : "flex-col"
       }`}
     >
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col">
         {content?.title && (
-          <h4 class={tiled ? "text-2xl lg:text-3xl" : "text-lg"}>
+          <h4 class={`mobile:max-w-[100%] max-w-[70%] mobile:text-32 md:text-48 mobile:mt-[50px] text-base-150 font-black font-archimoto-medium ${tiled} ? "text-2xl lg:text-3xl" : "text-lg"`}>
             {content?.title}
           </h4>
         )}
-        {content?.description && <div>{content?.description}</div>}
+        {content?.description && 
+          <div class="pt-[10px] pb-[24px] md:pb-[30px] max-w-[90%] mobile:max-w-[100%] xl:max-w-[80%] font-noto-sans mobile:text-14 md:text-16 text-base-150 md:leading-[25.6px] ">{content?.description}</div>
+          }
       </div>
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col">
         <form
           class="form-control"
           onSubmit={handleSubmit}
         >
-          <div class="flex flex-wrap gap-3">
+          <div class="flex flex-wrap gap-[18px]">
             <input
               name="email"
-              class="flex-auto md:flex-none input input-bordered md:w-80 text-base-content"
+              class="flex-auto md:flex-none input input-bordered md:w-[273px] bg-white text-base-content font-noto-sans rounded-[90px] text-14 n1-text-base-400"
               placeholder={content?.form?.placeholder || "Digite seu email"}
             />
             <button
               type="submit"
-              class="btn disabled:loading"
+              class="btn disabled:loading w-[144px] md:w-[123px] bg-accent n1-btn-header-item--rounded text-16 font-archimoto-medium pt-[3px] uppercase"
               disabled={loading}
             >
               {content?.form?.buttonText || "Inscrever"}
