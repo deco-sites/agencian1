@@ -42,13 +42,16 @@ export type AvailableIcons =
   | "WhatsApp"
   | "Youtube"
   | "XMark"
+  | "CloseMenuMobile"
   | "Zoom"
   | "Alert"
   | "AlertInfo"
   | "AlertSuccess"
   | "AlertWarning"
   | "AlertError"
-  | "share";
+  | "share"
+  | "ArrowUpMenuMobile"
+  | "ArrowDownMenuMobile";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**

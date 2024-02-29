@@ -1,6 +1,7 @@
 import { useSignal } from "@preact/signals";
 import { invoke } from "$store/runtime.ts";
 import type { JSX } from "preact";
+import { clx } from "$store/sdk/clx.ts";
 
 export interface Form {
   placeholder?: string;
@@ -44,20 +45,19 @@ function Newsletter(
 
   return (
     <div
-      class={`flex -order-1 ${
-        tiled
+      class={clx(`flex -order-1 ${tiled
           ? "flex-col lg:flex-row lg:w-full lg:justify-between"
-          : "flex-col"
-      }`}
-    >
+          : "flex-col"}`)}>
       <div class="flex flex-col">
         {content?.title && (
-          <h4 class={`mobile:max-w-[100%] max-w-[70%] mobile:text-32 md:text-48 mobile:mt-[50px] text-base-150 font-black font-archimoto-medium ${tiled} ? "text-2xl lg:text-3xl" : "text-lg"`}>
+          <h4 class={clx(`mobile:max-w-[100%] max-w-[90%] mobile:text-32 md:text-48 mobile:mt-[50px]
+          text-base-150 font-black font-archimoto-medium ${tiled} ? "text-2xl lg:text-3xl" : "text-lg"`)}>
             {content?.title}
           </h4>
         )}
-        {content?.description && 
-          <div class="pt-[10px] pb-[24px] md:pb-[30px] max-w-[90%] mobile:max-w-[100%] xl:max-w-[80%] font-noto-sans mobile:text-14 md:text-16 text-base-150 md:leading-[25.6px] ">{content?.description}</div>
+        {content?.description &&
+          <div class={clx(`pt-[10px] pb-[24px] md:pb-[30px] max-w-[90%] mobile:max-w-[100%] xl:max-w-[80%] 
+            font-noto-sans mobile:text-14 md:text-16 text-base-150 md:leading-[25.6px]`)}>{content?.description}</div>
           }
       </div>
       <div class="flex flex-col">
@@ -73,7 +73,7 @@ function Newsletter(
             />
             <button
               type="submit"
-              class="btn disabled:loading w-[144px] md:w-[123px] bg-accent n1-btn-header-item--rounded text-16 font-archimoto-medium pt-[3px] uppercase"
+              class="btn disabled:loading w-[144px] md:w-[123px] border-0 bg-accent n1-btn-header-item--rounded text-16 font-archimoto-medium pt-[3px] uppercase"
               disabled={loading}
             >
               {content?.form?.buttonText || "Inscrever"}

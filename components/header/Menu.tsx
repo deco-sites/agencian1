@@ -1,80 +1,73 @@
 import Icon from "$store/components/ui/Icon.tsx";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
+import LinkButtonWithOptionArrow from "../ui/LinkButtonWithOptionArrow.tsx";
+import Legend from '$store/components/header/Legend.tsx';
+import { clx } from "$store/sdk/clx.ts";
 
 export interface Props {
   items: SiteNavigationElement[];
+  whatsapp?: string;
 }
 
-function MenuItem({ item }: { item: SiteNavigationElement }) {
+interface PropsMenuItem{
+  item: SiteNavigationElement;
+}
+
+function MenuItem({ item }: PropsMenuItem) {
+
+  const existsChildren = item && item.children && item.children.length > 0 ? true : false
+
   return (
-    <div class="collapse collapse-plus">
-      <input type="checkbox" />
-      <div class="collapse-title">{item.name}</div>
-      <div class="collapse-content">
-        <ul>
-          <li>
-            <a class="underline text-sm" href={item.url}>Ver todos</a>
-          </li>
-          {item.children?.map((node) => (
-            <li>
-              <MenuItem item={node} />
-            </li>
-          ))}
-        </ul>
+    <>
+      <div class={`${existsChildren ? 'collapse collapse-arrow' : '' } n1-menu-mobile`}>
+        {existsChildren && <input class="n1-menu-mobile__input" type="checkbox" />}
+        
+        <div class={clx(`${existsChildren ? 'is-children' : '' } collapse-title mobile:font-black n1-menu-mobile__title flex items-center justify-between`)}>
+            {item.name}
+
+            {item && item.children && item.children.length === 0 && <Icon id="ArrowUpMenuMobile" size={22} strokeWidth={2} />}
+        </div>
+        <div class="collapse-content n1-menu-mobile__content">
+          <ul>
+            {/* <li>
+              <a class="underline text-sm" href={item.url}>Ver todos</a>
+            </li> */}
+            {existsChildren && item && item.children && item.children.map((node) => {
+              return(
+                <li>
+                  <MenuItem item={node} />
+                </li>
+              )
+            })}
+          </ul>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
-function Menu({ items }: Props) {
+function Menu({ items, whatsapp }: Props) {
+  const itemLegend = 'legenda';
   return (
-    <div class="flex flex-col h-full">
-      <ul class="px-4 flex-grow flex flex-col divide-y divide-base-200">
-        {items.map((item) => (
-          <li>
-            <MenuItem item={item} />
-          </li>
-        ))}
+    <div class="flex flex-col h-full border-none mobile:overflow-scroll">
+      <ul class="flex-grow flex flex-col divide-y divide-neutral-300 ">
+        {items.map((item) => {
+          return(
+            <li class="pt-[16px]">
+              {/* <a href={`${item && item.children && item.children.length > 0 ?  '' : item?.url }`}> */}
+              <a href="#">
+                <MenuItem item={item} />
+              </a>
+            </li>
+          )
+        })}
+        <Legend nameItemScape={itemLegend} mobile={true} />
       </ul>
-
-      <ul class="flex flex-col py-2 bg-base-200">
-        <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="/wishlist"
-          >
-            <Icon id="Heart" size={24} strokeWidth={2} />
-            <span class="text-sm">Lista de desejos</span>
-          </a>
-        </li>
-        <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="https://www.deco.cx"
-          >
-            <Icon id="MapPin" size={24} strokeWidth={2} />
-            <span class="text-sm">Nossas lojas</span>
-          </a>
-        </li>
-        <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="https://www.deco.cx"
-          >
-            <Icon id="Phone" size={24} strokeWidth={2} />
-            <span class="text-sm">Fale conosco</span>
-          </a>
-        </li>
-        <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="https://www.deco.cx"
-          >
-            <Icon id="User" size={24} strokeWidth={2} />
-            <span class="text-sm">Minha conta</span>
-          </a>
-        </li>
-      </ul>
+      <div class="w-[90%] mx-auto">
+          {whatsapp && (
+            <LinkButtonWithOptionArrow activeArrow={false} width={'full'} telephone={whatsapp} />
+          )}
+      </div>
     </div>
   );
 }

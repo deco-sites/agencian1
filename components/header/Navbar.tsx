@@ -14,30 +14,42 @@ import Image from "apps/website/components/Image.tsx";
 import NavItem from "./NavItem.tsx";
 import { navbarHeight } from "./constants.ts";
 import { Buttons, Logo } from "$store/components/header/Header.tsx";
+import Legend from '$store/components/header/Legend.tsx';
 
-function Navbar({ items, searchbar, logo, buttons, logoPosition = "left" }: {
+interface Props{
   items: SiteNavigationElement[];
   searchbar?: SearchbarProps;
   logo?: Logo;
   buttons?: Buttons;
   logoPosition?: "left" | "center";
-}) {
-  const platform = usePlatform();
+  nameItemScape?:string;
+  btnTextMenu?:string;
+  btnUrlMenu?:string;
+}
 
-  // console.log('Navibar - items: ', items)
+function Navbar({
+    items, 
+    searchbar, 
+    logo, 
+    buttons, 
+    logoPosition = "left", 
+    btnTextMenu, btnUrlMenu
+  }:Props) {
+  const platform = usePlatform();
+  const itemLegend = 'legenda';
 
   return (
     <>
       {/* Mobile Version */}
       <div
         style={{ height: navbarHeight }}
-        class="lg:hidden grid grid-cols-3 justify-between items-center border-b border-base-200 w-full px-6 pb-6 gap-2"
+        class="lg:hidden grid grid-cols-3 justify-between items-center w-full pl-[20px] mobile:flex"
       >
         <MenuButton />
         {logo && (
           <a
             href="/"
-            class="flex-grow inline-flex items-center justify-center"
+            class="flex-grow inline-flex items-center justify-center mobile:ml-[22px]"
             style={{ minHeight: navbarHeight }}
             aria-label="Store logo"
           >
@@ -50,7 +62,7 @@ function Navbar({ items, searchbar, logo, buttons, logoPosition = "left" }: {
           </a>
         )}
 
-        <div class="flex justify-end gap-1">
+        <div class="flex justify-end mobile:hidden">
           <SearchButton />
           {platform === "vtex" && <CartButtonVTEX />}
           {platform === "vnda" && <CartButtonVDNA />}
@@ -62,13 +74,24 @@ function Navbar({ items, searchbar, logo, buttons, logoPosition = "left" }: {
       </div>
 
       {/* Desktop Version */}
-      <div class="hidden lg:grid lg:n1-grid-cols-3 items-center w-full py-6 n1-container">
+      <div class="hidden lg:grid gap-x-[70px] portatil:gap-x-[20px] lg:grid-cols-2-auto items-center w-full py-6">
         <ul
-          class={`flex gap-8 col-span-1 ${
-            logoPosition === "left" ? "justify-center" : "justify-start"
+          class={`flex py-[18px] gap-x-[32px] col-span-1 portatil:gap-x-[10px] ${
+            logoPosition === "left" ? "justify-between" : "justify-start"
           }`}
         >
-          {items.map((item) => <NavItem item={item} />)}
+          {items.map((item) => {
+            return(
+              <NavItem 
+                item={item} 
+                btnTextMenu={btnTextMenu} 
+                btnUrlMenu={btnUrlMenu} 
+                />            
+              )
+            })
+          }
+
+          <Legend nameItemScape={itemLegend} />
         </ul>
         <div
           class={`flex ${
@@ -88,6 +111,7 @@ function Navbar({ items, searchbar, logo, buttons, logoPosition = "left" }: {
                 alt={logo.alt}
                 width={logo.width || 100}
                 height={logo.height || 13}
+                class={'min-w-[125px]'}
               />
             </a>
           )}
