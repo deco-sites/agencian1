@@ -1,4 +1,5 @@
 import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
+import { clx } from "$store/sdk/clx.ts";
 
 export interface SocialItem {
   label:
@@ -25,10 +26,9 @@ export default function Social(
         <div class="flex flex-col gap-4">
           {content.title && <h3 class="text-24 uppercase text-base-150 mt-[10px] font-black">{content.title}</h3>}
           <ul
-            class={`grid n1-grid-cols-6-auto md:gap-4 mobile:gap-x-[10px] mobile:gap-y-[16px] ${
-              vertical ? "lg:flex-col lg:items-start" : "flex-wrap items-center"
-            }`}
-          >
+            class={clx(`grid grid-cols-6-auto md:gap-4 mobile:gap-x-[10px] mobile:gap-y-[16px] ${vertical 
+              ? "lg:flex-col lg:items-start" 
+              : "flex-wrap items-center"}`)}>
             {content.items.map((item) => {
               if( item.label === 'Email' ){
                 return (

@@ -1,5 +1,6 @@
 import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
 import CertificationImage from "$store/components/footer/CertificationImage.tsx";
+import { clx } from "$store/sdk/clx.ts";
 
 export type Item = {
   label: string;
@@ -20,11 +21,10 @@ export default function FooterItems(
         <>
           {/* Tablet and Desktop view */}
           <ul
-            class={`
-              mobile:[&>*:not(:first-of-type)]:mt-[40px] mobile:[&>*:not(:first-of-type)]:mb-[40px] 
-              [&>*:not(:first-of-type)]:mb-[22px] md:gap-x-[50px] md:grid md:n1-grid-cols-3-200 
-              portatil:[&>*:last-of-type]:col-end-3 portatil:[&>*:last-of-type]:mt-[20px] portatil:n1-grid-cols-2-200 
-              ${justify && "lg:justify-between"}`}
+            class={clx(`mobile:[&>*:not(:first-of-type)]:mt-[40px] mobile:[&>*:not(:first-of-type)]:mb-[40px] 
+              [&>*:not(:first-of-type)]:mb-[22px] md:gap-x-[50px] md:grid md:grid-cols-3-200
+              portatil:[&>*:last-of-type]:col-end-3 portatil:[&>*:last-of-type]:mt-[20px] portatil:grid-cols-2-200 
+              ${justify && "lg:justify-between"}`)}
           >
             {sections.map((section) => {
               return(
@@ -42,7 +42,8 @@ export default function FooterItems(
                               :
                               (
                                 <li>
-                                  <a href={item.href} class="text-[14px] leading-[21.6px] block py-1 link link-hover md:text-16 font-noto-sans font-normal text-base-150">
+                                  <a href={item.href} 
+                                    class={clx(`text-[14px] leading-[21.6px] block py-1 link link-hover md:text-16 font-noto-sans font-normal text-base-150`)}>
                                     {item.label}
                                   </a>
                                 </li>                              

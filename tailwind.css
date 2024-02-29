@@ -29,6 +29,8 @@
     overflow: hidden;
     height: 100vh;
   }
+
+  .btn{min-height: initial !important; height: initial !important}
 }
 
 @layer components {
@@ -43,14 +45,6 @@
     @apply flex flex-col items-center justify-start gap-8 py-10 px-8 lg:px-12;
   }
 
-  /* .n1-text-base-150{color: #F3F4F7;}
-
-  .n1-text-base-400{color: #9B9B9B;} */
-
-  .n1-grid-cols-3-200{grid-template-columns: repeat(3, 200px);}
-  .n1-grid-cols-2-200{grid-template-columns: repeat(2, 200px);}
-  .n1-grid-cols-6-auto{grid-template-columns: repeat(6, auto);}
-
   .n1-border-footer{border: 1px solid rgba(255, 255, 255, 0.10);}
 
   .n1-container{     
@@ -59,16 +53,10 @@
   }
 
   .n1-btn-header-item--rounded{
-    border: none;
     border-radius: 100px;
-    /* padding-left: 10px; */
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .n1-grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, auto));
   }
 
   .n1-header__desktop{
@@ -77,10 +65,91 @@
     color: #fff;
   }
 
+  .n1-header__navlink-children--image{
+    transition: all .175s ease-out;
+  }
+
+  .n1-header__navlink-children:hover .n1-header__navlink-children--image{
+    transform: scale(1.02);
+    transition: all .275s ease-in;
+  }
+
+  .n1-header__navlink-children-title{white-space: initial !important;}
+
   .moveFromTop:hover { transform: translateY(20px) }
-  /* @keyframes moveFromTop {
-      from { transform: translateY(20px) }
-  }   */
+
+  /*  ESTILIZAÇÃO COLLAPSE DO MENU MOBILE ______________________________________________________________| INICIAL | */
+  .n1-menu-mobile__input{
+    min-height: initial !important;
+  }
+
+  .n1-menu-mobile.collapse{transition: overflow .175s linear !important}
+
+  .n1-menu-mobile.collapse[open] > :where(.n1-menu-mobile__content), 
+  .collapse-open > :where(.n1-menu-mobile__content), 
+  .n1-menu-mobile:focus:not(.collapse-close) > :where(.n1-menu-mobile__content), 
+  .n1-menu-mobile:not(.collapse-close) > :where(input[type="checkbox"]:checked ~ .n1-menu-mobile__content), 
+  .n1-menu-mobile:not(.collapse-close) > :where(input[type="radio"]:checked ~ .n1-menu-mobile__content){
+    padding-bottom: initial !important;
+
+    border-top: 1px solid #DFDFE4;
+    padding-top: 10px;    
+  }
+
+  .n1-menu-mobile.collapse-arrow > .n1-menu-mobile__title.collapse-title:after{
+    height: 10px;
+    width: 10px;
+    top: 20px;    
+  }
+
+  .n1-menu-mobile.collapse[open].collapse-arrow > .n1-menu-mobile__title.collapse-title:after, 
+  .collapse-open.collapse-arrow > .n1-menu-mobile__title.collapse-title:after, 
+  .n1-menu-mobile.collapse-arrow:focus:not(.collapse-close) > .n1-menu-mobile__title.collapse-title:after, 
+  .n1-menu-mobile.collapse-arrow:not(.collapse-close) > input[type="checkbox"]:checked ~ .n1-menu-mobile__title.collapse-title:after, 
+  .n1-menu-mobile.collapse-arrow:not(.collapse-close) > input[type="radio"]:checked ~ .n1-menu-mobile__title.collapse-title:after{
+    width: 10px;
+    height: 2px;
+    transform: rotate(0);
+  }
+
+  .n1-menu-mobile__title{
+    padding: 13px 15px 13px 20px !important;
+    min-height: initial !important;
+    color:  #585858;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height:  16.8px;  
+    
+    @apply font-archimoto-medium;
+  }
+
+  .n1-menu-mobile__title:not(.is-children){padding:  10px 15px 10px 20px !important;}
+  .n1-menu-mobile__title:not(.is-children):after{content: none !important;}
+
+  .n1-menu-mobile__title.is-children ~ .n1-menu-mobile__content ul{ 
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+  }
+
+  .n1-menu-mobile__title.is-children ~ .n1-menu-mobile__content ul li .n1-menu-mobile input{min-height: initial !important;} 
+  
+  .n1-menu-mobile__title.is-children ~ .n1-menu-mobile__content ul li .n1-menu-mobile .collapse-title{
+    padding: 0 !important;  
+    padding-left: 5px !important;
+    color:  #585858;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;    
+  }
+
+  .n1-menu-mobile__title.is-children ~ .n1-menu-mobile__content ul li .n1-menu-mobile .collapse-title > svg,
+  .n1-menu-mobile__title.is-children ~ .n1-menu-mobile__content ul li .n1-menu-mobile .n1-menu-mobile__content{display: none;}
+
+  /*  ESTILIZAÇÃO COLLAPSE DO MENU MOBILE ______________________________________________________________| FINAL | */
 
   .n1-footer__bg-social:before{
     content: "";
@@ -128,6 +197,33 @@
     background: radial-gradient(46.49% 46.49% at 49.96% 53.51%, rgba(59, 200, 216, 0.50) 0%, rgba(59, 200, 216, 0.00) 100%) 
   }
 
+  .n1-header__navlink--active:before{
+    content: "";
+    display: block;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transform: rotate(-45deg); 
+    background: #fff;
+    transition: all .2s linear;   
+  }
+
+  .n1-header__navlink--active:after{
+    content: "";
+    display: block;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 10px;
+    position: absolute;
+    top: 10px;
+    right: 3px;
+    transform: rotate(45deg); 
+    background: #fff;
+    transition: all .2s linear;   
+  }
 
   @media (max-width: 767px){
     .n1-footer__overlay--bottom-left{
