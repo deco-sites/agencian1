@@ -62,7 +62,7 @@ function Navbar({
           </a>
         )}
 
-        <div class="flex justify-end mobile:hidden">
+        <div class="justify-end hidden">
           <SearchButton />
           {platform === "vtex" && <CartButtonVTEX />}
           {platform === "vnda" && <CartButtonVDNA />}

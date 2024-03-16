@@ -1,9 +1,12 @@
 import Image from "apps/website/components/Image.tsx";
 
 export interface Props {
+  /**@title Título */
   title: string;
+  /**@title Descrição */
   description: string;
   cta?: { text: string; href: string };
+  /**@title Imagem */
   image?: { src: string; alt: string };
   imageOnRight?: boolean;
 }

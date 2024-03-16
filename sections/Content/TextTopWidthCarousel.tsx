@@ -3,14 +3,14 @@ import SliderJS from "$store/islands/SliderJS.tsx";
 import { useId } from "$store/sdk/useId.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { FnContext, SectionProps } from "deco/mod.ts";
-import Image from "apps/website/components/Image.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import { clx } from "$store/sdk/clx.ts";
-import LinkWithOptionArrow from '$store/components/ui/LinkWithOptionArrow.tsx';
 
+/** @titleBy name */
 interface InfoProps{
+    /**@title Nome*/    
+    name?:string;
     /**@title Título*/    
-    /**@format textarea*/    
     title?:string;
     /**@title Texto*/
     /**@format textarea*/
@@ -22,42 +22,23 @@ interface InfoProps{
     href?:string;
 }
 
-interface ImageGeneric{
-  /** @title Imagem */
-  image?:ImageWidget;
-  /** @title Largura da Imagem */  
-  width?:number;
-  /** @title Altura da Imagem */    
-  height?:number;
-  /** @title Nome da Imagem */    
-  alt?:string
-}
-
 /** @titleBy alt */
 export interface ImageCarousel {
-    /** @title Nome do Bloco */
-    alt: string;
-    /** @title Informações */
     settingsInfo?:InfoProps;    
-    /** @title Imagem */
-    desktop: ImageGeneric;
+    /** @title Imagem Desktop */
+    desktop: ImageWidget;
+    /** @title Nome da imagem */
+    alt: string;
 }
 
 export interface Props {
-    /** @title Texto do Link */
-    textLink?:string;
-    /** @title Link */
-    /** @description (ex: https://agencian1.com.br/) */
-    link?:string;  
     /**@title Título  */  
     /**@format html  */        
     title?:string;
     /**@title Texto  */    
     /**@format html  */    
-    texto?:string;
-    /**@title Imagem  */
-    /** @description (Limite 5 imagens) */
-    /** @maxItems 5 */    
+    text?:string;
+
     images?: ImageCarousel[];
     /** @title (Marque esta opção quando este banner for a maior imagem na tela para otimizações de imagem)  */
     preload?: boolean;
@@ -74,43 +55,43 @@ function ImageCarouselItem({ image, lcp, id }: { image: ImageCarousel; lcp?: boo
 
     return (
         <>
-            <div id={id}
-                class="n1-text-width-image__link relative overflow-hidden w-full py-[30px] px-[20px]"
+            <a
+                id={id}
+                href={settingsInfo?.href ?? "javascript:void(0)"}
+                aria-label={settingsInfo?.name}
+                class="n1-text-top-width-carousel__link relative overflow-hidden w-full border border-[#3B5D5F] rounded-[20px] pt-[20px] pb-[40px] px-[20px]"
             >
-                {desktop && desktop?.image && desktop?.width && desktop?.height && (
-                    <Image
-                      class="mobile:h-auto mobile:max-w-full relative"
-                      src={desktop.image}
-                      width={desktop.width}
-                      height={desktop.height}
-                      alt={desktop && desktop?.alt ? desktop?.alt : 'Imagem'}
-                      loading={lcp ? "eager" : "lazy"}                                          
-                    /> 
-                )}
+                <div class="n1-text-top-width-carousel__overlay absolute w-full h-full top-[0] left-[0] invisible opacity-0"></div>
 
-                <div class="flex flex-col">
+                <img class="mobile:h-auto mobile:max-w-full w-[100px] h-[100px] relative -left-[30px]"
+                    loading={lcp ? "eager" : "lazy"}
+                    src={desktop}
+                    alt={alt}
+                />
+
+                <div>
+                    { settingsInfo?.name && (
+                        <span class="text-[#ffffff] flex font-archimoto-medium md:text-20 font-thin md:mt-[22px] mb-[8px]"> { settingsInfo?.name } </span>
+                    ) }
                     { settingsInfo?.title && (
-                        <span class="text-[#ffffff] font-archimoto-medium md:text-24 !leading-[31.8px] font-black md:mt-[30px] mb-[10px] n1-text-top-width-image__title"> 
-                        { settingsInfo?.title } 
-                        </span>
+                        <h3 class="text-[#ffffff] flex font-archimoto-medium md:text-40 font-black n1-text-top-width-carousel__title
+                        "> { settingsInfo?.title } </h3>
                     ) }
-
                     { settingsInfo?.text && (
-                        <span class="text-[#ffffff] font-noto-sans md:text-16 font-normal mobile:mb-[32px] md:mb-[30px] n1-text-top-width-image__text"> { settingsInfo?.text } </span>
+                        <span class="text-[#ffffff] flex font-noto-sans md:text-14 font-normal mt-[16px] mobile:mb-[32px] md:mb-[59px]"> { settingsInfo?.text } </span>
                     ) }
-
                     { settingsInfo?.textLink && (                        
-                        <a 
-                          href={settingsInfo?.href ?? "javascript:void(0)"}
-                          aria-label={settingsInfo?.title}                        
-                          class={clx(`mobile:w-[55%] md:w-[43%] flex border border-[#fff] px-[20px] pb-[11px] 
-                            pt-[12px] rounded-[100px] justify-center items-center min-w-[134px]`)}>
-
+                        <div class={clx(`mobile:w-[55%] md:w-[43%] flex border border-[#fff] px-[20px] pb-[11px] 
+                            pt-[12px] rounded-[100px] justify-center items-center min-w-[144px]`)}
+                        >
                             <span class="text-[#ffffff] flex font-archimoto-medium md:text-14 font-black"> { settingsInfo?.textLink } </span>
-                        </a>
+                            <svg class="ml-[10px] relative bottom-[2px]" xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.25 6.22656C5.25 5.81235 5.58579 5.47656 6 5.47656H12.75C13.1642 5.47656 13.5 5.81235 13.5 6.22656V12.9766C13.5 13.3908 13.1642 13.7266 12.75 13.7266C12.3358 13.7266 12 13.3908 12 12.9766V8.03722L5.78033 14.2569C5.48744 14.5498 5.01256 14.5498 4.71967 14.2569C4.42678 13.964 4.42678 13.4891 4.71967 13.1962L10.9393 6.97656H6C5.58579 6.97656 5.25 6.64078 5.25 6.22656Z" fill="white"/>
+                            </svg>
+                        </div>
                     ) }                
                 </div>          
-            </div>
+            </a>
         </>
     );
 }
@@ -185,37 +166,32 @@ function Buttons() {
 
 function TextTopWidthCarousel(props: SectionProps<ReturnType<typeof loader>>) {
     const id = useId();
-    const { images, preload, title, texto, textLink, link, device } = props;
+    const { images, preload, title, text, device } = props;
 
     return (
         <>
             <div id={id} class="relative mobile:pb-[60px]">
                 <div class=" md:n1-container md:px-[120px] z-10 md:mb-[40px] relative">
 
-                    <div class="mobile:my-[24px] mt-[120px] mb-[43px] text-[#ffffff] flex items-center justify-between flex-wrap">
+                    <div class="mobile:my-[24px] mt-[120px] mb-[43px] text-[#ffffff] flex items-center justify-between">
                         <div class="mobile:px-[20px]">
                             {title && (
-                                <div class="n1-text-widt-image__title uppercase font-archimoto-medium text-56 md:text-56 md:leading-[20px]"
-                                    dangerouslySetInnerHTML={{__html: title}}> 
-                                </div>                                 
+                                <h2 class="n1-cases-component__title font-archimoto-medium text-24 leading-[28.8px] md:text-56 md:leading-[20px]"
+                                    dangerouslySetInnerHTML={{
+                                        __html: title,
+                                    }}
+                                > 
+                                </h2>
                             )}
-                            {texto &&  (
-                                <div class="n1-text-widt-image__text md:flex font-noto-sans block mt-[11px] text-20 leading-[26px]"
-                                    dangerouslySetInnerHTML={{__html: texto}}>                                
-                                </div>
+                            {text && (
+                                <span class="md:flex font-noto-sans block mt-[11px] text-20 leading-[26px]"
+                                    dangerouslySetInnerHTML={{
+                                        __html: text,
+                                    }}
+                                >                                
+                                </span>
                             )}
                         </div>
-                        {textLink && (
-                            <div class="n1-mosaic__link my-[15px] mobile:px-[24px]">
-                                <LinkWithOptionArrow 
-                                    text={textLink} 
-                                    link={link} 
-                                    width={'255'} 
-                                    fontSize='16'
-                                    margin={'0'}
-                                />
-                            </div>
-                        )}                        
                     </div>
 
 
@@ -224,11 +200,7 @@ function TextTopWidthCarousel(props: SectionProps<ReturnType<typeof loader>>) {
                             
                             return (
                                 <>
-                                    <Slider.Item 
-                                      index={index} 
-                                      class="carousel-item mobile:w-[90%] w-[31.666%] rounded-[10px]
-                                        bg-[linear-gradient(181deg,_#FFF_-176.1%,_rgba(255,_255,_255,_0.29)_-85.87%,_rgba(255,_255,_255,_0.00)_124.35%)]">
-
+                                    <Slider.Item index={index} class="carousel-item mobile:w-full w-[31.666%]">
                                         <ImageCarouselItem
                                             image={image}
                                             lcp={index === 0 && preload}

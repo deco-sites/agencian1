@@ -68,7 +68,7 @@ function Newsletter(
           <div class="flex flex-wrap gap-[18px]">
             <input
               name="email"
-              class="flex-auto md:flex-none input input-bordered md:w-[273px] bg-white text-base-content font-noto-sans rounded-[90px] text-14 n1-text-base-400"
+              class="bg-[#ffffff] flex-auto md:flex-none input input-bordered md:w-[273px] bg-white text-base-content font-noto-sans rounded-[90px] text-14 n1-text-base-400"
               placeholder={content?.form?.placeholder || "Digite seu email"}
             />
             <button

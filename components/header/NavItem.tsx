@@ -116,11 +116,10 @@ function NavItem({ item, btnTextMenu, btnUrlMenu }: Props) {
                     )
                   })}
                 </ul>
-                {/* {btnTextMenu && <a class="btnTextMenu"> {btnTextMenu} </a>} */}
                 
-                {activePropsButton && btnTextMenu && 
-                  <LinkButtonSubMenu btnTextMenu={btnTextMenu} btnUrlMenu={btnUrlMenu} /> 
-                }
+                {activePropsButton && btnTextMenu && (                  
+                    <LinkButtonSubMenu btnTextMenu={btnTextMenu} btnUrlMenu={btnUrlMenu} />                   
+                )}
               </div>         
             </div>
           )}

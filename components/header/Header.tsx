@@ -6,7 +6,7 @@ import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Alert from "./Alert.tsx";
 import Navbar from "./Navbar.tsx";
 import { headerHeight } from "./constants.ts";
-import LinkButtonWithOptionArrow from '../ui/LinkButtonWithOptionArrow.tsx';
+import LinkTelephoneWithOptionArrow from '../ui/LinkTelephoneWithOptionArrow.tsx';
 import { HTMLWidget as HTML } from "apps/admin/widgets.ts";
 
 export interface Logo {
@@ -144,7 +144,11 @@ function Header({
                 buttons={buttons}
                 btnTextMenu={btnTextMenu}
               />
-              {whatsapp && <LinkButtonWithOptionArrow activeArrow={true} telephone={whatsapp} />}            
+              {whatsapp && (
+                <div class="mobile:flex mobile:justify-center">
+                  <LinkTelephoneWithOptionArrow fontSize='14' activeArrow={true} telephone={whatsapp} />
+                </div>                
+              )}            
               
             </div>
           </div>

@@ -10,14 +10,15 @@ import { useId } from "$store/sdk/useId.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import Image from "apps/website/components/Image.tsx";
+import { FnContext, SectionProps } from "deco/mod.ts";
 
 /**
  * @titleBy alt
  */
 export interface Banner {
-  /** @description desktop otimized image */
+  /** @description desktop imagem otimizada */
   desktop: ImageWidget;
-  /** @description mobile otimized image */
+  /** @description mobile imagem otimizada */
   mobile: ImageWidget;
   /** @description Image's alt text */
   alt: string;
@@ -36,22 +37,22 @@ export interface Banner {
 export interface Props {
   images?: Banner[];
   /**
-   * @description Check this option when this banner is the biggest image on the screen for image optimizations
+   * @description (Marque esta opção quando este banner for a maior imagem na tela para otimizações de imagem)
    */
   preload?: boolean;
   /**
-   * @title Show arrows
-   * @description show arrows to navigate through the images
+   * @title Mostrar setas
+   * @description (mostre setas para navegar pelas imagens)
    */
   arrows?: boolean;
   /**
-   * @title Show dots
-   * @description show dots to navigate through the images
+   * @title Mostrar pontos
+   * @description (mostre pontos para navegar pelas imagens)
    */
   dots?: boolean;
   /**
-   * @title Autoplay interval
-   * @description time (in seconds) to start the carousel autoplay
+   * @title Autoplay intervalo
+   * @description [tempo (em segundos) para iniciar a reprodução automática do carrossel (ex: 1 - significa 1 segundo)]
    */
   interval?: number;
 }
@@ -139,7 +140,7 @@ function BannerItem(
           media="(max-width: 767px)"
           fetchPriority={lcp ? "high" : "auto"}
           src={mobile}
-          width={430}
+          width={390}
           height={590}
         />
         <Source
@@ -150,7 +151,7 @@ function BannerItem(
           height={600}
         />
         <img
-          class="object-cover w-full h-full"
+          class="mobile:object-none mobile:h-auto mobile:max-w-full object-cover w-full h-full"
           loading={lcp ? "eager" : "lazy"}
           src={desktop}
           alt={alt}
@@ -174,13 +175,13 @@ function Dots({ images, interval = 0 }: Props) {
           `,
         }}
       />
-      <ul class="carousel justify-center col-span-full gap-6 z-10 row-start-4">
+      <ul class="mobile:relative mobile:top-0 carousel justify-center col-span-full gap-6 z-10 row-start-4">
         {images?.map((_, index) => (
           <li class="carousel-item">
             <Slider.Dot index={index}>
               <div class="py-5">
                 <div
-                  class="w-16 sm:w-20 h-0.5 rounded group-disabled:animate-progress bg-gradient-to-r from-base-100 from-[length:var(--dot-progress)] to-[rgba(255,255,255,0.4)] to-[length:var(--dot-progress)]"
+                  class="n1-banner-btn__dot--item w-8 sm:w-20 h-0.5 rounded group-disabled:animate-progress bg-gradient-to-r from-[#06ADC2] from-[length:var(--dot-progress)] to-[rgba(255,255,255,0.4)] to-[length:var(--dot-progress)]"
                   style={{ animationDuration: `${interval}s` }}
                 />
               </div>
@@ -196,21 +197,19 @@ function Buttons() {
   return (
     <>
       <div class="flex items-center justify-center z-10 col-start-1 row-start-2">
-        <Slider.PrevButton class="btn btn-circle glass">
+        <Slider.PrevButton class="btn btn-circle bg-[#ffffff] w-[40px] !h-[40px]">
           <Icon
-            class="text-base-100"
-            size={24}
-            id="ChevronLeft"
+            size={18}
+            id="Banner-arrow-left"
             strokeWidth={3}
           />
         </Slider.PrevButton>
       </div>
       <div class="flex items-center justify-center z-10 col-start-3 row-start-2">
-        <Slider.NextButton class="btn btn-circle glass">
+        <Slider.NextButton class="btn btn-circle bg-[#ffffff] w-[40px] !h-[40px]">
           <Icon
-            class="text-base-100"
-            size={24}
-            id="ChevronRight"
+            size={18}
+            id="Banner-arrow-right"
             strokeWidth={3}
           />
         </Slider.NextButton>
@@ -219,9 +218,9 @@ function Buttons() {
   );
 }
 
-function BannerCarousel(props: Props) {
+function BannerCarousel(props: SectionProps<ReturnType<typeof loader>>) {
   const id = useId();
-  const { images, preload, interval } = { ...DEFAULT_PROPS, ...props };
+  const { images, preload, interval, device } = { ...DEFAULT_PROPS, ...props };
 
   return (
     <div
@@ -259,5 +258,12 @@ function BannerCarousel(props: Props) {
     </div>
   );
 }
+
+export const loader = (props: Props, _req: Request, ctx: FnContext) => {
+  return {
+    ...props,
+    device: ctx.device,
+  };
+};
 
 export default BannerCarousel;
