@@ -1,6 +1,6 @@
 import Icon from "$store/components/ui/Icon.tsx";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
-import LinkButtonWithOptionArrow from "../ui/LinkButtonWithOptionArrow.tsx";
+import LinkTelephoneWithOptionArrow from "../ui/LinkTelephoneWithOptionArrow.tsx";
 import Legend from '$store/components/header/Legend.tsx';
 import { clx } from "$store/sdk/clx.ts";
 
@@ -65,7 +65,7 @@ function Menu({ items, whatsapp }: Props) {
       </ul>
       <div class="w-[90%] mx-auto">
           {whatsapp && (
-            <LinkButtonWithOptionArrow activeArrow={false} width={'full'} telephone={whatsapp} />
+            <LinkTelephoneWithOptionArrow activeArrow={false} width={'full'} telephone={whatsapp} />
           )}
       </div>
     </div>

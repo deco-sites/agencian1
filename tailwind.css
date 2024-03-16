@@ -60,7 +60,7 @@
   }
 
   .n1-header__desktop{
-    background: linear-gradient(180deg, #0C1F59 -18.75%, #0B1227 100%);
+    background: linear-gradient(180deg, #0C1F59 -18.75%, rgba(12, 31, 89, 0.00) 100%);
     backdrop-filter: blur(135px);
     color: #fff;
   }
@@ -75,6 +75,31 @@
   }
 
   .n1-header__navlink-children-title{white-space: initial !important;}
+
+  .n1-header__navlink--active:before,
+  .n1-header__navlink--active:after{
+    content: "";
+    display: block;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 10px;
+    position: absolute;
+    background: #fff; 
+    transition: all .2s linear;
+  }
+
+  .n1-header__navlink--active:before{
+    top: 10px;
+    right: 10px;
+    transform: rotate(-45deg); 
+  }
+
+  .n1-header__navlink--active:after{
+    position: absolute;
+    top: 10px;
+    right: 3px;
+    transform: rotate(45deg); 
+  }    
 
   .moveFromTop:hover { transform: translateY(20px) }
 
@@ -151,6 +176,149 @@
 
   /*  ESTILIZAÇÃO COLLAPSE DO MENU MOBILE ______________________________________________________________| FINAL | */
 
+  .n1-banner-btn__dot:disabled .n1-banner-btn__dot--item{
+    @apply w-32 duration-200
+  }
+
+
+  /*  ESTILIZAÇÃO HOVER DO CARRROSSEL TEXTTOPWIDTHCAROUSEL __________________________________________| INICIAL | */
+  .n1-text-top-width-carousel__link .n1-text-top-width-carousel__overlay{transition: all 1s linear;}
+
+  .n1-text-top-width-carousel__link:hover .n1-text-top-width-carousel__overlay{
+    animation: overlayCard .275s linear both;
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s linear;
+  }
+
+  @keyframes overlayCard {
+    0%{background: transparent;}
+    100%{background: linear-gradient(8deg, rgba(60, 203, 218, 0.01) -32.53%, rgba(60, 203, 218, 0.27) 63.83%, rgba(60, 203, 218, 0.40) 276.77%);}
+  }  
+
+  .n1-text-top-width-carousel__link:hover .n1-text-top-width-carousel__title{
+    animation: overlayText .275s linear forwards;
+  }
+
+
+  @keyframes overlayText {
+    0%{background: transparent;}
+    100%{
+      background: linear-gradient(180deg, #69C7F0 0%, rgba(255, 255, 255, 0.00) 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  /*  ESTILIZAÇÃO HOVER DO CARRROSSEL TEXTTOPWIDTHCAROUSEL __________________________________________| FINAL | */  
+
+  /*  ESTILIZAÇÃO ANIMAÇÃO DE ESCRITA DE TEXTO ______________________________________________________________| INICIAL | */
+  .n1-typing span {
+    display: grid;
+    color: #3CCBDA;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 88px;
+    overflow: hidden; 
+    border-right: 0.15em solid #3CCBDA;
+    white-space: nowrap; 
+    max-width:max-content;
+    animation: typingText 2.3s steps(120, end) alternate infinite, blinkBorder .75s step-end infinite;
+  }
+  
+  @keyframes typingText {
+    from {width: 0;}
+    to {width: 100%;}
+  }
+  
+  @keyframes blinkBorder {
+    from,to {border-color: transparent;}
+    50% {border-color: #3CCBDA;}
+  } 
+
+  /*  ESTILIZAÇÃO ANIMAÇÃO DE ESCRITA DE TEXTO ______________________________________________________________| FINAL | */ 
+
+
+  /*  ESTILIZAÇÃO ANIMAÇÃO DA MARCA ______________________________________________________________________| INICIAL | */  
+
+  .animation-section-brand{
+    animation: slide 10s linear infinite;
+  }
+
+  @keyframes slide {
+    0% { transform: translateX(0);}
+    100% { transform: translateX(-100%);}
+  } 
+  /*  ESTILIZAÇÃO ANIMAÇÃO DA MARCA ______________________________________________________________________| FINAL | */ 
+
+  /*  ESTILIZAÇÃO IMAGEM PLATAFORMAS ______________________________________________________________________| INICIAL | */ 
+  .n1-textwithimageanimation__image.is-active{
+    animation: scaleImage 2s linear infinite alternate;
+  }
+
+  @keyframes scaleImage {
+    0% {transform: scale(.7);}
+    100% {transform: scale(1);} 
+  }  
+  /*  ESTILIZAÇÃO IMAGEM PLATAFORMAS ______________________________________________________________________| FINAL | */  
+
+  .n1-cases-card.is-active .n1-cases-card__item .n1-cases-card__logo{
+    width: 0%;
+    /* /* opacity: 0; */
+    visibility: hidden; 
+    transition: all 1s linear;
+  }
+
+  .n1-cases-card.is-active .n1-cases-card__item{
+    opacity: 0;
+    visibility: hidden; 
+    transition: all .175s linear;
+  }
+
+  .n1-cases-card.is-active .n1-cases-card__item--hover{
+    visibility: visible ;
+    opacity: 1;
+    width: 100%;
+    transition: all .575s linear;
+  }  
+
+  .n1-cases-card__item{
+    scroll-snap-align: start !important;
+  }
+
+
+  .n1-mosaic__title.is-white *,
+  .n1-mosaic__title.is-white > *,
+  .n1-mosaic__title.is-white > * > *,
+  .n1-mosaic__title.is-white > * > * > *{
+    color: #0C1F59 !important;
+  }
+
+  .n1-mosaic__text.is-white *,
+  .n1-mosaic__text.is-white > *,
+  .n1-mosaic__text.is-white > * > *,
+  .n1-mosaic__text.is-white > * > * > *{
+    color: #0C1F59 !important;
+  }
+
+  .n1-mosaic__text.is-primary *,
+  .n1-mosaic__text.is-primary > *,
+  .n1-mosaic__text.is-primary > * > *,
+  .n1-mosaic__text.is-primary > * > * > *{
+    color: #ffffff !important;
+  } 
+  
+  
+  .n1-text-top-width-image__name,
+  .n1-text-top-width-image__title,
+  .n1-text-top-width-image__text{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;    
+  }
+
   .n1-footer__bg-social:before{
     content: "";
     border-radius: 50px;
@@ -179,8 +347,7 @@
     left: 15%;
     position: absolute;
     background: radial-gradient(46.49% 46.49% at 49.96% 53.51%, rgba(59, 200, 216, 0.50) 0%, rgba(59, 200, 216, 0.00) 100%)    
-  }
-  
+  }  
   
   .n1-footer__overlay--bottom-right{
     bottom: 0%;
@@ -189,7 +356,6 @@
     background: radial-gradient(46.49% 46.49% at 49.96% 53.51%, rgba(248, 188, 51, 0.50) 0%, rgba(248, 188, 51, 0.00) 100%);
   }
 
-
   .n1-footer__overlay--middle-right{
     top: 0;
     right: -390px;
@@ -197,35 +363,156 @@
     background: radial-gradient(46.49% 46.49% at 49.96% 53.51%, rgba(59, 200, 216, 0.50) 0%, rgba(59, 200, 216, 0.00) 100%) 
   }
 
-  .n1-header__navlink--active:before{
-    content: "";
-    display: block;
-    border: 1px solid #fff;
-    border-radius: 10px;
-    width: 10px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    transform: rotate(-45deg); 
-    background: #fff;
-    transition: all .2s linear;   
+  @media (max-width: 426px){
+    .n1-cases__info{margin-bottom: 15px;}
+    .n1-cases__icon-mobile{
+      position: absolute;
+      right: 20px;
+      bottom: 20px;      
+    }
+    .n1-cases-card__tags{grid-template-columns: repeat(4,auto) !important;}
+  } 
+
+  @media (max-width: 376px){
+    .n1-cases-card__item .n1-cases-card__item--hover{width: 300px !important;}
+    .n1-cases-card__item{width: 91.333% !important;}
+    .n1-cases__info{margin-bottom: initial;}
+    .n1-cases__icon-mobile{
+      position: initial;
+      right: initial;
+      bottom: initial;      
+    }    
+    .n1-cases-card__tags{grid-template-columns: repeat(3,auto) !important;}
   }
 
-  .n1-header__navlink--active:after{
-    content: "";
-    display: block;
-    border: 1px solid #fff;
-    border-radius: 10px;
-    width: 10px;
-    position: absolute;
-    top: 10px;
-    right: 3px;
-    transform: rotate(45deg); 
-    background: #fff;
-    transition: all .2s linear;   
+  @media (max-width: 320px){
+    .n1-cases-card__item .n1-cases-card__item--hover{width: 250px !important;}
+    .n1-cases-card__tags{
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }  
+
+  @media (min-width: 426px) and (max-width: 768px){
+    .n1-cases-card__mobile{max-width: 100%;}
+    .n1-cases-card__carousel{
+      column-gap: 15px;
+      max-width: 100%;
+      width: 100% !important;      
+    }
+
+    .n1-cases-card__item{width:95% !important;}
+
+    .n1-cases-card__tags{grid-template-columns: repeat(4,1fr) !important;}
+
   }
 
-  @media (max-width: 767px){
+  @media (max-width: 768px){
+    .n1-banner-btn__dot:disabled .n1-banner-btn__dot--item{@apply w-20}
+
+    .animation-section-brand{animation: slide 20s linear infinite;}
+
+    /*  ESTILIZAÇÃO TEXTS (EDIT RICH TEXT - ADMIN DECO) ______________________________________________________________________| INICIAL | */ 
+    .n1-typing > *,
+    .n1-typing *,
+    .n1-typing > * > *,
+    .n1-typing > * > * > *,
+    .n1-hero__title > *,
+    .n1-hero__title *,
+    .n1-hero__title > * > *,
+    .n1-hero__title > * > * > * {
+      font-size: 24px !important;
+      line-height: 27.793px !important;
+    }    
+    
+    .n1-hero__description{
+      margin-top: 16px;
+      margin-bottom: 24px;
+    }
+
+    .n1-hero__title{
+      margin-bottom: 10px;
+    }
+    .n1-hero__description > *,
+    .n1-hero__description *,
+    .n1-hero__description > * > *,
+    .n1-hero__description > * > * > *{
+      font-size: 14px !important;
+      line-height: 19.6px !important;
+    }
+
+    .n1-hero__titleCta > *,
+    .n1-hero__titleCta *,
+    .n1-hero__titleCta > * > *,
+    .n1-hero__titleCta > * > * > *{
+      font-size: 14px !important;
+      line-height: 14.528px !important;
+    }
+
+    .n1-hero__titleCta{
+      margin-bottom: 8px;
+    }
+
+    .n1-textwithimageanimation__subtitle > *,
+    .n1-textwithimageanimation__subtitle *,
+    .n1-textwithimageanimation__subtitle > * > *,
+    .n1-textwithimageanimation__subtitle > * > * > *{
+      font-size: 24px !important;
+      line-height: 28.8px !important;    
+    }    
+
+    .n1-textwithimageanimation__paragraph > *,
+    .n1-textwithimageanimation__paragraph *,
+    .n1-textwithimageanimation__paragraph > * > *,
+    .n1-textwithimageanimation__paragraph > * > * > *{
+      font-size: 16px !important;
+      line-height: 22.4px !important;    
+    } 
+
+    .n1-cases-component__title *,
+    .n1-cases-component__title > *,
+    .n1-cases-component__title > * > *,
+    .n1-cases-component__title > * > * > *{
+      font-size: 24px !important;
+      line-height: 28.8px !important;    
+    } 
+
+    .n1-mosaic__title *,
+    .n1-mosaic__title > *,
+    .n1-mosaic__title > * > *,
+    .n1-mosaic__title > * > * > *{
+      font-size: 27px !important;
+      line-height: 33.38px !important;    
+    } 
+
+    .n1-mosaic__text *,
+    .n1-mosaic__text > *,
+    .n1-mosaic__text > * > *,
+    .n1-mosaic__text > * > * > *{
+      font-size: 12px !important;
+      line-height: 15.16px !important;    
+    }     
+    .n1-text-widt-image__title *,
+    .n1-text-widt-image__title > *,
+    .n1-text-widt-image__title > * > *,
+    .n1-text-widt-image__title > * > * > *{
+      font-size: 32px !important;
+      line-height: 38.4px !important;  
+    }
+
+    .n1-text-widt-image__text *,
+    .n1-text-widt-image__text > *,
+    .n1-text-widt-image__text > * > *,
+    .n1-text-widt-image__text > * > * > *{
+      font-size: 14px !important;
+      line-height: 14px !important; 
+    }
+
+    /*  ESTILIZAÇÃO TEXTS (EDIT RICH TEXT - ADMIN DECO) ______________________________________________________________________| FINAL | */    
+
+    /* .n1-text-top-width-carousel__dots{
+      gap: initial !important;
+    } */
+
     .n1-footer__overlay--bottom-left{
       transform: rotate(90deg);
       top: -510px;
@@ -254,18 +541,13 @@
       right: initial;
       left: -10px;
       bottom: 30px;      
-    }
-
-
-
-
-    
+    }    
   }
 
 }
 
 .group:disabled .group-disabled\:animate-progress {
-  animation: progress-frame ease normal
+  animation: progress-frame ease normal;
 }
 
 @keyframes progress-frame {

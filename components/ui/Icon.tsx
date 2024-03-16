@@ -51,7 +51,9 @@ export type AvailableIcons =
   | "AlertError"
   | "share"
   | "ArrowUpMenuMobile"
-  | "ArrowDownMenuMobile";
+  | "ArrowDownMenuMobile"
+  | "Banner-arrow-left"
+  | "Banner-arrow-right";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**
