@@ -149,7 +149,7 @@ function Mosaic( props: SectionProps<ReturnType<typeof loader>> ){
                                             
                                                 { text && text?.title && (
                                                     <h3 
-                                                        class={clx(`n1-mosaic__title is-${text && text?.bgColor === 'base-50' ? 'white' : 'primary' } 
+                                                        class={clx(`n1-mosaic__title mobile:[&_*]:!text-27 [&_*]:first-letter:!text-secondary  is-${text && text?.bgColor === 'base-50' ? 'white' : 'primary' } 
                                                             text-34 font-archimoto-medium font-black`)}
                                                         dangerouslySetInnerHTML={{__html: text.title}}>
                                                     </h3>
@@ -157,7 +157,7 @@ function Mosaic( props: SectionProps<ReturnType<typeof loader>> ){
 
                                                 {text && text?.text && (
                                                     <span 
-                                                        class={clx(`n1-mosaic__text text-13 is-${text && text?.bgColor === 'base-50' ? 'white' : 'primary' } 
+                                                        class={clx(`n1-mosaic__text mobile:[&_*]:!text-12 is-${text && text?.bgColor === 'base-50' ? 'white' : 'primary' } 
                                                         font-noto-sans font-normal mt-[5px]`)}>
 
                                                         {text.text}
@@ -222,7 +222,7 @@ function Mosaic( props: SectionProps<ReturnType<typeof loader>> ){
                                         <div class="mobile:pt-[24px] mobile:px-[24px]">
                                             {text && text?.title && (
                                                 <h3 
-                                                    class={clx(`n1-mosaic__title is-${text && text?.bgColor === 'base-50' ? 'white' : 'primary' } 
+                                                    class={clx(`n1-mosaic__title [&_*]:first-letter:!text-secondary is-${text && text?.bgColor === 'base-50' ? 'white' : 'primary' } 
                                                         text-34 font-archimoto-medium font-black`)}
                                                     dangerouslySetInnerHTML={{__html: text.title}}>
                                                 </h3>

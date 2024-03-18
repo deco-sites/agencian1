@@ -3,42 +3,42 @@ import type { SectionProps } from "deco/types.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 
+/** @titleBy alt */
+interface ImageGeneric{
+  /**@title Imagem */
+  image:ImageWidget
+  /**@title largura da imagem */  
+  /**@description (ex: 600) */  
+  width:string;
+  /**@title Altura da imagem */  
+  /**@description (ex: 300) */  
+  height:string;
+  // Nome da Imagem
+  alt:string;
+}
+
+
+interface ImageProps{
+    /** @description Image for big screens */
+    desktop: ImageGeneric;
+    /** @description Image for small screens */
+    mobile: ImageGeneric;
+}
+
 /**
  * @titleBy matcher
  */
 export interface Banner {
-  /** @description RegExp to enable this banner on the current URL. Use /feminino/* to display this banner on feminino category  */
+  /** @description Para habilitar este banner na URL atual. Usuário /feminino/* para exibir este banner na categoria feminina  */
   matcher: string;
-  /** @description text to be rendered on top of the image */
+  /** @description Título a ser renderizado no topo da imagem */
   title?: string;
-  /** @description text to be rendered on top of the image */
+  /** @description Subtítulo a ser renderizado no topo da imagem */
   subtitle?: string;
-  image: {
-    /** @description Image for big screens */
-    desktop: ImageWidget;
-    /** @description Image for small screens */
-    mobile: ImageWidget;
-    /** @description image alt text */
-    alt?: string;
-  };
+    /**@title Imagem */
+  images: ImageProps;
 }
 
-const DEFAULT_PROPS = {
-  banners: [
-    {
-      image: {
-        mobile:
-          "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/91102b71-4832-486a-b683-5f7b06f649af",
-        desktop:
-          "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/ec597b6a-dcf1-48ca-a99d-95b3c6304f96",
-        alt: "a",
-      },
-      title: "Woman",
-      matcher: "/*",
-      subtitle: "As",
-    },
-  ],
-};
 
 function Banner(props: SectionProps<ReturnType<typeof loader>>) {
   const { banner } = props;
@@ -47,24 +47,36 @@ function Banner(props: SectionProps<ReturnType<typeof loader>>) {
     return null;
   }
 
-  const { title, subtitle, image } = banner;
+  const { title, subtitle, images } = banner;
+
+  // console.log('images --> ', images)
 
   return (
     <div class="grid grid-cols-1 grid-rows-1">
       <Picture preload class="col-start-1 col-span-1 row-start-1 row-span-1">
-        <Source
-          src={image.mobile}
-          width={360}
-          height={120}
-          media="(max-width: 767px)"
-        />
-        <Source
-          src={image.desktop}
-          width={1440}
-          height={200}
-          media="(min-width: 767px)"
-        />
-        <img class="w-full" src={image.desktop} alt={image.alt ?? title} />
+        {images && images?.desktop && images.desktop?.image && images.desktop?.width && images.desktop?.height && (
+          <Source
+            src={images.desktop.image}
+            width={Number(images.desktop.width)}
+            height={Number(images.desktop.height)}
+            media="(min-width: 768px)"
+          />
+        )}
+
+        {images && images?.mobile && images.mobile?.image && images.mobile?.width && images.mobile?.height && (
+          <Source
+            src={images.mobile.image}
+            width={Number(images.mobile.width)}
+            height={Number(images.mobile.height)}
+            media="(max-width: 767px)"
+          />
+        )}
+        {images && images?.desktop && images.desktop?.image && images.desktop?.width && images.desktop?.height && (
+          <img class="w-full" 
+            src={images.desktop.image} 
+            alt={images.desktop?.alt ?? title}           
+          />
+        )}
       </Picture>
 
       <div class="container flex flex-col items-center justify-center sm:items-start col-start-1 col-span-1 row-start-1 row-span-1 w-full">
@@ -88,9 +100,9 @@ export interface Props {
 }
 
 export const loader = (props: Props, req: Request) => {
-  const { banners } = { ...DEFAULT_PROPS, ...props };
-
-  const banner = banners.find(({ matcher }) =>
+  const { banners } = props;
+  
+  const banner = banners?.find(({ matcher }) =>
     new URLPattern({ pathname: matcher }).test(req.url)
   );
 

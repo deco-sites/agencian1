@@ -132,7 +132,7 @@ function TextWithImageAnimation ( props: SectionProps<ReturnType<typeof loader>>
                             <div class="flex flex-col items-start justify-start">
                                 {settingsText && settingsText?.subtitle && (
                                     <div
-                                        class="mobile:px-[20px] n1-textwithimageanimation__subtitle inline-block font-archimoto-medium text-48 font-black"
+                                        class="mobile:px-[20px] n1-textwithimageanimation__subtitle mobile:[&_*]:!text-24 inline-block font-archimoto-medium text-48 font-black"
                                         dangerouslySetInnerHTML={{
                                             __html: settingsText?.subtitle,
                                         }}
@@ -142,7 +142,7 @@ function TextWithImageAnimation ( props: SectionProps<ReturnType<typeof loader>>
 
                                 {settingsText && settingsText?.paragraph && (
                                     <div
-                                        class="mobile:px-[20px] n1-textwithimageanimation__paragraph inline-block font-noto-sans text-20 mt-[6px]"
+                                        class="mobile:px-[20px] n1-textwithimageanimation__paragraph mobile:[&_*]:!text-16 inline-block font-noto-sans text-20 mt-[6px]"
                                         dangerouslySetInnerHTML={{
                                             __html: settingsText?.paragraph,
                                         }}

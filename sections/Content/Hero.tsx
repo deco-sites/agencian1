@@ -122,7 +122,7 @@ export default function HeroFlats(props: SectionProps<ReturnType<typeof loader>>
           >
             {title && (
               <div
-                class="inline-block font-archimoto-medium n1-hero__title"
+                class="inline-block font-archimoto-medium n1-hero__title mobile:[&_*]:!text-24"
                 dangerouslySetInnerHTML={{
                   __html: title,
                 }}
@@ -130,14 +130,14 @@ export default function HeroFlats(props: SectionProps<ReturnType<typeof loader>>
               </div>
             )}
             {descriptionAnimation &&(              
-              <div class="n1-typing">
+              <div class="n1-typing mobile:[&_*]:!text-24">
                   <span class={`font-archimoto-medium `}>{descriptionAnimation}</span>
               </div>
             )}           
 
             {description && (
               <div
-                class="inline-block font-noto-sans font-normal md:max-w-[80%] n1-hero__description"
+                class="inline-block font-noto-sans font-normal md:max-w-[80%] n1-hero__description mobile:mt-[16px] mobile:mb-[24px] mobile:[&_*]:!text-14"
                 dangerouslySetInnerHTML={{
                   __html: description,
                 }}
@@ -145,7 +145,7 @@ export default function HeroFlats(props: SectionProps<ReturnType<typeof loader>>
               </div>
             )}
             {titleCta && (
-              <div class="inline-block font-medium n1-hero__titleCta md:mt-[30px] md:mb-[20px]"
+              <div class="inline-block font-medium n1-hero__titleCta mobile:mb-[10px] mobile:[&_*]:!text-14 md:mt-[30px] md:mb-[20px]"
                 dangerouslySetInnerHTML={{
                   __html: titleCta,
                 }}

@@ -2,18 +2,29 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 import Icon from "$store/components/ui/Icon.tsx";
 import Image from "apps/website/components/Image.tsx";
 
+interface CtaProps{
+  /** @title Imagem */  
+  href?: string;
+  /** @title Texto do link */    
+  text?: string;
+}
 export interface Props {
+  /**
+   * @title Título
+   * @format textarea
+   */  
   title: string;
   /**
+   * @title Descrição
    * @format textarea
    */
   description: string;
+  /** @title Imagem */  
   image: ImageWidget;
+  /** @title Posicionamento */   
   placement: "left" | "right";
-  cta?: {
-    href?: string;
-    text?: string;
-  };
+  cta?: CtaProps;
+  /** @title Desabilitar espaço? */     
   disableSpacing?: {
     top?: boolean;
     bottom?: boolean;
@@ -37,7 +48,7 @@ export default function ImageSection({
   cta,
 }: Props) {
   return (
-    <div class="w-full">
+    <div class="w-full text-[#ffffff]">
       <div
         class={`flex lg:container lg:max-w-6xl lg:mx-auto mx-5 md:mx-10 ${
           PLACEMENT[placement]

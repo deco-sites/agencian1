@@ -176,7 +176,7 @@ function TextTopWidthCarousel(props: SectionProps<ReturnType<typeof loader>>) {
                     <div class="mobile:my-[24px] mt-[120px] mb-[43px] text-[#ffffff] flex items-center justify-between">
                         <div class="mobile:px-[20px]">
                             {title && (
-                                <h2 class="n1-cases-component__title font-archimoto-medium text-24 leading-[28.8px] md:text-56 md:leading-[20px]"
+                                <h2 class="n1-cases-component__title mobile:[&_*]:!text-24 font-archimoto-medium text-24 leading-[28.8px] md:text-56 md:leading-[20px]"
                                     dangerouslySetInnerHTML={{
                                         __html: title,
                                     }}
