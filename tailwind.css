@@ -383,6 +383,7 @@
       bottom: initial;      
     }    
     .n1-cases-card__tags{grid-template-columns: repeat(3,auto) !important;}
+    .n1-text-width-custom__title{width: 90% !important;}
   }
 
   @media (max-width: 320px){
