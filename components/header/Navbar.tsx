@@ -116,7 +116,7 @@ function Navbar({
             </a>
           )}
         </div>
-        <div class="flex-none flex items-center justify-end gap-6 col-span-1">
+        <div class="hidden flex-none items-center justify-end gap-6 col-span-1">
           {!buttons?.hideSearchButton && (
             <div class="flex items-center text-xs font-thin gap-1">
               <SearchButton />SEARCH
