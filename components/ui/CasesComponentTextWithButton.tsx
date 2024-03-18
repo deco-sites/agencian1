@@ -17,7 +17,7 @@ function CasesComponentTextWithButton({ subtitle, text, textButton, hrefButton, 
             <div class="mobile:my-[24px] text-[#ffffff] flex items-center justify-between">
                 <div>
                     {subtitle && (
-                        <h2 class="n1-cases-component__title font-archimoto-medium text-24 leading-[28.8px] md:text-56 md:leading-[20px]" 
+                        <h2 class="n1-cases-component__title font-archimoto-medium mobile:[&_*]:!text-24 leading-[28.8px] md:text-56 md:leading-[20px]" 
                         dangerouslySetInnerHTML={{__html: subtitle}}> </h2>
                     )}
                     {text && (

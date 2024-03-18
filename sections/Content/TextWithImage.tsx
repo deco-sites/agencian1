@@ -195,12 +195,12 @@ function TextTopWidthCarousel(props: SectionProps<ReturnType<typeof loader>>) {
                     <div class="mobile:my-[24px] mt-[120px] mb-[43px] text-[#ffffff] flex items-center justify-between flex-wrap">
                         <div class="mobile:px-[20px]">
                             {title && (
-                                <div class="n1-text-widt-image__title uppercase font-archimoto-medium text-56 md:text-56 md:leading-[20px]"
+                                <div class="n1-text-widt-image__title mobile:[&_*]:!text-32 mobile:[&_*]:!leading-[38.4px] uppercase font-archimoto-medium md:text-56 md:leading-[20px]"
                                     dangerouslySetInnerHTML={{__html: title}}> 
                                 </div>                                 
                             )}
                             {texto &&  (
-                                <div class="n1-text-widt-image__text md:flex font-noto-sans block mt-[11px] text-20 leading-[26px]"
+                                <div class="n1-text-widt-image__text mobile:[&_*]:!text-14 mobile:[&_*]:!leading-[14px] md:flex font-noto-sans block mt-[11px] text-20 leading-[26px]"
                                     dangerouslySetInnerHTML={{__html: texto}}>                                
                                 </div>
                             )}
