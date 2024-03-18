@@ -13,25 +13,31 @@ import Image from "apps/website/components/Image.tsx";
 import { FnContext, SectionProps } from "deco/mod.ts";
 
 /**
+ * @titleBy title
+ */
+interface ActionProps{
+      /** @title link */
+      /** @description (ex: https://agencian1.com.br/) */
+      href: string;
+      /** @title Título da imagem */
+      title: string;
+      /** @title Subtítulo da imagem */
+      subTitle: string;
+      /** @title Texto do botão */
+      label: string;
+}
+
+/**
  * @titleBy alt
  */
 export interface Banner {
-  /** @description desktop imagem otimizada */
+  /** @title Imagem Desktop */
   desktop: ImageWidget;
-  /** @description mobile imagem otimizada */
+  /** @title Imagem Mobile */
   mobile: ImageWidget;
-  /** @description Image's alt text */
+  /** @title Texto da imagem */
   alt: string;
-  action?: {
-    /** @description when user clicks on the image, go to this link */
-    href: string;
-    /** @description Image text title */
-    title: string;
-    /** @description Image text subtitle */
-    subTitle: string;
-    /** @description Button label */
-    label: string;
-  };
+  action?: ActionProps;
 }
 
 export interface Props {
