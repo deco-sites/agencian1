@@ -21,7 +21,7 @@ function CasesComponentTextWithButton({ subtitle, text, textButton, hrefButton, 
                         dangerouslySetInnerHTML={{__html: subtitle}}> </h2>
                     )}
                     {text && (
-                        <span class="hidden md:flex font-noto-sans-thin text-20 leading-[26px]"> {text} </span>
+                        <span class="hidden md:flex font-noto-sans text-20 leading-[26px]"> {text} </span>
                     )}
                 </div>
             </div>

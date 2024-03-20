@@ -38,7 +38,7 @@ function Legend({ nameItemScape, mobile }: Props){
                                         {!mobile &&(
                                             <>
                                                 <img class="w-[20px] h-[20px] mr-[10px] ml-[20px]" src={`/image/header-sub-menu-${code}.png`} />
-                                                <span class="text-14 font-noto-sans-thin">{language}</span>
+                                                <span class="text-14 font-noto-sans">{language}</span>
                                             </>
                                         )}
                                     </a>

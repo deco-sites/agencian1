@@ -41,7 +41,7 @@ function IconTitleAndTex( props: SectionProps<ReturnType<typeof loader>> ){
     const { icon, title, paragraph, backgroundImage, activeBackground, device } = props;
     const validBackground = device == 'desktop' && activeBackground && backgroundImage && backgroundImage?.src && backgroundImage?.width && backgroundImage?.height;
 
-    console.log('device ---> ', device)
+    // console.log('device ---> ', device)
 
     return(
         <>

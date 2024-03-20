@@ -142,7 +142,7 @@ function TextWithImageAnimation ( props: SectionProps<ReturnType<typeof loader>>
 
                                 {settingsText && settingsText?.paragraph && (
                                     <div
-                                        class="mobile:px-[20px] n1-textwithimageanimation__paragraph mobile:[&_*]:!text-16 inline-block font-noto-sans-thin text-20 mt-[6px]"
+                                        class="mobile:px-[20px] n1-textwithimageanimation__paragraph mobile:[&_*]:!text-16 inline-block font-noto-sans text-20 mt-[6px]"
                                         dangerouslySetInnerHTML={{
                                             __html: settingsText?.paragraph,
                                         }}

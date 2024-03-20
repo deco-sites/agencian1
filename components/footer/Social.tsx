@@ -42,7 +42,7 @@ export default function Social(
                       <span class="block p-1 rounded-full n1-footer__bg-social">
                         <Icon size={40} id={item.label} />
                       </span>
-                      <span class="text-14 font-noto-sans-thin font-normal text-base-150 tracking-[0.98px]"> {item.link} </span>
+                      <span class="text-14 font-noto-sans font-normal text-base-150 tracking-[0.98px]"> {item.link} </span>
                       {vertical && (
                         <div class="text-sm hidden lg:block">{item.label}</div>
                       )}
