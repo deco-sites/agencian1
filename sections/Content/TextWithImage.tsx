@@ -96,7 +96,7 @@ function ImageCarouselItem({ image, lcp, id }: { image: ImageCarousel; lcp?: boo
                     ) }
 
                     { settingsInfo?.text && (
-                        <span class="text-[#ffffff] font-noto-sans md:text-16 font-normal mobile:mb-[32px] md:mb-[30px] n1-text-top-width-image__text"> { settingsInfo?.text } </span>
+                        <span class="text-[#ffffff] font-noto-sans-thin md:text-16 font-normal mobile:mb-[32px] md:mb-[30px] n1-text-top-width-image__text"> { settingsInfo?.text } </span>
                     ) }
 
                     { settingsInfo?.textLink && (                        
@@ -200,7 +200,7 @@ function TextTopWidthCarousel(props: SectionProps<ReturnType<typeof loader>>) {
                                 </div>                                 
                             )}
                             {texto &&  (
-                                <div class="n1-text-widt-image__text mobile:[&_*]:!text-14 mobile:[&_*]:!leading-[14px] md:flex font-noto-sans block mt-[11px] text-20 leading-[26px]"
+                                <div class="n1-text-widt-image__text mobile:[&_*]:!text-14 mobile:[&_*]:!leading-[14px] md:flex font-noto-sans-thin block mt-[11px] text-20 leading-[26px]"
                                     dangerouslySetInnerHTML={{__html: texto}}>                                
                                 </div>
                             )}

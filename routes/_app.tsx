@@ -40,7 +40,7 @@ export default defineApp(async (_req, ctx) => {
         dangerouslySetInnerHTML={{ __html: `(${sw})();` }}
       />
 
-      <style 
+      {/* <style 
         dangerouslySetInnerHTML={{
           __html:`
             @font-face{
@@ -71,10 +71,54 @@ export default defineApp(async (_req, ctx) => {
               font-weight: normal;
               font-style: normal;
               font-display: swap;                           
-            };       
+            };  
+
+            @font-face{
+              font-family: 'NotoSans-Thin';
+              src: url(${asset("/fonts/NotoSans-Thin.ttf")}) format('woff2');
+              font-weight: normal;
+              font-style: normal;
+              font-display: swap;                           
+            };  
+            @font-face{
+              font-family: 'NotoSans-Regular';
+              src: url(${asset("/fonts/NotoSans-Regular.ttf")}) format('woff2');
+              font-weight: normal;
+              font-style: normal;
+              font-display: swap;                           
+            };  
+            @font-face{
+              font-family: 'NotoSans-Medium';
+              src: url(${asset("/fonts/NotoSans-Medium.ttf")}) format('woff2');
+              font-weight: normal;
+              font-style: normal;
+              font-display: swap;                           
+            };  
+            @font-face{
+              font-family: 'NotoSans-Light';
+              src: url(${asset("/fonts/NotoSans-Light.ttf")}) format('woff2');
+              font-weight: normal;
+              font-style: normal;
+              font-display: swap;                           
+            };  
+            @font-face{
+              font-family: 'NotoSans-Bold';
+              src: url(${asset("/fonts/NotoSans-Bold.ttf")}) format('woff2');
+              font-weight: normal;
+              font-style: normal;
+              font-display: swap;                           
+            };  
+
+            @font-face{
+              font-family: 'Montserrat-ExtraLight';
+              src: url(${asset("/fonts/Montserrat-ExtraLight.ttf")}) format('woff2');
+              font-weight: normal;
+              font-style: normal;
+              font-display: swap;                           
+            };
           `
         }}
-      />
+      /> */}
     </>
   );
 });
