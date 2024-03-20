@@ -25,7 +25,7 @@ function Modals({ menu }: Props) {
       {menu && (
         <Modal
           open={displayMenu.value}
-          onClose={() => displayMenu.value = false}          
+          onClose={() => displayMenu.value = false}
           class="backdrop:bg-base-content backdrop:opacity-70"
           loading="lazy"
         >

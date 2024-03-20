@@ -32,7 +32,7 @@ export interface SocialItem {
     | "Tiktok"
     | "Twitter"
     | "Youtube"
-    | "Email";    
+    | "Email";
   link: string;
 }
 
@@ -226,8 +226,10 @@ function Footer({
 
   return (
     <footer class="relative bg-[#0C1F59]">
-      <div class={`md:py-[60px] md:n1-container lg:pr-[93px] lg:pl-[120px] w-full flex flex-col gap-10`}>
-      {/* <div class={`pt-[60px] pb-[60px] n1-container w-full flex flex-col md:pb-10 gap-10 ${ColorClasses(layout)}`}> */}
+      <div
+        class={`md:py-[60px] md:n1-container lg:pr-[93px] lg:pl-[120px] w-full flex flex-col gap-10`}
+      >
+        {/* <div class={`pt-[60px] pb-[60px] n1-container w-full flex flex-col md:pb-10 gap-10 ${ColorClasses(layout)}`}> */}
         <div class="lg:container mx-[20px] md:mx-6 lg:mx-auto z-[2]">
           {(!layout?.variation || layout?.variation == "Variation 1") && (
             <div class="flex flex-col">
@@ -248,10 +250,12 @@ function Footer({
                   {_copyright}
                 </div>
               </div>
-              {/* <div class="flex flex-col-reverse md:flex-row md:justify-between gap-10">
+              {
+                /* <div class="flex flex-col-reverse md:flex-row md:justify-between gap-10">
                 <PoweredByDeco />
                 {_links}
-              </div> */}
+              </div> */
+              }
             </div>
           )}
           {layout?.variation == "Variation 2" && (
@@ -269,7 +273,7 @@ function Footer({
                   {_sectionLinks}
                 </div>
               </div>
-            
+
               <div class="flex flex-col-reverse md:flex-row md:justify-between gap-10">
                 <PoweredByDeco />
                 {_links}
@@ -295,7 +299,7 @@ function Footer({
                   {_region}
                 </div>
               </div>
-            
+
               <div class="flex flex-col-reverse md:flex-row md:justify-between gap-10">
                 <PoweredByDeco />
                 {_links}
@@ -323,7 +327,7 @@ function Footer({
                   </div>
                 </div>
               </div>
-              
+
               <div class="flex flex-col md:flex-row md:justify-between gap-10 md:items-center">
                 {_logo}
                 <PoweredByDeco />
@@ -343,7 +347,7 @@ function Footer({
                   {_apps}
                 </div>
               </div>
-              
+
               <div class="flex flex-col-reverse md:flex-row md:justify-between gap-10 md:items-center">
                 {/* <PoweredByDeco /> */}
                 <div class="flex flex-col md:flex-row gap-10 md:items-center">
@@ -359,10 +363,13 @@ function Footer({
         ? <></>
         : <BackToTop content={backToTheTop?.text} />}
       <div class="overflow-hidden n1-footer__overlay w-full h-full absolute bottom-0 block">
-        <span class="n1-footer__overlay--bottom-left w-[1068px] h-[560px]"></span>
+        <span class="n1-footer__overlay--bottom-left w-[1068px] h-[560px]">
+        </span>
         <span class="n1-footer__overlay--bottom w-[1068px] h-[560px]"></span>
-        <span class="n1-footer__overlay--bottom-right w-[764px] h-[416px] mobile:w-[850px] mobile:h-[500px]"></span>
-        <span class="n1-footer__overlay--middle-right w-[764px] h-[416px] mobile:w-[373px]"></span>
+        <span class="n1-footer__overlay--bottom-right w-[764px] h-[416px] mobile:w-[850px] mobile:h-[500px]">
+        </span>
+        <span class="n1-footer__overlay--middle-right w-[764px] h-[416px] mobile:w-[373px]">
+        </span>
       </div>
     </footer>
   );

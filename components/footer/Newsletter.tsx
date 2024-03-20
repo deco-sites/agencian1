@@ -45,20 +45,36 @@ function Newsletter(
 
   return (
     <div
-      class={clx(`flex -order-1 ${tiled
-          ? "flex-col lg:flex-row lg:w-full lg:justify-between"
-          : "flex-col"}`)}>
+      class={clx(
+        `flex -order-1 ${
+          tiled
+            ? "flex-col lg:flex-row lg:w-full lg:justify-between"
+            : "flex-col"
+        }`,
+      )}
+    >
       <div class="flex flex-col">
         {content?.title && (
-          <h4 class={clx(`mobile:max-w-[100%] max-w-[90%] mobile:text-32 md:text-48 mobile:mt-[50px]
-          text-base-150 font-black font-archimoto-medium ${tiled} ? "text-2xl lg:text-3xl" : "text-lg"`)}>
+          <h4
+            class={clx(
+              `mobile:max-w-[100%] max-w-[90%] mobile:text-32 md:text-48 mobile:mt-[50px]
+          text-base-150 font-black font-archimoto-medium ${tiled} ? "text-2xl lg:text-3xl" : "text-lg"`,
+            )}
+          >
             {content?.title}
           </h4>
         )}
         {content?.description &&
-          <div class={clx(`pt-[10px] pb-[24px] md:pb-[30px] max-w-[90%] mobile:max-w-[100%] xl:max-w-[80%] 
-            font-noto-sans mobile:text-14 md:text-16 text-base-150 md:leading-[25.6px]`)}>{content?.description}</div>
-          }
+          (
+            <div
+              class={clx(
+                `pt-[10px] pb-[24px] md:pb-[30px] max-w-[90%] mobile:max-w-[100%] xl:max-w-[80%] 
+            font-noto-sans mobile:text-14 md:text-16 text-base-150 md:leading-[25.6px]`,
+              )}
+            >
+              {content?.description}
+            </div>
+          )}
       </div>
       <div class="flex flex-col">
         <form

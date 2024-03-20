@@ -6,7 +6,7 @@ import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Alert from "./Alert.tsx";
 import Navbar from "./Navbar.tsx";
 import { headerHeight } from "./constants.ts";
-import LinkTelephoneWithOptionArrow from '../ui/LinkTelephoneWithOptionArrow.tsx';
+import LinkTelephoneWithOptionArrow from "../ui/LinkTelephoneWithOptionArrow.tsx";
 import { HTMLWidget as HTML } from "apps/admin/widgets.ts";
 
 export interface Logo {
@@ -28,12 +28,12 @@ export interface Buttons {
   hideCartButton?: boolean;
 }
 
-export interface PropsChildren extends SiteNavigationElement{
+export interface PropsChildren extends SiteNavigationElement {
   /** @title Título Submenu*/
-  titleSubMenu?: HTML;   
+  titleSubMenu?: HTML;
 
   /** @title Descrição Submenu */
-  descriptionSubMenu?: HTML; 
+  descriptionSubMenu?: HTML;
 
   /** @title Texto para Link do botão */
   /** @description (ex: conheça mais dos nossos serviços ) */
@@ -72,9 +72,9 @@ export interface Props {
 
   /** @title Botão (texto) */
   /** @description (ex: conheça nosso site ) */
-  btnTextMenu?: string;  
+  btnTextMenu?: string;
 
-  buttons?: Buttons; 
+  buttons?: Buttons;
 }
 
 function Header({
@@ -86,7 +86,7 @@ function Header({
   logoPosition = "center",
   whatsapp,
   btnTextMenu,
-  buttons
+  buttons,
 }: Props) {
   const platform = usePlatform();
   const items = navItems ?? [];
@@ -95,13 +95,15 @@ function Header({
     <>
       <header style={{ height: headerHeight }}>
         <Drawers
-          menu={{ items,whatsapp}}
+          menu={{ items, whatsapp }}
           searchbar={searchbar}
           platform={platform}
           logoMobile={logoMobile}
         >
           <div class="fixed w-full z-50 n1-header__desktop">
-            <div class={'grid grid-cols-2-auto md:n1-container md:px-[120px] items-center portatil:max-w-[90%] portatil:px-0'}>
+            <div
+              class={"grid grid-cols-2-auto md:n1-container md:px-[120px] items-center portatil:max-w-[90%] portatil:px-0"}
+            >
               {alerts && alerts.length > 0 && <Alert alerts={alerts} />}
               <Navbar
                 items={items}
@@ -113,10 +115,13 @@ function Header({
               />
               {whatsapp && (
                 <div class="mobile:flex mobile:justify-center">
-                  <LinkTelephoneWithOptionArrow fontSize='14' activeArrow={true} telephone={whatsapp} />
-                </div>                
-              )}            
-              
+                  <LinkTelephoneWithOptionArrow
+                    fontSize="14"
+                    activeArrow={true}
+                    telephone={whatsapp}
+                  />
+                </div>
+              )}
             </div>
           </div>
         </Drawers>

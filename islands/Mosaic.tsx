@@ -1,1 +1,1 @@
-export { default } from '$store/sections/Content/Mosaic.tsx';
+export { default } from "$store/sections/Content/Mosaic.tsx";

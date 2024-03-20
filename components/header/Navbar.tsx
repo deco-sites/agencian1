@@ -14,29 +14,30 @@ import Image from "apps/website/components/Image.tsx";
 import NavItem from "./NavItem.tsx";
 import { navbarHeight } from "./constants.ts";
 import { Buttons, Logo } from "$store/components/header/Header.tsx";
-import Legend from '$store/components/header/Legend.tsx';
+import Legend from "$store/components/header/Legend.tsx";
 
-interface Props{
+interface Props {
   items: SiteNavigationElement[];
   searchbar?: SearchbarProps;
   logo?: Logo;
   buttons?: Buttons;
   logoPosition?: "left" | "center";
-  nameItemScape?:string;
-  btnTextMenu?:string;
-  btnUrlMenu?:string;
+  nameItemScape?: string;
+  btnTextMenu?: string;
+  btnUrlMenu?: string;
 }
 
 function Navbar({
-    items, 
-    searchbar, 
-    logo, 
-    buttons, 
-    logoPosition = "left", 
-    btnTextMenu, btnUrlMenu
-  }:Props) {
+  items,
+  searchbar,
+  logo,
+  buttons,
+  logoPosition = "left",
+  btnTextMenu,
+  btnUrlMenu,
+}: Props) {
   const platform = usePlatform();
-  const itemLegend = 'legenda';
+  const itemLegend = "legenda";
 
   return (
     <>
@@ -81,15 +82,14 @@ function Navbar({
           }`}
         >
           {items.map((item) => {
-            return(
-              <NavItem 
-                item={item} 
-                btnTextMenu={btnTextMenu} 
-                btnUrlMenu={btnUrlMenu} 
-                />            
-              )
-            })
-          }
+            return (
+              <NavItem
+                item={item}
+                btnTextMenu={btnTextMenu}
+                btnUrlMenu={btnUrlMenu}
+              />
+            );
+          })}
 
           <Legend nameItemScape={itemLegend} />
         </ul>
@@ -111,7 +111,7 @@ function Navbar({
                 alt={logo.alt}
                 width={logo.width || 100}
                 height={logo.height || 13}
-                class={'min-w-[125px]'}
+                class={"min-w-[125px]"}
               />
             </a>
           )}
