@@ -102,10 +102,6 @@ interface Props{
 function Mosaic( props: SectionProps<ReturnType<typeof loader>> ){
     const { imageTop, imageBottom, device } = props;
 
-    // console.log('imageTop ----> ', imageTop)
-    // console.log('imageBottom ----> ', imageBottom)
-    // console.log('Mosaic device -----> ', device)
-
     function handleMouserHover( e:MouseEvent  ){
         const { target } = e;
         if(!target) return;
@@ -158,7 +154,7 @@ function Mosaic( props: SectionProps<ReturnType<typeof loader>> ){
                                                 {text && text?.text && (
                                                     <span 
                                                         class={clx(`n1-mosaic__text mobile:[&_*]:!text-12 is-${text && text?.bgColor === 'base-50' ? 'white' : 'primary' } 
-                                                        font-noto-sans font-normal mt-[5px]`)}>
+                                                        font-noto-sans-thin font-normal mt-[5px]`)}>
 
                                                         {text.text}
                                                     </span>
@@ -230,7 +226,7 @@ function Mosaic( props: SectionProps<ReturnType<typeof loader>> ){
                                             {text && text?.text && (                                                
                                                 <span 
                                                     class={clx(`n1-mosaic__text is-${text && text?.bgColor === 'base-50' ? 'white' : 'primary' } 
-                                                        text-13 font-noto-sans font-normal mt-[5px]`)}>
+                                                        text-13 font-noto-sans-thin font-normal mt-[5px]`)}>
                                                     {text.text}
                                                 </span>
                                             )}

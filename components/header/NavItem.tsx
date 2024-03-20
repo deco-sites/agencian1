@@ -82,7 +82,7 @@ function NavItem({ item, btnTextMenu, btnUrlMenu }: Props) {
                   }
 
                   {activePropsText && descriptionSubMenu &&(
-                    <div class="font-noto-sans text-16 n1-header__navlink-children-description normal-case" 
+                    <div class="font-noto-sans-thin text-16 n1-header__navlink-children-description normal-case" 
                       dangerouslySetInnerHTML={{ __html: descriptionSubMenu || "" }}>
                     </div>
                   )}

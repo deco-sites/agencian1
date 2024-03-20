@@ -1,7 +1,6 @@
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import type { SectionProps } from "deco/types.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
 
 /** @titleBy alt */
 interface ImageGeneric{
@@ -96,6 +95,7 @@ function Banner(props: SectionProps<ReturnType<typeof loader>>) {
 }
 
 export interface Props {
+  /**@maxItems 1 */
   banners?: Banner[];
 }
 
