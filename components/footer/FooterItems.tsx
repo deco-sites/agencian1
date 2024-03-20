@@ -43,7 +43,7 @@ export default function FooterItems(
                               (
                                 <li>
                                   <a href={item.href} 
-                                    class={clx(`text-[14px] leading-[21.6px] block py-1 link link-hover md:text-16 font-noto-sans-thin font-normal text-base-150`)}>
+                                    class={clx(`text-[14px] leading-[21.6px] block py-1 link link-hover md:text-16 font-noto-sans font-normal text-base-150`)}>
                                     {item.label}
                                   </a>
                                 </li>                              

@@ -13,11 +13,7 @@ export default {
       "base-400" : "#9B9B9B"
     },
     fontFamily:{
-      'noto-sans-thin'    : 'NotoSans-Thin',
-      'noto-sans-regular' : 'NotoSans-Regular',
-      'noto-sans-medium'  : 'NotoSans-Medium',
-      'noto-sans-light'   : 'NotoSans-Light',
-      'noto-sans-bold'    : 'NotoSans-Bold',
+      'noto-sans'         : 'Noto Sans',
       'archimoto-thin'    : 'ArchimotoN1-Thin',
       'archimoto-regular' : 'ArchimotoN1-Regular',
       'archimoto-medium'  : 'ArchimotoV01-Medium',

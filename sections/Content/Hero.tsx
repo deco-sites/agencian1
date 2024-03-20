@@ -137,7 +137,7 @@ export default function HeroFlats(props: SectionProps<ReturnType<typeof loader>>
 
             {description && (
               <div
-                class="inline-block font-noto-sans-thin font-normal md:max-w-[80%] n1-hero__description mobile:mt-[16px] mobile:mb-[24px] mobile:[&_*]:!text-14"
+                class="inline-block font-noto-sans font-normal md:max-w-[80%] n1-hero__description mobile:mt-[16px] mobile:mb-[24px] mobile:[&_*]:!text-14"
                 dangerouslySetInnerHTML={{
                   __html: description,
                 }}
@@ -172,7 +172,7 @@ export default function HeroFlats(props: SectionProps<ReturnType<typeof loader>>
                       <span class={`mobile:text-20 mobile:leading-[24px] text-secondary font-bold font-archimoto-medium text-50 relative`}>
                         {item?.text}
                       </span>
-                      <span class={`mobile:text-12 mobile:leading-[16.8px] text-[#ffffff] relative font-normal font-noto-sans-thin md:text-18 md:max-w-[80%]`}>
+                      <span class={`mobile:text-12 mobile:leading-[16.8px] text-[#ffffff] relative font-normal font-noto-sans md:text-18 md:max-w-[80%]`}>
                         {item?.text2} 
                       </span>
                     </a>

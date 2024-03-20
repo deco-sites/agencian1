@@ -204,7 +204,7 @@ export default function ImageSection( props: SectionProps<ReturnType<typeof load
                     </div>
 
                     {description && (
-                        <div class="n1-text-icon-image__description mobile:my-[20px] [&_*]:!font-noto-sans-thin [&_*]:!text-[14px] [&_*]:!leading-[19.4px]"
+                        <div class="n1-text-icon-image__description mobile:my-[20px] [&_*]:!font-noto-sans [&_*]:!text-[14px] [&_*]:!leading-[19.4px]"
                             dangerouslySetInnerHTML={{__html: description}}>
 
                         </div>                        

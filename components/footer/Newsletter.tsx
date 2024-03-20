@@ -57,7 +57,7 @@ function Newsletter(
         )}
         {content?.description &&
           <div class={clx(`pt-[10px] pb-[24px] md:pb-[30px] max-w-[90%] mobile:max-w-[100%] xl:max-w-[80%] 
-            font-noto-sans-thin mobile:text-14 md:text-16 text-base-150 md:leading-[25.6px]`)}>{content?.description}</div>
+            font-noto-sans mobile:text-14 md:text-16 text-base-150 md:leading-[25.6px]`)}>{content?.description}</div>
           }
       </div>
       <div class="flex flex-col">
@@ -68,7 +68,7 @@ function Newsletter(
           <div class="flex flex-wrap gap-[18px]">
             <input
               name="email"
-              class="bg-[#ffffff] flex-auto md:flex-none input input-bordered md:w-[273px] bg-white text-base-content font-noto-sans-thin rounded-[90px] text-14 n1-text-base-400"
+              class="bg-[#ffffff] flex-auto md:flex-none input input-bordered md:w-[273px] bg-white text-base-content font-noto-sans rounded-[90px] text-14 n1-text-base-400"
               placeholder={content?.form?.placeholder || "Digite seu email"}
             />
             <button
