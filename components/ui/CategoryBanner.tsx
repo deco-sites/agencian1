@@ -3,25 +3,24 @@ import type { SectionProps } from "deco/types.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 
 /** @titleBy alt */
-interface ImageGeneric{
+interface ImageGeneric {
   /**@title Imagem */
-  image:ImageWidget
-  /**@title largura da imagem */  
-  /**@description (ex: 600) */  
-  width:string;
-  /**@title Altura da imagem */  
-  /**@description (ex: 300) */  
-  height:string;
+  image: ImageWidget;
+  /**@title largura da imagem */
+  /**@description (ex: 600) */
+  width: string;
+  /**@title Altura da imagem */
+  /**@description (ex: 300) */
+  height: string;
   // Nome da Imagem
-  alt:string;
+  alt: string;
 }
 
-
-interface ImageProps{
-    /** @description Image for big screens */
-    desktop: ImageGeneric;
-    /** @description Image for small screens */
-    mobile: ImageGeneric;
+interface ImageProps {
+  /** @description Image for big screens */
+  desktop: ImageGeneric;
+  /** @description Image for small screens */
+  mobile: ImageGeneric;
 }
 
 /**
@@ -34,10 +33,9 @@ export interface Banner {
   title?: string;
   /** @description Subtítulo a ser renderizado no topo da imagem */
   subtitle?: string;
-    /**@title Imagem */
+  /**@title Imagem */
   images: ImageProps;
 }
-
 
 function Banner(props: SectionProps<ReturnType<typeof loader>>) {
   const { banner } = props;
@@ -53,7 +51,8 @@ function Banner(props: SectionProps<ReturnType<typeof loader>>) {
   return (
     <div class="grid grid-cols-1 grid-rows-1">
       <Picture preload class="col-start-1 col-span-1 row-start-1 row-span-1">
-        {images && images?.desktop && images.desktop?.image && images.desktop?.width && images.desktop?.height && (
+        {images && images?.desktop && images.desktop?.image &&
+          images.desktop?.width && images.desktop?.height && (
           <Source
             src={images.desktop.image}
             width={Number(images.desktop.width)}
@@ -62,7 +61,8 @@ function Banner(props: SectionProps<ReturnType<typeof loader>>) {
           />
         )}
 
-        {images && images?.mobile && images.mobile?.image && images.mobile?.width && images.mobile?.height && (
+        {images && images?.mobile && images.mobile?.image &&
+          images.mobile?.width && images.mobile?.height && (
           <Source
             src={images.mobile.image}
             width={Number(images.mobile.width)}
@@ -70,10 +70,12 @@ function Banner(props: SectionProps<ReturnType<typeof loader>>) {
             media="(max-width: 767px)"
           />
         )}
-        {images && images?.desktop && images.desktop?.image && images.desktop?.width && images.desktop?.height && (
-          <img class="w-full" 
-            src={images.desktop.image} 
-            alt={images.desktop?.alt ?? title}           
+        {images && images?.desktop && images.desktop?.image &&
+          images.desktop?.width && images.desktop?.height && (
+          <img
+            class="w-full"
+            src={images.desktop.image}
+            alt={images.desktop?.alt ?? title}
           />
         )}
       </Picture>
@@ -101,7 +103,7 @@ export interface Props {
 
 export const loader = (props: Props, req: Request) => {
   const { banners } = props;
-  
+
   const banner = banners?.find(({ matcher }) =>
     new URLPattern({ pathname: matcher }).test(req.url)
   );

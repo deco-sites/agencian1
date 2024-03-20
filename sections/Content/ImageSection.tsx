@@ -2,29 +2,29 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 import Icon from "$store/components/ui/Icon.tsx";
 import Image from "apps/website/components/Image.tsx";
 
-interface CtaProps{
-  /** @title Imagem */  
+interface CtaProps {
+  /** @title Imagem */
   href?: string;
-  /** @title Texto do link */    
+  /** @title Texto do link */
   text?: string;
 }
 export interface Props {
   /**
    * @title Título
    * @format textarea
-   */  
+   */
   title: string;
   /**
    * @title Descrição
    * @format textarea
    */
   description: string;
-  /** @title Imagem */  
+  /** @title Imagem */
   image: ImageWidget;
-  /** @title Posicionamento */   
+  /** @title Posicionamento */
   placement: "left" | "right";
   cta?: CtaProps;
-  /** @title Desabilitar espaço? */     
+  /** @title Desabilitar espaço? */
   disableSpacing?: {
     top?: boolean;
     bottom?: boolean;

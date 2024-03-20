@@ -32,25 +32,30 @@ interface PropsAside {
   whatsapp?: string;
 }
 
-const Aside = ({ title, onClose, children, logoMobile, whatsapp }: PropsAside ) => {
-  const titleScape = title ? 'is-' + title?.toLocaleLowerCase() : '';
+const Aside = (
+  { title, onClose, children, logoMobile, whatsapp }: PropsAside,
+) => {
+  const titleScape = title ? "is-" + title?.toLocaleLowerCase() : "";
 
-  if( titleScape === 'is-menu' ){
-    return(
+  if (titleScape === "is-menu") {
+    return (
       <div class="bg-[#ffffff] grid grid-rows-[auto_1fr] h-full divide-y w-[85%] px-[20px] pt-[20px] pb-[40px]">
         <div class={`flex justify-between items-center ${titleScape}`}>
-          { logoMobile && (
+          {logoMobile && (
             <div class="n1-header-mobile__logo">
               <Image
                 src={logoMobile.src}
                 alt={logoMobile.alt}
                 width={logoMobile.width || 100}
                 height={logoMobile.height || 13}
-              />            
+              />
             </div>
-          ) }
+          )}
           {onClose && (
-            <Button onClick={onClose} class="btn btn-ghost absolute right-[-50px] top-[10px] p-0">
+            <Button
+              onClick={onClose}
+              class="btn btn-ghost absolute right-[-50px] top-[10px] p-0"
+            >
               <Icon id="CloseMenuMobile" size={38} strokeWidth={2} />
             </Button>
           )}
@@ -65,9 +70,9 @@ const Aside = ({ title, onClose, children, logoMobile, whatsapp }: PropsAside ) 
           {children}
         </Suspense>
       </div>
-    )
+    );
   } else {
-    return(
+    return (
       <div class="bg-base-100 grid grid-rows-[auto_1fr] h-full divide-y max-w-[100vw]">
         <div class={`flex justify-between items-center ${titleScape}`}>
           <h1 class="px-4 py-3">
@@ -89,7 +94,7 @@ const Aside = ({ title, onClose, children, logoMobile, whatsapp }: PropsAside ) 
           {children}
         </Suspense>
       </div>
-    )
+    );
   }
 };
 
