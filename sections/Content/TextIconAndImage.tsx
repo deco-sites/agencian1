@@ -102,6 +102,10 @@ export interface Props {
 
   /** @title Imagem */
   image: ImagemDeskAndMobile;
+
+  /** @title Imagem espiral de fundo? */
+  bgSpital?:boolean;
+
   /** @title Posicionamento */
   placement: "esquerdo" | "direito";
   /** @title Desabilitar espaçamento? */
@@ -127,6 +131,7 @@ export default function ImageSection(
     blockText,
     image,
     placement,
+    bgSpital,
     disableSpacing,
     disabledProps,
     device,
@@ -144,193 +149,206 @@ export default function ImageSection(
   } = blockText;
 
   return (
-    <div
-      class={clx(
-        `w-full text-[#ffffff] mobile:px-[20px] md:n1-container md:px-[120px]
-            ${disableSpacing?.top ? "" : "md:pt-[80px] mobile:mt-[40px]"} 
-            ${disableSpacing?.bottom ? "" : "md:pb-[80px] mobile:mb-[60px]"}`,
-      )}
-    >
-      {titleCenter && (
-        <div
-          class={clx(
-            `n1-text-icon-image__titleCenter [&_*]:mobile:!text-24 font-archimoto-medium mb-[60px] [&_*]:!text-48 text-center 
-                    md:leading-[57.6px] font-black`,
-          )}
-          dangerouslySetInnerHTML={{ __html: titleCenter }}
-        >
+    <div class="relative">
+      {bgSpital && (
+        <div class="hidden md:flex absolute top-0 left-0 w-full h-full z-0">
+          <img 
+            width={282}
+            height={396}
+            src="image/image-espiral-21deg.png"
+            class="hidden md:flex absolute right-0 -bottom-[140px]"
+            loading="lazy"/>
         </div>
       )}
+
       <div
         class={clx(
-          `n1-text-icon-image__container flex justify-between md:gap-x-[60px] mobile:mt-[60px] relative 
-                    ${PLACEMENT[placement]} text-left items-center z-10 ${
-            activeEclipseText && device === "desktop" ? "is-active" : ""
-          }
-                    ${placement === "direito" ? "is-active--rigth-0" : ""}
-                `,
+          `relative z-10 w-full text-[#ffffff] mobile:px-[20px] md:n1-container md:px-[120px]
+              ${disableSpacing?.top ? "" : "md:pt-[80px] mobile:mt-[40px]"} 
+              ${disableSpacing?.bottom ? "" : "md:pb-[80px] mobile:mb-[60px]"}`,
         )}
       >
-        {image && (
-          <div class="flex justify-center mobile:mb-[40px] relative">
-            <Picture>
-              {image?.desktop && image.desktop?.src && image.desktop?.width &&
-                image?.desktop?.height && (
-                <Source
-                  src={image.desktop.src}
-                  width={Number(image.desktop.width)}
-                  height={Number(image.desktop.height)}
-                  media="(min-width: 768px)"
-                />
-              )}
-
-              {image?.mobile && image.mobile?.src && image.mobile?.width &&
-                image?.mobile?.height && (
-                <Source
-                  src={image.mobile.src}
-                  width={Number(image.mobile.width)}
-                  height={Number(image.mobile.height)}
-                  media="(max-width: 767px)"
-                />
-              )}
-
-              {image?.desktop && image.desktop?.src && image.desktop?.width &&
-                image?.desktop?.height && (
-                <div
-                  class={`n1-text-icon-image__image flex justify-center items-center ${
-                    image?.activeEclipse ? "is-active" : ""}`}
-                >
-                  <img
-                    src={image.desktop.src}
-                    alt={"Imagem"}
-                    loading="lazy"
-                  />
-                </div>
-              )}
-            </Picture>
+        {titleCenter && (
+          <div
+            class={clx(
+              `n1-text-icon-image__titleCenter [&_*]:mobile:!text-24 font-archimoto-medium mb-[60px] [&_*]:!text-48 text-center 
+                      md:leading-[57.6px] font-black`,
+            )}
+            dangerouslySetInnerHTML={{ __html: titleCenter }}
+          >
           </div>
         )}
         <div
-          style={{
-            width: `${
-              widthBlock && device === "desktop"
-                ? widthBlock + "%"
-                : device === "mobile"
-                ? "100%"
-                : "50%"
-            }`,
-          }}
+          class={clx(
+            `n1-text-icon-image__container flex justify-between md:gap-x-[60px] mobile:mt-[60px] relative 
+                      ${PLACEMENT[placement]} text-left items-center z-10 ${
+              activeEclipseText && device === "desktop" ? "is-active" : ""
+            }
+                      ${placement === "direito" ? "is-active--rigth-0" : ""}
+                  `,
+          )}
         >
-          {icon && !disabledProps?.icon && (
-            <img class="md:mb-[8px] mobile:w-[50px]" src={icon} />
-          )}
+          {image && (
+            <div class="flex justify-center mobile:mb-[40px] relative max-w-[50%]">
+              <Picture>
+                {image?.desktop && image.desktop?.src && image.desktop?.width &&
+                  image?.desktop?.height && (
+                  <Source
+                    src={image.desktop.src}
+                    width={Number(image.desktop.width)}
+                    height={Number(image.desktop.height)}
+                    media="(min-width: 768px)"
+                  />
+                )}
 
-          {nameIcon && (
-            <span class="text-18 font-archimoto-medium font-normal">
-              {nameIcon}
-            </span>
-          )}
+                {image?.mobile && image.mobile?.src && image.mobile?.width &&
+                  image?.mobile?.height && (
+                  <Source
+                    src={image.mobile.src}
+                    width={Number(image.mobile.width)}
+                    height={Number(image.mobile.height)}
+                    media="(max-width: 767px)"
+                  />
+                )}
 
-          <div class="md:mb-[20px] flex items-center flex-wrap">
-            {subtitle && (
+                {image?.desktop && image.desktop?.src && image.desktop?.width &&
+                  image?.desktop?.height && (
+                  <div
+                    class={`n1-text-icon-image__image flex justify-center items-center ${
+                      image?.activeEclipse ? "is-active" : ""}`}
+                  >
+                    <img
+                      src={image.desktop.src}
+                      alt={"Imagem"}
+                      loading="lazy"
+                    />
+                  </div>
+                )}
+              </Picture>
+            </div>
+          )}
+          <div
+            style={{
+              width: `${
+                widthBlock && device === "desktop"
+                  ? widthBlock + "%"
+                  : device === "mobile"
+                  ? "50%"
+                  : "50%"
+              }`,
+            }}
+          >
+            {icon && !disabledProps?.icon && (
+              <img class="md:mb-[8px] mobile:w-[50px]" src={icon} />
+            )}
+
+            {nameIcon && (
+              <span class="text-18 font-archimoto-medium font-normal">
+                {nameIcon}
+              </span>
+            )}
+
+            <div class="md:mb-[20px] flex items-center flex-wrap">
+              {subtitle && (
+                <div
+                  class="n1-text-icon-image__subtitle mobile:mt-[24px] mobile:[&_*]:!text-20 font-archimoto-medium font-black md:text-[32px]"
+                  dangerouslySetInnerHTML={{ __html: subtitle }}
+                >
+                </div>
+              )}
+
+              <div class={`flex mobile:gap-x-[16px] mobile:mt-[16px]`}>
+                {!disabledProps?.tags && subtitleWithTags &&
+                  subtitleWithTags.map(({ name, tag }) => {
+                    return (
+                      <>
+                        <img
+                          class="md:ml-[16px]"
+                          src={tag?.desktop?.src}
+                          width={tag?.desktop?.width}
+                          height={tag?.desktop?.height}
+                          alt={name ?? "Tag"}
+                        />
+                      </>
+                    );
+                  })}
+              </div>
+            </div>
+
+            {description && (
               <div
-                class="n1-text-icon-image__subtitle mobile:mt-[24px] mobile:[&_*]:!text-20 font-archimoto-medium font-black md:text-[32px]"
-                dangerouslySetInnerHTML={{ __html: subtitle }}
+                class="n1-text-icon-image__description mobile:my-[20px] [&_*]:!font-noto-sans [&_*]:!text-[14px] [&_*]:!leading-[19.4px]"
+                dangerouslySetInnerHTML={{ __html: description }}
               >
               </div>
             )}
 
-            <div class={`flex mobile:gap-x-[16px] mobile:mt-[16px]`}>
-              {!disabledProps?.tags && subtitleWithTags &&
-                subtitleWithTags.map(({ name, tag }) => {
+            <div class="flex md:-ml-[15px] md:mt-[20px] mobile:grid mobile:grid-cols-[repeat(2,_auto)]">
+              {!disabledProps?.miniImage && miniImage && miniImage?.length > 1 &&
+                miniImage.map(({ image }) => {
+                  const { desktop, mobile } = image;
                   return (
                     <>
-                      <img
-                        class="md:ml-[16px]"
-                        src={tag?.desktop?.src}
-                        width={tag?.desktop?.width}
-                        height={tag?.desktop?.height}
-                        alt={name ?? "Tag"}
-                      />
+                      <Picture>
+                        {desktop && desktop?.src && desktop?.width &&
+                          desktop?.height && (
+                          <Source
+                            media="(max-width: 767px)"
+                            src={desktop.src}
+                            width={Number(desktop.width)}
+                            height={Number(desktop.height)}
+                          />
+                        )}
+                        {mobile && mobile?.src && mobile?.width &&
+                          mobile?.height && (
+                          <Source
+                            media="(max-width: 767px)"
+                            src={mobile.src}
+                            width={Number(mobile.width)}
+                            height={Number(mobile.height)}
+                          />
+                        )}
+                        {desktop && desktop?.src && desktop?.width &&
+                          desktop?.height && (
+                          <img
+                            loading={"lazy"}
+                            src={desktop.src}
+                            width={Number(desktop.width)}
+                            height={Number(desktop.height)}
+                            alt={"Mini imagens"}
+                          />
+                        )}
+                      </Picture>
                     </>
                   );
                 })}
             </div>
+
+            {cta?.text && (
+              <div class="md:mt-[20px]">
+                {!cta?.colorLink && (
+                    <LinkWithOptionArrow
+                      text={cta.text}
+                      link={cta?.href}
+                      activeArrow={true}
+                      width={"140"}
+                      fontSize="14"
+                      margin={"0"}
+                    />
+                )}
+                {cta?.colorLink && (
+                    <LinkWithOptionArrow
+                      text={cta.text}
+                      link={cta?.href}
+                      activeArrowService={true}
+                      width={"220"}
+                      fontSize="14"
+                      margin={"0"}
+                    />
+                )}
+              </div>
+            )}
           </div>
-
-          {description && (
-            <div
-              class="n1-text-icon-image__description mobile:my-[20px] [&_*]:!font-noto-sans [&_*]:!text-[14px] [&_*]:!leading-[19.4px]"
-              dangerouslySetInnerHTML={{ __html: description }}
-            >
-            </div>
-          )}
-
-          <div class="flex md:-ml-[15px] md:mt-[20px] mobile:grid mobile:grid-cols-[repeat(2,_auto)]">
-            {!disabledProps?.miniImage && miniImage && miniImage?.length > 1 &&
-              miniImage.map(({ image }) => {
-                const { desktop, mobile } = image;
-                return (
-                  <>
-                    <Picture>
-                      {desktop && desktop?.src && desktop?.width &&
-                        desktop?.height && (
-                        <Source
-                          media="(max-width: 767px)"
-                          src={desktop.src}
-                          width={Number(desktop.width)}
-                          height={Number(desktop.height)}
-                        />
-                      )}
-                      {mobile && mobile?.src && mobile?.width &&
-                        mobile?.height && (
-                        <Source
-                          media="(max-width: 767px)"
-                          src={mobile.src}
-                          width={Number(mobile.width)}
-                          height={Number(mobile.height)}
-                        />
-                      )}
-                      {desktop && desktop?.src && desktop?.width &&
-                        desktop?.height && (
-                        <img
-                          loading={"lazy"}
-                          src={desktop.src}
-                          width={Number(desktop.width)}
-                          height={Number(desktop.height)}
-                          alt={"Mini imagens"}
-                        />
-                      )}
-                    </Picture>
-                  </>
-                );
-              })}
-          </div>
-
-          {cta?.text && (
-            <div class="md:mt-[20px]">
-              {!cta?.colorLink && (
-                  <LinkWithOptionArrow
-                    text={cta.text}
-                    link={cta?.href}
-                    activeArrow={true}
-                    width={"140"}
-                    fontSize="14"
-                    margin={"0"}
-                  />
-              )}
-              {cta?.colorLink && (
-                  <LinkWithOptionArrow
-                    text={cta.text}
-                    link={cta?.href}
-                    activeArrowService={true}
-                    width={"220"}
-                    fontSize="14"
-                    margin={"0"}
-                  />
-              )}
-            </div>
-          )}
         </div>
       </div>
     </div>
