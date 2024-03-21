@@ -319,40 +319,6 @@
     -webkit-box-orient: vertical;    
   }
 
-  
-  .n1-text-icon-image__container.is-active:after{
-    content: "";
-    border-radius: var(--radius-default, 1105.45px);
-    opacity: 0.3;
-    background: radial-gradient(105.4% 101.68% at 89.06% 88.91%, #3CCBDA 43.01%, #0C1F59 88.98%);
-    filter: blur(82px);
-    width: 1105.45px;
-    height: 419.496px;
-    transform: rotate(-1.426deg);
-    position: absolute;
-    top: 0;
-    right: 40%;            
-  }
-
-  .n1-text-icon-image__container.is-active--rigth-0:after{
-    content: "";
-    right: 0%;
-  }
-
-  .n1-text-icon-image__image.is-active:after{
-    content: "";
-    position: absolute;
-    top: -60px;
-    border-radius: var(--radius-default, 641.325px);
-    opacity: 0.25;
-    background: radial-gradient(105.4% 101.68% at 89.06% 88.91%, #3CCBDA 43.01%, #0C1F59 88.98%);
-    filter: blur(82px);
-    width: 641.325px;
-    height: 641.325px;
-    transform: rotate(-15.911deg);
-    right: -30px;    
-  }
-
   .n1-mosaic__link.is-primary a{
     background-color: transparent !important;
     border: 1px solid #ffffff;
@@ -412,6 +378,42 @@
     right: -390px;
     position: absolute;
     background: radial-gradient(46.49% 46.49% at 49.96% 53.51%, rgba(59, 200, 216, 0.50) 0%, rgba(59, 200, 216, 0.00) 100%) 
+  }
+
+  @media(min-width: 1024px){
+    .n1-text-icon-image__container.is-active:after{
+      content: "";
+      border-radius: var(--radius-default, 1105.45px);
+      opacity: 0.3;
+      background: radial-gradient(105.4% 101.68% at 89.06% 88.91%, #3CCBDA 43.01%, #0C1F59 88.98%);
+      filter: blur(82px);
+      width: 1105.45px;
+      height: 419.496px;
+      transform: rotate(-1.426deg);
+      position: absolute;
+      top: 0;
+      right: 40%;
+      z-index: -1;            
+    }
+  
+    .n1-text-icon-image__container.is-active--rigth-0:after{
+      content: "";
+      right: 0%;
+    }
+  
+    .n1-text-icon-image__image.is-active:after{
+      content: "";
+      position: absolute;
+      top: -60px;
+      border-radius: var(--radius-default, 641.325px);
+      opacity: 0.25;
+      background: radial-gradient(105.4% 101.68% at 89.06% 88.91%, #3CCBDA 43.01%, #0C1F59 88.98%);
+      filter: blur(82px);
+      width: 641.325px;
+      height: 641.325px;
+      transform: rotate(-15.911deg);
+      right: -30px;    
+    }    
   }
 
   @media (max-width: 426px){

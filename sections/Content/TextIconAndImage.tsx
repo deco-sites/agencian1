@@ -66,7 +66,7 @@ interface BlockTextProps {
   nameIcon?: string;
   /** @title Subtítulo */
   /** @format html */
-  subtitle: string;
+  subtitle?: string;
   /** @title Descrição */
   /** @format html */
   description: string;
@@ -123,30 +123,9 @@ const PLACEMENT = {
   direito: "flex-col lg:flex-row",
 };
 
-export default function ImageSection(
-  props: SectionProps<ReturnType<typeof loader>>,
-) {
-  const {
-    titleCenter,
-    blockText,
-    image,
-    placement,
-    bgSpital,
-    disableSpacing,
-    disabledProps,
-    device,
-  } = props;
-  const {
-    subtitle,
-    icon,
-    nameIcon,
-    subtitleWithTags,
-    description,
-    miniImage,
-    cta,
-    widthBlock,
-    activeEclipseText,
-  } = blockText;
+export default function ImageSection(props: SectionProps<ReturnType<typeof loader>>) {
+  const { titleCenter, blockText, image, placement, bgSpital, disableSpacing, disabledProps, device } = props;
+  const { subtitle, icon, nameIcon, subtitleWithTags, description, miniImage, cta, widthBlock, activeEclipseText } = blockText;
 
   return (
     <div class="relative">
@@ -179,17 +158,12 @@ export default function ImageSection(
           </div>
         )}
         <div
-          class={clx(
-            `n1-text-icon-image__container flex justify-between md:gap-x-[60px] mobile:mt-[60px] relative 
-                      ${PLACEMENT[placement]} text-left items-center z-10 ${
-              activeEclipseText && device === "desktop" ? "is-active" : ""
-            }
-                      ${placement === "direito" ? "is-active--rigth-0" : ""}
-                  `,
-          )}
+          class={clx(`n1-text-icon-image__container flex justify-between md:gap-x-[60px] mobile:mt-[60px] relative 
+              ${PLACEMENT[placement]} text-left items-center z-10 ${activeEclipseText ? "is-active" : ""}
+              ${placement === "direito" ? "is-active--rigth-0" : ""}`)}
         >
           {image && (
-            <div class="flex justify-center mobile:mb-[40px] relative max-w-[50%]">
+            <div class="flex justify-center mobile:mb-[40px] relative md:max-w-[50%]">
               <Picture>
                 {image?.desktop && image.desktop?.src && image.desktop?.width &&
                   image?.desktop?.height && (
@@ -227,15 +201,9 @@ export default function ImageSection(
               </Picture>
             </div>
           )}
-          <div
+          <div class="mobile:w-[100%] md:w-[50%]"
             style={{
-              width: `${
-                widthBlock && device === "desktop"
-                  ? widthBlock + "%"
-                  : device === "mobile"
-                  ? "50%"
-                  : "50%"
-              }`,
+              width: `${widthBlock && device === "desktop" ? widthBlock + "%" : ""}`,
             }}
           >
             {icon && !disabledProps?.icon && (
@@ -326,7 +294,7 @@ export default function ImageSection(
 
             {cta?.text && (
               <div class="md:mt-[20px]">
-                {!cta?.colorLink && (
+                {cta?.colorLink && (
                     <LinkWithOptionArrow
                       text={cta.text}
                       link={cta?.href}
@@ -336,7 +304,7 @@ export default function ImageSection(
                       margin={"0"}
                     />
                 )}
-                {cta?.colorLink && (
+                {!cta?.colorLink && (
                     <LinkWithOptionArrow
                       text={cta.text}
                       link={cta?.href}
