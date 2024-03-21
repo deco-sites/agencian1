@@ -463,9 +463,7 @@
 
     .animation-section-brand{animation: slide 20s linear infinite;}
 
-    /* .n1-text-top-width-carousel__dots{
-      gap: initial !important;
-    } */
+    .n1-menu-mobile__whatsapp a{width:100%}
 
     .n1-text-icon-image__image.is-active:after{
       top: 0;
