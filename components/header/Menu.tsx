@@ -14,28 +14,17 @@ interface PropsMenuItem {
 }
 
 function MenuItem({ item }: PropsMenuItem) {
-  const existsChildren = item && item.children && item.children.length > 0
-    ? true
-    : false;
+  const existsChildren = item && item.children && item.children.length > 0 ? true : false;
 
   return (
     <>
       <div
-        class={`${
-          existsChildren ? "collapse collapse-arrow" : ""
-        } n1-menu-mobile`}
-      >
+        class={clx(`${existsChildren ? "collapse collapse-arrow" : ""} n1-menu-mobile`)}>
         {existsChildren && (
           <input class="n1-menu-mobile__input" type="checkbox" />
         )}
 
-        <div
-          class={clx(
-            `${
-              existsChildren ? "is-children" : ""
-            } collapse-title mobile:font-black n1-menu-mobile__title flex items-center justify-between`,
-          )}
-        >
+        <div class={clx(`${existsChildren ? "is-children" : ""} collapse-title mobile:font-black n1-menu-mobile__title flex items-center justify-between`)}>
           {item.name}
 
           {item && item.children && item.children.length === 0 && (
@@ -51,9 +40,15 @@ function MenuItem({ item }: PropsMenuItem) {
             }
             {existsChildren && item && item.children &&
               item.children.map((node) => {
+                console.log('node -------> ', node)
                 return (
                   <li>
-                    <MenuItem item={node} />
+                    <a 
+                      href={`${node?.url ? node?.url : "javascript:void(0)"}`}
+                      style={{ pointerEvents: `${node?.url ? "all" : "none"}` }} >
+                      
+                      <MenuItem item={node} />
+                    </a>                    
                   </li>
                 );
               })}
@@ -72,8 +67,10 @@ function Menu({ items, whatsapp }: Props) {
         {items.map((item) => {
           return (
             <li class="pt-[16px]">
-              {/* <a href={`${item && item.children && item.children.length > 0 ?  '' : item?.url }`}> */}
-              <a href="#">
+              <a 
+                href={`${item?.url ? item?.url : "javascript:void(0)"}`}
+                style={{ pointerEvents: `${item?.url ? "all" : "none"}` }}>
+
                 <MenuItem item={item} />
               </a>
             </li>
@@ -81,7 +78,7 @@ function Menu({ items, whatsapp }: Props) {
         })}
         <Legend nameItemScape={itemLegend} mobile={true} />
       </ul>
-      <div class="w-[90%] mx-auto">
+      <div class="n1-menu-mobile__whatsapp w-[90%] mx-auto">
         {whatsapp && (
           <LinkTelephoneWithOptionArrow
             activeArrow={false}
