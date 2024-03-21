@@ -46,11 +46,8 @@ function IconText({ grid }: Props) {
               <>
                 {subtitle && (
                   <div
-                    class={clx(
-                      `${
-                        index === 1 ? "mobile:mt-[80px]" : ""
-                      } mobile:ml-[20px] mobile:[&_*]:text-[24px] 
-                                        md:[&_*]:text-[36px] mb-[24px] [&_*]:font-archimoto-medium [&_*]:font-black`,
+                    class={clx(`${index === 1 ? "mobile:mt-[80px]" : ""} 
+                      mobile:ml-[20px] mobile:[&_*]:text-[24px] md:[&_*]:text-[36px] mb-[24px] [&_*]:font-archimoto-medium [&_*]:font-black`,
                     )}
                     dangerouslySetInnerHTML={{ __html: subtitle }}
                   >
@@ -60,9 +57,7 @@ function IconText({ grid }: Props) {
                 <ul
                   class={clx(
                     `mobile:flex-col mobile:justify-center mobile:items-center mobile:gap-[16px] items-stretch
-                                    ${
-                      index === 0 ? "md:mb-[80px]" : ""
-                    } flex flex-wrap items-center md:gap-x-[16px]`,
+                    ${index === 0 ? "md:mb-[80px]" : ""} flex flex-wrap items-center md:gap-[16px]`
                   )}
                 >
                   {image && image?.map(({ name, src, width, height, text }) => {
@@ -72,8 +67,8 @@ function IconText({ grid }: Props) {
                           <li
                             class={clx(
                               `mobile:w-[90%] md:w-[280px] md:max-h-[96px] rounded-[16px] px-[24px] py-[14px] flex items-center border border-[#3b5d5f] 
-                                                            bg-[linear-gradient(161deg,_rgba(255,_255,_255,_0.10)_0%,_rgba(255,_255,_255,_0.05)_101.7%)] 
-                                                            [box-shadow:0px_12px_56px_0px_rgba(6,_28,_61,_0.12)]`,
+                                bg-[linear-gradient(161deg,_rgba(255,_255,_255,_0.10)_0%,_rgba(255,_255,_255,_0.05)_101.7%)] 
+                                [box-shadow:0px_12px_56px_0px_rgba(6,_28,_61,_0.12)]`,
                             )}
                           >
                             <div class="mr-[20px]">

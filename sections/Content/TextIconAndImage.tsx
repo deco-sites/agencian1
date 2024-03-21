@@ -9,6 +9,8 @@ interface CtaProps {
   href?: string;
   /** @title Texto do link */
   text?: string;
+  /** @title Cor do botão transparent */
+  colorLink?: boolean;
 }
 
 /** @titleBy name */
@@ -196,8 +198,7 @@ export default function ImageSection(
                 image?.desktop?.height && (
                 <div
                   class={`n1-text-icon-image__image flex justify-center items-center ${
-                    image?.activeEclipse ? "is-active" : ""
-                  }`}
+                    image?.activeEclipse ? "is-active" : ""}`}
                 >
                   <img
                     src={image.desktop.src}
@@ -308,14 +309,26 @@ export default function ImageSection(
 
           {cta?.text && (
             <div class="md:mt-[20px]">
-              <LinkWithOptionArrow
-                text={cta.text}
-                link={cta?.href}
-                activeArrowService={true}
-                width={"220"}
-                fontSize="14"
-                margin={"0"}
-              />
+              {!cta?.colorLink && (
+                  <LinkWithOptionArrow
+                    text={cta.text}
+                    link={cta?.href}
+                    activeArrow={true}
+                    width={"140"}
+                    fontSize="14"
+                    margin={"0"}
+                  />
+              )}
+              {cta?.colorLink && (
+                  <LinkWithOptionArrow
+                    text={cta.text}
+                    link={cta?.href}
+                    activeArrowService={true}
+                    width={"220"}
+                    fontSize="14"
+                    margin={"0"}
+                  />
+              )}
             </div>
           )}
         </div>
