@@ -124,8 +124,13 @@ const PLACEMENT = {
 };
 
 export default function ImageSection(props: SectionProps<ReturnType<typeof loader>>) {
-  const { titleCenter, blockText, image, placement, bgSpital, disableSpacing, disabledProps, device } = props;
+  const { titleCenter, blockText, image, placement, bgSpital, disableSpacing, disabledProps, device, _req } = props;
   const { subtitle, icon, nameIcon, subtitleWithTags, description, miniImage, cta, widthBlock, activeEclipseText } = blockText;
+
+  const url = _req?.url;
+  const urlArray = url?.split('/');
+  const urlArrayLength = urlArray?.length -1;
+
 
   return (
     <div class="relative">
@@ -147,7 +152,7 @@ export default function ImageSection(props: SectionProps<ReturnType<typeof loade
               ${disableSpacing?.bottom ? "" : "md:pb-[80px] mobile:mb-[60px]"}`,
         )}
       >
-        {titleCenter && (
+        {titleCenter && titleCenter !== '<p><br data-mce-bogus="1"></p>' && (
           <div
             class={clx(
               `n1-text-icon-image__titleCenter [&_*]:mobile:!text-24 font-archimoto-medium mb-[60px] [&_*]:!text-48 text-center 
@@ -217,7 +222,7 @@ export default function ImageSection(props: SectionProps<ReturnType<typeof loade
             )}
 
             <div class="md:mb-[20px] flex items-center flex-wrap">
-              {subtitle && (
+              {subtitle && subtitle !== '<p><br data-mce-bogus="1"></p>' && (
                 <div
                   class="n1-text-icon-image__subtitle mobile:mt-[24px] mobile:[&_*]:!text-20 font-archimoto-medium font-black md:text-[32px]"
                   dangerouslySetInnerHTML={{ __html: subtitle }}
@@ -243,7 +248,7 @@ export default function ImageSection(props: SectionProps<ReturnType<typeof loade
               </div>
             </div>
 
-            {description && (
+            {description && description !== '<p><br data-mce-bogus="1"></p>' && (
               <div
                 class="n1-text-icon-image__description mobile:my-[20px] [&_*]:!font-noto-sans [&_*]:!text-[14px] [&_*]:!leading-[19.4px]"
                 dangerouslySetInnerHTML={{ __html: description }}
@@ -326,6 +331,7 @@ export default function ImageSection(props: SectionProps<ReturnType<typeof loade
 export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   return {
     ...props,
+    _req,
     device: ctx.device,
   };
 };

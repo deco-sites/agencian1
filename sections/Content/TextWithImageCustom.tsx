@@ -21,7 +21,7 @@ function TextWithImageCustom(
 ) {
   return (
     <>
-      <div class={clx(`mobile:flex-col mobile:mb-[115px] text-[#ffffff] md:n1-container 
+      <div class={clx(`mobile:flex-col mobile:mb-[115px] mobile:mt-[80px] text-[#ffffff] md:n1-container 
         md:px-[120px] relative flex items-center justify-between md:h-[540px]`)}
       >
         {textLarge && (
