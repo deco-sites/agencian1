@@ -124,13 +124,8 @@ const PLACEMENT = {
 };
 
 export default function ImageSection(props: SectionProps<ReturnType<typeof loader>>) {
-  const { titleCenter, blockText, image, placement, bgSpital, disableSpacing, disabledProps, device, _req } = props;
+  const { titleCenter, blockText, image, placement, bgSpital, disableSpacing, disabledProps, device } = props;
   const { subtitle, icon, nameIcon, subtitleWithTags, description, miniImage, cta, widthBlock, activeEclipseText } = blockText;
-
-  const url = _req?.url;
-  const urlArray = url?.split('/');
-  const urlArrayLength = urlArray?.length -1;
-
 
   return (
     <div class="relative">
@@ -331,7 +326,6 @@ export default function ImageSection(props: SectionProps<ReturnType<typeof loade
 export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   return {
     ...props,
-    _req,
     device: ctx.device,
   };
 };
