@@ -202,7 +202,8 @@ export default function Cases(props: Props) {
             height={133}
             loading="lazy"
           />
-        </div>)}
+        </div>
+      )}
     </div>
   );
 }
