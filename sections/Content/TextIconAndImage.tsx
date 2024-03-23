@@ -273,13 +273,14 @@ export default function ImageSection(
               </div>
             </div>
 
-            {description && description !== '<p><br data-mce-bogus="1"></p>' && (
-              <div
-                class="n1-text-icon-image__description mobile:my-[20px] [&_*]:!font-noto-sans [&_*]:!text-[14px] [&_*]:!leading-[19.4px]"
-                dangerouslySetInnerHTML={{ __html: description }}
-              >
-              </div>
-            )}
+            {description && description !== '<p><br data-mce-bogus="1"></p>' &&
+              (
+                <div
+                  class="n1-text-icon-image__description mobile:my-[20px] [&_*]:!font-noto-sans [&_*]:!text-[14px] [&_*]:!leading-[19.4px]"
+                  dangerouslySetInnerHTML={{ __html: description }}
+                >
+                </div>
+              )}
 
             <div class="flex md:-ml-[15px] md:mt-[20px] mobile:grid mobile:grid-cols-[repeat(2,_auto)]">
               {!disabledProps?.miniImage && miniImage &&
