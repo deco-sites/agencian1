@@ -512,6 +512,10 @@
     }    
   }
 
+  .n1-custon-container-buttons-service{
+    background: linear-gradient(195deg, #FFF -77.25%, rgba(255, 255, 255, 0.00) 98.06%);
+    backdrop-filter: blur(32px);
+  }
 }
 
 .group:disabled .group-disabled\:animate-progress {
@@ -527,3 +531,4 @@
     --dot-progress: 100%
   }
 }
+

@@ -2,6 +2,8 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
+import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
+import * as $$$$$$$$$$$1 from "./apps/site.ts";
 import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
 import * as $$$1 from "./loaders/List/Sections.tsx";
 import * as $$$$$$0 from "./sections/Animation/Animation.tsx";
@@ -9,6 +11,7 @@ import * as $$$$$$1 from "./sections/Cards/IconCardsCarousel.tsx";
 import * as $$$$$$2 from "./sections/Cards/IconCardsCarouselWithImage.tsx";
 import * as $$$$$$3 from "./sections/Cards/ImageCardsCarousel.tsx";
 import * as $$$$$$4 from "./sections/Cards/ImageCardsCarouselWithImage.tsx";
+import * as $$$$$$61 from "./sections/cases/cases.tsx";
 import * as $$$$$$5 from "./sections/Category/CategoryBanner.tsx";
 import * as $$$$$$6 from "./sections/Category/CategoryGrid.tsx";
 import * as $$$$$$7 from "./sections/Category/CategoryList.tsx";
@@ -65,8 +68,6 @@ import * as $$$$$$57 from "./sections/Product/Wishlist.tsx";
 import * as $$$$$$58 from "./sections/Social/InstagramPosts.tsx";
 import * as $$$$$$59 from "./sections/Social/WhatsApp.tsx";
 import * as $$$$$$60 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
-import * as $$$$$$$$$$$1 from "./apps/site.ts";
 
 const manifest = {
   "loaders": {
@@ -81,6 +82,7 @@ const manifest = {
     "deco-sites/agencian1/sections/Cards/ImageCardsCarousel.tsx": $$$$$$3,
     "deco-sites/agencian1/sections/Cards/ImageCardsCarouselWithImage.tsx":
       $$$$$$4,
+    "deco-sites/agencian1/sections/cases/cases.tsx": $$$$$$61,
     "deco-sites/agencian1/sections/Category/CategoryBanner.tsx": $$$$$$5,
     "deco-sites/agencian1/sections/Category/CategoryGrid.tsx": $$$$$$6,
     "deco-sites/agencian1/sections/Category/CategoryList.tsx": $$$$$$7,

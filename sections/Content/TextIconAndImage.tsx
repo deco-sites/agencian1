@@ -104,7 +104,7 @@ export interface Props {
   image: ImagemDeskAndMobile;
 
   /** @title Imagem espiral de fundo? */
-  bgSpital?:boolean;
+  bgSpital?: boolean;
 
   /** @title Posicionamento */
   placement: "esquerdo" | "direito";
@@ -123,20 +123,42 @@ const PLACEMENT = {
   direito: "flex-col lg:flex-row",
 };
 
-export default function ImageSection(props: SectionProps<ReturnType<typeof loader>>) {
-  const { titleCenter, blockText, image, placement, bgSpital, disableSpacing, disabledProps, device } = props;
-  const { subtitle, icon, nameIcon, subtitleWithTags, description, miniImage, cta, widthBlock, activeEclipseText } = blockText;
+export default function ImageSection(
+  props: SectionProps<ReturnType<typeof loader>>,
+) {
+  const {
+    titleCenter,
+    blockText,
+    image,
+    placement,
+    bgSpital,
+    disableSpacing,
+    disabledProps,
+    device,
+  } = props;
+  const {
+    subtitle,
+    icon,
+    nameIcon,
+    subtitleWithTags,
+    description,
+    miniImage,
+    cta,
+    widthBlock,
+    activeEclipseText,
+  } = blockText;
 
   return (
     <div class="relative">
       {bgSpital && (
         <div class="hidden md:flex absolute top-0 left-0 w-full h-full z-0">
-          <img 
+          <img
             width={282}
             height={396}
             src="image/image-espiral-21deg.png"
             class="hidden md:flex absolute right-0 -bottom-[140px]"
-            loading="lazy"/>
+            loading="lazy"
+          />
         </div>
       )}
 
@@ -158,9 +180,13 @@ export default function ImageSection(props: SectionProps<ReturnType<typeof loade
           </div>
         )}
         <div
-          class={clx(`n1-text-icon-image__container flex justify-between md:gap-x-[60px] mobile:mt-[60px] relative 
-              ${PLACEMENT[placement]} text-left items-center z-10 ${activeEclipseText ? "is-active" : ""}
-              ${placement === "direito" ? "is-active--rigth-0" : ""}`)}
+          class={clx(
+            `n1-text-icon-image__container flex justify-between md:gap-x-[60px] mobile:mt-[60px] relative 
+              ${PLACEMENT[placement]} text-left items-center z-10 ${
+              activeEclipseText ? "is-active" : ""
+            }
+              ${placement === "direito" ? "is-active--rigth-0" : ""}`,
+          )}
         >
           {image && (
             <div class="flex justify-center mobile:mb-[40px] relative md:max-w-[50%]">
@@ -189,7 +215,8 @@ export default function ImageSection(props: SectionProps<ReturnType<typeof loade
                   image?.desktop?.height && (
                   <div
                     class={`n1-text-icon-image__image flex justify-center items-center ${
-                      image?.activeEclipse ? "is-active" : ""}`}
+                      image?.activeEclipse ? "is-active" : ""
+                    }`}
                   >
                     <img
                       src={image.desktop.src}
@@ -201,9 +228,12 @@ export default function ImageSection(props: SectionProps<ReturnType<typeof loade
               </Picture>
             </div>
           )}
-          <div class="mobile:w-[100%] md:w-[50%]"
+          <div
+            class="mobile:w-[100%] md:w-[50%]"
             style={{
-              width: `${widthBlock && device === "desktop" ? widthBlock + "%" : ""}`,
+              width: `${
+                widthBlock && device === "desktop" ? widthBlock + "%" : ""
+              }`,
             }}
           >
             {icon && !disabledProps?.icon && (
@@ -252,7 +282,8 @@ export default function ImageSection(props: SectionProps<ReturnType<typeof loade
             )}
 
             <div class="flex md:-ml-[15px] md:mt-[20px] mobile:grid mobile:grid-cols-[repeat(2,_auto)]">
-              {!disabledProps?.miniImage && miniImage && miniImage?.length > 1 &&
+              {!disabledProps?.miniImage && miniImage &&
+                miniImage?.length > 1 &&
                 miniImage.map(({ image }) => {
                   const { desktop, mobile } = image;
                   return (
@@ -295,24 +326,24 @@ export default function ImageSection(props: SectionProps<ReturnType<typeof loade
             {cta?.text && (
               <div class="md:mt-[20px]">
                 {cta?.colorLink && (
-                    <LinkWithOptionArrow
-                      text={cta.text}
-                      link={cta?.href}
-                      activeArrow={true}
-                      width={"140"}
-                      fontSize="14"
-                      margin={"0"}
-                    />
+                  <LinkWithOptionArrow
+                    text={cta.text}
+                    link={cta?.href}
+                    activeArrow={true}
+                    width={"140"}
+                    fontSize="14"
+                    margin={"0"}
+                  />
                 )}
                 {!cta?.colorLink && (
-                    <LinkWithOptionArrow
-                      text={cta.text}
-                      link={cta?.href}
-                      activeArrowService={true}
-                      width={"220"}
-                      fontSize="14"
-                      margin={"0"}
-                    />
+                  <LinkWithOptionArrow
+                    text={cta.text}
+                    link={cta?.href}
+                    activeArrowService={true}
+                    width={"220"}
+                    fontSize="14"
+                    margin={"0"}
+                  />
                 )}
               </div>
             )}
