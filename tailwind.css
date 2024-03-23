@@ -334,7 +334,21 @@
 
   .n1-mosaic__link.is-primary a div path:nth-of-type(2){
     fill: #ffffff !important;
-  }  
+  }
+
+  .n1-breadcrumb__item:after{
+    content: "";
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    width: 8px;
+    height: 8px;
+    display: block;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 5px;
+    right: -20px;
+    border-radius: 2px;
+  }
 
   .n1-footer__bg-social:before{
     content: "";
