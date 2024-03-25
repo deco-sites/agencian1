@@ -47,8 +47,7 @@ function IconText({ grid }: Props) {
                 {subtitle && (
                   <div
                     class={clx(`${index === 1 ? "mobile:mt-[80px]" : ""} 
-                      mobile:ml-[20px] mobile:[&_*]:text-[24px] md:[&_*]:text-[36px] mb-[24px] [&_*]:font-archimoto-medium [&_*]:font-black`,
-                    )}
+                      mobile:ml-[20px] mobile:[&_*]:text-[24px] md:[&_*]:text-[36px] mb-[24px] [&_*]:font-archimoto-medium [&_*]:font-black`)}
                     dangerouslySetInnerHTML={{ __html: subtitle }}
                   >
                   </div>
@@ -57,7 +56,9 @@ function IconText({ grid }: Props) {
                 <ul
                   class={clx(
                     `mobile:flex-col mobile:justify-center mobile:items-center mobile:gap-[16px] items-stretch
-                    ${index === 0 ? "md:mb-[80px]" : ""} flex flex-wrap items-center md:gap-[16px]`
+                    ${
+                      index === 0 ? "md:mb-[80px]" : ""
+                    } flex flex-wrap items-center md:gap-[16px]`,
                   )}
                 >
                   {image && image?.map(({ name, src, width, height, text }) => {

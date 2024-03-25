@@ -14,17 +14,28 @@ interface PropsMenuItem {
 }
 
 function MenuItem({ item }: PropsMenuItem) {
-  const existsChildren = item && item.children && item.children.length > 0 ? true : false;
+  const existsChildren = item && item.children && item.children.length > 0
+    ? true
+    : false;
 
   return (
     <>
       <div
-        class={clx(`${existsChildren ? "collapse collapse-arrow" : ""} n1-menu-mobile`)}>
+        class={clx(
+          `${existsChildren ? "collapse collapse-arrow" : ""} n1-menu-mobile`,
+        )}
+      >
         {existsChildren && (
           <input class="n1-menu-mobile__input" type="checkbox" />
         )}
 
-        <div class={clx(`${existsChildren ? "is-children" : ""} collapse-title mobile:font-black n1-menu-mobile__title flex items-center justify-between`)}>
+        <div
+          class={clx(
+            `${
+              existsChildren ? "is-children" : ""
+            } collapse-title mobile:font-black n1-menu-mobile__title flex items-center justify-between`,
+          )}
+        >
           {item.name}
 
           {item && item.children && item.children.length === 0 && (
@@ -40,15 +51,15 @@ function MenuItem({ item }: PropsMenuItem) {
             }
             {existsChildren && item && item.children &&
               item.children.map((node) => {
-                console.log('node -------> ', node)
+                console.log("node -------> ", node);
                 return (
                   <li>
-                    <a 
+                    <a
                       href={`${node?.url ? node?.url : "javascript:void(0)"}`}
-                      style={{ pointerEvents: `${node?.url ? "all" : "none"}` }} >
-                      
+                      style={{ pointerEvents: `${node?.url ? "all" : "none"}` }}
+                    >
                       <MenuItem item={node} />
-                    </a>                    
+                    </a>
                   </li>
                 );
               })}
@@ -67,10 +78,10 @@ function Menu({ items, whatsapp }: Props) {
         {items.map((item) => {
           return (
             <li class="pt-[16px]">
-              <a 
+              <a
                 href={`${item?.url ? item?.url : "javascript:void(0)"}`}
-                style={{ pointerEvents: `${item?.url ? "all" : "none"}` }}>
-
+                style={{ pointerEvents: `${item?.url ? "all" : "none"}` }}
+              >
                 <MenuItem item={item} />
               </a>
             </li>

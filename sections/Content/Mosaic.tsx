@@ -222,7 +222,11 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
                         mobile?.width && mobile?.height && (
                         <Image
                           // quando efetuar animação alterar isso
-                          class={`z-0 absolute ${name && name === "Tecnologia Deco" ? "left-2/5 -top-[100px] scale-[2] left-[60%]": "top-0 left-0"}`}
+                          class={`z-0 absolute ${
+                            name && name === "Tecnologia Deco"
+                              ? "left-2/5 -top-[100px] scale-[2] left-[60%]"
+                              : "top-0 left-0"
+                          }`}
                           src={mobile.image}
                           width={mobile.width}
                           height={mobile.height}
@@ -245,26 +249,48 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
                 return (
                   <>
                     <div
-                      class={clx(`n1-mosaic__container mobile:mb-[24px] bottom rounded-[16px] bg-primary md:px-[30px] 
-                        md:pt-[30px] mobile:max-h-[340px] max-h-[430px] overflow-hidden`)}
+                      class={clx(
+                        `n1-mosaic__container mobile:mb-[24px] bottom rounded-[16px] bg-primary md:px-[30px] 
+                        md:pt-[30px] mobile:max-h-[340px] max-h-[430px] overflow-hidden`,
+                      )}
                       style={{
-                        backgroundColor: `${text && text?.bgColor ? colorBackground[text?.bgColor]: "#0C1F59"}`,
-                        color: `${text && text?.bgColor === "base-50"? "#0C1F59": "#ffffff"}`,
+                        backgroundColor: `${
+                          text && text?.bgColor
+                            ? colorBackground[text?.bgColor]
+                            : "#0C1F59"
+                        }`,
+                        color: `${
+                          text && text?.bgColor === "base-50"
+                            ? "#0C1F59"
+                            : "#ffffff"
+                        }`,
                       }}
                     >
                       <div class="mobile:pt-[24px] mobile:px-[24px]">
                         {text && text?.title && (
                           <h3
-                            class={clx(`n1-mosaic__title [&_*]:first-letter:!text-secondary is-${text && text?.bgColor === "base-50"? "white": "primary"} 
-                                text-34 font-archimoto-medium font-black`)}
+                            class={clx(
+                              `n1-mosaic__title [&_*]:first-letter:!text-secondary is-${
+                                text && text?.bgColor === "base-50"
+                                  ? "white"
+                                  : "primary"
+                              } 
+                                text-34 font-archimoto-medium font-black`,
+                            )}
                             dangerouslySetInnerHTML={{ __html: text.title }}
                           >
                           </h3>
                         )}
                         {text && text?.text && (
                           <span
-                            class={clx(`n1-mosaic__text is-${text && text?.bgColor === "base-50" ? "white" : "primary"} 
-                            text-13 font-noto-sans font-normal mt-[5px]`)}
+                            class={clx(
+                              `n1-mosaic__text is-${
+                                text && text?.bgColor === "base-50"
+                                  ? "white"
+                                  : "primary"
+                              } 
+                            text-13 font-noto-sans font-normal mt-[5px]`,
+                            )}
                           >
                             {text.text}
                           </span>
@@ -272,7 +298,12 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
                       </div>
                       {text && text?.textLink && (
                         <div
-                          class={`n1-mosaic__link is-${text && text?.bgColor === "base-50"? "white": "primary"} my-[15px] mobile:px-[24px]`}>
+                          class={`n1-mosaic__link is-${
+                            text && text?.bgColor === "base-50"
+                              ? "white"
+                              : "primary"
+                          } my-[15px] mobile:px-[24px]`}
+                        >
                           <LinkWithOptionArrow
                             text={text.textLink}
                             link={text?.link}
@@ -285,8 +316,10 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
                       )}
 
                       <div
-                        class={clx(`mobile:h-[202px] mobile:px-[13px] mobile:grid mobile:grid-cols-[repeat(2,_1fr)] 
-                            h-[233px] overflow-hidden flex gap-[13px]`)}
+                        class={clx(
+                          `mobile:h-[202px] mobile:px-[13px] mobile:grid mobile:grid-cols-[repeat(2,_1fr)] 
+                            h-[233px] overflow-hidden flex gap-[13px]`,
+                        )}
                       >
                         <div>
                           {device === "desktop" &&

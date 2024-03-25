@@ -58,10 +58,11 @@ function NavItem({ item, btnTextMenu, btnUrlMenu }: Props) {
         } 
           group flex justify-between text-16 font-archimoto-medium uppercase whitespace-nowrap is-${nameItemScape} items-center`)}
       >
-        <a 
+        <a
           href={`${url ? url : "javascript:void(0)"}`}
           style={{ pointerEvents: `${url ? "all" : "none"}` }}
-          class="overflow-y-hidden h-5 mr-[10px]">
+          class="overflow-y-hidden h-5 mr-[10px]"
+        >
           <span class="-translate-y-5 group-hover:translate-y-0 leading-5 transition-all text-xs flex moveFromTop duration-500 font-black">
             {name}
           </span>
@@ -134,8 +135,12 @@ function NavItem({ item, btnTextMenu, btnUrlMenu }: Props) {
                     return (
                       <li class="py-6 n1-header__navlink-children">
                         <a
-                          href={`${node?.url ? node?.url : "javascript:void(0)"}`}
-                          style={{ pointerEvents: `${node?.url ? "all" : "none"}` }}                        
+                          href={`${
+                            node?.url ? node?.url : "javascript:void(0)"
+                          }`}
+                          style={{
+                            pointerEvents: `${node?.url ? "all" : "none"}`,
+                          }}
                           class="hover:underline overflow-hidden block rounded-[8px]"
                         >
                           {node.image?.map((i) => {
