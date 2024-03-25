@@ -2,6 +2,8 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 
+import type { FnContext } from "deco/types.ts";
+
 export interface Technology {
   /** @title Icon services desktop */
   IconDesktop: ImageWidget;
@@ -46,7 +48,6 @@ export interface Props {
   /** @title Icon do background bottom */
   IconBackgroundBottom?: ImageWidget;
 
-  /**  */
 
   iconBackgroundTop?: ImageWidget;
 
@@ -56,7 +57,7 @@ export interface Props {
   cardCases?: CardCases[];
 }
 
-export default function Cases(props: Props) {
+export default function Cases(props: Props & { device: string }) {
   if (!props.cardCases) {
     return null;
   }
@@ -74,27 +75,31 @@ export default function Cases(props: Props) {
                 <div className=" pl-5 pt-6 md:pl-9 md:pt-9 flex gap-4">
                   {card.technology.map((tech, techIndex) => (
                     <div key={techIndex} className="z-10">
-                      <Image
-                        src={tech.IconDesktop}
-                        width={99}
-                        height={33}
-                        className="z-20 hidden md:block"
-                        loading="lazy"
-                      />
-                      <Image
-                        src={tech.IconMobile}
-                        width={107}
-                        height={38}
-                        className="z-10 block md:hidden"
-                        loading="lazy"
-                      />
+                      {props.device === 'desktop' ? (
+                        <Image
+                          src={tech.IconDesktop}
+                          width={99}
+                          height={33}
+                          className="z-20 hidden md:block"
+                          loading="lazy"
+                        />
+                      ) : (
+                        <Image
+                          src={tech.IconMobile}
+                          width={107}
+                          height={38}
+                          className="z-10 block md:hidden"
+                          loading="lazy"
+                        />
+                      )}
+
                     </div>
                   ))}
                 </div>
               </div>
 
-              {card.imgCardDesktop && (
-                <a href="/">
+              {props.device === 'desktop' && card.imgCardDesktop && (
+                <a href={card.link}>
                   <Image
                     src={card.imgCardDesktop}
                     alt={card.alt}
@@ -106,7 +111,7 @@ export default function Cases(props: Props) {
                 </a>
               )}
 
-              {card.imgCardMobile && (
+              {props.device !== 'desktop' && card.imgCardMobile && (
                 <a href="/">
                   <Image
                     src={card.imgCardMobile}
@@ -121,26 +126,28 @@ export default function Cases(props: Props) {
 
               <div className="absolute flex justify-center items-center bottom-0 left-0 w-full md:px-11 md:py-4 pt-3 px-5 pb-3 n1-custon-container-buttons-service rounded-b-[20px] h-[64px] md:h-[91px]">
                 <div className="flex items-center justify-between w-full max-w-[490px]">
-                  {card.imgIconStoreDesktop && (
-                    <Image
-                      src={card.imgIconStoreDesktop}
-                      alt={card.alt}
-                      width={200}
-                      height={57}
-                      loading="lazy"
-                      className="hidden lg:block"
-                    />
-                  )}
-
-                  {card.imgIconStoreMobile && (
-                    <Image
-                      src={card.imgIconStoreMobile}
-                      alt={card.alt}
-                      width={107}
-                      height={31}
-                      loading="lazy"
-                      className="block lg:hidden"
-                    />
+                  {props.device === 'desktop' ? (
+                    card.imgIconStoreDesktop && (
+                      <Image
+                        src={card.imgIconStoreDesktop}
+                        alt={card.alt}
+                        width={200}
+                        height={57}
+                        loading="lazy"
+                        className="hidden lg:block"
+                      />
+                    )
+                  ) : (
+                    card.imgIconStoreMobile && (
+                      <Image
+                        src={card.imgIconStoreMobile}
+                        alt={card.alt}
+                        width={107}
+                        height={31}
+                        loading="lazy"
+                        className="block lg:hidden"
+                      />
+                    )
                   )}
 
                   {card.link && card.buttonName && (
@@ -168,42 +175,58 @@ export default function Cases(props: Props) {
           </div>
         ))}
       </div>
+      {props.device === 'desktop' && (
+        <>
+          {props.IconBackgroundBottom && (
+            <div className="hidden md:block absolute -bottom-[150px] right-0">
+              <Image
+                src={props.IconBackgroundBottom}
+                alt="icon background"
+                width={450}
+                height={133}
+                loading="lazy"
+              />
+            </div>
+          )}
 
-      {props.IconBackgroundBottom && (
-        <div className="hidden md:block absolute -bottom-[150px] right-0">
-          <Image
-            src={props.IconBackgroundBottom}
-            alt="icon background"
-            width={450}
-            height={133}
-            loading="lazy"
-          />
-        </div>
-      )}
+          {props.iconBackgroundTop && (
+            <div className="hidden md:block absolute -top-[150px] right-0 z-0">
+              <Image
+                src={props.iconBackgroundTop}
+                alt="icon background"
+                width={450}
+                height={133}
+                loading="lazy"
+              />
+            </div>
+          )}
 
-      {props.iconBackgroundTop && (
-        <div className="hidden md:block absolute -top-[150px] right-0 z-0">
-          <Image
-            src={props.iconBackgroundTop}
-            alt="icon background"
-            width={450}
-            height={133}
-            loading="lazy"
-          />
-        </div>
-      )}
-
-      {props.iconBackgroundLeftBottom && (
-        <div className="hidden md:block absolute bottom-0 left-0 z-0 rotate-180">
-          <Image
-            src={props.iconBackgroundLeftBottom}
-            alt="icon background"
-            width={450}
-            height={133}
-            loading="lazy"
-          />
-        </div>
+          {props.iconBackgroundLeftBottom && (
+            <div className="hidden md:block absolute bottom-0 left-0 z-0 rotate-180">
+              <Image
+                src={props.iconBackgroundLeftBottom}
+                alt="icon background"
+                width={450}
+                height={133}
+                loading="lazy"
+              />
+            </div>
+          )}
+        </>
       )}
     </div>
   );
 }
+
+
+export const loader = (
+  props: Props,
+  _req: Request,
+  ctx: FnContext,
+) => {
+  const device = ctx.device;
+  return {
+    ...props,
+    device: device || "desktop",
+  };
+};
