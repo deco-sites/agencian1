@@ -156,7 +156,7 @@ function TitleTextIconsAndImage( props: SectionProps<ReturnType<typeof loader>> 
                             columnGap: device === 'desktop' && spaceTextAndImage ? spaceTextAndImage + 'px' : '30px'
                         }}>
                         
-                        <div class="mobile:w-full mobile:mb-[80px]"
+                        <div class="mobile:w-full"
                             style={{ 
                                 width: device === 'desktop' && widthBlock ? widthBlock + '%' : ""
                             }}>
@@ -228,8 +228,8 @@ function TitleTextIconsAndImage( props: SectionProps<ReturnType<typeof loader>> 
 
                         </div>
                         {image && (                            
-                            <div class={`${activePositionManualImage ? 'xl:absolute portatil:min-w-[50%]' : ""}
-                                mobile:mb-[68px] tablet:mb-[50px] mobile:px-[25px]`}
+                            <div class={clx(`${activePositionManualImage ? 'xl:absolute portatil:min-w-[50%]' : ""}
+                                mobile:mb-[68px] tablet:mb-[50px] mobile:px-[25px]`)}
                                 style={{
                                     right: `${device === 'desktop' && activePositionManualImage ? positionImageX + 'px' : 0 }`,
                                     top: `${device === 'desktop' && activePositionManualImage ? positionImageY + 'px' : 0 }`
