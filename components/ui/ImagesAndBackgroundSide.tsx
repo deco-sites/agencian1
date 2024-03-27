@@ -29,7 +29,7 @@ function ImagesAndBackgroundSide( { bg, side }:Props ){
         <>     
             <div class="portatil:w-[80%] tablet:w-[80%] tablet:ml-[30px] portatil:ml-[30px]">
                 {side?.title && side.title !== '<p><br data-mce-bogus="1"></p>' && (
-                    <div class="[&_*]:text-[#ffffff] [&_*]:text-32 mobile:[&_*]:text-22 font-archimoto-medium font-black"
+                    <div class="[&_*]:text-[#ffffff] [&_*]:text-32 mobile:[&_*]:text-22 font-archimoto-medium font-black mobile:mb-[15px]"
                         dangerouslySetInnerHTML={{ __html : side.title }}>
                     </div>
                 )} 
@@ -38,7 +38,7 @@ function ImagesAndBackgroundSide( { bg, side }:Props ){
                         dangerouslySetInnerHTML={{ __html : side.description }}>
                     </div>
                 )} 
-                <div class="grid grid-cols-2-auto grid-rows-2 gap-y-[20px] gap-x-[10px] tablet:max-w-[70%]">
+                <div class="grid grid-cols-2-auto grid-rows-2 mobile:gap-y-[14px] mobile:gap-x-[7px] gap-y-[20px] gap-x-[10px] tablet:max-w-[70%]">
                     {side && side.device?.map(( { desktop, mobile, alt} )=> {
                         return(
                             <>

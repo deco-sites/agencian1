@@ -45,7 +45,7 @@ interface Props{
 function ImagesAndBackground( { bg, sideLeft, sideRight }:Props ){
     return(
         <>
-            <section class="md:n1-container md:px-[120px] mobile:px-[20px]">
+            <section class="md:n1-container md:px-[120px] mobile:px-[20px] mobile:mt-[80px]">
                 <div class="relative flex mobile:mb-[80px] tablet:mb-[80px]">
                     {bg && (
                         <div>
