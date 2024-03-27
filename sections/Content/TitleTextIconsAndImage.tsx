@@ -150,7 +150,7 @@ function TitleTextIconsAndImage( props: SectionProps<ReturnType<typeof loader>> 
                 <div class="md:n1-container md:px-[120px] relative">                
                     <div 
                         class={clx(`${flexRow ? FLEXROW[flexRow] : ""} ${flexCol ? FLEXCOL[flexCol] : "flex-col-reverse"}
-                        text-[#ffffff] flex items-center portatil:flex-col portatil:my-[34px]`)}
+                        text-[#ffffff] flex items-center portatil:flex-col portatil:my-[34px] mobile:gap-y-[50px]`)}
 
                         style={{ 
                             columnGap: device === 'desktop' && spaceTextAndImage ? spaceTextAndImage + 'px' : '30px'
@@ -164,8 +164,8 @@ function TitleTextIconsAndImage( props: SectionProps<ReturnType<typeof loader>> 
                                 <div class="md:ml-[20px]">
                                     { title && title !== '<p><br data-mce-bogus="1"></p>' && (
                                         <div 
-                                            class={clx(`[&_*]:font-archimoto-medium [&_*]:font-black mobile:max-w-[80%] 
-                                            mobile:[&_*]:text-32 [&_*]:tablet:text-34 [&_*]:md:text-48`)}
+                                            class={clx(`[&_*]:font-archimoto-medium [&_*]:font-black
+                                            mobile:[&_*]:text-24 [&_*]:tablet:text-34 [&_*]:md:text-48`)}
                                             dangerouslySetInnerHTML={{ __html: title }}>
                                         </div>
                                     )}
@@ -229,7 +229,7 @@ function TitleTextIconsAndImage( props: SectionProps<ReturnType<typeof loader>> 
                         </div>
                         {image && (                            
                             <div class={clx(`${activePositionManualImage ? 'xl:absolute portatil:min-w-[50%]' : ""}
-                                mobile:mb-[68px] tablet:mb-[50px] mobile:px-[25px]`)}
+                                tablet:mb-[50px]`)}
                                 style={{
                                     right: `${device === 'desktop' && activePositionManualImage ? positionImageX + 'px' : 0 }`,
                                     top: `${device === 'desktop' && activePositionManualImage ? positionImageY + 'px' : 0 }`
