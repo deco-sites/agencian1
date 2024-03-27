@@ -156,7 +156,7 @@ function TitleTextIconsAndImage( props: SectionProps<ReturnType<typeof loader>> 
                             columnGap: device === 'desktop' && spaceTextAndImage ? spaceTextAndImage + 'px' : '30px'
                         }}>
                         
-                        <div class="mobile:w-full mobile:mb-[80px]"
+                        <div class="mobile:w-full"
                             style={{ 
                                 width: device === 'desktop' && widthBlock ? widthBlock + '%' : ""
                             }}>
