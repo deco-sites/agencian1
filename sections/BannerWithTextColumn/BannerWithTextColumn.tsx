@@ -1,1 +1,4 @@
-export { loader, default } from "$store/components/bannerWithTextColumn/BannerWithTextColumn.tsx"
+export {
+  default,
+  loader,
+} from "$store/components/bannerWithTextColumn/BannerWithTextColumn.tsx";

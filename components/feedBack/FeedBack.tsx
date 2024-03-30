@@ -1,12 +1,7 @@
-
-
-
-
-
-export default  function FeedbackSection() {
-    return(
-        <>
-         olá
-        </>
-    )
+export default function FeedbackSection() {
+  return (
+    <>
+      olá
+    </>
+  );
 }
