@@ -1,0 +1,1 @@
+export { loader, default } from "$store/components/bannerWithTextColumn/BannerWithTextColumn.tsx"

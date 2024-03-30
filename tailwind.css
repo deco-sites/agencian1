@@ -530,6 +530,25 @@
     background: linear-gradient(195deg, #FFF -77.25%, rgba(255, 255, 255, 0.00) 98.06%);
     backdrop-filter: blur(32px);
   }
+
+  .n1-custom-cards-description{
+    border-radius: 8px;
+    border: 0.2px solid var(--Base-base-50, #F3F4F7);
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.40) -169.31%, rgba(255, 255, 255, 0.00) 104.94%);
+  }
+  .n1-custom-cards-challenge{
+    border-radius: 16px;
+    border: 1px solid #3CCBDA;
+    background: linear-gradient(161deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.05) 101.7%);
+    box-shadow: 0px 12px 56px 0px rgba(6, 28, 61, 0.12);
+  }
+
+  .n1-custom-cardsInfo{
+    border-radius: 10px; 
+    background: linear-gradient(161deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.05) 101.7%);
+    backdrop-filter: blur(17.915000915527344px);
+  }
+  
 }
 
 .group:disabled .group-disabled\:animate-progress {

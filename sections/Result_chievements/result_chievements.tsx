@@ -1,0 +1,1 @@
+export {loader,  default } from "$store/components/result_chievements/Result_chievements.tsx";
