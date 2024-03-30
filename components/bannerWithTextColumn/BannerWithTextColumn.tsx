@@ -1,10 +1,6 @@
 import { FnContext, SectionProps } from "deco/mod.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import { Picture, Source } from "apps/website/components/Picture.tsx";
-import LinkWithOptionArrow from "$store/components/ui/LinkWithOptionArrow.tsx";
-import { clx } from "$store/sdk/clx.ts";
-import { ImportAssetFromApiGatewayApiRequestDetails } from "https://esm.sh/v135/aws-sdk@2.1576.0/clients/dataexchange.js";
 
 export interface Img {
   /**@title Image Desktop*/

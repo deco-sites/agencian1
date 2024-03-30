@@ -54,7 +54,8 @@ export type AvailableIcons =
   | "ArrowDownMenuMobile"
   | "Banner-arrow-left"
   | "Banner-arrow-right"
-  | "ArrowMoreInfor";
+  | "ArrowMoreInfor"
+  | "Quotes";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**
