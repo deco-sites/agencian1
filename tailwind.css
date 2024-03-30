@@ -495,6 +495,19 @@
       height: 100%;      
     }
 
+    .n1-ellipse__mobile:before{
+      content: "";
+      display: block;
+      width: 126px;
+      height: 28px;
+      transform: rotate(-17deg);
+      background: #F6AB00;
+      filter: blur(40px);
+      left: 60px;
+      bottom: -40px;
+      position: relative;    
+    }    
+
     .n1-footer__overlay--bottom-left{
       transform: rotate(90deg);
       top: -510px;
