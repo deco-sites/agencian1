@@ -2,6 +2,7 @@
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { headerHeight } from "$store/components/header/constants.ts";
+import { clx } from "$store/sdk/clx.ts";
 
 /**@titleBy alt*/ 
 interface Image{  
@@ -28,20 +29,17 @@ interface Props{
 }
 
 function ModalForm( { image, text, device } : Props ){
-
-    const headerHeightNumber = headerHeight ? Number(headerHeight.replaceAll(/\D/g,'')) + 100 : null;
-
-    console.log('device ----> ', device)
+    // const headerHeightNumber = headerHeight ? Number(headerHeight.replaceAll(/\D/g,'')) + 100 : null;
 
     return(
         <>
             <div class="fixed top-0 left-0 w-full h-full z-[11] bg-[rgba(11,_18,_39,_0.80)] text-[#ffffff]">
                 <div class="w-full h-full flex items-start justify-center">
                     <div 
-                        class="[box-shadow:0_0px_2px_#fff] mobile:w-[90%] mobile:mt-[150px] notebook:max-w-[55%] notebook:min-w-[40%] 
-                            xl:w-[600px] 2xl:h-[540px] rounded-[16px] backdrop-filter backdrop-blur-[42px] flex flex-col justify-center items-center 
-                            notebook:gap-[15px] gap-[24px] px-[20px] md:px-[30px] py-[50px] mt-[120px]
-                            bg-[linear-gradient(161deg,_rgba(255,_255,_255,_0.10)_0%,_rgba(255,_255,_255,_0.05)_101.7%)]"
+                        class={clx(`[box-shadow:0_0px_2px_#fff] mobile:w-[90%] mobile:mt-[150px] notebook:max-w-[55%] notebook:min-w-[40%] 
+                        xl:w-[600px] 2xl:h-[540px] rounded-[16px] backdrop-filter backdrop-blur-[42px] flex flex-col justify-center items-center 
+                        notebook:gap-[15px] gap-[24px] px-[20px] md:px-[30px] py-[50px] mt-[120px]
+                        bg-[linear-gradient(161deg,_rgba(255,_255,_255,_0.10)_0%,_rgba(255,_255,_255,_0.05)_101.7%)]`)}
                         // style={{
                         //     marginTop: `${headerHeight && device === 'desktop' ? headerHeightNumber + 'px' : '120px'}` 
                         // }}
