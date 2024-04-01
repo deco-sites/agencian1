@@ -308,8 +308,7 @@
   .n1-mosaic__text.is-primary > * > * > *{
     color: #ffffff !important;
   } 
-  
-  
+    
   .n1-text-top-width-image__name,
   .n1-text-top-width-image__title,
   .n1-text-top-width-image__text{
@@ -392,6 +391,53 @@
     right: -390px;
     position: absolute;
     background: radial-gradient(46.49% 46.49% at 49.96% 53.51%, rgba(59, 200, 216, 0.50) 0%, rgba(59, 200, 216, 0.00) 100%) 
+  }
+
+  .n1-radio-custom:checked{
+    @apply border-secondary;
+    transition: all .275s;
+  }
+
+  .n1-radio-custom{
+    transition: all .275s;
+  }
+
+  .n1-link__no-arrow a svg{
+    display: none;
+  }
+
+  .n1-link__no-arrow a span{
+    margin: initial !important;
+  }
+
+  .n1-radio-custom:checked:after,
+  .n1-radio-custom:checked:before{
+    content: "";
+    display: block;
+    position: absolute;
+    @apply border-e-2 border-secondary;
+  }
+
+  .n1-radio-custom.is-active ~ label{
+    @apply text-secondary;
+    transition: all .275s;
+  }
+
+  .n1-radio-custom ~ label{
+    transition: all .275s;
+  }
+
+  .n1-radio-custom.is-active:checked:after{
+    height: 17px;    
+    top: 6px;
+    right: 10px;
+    transform: rotate(45deg);
+  }
+  .n1-radio-custom.is-active:checked:before{
+    width: 10px;
+    height: 10px;
+    top: 14px;
+    transform: rotate(-45deg);
   }
 
   @media(min-width: 1024px){
