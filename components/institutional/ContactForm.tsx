@@ -1,5 +1,3 @@
-import Icon from "$store/components/ui/Icon.tsx";
-import { Picture, Source } from "apps/website/components/Picture.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Button from "$store/components/ui/Button.tsx";
 import LabelForm from "$store/components/ui/LabelForm.tsx";
@@ -7,7 +5,7 @@ import InputForm from "$store/components/ui/InputForm.tsx";
 import ModalForm from "$store/components/ui/ModalForm.tsx";
 import { FnContext, SectionProps } from "deco/mod.ts";
 import { useUI } from "$store/sdk/useUI.ts";
-
+import { clx } from "$store/sdk/clx.ts";
 
 /**@titleBy alt*/ 
 interface Image{
@@ -55,11 +53,12 @@ function ContactForm( props: SectionProps<ReturnType<typeof loader>> ) {
 
   if(activeModalForm) displayModalForm.value = ACTIVEMODALFORM[activeModalForm] 
 
-  console.log('activeModalForm ---> ', activeModalForm)
-  console.log('displayModalForm.value ---> ', displayModalForm.value)
-
   function handleChange( e: Event ){
-    console.log('------------> ', e)
+    console.log('onChange ------------> ', e)
+  }
+
+  function handleOnBlur( e: Event ){
+    console.log('onBlur ------------> ', e)
   }
 
   return (
@@ -80,8 +79,9 @@ function ContactForm( props: SectionProps<ReturnType<typeof loader>> ) {
                       nameAttr={"commercial"}
                       type={"checkbox"}
                       id={"commercial"}
-                      _class={`n1-radio-custom checked:is-active relative appearance-none rounded-[10px] 
-                      bg-transparent w-[32px] h-[32px] border-2 border-[#F3F4F7] outline-none`}                    
+                      _class={clx(`n1-radio-custom checked:is-active relative appearance-none rounded-[10px] 
+                      bg-transparent w-[32px] h-[32px] border-2 border-[#F3F4F7] outline-none`)}
+                      required={true}                 
                     />                              
                     <LabelForm 
                       _class={`font-normal text-[#ffffff] text-14 leading-[21px] font-noto-sans`} 
@@ -95,8 +95,8 @@ function ContactForm( props: SectionProps<ReturnType<typeof loader>> ) {
                       nameAttr={"partnership"}
                       type={"checkbox"}
                       id={"partnership"}
-                      _class={`n1-radio-custom checked:is-active relative appearance-none rounded-[10px] 
-                      bg-transparent w-[32px] h-[32px] border-2 border-[#F3F4F7] outline-none`}                    
+                      _class={clx(`n1-radio-custom checked:is-active relative appearance-none rounded-[10px] 
+                      bg-transparent w-[32px] h-[32px] border-2 border-[#F3F4F7] outline-none`)}                    
                     />                              
                     <LabelForm 
                       _class={`font-normal text-[#ffffff] text-14 leading-[21px] font-noto-sans`} 
@@ -110,8 +110,8 @@ function ContactForm( props: SectionProps<ReturnType<typeof loader>> ) {
                       nameAttr={"others"}
                       type={"checkbox"}
                       id={"others"}
-                      _class={`n1-radio-custom checked:is-active relative appearance-none rounded-[10px] 
-                      bg-transparent w-[32px] h-[32px] border-2 border-[#F3F4F7] outline-none`}                    
+                      _class={clx(`n1-radio-custom checked:is-active relative appearance-none rounded-[10px] 
+                      bg-transparent w-[32px] h-[32px] border-2 border-[#F3F4F7] outline-none`)}                    
                     />                              
                     <LabelForm 
                       _class={`font-normal text-[#ffffff] text-14 leading-[21px] font-noto-sans`} 
@@ -135,12 +135,13 @@ function ContactForm( props: SectionProps<ReturnType<typeof loader>> ) {
                       </LabelForm>
                       <input
                           onChange={handleChange}
+                          onBlur={handleOnBlur}
                           placeholder={"Seu nome"}
                           name={"nameUser"}
                           id={"nameUser"}
                           type={"text"}
-                          class={`rounded-[24px] bg-transparent py-[12px] px-[20px] max-h-[42px] border border-[#F3F4F7] duration-300
-                            font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`}                    
+                          class={clx(`rounded-[24px] bg-transparent py-[12px] px-[20px] max-h-[42px] border border-[#F3F4F7] duration-300
+                            font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`)}                    
                       />
                   </div>
                   {/* Nome da Empresa*/}                
@@ -155,8 +156,8 @@ function ContactForm( props: SectionProps<ReturnType<typeof loader>> ) {
                           name="nameCompany"
                           type="text"
                           id="nameCompany"
-                          class={`rounded-[24px] bg-transparent py-[12px] px-[20px] max-h-[42px] border border-[#F3F4F7] duration-300
-                          font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`}
+                          class={clx(`rounded-[24px] bg-transparent py-[12px] px-[20px] max-h-[42px] border border-[#F3F4F7] duration-300
+                          font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`)}
                       />
                   </div>
               </div>
@@ -174,8 +175,8 @@ function ContactForm( props: SectionProps<ReturnType<typeof loader>> ) {
                           name="phoneNumber"
                           type="text"
                           id="phoneNumber"
-                          class={`w-full rounded-[24px] bg-transparent py-[12px] px-[20px] max-h-[42px] border border-[#F3F4F7] duration-300
-                          font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`}
+                          class={clx(`w-full rounded-[24px] bg-transparent py-[12px] px-[20px] max-h-[42px] border border-[#F3F4F7] duration-300
+                          font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`)}
                       />
                       
                   </div>
@@ -192,8 +193,8 @@ function ContactForm( props: SectionProps<ReturnType<typeof loader>> ) {
                               nameAttr="email"
                               id="email"
                               type="email"
-                              _class={`rounded-[24px] bg-transparent py-[12px] px-[20px] max-h-[42px] border border-[#F3F4F7] duration-300
-                              font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`}
+                              _class={clx(`rounded-[24px] bg-transparent py-[12px] px-[20px] max-h-[42px] border border-[#F3F4F7] duration-300
+                              font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`)}
                           />
                       </div>
                   </div>
@@ -206,8 +207,8 @@ function ContactForm( props: SectionProps<ReturnType<typeof loader>> ) {
                       name="message"
                       id="message"
                       type="text"
-                      class={`bg-transparent rounded-[38px] h-[90px] border border-[#F3F4F7] py-[20px] px-[40px] duration-300
-                        font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`}
+                      class={clx(`bg-transparent rounded-[38px] h-[90px] border border-[#F3F4F7] py-[20px] px-[40px] duration-300
+                        font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`)}
                   />
               </div>
               {/* DADOS __________________________________________________________________________________| FINAL | */}
@@ -215,8 +216,8 @@ function ContactForm( props: SectionProps<ReturnType<typeof loader>> ) {
               <div>
                 <input
                   type="submit" 
-                  class={`py-[20px] px-[30px] bg-base-200 rounded-[100px] text-[#585858] hover:bg-[#ffff] 
-                    max-h-[52px] !leading-none text-16 font-archimoto-medium font-black`}
+                  class={clx(`py-[20px] px-[30px] bg-base-200 rounded-[100px] text-[#585858] hover:bg-[#ffff] 
+                    max-h-[52px] !leading-none text-16 font-archimoto-medium font-black`)}
                     value="Enviar" 
                   />
               </div>
