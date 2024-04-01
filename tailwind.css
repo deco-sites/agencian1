@@ -410,6 +410,10 @@
     margin: initial !important;
   }
 
+  .n1-input--error.is-active{
+    @apply !border-error
+  }
+
   .n1-radio-custom:checked:after,
   .n1-radio-custom:checked:before{
     content: "";

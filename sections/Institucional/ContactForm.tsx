@@ -1,1 +1,1 @@
-export { default, loader } from "$store/components/institutional/ContactForm.tsx";
+export { default } from "$store/components/institutional/ContactForm.tsx";
