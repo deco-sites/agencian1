@@ -37,8 +37,6 @@ function PrevButton(props: JSX.IntrinsicElements["button"]) {
   return <button data-slide="prev" aria-label="Previous item" {...props} />;
 }
 
-
-
 Slider.Dot = Dot;
 Slider.Item = Item;
 Slider.NextButton = NextButton;
