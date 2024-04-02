@@ -185,4 +185,19 @@
 		<path d="M5.5 8.25L11 13.75L16.5 8.25" stroke="#646363" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 	</symbol>
 
+	<symbol id="ArrowMoreInfor"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="currentColor">
+       <path fill-rule="evenodd" clip-rule="evenodd" d="M5.25 5.25C5.25 4.83579 5.58579 4.5 6 4.5H12.75C13.1642 4.5 13.5 4.83579 13.5 5.25V12C13.5 12.4142 13.1642 12.75 12.75 12.75C12.3358 12.75 12 12.4142 12 12V7.06066L5.78033 13.2803C5.48744 13.5732 5.01256 13.5732 4.71967 13.2803C4.42678 12.9874 4.42678 12.5126 4.71967 12.2197L10.9393 6H6C5.58579 6 5.25 5.66421 5.25 5.25Z" fill="currentColor"/>
+    </symbol>
+
+	<symbol id="Quotes" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73 50" fill="none">
+		<g opacity="0.2" clip-path="url(#clip0_13426_5051)">
+			<path d="M39.8597 0H73V33.1372H50.35L46.278 46.7663C46.0729 47.4597 45.6483 48.0465 45.0949 48.4585C44.5437 48.8706 43.8596 49.1091 43.1348 49.1091C41.3252 49.1091 39.8587 47.6427 39.8587 45.8333V0H39.8597Z" fill="white"/>
+			<path d="M-6.10352e-05 0H33.1392V33.1372H10.4892L6.41712 46.7663C6.21211 47.4597 5.78744 48.0465 5.2341 48.4585C4.68287 48.8706 3.99879 49.1091 3.27391 49.1091C1.46434 49.1091 -0.00214767 47.6427 -0.00214767 45.8333V0H-6.10352e-05Z" fill="white"/>
+		</g>
+		<defs>
+			<clipPath id="clip0_13426_5051">
+			<rect width="73" height="49.1091" fill="white" transform="matrix(-1 0 0 1 73 0)"/>
+			</clipPath>
+		</defs>
+	</symbol>
 </svg>
