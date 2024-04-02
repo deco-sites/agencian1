@@ -108,8 +108,10 @@ function ImageCarouselItem(
             <a
               href={settingsInfo?.href ?? "javascript:void(0)"}
               aria-label={settingsInfo?.title}
-              class={clx(`mobile:w-[55%] md:w-[43%] flex border border-[#fff] px-[20px] pb-[11px] 
-                pt-[12px] rounded-[100px] justify-center items-center min-w-[134px]`)}
+              class={clx(
+                `mobile:w-[55%] md:w-[43%] flex border border-[#fff] px-[20px] pb-[11px] 
+                pt-[12px] rounded-[100px] justify-center items-center min-w-[134px]`,
+              )}
             >
               <span class="text-[#ffffff] flex font-archimoto-medium md:text-14 font-black">
                 {settingsInfo?.textLink}
@@ -150,8 +152,10 @@ function Dots({ images }: Props) {
                 >
                   <div class="pb-5">
                     <div
-                      class={clx(`n1-banner-btn__dot--item w-[140px] sm:w-20 h-[3px] rounded group-disabled:animate-progress group-disabled:bg-[#06ADC2] 
-                        bg-gradient-to-r from-[#06ADC2] from-[length:var(--dot-progress)] to-[rgba(255,255,255,0.4)] to-[length:var(--dot-progress)]`)}
+                      class={clx(
+                        `n1-banner-btn__dot--item w-[140px] sm:w-20 h-[3px] rounded group-disabled:animate-progress group-disabled:bg-[#06ADC2] 
+                        bg-gradient-to-r from-[#06ADC2] from-[length:var(--dot-progress)] to-[rgba(255,255,255,0.4)] to-[length:var(--dot-progress)]`,
+                      )}
                     />
                   </div>
                 </Slider.Dot>
@@ -235,7 +239,8 @@ function TextTopWidthCarousel(props: SectionProps<ReturnType<typeof loader>>) {
                 <>
                   <Slider.Item
                     index={index}
-                    class="carousel-item mobile:w-[90%] w-[31.666%] rounded-[10px] bg-[linear-gradient(181deg,_#FFF_-176.1%,_rgba(255,_255,_255,_0.29)_-85.87%,_rgba(255,_255,_255,_0.00)_124.35%)]">
+                    class="carousel-item mobile:w-[90%] w-[31.666%] rounded-[10px] bg-[linear-gradient(181deg,_#FFF_-176.1%,_rgba(255,_255,_255,_0.29)_-85.87%,_rgba(255,_255,_255,_0.00)_124.35%)]"
+                  >
                     <ImageCarouselItem
                       image={image}
                       lcp={index === 0 && preload}
