@@ -75,10 +75,10 @@ function ContactForm( { image, text, activeModalForm }:Props ) {
   }  
 
   function snippetValidationField(field:Element, inputError:Element){
-    if( field && ( field instanceof HTMLInputElement || field instanceof HTMLTextAreaElement) ){
+    if( field && inputError && ( field instanceof HTMLInputElement || field instanceof HTMLTextAreaElement) ){
       if( field?.value === '' ){
         field?.classList.add('is-active');
-        field?.classList.remove('hidden');
+        inputError?.classList.remove('hidden');
       } else if( field && field?.getAttribute('id') === 'phoneNumber' && field?.value.length < 15){
         field?.classList.add('is-active');
         inputError?.classList.remove('hidden');  
