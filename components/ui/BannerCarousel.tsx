@@ -157,7 +157,7 @@ function BannerItem(
           height={600}
         />
         <img
-          class="mobile:object-none mobile:h-auto mobile:max-w-full object-cover w-full h-full"
+          class="mobile:h-auto mobile:max-w-full object-cover w-full h-full"
           loading={lcp ? "eager" : "lazy"}
           src={desktop}
           alt={alt}
