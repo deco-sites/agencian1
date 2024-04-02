@@ -7,9 +7,10 @@ interface Props{
     _class?:string;
     checked?:boolean;
     id?:string;
+    required?:boolean;
 }
 
-function InputForm( { placeholder, nameAttr, type, _class, checked, id }:Props){
+function InputForm( { placeholder, nameAttr, type, _class, checked, id, required }:Props){
     return(
         <>            
             <input
@@ -19,6 +20,7 @@ function InputForm( { placeholder, nameAttr, type, _class, checked, id }:Props){
                 class={clx(_class)}
                 checked={checked}
                 id={id}
+                required={required}
             />            
         </>
     )
