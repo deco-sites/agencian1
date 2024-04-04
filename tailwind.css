@@ -434,7 +434,7 @@
   .n1-radio-custom.is-active:checked:after{
     height: 17px;    
     top: 6px;
-    right: 10px;
+    right: 11px;
     transform: rotate(45deg);
   }
   .n1-radio-custom.is-active:checked:before{
@@ -442,6 +442,41 @@
     height: 10px;
     top: 14px;
     transform: rotate(-45deg);
+  }
+
+  .n1-modal-form__close:after,
+  .n1-modal-form__close:before{
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    top: 50%;
+    border-radius: 10px;
+    background-color: #3CCBDA;
+  }
+
+  .n1-modal-form__close:after{
+    transform: translate(0, -50%) rotate(-45deg);
+  }
+
+  .n1-modal-form__close:before{
+    transform: translate(0, -50%) rotate(45deg);
+  }
+
+  .n1-modal-form__bg{
+    visibility: hidden;
+    opacity: 0;
+    cursor: none;
+    pointer-events: none;
+    transition: all .2s linear;
+  }
+
+  .n1-modal-form__bg.is-active{
+    visibility: visible;
+    opacity: 1;
+    cursor: unset;
+    pointer-events: all;
+    transition: all .2s linear;
   }
 
   @media(min-width: 1024px){
