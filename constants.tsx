@@ -2,6 +2,8 @@
 // deno-lint-ignore no-explicit-any
 export type VNode = any;
 
+export const PORTAL_SUBDOMAIN = ["https://agencian1.myvtex.com"];
+
 export const grid = {
   gap: {
     mobile: {

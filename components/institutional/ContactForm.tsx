@@ -1,10 +1,10 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import Button from "$store/components/ui/Button.tsx";
 import LabelForm from "$store/components/ui/LabelForm.tsx";
-// import InputForm from "$store/components/ui/InputForm.tsx";
 import ModalForm from "$store/components/ui/ModalForm.tsx";
-import { useUI } from "$store/sdk/useUI.ts";
 import { clx } from "$store/sdk/clx.ts";
+import type { JSX } from "preact";
+import { useSignal } from "@preact/signals"; 
+import { useEffect } from "preact/compat";
 
 /**@titleBy alt*/ 
 interface Image{
@@ -46,10 +46,13 @@ const ACTIVEMODALFORM = {
   "Não" : false
 }
 
-function ContactForm( { image, text, activeModalForm }:Props ) {
-  const { displayModalForm } = useUI();
+function ContactForm( { image, text, activeModalForm = 'Não' }:Props ) {
+  const displayModalForm = useSignal(ACTIVEMODALFORM[activeModalForm] );
 
-  if(activeModalForm) displayModalForm.value = ACTIVEMODALFORM[activeModalForm] 
+  useEffect(() => {
+    const btnSubmit = document.querySelector<HTMLButtonElement>('.n1-form__submit');
+    btnSubmit && btnSubmit?.removeAttribute('disabled');
+  }, []);
 
   function addMaskofTelephone( target: HTMLInputElement ){
     let mask = target.value;        
@@ -74,39 +77,129 @@ function ContactForm( { image, text, activeModalForm }:Props ) {
      if( target && target?.value ) return target.value = mask;        
   }  
 
-  function snippetValidationField(field:Element, inputError:Element){
-    if( field && inputError && ( field instanceof HTMLInputElement || field instanceof HTMLTextAreaElement) ){
-      if( field?.value === '' ){
-        field?.classList.add('is-active');
-        inputError?.classList.remove('hidden');
-      } else if( field && field?.getAttribute('id') === 'phoneNumber' && field?.value.length < 15){
-        field?.classList.add('is-active');
-        inputError?.classList.remove('hidden');  
-      } else {
-        field?.classList.remove('is-active');
-        inputError?.classList.add('hidden') ;         
-      }
-    }    
+  function snippetValidationField(field:HTMLElement, inputError:Element ){
+    if( field && ( field instanceof HTMLInputElement || field instanceof HTMLTextAreaElement) ){
+        if( field?.value === '' ){
+          field.type !== 'checkbox' && field?.classList.add('is-active');
+          field.type !== 'checkbox' && inputError?.classList.remove('hidden');
+          return null;
+        } else if( field && field?.getAttribute('id') === 'phone_number' && field?.value.length < 15){
+          field.type !== 'checkbox' && field?.classList.add('is-active');
+          field.type !== 'checkbox' && inputError?.classList.remove('hidden'); 
+          return null; 
+        } else {          
+          field.type !== 'checkbox' && field?.classList.remove('is-active');
+          field.type !== 'checkbox' && inputError?.classList.add('hidden') ;
+
+          const nameField = field.getAttribute('id');
+          let valueField;
+
+          if(field?.value !== ''){             
+            if(field && field.type === 'checkbox' && field instanceof HTMLInputElement){
+              valueField = field.checked;
+            } else {
+              valueField = field.value; 
+            }  
+            return  [nameField, valueField]
+          }
+        }           
+    } 
   }
 
-  function validateAllField( target:HTMLFormElement ){    
-    if (!target) return;     
-    const Allfields = target?.querySelectorAll<HTMLElement>('input:not(#commercial, #partnership, #others, #nameCompany), textarea');
-
-    Allfields && Allfields.length > 0 && Array.from(Allfields).map( (field) => {
-      const inputError = field?.nextElementSibling;
-
-      inputError && snippetValidationField(field,inputError);
-    })
-  }
-
-  function handleSubmit( e: Event ){
-    e.preventDefault();
-    const { target } = e;
+  function validateAllField( target:HTMLFormElement ){   
     if (!target) return;
+    
+    const temp:Array<unknown> = [];
+    const Allfields = target?.querySelectorAll<HTMLElement>('input, textarea');
+    
+    if(Allfields && Allfields.length > 0){
+      Array.from(Allfields).map( (field) => {  
+         
+        const inputError = field?.nextElementSibling;
+        if( inputError ){
+          temp.push( snippetValidationField(field,inputError) )
+        }
+      })
+    } else {
+      return false;
+    }
+   
+    // colocado em assign para copiar as propriedades de retorno de 1 ou + objetos
+    // isso foi feito para poder add o data no fromEntries. 
+    // obs: fromEntries recebe obrigatoriamente 2 paramentros para iteração
+    const data = Object.assign(temp.filter(n => n));
+    const json = Object.fromEntries(data);
+    let fieldsRequired = false;
+
+    if( json['name_user'] && json['phone_number'] && json['email'] && json['message'] ){
+      fieldsRequired = true;
+    }
+
+    if(fieldsRequired ){
+      return Object.fromEntries(data);
+    } else {
+      return false;
+    }
+  }
+
+  const handleSubmit: JSX.GenericEventHandler<HTMLFormElement> = async (e) => {
+    e.preventDefault();
+
+    const { target } = e;
+
+    if (!target) return;
+
     if (target && target instanceof HTMLFormElement) {
-      // validar campos do formulário
-      validateAllField( target );
+      const isValid = validateAllField( target );
+      const modal = document.querySelector<HTMLElement>('.n1-modal-form__bg');
+
+      if( isValid ){
+        try {
+          displayModalForm.value = true;
+          modal && modal?.classList.add('is-active');
+
+          const response = await fetch("/api/contactform", {
+            method: "POST",
+            body: JSON.stringify(isValid),
+            headers: {
+              "content-type": "application/json",
+              "accept": "application/json",
+            },
+          });
+
+        } finally { 
+          document.body.style.overflow = 'hidden';
+
+          const form = document.querySelector<HTMLFormElement>('form.n1-contact__form');
+          const element = document.querySelector<HTMLElement>('.n1-modal-form');
+
+          if(element){
+            element.classList.contains('hidden') && element.classList.remove('hidden');
+          }
+          
+          displayModalForm.value = true; 
+    
+          setTimeout(() => {            
+            displayModalForm.value = false;
+            document.body.style.overflow = 'visible';
+            modal && modal?.classList.remove('is-active');
+
+            form && Array.from(form).forEach((item) => {
+              if(item && item.getAttribute('type') !== 'checkbox' && (item instanceof HTMLInputElement || item instanceof HTMLTextAreaElement )){
+                item.value = '';
+              }  
+              
+              if( item.getAttribute('type') === 'checkbox' && item instanceof HTMLInputElement ){                
+                item.checked = false;
+              }
+            });
+
+            if(element){
+              element.classList.contains('hidden') && element.classList.add('hidden');
+            }            
+          }, 2000);
+        }        
+      }
     }
   }
 
@@ -145,7 +238,7 @@ function ContactForm( { image, text, activeModalForm }:Props ) {
       <div class="md:n1-container md:px-[120px] !mb-[80px] mobile:mt-[80px] mobile:px-[20px]">
         <div class="flex flex-col">        
           <div class="flex flex-col gap-[32px]">          
-            <form class="text-sm flex flex-col gap-[32px]" onSubmit={handleSubmit}>
+            <form class="n1-contact__form text-sm flex flex-col gap-[32px]" onSubmit={handleSubmit}>
 
               {/* TIPO DE CONTATO __________________________________________________________________________| INICIAL | */}
               <div class="flex flex-col gap-[32px]">
@@ -159,10 +252,10 @@ function ContactForm( { image, text, activeModalForm }:Props ) {
                       type={"checkbox"}
                       id={"commercial"}
                       class={clx(`n1-radio-custom checked:is-active relative appearance-none rounded-[10px] 
-                      bg-transparent w-[32px] h-[32px] border-2 border-[#F3F4F7] outline-none`)}                                     
+                        bg-transparent w-[32px] h-[32px] border-2 border-[#F3F4F7] outline-none`)}                                     
                     />                              
                     <LabelForm 
-                      _class={`font-normal text-[#ffffff] text-14 leading-[21px] font-noto-sans`} 
+                      _class={`${displayModalForm.value} teste-n1 font-normal text-[#ffffff] text-14 leading-[21px] font-noto-sans`} 
                       nameAttr={'commercial'}> 
                       Comercial
                     </LabelForm>                    
@@ -174,7 +267,7 @@ function ContactForm( { image, text, activeModalForm }:Props ) {
                       type={"checkbox"}
                       id={"partnership"}
                       class={clx(`n1-radio-custom checked:is-active relative appearance-none rounded-[10px] 
-                      bg-transparent w-[32px] h-[32px] border-2 border-[#F3F4F7] outline-none`)}                    
+                        bg-transparent w-[32px] h-[32px] border-2 border-[#F3F4F7] outline-none`)}                    
                     />                              
                     <LabelForm 
                       _class={`font-normal text-[#ffffff] text-14 leading-[21px] font-noto-sans`} 
@@ -189,7 +282,7 @@ function ContactForm( { image, text, activeModalForm }:Props ) {
                       type={"checkbox"}
                       id={"others"}
                       class={clx(`n1-radio-custom checked:is-active relative appearance-none rounded-[10px] 
-                      bg-transparent w-[32px] h-[32px] border-2 border-[#F3F4F7] outline-none`)}                    
+                        bg-transparent w-[32px] h-[32px] border-2 border-[#F3F4F7] outline-none`)}                    
                     />                              
                     <LabelForm 
                       _class={`font-normal text-[#ffffff] text-14 leading-[21px] font-noto-sans`} 
@@ -208,15 +301,15 @@ function ContactForm( { image, text, activeModalForm }:Props ) {
                   <div class="form-control flex-col gap-[10px] w-full">                  
                       <LabelForm 
                           _class={`font-bold text-[#ffffff] text-14 leading-[21px] font-noto-sans`} 
-                          nameAttr={'nameUser'}> 
+                          nameAttr={'name_user'}> 
                           Nome
                       </LabelForm>
                       <input  
                         onChange={handleChange}
                         onBlur={handleOnBlur}
                         placeholder={"Seu nome"}
-                        name={"nameUser"}
-                        id={"nameUser"}
+                        name={"name_user"}
+                        id={"name_user"}
                         type={"text"}
                         class={clx(`n1-input--error rounded-[24px] bg-transparent py-[12px] px-[20px] max-h-[42px] border border-[#F3F4F7] duration-300
                           font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`)}                    
@@ -227,17 +320,18 @@ function ContactForm( { image, text, activeModalForm }:Props ) {
                   <div class="form-control gap-[10px] w-full">
                       <LabelForm 
                           _class="font-bold text-[#ffffff] text-14 leading-[21px] font-noto-sans" 
-                          nameAttr="nameCompany">
+                          nameAttr="name_company">
                               Nome da Empresa
                       </LabelForm>
                       <input
-                        placeholder="*Opcional"
-                        name="nameCompany"
-                        type="text"
-                        id="nameCompany"
+                        placeholder={"*Opcional"}
+                        name={"name_company"}
+                        id={"name_company"}
+                        type={"text"}
                         class={clx(`rounded-[24px] bg-transparent py-[12px] px-[20px] max-h-[42px] border border-[#F3F4F7] duration-300
-                        font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`)}
+                          font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`)}
                       />
+                      <span class="hidden text-error text-[12px] leading-[15.6px]"></span>                      
                   </div>
               </div>
               <div class="flex flex-col gap-[30px] lg:flex-row">
@@ -245,7 +339,7 @@ function ContactForm( { image, text, activeModalForm }:Props ) {
                   <div class="form-control gap-[10px] w-full">
                       <LabelForm 
                           _class="font-bold text-[#ffffff] text-14 leading-[21px] font-noto-sans" 
-                          nameAttr="phoneNumber">
+                          nameAttr="phone_number">
                           Telefone
                       </LabelForm>
                       
@@ -254,13 +348,13 @@ function ContactForm( { image, text, activeModalForm }:Props ) {
                         onChange={handleChange}
                         onBlur={handleOnBlur}
                         placeholder="(00) 00000-0000"
-                        name="phoneNumber"
+                        name="phone_number"
                         type="text"
                         // @ts-ignore: Ignorando erro
                         maxlength="15"
-                        id="phoneNumber"
+                        id="phone_number"
                         class={clx(`n1-input--error w-full rounded-[24px] bg-transparent py-[12px] px-[20px] max-h-[42px] border border-[#F3F4F7] duration-300
-                        font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`)}
+                          font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`)}
                       />
 
                       <span class="hidden text-error text-[12px] leading-[15.6px]"> Campo obrigatório </span>
@@ -282,7 +376,7 @@ function ContactForm( { image, text, activeModalForm }:Props ) {
                             id="email"
                             type="email"
                             class={clx(`n1-input--error rounded-[24px] bg-transparent py-[12px] px-[20px] max-h-[42px] border border-[#F3F4F7] duration-300
-                            font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`)}
+                              font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`)}
                           />
                           <span class="hidden text-error text-[12px] leading-[15.6px]"> Campo obrigatório </span>
                       </div>
@@ -306,22 +400,24 @@ function ContactForm( { image, text, activeModalForm }:Props ) {
               {/* DADOS __________________________________________________________________________________| FINAL | */}
 
               <div>
-                <input
-                  type="submit" 
-                  class={clx(`py-[20px] px-[30px] bg-base-200 rounded-[100px] text-[#585858] hover:bg-[#ffff] 
+                <button
+                  type="submit"
+                  disabled 
+                  class={clx(`n1-form__submit disabled:opacity-50 py-[20px] px-[30px] bg-base-200 rounded-[100px] text-[#585858] hover:bg-[#ffff] 
                     max-h-[52px] !leading-none text-16 font-archimoto-medium font-black`)}
-                    value="Enviar" 
-                  />
+                  >Enviar
+                </button>
               </div>
-            </form>
+            </form>           
           </div>
         </div>
       </div>
-      { displayModalForm.value && (
-        <div>
+
+      {/* { displayModalForm.value && ( */}
+        <div class={`n1-modal-form__bg ${displayModalForm.value ? 'is-active' : ''}`}>
           <ModalForm image={image} text={text} />
         </div>
-      )}
+      {/* )} */}
     </>
   );
 }
