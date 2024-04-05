@@ -287,6 +287,27 @@
     scroll-snap-align: start !important;
   }
 
+  .n1-header__navlink.active--tooltip:after{
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s linear;
+  }
+
+  .n1-header__navlink.active--tooltip:hover:after{
+    content: attr(data-tip);
+    position: absolute;
+    bottom: 0px;
+    font-size: 9px;
+    background: transparent;
+    padding: 6px;
+    border-radius: 15px;
+    color: #3CCBDA;
+    border: 1px solid #3CCBDA;
+    line-height: 1.5;
+    opacity: 1;
+    visibility: visible;    
+    transition: all .2s linear;
+  }
 
   .n1-mosaic__title.is-white *,
   .n1-mosaic__title.is-white > *,
