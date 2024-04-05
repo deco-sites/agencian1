@@ -53,6 +53,20 @@ function CasesComponentDesktop({ settingsImage }: Props) {
 
     if (target && target instanceof HTMLElement) {
       const cardElement = target?.closest(".n1-cases-card");
+      const allCardElement = cardElement &&
+        cardElement.parentElement?.getElementsByClassName("n1-cases-card");
+
+      allCardElement && Array.from(allCardElement).forEach((e) => {
+        e?.classList.remove("is-active");
+        e?.setAttribute("style", "width: 300px");
+      });
+      // console.log('cardElement --> ', cardElement?.parentElement?.getElementsByClassName('n1-cases-card'))
+
+      // if(){
+      //   cardElement?.classList.remove('is-active')
+      // }
+      // cardElement?.classList.contains('is-active') ?? cardElement?.classList.remove('is-active');
+
       const bgWidth = cardElement?.querySelector<HTMLElement>(".bg-width")
         ?.dataset.bgwidth;
       const bgWidthHover = cardElement?.querySelector<HTMLElement>(
@@ -196,14 +210,17 @@ function CasesComponentDesktop({ settingsImage }: Props) {
           heightImageBackgroundHover,
           iconHover,
           tagProps,
-        }) => {
+        }, index) => {
           const nameScape = alt?.replaceAll(/\s/g, "-").toLowerCase();
-
           return (
             <>
               <a
                 href={`${href ? href : "javascript:void(0)"}`}
-                class="relative n1-cases-card cursor-grab [transition:all_.375s_linear] md:w-0 mobile:mb-[10px]"
+                class={`relative n1-cases-card ${
+                  index === 0 ? "is-active" : ""
+                } ${
+                  href ? "cursor-pointer" : "cursor-grab"
+                } [transition:all_.375s_linear] md:w-0 mobile:mb-[10px]`}
                 onMouseLeave={handleMouserHover}
                 style={{
                   height: `${
@@ -211,6 +228,7 @@ function CasesComponentDesktop({ settingsImage }: Props) {
                       ? heightImageBackgroundHover + "px"
                       : "500px"
                   }`,
+                  width: index === 0 ? "500px" : "",
                   pointerEvents: `${href ? "all" : "grab"}`,
                 }}
               >
@@ -337,6 +355,9 @@ function CasesComponentDesktop({ settingsImage }: Props) {
                     {imageLogoHover && (
                       <img
                         src={`${imageLogoHover}`}
+                        style={{
+                          width: index === 0 ? widthLogoHover + "px" : "",
+                        }}
                         class="n1-cases-card__logo--hover duration-200 h-auto"
                       />
                     )}
