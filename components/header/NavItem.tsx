@@ -45,10 +45,8 @@ function NavItem({ item, btnTextMenu, btnUrlMenu }: Props) {
   const image = item?.image?.[0];
   const nameItemScape = item?.name?.replaceAll(/\s/g, "-").toLowerCase();
   const headerHeightNumber = headerHeight &&
-    Number(headerHeight?.replace("px", ""));
-  const lasfHeaderHeight = headerHeightNumber > 2
-    ? headerHeightNumber / 2
-    : headerHeightNumber;
+  Number(headerHeight?.replace("px", ""));
+  const lasfHeaderHeight = headerHeightNumber > 2 ? headerHeightNumber / 2.5 : headerHeightNumber;
 
   return (
     <>
@@ -93,13 +91,13 @@ function NavItem({ item, btnTextMenu, btnUrlMenu }: Props) {
               )}
               style={{
                 top: "-5px",
-                marginTop: lasfHeaderHeight + "px",
-                height: lasfHeaderHeight + "px",
+                marginTop: (lasfHeaderHeight + 20) + "px",
+                height: (lasfHeaderHeight + 20) + "px",
               }}
             >
               <div
                 class={clx(
-                  `mt-[55px] bg-[#fff] !w-auto rounded-b-[40px] pt-[20px] pb-[40px] px-[40px] 
+                  `mt-[35px] bg-[#fff] !w-auto rounded-b-[40px] pt-[20px] pb-[40px] px-[40px] 
                 ${children.length < 3 ? "flex max-w-[835px]" : ""}`,
                 )}
               >
