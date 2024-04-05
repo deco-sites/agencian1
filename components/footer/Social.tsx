@@ -11,7 +11,7 @@ export interface SocialItem {
     | "Twitter"
     | "Youtube"
     | "Email";
-  link: string;
+  link?: string;
 }
 
 export default function Social(
@@ -45,7 +45,10 @@ export default function Social(
                     class={`n1-footer__social relative mobile:order-first mobile:col-span-6 xl:ml-[60px] ${item.label}`}
                   >
                     <a
-                      href={"mailto:" + item.link}
+                      href={`${item.link && item.link !== "#" ? "mailto:" + item.link : "javascript:void(0)"}`}
+                      style={{
+                        pointerEvents: `${item.link && item.link !== "#" ? "all" : "none"}`
+                      }}                      
                       rel="noopener noreferrer"
                       aria-label={`${item.label} Logo`}
                       class="flex gap-2 items-center"
@@ -66,7 +69,10 @@ export default function Social(
                 return (
                   <li class={`n1-footer__social relative ${item.label}`}>
                     <a
-                      href={item.link}
+                      href={`${item.link && item.link !== "#" ?  item.link : "javascript:void(0)"}`}
+                      style={{
+                        pointerEvents: `${item.link && item.link !== "#" ? "all" : "none"}`
+                      }}
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`${item.label} Logo`}

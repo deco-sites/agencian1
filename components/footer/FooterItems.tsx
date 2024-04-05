@@ -4,7 +4,7 @@ import { clx } from "$store/sdk/clx.ts";
 
 export type Item = {
   label: string;
-  href: string;
+  href?: string;
 };
 
 export type Section = {
@@ -36,11 +36,11 @@ export default function FooterItems(
                       {section.label}
                     </span>
                     <ul
-                      class={`flex flex-col ${
+                      class={clx(`flex flex-col ${
                         section.label === "Certificações"
                           ? "gap-y-[10px]"
                           : "gap-y-[16px] md:gap-y-[22px]"
-                      } flex-wrap text-sm`}
+                      } flex-wrap text-sm`)}
                     >
                       {section.items?.map((item) => {
                         return (
@@ -55,7 +55,10 @@ export default function FooterItems(
                               : (
                                 <li>
                                   <a
-                                    href={item.href}
+                                    href={`${item?.href && item.href !== "#" ? item?.href : "javascript:void(0)"}`}
+                                    style={{
+                                      pointerEvents: `${item?.href && item?.href !== "#" ? "all" : "none"}`
+                                    }}                                       
                                     class={clx(
                                       `text-[14px] leading-[21.6px] block py-1 link link-hover md:text-16 font-noto-sans font-normal text-base-150`,
                                     )}
@@ -93,7 +96,10 @@ export default function FooterItems(
                       {section.items?.map((item) => (
                         <li>
                           <a
-                            href={item.href}
+                            href={`${item?.href && item.href !== "#" ? item?.href : "javascript:void(0)"}`}
+                            style={{
+                              pointerEvents: `${item?.href && item?.href !== "#" ? "all" : "none"}`
+                            }} 
                             class="block py-1 link link-hover"
                           >
                             {item.label}
