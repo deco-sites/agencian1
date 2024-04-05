@@ -67,6 +67,8 @@ export interface Props {
   /** @title Mostrar pontos */
   /** @description (mostre pontos para navegar pelas imagens) */
   dots?: boolean;
+  /** @title Ocultar Seção toda?*/
+  noneSection?: boolean;
 }
 
 function ImageCarouselItem(
@@ -197,11 +199,15 @@ function Buttons() {
 
 function TextTopWidthCarousel(props: SectionProps<ReturnType<typeof loader>>) {
   const id = useId();
-  const { images, preload, title, texto, textLink, link, device } = props;
+  const { images, preload, title, texto, textLink, link, noneSection, device } =
+    props;
 
   return (
     <>
-      <div id={id} class="relative mobile:pb-[60px]">
+      <div
+        id={id}
+        class={`${noneSection ? "hidden" : ""} relative mobile:pb-[60px]`}
+      >
         <div class=" md:n1-container md:px-[120px] z-10 md:mb-[40px] relative">
           <div class="mobile:my-[24px] mt-[120px] mb-[43px] text-[#ffffff] flex items-center justify-between flex-wrap">
             <div class="mobile:px-[20px]">

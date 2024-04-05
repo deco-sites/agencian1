@@ -104,7 +104,10 @@ function Header({
           platform={platform}
           logoMobile={logoMobile}
         >
-          <div class="fixed w-full z-50 n1-header__desktop">
+          <div
+            class="fixed w-full z-50 n1-header__desktop"
+            style={{ height: headerHeight }}
+          >
             <div
               class={"grid grid-cols-2-auto md:n1-container md:px-[120px] items-center portatil:max-w-[90%] portatil:px-0"}
             >
