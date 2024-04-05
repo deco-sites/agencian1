@@ -35,8 +35,12 @@ export interface PropsChildren extends SiteNavigationElement {
   /** @title Descrição Submenu */
   descriptionSubMenu?: HTML;
 
-  /** @title Texto para Link do botão */
+  /** @title Texto para do botão */
   /** @description (ex: conheça mais dos nossos serviços ) */
+  btnTextMenu?: string;
+
+  /** @title Link do botão */
+  /** @description (ex: https://agencian1.com.br/ ) */
   btnUrlMenu?: string;
 
   /** @title Ativar título descrição? */
@@ -70,7 +74,7 @@ export interface Props {
   /** @description (ex: 99-99999-9999) */
   whatsapp?: string;
 
-  /** @title Botão (texto) */
+  /** @title Texto do botão (texto) */
   /** @description (ex: conheça nosso site ) */
   btnTextMenu?: string;
 
@@ -100,7 +104,10 @@ function Header({
           platform={platform}
           logoMobile={logoMobile}
         >
-          <div class="fixed w-full z-50 n1-header__desktop">
+          <div
+            class="fixed w-full z-50 n1-header__desktop"
+            style={{ height: headerHeight }}
+          >
             <div
               class={"grid grid-cols-2-auto md:n1-container md:px-[120px] items-center portatil:max-w-[90%] portatil:px-0"}
             >

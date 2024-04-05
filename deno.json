@@ -2,8 +2,8 @@
   "imports": {
     "deco-sites/agencian1/": "./",
     "$store/": "./",
-    "deco/": "https://denopkg.com/deco-cx/deco@1.57.28/",
-    "apps/": "https://denopkg.com/deco-cx/apps@0.35.15/",
+    "deco/": "https://denopkg.com/deco-cx/deco@1.60.21/",
+    "apps/": "https://denopkg.com/deco-cx/apps@0.35.39/",
     "$fresh/": "https://deno.land/x/fresh@1.6.3/",
     "preact": "https://esm.sh/preact@10.19.2",
     "preact/": "https://esm.sh/preact@10.19.2/",

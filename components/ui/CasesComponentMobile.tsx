@@ -68,7 +68,9 @@ function CasesComponentMobile({ settingsImage }: Props) {
                 >
                   <a
                     href={`${href ? href : "javascript:void(0)"}`}
-                    class="relative n1-cases-card cursor-grab h-[342px] w-full [transition:all_.375s_linear]"
+                    class={`relative n1-cases-card ${
+                      href ? "cursor-pointer" : "cursor-grab"
+                    } h-[342px] w-full [transition:all_.375s_linear]`}
                     style={{ pointerEvents: `${href ? "all" : "grab"}` }}
                   >
                     <div
