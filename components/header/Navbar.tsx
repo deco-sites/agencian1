@@ -15,6 +15,7 @@ import NavItem from "./NavItem.tsx";
 import { navbarHeight } from "./constants.ts";
 import { Buttons, Logo } from "$store/components/header/Header.tsx";
 import Legend from "$store/components/header/Legend.tsx";
+import { headerHeight } from "./constants.ts";
 
 interface Props {
   items: SiteNavigationElement[];
@@ -75,7 +76,10 @@ function Navbar({
       </div>
 
       {/* Desktop Version */}
-      <div class="hidden lg:grid gap-x-[70px] portatil:gap-x-[20px] lg:grid-cols-2-auto items-center w-full py-6">
+      <div
+        class={`hidden lg:grid gap-x-[70px] portatil:gap-x-[20px] lg:grid-cols-2-auto items-center w-full`}
+        style={{ height: headerHeight ? headerHeight : "" }}
+      >
         <ul
           class={`flex py-[18px] gap-x-[32px] col-span-1 portatil:gap-x-[10px] ${
             logoPosition === "left" ? "justify-between" : "justify-start"
@@ -91,7 +95,8 @@ function Navbar({
             );
           })}
 
-          <Legend nameItemScape={itemLegend} />
+          {/* menu legenda */}
+          {/* <Legend nameItemScape={itemLegend} /> */}
         </ul>
         <div
           class={`flex ${

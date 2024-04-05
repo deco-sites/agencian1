@@ -51,10 +51,10 @@ function MenuItem({ item }: PropsMenuItem) {
             }
             {existsChildren && item && item.children &&
               item.children.map((node) => {
-                console.log("node -------> ", node);
                 return (
-                  <li>
+                  <li class="mb-[10px]">
                     <a
+                      class="n1-sublink block px-[5px] py-[5px]"
                       href={`${node?.url ? node?.url : "javascript:void(0)"}`}
                       style={{ pointerEvents: `${node?.url ? "all" : "none"}` }}
                     >
@@ -77,7 +77,13 @@ function Menu({ items, whatsapp }: Props) {
       <ul class="flex-grow flex flex-col divide-y divide-neutral-300 ">
         {items.map((item) => {
           return (
-            <li class="pt-[16px]">
+            <li
+              class={`pt-[16px] ${
+                item.name === "Blog" || item.name === "Ferramentas"
+                  ? "hidden"
+                  : ""
+              }`}
+            >
               <a
                 href={`${item?.url ? item?.url : "javascript:void(0)"}`}
                 style={{ pointerEvents: `${item?.url ? "all" : "none"}` }}
@@ -87,7 +93,8 @@ function Menu({ items, whatsapp }: Props) {
             </li>
           );
         })}
-        <Legend nameItemScape={itemLegend} mobile={true} />
+        {/* menu legenda */}
+        {/* <Legend nameItemScape={itemLegend} mobile={true} /> */}
       </ul>
       <div class="n1-menu-mobile__whatsapp w-[90%] mx-auto">
         {whatsapp && (
