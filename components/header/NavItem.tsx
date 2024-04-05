@@ -12,8 +12,11 @@ export interface PropsChildren extends SiteNavigationElement {
   /** @title Descrição Submenu - (Submenu de serviços) */
   descriptionSubMenu?: HTML;
 
-  /** @title Texto para Link do botão */
+  /** @title Texto para do botão */
   /** @description (ex: conheça mais dos nossos serviços ) */
+  btnTextMenu?: string;
+  /** @title Link do botão */
+  /** @description (ex: https://agencian1.com.br/ ) */
   btnUrlMenu?: string;
 
   /** @title Ativar título,descrição? */
@@ -52,14 +55,24 @@ function NavItem({ item, btnTextMenu, btnUrlMenu }: Props) {
       <li
         class={clx(`n1-header__navlink
         ${
+          nameItemScape === "blog"
+            ? "active--tooltip"
+            : nameItemScape === "ferramentas"
+            ? "hidden"
+            : ""
+        }
+        ${
           children && children.length > 0
             ? "n1-header__navlink--active relative pr-[25px] pl-[10px] cursor-pointer hover:before:rotate-[-135deg] hover:after:rotate-[135deg] hover:before:border-secondary hover:after:border-secondary hover:text-[#3CCBDA]"
             : ""
         } 
           group flex justify-between text-16 font-archimoto-medium uppercase whitespace-nowrap is-${nameItemScape} items-center`)}
+        data-tip={`${nameItemScape === "blog" ? "Em breve" : ""}`}
       >
         <a
-          href={`${url ? url : "javascript:void(0)"}`}
+          href={`${
+            url && nameItemScape !== "blog" ? url : "javascript:void(0)"
+          }`}
           style={{ pointerEvents: `${url ? "all" : "none"}` }}
           class="overflow-y-hidden h-5 mr-[10px]"
         >
@@ -125,10 +138,9 @@ function NavItem({ item, btnTextMenu, btnUrlMenu }: Props) {
 
                 <ul
                   class={clx(
-                    `${
-                      children.length >= 5 ? "grid grid-cols-5-auto" : "flex"
-                    } ${item?.name === "Ferramentas" ? "gap-x-[50px]" : ""} 
-                  items-start justify-between gap-x-[32px]`,
+                    `${children.length >= 5 ? "grid grid-cols-5-auto" : "flex"} 
+                    ${item?.name === "Ferramentas" ? "gap-x-[50px]" : ""} 
+                    items-start justify-between gap-x-[32px]`,
                   )}
                 >
                   {children.map((node) => {
@@ -172,7 +184,7 @@ function NavItem({ item, btnTextMenu, btnUrlMenu }: Props) {
                 {activePropsButton && btnTextMenu && (
                   <LinkButtonSubMenu
                     btnTextMenu={btnTextMenu}
-                    btnUrlMenu={btnUrlMenu}
+                    btnUrlMenu={item?.btnUrlMenu}
                   />
                 )}
               </div>

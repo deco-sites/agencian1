@@ -9,8 +9,10 @@ function LinkButtonSubMenu({ btnUrlMenu, btnTextMenu }: Props) {
   return (
     <>
       <a
-        href={btnUrlMenu}
-        target="_blank"
+        href={`${btnUrlMenu ? btnUrlMenu : "javascript:void(0)"}`}
+        style={{
+          pointerEvents: `${btnUrlMenu ? "all" : "none"}`,
+        }}
         aria-label={btnTextMenu}
         alt={btnTextMenu}
         class="inline-flex items-center btn bg-transparent n1-btn-header-item--rounded px-[20px] py-[11px] !border !border-[#585858]"

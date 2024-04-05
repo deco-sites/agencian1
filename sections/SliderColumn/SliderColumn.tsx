@@ -1,1 +1,4 @@
-export { loader, default } from "$store/components/sliderColumn/SliderColumn.tsx";
+export {
+  default,
+  loader,
+} from "$store/components/sliderColumn/SliderColumn.tsx";
