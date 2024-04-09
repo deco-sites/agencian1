@@ -55,7 +55,7 @@ interface PropsImage {
   heightLogoHover?: number;
   /**@title Imagem de fundo (efeito hover)*/
   imageBackgroundHover?: ImageWidget;
-  /**@title Larugura da imagem de fundo (efeito hover) */
+  /**@title Largura da imagem de fundo (efeito hover) */
   /**@description (ex: 300) */
   widthImageBackgroundHover?: number;
   /**@title Altura da imagem de fundo (efeito hover) */

@@ -118,7 +118,7 @@
   } 
 
 
-  .n1-header__navlink--active.is-active:hover .n1-submenu-children__container:before{
+  .n1-header__navlink--active.is-active .n1-submenu-children__overlay:before{
     content: "";
     position: fixed;
     top: 80px;
@@ -131,6 +131,10 @@
     z-index: -1;
     transition: all 2s linear;   
   }   
+
+  .n1-header__navlink--active.is-active .n1-submenu-children__overlay:hover:before{
+    content: initial !important;
+  }
 
   .moveFromTop:hover { transform: translateY(20px) }
 
@@ -248,7 +252,7 @@
     border-right: 0.15em solid #3CCBDA;
     white-space: nowrap; 
     max-width:max-content;
-    animation: typingText 1.5s steps(13, end) alternate infinite, blinkBorder .75s step-end infinite;
+    animation: typingText 2s steps(13, end) alternate infinite, blinkBorder .75s step-end infinite;
   }
   
   @keyframes typingText {
@@ -267,7 +271,7 @@
   /*  ESTILIZAÇÃO ANIMAÇÃO DA MARCA ______________________________________________________________________| INICIAL | */  
 
   .animation-section-brand{
-    animation: slide 10s linear infinite;
+    animation: slide 30s linear infinite;
   }
 
   @keyframes slide {
