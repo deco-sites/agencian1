@@ -36,71 +36,89 @@ interface Props {
   settingsImage?: PropsImage[];
 }
 
+// interface para método dentro do componente
+interface PropsFN{
+  allCardElement: HTMLCollectionOf<Element>;
+  bgWidth: string;
+  cardElement:Element;
+  logoWidth?:string;
+  bgWidthModeFalse?:string;
+  widthModeFalse?: string;
+  device?:string;
+}
+
+function activeCard( {allCardElement, bgWidth, cardElement, logoWidth, bgWidthModeFalse, widthModeFalse, device}:PropsFN ){
+  const validActive = allCardElement && Array.from(allCardElement).filter((e) => e?.classList.contains('is-active'));
+
+  if( cardElement ){
+    cardElement?.classList.remove("is-active");
+    bgWidth && cardElement?.setAttribute("style", `width: ${bgWidth}px`);
+
+    const itemHover = cardElement?.querySelector<HTMLElement>(".n1-cases-card__item--hover");
+    const logoHover = cardElement?.querySelector<HTMLElement>(".n1-cases-card__logo--hover");
+
+    bgWidth && itemHover?.style?.width == bgWidth ? bgWidth + "px": device ? (Number(bgWidth) / 2) : bgWidthModeFalse;
+    logoWidth && logoHover?.setAttribute("style", `width: ${logoWidth}px`);
+  
+    allCardElement && Array.from(allCardElement).forEach((e, i) => {
+      if(e && i === 0 && validActive && Object.assign(validActive).length === 0 ){
+        const logo = e.querySelector<HTMLElement>('.logo-width-hover')?.dataset?.logowidthhover;
+        const widthEl = e.querySelector<HTMLElement>('.bg-width-hover')?.dataset?.bgwidthhover;
+
+        const selectorItem = e.querySelector<HTMLElement>(".n1-cases-card__item--hover");
+        const selectorlogo = e.querySelector<HTMLElement>(".n1-cases-card__logo--hover");
+
+        e?.classList.add("is-active");
+        widthEl && e.setAttribute("style", `width: ${device ? (Number(widthEl) / 1.7) + 'px' : widthEl + 'px' }`);
+        widthEl && selectorItem?.style?.width == widthEl ?  widthEl + "px" : device ? (Number(widthEl)) + "px" : widthModeFalse;
+        !device && logo && selectorlogo?.setAttribute("style", `width: ${logo}px`);
+      }          
+    });
+  }
+}
+
 function CasesComponentDesktop({ settingsImage }: Props) {
+
   function handleMouserHover(e: MouseEvent) {
     const { target } = e;
     const modeDesktop = globalThis.matchMedia("(min-width: 1281px)").matches;
-    const modePortatil =
-      globalThis.matchMedia("(min-width:1024px) and (max-width: 1280px)")
-        .matches;
-    const modeTablet =
-      globalThis.matchMedia("(min-width:768px) and (max-width: 1024px)")
-        .matches;
+    const modePortatil = globalThis.matchMedia("(min-width:1024px) and (max-width: 1280px)").matches;
+    const modeTablet = globalThis.matchMedia("(min-width:768px) and (max-width: 1024px)").matches;
 
     if (!target) return;
 
     if (target && target instanceof HTMLElement) {
       const cardElement = target?.closest(".n1-cases-card");
-      const allCardElement = cardElement &&
-        cardElement.parentElement?.getElementsByClassName("n1-cases-card");
+      const allCardElement = cardElement && cardElement.parentElement?.getElementsByClassName("n1-cases-card");           
 
-      allCardElement && Array.from(allCardElement).forEach((e) => {
+      allCardElement && Array.from(allCardElement).forEach((e, i) => {
         e?.classList.remove("is-active");
-        e?.setAttribute("style", "width: 300px");
+        e?.setAttribute("style", "width: 300px");                
       });
 
-      const bgWidth = cardElement?.querySelector<HTMLElement>(".bg-width")
-        ?.dataset.bgwidth;
-      const bgWidthHover = cardElement?.querySelector<HTMLElement>(
-        ".bg-width-hover",
-      )?.dataset.bgwidthhover;
-      const logoWidth = cardElement?.querySelector<HTMLElement>(".logo-width")
-        ?.dataset.logowidth;
-      const logoWidthHover = cardElement?.querySelector<HTMLElement>(
-        ".logo-width-hover",
-      )?.dataset.logowidthhover;
+      const bgWidth = cardElement?.querySelector<HTMLElement>(".bg-width")?.dataset.bgwidth;
+      const bgWidthHover = cardElement?.querySelector<HTMLElement>(".bg-width-hover")?.dataset.bgwidthhover;
+      const logoWidth = cardElement?.querySelector<HTMLElement>(".logo-width")?.dataset.logowidth;
+      const logoWidthHover = cardElement?.querySelector<HTMLElement>(".logo-width-hover")?.dataset.logowidthhover;
 
       if (modeDesktop) {
         switch (e.type) {
           case "mouseleave":
-            cardElement?.classList.remove("is-active");
-            bgWidth &&
-              cardElement?.setAttribute("style", `width: ${bgWidth}px`);
-            bgWidth &&
-              cardElement?.querySelector<HTMLElement>(
-                  ".n1-cases-card__item--hover",
-                )?.style?.width == bgWidth
-              ? bgWidth + "px"
-              : "300px";
-            logoWidth &&
-              cardElement?.querySelector<HTMLElement>(
-                ".n1-cases-card__logo--hover",
-              )?.setAttribute("style", `width: ${logoWidth}px`);
+           
+            setTimeout(()=>{
+              const bgWidthModeFalse = '300px';
+              const widthModeFalse = '560px';
+              if(allCardElement && bgWidth && cardElement && logoWidth){
+                activeCard( { allCardElement, bgWidth, cardElement, logoWidth, bgWidthModeFalse, widthModeFalse } );
+              }
+            }, 500);
+
             break;
           case "mouseover":
             cardElement?.classList.add("is-active");
-            bgWidthHover &&
-              cardElement?.setAttribute("style", `width: ${bgWidthHover}px`);
-            bgWidthHover &&
-              cardElement?.querySelector<HTMLElement>(
-                  ".n1-cases-card__item--hover",
-                )?.style?.width == bgWidthHover
-              ? bgWidthHover + "px"
-              : "560px";
-            logoWidthHover &&
-              cardElement?.querySelector<HTMLElement>(
-                ".n1-cases-card__logo--hover",
-              )?.setAttribute("style", `width: ${logoWidthHover}px`);
+            bgWidthHover && cardElement?.setAttribute("style", `width: ${bgWidthHover}px`);
+            bgWidthHover && cardElement?.querySelector<HTMLElement>(".n1-cases-card__item--hover")?.style?.width == bgWidthHover ? bgWidthHover + "px": "560px";
+            logoWidthHover && cardElement?.querySelector<HTMLElement>(".n1-cases-card__logo--hover")?.setAttribute("style", `width: ${logoWidthHover}px`);
             break;
         }
       }
@@ -108,33 +126,21 @@ function CasesComponentDesktop({ settingsImage }: Props) {
       if (modePortatil) {
         switch (e.type) {
           case "mouseleave":
-            cardElement?.classList.remove("is-active");
-            bgWidth &&
-              cardElement?.setAttribute("style", `width: ${bgWidth}px`);
-            bgWidth &&
-              cardElement?.querySelector<HTMLElement>(
-                  ".n1-cases-card__item--hover",
-                )?.style?.width == bgWidth
-              ? (Number(bgWidth) / 2) + "px"
-              : "300px";
-            logoWidth &&
-              cardElement?.querySelector<HTMLElement>(
-                ".n1-cases-card__logo--hover",
-              )?.setAttribute("style", `width: ${logoWidth}px`);
+            setTimeout(()=>{
+              const bgWidthModeFalse = '300px';
+              const widthModeFalse = '360px';
+              const device = 'portatil'
+
+              if(allCardElement && bgWidth && cardElement){
+                activeCard( { allCardElement, bgWidth, cardElement, bgWidthModeFalse, widthModeFalse, device } );
+              }
+            }, 500);
+
             break;
           case "mouseover":
             cardElement?.classList.add("is-active");
-            bgWidthHover &&
-              cardElement?.setAttribute(
-                "style",
-                `width: ${Number(bgWidthHover) / 1.7}px`,
-              );
-            bgWidthHover &&
-              cardElement?.querySelector<HTMLElement>(
-                  ".n1-cases-card__item--hover",
-                )?.style?.width == bgWidthHover
-              ? (Number(bgWidthHover)) + "px"
-              : "360px";
+            bgWidthHover && cardElement?.setAttribute("style",`width: ${Number(bgWidthHover) / 1.7}px`);
+            bgWidthHover && cardElement?.querySelector<HTMLElement>(".n1-cases-card__item--hover")?.style?.width == bgWidthHover ? (Number(bgWidthHover)) + "px" : "360px";
             break;
         }
       }
@@ -142,33 +148,21 @@ function CasesComponentDesktop({ settingsImage }: Props) {
       if (modeTablet) {
         switch (e.type) {
           case "mouseleave":
-            cardElement?.classList.remove("is-active");
-            bgWidth &&
-              cardElement?.setAttribute("style", `width: ${bgWidth}px`);
-            bgWidth &&
-              cardElement?.querySelector<HTMLElement>(
-                  ".n1-cases-card__item--hover",
-                )?.style?.width == bgWidth
-              ? (Number(bgWidth) / 2) + "px"
-              : "300px";
-            logoWidth &&
-              cardElement?.querySelector<HTMLElement>(
-                ".n1-cases-card__logo--hover",
-              )?.setAttribute("style", `width: ${logoWidth}px`);
+            setTimeout(()=>{
+              const bgWidthModeFalse = '300px';
+              const widthModeFalse = '360px';
+              const device = 'tablet'
+
+              if(allCardElement && bgWidth && cardElement){
+                activeCard( { allCardElement, bgWidth, cardElement, bgWidthModeFalse, widthModeFalse, device } );
+              }
+            }, 500);          
+
             break;
           case "mouseover":
             cardElement?.classList.add("is-active");
-            bgWidthHover &&
-              cardElement?.setAttribute(
-                "style",
-                `width: ${Number(bgWidthHover) / 1.7}px`,
-              );
-            bgWidthHover &&
-              cardElement?.querySelector<HTMLElement>(
-                  ".n1-cases-card__item--hover",
-                )?.style?.width == bgWidthHover
-              ? (Number(bgWidthHover)) + "px"
-              : "360px";
+            bgWidthHover && cardElement?.setAttribute("style",`width: ${Number(bgWidthHover) / 1.7}px`);
+            bgWidthHover && cardElement?.querySelector<HTMLElement>(".n1-cases-card__item--hover")?.style?.width == bgWidthHover ? (Number(bgWidthHover)) + "px" : "360px";
             break;
         }
       }
@@ -208,7 +202,7 @@ function CasesComponentDesktop({ settingsImage }: Props) {
             <>
               <a
                 href={`${href ? href : "javascript:void(0)"}`}
-                class={`relative n1-cases-card ${
+                class={`relative n1-cases-card ${alt ? 'is-' + alt : '' } notebook:max-w-[500px] ${
                   index === 0 ? "is-active" : ""
                 } ${
                   href ? "cursor-pointer" : "cursor-grab"
@@ -220,7 +214,7 @@ function CasesComponentDesktop({ settingsImage }: Props) {
                       ? heightImageBackgroundHover + "px"
                       : "500px"
                   }`,
-                  width: index === 0 ? "500px" : "",
+                  width: index === 0 ? "560px" : "",
                   pointerEvents: `${href ? "all" : "grab"}`,
                 }}
               >
