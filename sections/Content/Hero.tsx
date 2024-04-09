@@ -112,11 +112,11 @@ export default function HeroFlats(
         textElement.classList.add("is-active");
         textElement.innerHTML = textArray[word];
 
-        setTimeout(typingWrite, 3000);
+        setTimeout(typingWrite, 4000);
         setTimeout(() => {
           textElement.innerHTML = "";
           textElement.classList.remove("is-active");
-        }, 2950);
+        }, 3950);
       }
     }
   }
