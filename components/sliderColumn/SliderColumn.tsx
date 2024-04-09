@@ -8,9 +8,23 @@ import { BannerItem } from "deco-sites/agencian1/components/sliderColumn/BannerI
 import Dots from "deco-sites/agencian1/components/sliderColumn/Dots.tsx";
 import Buttons from "deco-sites/agencian1/components/sliderColumn/Buttons.tsx";
 
-/**
- * @titleBy title
- */
+export interface Banner {
+  /** @title Imagem Desktop */
+  desktop: ImageWidget;
+  /** @title Imagem Mobile */
+  mobile: ImageWidget;
+  /** @title Alt */
+  alt: string;
+
+  action?: ActionProps;
+
+  /** @format html */
+  subTitle: string;
+
+  /** @format html */
+  description: string;
+}
+
 interface ActionProps {
   /** @title link */
   /** @description (ex: https://agencian1.com.br/) */
@@ -21,22 +35,6 @@ interface ActionProps {
   subTitle: string;
   /** @title Texto do botão */
   label: string;
-}
-
-/**
- * @titleBy alt
- */
-export interface Banner {
-  /** @title Imagem Desktop */
-  desktop: ImageWidget;
-  /** @title Imagem Mobile */
-  mobile: ImageWidget;
-  /** @title Texto da imagem */
-  alt: string;
-  action?: ActionProps;
-
-  /** @format html */
-  description: string;
 }
 
 export interface Props {
@@ -81,30 +79,30 @@ export default function SliderColumn(
     { ...DEFAULT_PROPS, ...props };
   return (
     <div
-      class="w-full flex flex-row relative max-w-[1300px] m-auto justify-between  px-5 md:px-0 lg:py-0 z-10"
+      class="w-full flex  flex-col lg:flex-row relative max-w-[1300px] m-auto justify-between  px-5 md:px-0 lg:py-0 z-10"
       style={{ marginTop: `${marginTop}`, marginBottom: `${marginBottom}` }}
     >
-      <div class="w-1/2">
-        {title && (
-          <div
-            class=" text-20 lg:text-[40px] text-[#fff]  font-black not-italic font-archimoto-black mb-6 mt-7  lg:mb-[30px] lg:mt-[12px] "
-            dangerouslySetInnerHTML={{ __html: title }}
-          >
-          </div>
-        )}
-      </div>
+      {title && (
+        <div
+          class=" block lg:hidden text-20 lg:text-[40px] text-[#fff]  font-black not-italic font-archimoto-black mb-5"
+          dangerouslySetInnerHTML={{ __html: title }}
+        >
+        </div>
+      )}
 
       <div
         id={id}
-        class="grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px] grid-rows-[1fr_48px_1fr_64px] sm:min-h-min min-h-[660px] w-full max-w-[800px] "
+        class="lg:grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px] grid-rows-[1fr_48px_1fr_64px]
+          h-[521px] lg:h-auto lg:min-h-[660px] w-full flex items-center justify-end flex-col-reverse"
       >
-        <Slider class="carousel carousel-center col-span-full row-span-full gap-6 w-full rounded-[20px] max-w-[623px] m-auto">
+        <Slider class="carousel carousel-center col-span-full row-span-full gap-6 w-full rounded-[20px]">
           {images?.map((image, index) => {
             return (
               <>
                 <Slider.Item index={index} class="carousel-item w-full">
                   <BannerItem
                     image={image}
+                    title={title}
                     lcp={index === 0 && preload}
                     id={`${id}::${index}`}
                   />
@@ -114,7 +112,7 @@ export default function SliderColumn(
           })}
         </Slider>
 
-        {props.arrows && <Buttons />}
+        {props.arrows && <Buttons device={device} />}
         {props.dots && <Dots images={images} interval={interval} />}
 
         <SliderJS rootId={id} interval={interval && interval * 1e3} infinite />
