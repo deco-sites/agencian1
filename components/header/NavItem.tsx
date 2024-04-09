@@ -45,8 +45,10 @@ function NavItem({ item, btnTextMenu, btnUrlMenu }: Props) {
   const image = item?.image?.[0];
   const nameItemScape = item?.name?.replaceAll(/\s/g, "-").toLowerCase();
   const headerHeightNumber = headerHeight &&
-  Number(headerHeight?.replace("px", ""));
-  const lasfHeaderHeight = headerHeightNumber > 2 ? headerHeightNumber / 2.5 : headerHeightNumber;
+    Number(headerHeight?.replace("px", ""));
+  const lasfHeaderHeight = headerHeightNumber > 2
+    ? headerHeightNumber / 2.5
+    : headerHeightNumber;
 
   return (
     <>
