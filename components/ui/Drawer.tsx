@@ -40,25 +40,28 @@ function Drawer(props: Props) {
   }, []);
 
   return (
-    <div class={`drawer ${_class}`}>
-      <input
-        id={id}
-        checked={open}
-        type="checkbox"
-        class="drawer-toggle"
-        onChange={(e) => e.currentTarget.checked === false && onClose?.()}
-        aria-label={open ? "open drawer" : "closed drawer"}
-      />
+    <>
+      <div class={`drawer ${_class}`}>
+        <input
+          id={id}
+          checked={open}
+          type="checkbox"
+          class="drawer-toggle"
+          onChange={(e) => e.currentTarget.checked === false && onClose?.()}
+          aria-label={open ? "open drawer" : "closed drawer"}
+        />
 
-      <div class="drawer-content">
-        {children}
+        <div class="drawer-content">
+          {children}
+        </div>
+
+        <aside class="drawer-side h-full z-50 overflow-hidden">
+          <label for={id} class="drawer-overlay" />
+          {!lazy.value && aside}
+        </aside>
       </div>
-
-      <aside class="drawer-side h-full z-50 overflow-hidden">
-        <label for={id} class="drawer-overlay" />
-        {!lazy.value && aside}
-      </aside>
-    </div>
+      <div class="n1-overlay is-menu"></div>
+    </>
   );
 }
 

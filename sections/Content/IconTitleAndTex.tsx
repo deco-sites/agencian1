@@ -44,8 +44,6 @@ function IconTitleAndTex(props: SectionProps<ReturnType<typeof loader>>) {
     backgroundImage && backgroundImage?.src && backgroundImage?.width &&
     backgroundImage?.height;
 
-  // console.log('device ---> ', device)
-
   return (
     <>
       <div class="text-[#ffffff]">

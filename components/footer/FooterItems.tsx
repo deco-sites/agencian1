@@ -36,11 +36,13 @@ export default function FooterItems(
                       {section.label}
                     </span>
                     <ul
-                      class={clx(`flex flex-col ${
-                        section.label === "Certificações"
-                          ? "gap-y-[10px]"
-                          : "gap-y-[16px] md:gap-y-[22px]"
-                      } flex-wrap text-sm`)}
+                      class={clx(
+                        `flex flex-col ${
+                          section.label === "Certificações"
+                            ? "gap-y-[10px]"
+                            : "gap-y-[16px] md:gap-y-[22px]"
+                        } flex-wrap text-sm`,
+                      )}
                     >
                       {section.items?.map((item) => {
                         return (
@@ -55,10 +57,18 @@ export default function FooterItems(
                               : (
                                 <li>
                                   <a
-                                    href={`${item?.href && item.href !== "#" ? item?.href : "javascript:void(0)"}`}
+                                    href={`${
+                                      item?.href && item.href !== "#"
+                                        ? item?.href
+                                        : "javascript:void(0)"
+                                    }`}
                                     style={{
-                                      pointerEvents: `${item?.href && item?.href !== "#" ? "all" : "none"}`
-                                    }}                                       
+                                      pointerEvents: `${
+                                        item?.href && item?.href !== "#"
+                                          ? "all"
+                                          : "none"
+                                      }`,
+                                    }}
                                     class={clx(
                                       `text-[14px] leading-[21.6px] block py-1 link link-hover md:text-16 font-noto-sans font-normal text-base-150`,
                                     )}
@@ -96,10 +106,18 @@ export default function FooterItems(
                       {section.items?.map((item) => (
                         <li>
                           <a
-                            href={`${item?.href && item.href !== "#" ? item?.href : "javascript:void(0)"}`}
+                            href={`${
+                              item?.href && item.href !== "#"
+                                ? item?.href
+                                : "javascript:void(0)"
+                            }`}
                             style={{
-                              pointerEvents: `${item?.href && item?.href !== "#" ? "all" : "none"}`
-                            }} 
+                              pointerEvents: `${
+                                item?.href && item?.href !== "#"
+                                  ? "all"
+                                  : "none"
+                              }`,
+                            }}
                             class="block py-1 link link-hover"
                           >
                             {item.label}
