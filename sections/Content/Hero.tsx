@@ -2,6 +2,7 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import { FnContext, SectionProps } from "deco/mod.ts";
 import { clx } from "$store/sdk/clx.ts";
+import { useEffect } from "preact/hooks";
 
 export interface CTA {
   id?: string;
@@ -24,6 +25,7 @@ export interface Props {
   /** @format html */
   description: string;
   /** @title Texto para animação */
+  /** @description (Separar frase por vírgula. Ex: Uau commerce, Performance ) */
   descriptionAnimation?: string;
   /** @title Imagem */
   image?: ImageWidget;
@@ -81,6 +83,47 @@ export default function HeroFlats(
   const positionY = translateY ? translateY + "px" : 0;
 
   const HEIGHT = 508;
+
+  function typingWrite(word: number) {
+    const loop = localStorage.getItem("loop")
+      ? localStorage.getItem("loop")
+      : null;
+    const loopNumber = Number(loop);
+
+    if (loop && loopNumber < 1) {
+      word = loopNumber + 1;
+    } else if (loopNumber > 1) {
+      word = 0;
+    } else {
+      word = 0;
+    }
+
+    localStorage.setItem("loop", String(word));
+
+    const textElement = document.querySelector<HTMLElement>(
+      ".text-animation--typing",
+    );
+
+    if (textElement && textElement instanceof HTMLElement) {
+      const elementDataType = textElement.getAttribute("data-write");
+      const textArray = elementDataType ? elementDataType.split(",") : null;
+
+      if (textArray) {
+        textElement.classList.add("is-active");
+        textElement.innerHTML = textArray[word];
+
+        setTimeout(typingWrite, 3000);
+        setTimeout(() => {
+          textElement.innerHTML = "";
+          textElement.classList.remove("is-active");
+        }, 2950);
+      }
+    }
+  }
+
+  useEffect(() => {
+    typingWrite(0);
+  }, []);
 
   return (
     <div class="mobile:mt-[10px] mobile:px-[20px]">
@@ -140,8 +183,10 @@ export default function HeroFlats(
             )}
             {descriptionAnimation && (
               <div class="n1-typing mobile:[&_*]:!text-24">
-                <span class={`font-archimoto-medium `}>
-                  {descriptionAnimation}
+                <span
+                  class="text-animation--typing mobile:h-[28.8px] h-[88px] font-archimoto-medium grid text-secondary font-black text-[80px] leading-[88px] overflow-hidden"
+                  data-write={descriptionAnimation}
+                >
                 </span>
               </div>
             )}

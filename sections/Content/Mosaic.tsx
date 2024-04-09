@@ -2,7 +2,6 @@ import { FnContext, SectionProps } from "deco/mod.ts";
 import LinkWithOptionArrow from "$store/components/ui/LinkWithOptionArrow.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import { HTMLWidget as HTML } from "apps/admin/widgets.ts";
 import { clx } from "$store/sdk/clx.ts";
 
 // INTERFACE GENERICA P/ IMAGEM

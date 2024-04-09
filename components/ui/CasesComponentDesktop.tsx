@@ -1,6 +1,5 @@
 import { clx } from "$store/sdk/clx.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-// import { FnContext, SectionProps } from "deco/mod.ts";
 
 interface TagProps {
   imageTag?: ImageWidget;
@@ -37,7 +36,6 @@ interface Props {
   settingsImage?: PropsImage[];
 }
 
-// function CasesComponentDesktop(props: SectionProps<ReturnType<typeof loader>>){
 function CasesComponentDesktop({ settingsImage }: Props) {
   function handleMouserHover(e: MouseEvent) {
     const { target } = e;
@@ -60,12 +58,6 @@ function CasesComponentDesktop({ settingsImage }: Props) {
         e?.classList.remove("is-active");
         e?.setAttribute("style", "width: 300px");
       });
-      // console.log('cardElement --> ', cardElement?.parentElement?.getElementsByClassName('n1-cases-card'))
-
-      // if(){
-      //   cardElement?.classList.remove('is-active')
-      // }
-      // cardElement?.classList.contains('is-active') ?? cardElement?.classList.remove('is-active');
 
       const bgWidth = cardElement?.querySelector<HTMLElement>(".bg-width")
         ?.dataset.bgwidth;
@@ -326,7 +318,7 @@ function CasesComponentDesktop({ settingsImage }: Props) {
                 <div
                   class={clx(
                     `n1-cases-card__item--hover md:invisible md:opacity-0 mobile:w-[346px] tablet:!max-w-[300px] mobile:min-h-[342px] 
-                                        absolute top-0 left-0 duration-300 [transition:all_.2s_linear] rounded-[20px] is-active`,
+                     absolute top-0 left-0 duration-300 [transition:all_.2s_linear] rounded-[20px] is-active`,
                   )}
                   style={{
                     backgroundImage: `${

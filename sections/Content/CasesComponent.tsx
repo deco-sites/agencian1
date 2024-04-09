@@ -109,7 +109,7 @@ function CasesComponent(props: SectionProps<ReturnType<typeof loader>>) {
 
   return (
     <>
-      <div class="mobile:px-[20px] md:mt-[120px] relative z-1 overflow-hidden">
+      <div class="n1-cases mobile:px-[20px] md:mt-[120px] relative z-1 overflow-hidden">
         {imageBackgroundSection && (
           <div class="hidden md:flex absolute top-0 left-0 w-full h-full">
             <div class="absolute bottom-0 left-0">

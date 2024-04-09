@@ -45,8 +45,10 @@ function NavItem({ item, btnTextMenu, btnUrlMenu }: Props) {
   const image = item?.image?.[0];
   const nameItemScape = item?.name?.replaceAll(/\s/g, "-").toLowerCase();
   const headerHeightNumber = headerHeight &&
-  Number(headerHeight?.replace("px", ""));
-  const lasfHeaderHeight = headerHeightNumber > 2 ? headerHeightNumber / 2.5 : headerHeightNumber;
+    Number(headerHeight?.replace("px", ""));
+  const lasfHeaderHeight = headerHeightNumber > 2
+    ? headerHeightNumber / 2.5
+    : headerHeightNumber;
 
   return (
     <>
@@ -61,7 +63,7 @@ function NavItem({ item, btnTextMenu, btnUrlMenu }: Props) {
         }
         ${
           children && children.length > 0
-            ? "n1-header__navlink--active relative pr-[25px] pl-[10px] cursor-pointer hover:before:rotate-[-135deg] hover:after:rotate-[135deg] hover:before:border-secondary hover:after:border-secondary hover:text-[#3CCBDA]"
+            ? "n1-header__navlink--active relative pr-[25px] pl-[10px] cursor-pointer hover:is-active hover:before:rotate-[135deg] hover:after:rotate-[45deg] hover:before:border-secondary hover:after:border-secondary hover:text-secondary"
             : ""
         } 
           group flex justify-between text-16 font-archimoto-medium uppercase whitespace-nowrap is-${nameItemScape} items-center`)}
@@ -97,7 +99,7 @@ function NavItem({ item, btnTextMenu, btnUrlMenu }: Props) {
             >
               <div
                 class={clx(
-                  `mt-[35px] bg-[#fff] !w-auto rounded-b-[40px] pt-[20px] pb-[40px] px-[40px] 
+                  `mt-[35px] bg-[#fff] !w-auto rounded-b-[40px] pt-[20px] pb-[40px] px-[40px] n1-submenu-children__container 
                 ${children.length < 3 ? "flex max-w-[835px]" : ""}`,
                 )}
               >
