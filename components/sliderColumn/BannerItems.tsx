@@ -1,6 +1,23 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 
+export interface Banner {
+  /** @title Imagem Desktop */
+  desktop: ImageWidget;
+  /** @title Imagem Mobile */
+  mobile: ImageWidget;
+  /** @title Alt */
+  alt: string;
+
+  action?: ActionProps;
+
+  /** @format html */
+  subTitle?: string;
+
+  /** @format html */
+  description?: string;
+}
+
 interface ActionProps {
   /** @title link */
   /** @description (ex: https://agencian1.com.br/) */
@@ -13,32 +30,50 @@ interface ActionProps {
   label: string;
 }
 
-/**
- * @titleBy alt
- */
-interface Banner {
-  /** @title Imagem Desktop */
-  desktop: ImageWidget;
-  /** @title Imagem Mobile */
-  mobile: ImageWidget;
-  /** @title Texto da imagem */
-  alt: string;
-  action?: ActionProps;
-}
-
 export function BannerItem(
-  { image, lcp, id }: { image: Banner; lcp?: boolean; id: string },
+  { image, lcp, id, title }: {
+    image: Banner;
+    lcp?: boolean;
+    id: string;
+    title?: string;
+  },
 ) {
   const {
     alt,
     mobile,
     desktop,
+    description,
+    subTitle,
     action,
   } = image;
 
   return (
-    <>
-      <div class="w-full overflow-y-hidden">
+    <div class="flex flex-col-reverse lg:flex-row lg:px-16 justify-end w-full">
+      <div class="flex flex-col w-full max-w-[583px]">
+        {title && (
+          <div
+            class=" hidden lg:block text-20 lg:text-[40px] text-[#fff]  font-black not-italic font-archimoto-black mb-6 mt-7  lg:mt-[70px] "
+            dangerouslySetInnerHTML={{ __html: title }}
+          >
+          </div>
+        )}
+        {subTitle && (
+          <div
+            class=" text-14 lg:text-24  font-archimoto-black font-black  text-[#F3F4F7] !leading-[120%] mt-6 "
+            dangerouslySetInnerHTML={{ __html: subTitle }}
+          >
+          </div>
+        )}
+        {description && (
+          <div
+            class=" text-14 lg:text-16 font-noto-sans font-normal  text-[#F3F4F7] !leading-[160%] mt-5  w-full max-w-[530px]"
+            dangerouslySetInnerHTML={{ __html: description }}
+          >
+          </div>
+        )}
+      </div>
+
+      <div class="w-full overflow-y-hidden rounded-[20px] max-w-[623px]">
         <a
           id={id}
           href={action?.href ?? "#"}
@@ -61,7 +96,7 @@ export function BannerItem(
               height={600}
             />
             <img
-              class="mobile:object-none mobile:h-auto mobile:max-w-full object-cover w-full h-full"
+              class="mobile:h-auto mobile:max-w-full object-cover w-full h-full"
               loading={lcp ? "eager" : "lazy"}
               src={desktop}
               alt={alt}
@@ -69,6 +104,6 @@ export function BannerItem(
           </Picture>
         </a>
       </div>
-    </>
+    </div>
   );
 }
