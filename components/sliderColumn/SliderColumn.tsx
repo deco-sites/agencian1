@@ -95,7 +95,7 @@ export default function SliderColumn(
         class="lg:grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px] grid-rows-[1fr_48px_1fr_64px]
           h-[521px] lg:h-auto  w-full flex items-center justify-end flex-col-reverse"
       >
-        <Slider class="carousel carousel-center col-span-full row-span-full gap-6 w-full rounded-[20px]">
+        <Slider class="carousel carousel-center col-span-full row-span-full gap-6 w-full">
           {images?.map((image, index) => {
             return (
               <>
