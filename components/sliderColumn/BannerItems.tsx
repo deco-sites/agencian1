@@ -66,7 +66,7 @@ export function BannerItem(
         )}
       </div>
 
-      <div class="w-full overflow-y-hidden rounded-[20px] max-w-[623px] h-[289px] md:h-auto">
+      <div class="w-full overflow-y-hidden rounded-[20px] max-w-[623px] h-auto">
         <a
           id={id}
           href={action?.href ?? "#"}
