@@ -221,7 +221,7 @@ function TextWithImageAnimation(
                   class={clx(
                     `mobile:col-[2] col-[3] row-[2] flex items-center justify-center relative
                     before:content-[""] before:border-[0.268px] before:border-solid before:border-[rgba(198,_198,_198,_.3)] 
-                    before:opacity-20 before:w-[70%] before:h-[85%] before:absolute before:rounded-[50%] before:top-[25px]
+                    before:opacity-20 before:w-[85%] before:h-[100%] before:absolute before:rounded-[50%] before:top-[10px]
                     after:content-[""] after:border-[0.268px] after:border-solid after:border-[rgba(198,_198,_198,_.3)] 
                     after:opacity-20 after:w-[140%] after:h-[160%] after:absolute after:rounded-[50%] after:-top-[55px]                        
                   `,
