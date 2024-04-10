@@ -166,11 +166,6 @@ export default function HeroFlats(
                   : "mobile:w-full"
               }`,
             )}
-            // class={`mx-6 lg:mx-auto lg:w-full space-y-4 gap-4 ${
-            //   image
-            //     ? "lg:w-1/2 lg:max-w-xl"
-            //     : "flex flex-col items-center justify-center lg:max-w-3xl"
-            // }`}
           >
             {title && (
               <div
@@ -182,7 +177,7 @@ export default function HeroFlats(
               </div>
             )}
             {descriptionAnimation && (
-              <div class="n1-typing mobile:[&_*]:!text-24">
+              <div class="n1-typing mobile:[&_*]:!text-24 md:mt-[12px]">
                 <span
                   class="text-animation--typing mobile:h-[28.8px] h-[88px] font-archimoto-medium grid text-secondary font-black text-[80px] leading-[88px] overflow-hidden"
                   data-write={descriptionAnimation}
@@ -216,13 +211,9 @@ export default function HeroFlats(
                     <a
                       key={item?.id}
                       id={item?.id}
-                      href={item?.href}
-                      target={item && item.href && item.href.includes("http")
-                        ? "_blank"
-                        : "_self"}
                       class={clx(
                         `mobile:py-[8px] mobile:px-[6px] lg:w-[240px] lg:min-w-[240px] px-[20px] py-[24px] flex flex-col items-center 
-                        text-center group relative overflow-hidden rounded-[10px] hover:bg-gradient-to-r transition-all duration-300 ease-out 
+                        text-center relative overflow-hidden rounded-[10px] 
                         ${
                           item.variant === "Reverse"
                             ? "bg-secondary text-white"
@@ -230,7 +221,7 @@ export default function HeroFlats(
                         }`,
                       )}
                     >
-                      <span class="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10 transition-all duration-1000 group-hover:-translate-x-40">
+                      <span class="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10">
                       </span>
                       <span
                         class={`mobile:text-20 mobile:leading-[24px] text-secondary font-bold font-archimoto-medium text-50 relative`}

@@ -235,6 +235,23 @@
     animation: overlayText .275s linear forwards;
   }
 
+  .is-loading{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 5px dotted #cacaca;
+    border-right-color: rgba(255, 255 ,255, .17);
+    position: absolute;
+    left: 25%;
+    top: 10px;    
+    animation: loading 1s infinite;    
+  }
+
+  @keyframes loading {
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
   @keyframes overlayText {
     0%{background: transparent;}

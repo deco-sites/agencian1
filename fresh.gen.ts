@@ -4,6 +4,7 @@
 
 import * as $_app from "./routes/_app.tsx";
 import * as $api_contactform from "./routes/api/contactform.tsx";
+import * as $api_newsletterform from "./routes/api/newsletterform.tsx";
 import * as $AddToCartButton_linx from "./islands/AddToCartButton/linx.tsx";
 import * as $AddToCartButton_nuvemshop from "./islands/AddToCartButton/nuvemshop.tsx";
 import * as $AddToCartButton_shopify from "./islands/AddToCartButton/shopify.tsx";
@@ -38,6 +39,7 @@ const manifest = {
   routes: {
     "./routes/_app.tsx": $_app,
     "./routes/api/contactform.tsx": $api_contactform,
+    "./routes/api/newsletterform.tsx": $api_newsletterform,
   },
   islands: {
     "./islands/AddToCartButton/linx.tsx": $AddToCartButton_linx,
