@@ -92,7 +92,7 @@ function NavItem({ item, btnTextMenu, btnUrlMenu }: Props) {
                 gap-6 w-screen top-0 text-primary max-w-[90%] left-[5%] rounded-b-[40px]`,
               )}
               style={{
-                top: "-5px",
+                top: "-10px",
                 marginTop: (lasfHeaderHeight + 20) + "px",
                 height: (lasfHeaderHeight + 20) + "px",
               }}
@@ -103,6 +103,7 @@ function NavItem({ item, btnTextMenu, btnUrlMenu }: Props) {
                 ${children.length < 3 ? "flex max-w-[835px]" : ""}`,
                 )}
               >
+                <div class="n1-submenu-children__overlay"></div>
                 {image?.url && (
                   <Image
                     class="p-6"
