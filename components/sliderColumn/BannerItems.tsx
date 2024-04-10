@@ -48,15 +48,8 @@ export function BannerItem(
   } = image;
 
   return (
-    <div class="flex flex-col-reverse lg:flex-row lg:px-16 justify-end w-full">
-      <div class="flex flex-col w-full max-w-[583px]">
-        {title && (
-          <div
-            class=" hidden lg:block text-20 lg:text-[40px] text-[#fff]  font-black not-italic font-archimoto-black mb-6 mt-7  lg:mt-[70px] "
-            dangerouslySetInnerHTML={{ __html: title }}
-          >
-          </div>
-        )}
+    <div class="flex flex-col-reverse lg:flex-row lg:px-16 justify-end w-full items-center">
+      <div class="flex flex-col w-full max-w-[583px]  h-auto lg:h-[200px]">
         {subTitle && (
           <div
             class=" text-14 lg:text-24  font-archimoto-black font-black  text-[#F3F4F7] !leading-[120%] mt-6 "
@@ -73,7 +66,7 @@ export function BannerItem(
         )}
       </div>
 
-      <div class="w-full overflow-y-hidden rounded-[20px] max-w-[623px]">
+      <div class="w-full overflow-y-hidden rounded-[20px] max-w-[623px] h-[289px] md:h-auto">
         <a
           id={id}
           href={action?.href ?? "#"}
@@ -86,7 +79,7 @@ export function BannerItem(
               fetchPriority={lcp ? "high" : "auto"}
               src={mobile}
               width={390}
-              height={590}
+              height={289}
             />
             <Source
               media="(min-width: 768px)"

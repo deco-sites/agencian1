@@ -79,12 +79,12 @@ export default function SliderColumn(
     { ...DEFAULT_PROPS, ...props };
   return (
     <div
-      class="w-full flex  flex-col lg:flex-row relative max-w-[1300px] m-auto justify-between  px-5 md:px-0 lg:py-0 z-10"
+      class="w-full flex  flex-col  relative max-w-[1300px] m-auto justify-between  px-5 md:px-0 lg:py-0 z-10"
       style={{ marginTop: `${marginTop}`, marginBottom: `${marginBottom}` }}
     >
       {title && (
         <div
-          class=" block lg:hidden text-20 lg:text-[40px] text-[#fff]  font-black not-italic font-archimoto-black mb-5"
+          class=" block lg:text-center text-20 lg:text-[40px] text-[#fff]  font-black not-italic font-archimoto-black mb-5 lg:mb-10"
           dangerouslySetInnerHTML={{ __html: title }}
         >
         </div>
@@ -93,7 +93,7 @@ export default function SliderColumn(
       <div
         id={id}
         class="lg:grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px] grid-rows-[1fr_48px_1fr_64px]
-          h-[521px] lg:h-auto lg:min-h-[660px] w-full flex items-center justify-end flex-col-reverse"
+          h-[521px] lg:h-auto  w-full flex items-center justify-end flex-col-reverse"
       >
         <Slider class="carousel carousel-center col-span-full row-span-full gap-6 w-full rounded-[20px]">
           {images?.map((image, index) => {
