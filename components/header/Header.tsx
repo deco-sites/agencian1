@@ -8,6 +8,8 @@ import Navbar from "./Navbar.tsx";
 import { headerHeight } from "./constants.ts";
 import LinkTelephoneWithOptionArrow from "../ui/LinkTelephoneWithOptionArrow.tsx";
 import { HTMLWidget as HTML } from "apps/admin/widgets.ts";
+import { FnContext, SectionProps } from "deco/mod.ts";
+import { getCookies, setCookie } from "std/http/mod.ts";
 
 export interface Logo {
   src: ImageWidget;
@@ -81,7 +83,8 @@ export interface Props {
   buttons?: Buttons;
 }
 
-function Header({
+function Header(props: SectionProps<ReturnType<typeof loader>>) {
+  const {
   alerts,
   searchbar,
   navItems,
@@ -91,9 +94,11 @@ function Header({
   whatsapp,
   btnTextMenu,
   buttons,
-}: Props) {
+  selectedLanguage } = props
   const platform = usePlatform();
   const items = navItems ?? [];
+
+  console.log('selectedLanguage --> ', selectedLanguage)
 
   return (
     <>
@@ -119,6 +124,7 @@ function Header({
                 logoPosition={logoPosition}
                 buttons={buttons}
                 btnTextMenu={btnTextMenu}
+                selectedLanguage={selectedLanguage}
               />
               {whatsapp && (
                 <div class="mobile:flex mobile:justify-center">
@@ -136,5 +142,25 @@ function Header({
     </>
   );
 }
+
+export const loader = (props: Props, req: Request, ctx: FnContext) => {
+
+  const cookies = getCookies(req.headers);
+  const selectedLanguage = cookies["N1_SelectedLanguage"] || "pt-br";
+
+  if( !cookies["N1_SelectedLanguage"] ){
+    setCookie(ctx.response.headers, {
+      name: "N1_SelectedLanguage",
+      value: "pt-br",
+      path: "/",
+    });
+  } 
+  
+  return {
+    ...props,
+    selectedLanguage
+  };
+};
+
 
 export default Header;

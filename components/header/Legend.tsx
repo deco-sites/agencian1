@@ -3,14 +3,26 @@ import { clx } from "$store/sdk/clx.ts";
 interface Props {
   nameItemScape?: string;
   mobile?: boolean;
+  selectedLanguage?:string;
 }
 
-function Legend({ nameItemScape, mobile }: Props) {
+function handleOnClick(id:string){
+  document.cookie = `N1_SelectedLanguage=${id}`;
+  globalThis?.window.location.reload();
+}
+
+function Legend({ nameItemScape, mobile, selectedLanguage }: Props) {
   const legend = [
     { language: "Espanhol", code: "es-es" },
     { language: "Inglês", code: "en-en" },
     { language: "Português", code: "pt-br" },
   ];
+
+  const idioma = {
+    "pt-br": "Idioma",
+    "es-es": "Idioma",
+    "en-en": "Language",
+  } 
 
   return (
     <>
@@ -24,11 +36,11 @@ function Legend({ nameItemScape, mobile }: Props) {
         {!mobile && (
           <img
             class="w-[36px] h-[24px] min-w-[36px]"
-            src="/image/header-item-menu-pt-br.png"
+            src={`/image/header-item-menu-${selectedLanguage}.png`}
             loading="lazy"
           />
         )}
-        {mobile && <span class={`mobile:ml-[20px] text-14`}>Idioma</span>}
+        {mobile && <span class={`mobile:ml-[20px] text-14`}>{idioma[selectedLanguage]}</span>}
         <ul
           class={clx(
             `mobile:ml-[20px] md:absolute md:hidden top-full hover:flex right-[-50px] 
@@ -41,8 +53,9 @@ function Legend({ nameItemScape, mobile }: Props) {
             {legend.map(({ language, code }) => {
               return (
                 <>
-                  <a
+                  <a                    
                     href={"#"}
+                    onClick={() => handleOnClick(code)}
                     class={clx(
                       `mobile:px-0 mobile:py-0 mobile:mx-0 mobile:my-0 flex items-center capitalize rounded-[10px]
                                             py-[8px] bg-[#fff] duration-100 text-primary w-full md:hover:bg-primary hover:text-[#fff]`,

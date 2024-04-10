@@ -7,13 +7,14 @@ import { clx } from "$store/sdk/clx.ts";
 export interface Props {
   items: SiteNavigationElement[];
   whatsapp?: string;
+  selectedLanguage?:string;
 }
 
 interface PropsMenuItem {
   item: SiteNavigationElement;
 }
 
-function MenuItem({ item }: PropsMenuItem) {
+function MenuItem({ item, selectedLanguage }: PropsMenuItem) {
   const existsChildren = item && item.children && item.children.length > 0
     ? true
     : false;
@@ -58,7 +59,7 @@ function MenuItem({ item }: PropsMenuItem) {
                       href={`${node?.url ? node?.url : "javascript:void(0)"}`}
                       style={{ pointerEvents: `${node?.url ? "all" : "none"}` }}
                     >
-                      <MenuItem item={node} />
+                      <MenuItem item={node} selectedLanguage={selectedLanguage} />
                     </a>
                   </li>
                 );
@@ -70,7 +71,7 @@ function MenuItem({ item }: PropsMenuItem) {
   );
 }
 
-function Menu({ items, whatsapp }: Props) {
+function Menu({ items, whatsapp, selectedLanguage }: Props) {
   const itemLegend = "legenda";
   return (
     <div class="flex flex-col h-full border-none mobile:overflow-scroll">
@@ -94,7 +95,7 @@ function Menu({ items, whatsapp }: Props) {
           );
         })}
         {/* menu legenda */}
-        {/* <Legend nameItemScape={itemLegend} mobile={true} /> */}
+        <Legend nameItemScape={itemLegend} mobile={true} selectedLanguage={selectedLanguage} />
       </ul>
       <div class="n1-menu-mobile__whatsapp w-[90%] mx-auto">
         {whatsapp && (

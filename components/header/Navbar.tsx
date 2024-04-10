@@ -26,6 +26,7 @@ interface Props {
   nameItemScape?: string;
   btnTextMenu?: string;
   btnUrlMenu?: string;
+  selectedLanguage?:string;
 }
 
 function Navbar({
@@ -36,6 +37,7 @@ function Navbar({
   logoPosition = "left",
   btnTextMenu,
   btnUrlMenu,
+  selectedLanguage
 }: Props) {
   const platform = usePlatform();
   const itemLegend = "legenda";
@@ -96,7 +98,7 @@ function Navbar({
           })}
 
           {/* menu legenda */}
-          {/* <Legend nameItemScape={itemLegend} /> */}
+          <Legend nameItemScape={itemLegend} selectedLanguage={selectedLanguage} />
         </ul>
         <div
           class={`flex ${
