@@ -202,11 +202,11 @@ function CasesComponentDesktop({ settingsImage }: Props) {
             <>
               <a
                 href={`${href ? href : "javascript:void(0)"}`}
-                class={`relative n1-cases-card ${alt ? 'is-' + alt : '' } notebook:max-w-[500px] ${
+                class={`relative n1-cases-card ${alt ? 'is-' + alt : '' } notebook:max-w-[560px] ${
                   index === 0 ? "is-active" : ""
                 } ${
                   href ? "cursor-pointer" : "cursor-grab"
-                } [transition:all_.375s_linear] md:w-0 mobile:mb-[10px]`}
+                } [transition:all_.575s_linear] md:w-0 mobile:mb-[10px]`}
                 onMouseLeave={handleMouserHover}
                 style={{
                   height: `${
