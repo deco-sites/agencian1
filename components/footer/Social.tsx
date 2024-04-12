@@ -12,14 +12,16 @@ export interface SocialItem {
     | "Youtube"
     | "Email";
   link?: string;
+  disabledSocial?:boolean;
 }
 
 export default function Social(
   { content, vertical = false }: {
-    content?: { title?: string; items?: SocialItem[] };
+    content?: { title?: string; items?: SocialItem[]; };
     vertical?: boolean;
   },
 ) {
+
   return (
     <>
       {content && content.items && content.items.length > 0 && (
@@ -33,11 +35,11 @@ export default function Social(
             class={clx(
               `grid grid-cols-6-auto md:gap-4 mobile:gap-x-[10px] mobile:gap-y-[16px] ${
                 vertical
-                  ? "lg:flex-col lg:items-start"
-                  : "flex-wrap items-center"
+                ? "lg:flex-col lg:items-start"
+                : "flex-wrap items-center"
               }`,
             )}
-          >
+            >
             {content.items.map((item) => {
               if (item.label === "Email") {
                 return (
@@ -72,33 +74,35 @@ export default function Social(
                   </li>
                 );
               } else {
-                return (
-                  <li class={`n1-footer__social relative ${item.label}`}>
-                    <a
-                      href={`${
-                        item.link && item.link !== "#"
-                          ? item.link
-                          : "javascript:void(0)"
-                      }`}
-                      style={{
-                        pointerEvents: `${
-                          item.link && item.link !== "#" ? "all" : "none"
-                        }`,
-                      }}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`${item.label} Logo`}
-                      class="flex gap-2 items-center"
-                    >
-                      <span class="block p-1 rounded-full n1-footer__bg-social">
-                        <Icon size={40} id={item.label} />
-                      </span>
-                      {vertical && (
-                        <div class="text-sm hidden lg:block">{item.label}</div>
-                      )}
-                    </a>
-                  </li>
-                );
+                if( !item?.disabledSocial ){
+                  return(
+                    <li class={`n1-footer__social relative ${item.label}`}>
+                      <a
+                        href={`${
+                          item.link && item.link !== "#"
+                            ? item.link
+                            : "javascript:void(0)"
+                        }`}
+                        style={{
+                          pointerEvents: `${
+                            item.link && item.link !== "#" ? "all" : "none"
+                          }`,
+                        }}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${item.label} Logo`}
+                        class="flex gap-2 items-center"
+                      >
+                        <span class="block p-1 rounded-full n1-footer__bg-social">
+                          <Icon size={40} id={item.label} />
+                        </span>
+                        {vertical && (
+                          <div class="text-sm hidden lg:block">{item.label}</div>
+                        )}
+                      </a>
+                    </li>
+                  )
+                }
               }
             })}
           </ul>

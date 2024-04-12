@@ -7,7 +7,7 @@ interface Props {
 }
 
 function handleOnClick(id:string){
-  document.cookie = `N1_SelectedLanguage=${id}`;
+  document.cookie = `N1_SelectedLanguage=${id};path=/`;
   globalThis?.window.location.reload();
 }
 
@@ -18,11 +18,13 @@ function Legend({ nameItemScape, mobile, selectedLanguage }: Props) {
     { language: "Português", code: "pt-br" },
   ];
 
-  const idioma = {
-    "pt-br": "Idioma",
-    "es-es": "Idioma",
-    "en-en": "Language",
-  } 
+  const idioma = [
+    {"pt-br": "Idioma"},
+    {"es-es": "Idioma"},
+    {"en-en": "Language"},
+  ]
+
+  console.log('selectedLanguage Legend --> ', selectedLanguage)
 
   return (
     <>
@@ -40,7 +42,9 @@ function Legend({ nameItemScape, mobile, selectedLanguage }: Props) {
             loading="lazy"
           />
         )}
-        {mobile && <span class={`mobile:ml-[20px] text-14`}>{idioma[selectedLanguage]}</span>}
+        {selectedLanguage && mobile && (
+          <span class={`mobile:ml-[20px] text-14`}>{idioma[selectedLanguage]}</span>
+        )}
         <ul
           class={clx(
             `mobile:ml-[20px] md:absolute md:hidden top-full hover:flex right-[-50px] 
@@ -53,8 +57,7 @@ function Legend({ nameItemScape, mobile, selectedLanguage }: Props) {
             {legend.map(({ language, code }) => {
               return (
                 <>
-                  <a                    
-                    href={"#"}
+                  <a
                     onClick={() => handleOnClick(code)}
                     class={clx(
                       `mobile:px-0 mobile:py-0 mobile:mx-0 mobile:my-0 flex items-center capitalize rounded-[10px]

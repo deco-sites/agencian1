@@ -1,13 +1,11 @@
-import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
-import { MenuButton, SearchButton } from "$store/islands/Header/Buttons.tsx";
+import { MenuButton } from "$store/islands/Header/Buttons.tsx";
 import CartButtonLinx from "$store/islands/Header/Cart/linx.tsx";
 import CartButtonShopify from "$store/islands/Header/Cart/shopify.tsx";
 import CartButtonVDNA from "$store/islands/Header/Cart/vnda.tsx";
 import CartButtonVTEX from "$store/islands/Header/Cart/vtex.tsx";
 import CartButtonWake from "$store/islands/Header/Cart/wake.tsx";
 import CartButtonNuvemshop from "$store/islands/Header/Cart/nuvemshop.tsx";
-import Searchbar from "$store/islands/Header/Searchbar.tsx";
 import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
@@ -19,7 +17,6 @@ import { headerHeight } from "./constants.ts";
 
 interface Props {
   items: SiteNavigationElement[];
-  searchbar?: SearchbarProps;
   logo?: Logo;
   buttons?: Buttons;
   logoPosition?: "left" | "center";
@@ -31,7 +28,6 @@ interface Props {
 
 function Navbar({
   items,
-  searchbar,
   logo,
   buttons,
   logoPosition = "left",
@@ -65,16 +61,6 @@ function Navbar({
             />
           </a>
         )}
-
-        <div class="justify-end hidden">
-          <SearchButton />
-          {platform === "vtex" && <CartButtonVTEX />}
-          {platform === "vnda" && <CartButtonVDNA />}
-          {platform === "wake" && <CartButtonWake />}
-          {platform === "linx" && <CartButtonLinx />}
-          {platform === "shopify" && <CartButtonShopify />}
-          {platform === "nuvemshop" && <CartButtonNuvemshop />}
-        </div>
       </div>
 
       {/* Desktop Version */}
@@ -124,13 +110,6 @@ function Navbar({
           )}
         </div>
         <div class="hidden flex-none items-center justify-end gap-6 col-span-1">
-          {!buttons?.hideSearchButton && (
-            <div class="flex items-center text-xs font-thin gap-1">
-              <SearchButton />SEARCH
-            </div>
-          )}
-
-          <Searchbar searchbar={searchbar} />
           {!buttons?.hideAccountButton && (
             <a
               class="flex items-center text-xs font-thin"
@@ -158,7 +137,7 @@ function Navbar({
               WISHLIST
             </a>
           )}
-          {!buttons?.hideCartButton && (
+          {/* {!buttons?.hideCartButton && (
             <div class="flex items-center text-xs font-thin">
               {platform === "vtex" && <CartButtonVTEX />}
               {platform === "vnda" && <CartButtonVDNA />}
@@ -167,7 +146,7 @@ function Navbar({
               {platform === "shopify" && <CartButtonShopify />}
               {platform === "nuvemshop" && <CartButtonNuvemshop />}
             </div>
-          )}
+          )} */}
         </div>
       </div>
     </>
