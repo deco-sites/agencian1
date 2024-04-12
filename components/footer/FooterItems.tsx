@@ -2,13 +2,22 @@ import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
 import CertificationImage from "$store/components/footer/CertificationImage.tsx";
 import { clx } from "$store/sdk/clx.ts";
 
+/**@titleBy label */
 export type Item = {
+  /**@title Nome */
   label: string;
+  /**@title Link */  
+  /**@description (ex: /nossos-servicos/suporte) */  
   href?: string;
+  /**@title Ocultar item? */  
+  disabledItem?:boolean;
 };
 
+/**@titleBy label */
 export type Section = {
+  /**@title Nome */  
   label: string;
+  /**@title Items */  
   items: Item[];
 };
 
@@ -45,40 +54,44 @@ export default function FooterItems(
                       )}
                     >
                       {section.items?.map((item) => {
-                        return (
-                          <>
-                            {item.label?.split("-")[0] === "vtex" ||
-                                item.label?.split("-")[0] === "deco"
-                              ? (
-                                <CertificationImage
-                                  linkname={`/image/footer-img-${item.label}.png`}
-                                />
-                              )
-                              : (
-                                <li>
-                                  <a
-                                    href={`${
-                                      item?.href && item.href !== "#"
-                                        ? item?.href
-                                        : "javascript:void(0)"
-                                    }`}
-                                    style={{
-                                      pointerEvents: `${
-                                        item?.href && item?.href !== "#"
-                                          ? "all"
-                                          : "none"
-                                      }`,
-                                    }}
-                                    class={clx(
-                                      `text-[14px] leading-[21.6px] block py-1 link link-hover md:text-16 font-noto-sans font-normal text-base-150`,
-                                    )}
-                                  >
-                                    {item.label}
-                                  </a>
-                                </li>
-                              )}
-                          </>
-                        );
+                        console.log('item --> ', item)
+                        console.log('item para desabilitar --> ', item?.disabledItem)
+                        if( !item?.disabledItem ){
+                          return (
+                            <>
+                              {item.label?.split("-")[0] === "vtex" ||
+                                  item.label?.split("-")[0] === "deco"
+                                ? (
+                                  <CertificationImage
+                                    linkname={`/image/footer-img-${item.label}.png`}
+                                  />
+                                )
+                                : (
+                                  <li>
+                                    <a
+                                      href={`${
+                                        item?.href && item.href !== "#"
+                                          ? item?.href
+                                          : "javascript:void(0)"
+                                      }`}
+                                      style={{
+                                        pointerEvents: `${
+                                          item?.href && item?.href !== "#"
+                                            ? "all"
+                                            : "none"
+                                        }`,
+                                      }}
+                                      class={clx(
+                                        `text-[14px] leading-[21.6px] block py-1 link link-hover md:text-16 font-noto-sans font-normal text-base-150`,
+                                      )}
+                                    >
+                                      {item.label}
+                                    </a>
+                                  </li>
+                                )}
+                            </>
+                          );
+                        }
                       })}
                     </ul>
                   </div>

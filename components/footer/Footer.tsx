@@ -1,25 +1,30 @@
 import BackToTop from "$store/components/footer/BackToTop.tsx";
 import ColorClasses from "$store/components/footer/ColorClasses.tsx";
 import Divider from "$store/components/footer/Divider.tsx";
-import ExtraLinks from "$store/components/footer/ExtraLinks.tsx";
 import FooterItems from "$store/components/footer/FooterItems.tsx";
 import Logo from "$store/components/footer/Logo.tsx";
-import MobileApps from "$store/components/footer/MobileApps.tsx";
 import PaymentMethods from "$store/components/footer/PaymentMethods.tsx";
-import RegionSelector from "$store/components/footer/RegionSelector.tsx";
 import Social from "$store/components/footer/Social.tsx";
 import Copyright from "./Copyright.tsx";
 import Newsletter from "$store/islands/Newsletter.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import PoweredByDeco from "apps/website/components/PoweredByDeco.tsx";
 
+/**@titleBy label */
 export type Item = {
+  /**@title Nome */
   label: string;
-  href: string;
+  /**@title Link */  
+  /**@description (ex: /nossos-servicos/suporte) */  
+  href?: string;
+  /**@title Ocultar item? */  
+  disabledItem?:boolean;
 };
 
+/**@titleBy label */
 export type Section = {
+  /**@title Nome */  
   label: string;
+  /**@title Items */  
   items: Item[];
 };
 
@@ -211,22 +216,13 @@ function Footer({
   );
   const _social = layout?.hide?.socialLinks
     ? <></>
-    :  <Social content={social} vertical={layout?.variation == "Variation 3"} />;
+    : <Social content={social} vertical={layout?.variation == "Variation 3"} />;
   const _copyright = layout?.hide?.copyrightText
     ? <></>
     : <Copyright copyrightText={copyright} />;
   const _payments = layout?.hide?.paymentMethods
     ? <></>
     : <PaymentMethods content={payments} />;
-  const _apps = layout?.hide?.mobileApps
-    ? <></>
-    : <MobileApps content={mobileApps} />;
-  const _region = layout?.hide?.regionOptions
-    ? <></>
-    : <RegionSelector content={regionOptions} />;
-  const _links = layout?.hide?.extraLinks
-    ? <></>
-    : <ExtraLinks content={extraLinks} />;
 
   return (
     <footer class="relative bg-[#0C1F59]">
@@ -246,20 +242,10 @@ function Footer({
               <div class="lg:flex lg:flex-row gap-10 lg:gap-14 lg:items-end justify-between mt-[40px] tablet:flex tablet:flex-wrap mobile:mb-[23px]">
                 {_payments}
                 {_social}                
-                <div class="flex flex-col lg:flex-row gap-10 lg:gap-14 lg:items-end">
-                  {_apps}
-                  {_region}
-                </div>
                 <div class="mobile:hidden flex flex-col lg:flex-row gap-10 lg:gap-14 lg:items-end mb-[10px]">
                   {_copyright}
                 </div>
               </div>
-              {
-                /* <div class="flex flex-col-reverse md:flex-row md:justify-between gap-10">
-                <PoweredByDeco />
-                {_links}
-              </div> */
-              }
             </div>
           )}
           {layout?.variation == "Variation 2" && (
@@ -269,18 +255,11 @@ function Footer({
                   {_logo}
                   {_social}
                   {_payments}
-                  {_apps}
-                  {_region}
                 </div>
                 <div class="flex flex-col gap-10 lg:gap-20 lg:w-1/2 lg:pr-10">
                   {_newsletter}
                   {_sectionLinks}
                 </div>
-              </div>
-
-              <div class="flex flex-col-reverse md:flex-row md:justify-between gap-10">
-                <PoweredByDeco />
-                {_links}
               </div>
             </div>
           )}
@@ -292,7 +271,6 @@ function Footer({
                   {_newsletter}
                   <div class="flex flex-col gap-10">
                     {_payments}
-                    {_apps}
                   </div>
                 </div>
                 <div class="flex flex-col gap-10 lg:gap-20 lg:w-3/5 lg:items-end">
@@ -300,13 +278,7 @@ function Footer({
                     {_sectionLinks}
                     {_social}
                   </div>
-                  {_region}
                 </div>
-              </div>
-
-              <div class="flex flex-col-reverse md:flex-row md:justify-between gap-10">
-                <PoweredByDeco />
-                {_links}
               </div>
             </div>
           )}
@@ -325,16 +297,11 @@ function Footer({
                       {_social}
                     </div>
                   </div>
-                  <div class="flex flex-col gap-10 lg:gap-10">
-                    {_region}
-                    {_apps}
-                  </div>
                 </div>
               </div>
 
               <div class="flex flex-col md:flex-row md:justify-between gap-10 md:items-center">
                 {_logo}
-                <PoweredByDeco />
               </div>
             </div>
           )}
@@ -348,15 +315,6 @@ function Footer({
                 <div class="flex flex-col gap-10 md:w-2/5 lg:pl-10">
                   {_payments}
                   {_social}
-                  {_apps}
-                </div>
-              </div>
-
-              <div class="flex flex-col-reverse md:flex-row md:justify-between gap-10 md:items-center">
-                {/* <PoweredByDeco /> */}
-                <div class="flex flex-col md:flex-row gap-10 md:items-center">
-                  {_links}
-                  {_region}
                 </div>
               </div>
             </div>
