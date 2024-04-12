@@ -93,8 +93,8 @@ interface Props {
   /** @description (Limite 2 imagens) */
   /** @maxItems 2 */
   imageBottom: LayoutBottom[];
-  /** @title Ativar imagem de fundo eclipse? */  
-  activeEclipse?:boolean;
+  /** @title Ativar imagem de fundo eclipse? */
+  activeEclipse?: boolean;
 }
 
 function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
@@ -117,7 +117,11 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
 
   return (
     <>
-      <div class={`n1-mosaic md:mt-[100px] relative ${activeEclipse ? 'md:is-active' : ''}`}>
+      <div
+        class={`n1-mosaic md:mt-[100px] relative ${
+          activeEclipse ? "md:is-active" : ""
+        }`}
+      >
         <div
           class="flex flex-col text-[#ffffff] md:n1-container md:px-[120px] gap-[22px] pb-[10px] mobile:px-[20px]"
           onMouseLeave={handleMouserHover}

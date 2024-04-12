@@ -249,7 +249,9 @@ function TitleTextIconsAndImage(
                   <div class="flex md:mt-[50px] mobile:mt-[30px] mobile:justify-center">
                     <a
                       href={`${link?.url ? link.url : "javascript:void(0)"}`}
-                      class={clx(`bg-secondary mobile:py-[10px] mobile:px-[20px] py-[20px] px-[30px] rounded-[100px] hover:bg-[#63D5E1] duration-300`)}
+                      class={clx(
+                        `bg-secondary mobile:py-[10px] mobile:px-[20px] py-[20px] px-[30px] rounded-[100px] hover:bg-[#63D5E1] duration-300`,
+                      )}
                       style={{
                         pointerEvents: `${link?.url ? "all" : "none"}`,
                       }}

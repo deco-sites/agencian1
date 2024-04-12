@@ -26,23 +26,23 @@ function Newsletter(
 ) {
   const { tiled = false } = layout;
 
-  function validateEmail(target: HTMLElement, typeEvent?:string){
+  function validateEmail(target: HTMLElement, typeEvent?: string) {
     if (!target) return;
 
-    console.log('typeEvent ----> ', typeEvent)
+    console.log("typeEvent ----> ", typeEvent);
 
     let field;
 
-    if( typeEvent === 'submit' ){
-      field = target?.querySelector<HTMLInputElement>('.n1-input--error');
+    if (typeEvent === "submit") {
+      field = target?.querySelector<HTMLInputElement>(".n1-input--error");
     } else {
-      field = target
+      field = target;
     }
 
-    const inputError = field && field?.nextElementSibling;    
-    
-    if( field && field instanceof HTMLInputElement ){
-      if(field?.value === ''){
+    const inputError = field && field?.nextElementSibling;
+
+    if (field && field instanceof HTMLInputElement) {
+      if (field?.value === "") {
         field?.classList.add("is-active");
         inputError?.classList.remove("hidden");
 
@@ -56,7 +56,7 @@ function Newsletter(
     }
   }
 
-  function handleOnChange(e: Event){
+  function handleOnChange(e: Event) {
     const { target } = e;
     if (!target) return;
     if (target && target instanceof HTMLInputElement) {
@@ -66,7 +66,7 @@ function Newsletter(
     }
   }
 
-  function handleOnBlur(e: Event){
+  function handleOnBlur(e: Event) {
     const { target } = e;
     if (!target) return;
     if (target && target instanceof HTMLInputElement) {
@@ -75,10 +75,10 @@ function Newsletter(
       inputField && validateEmail(inputField);
     }
   }
-  
+
   const handleSubmit: JSX.GenericEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
-    
+
     const { target } = e;
     const typeEvent = e.type;
 
@@ -87,41 +87,38 @@ function Newsletter(
     if (target && target instanceof HTMLElement) {
       const email = validateEmail(target, typeEvent);
 
-      const news = target.closest('.news');
-      const inputElement = news?.querySelector<HTMLInputElement>('input');
-      const loadingElement = news?.querySelector<HTMLElement>('.is-loading');
-      const message = news?.querySelector<HTMLElement>('.is-sucess');
+      const news = target.closest(".news");
+      const inputElement = news?.querySelector<HTMLInputElement>("input");
+      const loadingElement = news?.querySelector<HTMLElement>(".is-loading");
+      const message = news?.querySelector<HTMLElement>(".is-sucess");
 
-      console.log('isValidEmail --> ', JSON.stringify({email}))
+      console.log("isValidEmail --> ", JSON.stringify({ email }));
 
-      if( email ){
+      if (email) {
         try {
-          loadingElement?.classList.remove('hidden');
-          
+          loadingElement?.classList.remove("hidden");
+
           const response = await fetch("/api/newsletterform", {
             method: "POST",
-            body: JSON.stringify({email}),
+            body: JSON.stringify({ email }),
             headers: {
               "content-type": "application/json",
               "accept": "application/json",
             },
-          }); 
-                  
-        } catch(err){
-          loadingElement?.classList.add('hidden');
-          console.log('error: ', err.message)
-        } finally {  
-          
-          if(inputElement instanceof HTMLInputElement) inputElement.value = '';
-          target?.classList.add('hidden');
-          loadingElement?.classList.add('hidden');
-          message?.classList.remove('hidden');
-          
-          setTimeout(()=>{
-            target.classList.remove('hidden');
-            message?.classList.add('hidden');
-          }, 5000)
+          });
+        } catch (err) {
+          loadingElement?.classList.add("hidden");
+          console.log("error: ", err.message);
+        } finally {
+          if (inputElement instanceof HTMLInputElement) inputElement.value = "";
+          target?.classList.add("hidden");
+          loadingElement?.classList.add("hidden");
+          message?.classList.remove("hidden");
 
+          setTimeout(() => {
+            target.classList.remove("hidden");
+            message?.classList.add("hidden");
+          }, 5000);
         }
       }
     }
@@ -172,24 +169,30 @@ function Newsletter(
               id="email"
               name="email"
               type="email"
-              class={clx(`n1-input--error bg-[#ffffff] flex-auto md:flex-none input input-bordered md:w-[273px] bg-white text-base-content font-noto-sans 
-                rounded-[90px] text-14 n1-text-base-400`)}
+              class={clx(
+                `n1-input--error bg-[#ffffff] flex-auto md:flex-none input input-bordered md:w-[273px] bg-white text-base-content font-noto-sans 
+                rounded-[90px] text-14 n1-text-base-400`,
+              )}
               placeholder={content?.form?.placeholder || "Digite seu email"}
             />
             <span class="row-[2] hidden text-error text-[12px] leading-[15.6px]">
               Insira um e-mail válido
-            </span>   
+            </span>
             <button
               type="submit"
-              class={clx(`btn disabled:loading w-[144px] md:w-[123px] border-0 bg-accent n1-btn-header-item--rounded 
-                text-16 font-archimoto-medium pt-[3px] uppercase hover:bg-[#F8BC33] duration-300`)}
+              class={clx(
+                `btn disabled:loading w-[144px] md:w-[123px] border-0 bg-accent n1-btn-header-item--rounded 
+                text-16 font-archimoto-medium pt-[3px] uppercase hover:bg-[#F8BC33] duration-300`,
+              )}
             >
               {content?.form?.buttonText || "Inscrever"}
             </button>
           </div>
         </form>
-        <div class="hidden is-loading"></div> 
-        <span class="is-sucess hidden font-noto-sans text-secondary mobile:text-14 md:text-16">E-mail enviado com sucesso!</span>
+        <div class="hidden is-loading"></div>
+        <span class="is-sucess hidden font-noto-sans text-secondary mobile:text-14 md:text-16">
+          E-mail enviado com sucesso!
+        </span>
         {content?.form?.helpText && (
           <div
             class="text-sm"

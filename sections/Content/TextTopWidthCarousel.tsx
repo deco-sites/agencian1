@@ -92,9 +92,16 @@ function ImageCarouselItem(
           {settingsInfo?.textLink && (
             <a
               href={settingsInfo?.href ?? "javascript:void(0)"}
-              style={{pointerEvents: `${settingsInfo?.href && settingsInfo?.href !== "#"? "all": "none"}`}}              
-              class={clx(`mobile:w-[55%] md:w-[43%] flex border border-[#fff] px-[20px] pb-[11px] pt-[12px] rounded-[100px]
-               justify-center items-center min-w-[144px] group hover:bg-[#ffffff] duration-300 cursor-pointer relative z-20`
+              style={{
+                pointerEvents: `${
+                  settingsInfo?.href && settingsInfo?.href !== "#"
+                    ? "all"
+                    : "none"
+                }`,
+              }}
+              class={clx(
+                `mobile:w-[55%] md:w-[43%] flex border border-[#fff] px-[20px] pb-[11px] pt-[12px] rounded-[100px]
+               justify-center items-center min-w-[144px] group hover:bg-[#ffffff] duration-300 cursor-pointer relative z-20`,
               )}
             >
               <span class="text-[#ffffff] group-hover:text-[#585858] duration-300 flex font-archimoto-medium md:text-14 font-black">
@@ -245,10 +252,9 @@ function TextTopWidthCarousel(props: SectionProps<ReturnType<typeof loader>>) {
                 );
               })}
             </Slider>
-            {props.arrows && <Buttons />} 
+            {props.arrows && <Buttons />}
           </div>
         </div>
-
 
         {props.dots && device === "desktop" && <Dots images={images} />}
 

@@ -3,10 +3,10 @@ import { clx } from "$store/sdk/clx.ts";
 interface Props {
   nameItemScape?: string;
   mobile?: boolean;
-  selectedLanguage?:string;
+  selectedLanguage?: string;
 }
 
-function handleOnClick(id:string){
+function handleOnClick(id: string) {
   document.cookie = `N1_SelectedLanguage=${id};path=/`;
   globalThis?.window.location.reload();
 }
@@ -19,12 +19,12 @@ function Legend({ nameItemScape, mobile, selectedLanguage }: Props) {
   ];
 
   const idioma = [
-    {"pt-br": "Idioma"},
-    {"es-es": "Idioma"},
-    {"en-en": "Language"},
-  ]
+    { "pt-br": "Idioma" },
+    { "es-es": "Idioma" },
+    { "en-en": "Language" },
+  ];
 
-  console.log('selectedLanguage Legend --> ', selectedLanguage)
+  console.log("selectedLanguage Legend --> ", selectedLanguage);
 
   return (
     <>
@@ -43,7 +43,9 @@ function Legend({ nameItemScape, mobile, selectedLanguage }: Props) {
           />
         )}
         {selectedLanguage && mobile && (
-          <span class={`mobile:ml-[20px] text-14`}>{idioma[selectedLanguage]}</span>
+          <span class={`mobile:ml-[20px] text-14`}>
+            {idioma[selectedLanguage as keyof typeof idioma]}
+          </span>
         )}
         <ul
           class={clx(
