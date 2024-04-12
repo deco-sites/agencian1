@@ -46,7 +46,7 @@ function ImagesAndBackground({ bg, sideLeft, sideRight }: Props) {
       <section class="md:n1-container md:px-[120px] mobile:px-[20px] mobile:mt-[80px]">
         <div class="relative flex mobile:mb-[80px] tablet:mb-[80px]">
           {bg && (
-            <div>
+            <div class="mobile:w-full">
               <Picture>
                 {bg.mobile?.src && bg.mobile?.width && bg.mobile?.height && (
                   <Source
@@ -82,17 +82,16 @@ function ImagesAndBackground({ bg, sideLeft, sideRight }: Props) {
                   sideRight?.title !== '<p><br data-mce-bogus="1"></p>'
                   ? "flex-col"
                   : ""
-              }
-                        absolute w-full h-full flex items-center justify-between`,
+              } absolute w-full h-full flex items-center justify-between`,
             )}
           >
             <div
               class={clx(`
                             ${
                 sideLeft && sideRight
-                  ? "flex side-left md:w-[50%] mobile:w-full justify-end mobile:justify-center"
+                  ? "flex side-left md:w-[50%] mobile:w-full justify-center mobile:justify-center"
                   : sideRight && !sideLeft
-                  ? "flex side-left md:w-[50%] mobile:w-full justify-start mobile:justify-center"
+                  ? "flex side-left md:w-[50%] mobile:w-full justify-center mobile:justify-center"
                   : sideLeft && sideRight
                   ? "flex w-full h-full"
                   : "hidden"
