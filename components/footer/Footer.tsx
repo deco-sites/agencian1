@@ -54,14 +54,14 @@ export interface NewsletterForm {
    * @description (ex: Digite seu e-mail)
    */
   placeholder?: string;
-  /** @title Texto do botão */  
+  /** @title Texto do botão */
   buttonText?: string;
   /** @format html */
   helpText?: string;
 }
 
 export interface Layout {
-  /** @title Cor do fundo */ 
+  /** @title Cor do fundo */
   backgroundColor?:
     | "Primary"
     | "Secondary"
@@ -74,7 +74,7 @@ export interface Layout {
     | "Variation 3"
     | "Variation 4"
     | "Variation 5";
-  /** @title Ocultar? */    
+  /** @title Ocultar? */
   hide?: {
     logo?: boolean;
     newsletter?: boolean;
@@ -86,12 +86,12 @@ export interface Layout {
 }
 
 export interface Props {
-  /** @title Logo */  
+  /** @title Logo */
   logo?: {
     image: ImageWidget;
     description?: string;
   };
-  /** @title Newsletter */  
+  /** @title Newsletter */
   newsletter?: {
     title?: string;
     /** @format textarea */
