@@ -12,16 +12,15 @@ export interface SocialItem {
     | "Youtube"
     | "Email";
   link?: string;
-  disabledSocial?:boolean;
+  disabledSocial?: boolean;
 }
 
 export default function Social(
   { content, vertical = false }: {
-    content?: { title?: string; items?: SocialItem[]; };
+    content?: { title?: string; items?: SocialItem[] };
     vertical?: boolean;
   },
 ) {
-
   return (
     <>
       {content && content.items && content.items.length > 0 && (
@@ -35,11 +34,11 @@ export default function Social(
             class={clx(
               `grid grid-cols-6-auto md:gap-4 mobile:gap-x-[10px] mobile:gap-y-[16px] ${
                 vertical
-                ? "lg:flex-col lg:items-start"
-                : "flex-wrap items-center"
+                  ? "lg:flex-col lg:items-start"
+                  : "flex-wrap items-center"
               }`,
             )}
-            >
+          >
             {content.items.map((item) => {
               if (item.label === "Email") {
                 return (
@@ -74,8 +73,8 @@ export default function Social(
                   </li>
                 );
               } else {
-                if( !item?.disabledSocial ){
-                  return(
+                if (!item?.disabledSocial) {
+                  return (
                     <li class={`n1-footer__social relative ${item.label}`}>
                       <a
                         href={`${
@@ -97,11 +96,13 @@ export default function Social(
                           <Icon size={40} id={item.label} />
                         </span>
                         {vertical && (
-                          <div class="text-sm hidden lg:block">{item.label}</div>
+                          <div class="text-sm hidden lg:block">
+                            {item.label}
+                          </div>
                         )}
                       </a>
                     </li>
-                  )
+                  );
                 }
               }
             })}

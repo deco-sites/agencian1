@@ -19,7 +19,7 @@ export interface ConcactForm {
 export const handler: Handlers = {
   POST: async (req) => {
     const SUBDOMAIN = PORTAL_SUBDOMAIN;
-    
+
     const data = await req.json();
 
     const response = await fetch(SUBDOMAIN + "/api/dataentities/NE/documents", {

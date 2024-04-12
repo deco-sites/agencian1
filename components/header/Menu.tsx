@@ -7,7 +7,7 @@ import { clx } from "$store/sdk/clx.ts";
 export interface Props {
   items: SiteNavigationElement[];
   whatsapp?: string;
-  selectedLanguage?:string;
+  selectedLanguage?: string;
 }
 
 interface PropsMenuItem {
@@ -95,7 +95,11 @@ function Menu({ items, whatsapp, selectedLanguage }: Props) {
           );
         })}
         {/* menu legenda */}
-        <Legend nameItemScape={itemLegend} mobile={true} selectedLanguage={selectedLanguage} />
+        <Legend
+          nameItemScape={itemLegend}
+          mobile={true}
+          selectedLanguage={selectedLanguage}
+        />
       </ul>
       <div class="n1-menu-mobile__whatsapp w-[90%] mx-auto">
         {whatsapp && (

@@ -6,18 +6,18 @@ import { clx } from "$store/sdk/clx.ts";
 export type Item = {
   /**@title Nome */
   label: string;
-  /**@title Link */  
-  /**@description (ex: /nossos-servicos/suporte) */  
+  /**@title Link */
+  /**@description (ex: /nossos-servicos/suporte) */
   href?: string;
-  /**@title Ocultar item? */  
-  disabledItem?:boolean;
+  /**@title Ocultar item? */
+  disabledItem?: boolean;
 };
 
 /**@titleBy label */
 export type Section = {
-  /**@title Nome */  
+  /**@title Nome */
   label: string;
-  /**@title Items */  
+  /**@title Items */
   items: Item[];
 };
 
@@ -54,9 +54,12 @@ export default function FooterItems(
                       )}
                     >
                       {section.items?.map((item) => {
-                        console.log('item --> ', item)
-                        console.log('item para desabilitar --> ', item?.disabledItem)
-                        if( !item?.disabledItem ){
+                        console.log("item --> ", item);
+                        console.log(
+                          "item para desabilitar --> ",
+                          item?.disabledItem,
+                        );
+                        if (!item?.disabledItem) {
                           return (
                             <>
                               {item.label?.split("-")[0] === "vtex" ||

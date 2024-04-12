@@ -23,7 +23,7 @@ interface Props {
   nameItemScape?: string;
   btnTextMenu?: string;
   btnUrlMenu?: string;
-  selectedLanguage?:string;
+  selectedLanguage?: string;
 }
 
 function Navbar({
@@ -33,7 +33,7 @@ function Navbar({
   logoPosition = "left",
   btnTextMenu,
   btnUrlMenu,
-  selectedLanguage
+  selectedLanguage,
 }: Props) {
   const platform = usePlatform();
   const itemLegend = "legenda";
@@ -84,7 +84,10 @@ function Navbar({
           })}
 
           {/* menu legenda */}
-          <Legend nameItemScape={itemLegend} selectedLanguage={selectedLanguage} />
+          <Legend
+            nameItemScape={itemLegend}
+            selectedLanguage={selectedLanguage}
+          />
         </ul>
         <div
           class={`flex ${
@@ -137,7 +140,8 @@ function Navbar({
               WISHLIST
             </a>
           )}
-          {/* {!buttons?.hideCartButton && (
+          {
+            /* {!buttons?.hideCartButton && (
             <div class="flex items-center text-xs font-thin">
               {platform === "vtex" && <CartButtonVTEX />}
               {platform === "vnda" && <CartButtonVDNA />}
@@ -146,7 +150,8 @@ function Navbar({
               {platform === "shopify" && <CartButtonShopify />}
               {platform === "nuvemshop" && <CartButtonNuvemshop />}
             </div>
-          )} */}
+          )} */
+          }
         </div>
       </div>
     </>

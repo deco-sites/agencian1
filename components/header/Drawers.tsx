@@ -19,7 +19,7 @@ export interface Props {
    */
   children?: ComponentChildren;
   platform: ReturnType<typeof usePlatform>;
-  selectedLanguage?:string;
+  selectedLanguage?: string;
 }
 
 interface PropsAside {
@@ -116,7 +116,9 @@ function Drawers({ menu, children, logoMobile, selectedLanguage }: Props) {
             title={displayMenu.value ? "Menu" : "Buscar"}
             logoMobile={logoMobile}
           >
-            {displayMenu.value && <Menu {...menu} selectedLanguage={selectedLanguage} />}
+            {displayMenu.value && (
+              <Menu {...menu} selectedLanguage={selectedLanguage} />
+            )}
           </Aside>
         }
       >
