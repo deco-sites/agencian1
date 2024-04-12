@@ -57,9 +57,8 @@ function ImageCarouselItem(
 
   return (
     <>
-      <a
+      <div
         id={id}
-        href={settingsInfo?.href ?? "javascript:void(0)"}
         aria-label={settingsInfo?.name}
         class="n1-text-top-width-carousel__link relative overflow-hidden w-full border border-[#3B5D5F] rounded-[20px] pt-[20px] pb-[40px] px-[20px]"
       >
@@ -67,7 +66,7 @@ function ImageCarouselItem(
         </div>
 
         <img
-          class="mobile:h-auto mobile:max-w-full w-[100px] h-[100px] relative -left-[30px]"
+          class="mobile:h-auto mobile:max-w-full relative -left-[30px]"
           loading={lcp ? "eager" : "lazy"}
           src={desktop}
           alt={alt}
@@ -75,7 +74,7 @@ function ImageCarouselItem(
 
         <div>
           {settingsInfo?.name && (
-            <span class="text-[#ffffff] flex font-archimoto-medium md:text-20 font-thin md:mt-[22px] mb-[8px]">
+            <span class="text-[#ffffff] flex font-archimoto-thin md:text-20 font-thin md:mt-[22px] mb-[8px]">
               {settingsInfo?.name}
             </span>
           )}
@@ -91,13 +90,14 @@ function ImageCarouselItem(
             </span>
           )}
           {settingsInfo?.textLink && (
-            <div
-              class={clx(
-                `mobile:w-[55%] md:w-[43%] flex border border-[#fff] px-[20px] pb-[11px] 
-                            pt-[12px] rounded-[100px] justify-center items-center min-w-[144px]`,
+            <a
+              href={settingsInfo?.href ?? "javascript:void(0)"}
+              style={{pointerEvents: `${settingsInfo?.href && settingsInfo?.href !== "#"? "all": "none"}`}}              
+              class={clx(`mobile:w-[55%] md:w-[43%] flex border border-[#fff] px-[20px] pb-[11px] pt-[12px] rounded-[100px]
+               justify-center items-center min-w-[144px] group hover:bg-[#ffffff] duration-300 cursor-pointer relative z-20`
               )}
             >
-              <span class="text-[#ffffff] flex font-archimoto-medium md:text-14 font-black">
+              <span class="text-[#ffffff] group-hover:text-[#585858] duration-300 flex font-archimoto-medium md:text-14 font-black">
                 {settingsInfo?.textLink}
               </span>
               <svg
@@ -113,12 +113,13 @@ function ImageCarouselItem(
                   clip-rule="evenodd"
                   d="M5.25 6.22656C5.25 5.81235 5.58579 5.47656 6 5.47656H12.75C13.1642 5.47656 13.5 5.81235 13.5 6.22656V12.9766C13.5 13.3908 13.1642 13.7266 12.75 13.7266C12.3358 13.7266 12 13.3908 12 12.9766V8.03722L5.78033 14.2569C5.48744 14.5498 5.01256 14.5498 4.71967 14.2569C4.42678 13.964 4.42678 13.4891 4.71967 13.1962L10.9393 6.97656H6C5.58579 6.97656 5.25 6.64078 5.25 6.22656Z"
                   fill="white"
+                  class="group-hover:fill-[#585858] duration-300"
                 />
               </svg>
-            </div>
+            </a>
           )}
         </div>
-      </a>
+      </div>
     </>
   );
 }
@@ -170,8 +171,8 @@ function Dots({ images }: Props) {
 function Buttons() {
   return (
     <>
-      <div class="absolute w-full flex mobile:justify-center mobile:items-end justify-between h-full top-[0] items-center pb-[10px]">
-        <div class="flex items-center justify-start z-10 col-start-1 row-start-2 md:ml-[5%] mobile:mr-[30px]">
+      <div class="absolute w-full flex mobile:justify-center mobile:items-end justify-between h-full top-[0] items-center pb-[10px] md:-left-[10px]">
+        <div class="flex items-center justify-start z-10 col-start-1 row-start-2 mobile:mr-[30px] -translate-x-[50px]">
           <Slider.PrevButton class="btn btn-circle bg-[#ffffff] w-[40px] !h-[40px]">
             <Icon
               size={18}
@@ -180,7 +181,7 @@ function Buttons() {
             />
           </Slider.PrevButton>
         </div>
-        <div class="flex items-center justify-end z-10 col-start-3 row-start-2 md:mr-[5%] mobile:ml-[30px]">
+        <div class="flex items-center justify-end z-10 col-start-3 row-start-2 mobile:ml-[30px] translate-x-[50px]">
           <Slider.NextButton class="btn btn-circle bg-[#ffffff] w-[40px] !h-[40px]">
             <Icon
               size={18}
@@ -225,27 +226,29 @@ function TextTopWidthCarousel(props: SectionProps<ReturnType<typeof loader>>) {
             </div>
           </div>
 
-          <Slider class="carousel carousel-center gap-x-[22px] flex mobile:px-[20px]">
-            {images?.map((image, index) => {
-              return (
-                <>
-                  <Slider.Item
-                    index={index}
-                    class="carousel-item mobile:w-full w-[31.666%]"
-                  >
-                    <ImageCarouselItem
-                      image={image}
-                      lcp={index === 0 && preload}
-                      id={`${id}::${index}`}
-                    />
-                  </Slider.Item>
-                </>
-              );
-            })}
-          </Slider>
+          <div class="relative">
+            <Slider class="carousel carousel-center gap-x-[22px] flex mobile:px-[20px] relative z-10">
+              {images?.map((image, index) => {
+                return (
+                  <>
+                    <Slider.Item
+                      index={index}
+                      class="carousel-item mobile:w-full w-[31.666%]"
+                    >
+                      <ImageCarouselItem
+                        image={image}
+                        lcp={index === 0 && preload}
+                        id={`${id}::${index}`}
+                      />
+                    </Slider.Item>
+                  </>
+                );
+              })}
+            </Slider>
+            {props.arrows && <Buttons />} 
+          </div>
         </div>
 
-        {props.arrows && <Buttons />}
 
         {props.dots && device === "desktop" && <Dots images={images} />}
 

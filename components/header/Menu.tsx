@@ -14,7 +14,7 @@ interface PropsMenuItem {
   item: SiteNavigationElement;
 }
 
-function MenuItem({ item, selectedLanguage }: PropsMenuItem) {
+function MenuItem({ item }: PropsMenuItem) {
   const existsChildren = item && item.children && item.children.length > 0
     ? true
     : false;
@@ -59,7 +59,7 @@ function MenuItem({ item, selectedLanguage }: PropsMenuItem) {
                       href={`${node?.url ? node?.url : "javascript:void(0)"}`}
                       style={{ pointerEvents: `${node?.url ? "all" : "none"}` }}
                     >
-                      <MenuItem item={node} selectedLanguage={selectedLanguage} />
+                      <MenuItem item={node} />
                     </a>
                   </li>
                 );

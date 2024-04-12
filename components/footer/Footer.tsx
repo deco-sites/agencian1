@@ -24,6 +24,7 @@ export type Section = {
 };
 
 export interface SocialItem {
+  /**@title Rede */
   label:
     | "Discord"
     | "Facebook"
@@ -33,7 +34,10 @@ export interface SocialItem {
     | "Twitter"
     | "Youtube"
     | "Email";
+  /**@title link */      
   link: string;
+  /**@title Ocultar item? */
+  disabledSocial?:boolean;
 }
 
 export interface PaymentItem {
@@ -207,7 +211,7 @@ function Footer({
   );
   const _social = layout?.hide?.socialLinks
     ? <></>
-    : <Social content={social} vertical={layout?.variation == "Variation 3"} />;
+    :  <Social content={social} vertical={layout?.variation == "Variation 3"} />;
   const _copyright = layout?.hide?.copyrightText
     ? <></>
     : <Copyright copyrightText={copyright} />;
@@ -241,7 +245,7 @@ function Footer({
               <Divider style="n1-border-footer" />
               <div class="lg:flex lg:flex-row gap-10 lg:gap-14 lg:items-end justify-between mt-[40px] tablet:flex tablet:flex-wrap mobile:mb-[23px]">
                 {_payments}
-                {_social}
+                {_social}                
                 <div class="flex flex-col lg:flex-row gap-10 lg:gap-14 lg:items-end">
                   {_apps}
                   {_region}

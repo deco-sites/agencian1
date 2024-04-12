@@ -1,4 +1,3 @@
-import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
 import Drawers from "$store/islands/Header/Drawers.tsx";
 import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
@@ -53,10 +52,6 @@ export interface PropsChildren extends SiteNavigationElement {
 
 export interface Props {
   alerts?: string[];
-
-  /** @title Search Bar */
-  searchbar?: Omit<SearchbarProps, "platform">;
-
   /**
    * @title Itens de navegação
    * @description (máximo de 6 itens)
@@ -86,7 +81,6 @@ export interface Props {
 function Header(props: SectionProps<ReturnType<typeof loader>>) {
   const {
   alerts,
-  searchbar,
   navItems,
   logo,
   logoMobile,
@@ -105,9 +99,9 @@ function Header(props: SectionProps<ReturnType<typeof loader>>) {
       <header style={{ height: headerHeight }}>
         <Drawers
           menu={{ items, whatsapp }}
-          searchbar={searchbar}
           platform={platform}
           logoMobile={logoMobile}
+          selectedLanguage={selectedLanguage}
         >
           <div
             class="fixed w-full z-50 n1-header__desktop"
@@ -119,7 +113,6 @@ function Header(props: SectionProps<ReturnType<typeof loader>>) {
               {alerts && alerts.length > 0 && <Alert alerts={alerts} />}
               <Navbar
                 items={items}
-                searchbar={searchbar && { ...searchbar, platform }}
                 logo={logo}
                 logoPosition={logoPosition}
                 buttons={buttons}

@@ -29,9 +29,9 @@ function Modals({ menu }: Props) {
           class="backdrop:bg-base-content backdrop:opacity-70"
           loading="lazy"
         >
-          <Suspense fallback={fallback}>
+          {/* <Suspense fallback={fallback}>
             <Menu {...menu} />
-          </Suspense>
+          </Suspense> */}
         </Modal>
       )}
     </>

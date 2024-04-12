@@ -93,10 +93,12 @@ interface Props {
   /** @description (Limite 2 imagens) */
   /** @maxItems 2 */
   imageBottom: LayoutBottom[];
+  /** @title Ativar imagem de fundo eclipse? */  
+  activeEclipse?:boolean;
 }
 
 function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
-  const { imageTop, imageBottom, device } = props;
+  const { imageTop, imageBottom, device, activeEclipse } = props;
 
   function handleMouserHover(e: MouseEvent) {
     const { target } = e;
@@ -115,7 +117,7 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
 
   return (
     <>
-      <div class="n1-mosaic md:mt-[100px]">
+      <div class={`n1-mosaic md:mt-[100px] relative ${activeEclipse ? 'md:is-active' : ''}`}>
         <div
           class="flex flex-col text-[#ffffff] md:n1-container md:px-[120px] gap-[22px] pb-[10px] mobile:px-[20px]"
           onMouseLeave={handleMouserHover}
@@ -125,7 +127,7 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
           <div
             class={clx(
               `n1-mosaic is-top grid grid-cols-[repeat(3,_1fr)] grid-rows-1 text-[#ffffff] 
-                        gap-x-[22px] mobile:flex mobile:flex-col mobile:gap-y-[24px]`,
+               gap-x-[22px] mobile:flex mobile:flex-col mobile:gap-y-[24px]`,
             )}
           >
             {imageTop && imageTop?.map(({ desktop, mobile, text, name }) => {
@@ -137,8 +139,7 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
                         text && text?.bgColor === "base-50"
                           ? "white"
                           : "primary"
-                      } 
-                                            rounded-[16px] bg-primary md:pt-[30px] mobile:max-h-[345px] h-[430px] overflow-hidden`,
+                      } rounded-[16px] bg-primary md:pt-[30px] mobile:max-h-[345px] h-[430px] overflow-hidden`,
                     )}
                     onMouseLeave={handleMouserHover}
                     style={{
@@ -163,8 +164,7 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
                                 text && text?.bgColor === "base-50"
                                   ? "white"
                                   : "primary"
-                              } 
-                                                            text-34 font-archimoto-medium font-black`,
+                              } text-34 font-archimoto-medium font-black`,
                             )}
                             dangerouslySetInnerHTML={{ __html: text.title }}
                           >
@@ -178,8 +178,7 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
                                 text && text?.bgColor === "base-50"
                                   ? "white"
                                   : "primary"
-                              } 
-                                                        font-noto-sans font-normal mt-[5px]`,
+                              } font-noto-sans font-normal mt-[5px]`,
                             )}
                           >
                             {text.text}

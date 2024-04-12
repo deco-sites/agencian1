@@ -1,5 +1,4 @@
 import type { Props as MenuProps } from "$store/components/header/Menu.tsx";
-import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
 import Button from "$store/components/ui/Button.tsx";
 import Drawer from "$store/components/ui/Drawer.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
@@ -11,17 +10,16 @@ import Image from "apps/website/components/Image.tsx";
 import { LogoMobile } from "$store/components/header/Header.tsx";
 
 const Menu = lazy(() => import("$store/components/header/Menu.tsx"));
-const Searchbar = lazy(() => import("$store/components/search/Searchbar.tsx"));
 
 export interface Props {
   logoMobile?: LogoMobile;
   menu: MenuProps;
-  searchbar?: SearchbarProps;
   /**
    * @ignore_gen true
    */
   children?: ComponentChildren;
   platform: ReturnType<typeof usePlatform>;
+  selectedLanguage?:string;
 }
 
 interface PropsAside {
@@ -98,8 +96,8 @@ const Aside = (
   }
 };
 
-function Drawers({ menu, searchbar, children, platform, logoMobile }: Props) {
-  const { displayCart, displayMenu, displaySearchDrawer } = useUI();
+function Drawers({ menu, children, logoMobile, selectedLanguage }: Props) {
+  const { displayMenu, displaySearchDrawer } = useUI();
 
   return (
     <>
@@ -118,12 +116,7 @@ function Drawers({ menu, searchbar, children, platform, logoMobile }: Props) {
             title={displayMenu.value ? "Menu" : "Buscar"}
             logoMobile={logoMobile}
           >
-            {displayMenu.value && <Menu {...menu} />}
-            {searchbar && displaySearchDrawer.value && (
-              <div class="w-screen">
-                <Searchbar {...searchbar} />
-              </div>
-            )}
+            {displayMenu.value && <Menu {...menu} selectedLanguage={selectedLanguage} />}
           </Aside>
         }
       >

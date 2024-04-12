@@ -225,15 +225,15 @@
     opacity: 1;
     transition: all 1s linear;
   }
+  
+  .n1-text-top-width-carousel__link:hover .n1-text-top-width-carousel__title{
+    animation: overlayText .275s linear forwards;
+  }
 
   @keyframes overlayCard {
     0%{background: transparent;}
     100%{background: linear-gradient(8deg, rgba(60, 203, 218, 0.01) -32.53%, rgba(60, 203, 218, 0.27) 63.83%, rgba(60, 203, 218, 0.40) 276.77%);}
   }  
-
-  .n1-text-top-width-carousel__link:hover .n1-text-top-width-carousel__title{
-    animation: overlayText .275s linear forwards;
-  }
 
   .is-loading{
     width: 30px;
@@ -362,6 +362,21 @@
     transition: all .2s linear;
   }
 
+  .n1-mosaic.is-active:before{
+    content: "";
+    border-radius: 641.325px;
+    opacity: 0.3;
+    background: radial-gradient(105.4% 101.68% at 89.06% 88.91%, #3CCBDA 43.01%, #0C1F59 88.98%);
+    filter: blur(82px);
+    position: absolute;
+    width: 641.325px;
+    height: 641.325px;
+    transform: rotate(-15.911deg);
+    z-index: 0;
+    left: -349px;
+    top: -246px;    
+  }
+
   .n1-mosaic__title.is-white *,
   .n1-mosaic__title.is-white > *,
   .n1-mosaic__title.is-white > * > *,
@@ -409,6 +424,44 @@
     fill: #ffffff !important;
   }
 
+  .n1-mosaic.is-top .n1-mosaic__link a{
+    background-color: #fff !important;
+  }
+
+  .n1-mosaic.is-top .n1-mosaic__link a span{
+    color: #0B1227 !important;
+  }
+
+  .n1-mosaic.is-top .n1-mosaic__link a span ~ div svg path[clip-rule="evenodd"]{
+    fill:#0B1227 !important;
+  }
+
+  .n1-mosaic.is-top .n1-mosaic__link a span ~ div svg path:not([clip-rule="evenodd"]){
+    fill:#F3F4F7!important;
+    transition: all .175s linear;
+  }
+
+  .n1-mosaic.is-bottom .n1-mosaic__link.is-white a:hover span ~ div svg path:not([clip-rule="evenodd"]),
+  .n1-mosaic.is-top .n1-mosaic__link a:hover span ~ div svg path:not([clip-rule="evenodd"]){
+    fill:#ffffff !important;
+    transition: all .175s linear;
+  } 
+
+  .n1-mosaic.is-bottom .n1-mosaic__link.is-primary a:hover{
+    background-color: #ffffff !important;
+    transition: all .175s linear;
+  }
+
+  .n1-mosaic.is-bottom .n1-mosaic__link.is-primary a:hover span{
+    color: #0B1227 !important;
+    transition: all .175s linear;
+  }
+
+  .n1-mosaic.is-bottom .n1-mosaic__link.is-primary a:hover span ~ div svg path[clip-rule="evenodd"]{
+    fill:#0B1227 !important;
+    transition: all .175s linear;
+  }  
+  
   .n1-breadcrumb__item:after{
     content: "";
     border-bottom: 3px solid #fff;

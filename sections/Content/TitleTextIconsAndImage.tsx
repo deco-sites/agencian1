@@ -228,14 +228,14 @@ function TitleTextIconsAndImage(
                                 alt={alt}
                               />
                               <span
-                                class={`text-16 ${
+                                class={clx(`text-16 ${
                                   fontIconText
                                     ? FONTICONTEXT[fontIconText]
                                     : "font-noto-sans"
                                 } 
                                                                 ${
                                   activeBold ? "font-black" : "font-normal"
-                                } ml-[20px]`}
+                                } ml-[20px]`)}
                               >
                                 {alt}
                               </span>
@@ -249,7 +249,7 @@ function TitleTextIconsAndImage(
                   <div class="flex md:mt-[50px] mobile:mt-[30px] mobile:justify-center">
                     <a
                       href={`${link?.url ? link.url : "javascript:void(0)"}`}
-                      class="bg-secondary mobile:py-[10px] mobile:px-[20px] py-[20px] px-[30px] rounded-[100px]"
+                      class={clx(`bg-secondary mobile:py-[10px] mobile:px-[20px] py-[20px] px-[30px] rounded-[100px] hover:bg-[#63D5E1] duration-300`)}
                       style={{
                         pointerEvents: `${link?.url ? "all" : "none"}`,
                       }}
