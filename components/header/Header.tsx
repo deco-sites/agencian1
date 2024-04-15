@@ -93,8 +93,6 @@ function Header(props: SectionProps<ReturnType<typeof loader>>) {
   const platform = usePlatform();
   const items = navItems ?? [];
 
-  console.log("selectedLanguage --> ", selectedLanguage);
-
   return (
     <>
       <header style={{ height: headerHeight }}>

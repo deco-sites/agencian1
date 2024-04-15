@@ -54,11 +54,6 @@ export default function FooterItems(
                       )}
                     >
                       {section.items?.map((item) => {
-                        console.log("item --> ", item);
-                        console.log(
-                          "item para desabilitar --> ",
-                          item?.disabledItem,
-                        );
                         if (!item?.disabledItem) {
                           return (
                             <>

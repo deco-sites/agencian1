@@ -24,8 +24,6 @@ function Legend({ nameItemScape, mobile, selectedLanguage }: Props) {
     { "en-en": "Language" },
   ];
 
-  console.log("selectedLanguage Legend --> ", selectedLanguage);
-
   return (
     <>
       <li
