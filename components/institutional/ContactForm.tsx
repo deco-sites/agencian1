@@ -32,6 +32,64 @@ interface Text {
   description?: string;
 }
 
+  /**@titleBy title */
+interface fieldsForm{
+  /**@title Título */  
+  title?:string;
+  /**@title Subtítulo */  
+  subtitle?:string;
+  /**
+   * @title Campo 01
+   * @description comercial 
+  */    
+  commercial?:string;
+  /**
+   * @title Campo 02 
+   * @description Parceria       
+  */
+  partnership?:string;
+  /**
+   * @title Campo 03 
+   * @description Outros
+   */           
+  others?:string;
+  /**
+   * @title Campo 04 
+   * @description Nome
+  */  
+  name_user?:string;
+  /**@title Digite o texto da máscara */
+  placeholderName_user?:string;
+  /**
+   * @title Campo 05
+   * @description Nome da Empresa  
+  */    
+  name_company?:string;
+  /**@title Digite o texto da máscara */
+  placeholderName_company?:string;  
+  /**
+   * @title Campo 06
+   * @description Telefone
+  */    
+  phone_number?:string;
+  /**
+   * @title Campo 07
+   * @description E-mail
+  */    
+  email?:string;
+  /**@title Digite o texto da máscara */
+  placeholderEmail?:string;  
+  /**
+   * @title Campo 08 
+   * @description Mensagem
+  */   
+  message?:string;
+  /**@title Digite o texto da máscara */
+  placeholderMessage?:string;  
+  /**@title Texto do botão*/ 
+  textButton?:string;
+}
+
 interface Props {
   /**@title Imagem */
   image?: Device;
@@ -39,6 +97,8 @@ interface Props {
   text?: Text;
   /**@title Habilitar Modal para alteração */
   activeModalForm?: "Sim" | "Não";
+  /**@title Dados do formulário */    
+  fieldsForm?:fieldsForm;
 }
 
 const ACTIVEMODALFORM = {
@@ -46,7 +106,7 @@ const ACTIVEMODALFORM = {
   "Não": false,
 };
 
-function ContactForm({ image, text, activeModalForm = "Não" }: Props) {
+function ContactForm({ image, text, activeModalForm = "Não", fieldsForm }: Props) {
   const displayModalForm = useSignal(ACTIVEMODALFORM[activeModalForm]);
 
   useEffect(() => {
@@ -298,215 +358,237 @@ function ContactForm({ image, text, activeModalForm = "Não" }: Props) {
             >
               {/* TIPO DE CONTATO __________________________________________________________________________| INICIAL | */}
               <div class="flex flex-col gap-[32px]">
-                <h3 class="text-24 font-black font-archimoto-medium text-[#ffffff]">
-                  Tipo de Contato
-                </h3>
+                {fieldsForm?.title && (
+                  <h3 class="text-24 font-black font-archimoto-medium text-[#ffffff]">
+                    {fieldsForm.title}
+                  </h3>
+                )}
 
                 <ul class="flex gap-[30px]">
                   {/* Comercial*/}
-                  <li class="flex flex-row gap-[8px] lg:flex-row items-center">
-                    <input
-                      name={"commercial"}
-                      type={"checkbox"}
-                      id={"commercial"}
-                      class={clx(
-                        `n1-radio-custom checked:is-active relative appearance-none rounded-[10px] 
-                        bg-transparent w-[32px] h-[32px] border-2 border-[#F3F4F7] outline-none`,
-                      )}
-                    />
-                    <LabelForm
-                      _class={`${displayModalForm.value} teste-n1 font-normal text-[#ffffff] text-14 leading-[21px] font-noto-sans`}
-                      nameAttr={"commercial"}
-                    >
-                      Comercial
-                    </LabelForm>
-                  </li>
+                  {fieldsForm?.commercial && (
+                    <li class="flex flex-row gap-[8px] lg:flex-row items-center">
+                      <input
+                        name={"commercial"}
+                        type={"checkbox"}
+                        id={"commercial"}
+                        class={clx(
+                          `n1-radio-custom checked:is-active relative appearance-none rounded-[10px] 
+                          bg-transparent w-[32px] h-[32px] border-2 border-[#F3F4F7] outline-none`,
+                        )}
+                      />
+                      <LabelForm
+                        _class={`${displayModalForm.value} teste-n1 font-normal text-[#ffffff] text-14 leading-[21px] font-noto-sans`}
+                        nameAttr={"commercial"}
+                      >
+                        {fieldsForm.commercial}
+                      </LabelForm>
+                    </li>
+                  )}
                   {/* Parceria*/}
-                  <li class="flex flex-row gap-[8px] lg:flex-row items-center">
-                    <input
-                      name={"partnership"}
-                      type={"checkbox"}
-                      id={"partnership"}
-                      class={clx(
-                        `n1-radio-custom checked:is-active relative appearance-none rounded-[10px] 
-                        bg-transparent w-[32px] h-[32px] border-2 border-[#F3F4F7] outline-none`,
-                      )}
-                    />
-                    <LabelForm
-                      _class={`font-normal text-[#ffffff] text-14 leading-[21px] font-noto-sans`}
-                      nameAttr={"partnership"}
-                    >
-                      Parceria
-                    </LabelForm>
-                  </li>
+                  {fieldsForm?.partnership && (
+                    <li class="flex flex-row gap-[8px] lg:flex-row items-center">
+                      <input
+                        name={"partnership"}
+                        type={"checkbox"}
+                        id={"partnership"}
+                        class={clx(
+                          `n1-radio-custom checked:is-active relative appearance-none rounded-[10px] 
+                          bg-transparent w-[32px] h-[32px] border-2 border-[#F3F4F7] outline-none`,
+                        )}
+                      />
+                      <LabelForm
+                        _class={`font-normal text-[#ffffff] text-14 leading-[21px] font-noto-sans`}
+                        nameAttr={"partnership"}
+                      >
+                        {fieldsForm?.partnership}
+                      </LabelForm>
+                    </li>
+                  )}
                   {/* Outros*/}
-                  <li class="flex flex-row gap-[8px] lg:flex-row items-center">
-                    <input
-                      name={"others"}
-                      type={"checkbox"}
-                      id={"others"}
-                      class={clx(
-                        `n1-radio-custom checked:is-active relative appearance-none rounded-[10px] 
-                        bg-transparent w-[32px] h-[32px] border-2 border-[#F3F4F7] outline-none`,
-                      )}
-                    />
-                    <LabelForm
-                      _class={`font-normal text-[#ffffff] text-14 leading-[21px] font-noto-sans`}
-                      nameAttr={"others"}
-                    >
-                      Outros
-                    </LabelForm>
-                  </li>
+                  {fieldsForm?.others && (
+                    <li class="flex flex-row gap-[8px] lg:flex-row items-center">
+                      <input
+                        name={"others"}
+                        type={"checkbox"}
+                        id={"others"}
+                        class={clx(
+                          `n1-radio-custom checked:is-active relative appearance-none rounded-[10px] 
+                          bg-transparent w-[32px] h-[32px] border-2 border-[#F3F4F7] outline-none`,
+                        )}
+                      />
+                      <LabelForm
+                        _class={`font-normal text-[#ffffff] text-14 leading-[21px] font-noto-sans`}
+                        nameAttr={"others"}
+                      >
+                        {fieldsForm.others}
+                      </LabelForm>
+                    </li>
+                  )}
                 </ul>
               </div>
               {/* TIPO DE CONTATO __________________________________________________________________________| FINAL | */}
 
-              <h3 class="text-24 font-black font-archimoto-medium text-[#ffffff]">
-                Dados
-              </h3>
+              {fieldsForm?.subtitle && (
+                <h3 class="text-24 font-black font-archimoto-medium text-[#ffffff]">
+                  {fieldsForm.subtitle}
+                </h3>
+              )}
               {/* DADOS __________________________________________________________________________________| INICIAL | */}
               <div class="flex flex-col gap-[30px] lg:flex-row">
                 {/* Nome*/}
-                <div class="form-control flex-col gap-[10px] w-full">
-                  <LabelForm
-                    _class={`font-bold text-[#ffffff] text-14 leading-[21px] font-noto-sans`}
-                    nameAttr={"name_user"}
-                  >
-                    Nome
-                  </LabelForm>
-                  <input
-                    onChange={handleChange}
-                    onBlur={handleOnBlur}
-                    placeholder={"Seu nome"}
-                    name={"name_user"}
-                    id={"name_user"}
-                    type={"text"}
-                    class={clx(
-                      `n1-input--error rounded-[24px] bg-transparent py-[12px] px-[20px] max-h-[42px] border border-[#F3F4F7] duration-300
-                          font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`,
-                    )}
-                  />
-                  <span class="hidden text-error text-[12px] leading-[15.6px]">
-                    Campo obrigatório
-                  </span>
-                </div>
-                {/* Nome da Empresa*/}
-                <div class="form-control gap-[10px] w-full">
-                  <LabelForm
-                    _class="font-bold text-[#ffffff] text-14 leading-[21px] font-noto-sans"
-                    nameAttr="name_company"
-                  >
-                    Nome da Empresa
-                  </LabelForm>
-                  <input
-                    placeholder={"*Opcional"}
-                    name={"name_company"}
-                    id={"name_company"}
-                    type={"text"}
-                    class={clx(
-                      `rounded-[24px] bg-transparent py-[12px] px-[20px] max-h-[42px] border border-[#F3F4F7] duration-300
-                          font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`,
-                    )}
-                  />
-                  <span class="hidden text-error text-[12px] leading-[15.6px]">
-                  </span>
-                </div>
-              </div>
-              <div class="flex flex-col gap-[30px] lg:flex-row">
-                {/* Telefone*/}
-                <div class="form-control gap-[10px] w-full">
-                  <LabelForm
-                    _class="font-bold text-[#ffffff] text-14 leading-[21px] font-noto-sans"
-                    nameAttr="phone_number"
-                  >
-                    Telefone
-                  </LabelForm>
-
-                  <input
-                    onKeyUp={handleKeyUp}
-                    onChange={handleChange}
-                    onBlur={handleOnBlur}
-                    placeholder="(00) 00000-0000"
-                    name="phone_number"
-                    type="text"
-                    // @ts-ignore: Ignorando erro
-                    maxlength="15"
-                    id="phone_number"
-                    class={clx(
-                      `n1-input--error w-full rounded-[24px] bg-transparent py-[12px] px-[20px] max-h-[42px] border border-[#F3F4F7] duration-300
-                          font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`,
-                    )}
-                  />
-
-                  <span class="hidden text-error text-[12px] leading-[15.6px]">
-                    Campo obrigatório
-                  </span>
-                </div>
-                {/* Email*/}
-                <div class="form-control gap-[10px] w-full">
-                  <div class="form-control gap-[10px] w-full">
+                {fieldsForm?.name_user && (
+                  <div class="form-control flex-col gap-[10px] w-full">
                     <LabelForm
-                      _class="font-bold text-[#ffffff] text-14 leading-[21px] font-noto-sans"
-                      nameAttr="email"
+                      _class={`font-bold text-[#ffffff] text-14 leading-[21px] font-noto-sans`}
+                      nameAttr={"name_user"}
                     >
-                      E-mail
+                      {fieldsForm.name_user}
                     </LabelForm>
                     <input
                       onChange={handleChange}
                       onBlur={handleOnBlur}
-                      placeholder="Seu melhor e-mail"
-                      name="email"
-                      id="email"
-                      type="email"
+                      placeholder={fieldsForm?.placeholderName_user}
+                      name={"name_user"}
+                      id={"name_user"}
+                      type={"text"}
                       class={clx(
                         `n1-input--error rounded-[24px] bg-transparent py-[12px] px-[20px] max-h-[42px] border border-[#F3F4F7] duration-300
-                              font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`,
+                            font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`,
                       )}
                     />
                     <span class="hidden text-error text-[12px] leading-[15.6px]">
                       Campo obrigatório
                     </span>
                   </div>
-                </div>
+                )}
+                {/* Nome da Empresa*/}
+                {fieldsForm?.name_company && (
+                  <div class="form-control gap-[10px] w-full">
+                    <LabelForm
+                      _class="font-bold text-[#ffffff] text-14 leading-[21px] font-noto-sans"
+                      nameAttr="name_company"
+                    >
+                      {fieldsForm.name_company}
+                    </LabelForm>
+                    <input
+                      placeholder={fieldsForm?.placeholderName_company}
+                      name={"name_company"}
+                      id={"name_company"}
+                      type={"text"}
+                      class={clx(
+                        `rounded-[24px] bg-transparent py-[12px] px-[20px] max-h-[42px] border border-[#F3F4F7] duration-300
+                            font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`,
+                      )}
+                    />
+                    <span class="hidden text-error text-[12px] leading-[15.6px]">
+                    </span>
+                  </div>                 
+                )}
+              </div>
+              <div class="flex flex-col gap-[30px] lg:flex-row">
+                {/* Telefone*/}
+                {fieldsForm?.phone_number && (
+                  <div class="form-control gap-[10px] w-full">
+                    <LabelForm
+                      _class="font-bold text-[#ffffff] text-14 leading-[21px] font-noto-sans"
+                      nameAttr="phone_number"
+                    >
+                      {fieldsForm.phone_number}
+                    </LabelForm>
+
+                    <input
+                      onKeyUp={handleKeyUp}
+                      onChange={handleChange}
+                      onBlur={handleOnBlur}
+                      placeholder="(00) 00000-0000"
+                      name="phone_number"
+                      type="text"
+                      // @ts-ignore: Ignorando erro
+                      maxlength="15"
+                      id="phone_number"
+                      class={clx(
+                        `n1-input--error w-full rounded-[24px] bg-transparent py-[12px] px-[20px] max-h-[42px] border border-[#F3F4F7] duration-300
+                            font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`,
+                      )}
+                    />
+
+                    <span class="hidden text-error text-[12px] leading-[15.6px]">
+                      Campo obrigatório
+                    </span>
+                  </div>
+                )}
+                {/* Email*/}
+                {fieldsForm?.email && (
+                  <div class="form-control gap-[10px] w-full">
+                    <div class="form-control gap-[10px] w-full">
+                      <LabelForm
+                        _class="font-bold text-[#ffffff] text-14 leading-[21px] font-noto-sans"
+                        nameAttr="email"
+                      >
+                        {fieldsForm.email}
+                      </LabelForm>
+                      <input
+                        onChange={handleChange}
+                        onBlur={handleOnBlur}
+                        placeholder={fieldsForm?.placeholderEmail}
+                        name="email"
+                        id="email"
+                        type="email"
+                        class={clx(
+                          `n1-input--error rounded-[24px] bg-transparent py-[12px] px-[20px] max-h-[42px] border border-[#F3F4F7] duration-300
+                                font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`,
+                        )}
+                      />
+                      <span class="hidden text-error text-[12px] leading-[15.6px]">
+                        Campo obrigatório
+                      </span>
+                    </div>
+                  </div>
+                )}
               </div>
               {/* Mensagem*/}
-              <div class="form-control gap-[32px]">
-                <label
-                  class="font-bold text-[#ffffff] text-24 leading-[21px] font-archimoto-medium"
-                  for="message"
-                >
-                  Mensagem
-                </label>
-                <textarea
-                  onChange={handleChange}
-                  onBlur={handleOnBlur}
-                  placeholder="Sua mensagem aqui"
-                  name="message"
-                  id="message"
-                  type="text"
-                  class={clx(
-                    `n1-input--error bg-transparent rounded-[38px] h-[90px] border border-[#F3F4F7] py-[20px] px-[40px] duration-300
-                      font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`,
-                  )}
-                />
-                <span class="hidden -mt-[20px] text-error text-[12px] leading-[15.6px]">
-                  Campo obrigatório
-                </span>
-              </div>
+              {fieldsForm?.message && (
+                <div class="form-control gap-[32px]">
+                  <label
+                    class="font-bold text-[#ffffff] text-24 leading-[21px] font-archimoto-medium"
+                    for="message"
+                  >
+                    {fieldsForm.message}
+                  </label>
+                  <textarea
+                    onChange={handleChange}
+                    onBlur={handleOnBlur}
+                    placeholder={fieldsForm?.placeholderMessage}
+                    name="message"
+                    id="message"
+                    type="text"
+                    class={clx(
+                      `n1-input--error bg-transparent rounded-[38px] h-[90px] border border-[#F3F4F7] py-[20px] px-[40px] duration-300
+                        font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`,
+                    )}
+                  />
+                  <span class="hidden -mt-[20px] text-error text-[12px] leading-[15.6px]">
+                    Campo obrigatório
+                  </span>
+                </div>
+              )}
               {/* DADOS __________________________________________________________________________________| FINAL | */}
 
-              <div>
-                <button
-                  type="submit"
-                  disabled
-                  class={clx(
-                    `n1-form__submit disabled:opacity-50 py-[20px] px-[30px] bg-base-200 rounded-[100px] text-[#585858] hover:bg-[#ffff] 
-                    max-h-[52px] !leading-none text-16 font-archimoto-medium font-black`,
-                  )}
-                >
-                  Enviar
-                </button>
-              </div>
+              {fieldsForm?.textButton && (
+                <div>
+                  <button
+                    type="submit"
+                    disabled
+                    class={clx(
+                      `n1-form__submit disabled:opacity-50 py-[20px] px-[30px] bg-base-200 rounded-[100px] text-[#585858] hover:bg-[#ffff] 
+                      max-h-[52px] !leading-none text-16 font-archimoto-medium font-black`,
+                    )}
+                  >
+                    {fieldsForm.textButton}
+                  </button>
+                </div>
+              )}
             </form>
           </div>
         </div>
