@@ -15,10 +15,12 @@ interface Props {
   textCircleLg?: string;
   /**@title Texto circulo menor */
   textCircleSm?: string;
+  /**@title Número do WhatsApp */  
+  phone?:string;
 }
 
 function TextWithImageCustom(
-  { image, width, height, textLarge, textCircleLg, textCircleSm }: Props,
+  { image, width, height, textLarge, textCircleLg, textCircleSm, phone }: Props,
 ) {
   return (
     <>
@@ -50,7 +52,7 @@ function TextWithImageCustom(
           />
         )}
         {textCircleLg && textCircleSm && (
-          <BlueBall textCircleLg={textCircleLg} textCircleSm={textCircleSm} />
+          <BlueBall textCircleLg={textCircleLg} textCircleSm={textCircleSm} phone={phone} />
         )}
       </div>
     </>
