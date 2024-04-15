@@ -46,8 +46,6 @@ function Banner(props: SectionProps<ReturnType<typeof loader>>) {
 
   const { title, subtitle, images } = banner;
 
-  // console.log('images --> ', images)
-
   return (
     <div class="grid grid-cols-1 grid-rows-1">
       <Picture preload class="col-start-1 col-span-1 row-start-1 row-span-1">
