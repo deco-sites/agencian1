@@ -57,7 +57,7 @@ function NavItem({ item, btnTextMenu, btnUrlMenu }: Props) {
         ${
           nameItemScape === "blog"
             ? "active--tooltip"
-            : nameItemScape === "ferramentas"
+            : nameItemScape === "ferramentas" || nameItemScape === "tools" || nameItemScape === 'herramientas'
             ? "hidden"
             : ""
         }
