@@ -2,7 +2,6 @@ import Icon from "$store/components/ui/Icon.tsx";
 import Slider from "$store/components/ui/Slider.tsx";
 
 export default function Buttons({ device }: { device: string }) {
-  console.log(device);
   return (
     <>
       {device === "desktop"
