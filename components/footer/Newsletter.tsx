@@ -29,8 +29,6 @@ function Newsletter(
   function validateEmail(target: HTMLElement, typeEvent?: string) {
     if (!target) return;
 
-    console.log("typeEvent ----> ", typeEvent);
-
     let field;
 
     if (typeEvent === "submit") {
@@ -86,13 +84,10 @@ function Newsletter(
 
     if (target && target instanceof HTMLElement) {
       const email = validateEmail(target, typeEvent);
-
       const news = target.closest(".news");
       const inputElement = news?.querySelector<HTMLInputElement>("input");
       const loadingElement = news?.querySelector<HTMLElement>(".is-loading");
       const message = news?.querySelector<HTMLElement>(".is-sucess");
-
-      console.log("isValidEmail --> ", JSON.stringify({ email }));
 
       if (email) {
         try {
