@@ -30,9 +30,24 @@ export default defineApp(async (_req, ctx) => {
         {/* Web Manifest */}
         <link rel="manifest" href={asset("/site.webmanifest")} />
 
-        <link  rel="preconnect" href={asset("/fonts/ArchimotoN1-Black.ttf")} as="font" type="font/woff2" />
-        <link  rel="preconnect" href={asset("/fonts/ArchimotoV01-Medium.ttf")} as="font" type="font/woff2" />
-        <link  rel="preconnect" href={asset("/fonts/ArchimotoN1-Regular.ttf")} as="font" type="font/woff2" />
+        <link
+          rel="preconnect"
+          href={asset("/fonts/ArchimotoN1-Black.ttf")}
+          as="font"
+          type="font/woff2"
+        />
+        <link
+          rel="preconnect"
+          href={asset("/fonts/ArchimotoV01-Medium.ttf")}
+          as="font"
+          type="font/woff2"
+        />
+        <link
+          rel="preconnect"
+          href={asset("/fonts/ArchimotoN1-Regular.ttf")}
+          as="font"
+          type="font/woff2"
+        />
       </Head>
 
       {/* Rest of Preact tree */}
@@ -49,21 +64,27 @@ export default defineApp(async (_req, ctx) => {
           __html: `
             @font-face{
               font-family: 'ArchimotoN1-Black';
-              src: url(${asset("/fonts/ArchimotoN1-Black.ttf")}) format('woff2');
+              src: url(${
+            asset("/fonts/ArchimotoN1-Black.ttf")
+          }) format('woff2');
               font-weight: normal;
               font-style: normal;                          
             }
            
             @font-face{
               font-family: 'ArchimotoV01-Medium';
-              src: url(${asset("/fonts/ArchimotoV01-Medium.ttf")}) format('woff2');
+              src: url(${
+            asset("/fonts/ArchimotoV01-Medium.ttf")
+          }) format('woff2');
               font-weight: normal;
               font-style: normal;                          
             };
 
             @font-face{
               font-family: 'ArchimotoN1-Regular';
-              src: url(${asset("/fonts/ArchimotoN1-Regular.ttf")}) format('woff2');
+              src: url(${
+            asset("/fonts/ArchimotoN1-Regular.ttf")
+          }) format('woff2');
               font-weight: normal;
               font-style: normal;                          
             };
@@ -74,7 +95,7 @@ export default defineApp(async (_req, ctx) => {
               font-weight: normal;
               font-style: normal;                          
             };       
-          `
+          `,
         }}
       />
     </>

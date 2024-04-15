@@ -24,8 +24,7 @@ function LinkTelephoneWithOptionArrow(
       target="_blank"
       aria-label="Converse no WhatsApp"
       alt="Converse no WhatsApp"
-      class={
-        clx(`${width ? `mobile:my-0 mobile:mx-auto` : "mobile:w-[130px]"} 
+      class={clx(`${width ? `mobile:my-0 mobile:mx-auto` : "mobile:w-[130px]"} 
           mobile:relative mobile:py-[7px] mobile:mr-[20px] px-[10px] py-[10px] group flex items-center relative
           text-16 uppercase bg-accent n1-btn-header-item--rounded border-none w-[142px] ml-[40px] hover:bg-[#F8BC33] duration-300
           ${customClass ? customClass : ""}`)}

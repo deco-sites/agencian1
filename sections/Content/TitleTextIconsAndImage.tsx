@@ -14,6 +14,13 @@ interface ImageGeneric {
   width?: number;
   /**@title Altura da Imagem */
   height?: number;
+  /**
+   * @title Link
+   * @description (ex: https://agencian1.com.br/)
+   */
+  href?: string;
+  /** @title Desativar item? */
+  disabledLink?:boolean;  
 }
 
 interface ImageDevice {
@@ -204,41 +211,47 @@ function TitleTextIconsAndImage(
                     gridActive && gridColCustom
                       ? "grid " + GRIDCOLCUSTOM[gridColCustom]
                       : ""
-                  } 
-                                    items-center flex flex-col xl:flex-wrap xl:flex-row`)}
+                  } items-center flex flex-col xl:flex-wrap xl:flex-row`)}
                 >
                   {iconWidthText &&
-                    iconWidthText?.map(({ alt, src, width, height }) => {
+                    iconWidthText?.map(({ alt, src, width, height, href, disabledLink }) => {
                       return (
                         <>
-                          {alt && src && width && height && (
+                          {alt && src && width && height && !disabledLink && (
                             <li
                               class={clx(
                                 `w-full xl:w-auto justify-start rounded-[20px] 
-                                                        flex items-center xl:justify-center py-[14px] px-[20px] md:mx-[16px] my-[9px]
-                                                        bg-[linear-gradient(161deg,_rgba(255,_255,_255,_0.10)_0%,_rgba(255,_255,_255,_0.05)_101.7%)] 
-                                                        [box-shadow:0px_20.64px_30px_0px_rgba(0,_0,_0,_0.10)] 
-                                                        backdrop-filter backdrop-blur-[17px]`,
+                                 flex items-center xl:justify-center py-[14px] px-[20px] md:mx-[16px] my-[9px]
+                                 bg-[linear-gradient(161deg,_rgba(255,_255,_255,_0.10)_0%,_rgba(255,_255,_255,_0.05)_101.7%)] 
+                                 [box-shadow:0px_20.64px_30px_0px_rgba(0,_0,_0,_0.10)] 
+                                 backdrop-filter backdrop-blur-[17px]`,
                               )}
                             >
-                              <img
-                                src={src}
-                                width={width}
-                                height={height}
-                                alt={alt}
-                              />
-                              <span
-                                class={clx(`text-16 ${
-                                  fontIconText
-                                    ? FONTICONTEXT[fontIconText]
-                                    : "font-noto-sans"
-                                } 
-                                                                ${
-                                  activeBold ? "font-black" : "font-normal"
-                                } ml-[20px]`)}
+                              <a
+                                class="flex items-center"
+                                href={href ? href : "#"}
+                                style={{ cursor: href ? "pointer" : "default" }}
+                                target="_blank"
                               >
-                                {alt}
-                              </span>
+                                <img
+                                  src={src}
+                                  width={width}
+                                  height={height}
+                                  alt={alt}
+                                />
+                                <span
+                                  class={clx(`text-16 ${
+                                    fontIconText
+                                      ? FONTICONTEXT[fontIconText]
+                                      : "font-noto-sans"
+                                  } 
+                                  ${
+                                    activeBold ? "font-black" : "font-normal"
+                                  } ml-[20px]`)}
+                                >
+                                  {alt}
+                                </span>
+                              </a>
                             </li>
                           )}
                         </>
@@ -249,7 +262,9 @@ function TitleTextIconsAndImage(
                   <div class="flex md:mt-[50px] mobile:mt-[30px] mobile:justify-center">
                     <a
                       href={`${link?.url ? link.url : "javascript:void(0)"}`}
-                      class={clx(`bg-secondary mobile:py-[10px] mobile:px-[20px] py-[20px] px-[30px] rounded-[100px] hover:bg-[#63D5E1] duration-300`)}
+                      class={clx(
+                        `bg-secondary mobile:py-[10px] mobile:px-[20px] py-[20px] px-[30px] rounded-[100px] hover:bg-[#63D5E1] duration-300`,
+                      )}
                       style={{
                         pointerEvents: `${link?.url ? "all" : "none"}`,
                       }}

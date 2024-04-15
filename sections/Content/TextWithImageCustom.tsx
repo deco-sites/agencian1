@@ -20,7 +20,6 @@ interface Props {
 function TextWithImageCustom(
   { image, width, height, textLarge, textCircleLg, textCircleSm }: Props,
 ) {
-
   return (
     <>
       <div

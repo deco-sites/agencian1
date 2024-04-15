@@ -6,7 +6,6 @@ interface Props {
 }
 
 function BlueBall({ textCircleLg, textCircleSm }: Props) {
-
   function handleMouseMove(e: MouseEvent) {
     const { target } = e;
     if (!target) return;
@@ -25,7 +24,7 @@ function BlueBall({ textCircleLg, textCircleSm }: Props) {
         );
       }
     }
-  }  
+  }
 
   return (
     <>
@@ -55,7 +54,7 @@ function BlueBall({ textCircleLg, textCircleSm }: Props) {
             </span>
           </div>
         </div>
-      </div>      
+      </div>
     </>
   );
 }

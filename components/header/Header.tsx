@@ -80,19 +80,18 @@ export interface Props {
 
 function Header(props: SectionProps<ReturnType<typeof loader>>) {
   const {
-  alerts,
-  navItems,
-  logo,
-  logoMobile,
-  logoPosition = "center",
-  whatsapp,
-  btnTextMenu,
-  buttons,
-  selectedLanguage } = props
+    alerts,
+    navItems,
+    logo,
+    logoMobile,
+    logoPosition = "center",
+    whatsapp,
+    btnTextMenu,
+    buttons,
+    selectedLanguage,
+  } = props;
   const platform = usePlatform();
   const items = navItems ?? [];
-
-  console.log('selectedLanguage --> ', selectedLanguage)
 
   return (
     <>
@@ -137,23 +136,21 @@ function Header(props: SectionProps<ReturnType<typeof loader>>) {
 }
 
 export const loader = (props: Props, req: Request, ctx: FnContext) => {
-
   const cookies = getCookies(req.headers);
   const selectedLanguage = cookies["N1_SelectedLanguage"] || "pt-br";
 
-  if( !cookies["N1_SelectedLanguage"] ){
+  if (!cookies["N1_SelectedLanguage"]) {
     setCookie(ctx.response.headers, {
       name: "N1_SelectedLanguage",
       value: "pt-br",
       path: "/",
     });
-  } 
-  
+  }
+
   return {
     ...props,
-    selectedLanguage
+    selectedLanguage,
   };
 };
-
 
 export default Header;

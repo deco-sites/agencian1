@@ -13,18 +13,18 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 export type Item = {
   /**@title Nome */
   label: string;
-  /**@title Link */  
-  /**@description (ex: /nossos-servicos/suporte) */  
+  /**@title Link */
+  /**@description (ex: /nossos-servicos/suporte) */
   href?: string;
-  /**@title Ocultar item? */  
-  disabledItem?:boolean;
+  /**@title Ocultar item? */
+  disabledItem?: boolean;
 };
 
 /**@titleBy label */
 export type Section = {
-  /**@title Nome */  
+  /**@title Nome */
   label: string;
-  /**@title Items */  
+  /**@title Items */
   items: Item[];
 };
 
@@ -39,10 +39,10 @@ export interface SocialItem {
     | "Twitter"
     | "Youtube"
     | "Email";
-  /**@title link */      
+  /**@title link */
   link: string;
   /**@title Ocultar item? */
-  disabledSocial?:boolean;
+  disabledSocial?: boolean;
 }
 
 export interface PaymentItem {
@@ -241,7 +241,7 @@ function Footer({
               <Divider style="n1-border-footer" />
               <div class="lg:flex lg:flex-row gap-10 lg:gap-14 lg:items-end justify-between mt-[40px] tablet:flex tablet:flex-wrap mobile:mb-[23px]">
                 {_payments}
-                {_social}                
+                {_social}
                 <div class="mobile:hidden flex flex-col lg:flex-row gap-10 lg:gap-14 lg:items-end mb-[10px]">
                   {_copyright}
                 </div>
