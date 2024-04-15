@@ -42,7 +42,7 @@ export default function FeedbackSection({
               class="pb-5 lg:pb-0"
             />
 
-            <p class=" text-14 lg:text-18 font-noto-sans text-[#F3F4F7] font-normal !leading-[160%] w-full max-w-[340px] lg:max-w-[798px]">
+            <p class=" text-14 lg:text-18 font-noto-sans text-[#F3F4F7] font-normal !leading-[160%] w-full max-w-[340px] lg:max-w-[798px] mobile:max-w-[76%] mobile:ml-[20px]">
               {comment && comment}
             </p>
           </div>
