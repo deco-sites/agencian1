@@ -168,32 +168,32 @@ function ContactForm({ image, text, activeModalForm = "Não", fieldsForm }: Prop
         field instanceof HTMLTextAreaElement)
     ) {
       if (field?.value === "") {
-        field.type !== "checkbox" && field?.classList.add("is-active");
-        field.type !== "checkbox" && inputError?.classList.remove("hidden");
+        field.type !== "radio" && field?.classList.add("is-active");
+        field.type !== "radio" && inputError?.classList.remove("hidden");
         return null;
       } else if (
         field && field?.getAttribute("id") === "phone_number" &&
         field?.value.length < 15
       ) {
-        field.type !== "checkbox" && field?.classList.add("is-active");
-        field.type !== "checkbox" && inputError?.classList.remove("hidden");
+        field.type !== "radio" && field?.classList.add("is-active");
+        field.type !== "radio" && inputError?.classList.remove("hidden");
         return null;
       } else {
-        field.type !== "checkbox" && field?.classList.remove("is-active");
-        field.type !== "checkbox" && inputError?.classList.add("hidden");
+        field.type !== "radio" && field?.classList.remove("is-active");
+        field.type !== "radio" && inputError?.classList.add("hidden");
 
         const nameField = field.getAttribute("id");
-        let valueField;
+        let valueField;        
 
         if (field?.value !== "") {
           if (
-            field && field.type === "checkbox" &&
+            field && field.type === "radio" &&
             field instanceof HTMLInputElement
-          ) {
+          ) {            
             valueField = field.checked;
-          } else {
+          } else {            
             valueField = field.value;
-          }
+          }          
           return [nameField, valueField];
         }
       }
@@ -247,7 +247,7 @@ function ContactForm({ image, text, activeModalForm = "Não", fieldsForm }: Prop
 
     if (target && target instanceof HTMLFormElement) {
       const isValid = validateAllField(target);
-      const modal = document.querySelector<HTMLElement>(".n1-modal-form__bg");
+      const modal = document.querySelector<HTMLElement>(".n1-modal-form__bg");      
 
       if (isValid) {
         try {
@@ -284,7 +284,7 @@ function ContactForm({ image, text, activeModalForm = "Não", fieldsForm }: Prop
 
             form && Array.from(form).forEach((item) => {
               if (
-                item && item.getAttribute("type") !== "checkbox" &&
+                item && item.getAttribute("type") !== "radio" &&
                 (item instanceof HTMLInputElement ||
                   item instanceof HTMLTextAreaElement)
               ) {
@@ -292,7 +292,7 @@ function ContactForm({ image, text, activeModalForm = "Não", fieldsForm }: Prop
               }
 
               if (
-                item.getAttribute("type") === "checkbox" &&
+                item.getAttribute("type") === "radio" &&
                 item instanceof HTMLInputElement
               ) {
                 item.checked = false;
@@ -369,8 +369,8 @@ function ContactForm({ image, text, activeModalForm = "Não", fieldsForm }: Prop
                   {fieldsForm?.commercial && (
                     <li class="flex flex-row gap-[8px] lg:flex-row items-center">
                       <input
-                        name={"commercial"}
-                        type={"checkbox"}
+                        name={"type-contact"}
+                        type={"radio"}
                         id={"commercial"}
                         class={clx(
                           `n1-radio-custom checked:is-active relative appearance-none rounded-[10px] 
@@ -389,8 +389,8 @@ function ContactForm({ image, text, activeModalForm = "Não", fieldsForm }: Prop
                   {fieldsForm?.partnership && (
                     <li class="flex flex-row gap-[8px] lg:flex-row items-center">
                       <input
-                        name={"partnership"}
-                        type={"checkbox"}
+                        name={"type-contact"}
+                        type={"radio"}
                         id={"partnership"}
                         class={clx(
                           `n1-radio-custom checked:is-active relative appearance-none rounded-[10px] 
@@ -409,8 +409,8 @@ function ContactForm({ image, text, activeModalForm = "Não", fieldsForm }: Prop
                   {fieldsForm?.others && (
                     <li class="flex flex-row gap-[8px] lg:flex-row items-center">
                       <input
-                        name={"others"}
-                        type={"checkbox"}
+                        name={"type-contact"}
+                        type={"radio"}
                         id={"others"}
                         class={clx(
                           `n1-radio-custom checked:is-active relative appearance-none rounded-[10px] 
