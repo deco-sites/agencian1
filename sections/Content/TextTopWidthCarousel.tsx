@@ -178,7 +178,7 @@ function Dots({ images }: Props) {
 function Buttons() {
   return (
     <>
-      <div class="absolute w-full flex mobile:justify-center mobile:items-end justify-between h-full top-[0] items-center pb-[10px] md:-left-[10px]">
+      <div class="absolute w-full flex mobile:justify-center mobile:items-end justify-between h-full mobile:top-[60px] top-[0] items-center pb-[10px] md:-left-[10px]">
         <div class="flex items-center justify-start z-10 col-start-1 row-start-2 mobile:mr-[30px] -translate-x-[50px]">
           <Slider.PrevButton class="btn btn-circle bg-[#ffffff] w-[40px] !h-[40px]">
             <Icon

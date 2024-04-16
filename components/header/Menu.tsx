@@ -80,7 +80,11 @@ function Menu({ items, whatsapp, selectedLanguage }: Props) {
           return (
             <li
               class={`pt-[16px] ${
-                item.name === "Blog" || item.name === "Ferramentas"
+                item.name === "Blog" || 
+                item.name === "Ferramentas" || 
+                item.name === "ferramentas" || 
+                item.name === "Tools" || 
+                item.name === "tools"
                   ? "hidden"
                   : ""
               }`}
@@ -89,7 +93,7 @@ function Menu({ items, whatsapp, selectedLanguage }: Props) {
                 href={`${item?.url ? item?.url : "javascript:void(0)"}`}
                 style={{ pointerEvents: `${item?.url ? "all" : "none"}` }}
               >
-                <MenuItem item={item} />
+                <MenuItem item={item}  />
               </a>
             </li>
           );
