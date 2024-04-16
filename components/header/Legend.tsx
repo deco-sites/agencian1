@@ -30,9 +30,9 @@ function Legend({ nameItemScape, mobile, selectedLanguage }: Props) {
         class={clx(
           `mobile:font-black mobile:flex-col mobile:items-start mobile:py-[20px] n1-header__navlink--active 
            duration-300 group flex items-center text-16 font-archimoto-medium uppercase legend 
-           relative pr-[25px] pl-[10px] cursor-pointer hover:is-active hover:before:rotate-[135deg] before:right-[0]
-           hover:after:rotate-[45deg] hover:before:border-secondary hover:after:border-secondary after:-right-[7px] 
-           hover:text-secondary is-${nameItemScape}`
+           relative pr-[25px] pl-[10px] cursor-pointer hover:is-active md:hover:before:rotate-[135deg] md:before:right-[0]
+           md:hover:after:rotate-[45deg] md:hover:before:border-secondary md:hover:after:border-secondary md:after:-right-[7px] 
+           md:hover:text-secondary is-${nameItemScape}`
         )}
       >
         {!mobile && (
