@@ -18,13 +18,13 @@ import { FnContext, SectionProps } from "deco/mod.ts";
 interface ActionProps {
   /** @title link */
   /** @description (ex: https://agencian1.com.br/) */
-  href: string;
+  href?: string;
   /** @title Título da imagem */
-  title: string;
+  title?: string;
   /** @title Subtítulo da imagem */
-  subTitle: string;
+  subTitle?: string;
   /** @title Texto do botão */
-  label: string;
+  label?: string;
 }
 
 /**
