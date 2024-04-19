@@ -21,10 +21,10 @@ export interface Banner {
   /** @format html */
   subTitle: string;
   /** @title adicionar barra "/" antes da frase?. */
-  addBarSlide?:boolean;  
-  
-  /** @title adicionar chaves "{}" antes e depois da frase? */  
-  addKeysInWordsSlide?:boolean;   
+  addBarSlide?: boolean;
+
+  /** @title adicionar chaves "{}" antes e depois da frase? */
+  addKeysInWordsSlide?: boolean;
 
   /** @format html */
   description: string;
@@ -47,9 +47,9 @@ export interface Props {
   title?: string;
 
   /** @title adicionar barra "/" antes da frase? */
-  addBar?:boolean;  
-  /** @title adicionar chaves "{}" antes e depois da frase? */  
-  addKeysInWords?:boolean;   
+  addBar?: boolean;
+  /** @title adicionar chaves "{}" antes e depois da frase? */
+  addKeysInWords?: boolean;
 
   images?: Banner[];
   /**
@@ -81,9 +81,21 @@ export interface Props {
   marginBottom?: string;
 }
 
-export default function SliderColumn(props: SectionProps<ReturnType<typeof loader>>) {
+export default function SliderColumn(
+  props: SectionProps<ReturnType<typeof loader>>,
+) {
   const id = useId();
-  const { images, preload, interval, device, marginTop, marginBottom, title, addKeysInWords, addBar } = props;
+  const {
+    images,
+    preload,
+    interval,
+    device,
+    marginTop,
+    marginBottom,
+    title,
+    addKeysInWords,
+    addBar,
+  } = props;
 
   return (
     <div
@@ -92,8 +104,12 @@ export default function SliderColumn(props: SectionProps<ReturnType<typeof loade
     >
       {title && (
         <div
-          class={clx(`block lg:text-center text-20 lg:text-[40px] text-[#fff] font-black not-italic font-archimoto-black mb-5 lg:mb-10
-            ${addKeysInWords ? 'is-keys-custom' : addBar ? 'is-bar-custom' : ""}`)}
+          class={clx(
+            `block lg:text-center text-20 lg:text-[40px] text-[#fff] font-black not-italic font-archimoto-black mb-5 lg:mb-10
+            ${
+              addKeysInWords ? "is-keys-custom" : addBar ? "is-bar-custom" : ""
+            }`,
+          )}
           dangerouslySetInnerHTML={{ __html: title }}
         >
         </div>
@@ -101,11 +117,13 @@ export default function SliderColumn(props: SectionProps<ReturnType<typeof loade
 
       <div
         id={id}
-        class={clx(`lg:grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px] grid-rows-[1fr_48px_1fr_64px]
-          h-[521px] lg:h-auto  w-full flex items-center justify-end flex-col-reverse`)}
+        class={clx(
+          `lg:grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px] grid-rows-[1fr_48px_1fr_64px]
+          h-[521px] lg:h-auto  w-full flex items-center justify-end flex-col-reverse`,
+        )}
       >
         <Slider class="carousel carousel-center col-span-full row-span-full gap-6 w-full">
-          {images?.map((image, index) => {      
+          {images?.map((image, index) => {
             return (
               <>
                 <Slider.Item index={index} class="carousel-item w-full">
@@ -114,7 +132,7 @@ export default function SliderColumn(props: SectionProps<ReturnType<typeof loade
                     title={title}
                     lcp={index === 0 && preload}
                     id={`${id}::${index}`}
-                    addBarSlide={image?.addBarSlide }
+                    addBarSlide={image?.addBarSlide}
                     addKeysInWordsSlide={image?.addKeysInWordsSlide}
                   />
                 </Slider.Item>

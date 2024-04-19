@@ -227,8 +227,8 @@ export default function HeroFlats(
                         <span
                           class={`mobile:text-20 mobile:leading-[24px] text-secondary font-bold font-archimoto-medium text-50 relative`}
                         >
-                          {item?.text} 
-                        </span>                     
+                          {item?.text}
+                        </span>
                         <span
                           class={`mobile:text-12 mobile:leading-[16.8px] text-[#ffffff] relative font-normal font-noto-sans md:text-18 md:max-w-[80%]`}
                         >

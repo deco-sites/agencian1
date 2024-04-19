@@ -177,7 +177,7 @@ function Newsletter(
               type="submit"
               class={clx(
                 `btn disabled:loading w-[144px] md:w-[123px] border-0 bg-accent n1-btn-header-item--rounded 
-                text-16 font-archimoto-medium pt-[3px] uppercase hover:bg-[#F8BC33] duration-300`,
+                text-16 font-archimoto-medium pt-[3px] uppercase hover:bg-[#F8BC33] duration-300 text-primary`,
               )}
             >
               {content?.form?.buttonText || "Inscrever"}

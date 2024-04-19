@@ -32,62 +32,62 @@ interface Text {
   description?: string;
 }
 
-  /**@titleBy title */
-interface fieldsForm{
-  /**@title Título */  
-  title?:string;
-  /**@title Subtítulo */  
-  subtitle?:string;
+/**@titleBy title */
+interface fieldsForm {
+  /**@title Título */
+  title?: string;
+  /**@title Subtítulo */
+  subtitle?: string;
   /**
    * @title Campo 01
-   * @description comercial 
-  */    
-  commercial?:string;
+   * @description comercial
+   */
+  commercial?: string;
   /**
-   * @title Campo 02 
-   * @description Parceria       
-  */
-  partnership?:string;
+   * @title Campo 02
+   * @description Parceria
+   */
+  partnership?: string;
   /**
-   * @title Campo 03 
+   * @title Campo 03
    * @description Outros
-   */           
-  others?:string;
+   */
+  others?: string;
   /**
-   * @title Campo 04 
+   * @title Campo 04
    * @description Nome
-  */  
-  name_user?:string;
+   */
+  name_user?: string;
   /**@title Digite o texto da máscara */
-  placeholderName_user?:string;
+  placeholderName_user?: string;
   /**
    * @title Campo 05
-   * @description Nome da Empresa  
-  */    
-  name_company?:string;
+   * @description Nome da Empresa
+   */
+  name_company?: string;
   /**@title Digite o texto da máscara */
-  placeholderName_company?:string;  
+  placeholderName_company?: string;
   /**
    * @title Campo 06
    * @description Telefone
-  */    
-  phone_number?:string;
+   */
+  phone_number?: string;
   /**
    * @title Campo 07
    * @description E-mail
-  */    
-  email?:string;
+   */
+  email?: string;
   /**@title Digite o texto da máscara */
-  placeholderEmail?:string;  
+  placeholderEmail?: string;
   /**
-   * @title Campo 08 
+   * @title Campo 08
    * @description Mensagem
-  */   
-  message?:string;
+   */
+  message?: string;
   /**@title Digite o texto da máscara */
-  placeholderMessage?:string;  
-  /**@title Texto do botão*/ 
-  textButton?:string;
+  placeholderMessage?: string;
+  /**@title Texto do botão*/
+  textButton?: string;
 }
 
 interface Props {
@@ -97,8 +97,8 @@ interface Props {
   text?: Text;
   /**@title Habilitar Modal para alteração */
   activeModalForm?: "Sim" | "Não";
-  /**@title Dados do formulário */    
-  fieldsForm?:fieldsForm;
+  /**@title Dados do formulário */
+  fieldsForm?: fieldsForm;
 }
 
 const ACTIVEMODALFORM = {
@@ -106,7 +106,9 @@ const ACTIVEMODALFORM = {
   "Não": false,
 };
 
-function ContactForm({ image, text, activeModalForm = "Não", fieldsForm }: Props) {
+function ContactForm(
+  { image, text, activeModalForm = "Não", fieldsForm }: Props,
+) {
   const displayModalForm = useSignal(ACTIVEMODALFORM[activeModalForm]);
 
   useEffect(() => {
@@ -183,17 +185,17 @@ function ContactForm({ image, text, activeModalForm = "Não", fieldsForm }: Prop
         field.type !== "radio" && inputError?.classList.add("hidden");
 
         const nameField = field.getAttribute("id");
-        let valueField;        
+        let valueField;
 
         if (field?.value !== "") {
           if (
             field && field.type === "radio" &&
             field instanceof HTMLInputElement
-          ) {            
+          ) {
             valueField = field.checked;
-          } else {            
+          } else {
             valueField = field.value;
-          }          
+          }
           return [nameField, valueField];
         }
       }
@@ -247,7 +249,7 @@ function ContactForm({ image, text, activeModalForm = "Não", fieldsForm }: Prop
 
     if (target && target instanceof HTMLFormElement) {
       const isValid = validateAllField(target);
-      const modal = document.querySelector<HTMLElement>(".n1-modal-form__bg");      
+      const modal = document.querySelector<HTMLElement>(".n1-modal-form__bg");
 
       if (isValid) {
         try {
@@ -483,7 +485,7 @@ function ContactForm({ image, text, activeModalForm = "Não", fieldsForm }: Prop
                     />
                     <span class="hidden text-error text-[12px] leading-[15.6px]">
                     </span>
-                  </div>                 
+                  </div>
                 )}
               </div>
               <div class="flex flex-col gap-[30px] lg:flex-row">

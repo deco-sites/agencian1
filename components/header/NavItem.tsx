@@ -57,7 +57,8 @@ function NavItem({ item, btnTextMenu, btnUrlMenu }: Props) {
         ${
           nameItemScape === "blog"
             ? "active--tooltip"
-            : nameItemScape === "ferramentas" || nameItemScape === "tools" || nameItemScape === 'herramientas'
+            : nameItemScape === "ferramentas" || nameItemScape === "tools" ||
+                nameItemScape === "herramientas"
             ? "hidden"
             : ""
         }
@@ -140,7 +141,9 @@ function NavItem({ item, btnTextMenu, btnUrlMenu }: Props) {
                 <nav>
                   <ul
                     class={clx(
-                      `${children.length >= 5 ? "grid grid-cols-5-auto" : "flex"} 
+                      `${
+                        children.length >= 5 ? "grid grid-cols-5-auto" : "flex"
+                      } 
                       ${item?.name === "Ferramentas" ? "gap-x-[50px]" : ""} 
                       items-start justify-between gap-x-[32px]`,
                     )}

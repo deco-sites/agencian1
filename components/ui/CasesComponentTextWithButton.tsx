@@ -7,12 +7,20 @@ interface Props {
   textButton?: string;
   hrefButton?: string;
   activeArrow?: boolean;
-  addBar?:boolean;
-  addKeysInWords?:boolean; 
+  addBar?: boolean;
+  addKeysInWords?: boolean;
 }
 
 function CasesComponentTextWithButton(
-  { subtitle, text, textButton, hrefButton, activeArrow, addBar, addKeysInWords }: Props,
+  {
+    subtitle,
+    text,
+    textButton,
+    hrefButton,
+    activeArrow,
+    addBar,
+    addKeysInWords,
+  }: Props,
 ) {
   return (
     <>
@@ -20,8 +28,16 @@ function CasesComponentTextWithButton(
         <div>
           {subtitle && (
             <div
-              class={clx(`n1-cases-component__title font-archimoto-medium mobile:[&_*]:!text-24 leading-[28.8px] md:text-56 md:leading-[20px]
-              ${addKeysInWords ? 'is-keys-custom' : addBar ? 'is-bar-custom' : ""}`)}
+              class={clx(
+                `n1-cases-component__title font-archimoto-medium mobile:[&_*]:!text-24 leading-[28.8px] md:text-56 md:leading-[20px]
+              ${
+                  addKeysInWords
+                    ? "is-keys-custom"
+                    : addBar
+                    ? "is-bar-custom"
+                    : ""
+                }`,
+              )}
               dangerouslySetInnerHTML={{ __html: subtitle }}
             >
             </div>

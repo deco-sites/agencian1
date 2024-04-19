@@ -32,7 +32,7 @@ function Legend({ nameItemScape, mobile, selectedLanguage }: Props) {
            duration-300 group flex items-center text-16 font-archimoto-medium uppercase legend 
            relative pr-[25px] pl-[10px] cursor-pointer hover:is-active md:hover:before:rotate-[135deg] md:before:right-[0]
            md:hover:after:rotate-[45deg] md:hover:before:border-secondary md:hover:after:border-secondary md:after:-right-[7px] 
-           md:hover:text-secondary is-${nameItemScape}`
+           md:hover:text-secondary is-${nameItemScape}`,
         )}
       >
         {!mobile && (

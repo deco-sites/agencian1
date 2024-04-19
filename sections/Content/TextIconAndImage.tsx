@@ -64,16 +64,16 @@ interface BlockTextProps {
   icon?: ImageWidget;
   /** @title Nome do ícon */
   nameIcon?: string;
-  /** @title adicionar chaves "{}" antes e depois da frase? */  
-  addKeysInIcons?:boolean;  
-  keysInIconsColor?: 'Sim' | 'Não';
+  /** @title adicionar chaves "{}" antes e depois da frase? */
+  addKeysInIcons?: boolean;
+  keysInIconsColor?: "Sim" | "Não";
   /** @title Subtítulo */
   /** @format html */
   subtitle?: string;
-  /** @title adicionar chaves "{}" antes e depois da frase? */  
-  addKeysInWords?:boolean;
+  /** @title adicionar chaves "{}" antes e depois da frase? */
+  addKeysInWords?: boolean;
   /** @title adicionar barra "/" antes da frase? */
-  addBar?:boolean;    
+  addBar?: boolean;
   /** @title Descrição */
   /** @format html */
   description: string;
@@ -131,9 +131,11 @@ const PLACEMENT = {
 };
 
 const KEYSINICONSCOLOR = {
-  'Sim' : 'before:content-["{"] after:content-["}"] before:text-secondary after:text-secondary',
-  'Não' : 'before:content-["{"] after:content-["}"] before:text-[#ffffff] after:text-[#ffffff]'
-}
+  "Sim":
+    'before:content-["{"] after:content-["}"] before:text-secondary after:text-secondary',
+  "Não":
+    'before:content-["{"] after:content-["}"] before:text-[#ffffff] after:text-[#ffffff]',
+};
 
 export default function ImageSection(
   props: SectionProps<ReturnType<typeof loader>>,
@@ -161,7 +163,7 @@ export default function ImageSection(
     widthBlock,
     activeEclipseText,
     addKeysInWords,
-    addBar
+    addBar,
   } = blockText;
 
   return (
@@ -257,10 +259,13 @@ export default function ImageSection(
             )}
 
             {nameIcon && (
-              <h3               
+              <h3
                 class={`text-18 font-archimoto-medium font-normal 
-                  ${addKeysInIcons ? 'is-keysInIcons-custom' : "" }
-                  ${keysInIconsColor ? KEYSINICONSCOLOR[keysInIconsColor] : ""}`}>
+                  ${addKeysInIcons ? "is-keysInIcons-custom" : ""}
+                  ${
+                  keysInIconsColor ? KEYSINICONSCOLOR[keysInIconsColor] : ""
+                }`}
+              >
                 {nameIcon}
               </h3>
             )}
@@ -268,10 +273,17 @@ export default function ImageSection(
             <div class="md:mb-[20px] flex items-center flex-wrap">
               {subtitle && subtitle !== '<p><br data-mce-bogus="1"></p>' && (
                 <div
-                  class={
-                    clx(`n1-text-icon-image__subtitle mobile:mt-[24px] mobile:[&_*]:!text-20 
+                  class={clx(
+                    `n1-text-icon-image__subtitle mobile:mt-[24px] mobile:[&_*]:!text-20 
                       font-archimoto-medium font-black md:text-[32px] md:[&_*]:text-[32px]
-                      ${addKeysInWords ? 'is-keys-custom' : addBar ? 'is-bar-custom' : "" }`)}
+                      ${
+                      addKeysInWords
+                        ? "is-keys-custom"
+                        : addBar
+                        ? "is-bar-custom"
+                        : ""
+                    }`,
+                  )}
                   dangerouslySetInnerHTML={{ __html: subtitle }}
                 >
                 </div>

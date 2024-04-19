@@ -73,9 +73,9 @@ interface Props {
   /**@format html */
   subtitle?: string;
   /** @title adicionar barra "/" antes da frase? */
-  addBar?:boolean;    
-  /** @title adicionar chaves "{}" antes e depois da frase? */  
-  addKeysInWords?:boolean;   
+  addBar?: boolean;
+  /** @title adicionar chaves "{}" antes e depois da frase? */
+  addKeysInWords?: boolean;
   /**@title Texto */
   text?: string;
   /**@title Texto do botão  */
@@ -110,7 +110,7 @@ function CasesComponent(props: SectionProps<ReturnType<typeof loader>>) {
     widthBackgroundSection,
     heightBackgroundSection,
     addBar,
-    addKeysInWords
+    addKeysInWords,
   } = props;
 
   return (

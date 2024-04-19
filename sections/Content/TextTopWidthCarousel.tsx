@@ -36,9 +36,9 @@ export interface Props {
   /**@format html  */
   title?: string;
   /** @title adicionar barra "/" antes da frase? */
-  addBar?:boolean; 
-  /** @title adicionar chaves "{}" antes e depois da frase? */  
-  addKeysInWords?:boolean;       
+  addBar?: boolean;
+  /** @title adicionar chaves "{}" antes e depois da frase? */
+  addKeysInWords?: boolean;
   /**@title Texto  */
   /**@format html  */
   text?: string;
@@ -55,7 +55,7 @@ export interface Props {
 }
 
 function ImageCarouselItem(
-  { image, lcp, id }: { image: ImageCarousel; lcp?: boolean; id: string;},
+  { image, lcp, id }: { image: ImageCarousel; lcp?: boolean; id: string },
 ) {
   const { alt, desktop, settingsInfo } = image;
 
@@ -83,7 +83,9 @@ function ImageCarouselItem(
             </span>
           )}
           {settingsInfo?.title && (
-            <h3 class={`text-[#ffffff] flex font-archimoto-medium md:text-40 font-black n1-text-top-width-carousel__title`}>
+            <h3
+              class={`text-[#ffffff] flex font-archimoto-medium md:text-40 font-black n1-text-top-width-carousel__title`}
+            >
               {settingsInfo?.title}
             </h3>
           )}
@@ -207,7 +209,8 @@ function Buttons() {
 
 function TextTopWidthCarousel(props: SectionProps<ReturnType<typeof loader>>) {
   const id = useId();
-  const { images, preload, title, text, device, addBar, addKeysInWords } = props;
+  const { images, preload, title, text, device, addBar, addKeysInWords } =
+    props;
 
   return (
     <>
@@ -217,8 +220,16 @@ function TextTopWidthCarousel(props: SectionProps<ReturnType<typeof loader>>) {
             <div class="mobile:px-[20px]">
               {title && (
                 <div
-                  class={clx(`n1-cases-component__title mobile:[&_*]:!text-24 font-archimoto-medium text-24 leading-[28.8px] md:text-56 md:leading-[20px]
-                    ${addKeysInWords ? 'is-keys-custom' : addBar ? 'is-bar-custom' : ""}`)}
+                  class={clx(
+                    `n1-cases-component__title mobile:[&_*]:!text-24 font-archimoto-medium text-24 leading-[28.8px] md:text-56 md:leading-[20px]
+                    ${
+                      addKeysInWords
+                        ? "is-keys-custom"
+                        : addBar
+                        ? "is-bar-custom"
+                        : ""
+                    }`,
+                  )}
                   dangerouslySetInnerHTML={{
                     __html: title,
                   }}

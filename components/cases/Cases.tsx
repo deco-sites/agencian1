@@ -13,15 +13,15 @@ export interface Technology {
   services: string;
 }
 
-interface ImageDevice{
-  /** @title Imagem */  
+interface ImageDevice {
+  /** @title Imagem */
   src: ImageWidget;
-  /** @title Largura */    
+  /** @title Largura */
   width?: string;
-  /** @title Altura */    
+  /** @title Altura */
   height?: string;
-  /** @title Nome da Imagem */    
-  alt?:string
+  /** @title Nome da Imagem */
+  alt?: string;
 }
 
 export interface CardCases {
@@ -58,9 +58,9 @@ export interface CardCases {
 export interface Props {
   /** @title Icon do background bottom */
   IconBackgroundBottom?: ImageWidget;
-  
+
   iconBackgroundTop?: ImageWidget;
-  
+
   /** @title Ocultar eclipse de fundo? */
   iconBackgroundLeftBottom?: boolean;
 
@@ -138,30 +138,33 @@ export default function Cases(props: Props & { device: string }) {
 
               <div className="absolute flex justify-center items-center bottom-0 left-0 w-full md:px-11 md:py-4 pt-3 px-5 pb-3 n1-custon-container-buttons-service rounded-b-[20px] h-[64px] md:h-[91px]">
                 <div className="flex items-center justify-between w-full max-w-[490px]">
-                
-                <Picture>
-                  {card.imgIconStoreMobile?.src && card.imgIconStoreMobile?.width && card.imgIconStoreMobile?.height && (
-                    <Source
-                      media="(max-width: 767px)"
-                      src={card.imgIconStoreMobile.src}
-                      width={Number(card.imgIconStoreMobile?.width)}
-                      height={Number(card.imgIconStoreMobile?.height)}
+                  <Picture>
+                    {card.imgIconStoreMobile?.src &&
+                      card.imgIconStoreMobile?.width &&
+                      card.imgIconStoreMobile?.height && (
+                      <Source
+                        media="(max-width: 767px)"
+                        src={card.imgIconStoreMobile.src}
+                        width={Number(card.imgIconStoreMobile?.width)}
+                        height={Number(card.imgIconStoreMobile?.height)}
+                      />
+                    )}
+                    {card.imgIconStoreDesktop?.src &&
+                      card.imgIconStoreDesktop?.width &&
+                      card.imgIconStoreDesktop?.height && (
+                      <Source
+                        media="(min-width: 768px)"
+                        src={card.imgIconStoreDesktop.src}
+                        width={Number(card.imgIconStoreDesktop.width)}
+                        height={Number(card.imgIconStoreDesktop.height)}
+                      />
+                    )}
+                    <img
+                      src={card.imgIconStoreDesktop?.src}
+                      width={card.imgIconStoreDesktop?.width}
+                      height={card.imgIconStoreDesktop?.height}
                     />
-                  )}
-                  {card.imgIconStoreDesktop?.src && card.imgIconStoreDesktop?.width && card.imgIconStoreDesktop?.height && (
-                    <Source
-                      media="(min-width: 768px)"
-                      src={card.imgIconStoreDesktop.src}
-                      width={Number(card.imgIconStoreDesktop.width)}
-                      height={Number(card.imgIconStoreDesktop.height)}
-                    />
-                  )}
-                  <img
-                    src={card.imgIconStoreDesktop?.src}
-                    width={card.imgIconStoreDesktop?.width}
-                    height={card.imgIconStoreDesktop?.height}
-                  />
-                </Picture>                  
+                  </Picture>
 
                   {card.link && card.buttonName && (
                     <a
@@ -214,7 +217,12 @@ export default function Cases(props: Props & { device: string }) {
             </div>
           )}
 
-          <div className={`${!props.iconBackgroundLeftBottom ? 'is-active--bottom' : '' }  n1-cases__item hidden md:flex absolute bottom-0 left-0 z-0 rotate-180`}></div>
+          <div
+            className={`${
+              !props.iconBackgroundLeftBottom ? "is-active--bottom" : ""
+            }  n1-cases__item hidden md:flex absolute bottom-0 left-0 z-0 rotate-180`}
+          >
+          </div>
         </>
       )}
     </div>

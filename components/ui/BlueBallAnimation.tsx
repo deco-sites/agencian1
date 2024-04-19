@@ -3,7 +3,7 @@ import { clx } from "$store/sdk/clx.ts";
 interface Props {
   textCircleLg?: string;
   textCircleSm?: string;
-  phone?:string;
+  phone?: string;
 }
 
 function BlueBall({ textCircleLg, textCircleSm, phone }: Props) {
@@ -34,9 +34,11 @@ function BlueBall({ textCircleLg, textCircleSm, phone }: Props) {
         onPointerMove={handlePointerMove}
       >
         <a
-         href={phone ? `https://api.whatsapp.com/send/?phone=${phone}&text&type=phone_number&app_absent=0` : "javascript:void(0)"}
-         style={{ cursor: phone ? 'pointer' : 'default' }}
-         target={phone ? '_blank' : ""}
+          href={phone
+            ? `https://api.whatsapp.com/send/?phone=${phone}&text&type=phone_number&app_absent=0`
+            : "javascript:void(0)"}
+          style={{ cursor: phone ? "pointer" : "default" }}
+          target={phone ? "_blank" : ""}
         >
           <div
             id="ball-xg"
