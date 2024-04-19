@@ -22,9 +22,9 @@ interface TextGeneric {
   /** @format html */
   title?: string;
   /** @title adicionar barra "/" antes da frase? */
-  addBar?:boolean; 
-  /** @title adicionar chaves "{}" antes e depois da frase? */  
-  addKeysInWords?:boolean;      
+  addBar?: boolean;
+  /** @title adicionar chaves "{}" antes e depois da frase? */
+  addKeysInWords?: boolean;
   /** @title Texto */
   /** @format textarea */
   text?: string;
@@ -166,20 +166,24 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
                     <div class="md:px-[30px] relative z-20">
                       <div class={`mobile:pt-[24px] mobile:px-[24px]`}>
                         {text && text?.title && (
-                          
-                            <div
-                              class={clx(
-                                `n1-mosaic__title mobile:[&_*]:!text-27  is-${
-                                  text && text?.bgColor === "base-50"
-                                    ? "white"
-                                    : "primary"
-                                } text-34 font-archimoto-medium font-black
-                                ${text?.addBar ? 'is-bar-custom' : text?.addKeysInWords ? 'is-keys-custom' : ""}`,
-                              )}
-                              dangerouslySetInnerHTML={{ __html: text.title }}
-                            >
-                            </div>
-                          
+                          <div
+                            class={clx(
+                              `n1-mosaic__title mobile:[&_*]:!text-27  is-${
+                                text && text?.bgColor === "base-50"
+                                  ? "white"
+                                  : "primary"
+                              } text-34 font-archimoto-medium font-black
+                                ${
+                                text?.addBar
+                                  ? "is-bar-custom"
+                                  : text?.addKeysInWords
+                                  ? "is-keys-custom"
+                                  : ""
+                              }`,
+                            )}
+                            dangerouslySetInnerHTML={{ __html: text.title }}
+                          >
+                          </div>
                         )}
 
                         {text && text?.text && (
@@ -285,7 +289,13 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
                                   : "primary"
                               } 
                                 text-34 font-archimoto-medium font-black
-                                ${text?.addBar ? 'is-bar-custom' : text?.addKeysInWords ? 'is-keys-custom' : ""}`,
+                                ${
+                                text?.addBar
+                                  ? "is-bar-custom"
+                                  : text?.addKeysInWords
+                                  ? "is-keys-custom"
+                                  : ""
+                              }`,
                             )}
                             dangerouslySetInnerHTML={{ __html: text.title }}
                           >

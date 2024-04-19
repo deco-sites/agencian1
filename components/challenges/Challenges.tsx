@@ -18,9 +18,9 @@ export interface Props {
   /** @format html */
   title?: string;
   /** @title adicionar barra "/" antes da frase? */
-  addBar?:boolean;  
-  /** @title adicionar chaves "{}" antes e depois da frase? */  
-  addKeysInWords?:boolean;    
+  addBar?: boolean;
+  /** @title adicionar chaves "{}" antes e depois da frase? */
+  addKeysInWords?: boolean;
 
   cards?: Cards[];
 
@@ -43,9 +43,12 @@ export default function Challenges(
     >
       {title && (
         <div
-          class={
-            clx(`text-20 lg:text-[40px] text-[#fff]  font-black not-italic font-archimoto-black pb-[24px]
-            ${addKeysInWords ? 'is-keys-custom' : addBar ? 'is-bar-custom' : ""}`)}
+          class={clx(
+            `text-20 lg:text-[40px] text-[#fff]  font-black not-italic font-archimoto-black pb-[24px]
+            ${
+              addKeysInWords ? "is-keys-custom" : addBar ? "is-bar-custom" : ""
+            }`,
+          )}
           dangerouslySetInnerHTML={{ __html: title }}
         >
         </div>

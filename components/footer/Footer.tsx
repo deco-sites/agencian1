@@ -17,7 +17,7 @@ export interface Item {
   href?: string;
   /**@title Ocultar item? */
   disabledItem?: boolean;
-};
+}
 
 /**@titleBy label */
 export type Section = {
@@ -25,7 +25,7 @@ export type Section = {
   label: string;
   /**@title Items */
   items: Item[];
-}
+};
 
 /** @titleBy label */
 export interface SocialItem {

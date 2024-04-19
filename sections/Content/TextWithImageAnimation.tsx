@@ -34,9 +34,9 @@ interface PropsText {
    */
   subtitle?: string;
   /** @title adicionar barra "/" antes da frase? */
-  addBar?:boolean; 
-  /** @title adicionar chaves "{}" antes e depois da frase? */  
-  addKeysInWords?:boolean;     
+  addBar?: boolean;
+  /** @title adicionar chaves "{}" antes e depois da frase? */
+  addKeysInWords?: boolean;
   /**
    * @title Insira o parágrafo
    * @format html
@@ -139,8 +139,16 @@ function TextWithImageAnimation(
               <div class="flex flex-col items-start justify-start">
                 {settingsText && settingsText?.subtitle && (
                   <div
-                    class={clx(`mobile:px-[20px] n1-textwithimageanimation__subtitle mobile:[&_*]:!text-24 inline-block font-archimoto-medium text-48 font-black
-                    ${settingsText?.addBar ? 'is-bar-custom' : settingsText?.addKeysInWords ? 'is-keys-custom' : ""}`)}
+                    class={clx(
+                      `mobile:px-[20px] n1-textwithimageanimation__subtitle mobile:[&_*]:!text-24 inline-block font-archimoto-medium text-48 font-black
+                    ${
+                        settingsText?.addBar
+                          ? "is-bar-custom"
+                          : settingsText?.addKeysInWords
+                          ? "is-keys-custom"
+                          : ""
+                      }`,
+                    )}
                     dangerouslySetInnerHTML={{
                       __html: settingsText?.subtitle,
                     }}

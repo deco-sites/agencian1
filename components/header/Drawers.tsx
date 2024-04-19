@@ -113,7 +113,7 @@ function Drawers({ menu, children, logoMobile, selectedLanguage }: Props) {
               displayMenu.value = false;
               displaySearchDrawer.value = false;
             }}
-            title={displayMenu.value ? "Menu" : "Buscar"}
+            title={displayMenu.value ? "Menu" : ""}
             logoMobile={logoMobile}
           >
             {displayMenu.value && (

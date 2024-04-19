@@ -72,9 +72,9 @@ export interface Content {
   /** @format html */
   title?: string;
   /** @title adicionar barra "/" antes da frase? */
-  addBar?:boolean;  
-  /** @title adicionar chaves "{}" antes e depois da frase? */  
-  addKeysInWords?:boolean;  
+  addBar?: boolean;
+  /** @title adicionar chaves "{}" antes e depois da frase? */
+  addKeysInWords?: boolean;
   /** @format html */
   description?: string;
 
@@ -185,9 +185,16 @@ export default function BannerWithTextColumn({
             >
               {contentText.title && (
                 <div
-                  class={
-                    clx(`!flex text-20 lg:text-[40px] text-[#fff] font-black not-italic font-archimoto-black mb-6 mt-7 lg:mb-[30px] lg:mt-[12px]
-                    ${contentText?.addKeysInWords ? 'is-keys-custom' : contentText?.addBar ? 'is-bar-custom' : ""}`)}
+                  class={clx(
+                    `!flex text-20 lg:text-[40px] text-[#fff] font-black not-italic font-archimoto-black mb-6 mt-7 lg:mb-[30px] lg:mt-[12px]
+                    ${
+                      contentText?.addKeysInWords
+                        ? "is-keys-custom"
+                        : contentText?.addBar
+                        ? "is-bar-custom"
+                        : ""
+                    }`,
+                  )}
                   dangerouslySetInnerHTML={{ __html: contentText.title }}
                 >
                 </div>

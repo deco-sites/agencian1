@@ -11,7 +11,7 @@ import LinkWithOptionArrow from "$store/components/ui/LinkWithOptionArrow.tsx";
 interface InfoProps {
   /**@title Título*/
   /**@format textarea*/
-  title?: string; 
+  title?: string;
   /**@title Texto*/
   /**@format textarea*/
   text?: string;
@@ -53,9 +53,9 @@ export interface Props {
   /**@format html  */
   title?: string;
   /** @title adicionar barra "/" antes da frase? */
-  addBar?:boolean;   
-  /** @title adicionar chaves "{}" antes e depois da frase? */  
-  addKeysInWords?:boolean   
+  addBar?: boolean;
+  /** @title adicionar chaves "{}" antes e depois da frase? */
+  addKeysInWords?: boolean;
   /**@title Texto  */
   /**@format html  */
   text?: string;
@@ -203,8 +203,18 @@ function Buttons() {
 
 function TextTopWidthCarousel(props: SectionProps<ReturnType<typeof loader>>) {
   const id = useId();
-  const { images, preload, title, addBar, addKeysInWords, text, textLink, link, noneSection, device } =
-    props;
+  const {
+    images,
+    preload,
+    title,
+    addBar,
+    addKeysInWords,
+    text,
+    textLink,
+    link,
+    noneSection,
+    device,
+  } = props;
 
   return (
     <>
@@ -217,10 +227,17 @@ function TextTopWidthCarousel(props: SectionProps<ReturnType<typeof loader>>) {
             <div class="mobile:px-[20px]">
               {title && (
                 <div
-                  class={
-                    clx(`n1-text-widt-image__title mobile:[&_*]:!text-32 mobile:[&_*]:!leading-[38.4px] 
+                  class={clx(
+                    `n1-text-widt-image__title mobile:[&_*]:!text-32 mobile:[&_*]:!leading-[38.4px] 
                       uppercase font-archimoto-medium md:text-56 md:leading-[20px]
-                      ${addKeysInWords ? 'is-keys-custom' : addBar ? 'is-bar-custom' : ""}`)}
+                      ${
+                      addKeysInWords
+                        ? "is-keys-custom"
+                        : addBar
+                        ? "is-bar-custom"
+                        : ""
+                    }`,
+                  )}
                   dangerouslySetInnerHTML={{ __html: title }}
                 >
                 </div>
