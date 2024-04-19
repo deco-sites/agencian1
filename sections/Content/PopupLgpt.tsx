@@ -57,12 +57,12 @@ function PopupLgpt({ image, text, textBtn }: Props) {
   return (
     <>
       <div
-        class={`hidden n1-popup fixed bottom-[20px] w-full mobile:left-[10px] mobile:w-[95%] mobile:mx-[auto]`}
+        class={`hidden n1-popup fixed bottom-[20px] w-full mobile:left-[10px] mobile:w-[95%] mobile:mx-[auto] z-20`}
       >
         <div
           class={clx(
             `flex items-center lg:max-w-[1034px] lg:my-0 lg:mx-auto lg:py-[18px] lg:px-[60px]
-                        rounded-[12px] border border-[#3CCBDA] backdrop-filter backdrop-blur-[50px]
+                        rounded-[12px] border border-[#3CCBDA] backdrop-blur-[50px]
                         bg-[linear-gradient(8deg,_rgba(60,_203,_218,_0.00)_-32.53%,_rgba(60,_203,_218,_0.13)_63.83%,_rgba(60,_203,_218,_0.20)_276.77%)]
                         mobile:my-[0] mobile:flex-col mobile:px-[20px] mobile:py-[18px]`,
           )}
