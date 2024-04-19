@@ -120,7 +120,7 @@ function NavItem({ item, btnTextMenu, btnUrlMenu }: Props) {
                 >
                   {activePropsText && titleSubMenu && (
                     <div
-                      class="text-32 n1-header__navlink-children-title mb-[14px]"
+                      class="text-32 n1-header__navlink-children-title mb-[14px] is-bar-custom"
                       dangerouslySetInnerHTML={{ __html: titleSubMenu || "" }}
                     >
                     </div>
@@ -137,50 +137,52 @@ function NavItem({ item, btnTextMenu, btnUrlMenu }: Props) {
                   )}
                 </div>
 
-                <ul
-                  class={clx(
-                    `${children.length >= 5 ? "grid grid-cols-5-auto" : "flex"} 
-                    ${item?.name === "Ferramentas" ? "gap-x-[50px]" : ""} 
-                    items-start justify-between gap-x-[32px]`,
-                  )}
-                >
-                  {children.map((node) => {
-                    return (
-                      <li class="py-6 n1-header__navlink-children">
-                        <a
-                          href={`${
-                            node?.url ? node?.url : "javascript:void(0)"
-                          }`}
-                          style={{
-                            pointerEvents: `${node?.url ? "all" : "none"}`,
-                          }}
-                          class="hover:underline overflow-hidden block rounded-[8px]"
-                        >
-                          {node.image?.map((i) => {
-                            if (!i) return null;
-                            return (
-                              <img
-                                class="n1-header__navlink-children--image"
-                                src={i?.url}
-                                alt={node?.name}
-                              />
-                            );
-                          })}
-                        </a>
+                <nav>
+                  <ul
+                    class={clx(
+                      `${children.length >= 5 ? "grid grid-cols-5-auto" : "flex"} 
+                      ${item?.name === "Ferramentas" ? "gap-x-[50px]" : ""} 
+                      items-start justify-between gap-x-[32px]`,
+                    )}
+                  >
+                    {children.map((node) => {
+                      return (
+                        <li class="py-6 n1-header__navlink-children">
+                          <a
+                            href={`${
+                              node?.url ? node?.url : "javascript:void(0)"
+                            }`}
+                            style={{
+                              pointerEvents: `${node?.url ? "all" : "none"}`,
+                            }}
+                            class="hover:underline overflow-hidden block rounded-[8px]"
+                          >
+                            {node.image?.map((i) => {
+                              if (!i) return null;
+                              return (
+                                <img
+                                  class="n1-header__navlink-children--image"
+                                  src={i?.url}
+                                  alt={node?.name}
+                                />
+                              );
+                            })}
+                          </a>
 
-                        <ul class="flex flex-col gap-1 mt-4">
-                          {node.children?.map((leaf) => (
-                            <li>
-                              <a class="hover:underline" href={leaf.url}>
-                                <span class="text-xs">{leaf.name}</span>
-                              </a>
-                            </li>
-                          ))}
-                        </ul>
-                      </li>
-                    );
-                  })}
-                </ul>
+                          <ul class="flex flex-col gap-1 mt-4">
+                            {node.children?.map((leaf) => (
+                              <li>
+                                <a class="hover:underline" href={leaf.url}>
+                                  <span class="text-xs">{leaf.name}</span>
+                                </a>
+                              </li>
+                            ))}
+                          </ul>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </nav>
 
                 {activePropsButton && btnTextMenu && (
                   <LinkButtonSubMenu

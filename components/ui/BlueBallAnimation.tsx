@@ -7,7 +7,7 @@ interface Props {
 }
 
 function BlueBall({ textCircleLg, textCircleSm, phone }: Props) {
-  function handleMouseMove(e: MouseEvent) {
+  function handlePointerMove(e: PointerEvent) {
     const { target } = e;
     if (!target) return;
 
@@ -31,7 +31,7 @@ function BlueBall({ textCircleLg, textCircleSm, phone }: Props) {
     <>
       <div
         class="ball mobile:mt-[60px] relative group hover:cursor-none"
-        onMouseMove={handleMouseMove}
+        onPointerMove={handlePointerMove}
       >
         <a
          href={phone ? `https://api.whatsapp.com/send/?phone=${phone}&text&type=phone_number&app_absent=0` : "javascript:void(0)"}

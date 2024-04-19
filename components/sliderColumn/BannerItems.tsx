@@ -1,5 +1,6 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
+import { clx } from "$store/sdk/clx.ts";
 
 export interface Banner {
   /** @title Imagem Desktop */
@@ -13,7 +14,8 @@ export interface Banner {
 
   /** @format html */
   subTitle?: string;
-
+  addBarSlide?:boolean;   
+  addKeysInWordsSlide?:boolean;  
   /** @format html */
   description?: string;
 }
@@ -23,7 +25,7 @@ interface ActionProps {
   /** @description (ex: https://agencian1.com.br/) */
   href: string;
   /** @title Título da imagem */
-  title: string;
+  title: string; 
   /** @title Subtítulo da imagem */
   subTitle: string;
   /** @title Texto do botão */
@@ -31,11 +33,14 @@ interface ActionProps {
 }
 
 export function BannerItem(
-  { image, lcp, id, title }: {
+  { image, lcp, id, title, addBarSlide, addKeysInWordsSlide}: {
     image: Banner;
     lcp?: boolean;
     id: string;
     title?: string;
+    addBarSlide?:boolean;
+    addKeysInWordsSlide?:boolean;
+
   },
 ) {
   const {
@@ -44,7 +49,7 @@ export function BannerItem(
     desktop,
     description,
     subTitle,
-    action,
+    action
   } = image;
 
   return (
@@ -52,7 +57,8 @@ export function BannerItem(
       <div class="flex flex-col w-full max-w-[583px]  h-auto lg:h-[200px]">
         {subTitle && (
           <div
-            class=" text-14 lg:text-24  font-archimoto-black font-black  text-[#F3F4F7] !leading-[120%] mt-6 "
+            class={clx(`text-14 lg:text-24 font-archimoto-black font-black  text-[#F3F4F7] !leading-[120%] mt-6
+              ${addKeysInWordsSlide ? 'is-keys-custom' : addBarSlide ? 'is-bar-custom' : ""}`)}
             dangerouslySetInnerHTML={{ __html: subTitle }}
           >
           </div>

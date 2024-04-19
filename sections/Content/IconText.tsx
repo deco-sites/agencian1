@@ -22,6 +22,10 @@ interface Image {
 interface Icon {
   /**@title Subtítulo */
   subtitle?: HTML;
+  /** @title adicionar barra "/" antes da frase? */
+  addBar?:boolean;    
+  /** @title adicionar chaves "{}" antes e depois da frase? */  
+  addKeysInWords?:boolean;    
   /**@title Image */
   /** @maxItems 4 */
   image?: Image[];
@@ -41,13 +45,14 @@ function IconText({ grid }: Props) {
     <>
       <div class="md:n1-container md:px-[120px] text-[#ffffff] md:py-[57px]">
         <div>
-          {grid && grid.row && grid.row.map(({ subtitle, image }, index) => {
+          {grid && grid.row && grid.row.map(({ subtitle, image, addKeysInWords, addBar }, index) => {
             return (
               <>
                 {subtitle && (
                   <div
                     class={clx(`${index === 1 ? "mobile:mt-[80px]" : ""} 
-                      mobile:ml-[20px] mobile:[&_*]:text-[24px] md:[&_*]:text-[36px] mb-[24px] [&_*]:font-archimoto-medium [&_*]:font-black`)}
+                      mobile:ml-[20px] mobile:[&_*]:text-[24px] [&_*]:text-[36px] text-[36px] mb-[24px] [&_*]:font-archimoto-medium [&_*]:font-black
+                      ${addKeysInWords ? 'is-keys-custom' : addBar ? 'is-bar-custom' : ""}`)}
                     dangerouslySetInnerHTML={{ __html: subtitle }}
                   >
                   </div>
@@ -85,9 +90,9 @@ function IconText({ grid }: Props) {
                             </div>
                             {text && (
                               <div>
-                                <span class="md:text-[14px] md:leading-[22.4px] font-montserrat font-normal">
+                                <h3 class="md:text-[14px] md:leading-[22.4px] font-montserrat font-normal">
                                   {text}
-                                </span>
+                                </h3>
                               </div>
                             )}
                           </li>
