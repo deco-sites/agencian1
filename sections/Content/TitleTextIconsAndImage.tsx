@@ -242,7 +242,7 @@ function TitleTextIconsAndImage(
                                     height={height}
                                     alt={alt}
                                   />
-                                  <span
+                                  <h3
                                     class={clx(`text-16 ${
                                       fontIconText
                                         ? FONTICONTEXT[fontIconText]
@@ -253,7 +253,7 @@ function TitleTextIconsAndImage(
                                     } ml-[20px]`)}
                                   >
                                     {alt}
-                                  </span>
+                                  </h3>
                                 </a>
                               </li>
                             )}

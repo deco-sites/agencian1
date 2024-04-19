@@ -31,14 +31,14 @@ function TextWithImageCustom(
         )}
       >
         {textLarge && (
-          <div
+          <h3
             class={clx(
               `n1-text-width-custom__title mobile:text-[44px] mobile:leading-[56px] mobile:w-[80%]
             tablet:text-[60px] md:text-[90px] md:max-w-[60%] font-archimoto-medium font-black`,
             )}
           >
             {textLarge}
-          </div>
+          </h3>
         )}
         {image && width && height && (
           <img

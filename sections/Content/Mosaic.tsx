@@ -21,6 +21,10 @@ interface TextGeneric {
   /** @title Título */
   /** @format html */
   title?: string;
+  /** @title adicionar barra "/" antes da frase? */
+  addBar?:boolean; 
+  /** @title adicionar chaves "{}" antes e depois da frase? */  
+  addKeysInWords?:boolean;      
   /** @title Texto */
   /** @format textarea */
   text?: string;
@@ -160,23 +164,26 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
                     }}
                   >
                     <div class="md:px-[30px] relative z-20">
-                      <div class="mobile:pt-[24px] mobile:px-[24px]">
+                      <div class={`mobile:pt-[24px] mobile:px-[24px]`}>
                         {text && text?.title && (
-                          <h3
-                            class={clx(
-                              `n1-mosaic__title mobile:[&_*]:!text-27 [&_*]:first-letter:!text-secondary  is-${
-                                text && text?.bgColor === "base-50"
-                                  ? "white"
-                                  : "primary"
-                              } text-34 font-archimoto-medium font-black`,
-                            )}
-                            dangerouslySetInnerHTML={{ __html: text.title }}
-                          >
-                          </h3>
+                          
+                            <div
+                              class={clx(
+                                `n1-mosaic__title mobile:[&_*]:!text-27  is-${
+                                  text && text?.bgColor === "base-50"
+                                    ? "white"
+                                    : "primary"
+                                } text-34 font-archimoto-medium font-black
+                                ${text?.addBar ? 'is-bar-custom' : text?.addKeysInWords ? 'is-keys-custom' : ""}`,
+                              )}
+                              dangerouslySetInnerHTML={{ __html: text.title }}
+                            >
+                            </div>
+                          
                         )}
 
                         {text && text?.text && (
-                          <span
+                          <div
                             class={clx(
                               `n1-mosaic__text mobile:[&_*]:!text-12 is-${
                                 text && text?.bgColor === "base-50"
@@ -186,7 +193,7 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
                             )}
                           >
                             {text.text}
-                          </span>
+                          </div>
                         )}
                       </div>
                       {text && text?.textLink && (
@@ -270,21 +277,22 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
                     >
                       <div class="mobile:pt-[24px] mobile:px-[24px]">
                         {text && text?.title && (
-                          <h3
+                          <div
                             class={clx(
                               `n1-mosaic__title [&_*]:first-letter:!text-secondary is-${
                                 text && text?.bgColor === "base-50"
                                   ? "white"
                                   : "primary"
                               } 
-                                text-34 font-archimoto-medium font-black`,
+                                text-34 font-archimoto-medium font-black
+                                ${text?.addBar ? 'is-bar-custom' : text?.addKeysInWords ? 'is-keys-custom' : ""}`,
                             )}
                             dangerouslySetInnerHTML={{ __html: text.title }}
                           >
-                          </h3>
+                          </div>
                         )}
                         {text && text?.text && (
-                          <span
+                          <div
                             class={clx(
                               `n1-mosaic__text is-${
                                 text && text?.bgColor === "base-50"
@@ -295,7 +303,7 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
                             )}
                           >
                             {text.text}
-                          </span>
+                          </div>
                         )}
                       </div>
                       {text && text?.textLink && (

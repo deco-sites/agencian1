@@ -131,14 +131,14 @@ function Newsletter(
     >
       <div class="flex flex-col">
         {content?.title && (
-          <h4
+          <span
             class={clx(
               `mobile:max-w-[100%] max-w-[90%] mobile:text-32 md:text-48 mobile:mt-[50px]
             text-base-150 font-black font-archimoto-medium ${tiled} ? "text-2xl lg:text-3xl" : "text-lg"`,
             )}
           >
             {content?.title}
-          </h4>
+          </span>
         )}
         {content?.description &&
           (

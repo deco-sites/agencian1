@@ -68,27 +68,29 @@ function Navbar({
         class={`hidden lg:grid gap-x-[70px] portatil:gap-x-[20px] lg:grid-cols-2-auto items-center w-full`}
         style={{ height: headerHeight ? headerHeight : "" }}
       >
-        <ul
-          class={`flex py-[18px] gap-x-[32px] col-span-1 portatil:gap-x-[10px] ${
-            logoPosition === "left" ? "justify-between" : "justify-start"
-          }`}
-        >
-          {items.map((item) => {
-            return (
-              <NavItem
-                item={item}
-                btnTextMenu={btnTextMenu}
-                btnUrlMenu={btnUrlMenu}
-              />
-            );
-          })}
+        <nav>
+          <ul
+            class={`flex py-[18px] gap-x-[32px] col-span-1 portatil:gap-x-[10px] ${
+              logoPosition === "left" ? "justify-between" : "justify-start"
+            }`}
+          >
+            {items.map((item) => {
+              return (
+                <NavItem
+                  item={item}
+                  btnTextMenu={btnTextMenu}
+                  btnUrlMenu={btnUrlMenu}
+                />
+              );
+            })}
 
-          {/* menu legenda */}
-          <Legend
-            nameItemScape={itemLegend}
-            selectedLanguage={selectedLanguage}
-          />
-        </ul>
+            {/* menu legenda */}
+            <Legend
+              nameItemScape={itemLegend}
+              selectedLanguage={selectedLanguage}
+            />
+          </ul>
+        </nav>
         <div
           class={`flex ${
             logoPosition === "left"

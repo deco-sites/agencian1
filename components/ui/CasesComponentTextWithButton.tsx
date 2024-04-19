@@ -7,21 +7,24 @@ interface Props {
   textButton?: string;
   hrefButton?: string;
   activeArrow?: boolean;
+  addBar?:boolean;
+  addKeysInWords?:boolean; 
 }
 
 function CasesComponentTextWithButton(
-  { subtitle, text, textButton, hrefButton, activeArrow }: Props,
+  { subtitle, text, textButton, hrefButton, activeArrow, addBar, addKeysInWords }: Props,
 ) {
   return (
     <>
       <div class="mobile:my-[24px] text-[#ffffff] flex items-center justify-between">
         <div>
           {subtitle && (
-            <h2
-              class="n1-cases-component__title font-archimoto-medium mobile:[&_*]:!text-24 leading-[28.8px] md:text-56 md:leading-[20px]"
+            <div
+              class={clx(`n1-cases-component__title font-archimoto-medium mobile:[&_*]:!text-24 leading-[28.8px] md:text-56 md:leading-[20px]
+              ${addKeysInWords ? 'is-keys-custom' : addBar ? 'is-bar-custom' : ""}`)}
               dangerouslySetInnerHTML={{ __html: subtitle }}
             >
-            </h2>
+            </div>
           )}
           {text && (
             <span class="hidden md:flex font-noto-sans text-20 leading-[26px]">
