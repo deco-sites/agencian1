@@ -82,7 +82,15 @@ function ImageCarouselItem(
 
   return (
     <>
-      <div
+      <a
+        href={settingsInfo?.href ?? "javascript:void(0)"}     
+        style={{
+          pointerEvents: `${
+            settingsInfo?.href && settingsInfo?.href !== "#"
+              ? "all"
+              : "none"
+          }`,
+        }}          
         id={id}
         class="n1-text-width-image__link relative overflow-hidden w-full py-[30px] px-[20px]"
       >
@@ -111,8 +119,7 @@ function ImageCarouselItem(
           )}
 
           {settingsInfo?.textLink && (
-            <a
-              href={settingsInfo?.href ?? "javascript:void(0)"}
+            <div
               aria-label={settingsInfo?.title}
               class={clx(
                 `mobile:w-[55%] md:w-[43%] flex border border-[#fff] px-[20px] pb-[11px] 
@@ -122,10 +129,10 @@ function ImageCarouselItem(
               <span class="text-[#ffffff] flex font-archimoto-medium md:text-14 font-black">
                 {settingsInfo?.textLink}
               </span>
-            </a>
+            </div>
           )}
         </div>
-      </div>
+      </a>
     </>
   );
 }

@@ -61,7 +61,15 @@ function ImageCarouselItem(
 
   return (
     <>
-      <div
+      <a
+        href={settingsInfo?.href ?? "javascript:void(0)"}
+        style={{
+          pointerEvents: `${
+            settingsInfo?.href && settingsInfo?.href !== "#"
+              ? "all"
+              : "none"
+          }`,
+        }}       
         id={id}
         aria-label={settingsInfo?.name}
         class="n1-text-top-width-carousel__link relative overflow-hidden w-full border border-[#3B5D5F] rounded-[20px] pt-[20px] pb-[40px] px-[20px]"
@@ -95,15 +103,7 @@ function ImageCarouselItem(
             </span>
           )}
           {settingsInfo?.textLink && (
-            <a
-              href={settingsInfo?.href ?? "javascript:void(0)"}
-              style={{
-                pointerEvents: `${
-                  settingsInfo?.href && settingsInfo?.href !== "#"
-                    ? "all"
-                    : "none"
-                }`,
-              }}
+            <div
               class={clx(
                 `mobile:w-[55%] md:w-[43%] flex border border-[#fff] px-[20px] pb-[11px] pt-[12px] rounded-[100px]
                justify-center items-center min-w-[144px] group hover:bg-[#ffffff] duration-300 cursor-pointer relative z-20`,
@@ -128,10 +128,10 @@ function ImageCarouselItem(
                   class="group-hover:fill-[#585858] duration-300"
                 />
               </svg>
-            </a>
+            </div>
           )}
         </div>
-      </div>
+      </a>
     </>
   );
 }
