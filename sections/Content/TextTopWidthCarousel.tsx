@@ -65,11 +65,9 @@ function ImageCarouselItem(
         href={settingsInfo?.href ?? "javascript:void(0)"}
         style={{
           pointerEvents: `${
-            settingsInfo?.href && settingsInfo?.href !== "#"
-              ? "all"
-              : "none"
+            settingsInfo?.href && settingsInfo?.href !== "#" ? "all" : "none"
           }`,
-        }}       
+        }}
         id={id}
         aria-label={settingsInfo?.name}
         class="n1-text-top-width-carousel__link relative overflow-hidden w-full border border-[#3B5D5F] rounded-[20px] pt-[20px] pb-[40px] px-[20px]"

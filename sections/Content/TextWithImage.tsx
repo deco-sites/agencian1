@@ -83,14 +83,12 @@ function ImageCarouselItem(
   return (
     <>
       <a
-        href={settingsInfo?.href ?? "javascript:void(0)"}     
+        href={settingsInfo?.href ?? "javascript:void(0)"}
         style={{
           pointerEvents: `${
-            settingsInfo?.href && settingsInfo?.href !== "#"
-              ? "all"
-              : "none"
+            settingsInfo?.href && settingsInfo?.href !== "#" ? "all" : "none"
           }`,
-        }}          
+        }}
         id={id}
         class="n1-text-width-image__link relative overflow-hidden w-full py-[30px] px-[20px]"
       >
