@@ -3,10 +3,10 @@ import SliderJS from "$store/islands/SliderJS.tsx";
 import { useId } from "$store/sdk/useId.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { FnContext, SectionProps } from "deco/mod.ts";
-import { useState } from "preact/hooks";
 import { BannerItem } from "deco-sites/agencian1/components/sliderColumn/BannerItems.tsx";
 import Dots from "deco-sites/agencian1/components/sliderColumn/Dots.tsx";
 import Buttons from "deco-sites/agencian1/components/sliderColumn/Buttons.tsx";
+import { clx } from "$store/sdk/clx.ts";
 
 export interface Banner {
   /** @title Imagem Desktop */
@@ -20,6 +20,11 @@ export interface Banner {
 
   /** @format html */
   subTitle: string;
+  /** @title adicionar barra "/" antes da frase?. */
+  addBarSlide?: boolean;
+
+  /** @title adicionar chaves "{}" antes e depois da frase? */
+  addKeysInWordsSlide?: boolean;
 
   /** @format html */
   description: string;
@@ -40,6 +45,11 @@ interface ActionProps {
 export interface Props {
   /** @format html */
   title?: string;
+
+  /** @title adicionar barra "/" antes da frase? */
+  addBar?: boolean;
+  /** @title adicionar chaves "{}" antes e depois da frase? */
+  addKeysInWords?: boolean;
 
   images?: Banner[];
   /**
@@ -75,8 +85,18 @@ export default function SliderColumn(
   props: SectionProps<ReturnType<typeof loader>>,
 ) {
   const id = useId();
-  const { images, preload, interval, device, marginTop, marginBottom, title } =
-    { ...DEFAULT_PROPS, ...props };
+  const {
+    images,
+    preload,
+    interval,
+    device,
+    marginTop,
+    marginBottom,
+    title,
+    addKeysInWords,
+    addBar,
+  } = props;
+
   return (
     <div
       class="w-full flex  flex-col  relative max-w-[1300px] m-auto justify-between  px-5 md:px-0 lg:py-0 z-10"
@@ -84,7 +104,12 @@ export default function SliderColumn(
     >
       {title && (
         <div
-          class=" block lg:text-center text-20 lg:text-[40px] text-[#fff]  font-black not-italic font-archimoto-black mb-5 lg:mb-10"
+          class={clx(
+            `block lg:text-center text-20 lg:text-[40px] text-[#fff] font-black not-italic font-archimoto-black mb-5 lg:mb-10
+            ${
+              addKeysInWords ? "is-keys-custom" : addBar ? "is-bar-custom" : ""
+            }`,
+          )}
           dangerouslySetInnerHTML={{ __html: title }}
         >
         </div>
@@ -92,8 +117,10 @@ export default function SliderColumn(
 
       <div
         id={id}
-        class="lg:grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px] grid-rows-[1fr_48px_1fr_64px]
-          h-[521px] lg:h-auto  w-full flex items-center justify-end flex-col-reverse"
+        class={clx(
+          `lg:grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px] grid-rows-[1fr_48px_1fr_64px]
+          h-[521px] lg:h-auto  w-full flex items-center justify-end flex-col-reverse`,
+        )}
       >
         <Slider class="carousel carousel-center col-span-full row-span-full gap-6 w-full">
           {images?.map((image, index) => {
@@ -105,6 +132,8 @@ export default function SliderColumn(
                     title={title}
                     lcp={index === 0 && preload}
                     id={`${id}::${index}`}
+                    addBarSlide={image?.addBarSlide}
+                    addKeysInWordsSlide={image?.addKeysInWordsSlide}
                   />
                 </Slider.Item>
               </>
@@ -126,49 +155,4 @@ export const loader = (props: Props, _req: Request, ctx: FnContext) => {
     ...props,
     device: ctx.device,
   };
-};
-
-const DEFAULT_PROPS = {
-  images: [
-    {
-      alt: "/feminino",
-      action: {
-        title: "New collection",
-        subTitle: "Main title",
-        label: "Explore collection",
-        href: "/",
-      },
-      mobile:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/c007e481-b1c6-4122-9761-5c3e554512c1",
-      desktop:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/d057fc10-5616-4f12-8d4c-201bb47a81f5",
-    },
-    {
-      alt: "/feminino",
-      action: {
-        title: "New collection",
-        subTitle: "Main title",
-        label: "Explore collection",
-        href: "/",
-      },
-      mobile:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/c007e481-b1c6-4122-9761-5c3e554512c1",
-      desktop:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/d057fc10-5616-4f12-8d4c-201bb47a81f5",
-    },
-    {
-      alt: "/feminino",
-      action: {
-        title: "New collection",
-        subTitle: "Main title",
-        label: "Explore collection",
-        href: "/",
-      },
-      mobile:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/c007e481-b1c6-4122-9761-5c3e554512c1",
-      desktop:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/d057fc10-5616-4f12-8d4c-201bb47a81f5",
-    },
-  ],
-  preload: true,
 };

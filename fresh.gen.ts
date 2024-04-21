@@ -27,6 +27,7 @@ import * as $Hero from "./islands/Hero.tsx";
 import * as $Mosaic from "./islands/Mosaic.tsx";
 import * as $Newsletter from "./islands/Newsletter.tsx";
 import * as $OutOfStock from "./islands/OutOfStock.tsx";
+import * as $PopupLgpt from "./islands/PopupLgpt.tsx";
 import * as $ProductImageZoom from "./islands/ProductImageZoom.tsx";
 import * as $ShippingSimulation from "./islands/ShippingSimulation.tsx";
 import * as $SliderJS from "./islands/SliderJS.tsx";
@@ -63,6 +64,7 @@ const manifest = {
     "./islands/Mosaic.tsx": $Mosaic,
     "./islands/Newsletter.tsx": $Newsletter,
     "./islands/OutOfStock.tsx": $OutOfStock,
+    "./islands/PopupLgpt.tsx": $PopupLgpt,
     "./islands/ProductImageZoom.tsx": $ProductImageZoom,
     "./islands/ShippingSimulation.tsx": $ShippingSimulation,
     "./islands/SliderJS.tsx": $SliderJS,

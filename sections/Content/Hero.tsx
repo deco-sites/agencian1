@@ -90,9 +90,9 @@ export default function HeroFlats(
       : null;
     const loopNumber = Number(loop);
 
-    if (loop && loopNumber < 1) {
+    if (loop && loopNumber < 2) {
       word = loopNumber + 1;
-    } else if (loopNumber > 1) {
+    } else if (loopNumber > 2) {
       word = 0;
     } else {
       word = 0;
@@ -179,7 +179,7 @@ export default function HeroFlats(
             {descriptionAnimation && (
               <div class="n1-typing mobile:[&_*]:!text-24 md:mt-[12px]">
                 <span
-                  class="text-animation--typing mobile:h-[28.8px] h-[88px] font-archimoto-medium grid text-secondary font-black text-[80px] leading-[88px] overflow-hidden"
+                  class="text-animation--typing is-active mobile:h-[28.8px] h-[88px] font-archimoto-medium grid text-secondary font-black text-[80px] leading-[88px] overflow-hidden"
                   data-write={descriptionAnimation}
                 >
                 </span>
@@ -221,18 +221,20 @@ export default function HeroFlats(
                         }`,
                       )}
                     >
-                      <span class="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10">
-                      </span>
-                      <span
-                        class={`mobile:text-20 mobile:leading-[24px] text-secondary font-bold font-archimoto-medium text-50 relative`}
-                      >
-                        {item?.text}
-                      </span>
-                      <span
-                        class={`mobile:text-12 mobile:leading-[16.8px] text-[#ffffff] relative font-normal font-noto-sans md:text-18 md:max-w-[80%]`}
-                      >
-                        {item?.text2}
-                      </span>
+                      <h4 class="flex flex-col items-center">
+                        <span class="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10">
+                        </span>
+                        <span
+                          class={`mobile:text-20 mobile:leading-[24px] text-secondary font-bold font-archimoto-medium text-50 relative`}
+                        >
+                          {item?.text}
+                        </span>
+                        <span
+                          class={`mobile:text-12 mobile:leading-[16.8px] text-[#ffffff] relative font-normal font-noto-sans md:text-18 md:max-w-[80%]`}
+                        >
+                          {item?.text2}
+                        </span>
+                      </h4>
                     </a>
                   </>
                 );

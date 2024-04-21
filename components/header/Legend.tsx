@@ -24,15 +24,15 @@ function Legend({ nameItemScape, mobile, selectedLanguage }: Props) {
     { "en-en": "Language" },
   ];
 
-  console.log("selectedLanguage Legend --> ", selectedLanguage);
-
   return (
     <>
       <li
         class={clx(
           `mobile:font-black mobile:flex-col mobile:items-start mobile:py-[20px] n1-header__navlink--active 
-                hover:before:rotate-[-135deg] duration-300 hover:after:rotate-[135deg] pr-[35px] group flex items-center 
-                text-16 font-archimoto-medium uppercase legend relative is-${nameItemScape}`,
+           duration-300 group flex items-center text-16 font-archimoto-medium uppercase legend 
+           relative pr-[25px] pl-[10px] cursor-pointer hover:is-active md:hover:before:rotate-[135deg] md:before:right-[0]
+           md:hover:after:rotate-[45deg] md:hover:before:border-secondary md:hover:after:border-secondary md:after:-right-[7px] 
+           md:hover:text-secondary is-${nameItemScape}`,
         )}
       >
         {!mobile && (
@@ -62,8 +62,8 @@ function Legend({ nameItemScape, mobile, selectedLanguage }: Props) {
                   <a
                     onClick={() => handleOnClick(code)}
                     class={clx(
-                      `mobile:px-0 mobile:py-0 mobile:mx-0 mobile:my-0 flex items-center capitalize rounded-[10px]
-                                            py-[8px] bg-[#fff] duration-100 text-primary w-full md:hover:bg-primary hover:text-[#fff]`,
+                      `mobile:px-0 mobile:py-0 mobile:mx-0 mobile:my-0 flex items-center capitalize rounded-[10px] cursor-pointer
+                       py-[8px] bg-[#fff] duration-100 text-primary w-full md:hover:bg-primary hover:text-[#fff]`,
                     )}
                   >
                     {mobile && (

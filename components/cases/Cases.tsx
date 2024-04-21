@@ -1,7 +1,7 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
-
+import { Picture, Source } from "apps/website/components/Picture.tsx";
 import type { FnContext } from "deco/types.ts";
 
 export interface Technology {
@@ -11,6 +11,17 @@ export interface Technology {
   IconMobile: ImageWidget;
 
   services: string;
+}
+
+interface ImageDevice {
+  /** @title Imagem */
+  src: ImageWidget;
+  /** @title Largura */
+  width?: string;
+  /** @title Altura */
+  height?: string;
+  /** @title Nome da Imagem */
+  alt?: string;
 }
 
 export interface CardCases {
@@ -34,10 +45,10 @@ export interface CardCases {
   heightMobile?: number;
 
   /** @title  Logo store desktop */
-  imgIconStoreDesktop: ImageWidget;
+  imgIconStoreDesktop: ImageDevice;
 
   /**@title Logo store mobile */
-  imgIconStoreMobile: ImageWidget;
+  imgIconStoreMobile: ImageDevice;
 
   link: string;
   buttonName: string;
@@ -50,7 +61,8 @@ export interface Props {
 
   iconBackgroundTop?: ImageWidget;
 
-  iconBackgroundLeftBottom?: ImageWidget;
+  /** @title Ocultar eclipse de fundo? */
+  iconBackgroundLeftBottom?: boolean;
 
   /** @description Adicione os Cases */
   cardCases?: CardCases[];
@@ -63,7 +75,7 @@ export default function Cases(props: Props & { device: string }) {
 
   return (
     <div className="py-16 lg:py-[100px] relative">
-      <div className="px-4 md:px-28 grid md:grid-cols-1 lg:grid-cols-2 md:gap-3 gap-9 ">
+      <div className="px-4 md:px-28 grid md:grid-cols-1 lg:grid-cols-2 md:gap-3 gap-9 relative z-10">
         {props.cardCases.map((card, index) => (
           <div
             className="flex items-center justify-center w-full md:mb-8 z-10"
@@ -126,36 +138,38 @@ export default function Cases(props: Props & { device: string }) {
 
               <div className="absolute flex justify-center items-center bottom-0 left-0 w-full md:px-11 md:py-4 pt-3 px-5 pb-3 n1-custon-container-buttons-service rounded-b-[20px] h-[64px] md:h-[91px]">
                 <div className="flex items-center justify-between w-full max-w-[490px]">
-                  {props.device === "desktop"
-                    ? (
-                      card.imgIconStoreDesktop && (
-                        <Image
-                          src={card.imgIconStoreDesktop}
-                          alt={card.alt}
-                          width={200}
-                          height={57}
-                          loading="lazy"
-                          className="hidden lg:block"
-                        />
-                      )
-                    )
-                    : (
-                      card.imgIconStoreMobile && (
-                        <Image
-                          src={card.imgIconStoreMobile}
-                          alt={card.alt}
-                          width={107}
-                          height={31}
-                          loading="lazy"
-                          className="block lg:hidden"
-                        />
-                      )
+                  <Picture>
+                    {card.imgIconStoreMobile?.src &&
+                      card.imgIconStoreMobile?.width &&
+                      card.imgIconStoreMobile?.height && (
+                      <Source
+                        media="(max-width: 767px)"
+                        src={card.imgIconStoreMobile.src}
+                        width={Number(card.imgIconStoreMobile?.width)}
+                        height={Number(card.imgIconStoreMobile?.height)}
+                      />
                     )}
+                    {card.imgIconStoreDesktop?.src &&
+                      card.imgIconStoreDesktop?.width &&
+                      card.imgIconStoreDesktop?.height && (
+                      <Source
+                        media="(min-width: 768px)"
+                        src={card.imgIconStoreDesktop.src}
+                        width={Number(card.imgIconStoreDesktop.width)}
+                        height={Number(card.imgIconStoreDesktop.height)}
+                      />
+                    )}
+                    <img
+                      src={card.imgIconStoreDesktop?.src}
+                      width={card.imgIconStoreDesktop?.width}
+                      height={card.imgIconStoreDesktop?.height}
+                    />
+                  </Picture>
 
                   {card.link && card.buttonName && (
                     <a
                       href={card.link}
-                      className="md:w-36 flex gap-2 border border-[#fff]  px-3 pb-3 pt-3 rounded-[100px] justify-center items-center min-w-[144px] text-[#ffff] cursor-pointer hover:bg-[#fff] hover:text-[#494848]"
+                      className="md:w-36 flex gap-2 border border-[#fff]  px-3 pb-3 pt-3 rounded-[100px] justify-center items-center min-w-[145px] text-[#ffff] cursor-pointer hover:bg-[#fff] hover:text-[#494848]"
                     >
                       <button
                         type="button"
@@ -192,7 +206,7 @@ export default function Cases(props: Props & { device: string }) {
           )}
 
           {props.iconBackgroundTop && (
-            <div className="hidden md:block absolute -top-[150px] right-0 z-0">
+            <div className="hidden md:block absolute -top-[150px] right-0 z-10">
               <Image
                 src={props.iconBackgroundTop}
                 alt="icon background"
@@ -203,17 +217,12 @@ export default function Cases(props: Props & { device: string }) {
             </div>
           )}
 
-          {props.iconBackgroundLeftBottom && (
-            <div className="hidden md:block absolute bottom-0 left-0 z-0 rotate-180">
-              <Image
-                src={props.iconBackgroundLeftBottom}
-                alt="icon background"
-                width={450}
-                height={133}
-                loading="lazy"
-              />
-            </div>
-          )}
+          <div
+            className={`${
+              !props.iconBackgroundLeftBottom ? "is-active--bottom" : ""
+            }  n1-cases__item hidden md:flex absolute bottom-0 left-0 z-0 rotate-180`}
+          >
+          </div>
         </>
       )}
     </div>

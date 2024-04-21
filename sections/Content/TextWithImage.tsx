@@ -52,9 +52,13 @@ export interface Props {
   /**@title Título  */
   /**@format html  */
   title?: string;
+  /** @title adicionar barra "/" antes da frase? */
+  addBar?: boolean;
+  /** @title adicionar chaves "{}" antes e depois da frase? */
+  addKeysInWords?: boolean;
   /**@title Texto  */
   /**@format html  */
-  texto?: string;
+  text?: string;
   /**@title Imagem  */
   /** @description (Limite 5 imagens) */
   /** @maxItems 5 */
@@ -78,7 +82,13 @@ function ImageCarouselItem(
 
   return (
     <>
-      <div
+      <a
+        href={settingsInfo?.href ?? "javascript:void(0)"}
+        style={{
+          pointerEvents: `${
+            settingsInfo?.href && settingsInfo?.href !== "#" ? "all" : "none"
+          }`,
+        }}
         id={id}
         class="n1-text-width-image__link relative overflow-hidden w-full py-[30px] px-[20px]"
       >
@@ -95,20 +105,19 @@ function ImageCarouselItem(
 
         <div class="flex flex-col">
           {settingsInfo?.title && (
-            <span class="text-[#ffffff] font-archimoto-medium md:text-24 !leading-[31.8px] font-black md:mt-[30px] mb-[10px] n1-text-top-width-image__title">
+            <h4 class="text-[#ffffff] font-archimoto-medium md:text-24 !leading-[31.8px] font-black md:mt-[30px] mb-[10px] n1-text-top-width-image__title">
               {settingsInfo?.title}
-            </span>
+            </h4>
           )}
 
           {settingsInfo?.text && (
-            <span class="text-[#ffffff] font-noto-sans md:text-16 font-normal mobile:mb-[32px] md:mb-[30px] n1-text-top-width-image__text">
+            <p class="text-[#ffffff] font-noto-sans md:text-16 font-normal mobile:mb-[32px] md:mb-[30px] n1-text-top-width-image__text">
               {settingsInfo?.text}
-            </span>
+            </p>
           )}
 
           {settingsInfo?.textLink && (
-            <a
-              href={settingsInfo?.href ?? "javascript:void(0)"}
+            <div
               aria-label={settingsInfo?.title}
               class={clx(
                 `mobile:w-[55%] md:w-[43%] flex border border-[#fff] px-[20px] pb-[11px] 
@@ -118,10 +127,10 @@ function ImageCarouselItem(
               <span class="text-[#ffffff] flex font-archimoto-medium md:text-14 font-black">
                 {settingsInfo?.textLink}
               </span>
-            </a>
+            </div>
           )}
         </div>
-      </div>
+      </a>
     </>
   );
 }
@@ -199,8 +208,18 @@ function Buttons() {
 
 function TextTopWidthCarousel(props: SectionProps<ReturnType<typeof loader>>) {
   const id = useId();
-  const { images, preload, title, texto, textLink, link, noneSection, device } =
-    props;
+  const {
+    images,
+    preload,
+    title,
+    addBar,
+    addKeysInWords,
+    text,
+    textLink,
+    link,
+    noneSection,
+    device,
+  } = props;
 
   return (
     <>
@@ -213,15 +232,25 @@ function TextTopWidthCarousel(props: SectionProps<ReturnType<typeof loader>>) {
             <div class="mobile:px-[20px]">
               {title && (
                 <div
-                  class="n1-text-widt-image__title mobile:[&_*]:!text-32 mobile:[&_*]:!leading-[38.4px] uppercase font-archimoto-medium md:text-56 md:leading-[20px]"
+                  class={clx(
+                    `n1-text-widt-image__title mobile:[&_*]:!text-32 mobile:[&_*]:!leading-[38.4px] 
+                      uppercase font-archimoto-medium md:text-56 md:leading-[20px]
+                      ${
+                      addKeysInWords
+                        ? "is-keys-custom"
+                        : addBar
+                        ? "is-bar-custom"
+                        : ""
+                    }`,
+                  )}
                   dangerouslySetInnerHTML={{ __html: title }}
                 >
                 </div>
               )}
-              {texto && (
+              {text && (
                 <div
                   class="n1-text-widt-image__text mobile:[&_*]:!text-14 mobile:[&_*]:!leading-[14px] md:flex font-noto-sans block mt-[11px] text-20 leading-[26px]"
-                  dangerouslySetInnerHTML={{ __html: texto }}
+                  dangerouslySetInnerHTML={{ __html: text }}
                 >
                 </div>
               )}

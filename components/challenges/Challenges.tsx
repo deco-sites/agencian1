@@ -1,6 +1,6 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
-import type { FnContext } from "deco/types.ts";
 import Image from "apps/website/components/Image.tsx";
+import { clx } from "deco-sites/agencian1/sdk/clx.ts";
 
 export interface Cards {
   /**@title Icon  */
@@ -17,6 +17,10 @@ export interface Props {
   /** @tilte Title */
   /** @format html */
   title?: string;
+  /** @title adicionar barra "/" antes da frase? */
+  addBar?: boolean;
+  /** @title adicionar chaves "{}" antes e depois da frase? */
+  addKeysInWords?: boolean;
 
   cards?: Cards[];
 
@@ -30,7 +34,7 @@ export interface Props {
 }
 
 export default function Challenges(
-  { title, cards, marginTop, marginBottom }: Props,
+  { title, cards, marginTop, marginBottom, addBar, addKeysInWords }: Props,
 ) {
   return (
     <div
@@ -39,7 +43,12 @@ export default function Challenges(
     >
       {title && (
         <div
-          class=" text-20 lg:text-[40px] text-[#fff]  font-black not-italic font-archimoto-black pb-[24px]"
+          class={clx(
+            `text-20 lg:text-[40px] text-[#fff]  font-black not-italic font-archimoto-black pb-[24px]
+            ${
+              addKeysInWords ? "is-keys-custom" : addBar ? "is-bar-custom" : ""
+            }`,
+          )}
           dangerouslySetInnerHTML={{ __html: title }}
         >
         </div>

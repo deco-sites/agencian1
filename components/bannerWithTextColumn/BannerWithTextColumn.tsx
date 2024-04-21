@@ -1,6 +1,7 @@
 import { FnContext, SectionProps } from "deco/mod.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
+import { clx } from "$store/sdk/clx.ts";
 
 export interface Img {
   /**@title Image Desktop*/
@@ -70,15 +71,10 @@ export interface Button {
 export interface Content {
   /** @format html */
   title?: string;
-
-  /** @title Tamanho de fonte Desktop */
-  /** @description Fonte de Title (ex: text-48 = 48px) */
-
-  fontSizeTitle?:'text-32' |'text-34' | 'text-40' | 'text-48';
-  /** @title Tamanho de fonte Mobile */
-  /** @description Fonte de Title (ex: text-24 = 24px) */
-
-  fontSizeTitleMobile?: 'text-20' | 'text-24';
+  /** @title adicionar barra "/" antes da frase? */
+  addBar?: boolean;
+  /** @title adicionar chaves "{}" antes e depois da frase? */
+  addKeysInWords?: boolean;
   /** @format html */
   description?: string;
   /** @title Tamanho de fonte Desktop */
@@ -160,7 +156,7 @@ export default function BannerWithTextColumn({
         <div class="lg:w-1/2 z-10">
           {device === "desktop"
             ? (
-              bannerImg.imageDesktop && (
+              bannerImg?.imageDesktop && (
                 <Image
                   src={bannerImg.imageDesktop}
                   width={bannerImg.widthDesktop || 632}
@@ -194,7 +190,16 @@ export default function BannerWithTextColumn({
             >
               {contentText.title && (
                 <div
-                  class={`${fontSizeTitleMobile} lg:${fontSizeTitle} text-[#fff] font-black not-italic font-archimoto-black mb-6 mt-7  lg:mb-[30px] lg:mt-[12px] !leading-[120%]`}
+                  class={clx(
+                    `!flex text-20 lg:text-[40px] text-[#fff] font-black not-italic font-archimoto-black mb-6 mt-7 lg:mb-[30px] lg:mt-[12px]
+                    ${
+                      contentText?.addKeysInWords
+                        ? "is-keys-custom"
+                        : contentText?.addBar
+                        ? "is-bar-custom"
+                        : ""
+                    }`,
+                  )}
                   dangerouslySetInnerHTML={{ __html: contentText.title }}
                 >
                 </div>

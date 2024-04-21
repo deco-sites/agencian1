@@ -80,7 +80,11 @@ function Menu({ items, whatsapp, selectedLanguage }: Props) {
           return (
             <li
               class={`pt-[16px] ${
-                item.name === "Blog" || item.name === "Ferramentas"
+                item.name === "Blog" ||
+                  item.name === "Ferramentas" ||
+                  item.name === "ferramentas" ||
+                  item.name === "Tools" ||
+                  item.name === "tools"
                   ? "hidden"
                   : ""
               }`}

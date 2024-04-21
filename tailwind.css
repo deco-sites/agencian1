@@ -23,13 +23,6 @@
     margin: 0;
   }
 
-  /* Disable scroll once drawer/modal is openned */
-  body:has(.drawer-toggle:checked),
-  body:has(.modal-toggle:checked) {
-    overflow: hidden;
-    height: 100vh;
-  }
-
   .btn{min-height: initial !important; height: initial !important}
 }
 
@@ -476,6 +469,26 @@
     border-radius: 2px;
   }
 
+  .n1-popup{
+    transition: all .275s linear;
+  }
+
+  .n1-popup.is-disabled{
+    animation: skipBottom .575s linear forwards;
+
+  }
+
+  @keyframes skipBottom {
+    to{
+      transform: translateY(120px);
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+      cursor: none;
+      transition: all .175s linear;
+    }
+  }
+
   .n1-footer__bg-social:before{
     content: "";
     border-radius: 50px;
@@ -605,6 +618,73 @@
     pointer-events: all;
     transition: all .2s linear;
   }
+
+  .n1-cases__item.is-active{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    z-index: 0;    
+  }
+  
+  .n1-cases__item.is-active--bottom:before{
+    content: "";
+    width: 469.464px;
+    height: 469.464px;
+    transform: rotate(-S15.911deg);
+    border-radius: var(--radius-default, 469.464px);
+    opacity: .3;
+    background: radial-gradient(105.4% 101.68% at 89.06% 88.91%, #3CCBDA 43.01%, #0C1F59 88.98%);
+    filter: blur(82px);
+    left: 0;
+    z-index: -1;
+    position: relative;
+    display: block;
+  }
+
+
+  .is-bar-custom{display: ruby !important;}
+  .n1-header__navlink-children-title.is-bar-custom{display: flex !important;}
+
+  .is-keys-custom{display: ruby !important;}
+
+  .is-bar-custom > *:before{
+    content: "/";
+    line-height: normal;
+    font-weight: 900;
+    @apply text-secondary;
+  }
+
+  .is-keysInIcons-custom:before{
+    content: "{";
+    line-height: normal;
+    font-weight: 900;
+    @apply text-secondary;
+  }
+  
+  .is-keysInIcons-custom:after{
+    content: "}";
+    line-height: normal;
+    font-weight: 900;
+    @apply text-secondary;
+  }
+  
+  .is-keys-custom > *:before{
+    content: "{";
+    line-height: normal;
+    font-weight: 900;
+    @apply text-secondary;
+  }
+
+  .is-keys-custom > *:after{
+    content: "}";
+    line-height: normal;
+    font-weight: 900;
+    @apply text-secondary;
+  }
+ 
 
   @media(min-width: 1024px){
     .n1-text-icon-image__container.is-active:after{

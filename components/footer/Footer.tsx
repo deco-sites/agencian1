@@ -3,7 +3,6 @@ import ColorClasses from "$store/components/footer/ColorClasses.tsx";
 import Divider from "$store/components/footer/Divider.tsx";
 import FooterItems from "$store/components/footer/FooterItems.tsx";
 import Logo from "$store/components/footer/Logo.tsx";
-import PaymentMethods from "$store/components/footer/PaymentMethods.tsx";
 import Social from "$store/components/footer/Social.tsx";
 import Copyright from "./Copyright.tsx";
 import Newsletter from "$store/islands/Newsletter.tsx";
@@ -13,22 +12,20 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 export interface Item {
   /** @title Nome */
   label: string;
-  /**
-   * @title Link
-   * @description (ex: /nossos-servicos/suporte)
-   */
+  /**@title Link */
+  /**@description (ex: /nossos-servicos/suporte) */
   href?: string;
-  /** @title Ocultar item? */
+  /**@title Ocultar item? */
   disabledItem?: boolean;
 }
 
 /**@titleBy label */
-export interface Section {
-  /** @title Nome */
+export type Section = {
+  /**@title Nome */
   label: string;
-  /** @title Items */
+  /**@title Items */
   items: Item[];
-}
+};
 
 /** @titleBy label */
 export interface SocialItem {
@@ -42,10 +39,26 @@ export interface SocialItem {
     | "Twitter"
     | "Youtube"
     | "Email";
-  /** @title Link */
+  /**@title link */
   link: string;
-  /** @title Ocultar item? */
+  /**@title Ocultar item? */
   disabledSocial?: boolean;
+}
+
+export interface PaymentItem {
+  label: "Diners" | "Elo" | "Mastercard" | "Pix" | "Visa";
+}
+
+export interface MobileApps {
+  /** @description Link to the app */
+  apple?: string;
+  /** @description Link to the app */
+  android?: string;
+}
+
+export interface RegionOptions {
+  currency?: Item[];
+  language?: Item[];
 }
 
 export interface NewsletterForm {

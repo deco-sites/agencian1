@@ -35,6 +35,10 @@ export interface Props {
   /**@title Título  */
   /**@format html  */
   title?: string;
+  /** @title adicionar barra "/" antes da frase? */
+  addBar?: boolean;
+  /** @title adicionar chaves "{}" antes e depois da frase? */
+  addKeysInWords?: boolean;
   /**@title Texto  */
   /**@format html  */
   text?: string;
@@ -57,7 +61,13 @@ function ImageCarouselItem(
 
   return (
     <>
-      <div
+      <a
+        href={settingsInfo?.href ?? "javascript:void(0)"}
+        style={{
+          pointerEvents: `${
+            settingsInfo?.href && settingsInfo?.href !== "#" ? "all" : "none"
+          }`,
+        }}
         id={id}
         aria-label={settingsInfo?.name}
         class="n1-text-top-width-carousel__link relative overflow-hidden w-full border border-[#3B5D5F] rounded-[20px] pt-[20px] pb-[40px] px-[20px]"
@@ -74,13 +84,14 @@ function ImageCarouselItem(
 
         <div>
           {settingsInfo?.name && (
-            <span class="text-[#ffffff] flex font-archimoto-thin md:text-20 font-thin md:mt-[22px] mb-[8px]">
+            <span class="text-[#ffffff] flex font-archimoto-medium md:text-20 font-thin md:mt-[22px] mb-[8px]">
               {settingsInfo?.name}
             </span>
           )}
           {settingsInfo?.title && (
-            <h3 class="text-[#ffffff] flex font-archimoto-medium md:text-40 font-black n1-text-top-width-carousel__title
-                        ">
+            <h3
+              class={`text-[#ffffff] flex font-archimoto-medium md:text-40 font-black n1-text-top-width-carousel__title`}
+            >
               {settingsInfo?.title}
             </h3>
           )}
@@ -90,15 +101,7 @@ function ImageCarouselItem(
             </span>
           )}
           {settingsInfo?.textLink && (
-            <a
-              href={settingsInfo?.href ?? "javascript:void(0)"}
-              style={{
-                pointerEvents: `${
-                  settingsInfo?.href && settingsInfo?.href !== "#"
-                    ? "all"
-                    : "none"
-                }`,
-              }}
+            <div
               class={clx(
                 `mobile:w-[55%] md:w-[43%] flex border border-[#fff] px-[20px] pb-[11px] pt-[12px] rounded-[100px]
                justify-center items-center min-w-[144px] group hover:bg-[#ffffff] duration-300 cursor-pointer relative z-20`,
@@ -123,10 +126,10 @@ function ImageCarouselItem(
                   class="group-hover:fill-[#585858] duration-300"
                 />
               </svg>
-            </a>
+            </div>
           )}
         </div>
-      </div>
+      </a>
     </>
   );
 }
@@ -178,7 +181,7 @@ function Dots({ images }: Props) {
 function Buttons() {
   return (
     <>
-      <div class="absolute w-full flex mobile:justify-center mobile:items-end justify-between h-full top-[0] items-center pb-[10px] md:-left-[10px]">
+      <div class="absolute w-full flex mobile:justify-center mobile:items-end justify-between h-full mobile:top-[60px] top-[0] items-center pb-[10px] md:-left-[10px]">
         <div class="flex items-center justify-start z-10 col-start-1 row-start-2 mobile:mr-[30px] -translate-x-[50px]">
           <Slider.PrevButton class="btn btn-circle bg-[#ffffff] w-[40px] !h-[40px]">
             <Icon
@@ -204,7 +207,8 @@ function Buttons() {
 
 function TextTopWidthCarousel(props: SectionProps<ReturnType<typeof loader>>) {
   const id = useId();
-  const { images, preload, title, text, device } = props;
+  const { images, preload, title, text, device, addBar, addKeysInWords } =
+    props;
 
   return (
     <>
@@ -213,13 +217,22 @@ function TextTopWidthCarousel(props: SectionProps<ReturnType<typeof loader>>) {
           <div class="mobile:my-[24px] mt-[120px] mb-[43px] text-[#ffffff] flex items-center justify-between">
             <div class="mobile:px-[20px]">
               {title && (
-                <h2
-                  class="n1-cases-component__title mobile:[&_*]:!text-24 font-archimoto-medium text-24 leading-[28.8px] md:text-56 md:leading-[20px]"
+                <div
+                  class={clx(
+                    `n1-cases-component__title mobile:[&_*]:!text-24 font-archimoto-medium text-24 leading-[28.8px] md:text-56 md:leading-[20px]
+                    ${
+                      addKeysInWords
+                        ? "is-keys-custom"
+                        : addBar
+                        ? "is-bar-custom"
+                        : ""
+                    }`,
+                  )}
                   dangerouslySetInnerHTML={{
                     __html: title,
                   }}
                 >
-                </h2>
+                </div>
               )}
               {text && (
                 <span

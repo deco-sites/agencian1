@@ -73,9 +73,11 @@ const Aside = (
     return (
       <div class="bg-base-100 grid grid-rows-[auto_1fr] h-full divide-y max-w-[100vw]">
         <div class={`flex justify-between items-center ${titleScape}`}>
-          <h1 class="px-4 py-3">
-            <span class="font-medium text-2xl">{title}</span>
-          </h1>
+          {title && (
+            <h1 class="px-4 py-3">
+              <span class="font-medium text-2xl">{title}</span>
+            </h1>
+          )}
           {onClose && (
             <Button class="btn btn-ghost" onClick={onClose}>
               <Icon id="XMark" size={24} strokeWidth={2} />
@@ -113,7 +115,7 @@ function Drawers({ menu, children, logoMobile, selectedLanguage }: Props) {
               displayMenu.value = false;
               displaySearchDrawer.value = false;
             }}
-            title={displayMenu.value ? "Menu" : "Buscar"}
+            title={displayMenu.value ? "Menu" : ""}
             logoMobile={logoMobile}
           >
             {displayMenu.value && (
