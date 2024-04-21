@@ -79,10 +79,10 @@ export interface Content {
   description?: string;
   /** @title Tamanho de fonte Desktop */
   /** @description fonte de descrição (ex: text-14 = 14px) */
-  fontSize?: 'text-14' | 'text-16' | 'text-20';
+  fontSize?: "text-14" | "text-16" | "text-20";
   /** @title Tamanho de fonte Mobile */
   /** @description fonte de descrição (ex: text-14 = 14px) */
-  fontSizeMobile?: 'text-20' | 'text-24';
+  fontSizeMobile?: "text-20" | "text-24";
 
   list?: List;
 
@@ -145,12 +145,18 @@ export default function BannerWithTextColumn({
     ? contentText.list?.hiddenCardInfo
     : false;
 
-  const {fontSize = "text-16", fontSizeMobile = "text-14", fontSizeTitle = "text-[40px]", fontSizeTitleMobile = "text-20" } = contentText || {};
+  const {
+    fontSize = "text-16",
+    fontSizeMobile = "text-14",
+    fontSizeTitle = "text-[40px]",
+    fontSizeTitleMobile = "text-20",
+  } = contentText || {};
   return (
     <div class="w-full relative">
       <div
-        class={`w-full max-w-[1200px] m-auto z-10 px-5 lg:px-0 lg:py-0 flex ${PLACEMENT[placement]
-          } justify-between `}
+        class={`w-full max-w-[1200px] m-auto z-10 px-5 lg:px-0 lg:py-0 flex ${
+          PLACEMENT[placement]
+        } justify-between `}
         style={{ marginTop: `${marginTop}`, marginBottom: `${marginBottom}` }}
       >
         <div class="lg:w-1/2 z-10">
@@ -185,13 +191,15 @@ export default function BannerWithTextColumn({
         {contentText && (
           <div class="flex flex-col gap lg:w-1/2">
             <div
-              class={`w-full max-w-[526px] ${`${variants[styleContainer] === "center" ? "mx-auto" : ""}`}
-                 `} 
+              class={`w-full max-w-[526px] ${`${
+                variants[styleContainer] === "center" ? "mx-auto" : ""
+              }`}
+                 `}
             >
               {contentText.title && (
                 <div
                   class={clx(
-                    `!flex text-20 lg:text-[40px] text-[#fff] font-black not-italic font-archimoto-black mb-6 mt-7 lg:mb-[30px] lg:mt-[12px]
+                    `!flex text-20 lg:text-[40px] text-[#fff] font-black not-italic font-archimoto-black mb-6 mt-7 lg:mb-[30px] lg:mt-[12px] !leading-[120%]
                     ${
                       contentText?.addKeysInWords
                         ? "is-keys-custom"
@@ -237,24 +245,24 @@ export default function BannerWithTextColumn({
 
               {(!ishidden || device === "desktop") &&
                 contentText.list?.cardInfo && (
-                  <div>
-                    <ul class="flex gap-6 pb-6">
-                      {contentText.list?.cardInfo.map((card, index) => (
-                        <li
-                          key={index}
-                          class="flex flex-col items-center justify-center n1-custom-cardsInfo w-full max-w-[206px] py-6 px-5"
-                        >
-                          <span class=" font-archimoto-black text-24 lg:text-40 font-black text-[#3CCBDA]">
-                            {card.percentage}
-                          </span>
-                          <p class=" font-noto-sans text-14 lg:text-18 font-normal text-[#fff]">
-                            {card.about}
-                          </p>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
+                <div>
+                  <ul class="flex gap-6 pb-6">
+                    {contentText.list?.cardInfo.map((card, index) => (
+                      <li
+                        key={index}
+                        class="flex flex-col items-center justify-center n1-custom-cardsInfo w-full max-w-[206px] py-6 px-5"
+                      >
+                        <span class=" font-archimoto-black text-24 lg:text-40 font-black text-[#3CCBDA]">
+                          {card.percentage}
+                        </span>
+                        <p class=" font-noto-sans text-14 lg:text-18 font-normal text-[#fff]">
+                          {card.about}
+                        </p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
               {contentText.description && (
                 <div
@@ -278,8 +286,9 @@ export default function BannerWithTextColumn({
                             <img src={contentText.list?.iconCheck} />
                             <div
                               class={`text-14 lg:text-15 font-noto-sans font-normal  text-[#F3F4F7] !leading-[160%]
-                               w-full max-w-[${widthContainer[widthContainerValue]
-                                }`}
+                               w-full max-w-[${
+                                widthContainer[widthContainerValue]
+                              }`}
                               dangerouslySetInnerHTML={{
                                 __html: text.descriptionList,
                               }}
@@ -296,8 +305,9 @@ export default function BannerWithTextColumn({
             {contentText.button && (
               <a
                 href={contentText.button.link}
-                className={`flex mt-6 hover:brightness-90 w-full max-w-[469px] ${variants[styleContainer]
-                  }`}
+                className={`flex mt-6 hover:brightness-90 w-full max-w-[469px] ${
+                  variants[styleContainer]
+                }`}
               >
                 <button className="bg-[#3CCBDA] rounded-[100px] px-[25px] py-[15px]">
                   <span className="text-16 font-black text-[#0C1F59] uppercase font-archimoto-black">

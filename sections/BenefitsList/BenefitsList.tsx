@@ -1,1 +1,1 @@
-export { default } from 'deco-sites/agencian1/components/BenefitsList/BenefitsList.tsx'; 
+export { default } from "deco-sites/agencian1/components/BenefitsList/BenefitsList.tsx";

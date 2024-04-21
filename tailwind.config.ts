@@ -67,8 +67,8 @@ export default {
         "portatil": { "min": "1024px", "max": "1280px" },
       },
       backgroundImage: {
-        'beneficies': "url('/image/beneficies.png')",
-      }
+        "beneficies": "url('/image/beneficies.png')",
+      },
     },
   },
 };
