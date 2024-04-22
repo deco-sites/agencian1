@@ -5,6 +5,7 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 import { FnContext, SectionProps } from "deco/mod.ts";
 import Icon from "$store/components/ui/Icon.tsx";
 import { clx } from "$store/sdk/clx.ts";
+import { Picture, Source } from "apps/website/components/Picture.tsx";
 
 /** @titleBy name */
 interface InfoProps {
@@ -22,13 +23,23 @@ interface InfoProps {
   href?: string;
 }
 
+interface ImageGeneric{
+  /**@title Imagem */
+  src?:ImageWidget;
+  /**@title Largura */  
+  width?:number;
+  /**@title Altura */  
+  height?:number;
+}
+
 /** @titleBy alt */
 export interface ImageCarousel {
   settingsInfo?: InfoProps;
   /** @title Imagem Desktop */
-  desktop: ImageWidget;
+  desktop?: ImageGeneric;
+  mobile?: ImageGeneric;
   /** @title Nome da imagem */
-  alt: string;
+  alt?: string;
 }
 
 export interface Props {
@@ -57,7 +68,7 @@ export interface Props {
 function ImageCarouselItem(
   { image, lcp, id }: { image: ImageCarousel; lcp?: boolean; id: string },
 ) {
-  const { alt, desktop, settingsInfo } = image;
+  const { alt, desktop, mobile, settingsInfo } = image;
 
   return (
     <>
@@ -75,12 +86,32 @@ function ImageCarouselItem(
         <div class="n1-text-top-width-carousel__overlay absolute w-full h-full top-[0] left-[0] invisible opacity-0">
         </div>
 
-        <img
-          class="mobile:h-auto mobile:max-w-full relative -left-[30px]"
-          loading={lcp ? "eager" : "lazy"}
-          src={desktop}
-          alt={alt}
-        />
+        <Picture>
+          {mobile?.src && mobile?.width && mobile?.height && (
+            <Source
+              media="(max-width: 767px)"
+              src={mobile.src}
+              width={mobile.width}
+              height={mobile.height}
+            />
+          )}
+          {desktop?.src && desktop?.width && desktop?.height &&
+            (
+              <Source
+                media="(min-width: 768px)"
+                src={desktop.src}
+                width={desktop.width}
+                height={desktop.height}
+              />
+            )}
+          <img
+            src={desktop?.src}
+            loading={lcp ? "eager" : "lazy"}
+            width={desktop?.width}
+            height={desktop?.height}
+            alt={alt}
+          />
+        </Picture>
 
         <div>
           {settingsInfo?.name && (
