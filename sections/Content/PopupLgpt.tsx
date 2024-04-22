@@ -61,10 +61,10 @@ function PopupLgpt({ image, text, textBtn }: Props) {
       >
         <div
           class={clx(
-            `flex items-center lg:max-w-[1034px] lg:my-0 lg:mx-auto lg:py-[18px] lg:px-[60px]
-                        rounded-[12px] border border-[#3CCBDA] backdrop-blur-[50px]
-                        bg-[linear-gradient(8deg,_rgba(60,_203,_218,_0.00)_-32.53%,_rgba(60,_203,_218,_0.13)_63.83%,_rgba(60,_203,_218,_0.20)_276.77%)]
-                        mobile:my-[0] mobile:flex-col mobile:px-[20px] mobile:py-[18px]`,
+            `flex items-center xl:max-w-[1034px] lg:max-w-[960px] lg:my-0 lg:mx-auto lg:py-[18px] lg:px-[60px]
+              rounded-[12px] border border-[#3CCBDA] backdrop-blur-[50px]
+              bg-[linear-gradient(8deg,_rgba(60,_203,_218,_0.00)_-32.53%,_rgba(60,_203,_218,_0.13)_63.83%,_rgba(60,_203,_218,_0.20)_276.77%)]
+              mobile:my-[0] mobile:flex-col mobile:px-[20px] mobile:py-[18px]`,
           )}
         >
           {image?.src && image?.width && image?.height && (
@@ -79,7 +79,7 @@ function PopupLgpt({ image, text, textBtn }: Props) {
           {text && (
             <div
               class={clx(
-                `[&_*]:text-14 mobile:[&_*]:text-12 [&_*]:font-archimoto-medium text-[#ffffff] lg:ml-[20px] lg:mr-[50px]
+                `xl:[&_*]:text-14 [&_*]:text-12 [&_*]:font-archimoto-medium text-[#ffffff] lg:ml-[20px] lg:mr-[50px]
                                 mobile:mx-[0] mobile:my-[10px] mobile:text-center lg:max-w-[66%]`,
               )}
               dangerouslySetInnerHTML={{ __html: text }}
@@ -90,7 +90,7 @@ function PopupLgpt({ image, text, textBtn }: Props) {
           {textBtn && (
             <button
               onClick={handleClick}
-              class={`text-[14px] leading-[14px] text-primary font-black h-[40px] font-archimoto-medium bg-accent 
+              class={`xl:[&_*]:text-14 text-12 leading-[14px] text-primary font-black h-[40px] font-archimoto-medium bg-accent 
                                 rounded-[100px] flex py-[15px] px-[20px] justify-center`}
             >
               {textBtn}

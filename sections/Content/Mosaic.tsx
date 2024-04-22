@@ -141,7 +141,8 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
             {imageTop && imageTop?.map(({ desktop, mobile, text, name }) => {
               return (
                 <>
-                  <div
+                  <a
+                    href={`${text?.link ? text?.link : "javascript:void(0)"}`}
                     class={clx(
                       `n1-mosaic__container top is-${
                         text && text?.bgColor === "base-50"
@@ -161,6 +162,7 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
                           ? "#0C1F59"
                           : "#ffffff"
                       }`,
+                      pointerEvents: `${text?.link ? "all" : "default"}`,
                     }}
                   >
                     <div class="md:px-[30px] relative z-20">
@@ -208,14 +210,16 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
                               : "primary"
                           } my-[15px] mobile:px-[24px]`}
                         >
-                          <LinkWithOptionArrow
-                            text={text?.textLink}
-                            link={text?.link}
-                            width={"127"}
-                            fontSize="11"
-                            margin={"0"}
-                            activeArrowBlue={true}
-                          />
+                          {text?.textLink && (
+                            <button class="px-[14px] py-[14px] rounded-[71px] relative w-[130px] flex items-center">
+                              <span class="font-archimoto-medium text-[11px] leading-[14px] font-black">
+                                {text?.textLink}
+                              </span>                          
+                              <div class="p-[5px] mobile:right-[8px] absolute right-[5px]">
+                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#F3F4F7" d="M0.278564 11.273C0.278564 5.12786 5.26018 0.14624 11.4053 0.14624V0.14624C17.5505 0.14624 22.5321 5.12786 22.5321 11.273V11.273C22.5321 17.4181 17.5505 22.3998 11.4053 22.3998V22.3998C5.26018 22.3998 0.278564 17.4181 0.278564 11.273V11.273Z" class="not-circle"></path><path fill="#0C1F59" fill-rule="evenodd" clip-rule="evenodd" d="M8.2646 8.1324C8.2646 7.78549 8.54582 7.50427 8.89272 7.50427H14.5458C14.8927 7.50427 15.174 7.78549 15.174 8.1324V13.7855C15.174 14.1324 14.8927 14.4136 14.5458 14.4136C14.1989 14.4136 13.9177 14.1324 13.9177 13.7855V9.64882L8.70875 14.8578C8.46345 15.1031 8.06575 15.1031 7.82045 14.8578C7.57515 14.6125 7.57515 14.2148 7.82045 13.9695L13.0294 8.76052H8.89272C8.54582 8.76052 8.2646 8.4793 8.2646 8.1324Z"></path></svg>
+                              </div>    
+                            </button>
+                          )}
                         </div>
                       )}
                     </div>
@@ -248,7 +252,7 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
                         />
                       )}
                     </div>
-                  </div>
+                  </a>
                 </>
               );
             })}
@@ -256,12 +260,16 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
           {/* ITEMS TOP - FINAL */}
 
           {/* ITEMS BOTTOM - INITIAL */}
-          <div class="n1-mosaic is-bottom grid grid-cols-[repeat(2,_1fr)] grid-rows-1 text-[#ffffff] gap-x-[22px] mobile:flex mobile:flex-col">
+          <div 
+            class={`
+              n1-mosaic is-bottom grid grid-cols-[repeat(2,_1fr)] grid-rows-1 text-[#ffffff] 
+              gap-x-[22px] mobile:flex mobile:flex-col`}>
             {imageBottom &&
               imageBottom?.map(({ desktop, mobile, name, text }) => {
                 return (
                   <>
-                    <div
+                    <a
+                      href={`${text?.link ? text?.link : "javascript:void(0)"}`}
                       class={clx(
                         `n1-mosaic__container mobile:mb-[24px] bottom rounded-[16px] bg-primary md:px-[30px] 
                         md:pt-[30px] mobile:max-h-[340px] max-h-[430px] overflow-hidden`,
@@ -277,6 +285,7 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
                             ? "#0C1F59"
                             : "#ffffff"
                         }`,
+                        pointerEvents: `${text?.link ? "all" : "default"}`,
                       }}
                     >
                       <div class="mobile:pt-[24px] mobile:px-[24px]">
@@ -324,14 +333,17 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
                               : "primary"
                           } my-[15px] mobile:px-[24px]`}
                         >
-                          <LinkWithOptionArrow
-                            text={text.textLink}
-                            link={text?.link}
-                            width={"127"}
-                            fontSize="11"
-                            margin={"0"}
-                            activeArrowBlue={true}
-                          />
+
+                          {text?.textLink && (
+                            <button class="px-[14px] py-[14px] rounded-[71px] relative w-[130px] flex items-center">
+                              <span class="font-archimoto-medium text-[11px] leading-[14px] font-black">
+                                {text?.textLink}
+                              </span>                          
+                              <div class="p-[5px] mobile:right-[8px] absolute right-[5px]">
+                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#F3F4F7" d="M0.278564 11.273C0.278564 5.12786 5.26018 0.14624 11.4053 0.14624V0.14624C17.5505 0.14624 22.5321 5.12786 22.5321 11.273V11.273C22.5321 17.4181 17.5505 22.3998 11.4053 22.3998V22.3998C5.26018 22.3998 0.278564 17.4181 0.278564 11.273V11.273Z" class="not-circle"></path><path fill="#0C1F59" fill-rule="evenodd" clip-rule="evenodd" d="M8.2646 8.1324C8.2646 7.78549 8.54582 7.50427 8.89272 7.50427H14.5458C14.8927 7.50427 15.174 7.78549 15.174 8.1324V13.7855C15.174 14.1324 14.8927 14.4136 14.5458 14.4136C14.1989 14.4136 13.9177 14.1324 13.9177 13.7855V9.64882L8.70875 14.8578C8.46345 15.1031 8.06575 15.1031 7.82045 14.8578C7.57515 14.6125 7.57515 14.2148 7.82045 13.9695L13.0294 8.76052H8.89272C8.54582 8.76052 8.2646 8.4793 8.2646 8.1324Z"></path></svg>
+                              </div>    
+                            </button>
+                          )}   
                         </div>
                       )}
 
@@ -456,7 +468,7 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
                           )}
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </>
                 );
               })}
