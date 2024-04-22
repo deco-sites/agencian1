@@ -50,6 +50,15 @@ export interface PropsChildren extends SiteNavigationElement {
   activePropsButton?: boolean;
 }
 
+interface ImageGeneric{
+  /**@title Imagem */
+  src?:ImageWidget;
+  /**@title Largura */  
+  width?:number;
+  /**@title Altura */  
+  height?:number;
+}
+
 export interface Props {
   alerts?: string[];
   /**
@@ -59,12 +68,22 @@ export interface Props {
    */
   navItems?: PropsChildren[] | null;
 
-  /** @title Logo */
-  logo?: Logo;
+  /**@title Logo do menu mobile */
+  drawer?:ImageGeneric;
 
-  /** @title Logo Mobile */
-  logoMobile?: LogoMobile;
-
+  /**
+   * @title Logo
+   * @description (Desktop)
+   */   
+  desktop?: ImageGeneric;
+  /**
+   * @title Logo
+   * @description (Mobile)
+   */   
+  mobile?: ImageGeneric;
+  /**@title Nome da imagem */
+  alt?:string;
+  /**@title Posição do logo */ 
   logoPosition?: "left" | "center";
 
   /** @title WhatsApp */
@@ -82,8 +101,9 @@ function Header(props: SectionProps<ReturnType<typeof loader>>) {
   const {
     alerts,
     navItems,
-    logo,
-    logoMobile,
+    desktop,
+    mobile,
+    drawer,
     logoPosition = "center",
     whatsapp,
     btnTextMenu,
@@ -99,7 +119,7 @@ function Header(props: SectionProps<ReturnType<typeof loader>>) {
         <Drawers
           menu={{ items, whatsapp }}
           platform={platform}
-          logoMobile={logoMobile}
+          drawer={drawer}
           selectedLanguage={selectedLanguage}
         >
           <div
@@ -112,7 +132,8 @@ function Header(props: SectionProps<ReturnType<typeof loader>>) {
               {alerts && alerts.length > 0 && <Alert alerts={alerts} />}
               <Navbar
                 items={items}
-                logo={logo}
+                desktop={desktop}
+                mobile={mobile}
                 logoPosition={logoPosition}
                 buttons={buttons}
                 btnTextMenu={btnTextMenu}

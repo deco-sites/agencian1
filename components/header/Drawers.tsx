@@ -8,9 +8,19 @@ import type { ComponentChildren } from "preact";
 import { lazy, Suspense } from "preact/compat";
 import Image from "apps/website/components/Image.tsx";
 import { LogoMobile } from "$store/components/header/Header.tsx";
+import { Picture, Source } from "apps/website/components/Picture.tsx";
+import type { ImageWidget } from "apps/admin/widgets.ts";
 
 const Menu = lazy(() => import("$store/components/header/Menu.tsx"));
 
+interface ImageGeneric{
+  /**@title Imagem */
+  src?:ImageWidget;
+  /**@title Largura */  
+  width?:number;
+  /**@title Altura */  
+  height?:number;
+}
 export interface Props {
   logoMobile?: LogoMobile;
   menu: MenuProps;
@@ -20,18 +30,25 @@ export interface Props {
   children?: ComponentChildren;
   platform: ReturnType<typeof usePlatform>;
   selectedLanguage?: string;
+  /**@title Logo do menu mobile */
+  drawer?:ImageGeneric;
+    /**@title Nome da imagem */
+  alt?:string;
 }
 
 interface PropsAside {
   title: string;
   onClose?: () => void;
   children: ComponentChildren;
-  logoMobile?: LogoMobile;
+  /**@title Logo do menu mobile */
+  drawer?:ImageGeneric;
+  /**@title Nome da imagem */
+  alt?:string;
   whatsapp?: string;
 }
 
 const Aside = (
-  { title, onClose, children, logoMobile, whatsapp }: PropsAside,
+  { title, onClose, children, drawer, alt, whatsapp }: PropsAside,
 ) => {
   const titleScape = title ? "is-" + title?.toLocaleLowerCase() : "";
 
@@ -39,15 +56,36 @@ const Aside = (
     return (
       <div class="bg-[#ffffff] grid grid-rows-[auto_1fr] h-full divide-y w-[85%] px-[20px] pt-[20px] pb-[40px]">
         <div class={`flex justify-between items-center ${titleScape}`}>
-          {logoMobile && (
-            <div class="n1-header-mobile__logo">
-              <Image
-                src={logoMobile.src}
-                alt={logoMobile.alt}
-                width={logoMobile.width || 100}
-                height={logoMobile.height || 13}
-              />
-            </div>
+          {drawer?.src && drawer?.src && (
+            <a class="n1-header-mobile__logo" href="/">
+              <Picture>
+                {drawer?.src && drawer?.width && drawer?.height && (
+                  <Source
+                    media="(max-width: 767px)"
+                    src={drawer.src}
+                    width={drawer.width}
+                    height={drawer.height}
+                  />
+                )}
+                {drawer?.src && drawer?.width && drawer?.height &&
+                  (
+                    <Source
+                      media="(min-width: 768px)"
+                      src={drawer.src}
+                      width={drawer.width}
+                      height={drawer.height}
+                    />
+                  )}
+
+                <img
+                  src={drawer.src}
+                  loading={"lazy"}
+                  width={drawer.width}
+                  height={drawer.height}
+                  alt={alt}
+                />
+              </Picture>
+            </a>
           )}
           {onClose && (
             <Button
@@ -98,7 +136,7 @@ const Aside = (
   }
 };
 
-function Drawers({ menu, children, logoMobile, selectedLanguage }: Props) {
+function Drawers({ menu, children, drawer, selectedLanguage }: Props) {
   const { displayMenu, displaySearchDrawer } = useUI();
 
   return (
@@ -116,7 +154,7 @@ function Drawers({ menu, children, logoMobile, selectedLanguage }: Props) {
               displaySearchDrawer.value = false;
             }}
             title={displayMenu.value ? "Menu" : ""}
-            logoMobile={logoMobile}
+            drawer={drawer}
           >
             {displayMenu.value && (
               <Menu {...menu} selectedLanguage={selectedLanguage} />

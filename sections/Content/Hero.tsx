@@ -89,6 +89,7 @@ export default function HeroFlats(
       ? localStorage.getItem("loop")
       : null;
     const loopNumber = Number(loop);
+    const modeTablet = globalThis.matchMedia("(max-width:768px)").matches;
 
     if (loop && loopNumber < 2) {
       word = loopNumber + 1;
@@ -112,11 +113,19 @@ export default function HeroFlats(
         textElement.classList.add("is-active");
         textElement.innerHTML = textArray[word];
 
-        setTimeout(typingWrite, 4000);
-        setTimeout(() => {
-          textElement.innerHTML = "";
-          textElement.classList.remove("is-active");
-        }, 3950);
+        if(modeTablet){
+          setTimeout(typingWrite, 6000);
+          setTimeout(() => {
+            textElement.innerHTML = "";
+            textElement.classList.remove("is-active");
+          }, 5950);
+        } else {
+          setTimeout(typingWrite, 4000);
+          setTimeout(() => {
+            textElement.innerHTML = "";
+            textElement.classList.remove("is-active");
+          }, 3950);
+        }
       }
     }
   }

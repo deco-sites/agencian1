@@ -157,7 +157,7 @@ function Newsletter(
           class="form-control"
           onSubmit={handleSubmit}
         >
-          <div class="grid grid-cols-[1fr_auto] gap-[18px] gap-y-[10px]">
+          <div class="grid grid-cols-[1fr_auto] gap-[18px] gap-y-[10px] mobile:gap-y-[14px] mobile:grid-cols-[1fr]">
             <input
               onBlur={handleOnBlur}
               onChange={handleOnChange}
@@ -176,7 +176,7 @@ function Newsletter(
             <button
               type="submit"
               class={clx(
-                `btn disabled:loading w-[144px] md:w-[123px] border-0 bg-accent n1-btn-header-item--rounded 
+                `btn disabled:loading w-[144px] md:w-[123px] border-0 bg-accent n1-btn-header-item--rounded  mobile:py-[14px]
                 text-16 font-archimoto-medium pt-[3px] uppercase hover:bg-[#F8BC33] duration-300 text-primary`,
               )}
             >

@@ -1,41 +1,63 @@
 import Icon from "$store/components/ui/Icon.tsx";
 import { MenuButton } from "$store/islands/Header/Buttons.tsx";
-import CartButtonLinx from "$store/islands/Header/Cart/linx.tsx";
-import CartButtonShopify from "$store/islands/Header/Cart/shopify.tsx";
-import CartButtonVDNA from "$store/islands/Header/Cart/vnda.tsx";
-import CartButtonVTEX from "$store/islands/Header/Cart/vtex.tsx";
-import CartButtonWake from "$store/islands/Header/Cart/wake.tsx";
-import CartButtonNuvemshop from "$store/islands/Header/Cart/nuvemshop.tsx";
-import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
 import NavItem from "./NavItem.tsx";
 import { navbarHeight } from "./constants.ts";
-import { Buttons, Logo } from "$store/components/header/Header.tsx";
+import { Buttons } from "$store/components/header/Header.tsx";
 import Legend from "$store/components/header/Legend.tsx";
 import { headerHeight } from "./constants.ts";
+import { Picture, Source } from "apps/website/components/Picture.tsx";
+import type { ImageWidget } from "apps/admin/widgets.ts";
+
+interface ImageGeneric{
+  /**@title Imagem */
+  src?:ImageWidget;
+  /**@title Largura */  
+  width?:number;
+  /**@title Altura */  
+  height?:number;
+}
 
 interface Props {
+  /**@title Items */    
   items: SiteNavigationElement[];
-  logo?: Logo;
+  /**
+   * @title Logo
+   * @description (Desktop)
+   */   
+  desktop?: ImageGeneric;
+  /**
+   * @title Logo
+   * @description (Mobile)
+   */   
+  mobile?: ImageGeneric;
+  /**@title Nome da imagem */
+  alt?:string;
+  /**@title Botões */    
   buttons?: Buttons;
+  /**@title Posição do logo */    
   logoPosition?: "left" | "center";
   nameItemScape?: string;
+  /**@title Texto do Botão */    
   btnTextMenu?: string;
+  /**@title Link */    
   btnUrlMenu?: string;
   selectedLanguage?: string;
 }
 
+
 function Navbar({
   items,
-  logo,
+  desktop,
+  mobile,
   buttons,
+  alt,
   logoPosition = "left",
   btnTextMenu,
   btnUrlMenu,
   selectedLanguage,
 }: Props) {
-  const platform = usePlatform();
   const itemLegend = "legenda";
 
   return (
@@ -46,19 +68,41 @@ function Navbar({
         class="lg:hidden grid grid-cols-3 justify-between items-center w-full pl-[20px] mobile:flex"
       >
         <MenuButton />
-        {logo && (
+        {desktop?.src && mobile?.src && (
           <a
             href="/"
             class="flex-grow inline-flex items-center justify-center mobile:ml-[22px]"
             style={{ minHeight: navbarHeight }}
             aria-label="Store logo"
           >
-            <Image
-              src={logo.src}
-              alt={logo.alt}
-              width={logo.width || 100}
-              height={logo.height || 13}
-            />
+
+            <Picture>
+              {mobile.src && mobile?.width && mobile?.height && (
+                <Source
+                  media="(max-width: 767px)"
+                  src={mobile.src}
+                  width={mobile.width}
+                  height={mobile.height}
+                />
+              )}
+              {desktop.src && desktop?.width && desktop?.height &&
+                (
+                  <Source
+                    media="(min-width: 768px)"
+                    src={desktop.src}
+                    width={desktop.width}
+                    height={desktop.height}
+                  />
+                )}
+
+              <img
+                src={desktop.src}
+                loading={"lazy"}
+                width={desktop?.width}
+                height={desktop?.height}
+                alt={alt}
+              />
+            </Picture>
           </a>
         )}
       </div>
@@ -98,21 +142,43 @@ function Navbar({
               : "justify-center"
           }`}
         >
-          {logo && (
-            <a
-              href="/"
-              aria-label="Store logo"
-              class="block"
-            >
-              <Image
-                src={logo.src}
-                alt={logo.alt}
-                width={logo.width || 100}
-                height={logo.height || 13}
-                class={"min-w-[125px]"}
+          {desktop?.src && mobile?.src && (
+          <a
+            href="/"
+            class="flex-grow inline-flex items-center justify-center mobile:ml-[22px]"
+            style={{ minHeight: navbarHeight }}
+            aria-label="Store logo"
+          >
+
+            <Picture>
+              {mobile.src && mobile?.width && mobile?.height && (
+                <Source
+                  media="(max-width: 767px)"
+                  src={mobile.src}
+                  width={mobile.width}
+                  height={mobile.height}
+                />
+              )}
+              {desktop.src && desktop?.width && desktop?.height &&
+                (
+                  <Source
+                    media="(min-width: 768px)"
+                    src={desktop.src}
+                    width={desktop.width}
+                    height={desktop.height}
+                  />
+                )}
+
+              <img
+                src={desktop.src}
+                loading={"lazy"}
+                width={desktop?.width}
+                height={desktop?.height}
+                alt={alt}
               />
-            </a>
-          )}
+            </Picture>
+          </a>
+        )}
         </div>
         <div class="hidden flex-none items-center justify-end gap-6 col-span-1">
           {!buttons?.hideAccountButton && (
@@ -142,18 +208,6 @@ function Navbar({
               WISHLIST
             </a>
           )}
-          {
-            /* {!buttons?.hideCartButton && (
-            <div class="flex items-center text-xs font-thin">
-              {platform === "vtex" && <CartButtonVTEX />}
-              {platform === "vnda" && <CartButtonVDNA />}
-              {platform === "wake" && <CartButtonWake />}
-              {platform === "linx" && <CartButtonLinx />}
-              {platform === "shopify" && <CartButtonShopify />}
-              {platform === "nuvemshop" && <CartButtonNuvemshop />}
-            </div>
-          )} */
-          }
         </div>
       </div>
     </>
