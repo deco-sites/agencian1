@@ -77,6 +77,12 @@ export interface Content {
   addKeysInWords?: boolean;
   /** @format html */
   description?: string;
+  /** @title Tamanho de fonte Desktop */
+  /** @description fonte de descrição (ex: text-14 = 14px) */
+  fontSize?: "text-14" | "text-16" | "text-20";
+  /** @title Tamanho de fonte Mobile */
+  /** @description fonte de descrição (ex: text-14 = 14px) */
+  fontSizeMobile?: "text-20" | "text-24";
 
   list?: List;
 
@@ -100,7 +106,7 @@ export interface Props {
   marginTop?: string;
 
   /** @tilte Margin Bottom*/
-  /** @description spaçamento entre uma section e outra ex:10px*/
+  /** @description espaçamento entre uma section e outra ex:10px*/
   marginBottom?: string;
 
   /** @description imagem de fundo */
@@ -113,8 +119,8 @@ const PLACEMENT = {
 };
 
 const variants = {
-  center: "mx-auto",
-  normal: "",
+  center: "center",
+  normal: "normal",
 };
 
 const widthContainer = {
@@ -139,6 +145,12 @@ export default function BannerWithTextColumn({
     ? contentText.list?.hiddenCardInfo
     : false;
 
+  const {
+    fontSize = "text-16",
+    fontSizeMobile = "text-14",
+    fontSizeTitle = "text-[40px]",
+    fontSizeTitleMobile = "text-20",
+  } = contentText || {};
   return (
     <div class="w-full relative">
       <div
@@ -157,7 +169,7 @@ export default function BannerWithTextColumn({
                   height={bannerImg.heightDesktop || 372}
                   alt={bannerImg.alt}
                   loading="eager"
-                  className="hidden mx-auto lg:block"
+                  className="hidden  mx-auto lg:block"
                 />
               )
             )
@@ -169,7 +181,7 @@ export default function BannerWithTextColumn({
                   height={bannerImg.heightMobile || 229}
                   alt={bannerImg.alt}
                   loading="eager"
-                  className="block mx-auto lg:hidden"
+                  className="block w-full mx-auto lg:hidden"
                 />
               )
             )}
@@ -179,14 +191,15 @@ export default function BannerWithTextColumn({
         {contentText && (
           <div class="flex flex-col gap lg:w-1/2">
             <div
-              class={`w-full max-w-[526px] mx-auto ${
-                variants[styleContainer]
-              } `}
+              class={`w-full max-w-[526px] ${`${
+                variants[styleContainer] === "center" ? "mx-auto" : ""
+              }`}
+                 `}
             >
               {contentText.title && (
                 <div
                   class={clx(
-                    `!flex text-20 lg:text-[40px] text-[#fff] font-black not-italic font-archimoto-black mb-6 mt-7 lg:mb-[30px] lg:mt-[12px]
+                    `!flex text-20 lg:text-[40px] text-[#fff] font-black not-italic font-archimoto-black mb-6 mt-7 lg:mb-[30px] lg:mt-[12px] !leading-[120%]
                     ${
                       contentText?.addKeysInWords
                         ? "is-keys-custom"
@@ -253,7 +266,7 @@ export default function BannerWithTextColumn({
 
               {contentText.description && (
                 <div
-                  class=" text-14 lg:text-16 font-noto-sans font-normal  text-[#F3F4F7] !leading-[160%]"
+                  class={` ${fontSizeMobile} lg:${fontSize} font-noto-sans font-normal  text-[#F3F4F7] !leading-[160%]`}
                   dangerouslySetInnerHTML={{ __html: contentText.description }}
                 >
                 </div>

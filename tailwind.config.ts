@@ -66,6 +66,9 @@ export default {
         "notebook": { "min": "768px", "max": "1536px" },
         "portatil": { "min": "1024px", "max": "1280px" },
       },
+      backgroundImage: {
+        "beneficies": "url('/image/beneficies.png')",
+      },
     },
   },
 };

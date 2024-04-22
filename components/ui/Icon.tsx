@@ -55,7 +55,9 @@ export type AvailableIcons =
   | "Banner-arrow-left"
   | "Banner-arrow-right"
   | "ArrowMoreInfor"
-  | "Quotes";
+  | "Quotes"
+  | "Check"
+  | "Ellipse";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**

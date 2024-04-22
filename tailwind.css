@@ -873,7 +873,40 @@
     background: linear-gradient(161deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.05) 101.7%);
     backdrop-filter: blur(17.915000915527344px);
   }
+
+  .n1-custom-card-benefits{
+    border-radius: var(--radius-lager, 20px);
+    background: linear-gradient(161deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.05) 101.7%);
+    box-shadow: 0px 20.64px 30px 0px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(17px);
+  }
+
+  .n1-custom-card-sliderCards{
+    background: linear-gradient(161deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.05) 101.7%);
+    backdrop-filter: blur(17px);
+  }
+
+  .n1-custom-color-gradient{
+    background: radial-gradient(105.4% 101.68% at 89.06% 88.91%, #F6AB00 43.01%, #0C1F59 88.98%);
+  }
+
+  .n1-custom-color-gradient-blue{
+    background: radial-gradient(105.4% 101.68% at 89.06% 88.91%, #3CCBDA 43.01%, #0C1F59 88.98%);
+  }
   
+  .n1-custom-bg-img{
+    background: linear-gradient(0deg, #0B1227 0%, rgba(11, 18, 39, 0.31) 13.89%), linear-gradient(180deg, #0B1227 0%, rgba(0, 0, 0, 0.00) 79.78%), url("image/beneficies.png") lightgray 50% / cover no-repeat;
+  }
+
+  .n1-custom-bg-img-2{
+    background: linear-gradient(0deg, #0B1227 0%, rgba(11, 18, 39, 0.31) 13.89%), linear-gradient(180deg, #0B1227 0%, rgba(0, 0, 0, 0.00) 79.78%), url("image/beneficies-2.png") lightgray 50% / cover no-repeat;
+  }
+
+  @media screen and (min-width: 640px){
+    .n1-custom-bg-img{
+      background:transparent ;
+    }
+  }
 }
 
 .group:disabled .group-disabled\:animate-progress {
