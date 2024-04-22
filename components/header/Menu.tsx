@@ -34,7 +34,7 @@ function MenuItem({ item }: PropsMenuItem) {
           class={clx(
             `${
               existsChildren ? "is-children" : ""
-            } collapse-title mobile:font-black n1-menu-mobile__title flex items-center justify-between`,
+            } collapse-title text-[#646363] mobile:font-black n1-menu-mobile__title flex items-center justify-between`,
           )}
         >
           {item.name}
