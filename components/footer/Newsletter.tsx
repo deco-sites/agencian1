@@ -157,7 +157,7 @@ function Newsletter(
           class="form-control"
           onSubmit={handleSubmit}
         >
-          <div class="grid grid-cols-2-auto gap-[18px] gap-y-[10px]">
+          <div class="grid grid-cols-[1fr_auto] gap-[18px] gap-y-[10px]">
             <input
               onBlur={handleOnBlur}
               onChange={handleOnChange}
@@ -165,8 +165,8 @@ function Newsletter(
               name="email"
               type="email"
               class={clx(
-                `n1-input--error bg-[#ffffff] flex-auto md:flex-none input input-bordered md:w-[273px] bg-white text-base-content font-noto-sans 
-                rounded-[90px] text-14 n1-text-base-400`,
+                `md:w-full n1-input--error bg-[#ffffff] flex-auto md:flex-none input input-bordered 
+                 bg-white text-base-content font-noto-sans rounded-[90px] text-14 n1-text-base-400`,
               )}
               placeholder={content?.form?.placeholder || "Digite seu email"}
             />

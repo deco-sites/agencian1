@@ -400,58 +400,78 @@
     -webkit-box-orient: vertical;    
   }
 
-  .n1-mosaic__link.is-primary a{
+  .n1-mosaic__link.is-primary button{
     background-color: transparent !important;
     border: 1px solid #ffffff;
   } 
 
-  .n1-mosaic__link.is-primary a span{
+  .n1-mosaic__link.is-primary button span{
     color: #ffffff !important;
   }  
 
-  .n1-mosaic__link.is-primary a div path:nth-of-type(1){
+  .n1-mosaic__link.is-primary button div path:nth-of-type(1){
     fill: transparent !important;
   }  
 
-  .n1-mosaic__link.is-primary a div path:nth-of-type(2){
+  .n1-mosaic__link.is-primary button div path:nth-of-type(2){
     fill: #ffffff !important;
   }
 
-  .n1-mosaic.is-top .n1-mosaic__link a{
+  .n1-mosaic.is-top .n1-mosaic__link button{
     background-color: #fff !important;
   }
 
-  .n1-mosaic.is-top .n1-mosaic__link a span{
-    color: #0B1227 !important;
+  .n1-mosaic.is-top .n1-mosaic__link button span{
+    @apply !text-primary;
   }
 
-  .n1-mosaic.is-top .n1-mosaic__link a span ~ div svg path[clip-rule="evenodd"]{
-    fill:#0B1227 !important;
+  .n1-mosaic.is-top .n1-mosaic__link button span ~ div svg path[clip-rule="evenodd"]{
+    @apply !fill-primary;
   }
 
-  .n1-mosaic.is-top .n1-mosaic__link a span ~ div svg path:not([clip-rule="evenodd"]){
+  .n1-mosaic.is-top .n1-mosaic__link button span ~ div svg path:not([clip-rule="evenodd"]){
     fill:#F3F4F7!important;
     transition: all .175s linear;
   }
 
-  .n1-mosaic.is-bottom .n1-mosaic__link.is-white a:hover span ~ div svg path:not([clip-rule="evenodd"]),
-  .n1-mosaic.is-top .n1-mosaic__link a:hover span ~ div svg path:not([clip-rule="evenodd"]){
+  .n1-mosaic.is-bottom .n1-mosaic__link.is-white button{
+    @apply border border-primary;
+  }
+
+  .n1-mosaic__link.is-white button:hover{
+    @apply bg-primary;
+    color: #fff;
+    transition: all .175s linear;
+  }
+
+  .n1-mosaic.is-bottom .n1-mosaic__link.is-white button:hover div svg path:not([clip-rule="evenodd"]){
+    @apply !fill-primary;
+    transition: all .175s linear;
+  }
+
+  .n1-mosaic.is-bottom .n1-mosaic__link.is-white button:hover div svg path[clip-rule="evenodd"]{
+    @apply !fill-[#F3F4F7];
+    transition: all .175s linear;
+  }
+
+  /* .n1-mosaic.is-bottom .n1-mosaic__link.is-white button:hover span ~ div svg path:not([clip-rule="evenodd"]), */
+  .n1-mosaic.is-top .n1-mosaic__link button:hover span ~ div svg path:not([clip-rule="evenodd"]){
     fill:#ffffff !important;
     transition: all .175s linear;
   } 
 
-  .n1-mosaic.is-bottom .n1-mosaic__link.is-primary a:hover{
+  .n1-mosaic.is-bottom .n1-mosaic__link.is-primary button:hover{
     background-color: #ffffff !important;
     transition: all .175s linear;
   }
 
-  .n1-mosaic.is-bottom .n1-mosaic__link.is-primary a:hover span{
-    color: #0B1227 !important;
+  .n1-mosaic.is-bottom .n1-mosaic__link.is-primary button:hover span{
+    @apply !text-primary;
     transition: all .175s linear;
   }
 
-  .n1-mosaic.is-bottom .n1-mosaic__link.is-primary a:hover span ~ div svg path[clip-rule="evenodd"]{
-    fill:#0B1227 !important;
+  .n1-mosaic.is-bottom .n1-mosaic__link.is-primary button:hover span ~ div svg path[clip-rule="evenodd"]{
+    @apply !fill-primary;
     transition: all .175s linear;
   }  
   
