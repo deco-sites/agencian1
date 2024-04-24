@@ -155,15 +155,6 @@
     top: 20px;    
   }
 
-  .n1-menu-mobile.collapse[open].collapse-arrow > .n1-menu-mobile__title.collapse-title:after, 
-  .collapse-open.collapse-arrow > .n1-menu-mobile__title.collapse-title:after, 
-  .n1-menu-mobile.collapse-arrow:focus:not(.collapse-close) > .n1-menu-mobile__title.collapse-title:after, 
-  .n1-menu-mobile.collapse-arrow:not(.collapse-close) > input[type="checkbox"]:checked ~ .n1-menu-mobile__title.collapse-title:after, 
-  .n1-menu-mobile.collapse-arrow:not(.collapse-close) > input[type="radio"]:checked ~ .n1-menu-mobile__title.collapse-title:after{
-    width: 10px;
-    height: 2px;
-    transform: rotate(0);
-  }
 
   .n1-menu-mobile__title{
     padding: 13px 15px 13px 20px !important;
@@ -789,7 +780,7 @@
   @media (max-width: 768px){
     .n1-banner-btn__dot:disabled .n1-banner-btn__dot--item{@apply w-20}
 
-    .animation-section-brand{animation: slide 20s linear infinite;}
+    .animation-section-brand{animation: slide 60s linear infinite;}
 
     .n1-menu-mobile__whatsapp a{width:100%}
 
@@ -818,7 +809,11 @@
       left: 60px;
       bottom: -40px;
       position: relative;    
-    }    
+    }  
+    
+    .n1-typing .text-animation--typing.is-active{
+      animation: typingText 6s steps(26, end) alternate infinite, blinkBorder .75s step-end infinite;
+    }
 
     .n1-footer__overlay--bottom-left{
       transform: rotate(90deg);

@@ -48,7 +48,7 @@ function CasesComponentMobile({ settingsImage }: Props) {
         class="n1-cases-card__mobile tablet:mt-[64px] tablet:max-w-full tablet:w-full tablet:grid tablet:col-[1_/_2_span]"
         id={id}
       >
-        <Slider class="n1-cases-card__carousel carousel carousel-center w-full flex py-[0] tablet:w-full gap-x-[11px] tablet:gap-x-[18px]">
+        <Slider class="n1-cases-card__carousel carousel carousel-center mobile:h-[380px] w-full flex py-[0] tablet:w-full gap-x-[11px] tablet:gap-x-[18px]">
           {settingsImage && settingsImage.length > 1 && settingsImage.map(({
             alt,
             href,

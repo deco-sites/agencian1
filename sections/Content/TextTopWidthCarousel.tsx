@@ -42,6 +42,13 @@ export interface ImageCarousel {
   alt?: string;
 }
 
+interface MobileMargin{
+  /**@title Margem superior */  
+  top?:number;
+  /**@title Margem inferior */    
+  bottom?:number;
+}
+
 export interface Props {
   /**@title Título  */
   /**@format html  */
@@ -63,7 +70,10 @@ export interface Props {
   /** @title Mostrar pontos */
   /** @description (mostre pontos para navegar pelas imagens) */
   dots?: boolean;
+  /** @title Mobile Margem */
+  mobileMargin?:MobileMargin;
 }
+
 
 function ImageCarouselItem(
   { image, lcp, id }: { image: ImageCarousel; lcp?: boolean; id: string },
@@ -81,7 +91,8 @@ function ImageCarouselItem(
         }}
         id={id}
         aria-label={settingsInfo?.name}
-        class="n1-text-top-width-carousel__link relative overflow-hidden w-full border border-[#3B5D5F] rounded-[20px] pt-[20px] pb-[40px] px-[20px]"
+        class={clx(`n1-text-top-width-carousel__link relative overflow-hidden w-full border border-[#3B5D5F] 
+          rounded-[20px] mobile:p-[20px] p-[20px] pb-[40px] px-[20px]`)}
       >
         <div class="n1-text-top-width-carousel__overlay absolute w-full h-full top-[0] left-[0] invisible opacity-0">
         </div>
@@ -110,6 +121,7 @@ function ImageCarouselItem(
             width={desktop?.width}
             height={desktop?.height}
             alt={alt}
+            class="mobile:-translate-x-[20px]"
           />
         </Picture>
 
@@ -212,7 +224,7 @@ function Dots({ images }: Props) {
 function Buttons() {
   return (
     <>
-      <div class="absolute w-full flex mobile:justify-center mobile:items-end justify-between h-full mobile:top-[60px] top-[0] items-center pb-[10px] md:-left-[10px]">
+      <div class="absolute w-full flex mobile:justify-center mobile:items-end justify-between h-full mobile:top-[68px] top-[0] items-center pb-[10px] md:-left-[10px]">
         <div class="flex items-center justify-start z-10 col-start-1 row-start-2 mobile:mr-[30px] -translate-x-[50px]">
           <Slider.PrevButton class="btn btn-circle bg-[#ffffff] w-[40px] !h-[40px]">
             <Icon
@@ -222,7 +234,7 @@ function Buttons() {
             />
           </Slider.PrevButton>
         </div>
-        <div class="flex items-center justify-end z-10 col-start-3 row-start-2 mobile:ml-[30px] translate-x-[50px]">
+        <div class="flex items-center justify-end z-10 col-start-3 row-start-2 mobile:-ml-[70px] translate-x-[50px]">
           <Slider.NextButton class="btn btn-circle bg-[#ffffff] w-[40px] !h-[40px]">
             <Icon
               size={18}
@@ -238,13 +250,18 @@ function Buttons() {
 
 function TextTopWidthCarousel(props: SectionProps<ReturnType<typeof loader>>) {
   const id = useId();
-  const { images, preload, title, text, device, addBar, addKeysInWords } =
+  const { images, preload, title, text, device, addBar, addKeysInWords, mobileMargin } =
     props;
 
   return (
     <>
       <div id={id} class="relative mobile:pb-[60px]">
-        <div class=" md:n1-container md:px-[120px] z-10 md:mb-[40px] relative">
+        <div 
+          class={`md:n1-container md:px-[120px] z-10 md:mb-[40px] relative`}
+          style={{
+            marginTop : `${mobileMargin && device === 'mobile' ? mobileMargin?.top + 'px' : "" }`,
+            marginBottom : `${mobileMargin && device === 'mobile' ? mobileMargin?.bottom + 'px' : "" }`
+          }}>
           <div class="mobile:my-[24px] mt-[120px] mb-[43px] text-[#ffffff] flex items-center justify-between">
             <div class="mobile:px-[20px]">
               {title && (
