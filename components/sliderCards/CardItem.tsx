@@ -12,10 +12,8 @@ export default function CardItem(
   } = image;
 
   return (
-    <a
+    <div
       id={id}
-      href={action?.href ?? "#"}
-      aria-label={action?.label}
       class="relative overflow-hidden w-[270px] h-[270px] rounded-[20px] shadow-[0px 20.64px 61.92px 0px rgba(0, 0, 0, 0.05)] "
     >
       <Picture preload={lcp}>
@@ -43,11 +41,11 @@ export default function CardItem(
 
       {action && (
         <div class="absolute bottom-0 left-0 right-0 sm:right-auto w-full flex items-center justify-center n1-custom-card-sliderCards z-10">
-          <span class="font-normal text-14 py-3 px-14 ">
+          <span class="font-normal text-14 py-3 px-14 text-[#fff]">
             {action.title}
           </span>
         </div>
       )}
-    </a>
+    </div>
   );
 }
