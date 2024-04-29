@@ -6,6 +6,7 @@ import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
 import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
 import * as $$$1 from "./loaders/List/Sections.tsx";
+import * as $$$2 from "./loaders/Sitemap/sitemap.ts";
 import * as $$$$$$0 from "./sections/Analytics/Schema.tsx";
 import * as $$$$$$1 from "./sections/Animation/Animation.tsx";
 import * as $$$$$$2 from "./sections/BannerWithTextColumn/BannerWithTextColumn.tsx";
@@ -86,6 +87,7 @@ const manifest = {
   "loaders": {
     "deco-sites/agencian1/loaders/Layouts/ProductCard.tsx": $$$0,
     "deco-sites/agencian1/loaders/List/Sections.tsx": $$$1,
+    "deco-sites/agencian1/loaders/Sitemap/sitemap.ts": $$$2,
   },
   "sections": {
     "deco-sites/agencian1/sections/Analytics/Schema.tsx": $$$$$$0,
