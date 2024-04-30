@@ -148,8 +148,6 @@ export default function BannerWithTextColumn({
   const {
     fontSize = "text-16",
     fontSizeMobile = "text-14",
-    fontSizeTitle = "text-[40px]",
-    fontSizeTitleMobile = "text-20",
   } = contentText || {};
   return (
     <div class="w-full relative">

@@ -113,7 +113,7 @@ export default function HeroFlats(
         textElement.classList.add("is-active");
         textElement.innerHTML = textArray[word];
 
-        if(modeTablet){
+        if (modeTablet) {
           setTimeout(typingWrite, 6000);
           setTimeout(() => {
             textElement.innerHTML = "";

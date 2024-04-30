@@ -655,47 +655,142 @@
     display: block;
   }
 
+  .n1-depositions__container:before{
+    content: "";
+    border: 1px solid #fff;
+    display: block;
+    position: absolute;
+    height: 125%;
+    left: -100px;
+    opacity: .1;    
+  }
 
+  .n1-depositions__eclipse{position: relative;}
+  
+  .n1-depositions__eclipse:before{
+    content: "";
+    width: 641.325px;
+    height: 641.325px;
+    transform: rotate(-15.911deg);
+    position: absolute;
+    right: -40px;
+    top: -163.536px;
+    border-radius: var(--radius-default, 641.325px);
+    opacity: 0.3;
+    filter: blur(82px);
+    background: radial-gradient(105.4% 101.68% at 89.06% 88.91%, #3CCBDA 43.01%, #0C1F59 88.98%);
+    z-index: -3;    
+  }
+
+  .n1-depositions__image[data-index="1"].is--disabled > picture{
+    opacity: .9;
+    transition: all .3s linear;
+  }
+
+  .n1-depositions__image.is--opacity-7 > picture{
+    opacity: .7;
+    transition: all .3s linear;
+  }
+
+  .n1-depositions__image[data-index="2"].is--disabled > picture{
+    opacity: .3;
+    transition: all .3s linear;
+  }
+
+  .n1-depositions__image.is--zindex-1{
+    z-index: 1;
+    transition: all .3s linear;
+  }
+
+  .n1-depositions__image.is--zindex-2{
+    z-index: 2;
+    transition: all .3s linear;
+  }
+
+  .n1-depositions__image.is--active > picture{
+    opacity: 1 !important;
+    transition: all .3s linear;
+  }
+
+  .is-keys-custom,
   .is-bar-custom{display: ruby !important;}
+
   .n1-header__navlink-children-title.is-bar-custom{display: flex !important;}
 
-  .is-keys-custom{display: ruby !important;}
+  .is-tag-custom > *:before,
+  .is-tag-custom > *:after,
+  .is-keys-custom > *:after,
+  .is-keys-custom > *:before,
+  .is-bar-custom > *:before{
+    line-height: normal;
+    font-weight: 900;
+    @apply text-secondary;
+  }
+
+  .is-keysInIcons-custom:after,
+  .is-keysInIcons-custom:before{
+    line-height: normal;
+    font-weight: 900;
+    @apply text-secondary;
+  }
 
   .is-bar-custom > *:before{
     content: "/";
-    line-height: normal;
-    font-weight: 900;
-    @apply text-secondary;
-  }
+  }  
 
-  .is-keysInIcons-custom:before{
-    content: "{";
-    line-height: normal;
-    font-weight: 900;
-    @apply text-secondary;
-  }
-  
-  .is-keysInIcons-custom:after{
-    content: "}";
-    line-height: normal;
-    font-weight: 900;
-    @apply text-secondary;
-  }
-  
   .is-keys-custom > *:before{
     content: "{";
-    line-height: normal;
-    font-weight: 900;
-    @apply text-secondary;
   }
 
   .is-keys-custom > *:after{
     content: "}";
-    line-height: normal;
-    font-weight: 900;
-    @apply text-secondary;
+  }  
+
+  .is-tag-custom > *:before{
+    content: "<";
   }
- 
+
+  .is-tag-custom > *:after{
+    content: "/>";
+  }    
+
+  .is-keysInIcons-custom:before{
+    content: "{";
+  }
+  
+  .is-keysInIcons-custom:after{
+    content: "}";
+  }
+
+  @media(min-width: 1040px) and (max-width: 1196px){
+    .n1-conclusion-area__text-container{
+      row-gap: 5px !important;
+    }
+  }
+
+  @media(min-width: 1537px){
+    .n1-depositions__eclipse:before{
+      right: -270px;
+    }  
+  }
+
+  @media(max-width: 1280px){
+    .n1-depositions{padding-bottom: 80px;}
+  }
+
+  @media (max-width: 1040px){
+    .n1-conclusion-area__image{
+      @apply  mobile:-top-[90px] mobile:-right-[60%];
+    }
+  }
+
+  @media(min-width: 768px) and (max-width: 1024px){
+    .n1-conclusion-area__text{width: 50% !important;}
+  }
+
+  @media(min-width: 662px) and (max-width: 768px){
+    .n1-conclusion-area__text{width: 80% !important;}
+  } 
 
   @media(min-width: 1024px){
     .n1-text-icon-image__container.is-active:after{
@@ -754,6 +849,11 @@
     }    
     .n1-cases-card__tags{grid-template-columns: repeat(3,auto) !important;}
     .n1-text-width-custom__title{width: 90% !important;}
+    .n1-conclusion__bg-image{
+      height: 456px;
+    }
+    /* .n1-conclusion-area__text{width: 91% !important;} */
+    .n1-conclusion-area__text-container{width: 91% !important;}
   }
 
   @media (max-width: 320px){
@@ -774,6 +874,10 @@
     .n1-cases-card__item{width:95% !important;}
 
     .n1-cases-card__tags{grid-template-columns: repeat(4,1fr) !important;}
+
+    .n1-conclusion-area__text{
+      width: 70% !important;
+    }    
 
   }
 
@@ -843,7 +947,9 @@
       right: initial;
       left: -10px;
       bottom: 30px;      
-    }    
+    }  
+    
+    .n1-conclusion-area__image{top:84% !important;}
   }
 
   .n1-custon-container-buttons-service{

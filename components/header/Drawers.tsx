@@ -13,13 +13,13 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 
 const Menu = lazy(() => import("$store/components/header/Menu.tsx"));
 
-interface ImageGeneric{
+interface ImageGeneric {
   /**@title Imagem */
-  src?:ImageWidget;
-  /**@title Largura */  
-  width?:number;
-  /**@title Altura */  
-  height?:number;
+  src?: ImageWidget;
+  /**@title Largura */
+  width?: number;
+  /**@title Altura */
+  height?: number;
 }
 export interface Props {
   logoMobile?: LogoMobile;
@@ -31,9 +31,9 @@ export interface Props {
   platform: ReturnType<typeof usePlatform>;
   selectedLanguage?: string;
   /**@title Logo do menu mobile */
-  drawer?:ImageGeneric;
-    /**@title Nome da imagem */
-  alt?:string;
+  drawer?: ImageGeneric;
+  /**@title Nome da imagem */
+  alt?: string;
 }
 
 interface PropsAside {
@@ -41,9 +41,9 @@ interface PropsAside {
   onClose?: () => void;
   children: ComponentChildren;
   /**@title Logo do menu mobile */
-  drawer?:ImageGeneric;
+  drawer?: ImageGeneric;
   /**@title Nome da imagem */
-  alt?:string;
+  alt?: string;
   whatsapp?: string;
 }
 

@@ -119,7 +119,7 @@ function CasesComponentMobile({ settingsImage }: Props) {
                             <div
                               class={clx(
                                 `n1-cases-card__tags grid grid-cols-[repeat(3,1fr)] tablet:grid-cols-[repeat(2,1fr)] 
-                                                            grid-rows-[repeat(2,_1fr)] justify-between gap-x-[4px] gap-y-[3px] mt-[30px]`,
+                                 grid-rows-[repeat(2,_1fr)] justify-between gap-x-[4px] gap-y-[3px] mt-[30px] mobile:mt-[15px]`,
                               )}
                             >
                               {tagProps && tagProps.length > 1 &&

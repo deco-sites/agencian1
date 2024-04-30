@@ -10,42 +10,41 @@ import { headerHeight } from "./constants.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 
-interface ImageGeneric{
+interface ImageGeneric {
   /**@title Imagem */
-  src?:ImageWidget;
-  /**@title Largura */  
-  width?:number;
-  /**@title Altura */  
-  height?:number;
+  src?: ImageWidget;
+  /**@title Largura */
+  width?: number;
+  /**@title Altura */
+  height?: number;
 }
 
 interface Props {
-  /**@title Items */    
+  /**@title Items */
   items: SiteNavigationElement[];
   /**
    * @title Logo
    * @description (Desktop)
-   */   
+   */
   desktop?: ImageGeneric;
   /**
    * @title Logo
    * @description (Mobile)
-   */   
+   */
   mobile?: ImageGeneric;
   /**@title Nome da imagem */
-  alt?:string;
-  /**@title Botões */    
+  alt?: string;
+  /**@title Botões */
   buttons?: Buttons;
-  /**@title Posição do logo */    
+  /**@title Posição do logo */
   logoPosition?: "left" | "center";
   nameItemScape?: string;
-  /**@title Texto do Botão */    
+  /**@title Texto do Botão */
   btnTextMenu?: string;
-  /**@title Link */    
+  /**@title Link */
   btnUrlMenu?: string;
   selectedLanguage?: string;
 }
-
 
 function Navbar({
   items,
@@ -75,7 +74,6 @@ function Navbar({
             style={{ minHeight: navbarHeight }}
             aria-label="Store logo"
           >
-
             <Picture>
               {mobile.src && mobile?.width && mobile?.height && (
                 <Source
@@ -143,42 +141,41 @@ function Navbar({
           }`}
         >
           {desktop?.src && mobile?.src && (
-          <a
-            href="/"
-            class="flex-grow inline-flex items-center justify-center mobile:ml-[22px]"
-            style={{ minHeight: navbarHeight }}
-            aria-label="Store logo"
-          >
-
-            <Picture>
-              {mobile.src && mobile?.width && mobile?.height && (
-                <Source
-                  media="(max-width: 767px)"
-                  src={mobile.src}
-                  width={mobile.width}
-                  height={mobile.height}
-                />
-              )}
-              {desktop.src && desktop?.width && desktop?.height &&
-                (
+            <a
+              href="/"
+              class="flex-grow inline-flex items-center justify-center mobile:ml-[22px]"
+              style={{ minHeight: navbarHeight }}
+              aria-label="Store logo"
+            >
+              <Picture>
+                {mobile.src && mobile?.width && mobile?.height && (
                   <Source
-                    media="(min-width: 768px)"
-                    src={desktop.src}
-                    width={desktop.width}
-                    height={desktop.height}
+                    media="(max-width: 767px)"
+                    src={mobile.src}
+                    width={mobile.width}
+                    height={mobile.height}
                   />
                 )}
+                {desktop.src && desktop?.width && desktop?.height &&
+                  (
+                    <Source
+                      media="(min-width: 768px)"
+                      src={desktop.src}
+                      width={desktop.width}
+                      height={desktop.height}
+                    />
+                  )}
 
-              <img
-                src={desktop.src}
-                loading={"lazy"}
-                width={desktop?.width}
-                height={desktop?.height}
-                alt={alt}
-              />
-            </Picture>
-          </a>
-        )}
+                <img
+                  src={desktop.src}
+                  loading={"lazy"}
+                  width={desktop?.width}
+                  height={desktop?.height}
+                  alt={alt}
+                />
+              </Picture>
+            </a>
+          )}
         </div>
         <div class="hidden flex-none items-center justify-end gap-6 col-span-1">
           {!buttons?.hideAccountButton && (
