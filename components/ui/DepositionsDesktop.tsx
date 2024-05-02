@@ -188,7 +188,7 @@ function DepositionsDesktop({ depositionAndImage }: Props) {
           {depositionAndImage && depositionAndImage?.length > 0 &&
             depositionAndImage.map((item, index) => {
               return (
-                <>
+                <> 
                   <div
                     class={clx(`
                                         ${
