@@ -193,7 +193,7 @@ function DepositionsDesktop({ depositionAndImage }: Props) {
                     class={clx(`
                                         ${
                       index === 1
-                        ? "mt-[200px]"
+                        ? "mt-[200px]" 
                         : index === 2
                         ? "mt-[200px]"
                         : ""
