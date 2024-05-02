@@ -53,8 +53,7 @@ function CasesComponentTextWithButton(
       {textButton && (
         <div
           class={clx(
-            `mobile:mt-[15px] mobile:mb-[20px] mobile:order-3 mobile:justify-start 
-                    col-[2] flex items-center justify-end md:w-[90%] my-0 md:mx-auto`,
+            `mobile:order-3 mobile:justify-start col-[2] flex items-center justify-end md:w-[90%] my-0 md:mx-auto`,
           )}
         >
           <LinkWithOptionArrow

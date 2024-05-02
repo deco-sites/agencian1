@@ -35,7 +35,6 @@ function Legend({ nameItemScape, mobile, selectedLanguage }: Props) {
            md:hover:text-secondary is-${nameItemScape}`,
         )}
       >
-
         <img
           class="hidden md:flex w-[36px] h-[24px] min-w-[36px]"
           src={`/image/header-item-menu-${selectedLanguage}.png`}
@@ -43,14 +42,16 @@ function Legend({ nameItemScape, mobile, selectedLanguage }: Props) {
         />
 
         {selectedLanguage && (
-          idioma?.map(( i )=>{
-            return(
+          idioma?.map((i) => {
+            return (
               <>
-                <span class={`mobile:ml-[10px] mobile:flex hidden text-14 font-archimoto-medium text-accent-content`}>
+                <span
+                  class={`mobile:ml-[10px] mobile:flex hidden text-14 font-archimoto-medium text-accent-content`}
+                >
                   {i[selectedLanguage as keyof typeof i]}
                 </span>
               </>
-            )
+            );
           })
         )}
         <ul
@@ -65,7 +66,7 @@ function Legend({ nameItemScape, mobile, selectedLanguage }: Props) {
             {legend.map(({ language, code }) => {
               return (
                 <>
-                  <a                    
+                  <a
                     onClick={() => handleOnClick(code)}
                     class={clx(
                       `mobile:px-0 mobile:py-0 mobile:mx-0 mobile:my-0 flex items-center capitalize rounded-[10px] cursor-pointer

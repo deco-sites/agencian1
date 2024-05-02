@@ -48,26 +48,27 @@ export default function BenefitsList(
         )}
 
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
-          {lists.map((list, index) => (
-            <div class="flex justify-center items-center gap-5 n1-custom-card-benefits py-4 px-4">
-              <div class="flex justify-center items-center gap-4 w-full max-x-[285px]">
-                <div class="w-9 h-9">
-                  <Icon
-                    id="Check"
-                    size={36}
-                    strokeWidth={2}
-                    class=" text-center"
-                  />
-                </div>
+          {lists && lists?.length > 0 &&
+            lists.map((list, index) => (
+              <div class="flex justify-center items-center gap-5 n1-custom-card-benefits py-4 px-4">
+                <div class="flex justify-center items-center gap-4 w-full max-x-[285px]">
+                  <div class="w-9 h-9">
+                    <Icon
+                      id="Check"
+                      size={36}
+                      strokeWidth={2}
+                      class=" text-center"
+                    />
+                  </div>
 
-                <div
-                  class="text-14 text-[#F3F4f7] font-normal font-noto-sans !leading-[140%]"
-                  dangerouslySetInnerHTML={{ __html: list.description }}
-                >
+                  <div
+                    class="text-14 text-[#F3F4f7] font-normal font-noto-sans !leading-[140%]"
+                    dangerouslySetInnerHTML={{ __html: list.description }}
+                  >
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
         </div>
 
         {icon && (

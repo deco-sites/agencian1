@@ -20,16 +20,22 @@ interface PropsImage {
   alt?: string;
   /**@title link */
   href?: string;
-  /**@title Largura do logo */
-  /**@description (ex: 300) */
+  /**
+   * @title Largura do logo
+   * @description (ex: 300)
+   */
   widthLogo?: number;
-  /**@title Altura do logo */
-  /**@description (ex: 300) */
+  /**
+   * @title Altura do logo
+   * @description (ex: 300)
+   */
   heightLogo?: number;
   /**@title Imagem de fundo*/
   imageBackground?: ImageWidget;
-  /**@title Largura da imagem de fundo */
-  /**@description (ex: 300) */
+  /**
+   * @title Largura da imagem de fundo
+   * @description (ex: 300)
+   */
   widthImageBackground?: number;
   /**@title Altura da imagem de fundo */
   /**@description (ex: 300) */
@@ -47,25 +53,40 @@ interface PropsImage {
   imageLogoHover?: ImageWidget;
   /**@title Logo (efeito hover) Mobile*/
   imageLogoMobileHover?: ImageWidget;
-  /**@title Largura do logo (efeito hover) */
-  /**@description (ex: 300) */
+  /**
+   * @title Largura do logo (efeito hover)
+   * @description (ex: 300)
+   */
   widthLogoHover?: number;
-  /**@title Altura do logo (efeito hover)*/
-  /**@description (ex: 300) */
+  /**
+   * @title Altura do logo (efeito hover)
+   * @description (ex: 300)
+   */
   heightLogoHover?: number;
   /**@title Imagem de fundo (efeito hover)*/
   imageBackgroundHover?: ImageWidget;
-  /**@title Largura da imagem de fundo (efeito hover) */
-  /**@description (ex: 300) */
+  /**
+   * @title Largura da imagem de fundo (efeito hover)
+   * @description (ex: 300)
+   */
   widthImageBackgroundHover?: number;
-  /**@title Altura da imagem de fundo (efeito hover) */
-  /**@description (ex: 300) */
+  /**
+   * @title Altura da imagem de fundo (efeito hover)
+   * @description (ex: 300)
+   */
   heightImageBackgroundHover?: number;
   /**@title Ícone (efeito hover)*/
   iconHover?: ImageWidget;
   /**@title Tags (efeito hover)*/
   /** @maxItems 6 */
   tagProps?: TagProps[];
+}
+
+interface MarginProps {
+  /** @title Margem superior */
+  top?: number;
+  /** @title Margem inferior */
+  bottom?: number;
 }
 
 interface Props {
@@ -84,17 +105,28 @@ interface Props {
   hrefButton?: string;
   /**@title Ativar icon arrow no link  */
   activeArrow?: boolean;
-  /** @description Configuração das imagens */
-  /** @maxItems 5 */
+  /**
+   * @description Configuração das imagens *
+   * @maxItems 5
+   */
   settingsImage?: PropsImage[];
   /**@title Imagem de fundo da seção  */
   imageBackgroundSection?: ImageWidget;
-  /**@title Largura da imagem de fundo da seção  */
-  /** @description (ex: 235) */
+  /**
+   * @title Largura da imagem de fundo da seção
+   * @description (ex: 235)
+   */
   widthBackgroundSection?: number;
-  /**@title Altura da imagem de fundo da seção  */
-  /** @description (ex: 396) */
+  /**
+   * @title Altura da imagem de fundo da seção
+   * @description (ex: 396)
+   */
   heightBackgroundSection?: number;
+  /**
+   * @title Margem
+   * @description (Mobile)
+   */
+  margin?: MarginProps;
 }
 
 function CasesComponent(props: SectionProps<ReturnType<typeof loader>>) {
@@ -111,11 +143,22 @@ function CasesComponent(props: SectionProps<ReturnType<typeof loader>>) {
     heightBackgroundSection,
     addBar,
     addKeysInWords,
+    margin,
   } = props;
 
   return (
     <>
-      <div class="n1-cases mobile:px-[20px] md:mt-[120px] relative z-1 overflow-hidden">
+      <div
+        class={`n1-cases mobile:px-[20px] md:mt-[120px] relative z-1 overflow-hidden`}
+        style={{
+          marginTop: device === "mobile" && margin?.top
+            ? margin?.top + "px"
+            : "",
+          marginBottom: device === "mobile" && margin?.bottom
+            ? margin?.bottom + "px"
+            : "",
+        }}
+      >
         {imageBackgroundSection && (
           <div class="hidden md:flex absolute top-0 left-0 w-full h-full">
             <div class="absolute bottom-0 left-0">

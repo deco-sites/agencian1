@@ -14,6 +14,7 @@ import * as $AddToCartButton_wake from "./islands/AddToCartButton/wake.tsx";
 import * as $BlueBallAnimation from "./islands/BlueBallAnimation.tsx";
 import * as $CasesComponent from "./islands/CasesComponent.tsx";
 import * as $ContactForm from "./islands/ContactForm.tsx";
+import * as $Depositions from "./islands/Depositions.tsx";
 import * as $Header_Buttons from "./islands/Header/Buttons.tsx";
 import * as $Header_Cart_linx from "./islands/Header/Cart/linx.tsx";
 import * as $Header_Cart_nuvemshop from "./islands/Header/Cart/nuvemshop.tsx";
@@ -51,6 +52,7 @@ const manifest = {
     "./islands/BlueBallAnimation.tsx": $BlueBallAnimation,
     "./islands/CasesComponent.tsx": $CasesComponent,
     "./islands/ContactForm.tsx": $ContactForm,
+    "./islands/Depositions.tsx": $Depositions,
     "./islands/Header/Buttons.tsx": $Header_Buttons,
     "./islands/Header/Cart/linx.tsx": $Header_Cart_linx,
     "./islands/Header/Cart/nuvemshop.tsx": $Header_Cart_nuvemshop,

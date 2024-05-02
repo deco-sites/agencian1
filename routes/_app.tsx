@@ -48,6 +48,8 @@ export default defineApp(async (_req, ctx) => {
           as="font"
           type="font/woff2"
         />
+
+        <meta name="google-site-verification" content="RXo_-Kq6TnhZFx_OIGFu-SrAaYGB3S54mTxTrqZi9ho" />        
       </Head>
 
       {/* Rest of Preact tree */}

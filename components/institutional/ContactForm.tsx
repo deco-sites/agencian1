@@ -202,9 +202,25 @@ function ContactForm(
     }
   }
 
+  function snippetValidateRadio(target: EventTarget){
+    if (target && target instanceof HTMLInputElement){
+      const elementFatherofInput = target.closest('ul');
+      const allInputTypeData = elementFatherofInput && elementFatherofInput.querySelectorAll<HTMLInputElement>('input');
+      const spanErrorToRadio = elementFatherofInput && elementFatherofInput.closest('div')?.querySelector('ul ~ span');
+
+      allInputTypeData && allInputTypeData.length > 0 && Array.from(allInputTypeData).map(( input )=>{
+        input.classList.remove('add-border');
+      })
+
+      spanErrorToRadio?.classList.add('hidden');
+    } 
+  }  
+
   function validateAllField(target: HTMLFormElement) {
     if (!target) return;
-
+    
+    const spanErrorToRadio = target?.querySelector('ul ~ span');
+    const allInputTypeData = target?.querySelectorAll('ul li input');
     const temp: Array<unknown> = [];
     const Allfields = target?.querySelectorAll<HTMLElement>("input, textarea");
 
@@ -232,6 +248,18 @@ function ContactForm(
     ) {
       fieldsRequired = true;
     }
+
+    if(
+      !json["commercial"] && !json["others"] && !json["partnership"] 
+    ) {
+      spanErrorToRadio?.classList.remove('hidden');
+      allInputTypeData && allInputTypeData?.length > 0 && Array.from(allInputTypeData).map(( input )=>{
+        input.classList.add('add-border')
+      })
+
+      return false;
+    }  
+
 
     if (fieldsRequired) {
       return Object.fromEntries(data);
@@ -321,7 +349,14 @@ function ContactForm(
 
   function handleChange(e: Event) {
     const { target } = e;
+    
     if (!target) return;
+
+    if( e.type === 'click'){
+      snippetValidateRadio( target )
+      return
+    }
+
     if (
       target &&
       (target instanceof HTMLInputElement ||
@@ -366,68 +401,74 @@ function ContactForm(
                   </h3>
                 )}
 
-                <ul class="flex gap-[30px]">
-                  {/* Comercial*/}
-                  {fieldsForm?.commercial && (
-                    <li class="flex flex-row gap-[8px] lg:flex-row items-center">
-                      <input
-                        name={"type-contact"}
-                        type={"radio"}
-                        id={"commercial"}
-                        class={clx(
-                          `n1-radio-custom checked:is-active relative appearance-none rounded-[10px] 
-                          bg-transparent w-[32px] h-[32px] border-2 border-[#F3F4F7] outline-none`,
-                        )}
-                      />
-                      <LabelForm
-                        _class={`${displayModalForm.value} teste-n1 font-normal text-[#ffffff] text-14 leading-[21px] font-noto-sans`}
-                        nameAttr={"commercial"}
-                      >
-                        {fieldsForm.commercial}
-                      </LabelForm>
-                    </li>
-                  )}
-                  {/* Parceria*/}
-                  {fieldsForm?.partnership && (
-                    <li class="flex flex-row gap-[8px] lg:flex-row items-center">
-                      <input
-                        name={"type-contact"}
-                        type={"radio"}
-                        id={"partnership"}
-                        class={clx(
-                          `n1-radio-custom checked:is-active relative appearance-none rounded-[10px] 
-                          bg-transparent w-[32px] h-[32px] border-2 border-[#F3F4F7] outline-none`,
-                        )}
-                      />
-                      <LabelForm
-                        _class={`font-normal text-[#ffffff] text-14 leading-[21px] font-noto-sans`}
-                        nameAttr={"partnership"}
-                      >
-                        {fieldsForm?.partnership}
-                      </LabelForm>
-                    </li>
-                  )}
-                  {/* Outros*/}
-                  {fieldsForm?.others && (
-                    <li class="flex flex-row gap-[8px] lg:flex-row items-center">
-                      <input
-                        name={"type-contact"}
-                        type={"radio"}
-                        id={"others"}
-                        class={clx(
-                          `n1-radio-custom checked:is-active relative appearance-none rounded-[10px] 
-                          bg-transparent w-[32px] h-[32px] border-2 border-[#F3F4F7] outline-none`,
-                        )}
-                      />
-                      <LabelForm
-                        _class={`font-normal text-[#ffffff] text-14 leading-[21px] font-noto-sans`}
-                        nameAttr={"others"}
-                      >
-                        {fieldsForm.others}
-                      </LabelForm>
-                    </li>
-                  )}
-                </ul>
+                <div>
+                  <ul class="flex gap-[30px] mb-2.5">
+                    {/* Comercial*/}
+                    {fieldsForm?.commercial && (
+                      <li class="flex flex-row gap-[8px] lg:flex-row items-center">
+                        <input
+                          onClick={handleChange}
+                          name={"type-contact"}
+                          type={"radio"}
+                          id={"commercial"}
+                          class={clx(
+                            `n1-input--radio-error n1-radio-custom checked:is-active relative appearance-none rounded-[10px] 
+                            bg-transparent w-[32px] h-[32px] border-2 border-[#F3F4F7] outline-none`,
+                          )}
+                        />
+                        <LabelForm
+                          _class={`${displayModalForm.value} teste-n1 font-normal text-[#ffffff] text-14 leading-[21px] font-noto-sans`}
+                          nameAttr={"commercial"}
+                        >
+                          {fieldsForm.commercial}
+                        </LabelForm>
+                      </li>
+                    )}
+                    {/* Parceria*/}
+                    {fieldsForm?.partnership && (
+                      <li class="flex flex-row gap-[8px] lg:flex-row items-center">
+                        <input
+                          onClick={handleChange}
+                          name={"type-contact"}
+                          type={"radio"}
+                          id={"partnership"}
+                          class={clx(
+                            `n1-input--radio-error n1-radio-custom checked:is-active relative appearance-none rounded-[10px] 
+                            bg-transparent w-[32px] h-[32px] border-2 border-[#F3F4F7] outline-none`,
+                          )}
+                        />
+                        <LabelForm
+                          _class={`font-normal text-[#ffffff] text-14 leading-[21px] font-noto-sans`}
+                          nameAttr={"partnership"}
+                        >
+                          {fieldsForm?.partnership}
+                        </LabelForm>
+                      </li>
+                    )}
+                    {/* Outros*/}
+                    {fieldsForm?.others && (
+                      <li class="flex flex-row gap-[8px] lg:flex-row items-center">
+                        <input
+                          onClick={handleChange}                        
+                          name={"type-contact"}
+                          type={"radio"}
+                          id={"others"}
+                          class={clx(
+                            `n1-input--radio-error n1-radio-custom checked:is-active relative appearance-none rounded-[10px] 
+                            bg-transparent w-[32px] h-[32px] border-2 border-[#F3F4F7] outline-none`,
+                          )}
+                        />
+                        <LabelForm
+                          _class={`font-normal text-[#ffffff] text-14 leading-[21px] font-noto-sans`}
+                          nameAttr={"others"}
+                        >
+                          {fieldsForm.others}
+                        </LabelForm>
+                      </li>
+                    )}
+                  </ul>
+                  <span class="hidden text-error text-[12px] leading-[15.6px]">Selecione um dos campos acima</span>
+                </div>
               </div>
               {/* TIPO DE CONTATO __________________________________________________________________________| FINAL | */}
 

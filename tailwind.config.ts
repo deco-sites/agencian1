@@ -15,10 +15,10 @@ export default {
     fontFamily: {
       "montserrat": "Montserrat",
       "noto-sans": "Noto Sans",
-      "archimoto-thin": "ArchimotoN1-Thin",
-      "archimoto-regular": "ArchimotoN1-Regular",
-      "archimoto-medium": "ArchimotoV01-Medium",
-      "archimoto-black": "ArchimotoN1-Black",
+      "archimoto-thin": ["ArchimotoN1-Thin", "Montserrat"],
+      "archimoto-regular": ["ArchimotoN1-Regular", "Montserrat"],
+      "archimoto-medium": ["ArchimotoV01-Medium", "Montserrat"],
+      "archimoto-black": ["ArchimotoN1-Black", "Montserrat"],
     },
     fontSize: {
       12: ["12px", "22.4px"],
@@ -32,6 +32,7 @@ export default {
       24: ["24px", "28.8px"],
       25: ["25px", "30px"],
       27: ["27px", "32.4px"],
+      28: ["28px", "42px"],
       30: ["30px", "36px"],
       32: ["32px", "38.4px"],
       34: ["34px", "41.34px"],

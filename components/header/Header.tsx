@@ -50,13 +50,13 @@ export interface PropsChildren extends SiteNavigationElement {
   activePropsButton?: boolean;
 }
 
-interface ImageGeneric{
+interface ImageGeneric {
   /**@title Imagem */
-  src?:ImageWidget;
-  /**@title Largura */  
-  width?:number;
-  /**@title Altura */  
-  height?:number;
+  src?: ImageWidget;
+  /**@title Largura */
+  width?: number;
+  /**@title Altura */
+  height?: number;
 }
 
 export interface Props {
@@ -69,21 +69,21 @@ export interface Props {
   navItems?: PropsChildren[] | null;
 
   /**@title Logo do menu mobile */
-  drawer?:ImageGeneric;
+  drawer?: ImageGeneric;
 
   /**
    * @title Logo
    * @description (Desktop)
-   */   
+   */
   desktop?: ImageGeneric;
   /**
    * @title Logo
    * @description (Mobile)
-   */   
+   */
   mobile?: ImageGeneric;
   /**@title Nome da imagem */
-  alt?:string;
-  /**@title Posição do logo */ 
+  alt?: string;
+  /**@title Posição do logo */
   logoPosition?: "left" | "center";
 
   /** @title WhatsApp */

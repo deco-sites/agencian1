@@ -260,11 +260,11 @@ export default function ImageSection(
 
             {nameIcon && (
               <h3
-                class={`text-18 font-archimoto-medium font-normal 
+                class={clx(`text-18 font-archimoto-medium font-normal 
                   ${addKeysInIcons ? "is-keysInIcons-custom" : ""}
                   ${
                   keysInIconsColor ? KEYSINICONSCOLOR[keysInIconsColor] : ""
-                }`}
+                }`)}
               >
                 {nameIcon}
               </h3>
@@ -361,24 +361,26 @@ export default function ImageSection(
             {cta?.text && (
               <div class="md:mt-[20px]">
                 {cta?.colorLink && (
-                  <LinkWithOptionArrow
-                    text={cta.text}
-                    link={cta?.href}
-                    activeArrow={true}
-                    width={"140"}
-                    fontSize="14"
-                    margin={"0"}
-                  />
+                  <div class={clx(`n1-text-icon-and-image__button`)}>
+                    <LinkWithOptionArrow
+                      text={cta.text}
+                      link={cta?.href}
+                      activeArrow={true}
+                      width={"140"}
+                      fontSize="14"
+                      margin={"0"}
+                    />
+                  </div>
                 )}
-                {!cta?.colorLink && (
-                  <LinkWithOptionArrow
-                    text={cta.text}
-                    link={cta?.href}
-                    activeArrowService={true}
-                    width={"220"}
-                    fontSize="14"
-                    margin={"0"}
-                  />
+                {!cta?.colorLink && (                  
+                    <LinkWithOptionArrow
+                      text={cta.text}
+                      link={cta?.href}
+                      activeArrowService={true}
+                      width={"220"}
+                      fontSize="14"
+                      margin={"0"}
+                    />                  
                 )}
               </div>
             )}

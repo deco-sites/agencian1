@@ -15,7 +15,8 @@ export interface Props {
   /** @description spaçamento entre uma section e outra ex:10px*/
   marginBottom?: string;
 
-  backgroundImage?: ImageWidget;
+  /**@title ativar imagem de fundo (eclipse)? */
+  backgroundImage?: boolean;
 }
 
 export default function FeedbackSection({
@@ -71,15 +72,7 @@ export default function FeedbackSection({
       </div>
 
       {backgroundImage && (
-        <div class="absolute -bottom-[150px] left-0 z-0 hidden lg:block">
-          <Image
-            src={backgroundImage}
-            width={469}
-            height={469}
-            alt="backgroundImage"
-            loading="lazy"
-          />
-        </div>
+        <div class="n1-feedback__eclipse absolute lg:is--desk top-0 left-0 z-0 hidden lg:block"></div>
       )}
     </div>
   );
