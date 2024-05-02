@@ -75,63 +75,65 @@ interface Props {
    * @description (máximo de 3 itens)
    */
   depositionAndImage?: DepositionAndImage[];
+  /**@title Desabilitar seção? */
+  disabledSection?:boolean;
 }
 
 function Depositions(props: SectionProps<ReturnType<typeof loader>>) {
-  const { textPrincipal, depositionAndImage, device } = props;
+  const { textPrincipal, depositionAndImage, disabledSection, device } = props;
 
   const id = useId();
 
-  console.log("device ----> ", device);
-
   return (
     <>
-      <div
-        class={`n1-depositions my-[80px] lg:my-[120px] lg:n1-container lg:px-[120px] lg:mx-auto text-[#ffffff] relative`}
-        id={id}
-      >
-        <div>
-          <div
-            class={clx(`mobile:px-[20px]`)}
-          >
-            {textPrincipal?.title && (
-              <div
-                class={clx(`
-                                ${
-                  textPrincipal?.addKeysInWords
-                    ? "is-keys-custom"
-                    : textPrincipal?.addBar
-                    ? "is-bar-custom"
-                    : textPrincipal?.addIconTagInWords
-                    ? "is-tag-custom"
-                    : ""
-                }
-                                xl:[&_*]:text-[56px] xl:text-[56px] xl:[&_*]:leading-[61.6px] [&_*]:font-black font-archimoto-medium
-                                mobile:[&_*]:text-32 text-32`)}
-                dangerouslySetInnerHTML={{ __html: textPrincipal?.title }}
-              >
-              </div>
-            )}
-            {textPrincipal?.description && (
-              <div
-                class={clx(`
-                                    xl:[&_*]:text-[20px] xl:text-[20px] xl:[&_*]:leading-[26px] font-noto-sans lg:mt-[16px]
-                                    mobile:[&_*]:text-[16px] text-[16px] mobile:[&_*]:leading-[20.8px] mobile:mt-[8px]`)}
-                dangerouslySetInnerHTML={{ __html: textPrincipal?.description }}
-              >
-              </div>
-            )}
+      {!disabledSection && (
+        <div
+          class={`n1-depositions my-[80px] lg:my-[120px] lg:n1-container lg:px-[120px] lg:mx-auto text-[#ffffff] relative`}
+          id={id}
+        >
+          <div>
+            <div
+              class={clx(`mobile:px-[20px]`)}
+            >
+              {textPrincipal?.title && (
+                <div
+                  class={clx(`
+                                  ${
+                    textPrincipal?.addKeysInWords
+                      ? "is-keys-custom"
+                      : textPrincipal?.addBar
+                      ? "is-bar-custom"
+                      : textPrincipal?.addIconTagInWords
+                      ? "is-tag-custom"
+                      : ""
+                  }
+                                  xl:[&_*]:text-[56px] xl:text-[56px] xl:[&_*]:leading-[61.6px] [&_*]:font-black font-archimoto-medium
+                                  mobile:[&_*]:text-32 text-32`)}
+                  dangerouslySetInnerHTML={{ __html: textPrincipal?.title }}
+                >
+                </div>
+              )}
+              {textPrincipal?.description && (
+                <div
+                  class={clx(`
+                                      xl:[&_*]:text-[20px] xl:text-[20px] xl:[&_*]:leading-[26px] font-noto-sans lg:mt-[16px]
+                                      mobile:[&_*]:text-[16px] text-[16px] mobile:[&_*]:leading-[20.8px] mobile:mt-[8px]`)}
+                  dangerouslySetInnerHTML={{ __html: textPrincipal?.description }}
+                >
+                </div>
+              )}
+            </div>
           </div>
+
+          {device === "desktop" && depositionAndImage && (
+            <DepositionsDesktop depositionAndImage={depositionAndImage} />
+          )}
+
+          {device === "mobile" && (
+            <DepositionsMobile depositionAndImage={depositionAndImage} id={id} />
+          )}
         </div>
-
-        {device === "desktop" && depositionAndImage && (
-          <DepositionsDesktop depositionAndImage={depositionAndImage} />
-        )}
-
-        {device === "mobile" && (
-          <DepositionsMobile depositionAndImage={depositionAndImage} id={id} />
-        )}
-      </div>
+      )}
     </>
   );
 }

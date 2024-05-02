@@ -57,7 +57,7 @@ interface Props {
 
 function ConclusionArea(props: SectionProps<ReturnType<typeof loader>>) {
   const { text, whatsapp, btnText, responsive, alt, bgImage, device } = props;
-  console.log("device > ", device);
+
   return (
     <>
       <div
