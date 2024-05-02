@@ -181,7 +181,7 @@ function DepositionsDesktop({ depositionAndImage }: Props) {
             })}
         </div>
 
-        <div
+        <div 
           class={clx(`n1-depositions__description`)}
           id="n1-depositions__description"
         >
