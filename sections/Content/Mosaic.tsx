@@ -216,11 +216,11 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
                           } my-[15px] mobile:px-[24px]`}
                         >
                           {text?.textLink && (
-                            <button class="px-[14px] py-[14px] rounded-[71px] relative w-[130px] flex items-center">
-                              <span class="font-archimoto-medium text-[11px] leading-[14px] font-black">
+                            <button class="px-[21px] py-[14px] max-h-[37px] rounded-[71px] relative w-[130px] flex items-center">
+                              <span class="font-archimoto-medium text-[11.486px] leading-[14.357px] font-black">
                                 {text?.textLink}
                               </span>
-                              <div class="p-[5px] mobile:right-[8px] absolute right-[5px]">
+                              <div class="p-[5px] mobile:right-[8px] absolute right-0">
                                 <svg
                                   width="23"
                                   height="23"
@@ -361,11 +361,11 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
                           } my-[15px] mobile:px-[24px]`}
                         >
                           {text?.textLink && (
-                            <button class="px-[14px] py-[14px] rounded-[71px] relative w-[130px] flex items-center">
-                              <span class="font-archimoto-medium text-[11px] leading-[14px] font-black">
+                            <button class="px-[21px] py-[14px] max-h-[37px] rounded-[71px] relative w-[130px] flex items-center">
+                              <span class="font-archimoto-medium text-[11.486px] leading-[14.357px] font-black">
                                 {text?.textLink}
                               </span>
-                              <div class="p-[5px] mobile:right-[8px] absolute right-[5px]">
+                              <div class="p-[5px] mobile:right-[8px] absolute right-0">
                                 <svg
                                   width="23"
                                   height="23"

@@ -193,9 +193,9 @@ function DepositionsDesktop({ depositionAndImage }: Props) {
                     class={clx(`
                                         ${
                       index === 1
-                        ? "mt-[130px]"
+                        ? "mt-[200px]"
                         : index === 2
-                        ? "mt-[130px]"
+                        ? "mt-[200px]"
                         : ""
                     }
                                         grid grid-cols-2-auto`)}
