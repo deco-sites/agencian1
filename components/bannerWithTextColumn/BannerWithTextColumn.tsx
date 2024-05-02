@@ -303,6 +303,7 @@ export default function BannerWithTextColumn({
             {contentText.button && (
               <a
                 href={contentText.button.link}
+                target="_blank"
                 className={`flex mt-6 hover:brightness-90 w-full max-w-[469px] ${
                   variants[styleContainer]
                 }`}
