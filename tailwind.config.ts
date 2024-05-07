@@ -15,10 +15,10 @@ export default {
     fontFamily: {
       "montserrat": "Montserrat",
       "noto-sans": "Noto Sans",
-      "archimoto-thin": ["ArchimotoN1-Thin", "Montserrat"],
-      "archimoto-regular": ["ArchimotoN1-Regular", "Montserrat"],
-      "archimoto-medium": ["ArchimotoV01-Medium", "Montserrat"],
-      "archimoto-black": ["ArchimotoN1-Black", "Montserrat"],
+      "archimoto-thin": ["ArchimotoN1-Thin", "sans-serif"],
+      "archimoto-regular": ["ArchimotoN1-Regular", "sans-serif"],
+      "archimoto-medium": ["ArchimotoV01-Medium", "sans-serif"],
+      "archimoto-black": ["ArchimotoN1-Black", "sans-serif"],
     },
     fontSize: {
       12: ["12px", "22.4px"],

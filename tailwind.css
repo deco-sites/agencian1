@@ -751,6 +751,26 @@
     transition: all .175s linear;
   }
 
+  .n1-blog__content-subitem{
+    background: linear-gradient(181deg, #FFF -176.1%, rgba(255, 255, 255, 0.29) -85.87%, rgba(255, 255, 255, 0.00) 124.35%);
+  }
+
+  .n1-moreContentBlog__title *,
+  .n1-moreContentBlog__title > *,
+  .n1-moreContentBlog__title > * > *,
+  .n1-blog__description{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;    
+  }
+
+  .n1-moreContentBlog__description *,
+  .n1-moreContentBlog__description > *,
+  .n1-moreContentBlog__description > * > *{
+    -webkit-line-clamp: 3 !important;
+  }  
+
   .is-tag-custom > *:before,
   .is-tag-custom > *:after,
   .is-keys-custom > *:after,
@@ -952,6 +972,10 @@
     .n1-typing .text-animation--typing.is-active{
       animation: typingText 6s steps(26, end) alternate infinite, blinkBorder .75s step-end infinite;
     }
+
+    .n1-blog__description{
+      -webkit-line-clamp: 4;    
+    }    
 
     .n1-footer__overlay--bottom-left{
       transform: rotate(90deg);
