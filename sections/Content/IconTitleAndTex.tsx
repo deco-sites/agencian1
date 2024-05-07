@@ -112,7 +112,7 @@ function IconTitleAndTex(props: SectionProps<ReturnType<typeof loader>>) {
             )}
             {paragraph && (
               <p class="text-[16px] mobile:text-14 mobile:max-w-[95%] mobile:leading-[22.4px] mobile:mt-[10px] 
-                                leading-[25.6px] font-normal text-center md:max-w-[70%] my-0 mx-auto">
+                                leading-[25.6px] font-normal font-montserrat text-center md:max-w-[70%] my-0 mx-auto">
                 {paragraph}
               </p>
             )}

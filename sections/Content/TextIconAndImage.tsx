@@ -372,15 +372,15 @@ export default function ImageSection(
                     />
                   </div>
                 )}
-                {!cta?.colorLink && (                  
-                    <LinkWithOptionArrow
-                      text={cta.text}
-                      link={cta?.href}
-                      activeArrowService={true}
-                      width={"220"}
-                      fontSize="14"
-                      margin={"0"}
-                    />                  
+                {!cta?.colorLink && (
+                  <LinkWithOptionArrow
+                    text={cta.text}
+                    link={cta?.href}
+                    activeArrowService={true}
+                    width={"220"}
+                    fontSize="14"
+                    margin={"0"}
+                  />
                 )}
               </div>
             )}
