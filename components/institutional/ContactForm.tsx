@@ -202,25 +202,28 @@ function ContactForm(
     }
   }
 
-  function snippetValidateRadio(target: EventTarget){
-    if (target && target instanceof HTMLInputElement){
-      const elementFatherofInput = target.closest('ul');
-      const allInputTypeData = elementFatherofInput && elementFatherofInput.querySelectorAll<HTMLInputElement>('input');
-      const spanErrorToRadio = elementFatherofInput && elementFatherofInput.closest('div')?.querySelector('ul ~ span');
+  function snippetValidateRadio(target: EventTarget) {
+    if (target && target instanceof HTMLInputElement) {
+      const elementFatherofInput = target.closest("ul");
+      const allInputTypeData = elementFatherofInput &&
+        elementFatherofInput.querySelectorAll<HTMLInputElement>("input");
+      const spanErrorToRadio = elementFatherofInput &&
+        elementFatherofInput.closest("div")?.querySelector("ul ~ span");
 
-      allInputTypeData && allInputTypeData.length > 0 && Array.from(allInputTypeData).map(( input )=>{
-        input.classList.remove('add-border');
-      })
+      allInputTypeData && allInputTypeData.length > 0 &&
+        Array.from(allInputTypeData).map((input) => {
+          input.classList.remove("add-border");
+        });
 
-      spanErrorToRadio?.classList.add('hidden');
-    } 
-  }  
+      spanErrorToRadio?.classList.add("hidden");
+    }
+  }
 
   function validateAllField(target: HTMLFormElement) {
     if (!target) return;
-    
-    const spanErrorToRadio = target?.querySelector('ul ~ span');
-    const allInputTypeData = target?.querySelectorAll('ul li input');
+
+    const spanErrorToRadio = target?.querySelector("ul ~ span");
+    const allInputTypeData = target?.querySelectorAll("ul li input");
     const temp: Array<unknown> = [];
     const Allfields = target?.querySelectorAll<HTMLElement>("input, textarea");
 
@@ -249,17 +252,17 @@ function ContactForm(
       fieldsRequired = true;
     }
 
-    if(
-      !json["commercial"] && !json["others"] && !json["partnership"] 
+    if (
+      !json["commercial"] && !json["others"] && !json["partnership"]
     ) {
-      spanErrorToRadio?.classList.remove('hidden');
-      allInputTypeData && allInputTypeData?.length > 0 && Array.from(allInputTypeData).map(( input )=>{
-        input.classList.add('add-border')
-      })
+      spanErrorToRadio?.classList.remove("hidden");
+      allInputTypeData && allInputTypeData?.length > 0 &&
+        Array.from(allInputTypeData).map((input) => {
+          input.classList.add("add-border");
+        });
 
       return false;
-    }  
-
+    }
 
     if (fieldsRequired) {
       return Object.fromEntries(data);
@@ -349,12 +352,12 @@ function ContactForm(
 
   function handleChange(e: Event) {
     const { target } = e;
-    
+
     if (!target) return;
 
-    if( e.type === 'click'){
-      snippetValidateRadio( target )
-      return
+    if (e.type === "click") {
+      snippetValidateRadio(target);
+      return;
     }
 
     if (
@@ -449,7 +452,7 @@ function ContactForm(
                     {fieldsForm?.others && (
                       <li class="flex flex-row gap-[8px] lg:flex-row items-center">
                         <input
-                          onClick={handleChange}                        
+                          onClick={handleChange}
                           name={"type-contact"}
                           type={"radio"}
                           id={"others"}
@@ -467,7 +470,9 @@ function ContactForm(
                       </li>
                     )}
                   </ul>
-                  <span class="hidden text-error text-[12px] leading-[15.6px]">Selecione um dos campos acima</span>
+                  <span class="hidden text-error text-[12px] leading-[15.6px]">
+                    Selecione um dos campos acima
+                  </span>
                 </div>
               </div>
               {/* TIPO DE CONTATO __________________________________________________________________________| FINAL | */}

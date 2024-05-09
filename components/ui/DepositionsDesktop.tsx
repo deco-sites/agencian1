@@ -181,19 +181,19 @@ function DepositionsDesktop({ depositionAndImage }: Props) {
             })}
         </div>
 
-        <div 
+        <div
           class={clx(`n1-depositions__description`)}
           id="n1-depositions__description"
         >
           {depositionAndImage && depositionAndImage?.length > 0 &&
             depositionAndImage.map((item, index) => {
               return (
-                <> 
+                <>
                   <div
                     class={clx(`
                                         ${
                       index === 1
-                        ? "mt-[200px]" 
+                        ? "mt-[200px]"
                         : index === 2
                         ? "mt-[200px]"
                         : ""
