@@ -768,6 +768,38 @@
     @apply text-secondary;
   }
 
+  .n1-buttomTop div{
+    display: flex; 
+    position: relative; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 50%;
+    border: 1px solid currentColor;
+    backdrop-filter: blur(21.5625px);
+    background: linear-gradient(161deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.05) 101.7%);
+  }
+
+  .n1-buttomTop div:before, .n1-buttomTop div:after{
+    content: ""; 
+    position: absolute;
+    border-top: 3px solid #3CCBDA; 
+    border-right: 3px solid #3CCBDA;
+    display: block;
+    width: 15px;
+    top: 23px;
+    right: 23px;
+    border-radius: 30px;
+  }
+
+  .n1-buttomTop div:before{
+    transform: rotate(45deg);
+  }
+
+  .n1-buttomTop div:after{
+    right: 32px;
+    transform: rotate(-45deg);
+  }
+
   .is-bar-custom > *:before{
     content: "/";
   }  
@@ -810,23 +842,7 @@
 
   @media(max-width: 1280px){
     .n1-depositions{padding-bottom: 80px;}
-  }
 
-  @media (max-width: 1040px){
-    .n1-conclusion-area__image{
-      @apply  mobile:-top-[90px] mobile:-right-[60%];
-    }
-  }
-
-  @media(min-width: 768px) and (max-width: 1024px){
-    .n1-conclusion-area__text{width: 50% !important;}
-  }
-
-  @media(min-width: 662px) and (max-width: 768px){
-    .n1-conclusion-area__text{width: 80% !important;}
-  } 
-
-  @media(min-width: 1024px){
     .n1-text-icon-image__container.is-active:after{
       content: "";
       border-radius: var(--radius-default, 1105.45px);
@@ -860,7 +876,29 @@
       transform: rotate(-15.911deg);
       right: -30px;    
     }    
+
+    .n1-buttomTop div:before{
+      right: 20px;
+    }
+    
+    .n1-buttomTop div:after{
+      right: 30px;
+    }
   }
+
+  @media (max-width: 1040px){
+    .n1-conclusion-area__image{
+      @apply  mobile:-top-[90px] mobile:-right-[60%];
+    }
+  }
+
+  @media(min-width: 768px) and (max-width: 1024px){
+    .n1-conclusion-area__text{width: 50% !important;}
+  }
+
+  @media(min-width: 662px) and (max-width: 768px){
+    .n1-conclusion-area__text{width: 80% !important;}
+  } 
 
   @media (max-width: 426px){
     .n1-cases__info{margin-bottom: 15px;}
