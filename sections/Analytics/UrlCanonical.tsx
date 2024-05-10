@@ -3,7 +3,7 @@ import { Head } from "$fresh/runtime.ts";
 interface Props {
   /**
    * @title URL
-   * @description (caso seja home, coloca a URL completa ex: https://www.n1.ag/ )
+   * @description (coloca a URL completa ex: https://www.n1.ag/ )
    */
   url?: string;
 }
