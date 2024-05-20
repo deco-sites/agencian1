@@ -12,6 +12,7 @@ import * as $AddToCartButton_vnda from "./islands/AddToCartButton/vnda.tsx";
 import * as $AddToCartButton_vtex from "./islands/AddToCartButton/vtex.tsx";
 import * as $AddToCartButton_wake from "./islands/AddToCartButton/wake.tsx";
 import * as $BlueBallAnimation from "./islands/BlueBallAnimation.tsx";
+import * as $ButtonTop from "./islands/ButtonTop.tsx";
 import * as $CasesComponent from "./islands/CasesComponent.tsx";
 import * as $ContactForm from "./islands/ContactForm.tsx";
 import * as $Depositions from "./islands/Depositions.tsx";
@@ -50,6 +51,7 @@ const manifest = {
     "./islands/AddToCartButton/vtex.tsx": $AddToCartButton_vtex,
     "./islands/AddToCartButton/wake.tsx": $AddToCartButton_wake,
     "./islands/BlueBallAnimation.tsx": $BlueBallAnimation,
+    "./islands/ButtonTop.tsx": $ButtonTop,
     "./islands/CasesComponent.tsx": $CasesComponent,
     "./islands/ContactForm.tsx": $ContactForm,
     "./islands/Depositions.tsx": $Depositions,

@@ -76,7 +76,7 @@ interface Props {
    */
   depositionAndImage?: DepositionAndImage[];
   /**@title Desabilitar seção? */
-  disabledSection?:boolean;
+  disabledSection?: boolean;
 }
 
 function Depositions(props: SectionProps<ReturnType<typeof loader>>) {
@@ -118,7 +118,9 @@ function Depositions(props: SectionProps<ReturnType<typeof loader>>) {
                   class={clx(`
                                       xl:[&_*]:text-[20px] xl:text-[20px] xl:[&_*]:leading-[26px] font-noto-sans lg:mt-[16px]
                                       mobile:[&_*]:text-[16px] text-[16px] mobile:[&_*]:leading-[20.8px] mobile:mt-[8px]`)}
-                  dangerouslySetInnerHTML={{ __html: textPrincipal?.description }}
+                  dangerouslySetInnerHTML={{
+                    __html: textPrincipal?.description,
+                  }}
                 >
                 </div>
               )}
@@ -130,7 +132,10 @@ function Depositions(props: SectionProps<ReturnType<typeof loader>>) {
           )}
 
           {device === "mobile" && (
-            <DepositionsMobile depositionAndImage={depositionAndImage} id={id} />
+            <DepositionsMobile
+              depositionAndImage={depositionAndImage}
+              id={id}
+            />
           )}
         </div>
       )}

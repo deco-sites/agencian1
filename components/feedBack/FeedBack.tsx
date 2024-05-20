@@ -72,7 +72,8 @@ export default function FeedbackSection({
       </div>
 
       {backgroundImage && (
-        <div class="n1-feedback__eclipse absolute lg:is--desk top-0 left-0 z-0 hidden lg:block"></div>
+        <div class="n1-feedback__eclipse absolute lg:is--desk top-0 left-0 z-0 hidden lg:block">
+        </div>
       )}
     </div>
   );
