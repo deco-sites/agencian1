@@ -30,31 +30,55 @@ function Breadcrumb({ items }: Breadcrumb) {
 
             return (
               <>
-                {category && subcategory && (
-                  <>
-                    <li class="relative">
-                      <a href={"/"} class="n1-breadcrumb__item hover:underline">
-                        Home
-                      </a>
-                    </li>
-                    <li class="relative">
-                      <a
-                        href={`/${categoryScape}`}
-                        class="n1-breadcrumb__item hover:underline"
-                      >
-                        {category}
-                      </a>
-                    </li>
-                    <li class="relative">
-                      <a
-                        href={`/${categoryScape}/${subcategoryScape}`}
-                        class="hover:underline text-secondary"
-                      >
-                        {subcategory}
-                      </a>
-                    </li>
-                  </>
-                )}
+                {category && subcategory
+                  ? (
+                    <>
+                      <li class="relative">
+                        <a
+                          href={"/"}
+                          class="n1-breadcrumb__item hover:underline"
+                        >
+                          Home
+                        </a>
+                      </li>
+                      <li class="relative">
+                        <a
+                          href={`/${categoryScape}`}
+                          class="n1-breadcrumb__item hover:underline"
+                        >
+                          {category}
+                        </a>
+                      </li>
+                      <li class="relative">
+                        <a
+                          href={`/${categoryScape}/${subcategoryScape}`}
+                          class="hover:underline text-secondary"
+                        >
+                          {subcategory}
+                        </a>
+                      </li>
+                    </>
+                  )
+                  : (
+                    <>
+                      <li class="relative">
+                        <a
+                          href={"/"}
+                          class="n1-breadcrumb__item hover:underline"
+                        >
+                          Home
+                        </a>
+                      </li>
+                      <li class="relative">
+                        <a
+                          href={`/${categoryScape}/${subcategoryScape}`}
+                          class="hover:underline text-secondary"
+                        >
+                          {subcategory}
+                        </a>
+                      </li>
+                    </>
+                  )}
               </>
             );
           })}

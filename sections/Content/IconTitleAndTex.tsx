@@ -35,11 +35,23 @@ interface Props {
   backgroundImage?: ImageGeneric;
   /**@title Ativar imagem de fundo? */
   activeBackground?: boolean;
+
+  button?: {
+    textButton: string;
+    link: string;
+  };
 }
 
 function IconTitleAndTex(props: SectionProps<ReturnType<typeof loader>>) {
-  const { icon, title, paragraph, backgroundImage, activeBackground, device } =
-    props;
+  const {
+    icon,
+    title,
+    paragraph,
+    backgroundImage,
+    activeBackground,
+    device,
+    button,
+  } = props;
   const validBackground = device == "desktop" && activeBackground &&
     backgroundImage && backgroundImage?.src && backgroundImage?.width &&
     backgroundImage?.height;
@@ -117,6 +129,16 @@ function IconTitleAndTex(props: SectionProps<ReturnType<typeof loader>>) {
               </p>
             )}
           </div>
+
+          {button && (
+            <a
+              href={button.link}
+              aria-label={`link fale conosco`}
+              class="rounded-[100px] w-[316px] lg:w-[313px] h-[51px] flex items-center justify-center text-center mt-5 hover:brightness-90 bg-[#F6AB00] mb-20 lg:mb-0 "
+            >
+              <span class="text-[#0C1F59] lg:text-16 font-archimoto-black pt-[1px] font-black">{button.textButton}</span>
+            </a>
+          )}
         </div>
       </div>
     </>

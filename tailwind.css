@@ -1236,6 +1236,14 @@
     background: linear-gradient(0deg, #0B1227 0%, rgba(11, 18, 39, 0.31) 13.89%), linear-gradient(180deg, #0B1227 0%, rgba(0, 0, 0, 0.00) 79.78%), url("image/beneficies-2.png") lightgray 50% / cover no-repeat;
   }
 
+  .n1-custom-color-yellow-ellipse {
+    background: radial-gradient(105.4% 101.68% at 89.06% 88.91%, #F6AB00 43.01%, #0C1F59 88.98%);
+  }
+
+  .n1-custom-color-blue-ellipse{
+    background: radial-gradient(105.4% 101.68% at 89.06% 88.91%, #3CCBDA 43.01%, #0C1F59 88.98%);
+  }
+
   @media screen and (min-width: 640px){
     .n1-custom-bg-img{
       background:transparent ;
