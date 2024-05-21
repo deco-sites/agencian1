@@ -10,9 +10,9 @@ export interface Ellipse {
   vertical: "top" | "center" | "bottom";
   width: "100" | "200" | "300";
   height: "100" | "200" | "300";
-  color: 'yellow' | 'blue'
+  color: "yellow" | "blue";
   activeDesktop?: boolean;
-  activeMobile?: boolean; 
+  activeMobile?: boolean;
 }
 
 /** @title {{{description}}}  */
@@ -20,7 +20,6 @@ export interface Lists {
   /** @title Descrição */
   /** @format html */
   description: string;
-
 }
 export interface Props {
   /** @title Título */
@@ -30,20 +29,20 @@ export interface Props {
   titleStyle: {
     alignment?: "center" | "left" | "right";
   };
- 
+
   /**@description Quantidade de colunas */
-  columns?: "1" | "2" | "3" | "4"
+  columns?: "1" | "2" | "3" | "4";
 
   /**@title Lista */
   lists: Lists[];
 
   /** @description Largura máxima do container de lista */
-  maxWidth?: "285" | "392"
+  maxWidth?: "285" | "392";
 
   /** @description Icon backgroud */
   icon?: ImageWidget;
 
-  ellipse?: Ellipse; 
+  ellipse?: Ellipse;
 
   activeBackgroundImage: boolean;
   /** @tilte Margin top */
@@ -82,9 +81,9 @@ export default function BenefitsList(
     icon,
     activeBackgroundImage,
     titleStyle,
-    maxWidth = "285", 
-    columns ="4",
-    ellipse
+    maxWidth = "285",
+    columns = "4",
+    ellipse,
   }: Props,
 ) {
   const { alignment = "center" } = titleStyle || {};
@@ -101,7 +100,7 @@ export default function BenefitsList(
       >
         {title && (
           <div
-            className={ `w-full text-20 lg:text-48 text-[#fff] font-black not-italic font-archimoto-black mb-8 ${
+            className={`w-full text-20 lg:text-48 text-[#fff] font-black not-italic font-archimoto-black mb-8 ${
               positionTitle[alignment] ?? "text-left"
             }`}
             dangerouslySetInnerHTML={{ __html: title }}
@@ -109,11 +108,19 @@ export default function BenefitsList(
           </div>
         )}
 
-       <ul className={`grid grid-cols-1 ${qtyColumns[columns]}  lg:grid-cols-3 gap-8 justify-evenly"`}>
+        <ul
+          className={`grid grid-cols-1 ${
+            qtyColumns[columns]
+          }  lg:grid-cols-3 gap-8 justify-evenly"`}
+        >
           {lists && lists?.length > 0 &&
             lists.map((list, index) => (
               <li className="flex justify-center items-center gap-5 n1-custom-card-benefits py-4 px-4">
-                  <div className={`flex justify-center items-center gap-4 w-full   max-w-[${containerMaxWidth[maxWidth]}px]`}>
+                <div
+                  className={`flex justify-center items-center gap-4 w-full   max-w-[${
+                    containerMaxWidth[maxWidth]
+                  }px]`}
+                >
                   <div className="w-9 h-9">
                     <Icon
                       id="Check"
@@ -144,10 +151,7 @@ export default function BenefitsList(
           />
         )}
 
-        {ellipse && (
-          <Ellipse ellipse = {ellipse} />
-        )}
-
+        {ellipse && <Ellipse ellipse={ellipse} />}
       </div>
     </div>
   );

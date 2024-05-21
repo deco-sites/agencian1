@@ -97,9 +97,9 @@ export interface Ellipse {
   vertical: "top" | "center" | "bottom";
   width: "100" | "200" | "300";
   height: "100" | "200" | "300";
-  color: 'yellow' | 'blue'
+  color: "yellow" | "blue";
   activeDesktop?: boolean;
-  activeMobile?: boolean; 
+  activeMobile?: boolean;
 }
 
 export interface Props {
@@ -144,7 +144,6 @@ const widthContainer = {
   500: "500px",
 };
 
-
 export default function BannerWithTextColumn({
   bannerImg,
   contentText,
@@ -169,7 +168,7 @@ export default function BannerWithTextColumn({
     alignmentContent = "normal",
   } = contentText || {};
 
- const { activeDesktop } = ellipse || {}
+  const { activeDesktop } = ellipse || {};
   return (
     <div class="w-full relative overflow-x-clip">
       <div
@@ -353,9 +352,7 @@ export default function BannerWithTextColumn({
         </div>
       )}
 
-      {ellipse &&  (
-        <Ellipse ellipse={ellipse} />
-      )}
+      {ellipse && <Ellipse ellipse={ellipse} />}
     </div>
   );
 }
