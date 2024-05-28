@@ -38,7 +38,7 @@ export interface ImageCarousel {
   settingsInfo?: InfoProps;
 
   /**@description Estilo do button */
-  buttonStyle?: 'normal' | 'ads';
+  buttonStyle?: "normal" | "ads";
 
   /** @title Imagem Desktop */
   desktop?: ImageGeneric;
@@ -80,18 +80,22 @@ export interface Props {
 }
 
 const variant = {
-  normal: "border border-[#fff] hover:bg-[#ffffff] text-[#ffffff]   mobile:w-[55%] md:w-[43%]",
-  ads: "bg-accent hover:bg-[#F8BC33] text-primary border-none lg:w-[60%] w-[70%]"
-}
+  normal:
+    "border border-[#fff] hover:bg-[#ffffff] text-[#ffffff]   mobile:w-[55%] md:w-[43%]",
+  ads:
+    "bg-accent hover:bg-[#F8BC33] text-primary border-none lg:w-[60%] w-[70%]",
+};
 
 function ImageCarouselItem(
   { image, lcp, id }: { image: ImageCarousel; lcp?: boolean; id: string },
 ) {
-  const { alt, desktop, mobile, settingsInfo, buttonStyle} = image;
+  const { alt, desktop, mobile, settingsInfo, buttonStyle } = image;
 
   return (
     <a
-      href={buttonStyle !== 'ads' ? settingsInfo?.href ?? "javascript:void(0)" : settingsInfo?.href}
+      href={buttonStyle !== "ads"
+        ? settingsInfo?.href ?? "javascript:void(0)"
+        : settingsInfo?.href}
       style={{
         pointerEvents: `${
           settingsInfo?.href && settingsInfo?.href !== "#" ? "all" : "none"
@@ -155,11 +159,17 @@ function ImageCarouselItem(
         {settingsInfo?.textLink && (
           <div
             class={clx(
-              ` ${variant[buttonStyle?? 'normal']} flex px-[20px] pb-[11px] pt-[12px] rounded-[100px]
+              ` ${
+                variant[buttonStyle ?? "normal"]
+              } flex px-[20px] pb-[11px] pt-[12px] rounded-[100px]
               justify-center items-center min-w-[144px] group   duration-300 cursor-pointer relative z-20`,
             )}
           >
-            <span class={`duration-300 flex  font-archimoto-medium md:text-14 font-black ${buttonStyle !== 'ads' && 'group-hover:text-[#585858]' }`}>
+            <span
+              class={`duration-300 flex  font-archimoto-medium md:text-14 font-black ${
+                buttonStyle !== "ads" && "group-hover:text-[#585858]"
+              }`}
+            >
               {settingsInfo?.textLink}
             </span>
             <svg
@@ -174,7 +184,7 @@ function ImageCarouselItem(
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M5.25 6.22656C5.25 5.81235 5.58579 5.47656 6 5.47656H12.75C13.1642 5.47656 13.5 5.81235 13.5 6.22656V12.9766C13.5 13.3908 13.1642 13.7266 12.75 13.7266C12.3358 13.7266 12 13.3908 12 12.9766V8.03722L5.78033 14.2569C5.48744 14.5498 5.01256 14.5498 4.71967 14.2569C4.42678 13.964 4.42678 13.4891 4.71967 13.1962L10.9393 6.97656H6C5.58579 6.97656 5.25 6.64078 5.25 6.22656Z"
-                fill= {`${buttonStyle  === 'ads' ? '#0C1F59' : "white" }`}
+                fill={`${buttonStyle === "ads" ? "#0C1F59" : "white"}`}
                 class="group-hover:fill-[#585858] duration-300"
               />
             </svg>

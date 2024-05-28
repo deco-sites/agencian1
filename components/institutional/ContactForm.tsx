@@ -38,6 +38,8 @@ interface fieldsForm {
   title?: string;
   /**@title Subtítulo */
   subtitle?: string;
+
+  ads?: boolean;
   /**
    * @title Campo 01
    * @description comercial
@@ -389,7 +391,7 @@ function ContactForm(
 
   return (
     <>
-      <div class="md:n1-container md:px-[120px] !mb-[80px] mobile:mt-[80px] mobile:px-[20px]">
+      <div class="md:n1-container md:px-[120px] !pb-[80px] mobile:mt-[80px] mobile:px-[20px]">
         <div class="flex flex-col">
           <div class="flex flex-col gap-[32px]">
             <form
@@ -424,6 +426,27 @@ function ContactForm(
                           nameAttr={"commercial"}
                         >
                           {fieldsForm.commercial}
+                        </LabelForm>
+                      </li>
+                    )}
+
+                    {fieldsForm?.ads && (
+                      <li class="flex-row hidden gap-[8px] lg:flex-row items-center">
+                        <input
+                          onClick={handleChange}
+                          checked
+                          name={"type-contact"}
+                          type={"radio"}
+                          id={"commercial"}
+                          class={clx(
+                            `n1-input--radio-error n1-radio-custom checked:is-active relative appearance-none rounded-[10px] 
+                           bg-transparent w-[32px] h-[32px] border-2 border-[#F3F4F7] outline-none`,
+                          )}
+                        />
+                        <LabelForm
+                          _class={`${displayModalForm.value} teste-n1 font-normal text-[#ffffff] text-14 leading-[21px] font-noto-sans`}
+                          nameAttr={"commercial"}
+                        >
                         </LabelForm>
                       </li>
                     )}

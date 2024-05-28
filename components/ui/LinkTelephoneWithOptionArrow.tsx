@@ -15,7 +15,7 @@ function LinkTelephoneWithOptionArrow(
 ) {
   const formatNumber = telephone && telephone.replace(/\D/g, "");
 
-  console.log(formatNumber)
+  console.log(formatNumber);
 
   if (!formatNumber) {
     return null;
@@ -31,7 +31,10 @@ function LinkTelephoneWithOptionArrow(
           mobile:relative mobile:py-[7px] mobile:mr-[20px] px-[10px] py-[10px] group flex items-center relative
           text-16 uppercase bg-accent n1-btn-header-item--rounded border-none w-[142px] ml-[40px] hover:bg-[#F8BC33] duration-300 
           ${customClass ? customClass : ""}`)}
-      style={{ width: `${width ? width + "px" : "130px"} `,  height:`${height && height + "px"}` }}
+      style={{
+        width: `${width ? width + "px" : "130px"} `,
+        height: `${height && height + "px"}`,
+      }}
     >
       <span
         class={`${

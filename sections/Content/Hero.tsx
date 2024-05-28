@@ -26,7 +26,6 @@ export interface telephoneProps {
   fontSize?: string;
 }
 
-
 export interface Props {
   /**
    * @format html
@@ -66,8 +65,7 @@ export interface Props {
   /** @title CTA */
   cta: CTA[];
 
-   ButtonAds?: telephoneProps; 
-
+  ButtonAds?: telephoneProps;
 }
 
 const PLACEMENT = {
@@ -92,7 +90,7 @@ export default function HeroFlats(
     titleCta,
     cta,
     device,
-    ButtonAds
+    ButtonAds,
   } = props;
 
   const positionX = translateX ? translateX + "px" : 0;
@@ -100,7 +98,7 @@ export default function HeroFlats(
 
   const HEIGHT = 508;
 
-  console.log(ButtonAds)
+  console.log(ButtonAds);
 
   function typingWrite(word: number) {
     const loop = localStorage.getItem("loop")
@@ -267,18 +265,18 @@ export default function HeroFlats(
                 );
               })}
             </div>
-            { ButtonAds && (
-             <div class="mt-6 flex justify-start w-full">
+            {ButtonAds && (
+              <div class="mt-6 flex justify-start w-full">
                 <LinkTelephoneWithOptionArrow
-                 text={ButtonAds.text}
-                 telephone={ButtonAds.telephone}
-                 activeArrow={ButtonAds.activeArrow}
-                 width={ButtonAds.width}
-                 height={ButtonAds.height}
-                 customClass={ButtonAds.customClass}
-                 fontSize={ButtonAds.fontSize}
-               />
-             </div> 
+                  text={ButtonAds.text}
+                  telephone={ButtonAds.telephone}
+                  activeArrow={ButtonAds.activeArrow}
+                  width={ButtonAds.width}
+                  height={ButtonAds.height}
+                  customClass={ButtonAds.customClass}
+                  fontSize={ButtonAds.fontSize}
+                />
+              </div>
             )}
           </div>
         </div>
