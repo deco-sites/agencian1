@@ -3,6 +3,7 @@ import Image from "apps/website/components/Image.tsx";
 import { FnContext, SectionProps } from "deco/mod.ts";
 import { clx } from "$store/sdk/clx.ts";
 import { useEffect } from "preact/hooks";
+import LinkTelephoneWithOptionArrow from "deco-sites/agencian1/components/ui/LinkTelephoneWithOptionArrow.tsx";
 
 export interface CTA {
   id?: string;
@@ -14,6 +15,17 @@ export interface CTA {
   text2?: string;
   variant: "Normal" | "Reverse";
 }
+
+export interface telephoneProps {
+  text?: string;
+  telephone?: string;
+  activeArrow?: boolean;
+  width?: string;
+  height?: string;
+  customClass?: string;
+  fontSize?: string;
+}
+
 
 export interface Props {
   /**
@@ -53,6 +65,9 @@ export interface Props {
   titleCta?: string;
   /** @title CTA */
   cta: CTA[];
+
+   ButtonAds?: telephoneProps; 
+
 }
 
 const PLACEMENT = {
@@ -77,12 +92,15 @@ export default function HeroFlats(
     titleCta,
     cta,
     device,
+    ButtonAds
   } = props;
 
   const positionX = translateX ? translateX + "px" : 0;
   const positionY = translateY ? translateY + "px" : 0;
 
   const HEIGHT = 508;
+
+  console.log(ButtonAds)
 
   function typingWrite(word: number) {
     const loop = localStorage.getItem("loop")
@@ -249,6 +267,19 @@ export default function HeroFlats(
                 );
               })}
             </div>
+            { ButtonAds && (
+             <div class="mt-6 flex justify-start w-full">
+                <LinkTelephoneWithOptionArrow
+                 text={ButtonAds.text}
+                 telephone={ButtonAds.telephone}
+                 activeArrow={ButtonAds.activeArrow}
+                 width={ButtonAds.width}
+                 height={ButtonAds.height}
+                 customClass={ButtonAds.customClass}
+                 fontSize={ButtonAds.fontSize}
+               />
+             </div> 
+            )}
           </div>
         </div>
       </div>

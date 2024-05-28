@@ -4,6 +4,7 @@ import { FnContext, SectionProps } from "deco/mod.ts";
 import CasesComponentMobile from "$store/components/ui/CasesComponentMobile.tsx";
 import CasesComponentDesktop from "$store/components/ui/CasesComponentDesktop.tsx";
 import CasesComponentTextWithButton from "$store/components/ui/CasesComponentTextWithButton.tsx";
+import LinkTelephoneWithOptionArrow from "deco-sites/agencian1/components/ui/LinkTelephoneWithOptionArrow.tsx";
 
 /** @title {{{nameTag}}}*/
 interface TagProps {
@@ -89,6 +90,16 @@ interface MarginProps {
   bottom?: number;
 }
 
+export interface telephoneProps {
+  text?: string;
+  telephone?: string;
+  activeArrow?: boolean;
+  width?: string;
+  height?: string;
+  customClass?: string;
+  fontSize?: string;
+}
+
 interface Props {
   /**@title Subtítulo */
   /**@format html */
@@ -127,6 +138,8 @@ interface Props {
    * @description (Mobile)
    */
   margin?: MarginProps;
+
+  ButtonAds?: telephoneProps;
 }
 
 function CasesComponent(props: SectionProps<ReturnType<typeof loader>>) {
@@ -144,6 +157,7 @@ function CasesComponent(props: SectionProps<ReturnType<typeof loader>>) {
     addBar,
     addKeysInWords,
     margin,
+    ButtonAds,
   } = props;
 
   return (
@@ -192,6 +206,19 @@ function CasesComponent(props: SectionProps<ReturnType<typeof loader>>) {
 
           {device === "mobile" && (
             <CasesComponentMobile settingsImage={settingsImage} />
+          )}
+          {ButtonAds && (
+            <div class="my-6 flex justify-start w-full">
+              <LinkTelephoneWithOptionArrow
+                text={ButtonAds.text}
+                telephone={ButtonAds.telephone}
+                activeArrow={ButtonAds.activeArrow}
+                width={ButtonAds.width}
+                height={ButtonAds.height}
+                customClass={ButtonAds.customClass}
+                fontSize={ButtonAds.fontSize}
+              />
+            </div>
           )}
         </div>
       </div>

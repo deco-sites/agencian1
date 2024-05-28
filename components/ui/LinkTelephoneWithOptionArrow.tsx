@@ -2,17 +2,20 @@ import { clx } from "$store/sdk/clx.ts";
 
 interface Props {
   text?: string;
-  telephone?: string | undefined;
+  telephone?: string;
   activeArrow?: boolean;
   width?: string;
+  height?: string;
   customClass?: string;
   fontSize?: string;
 }
 
 function LinkTelephoneWithOptionArrow(
-  { text, telephone, activeArrow, width, customClass, fontSize }: Props,
+  { text, telephone, activeArrow, width, customClass, fontSize, height }: Props,
 ) {
   const formatNumber = telephone && telephone.replace(/\D/g, "");
+
+  console.log(formatNumber)
 
   if (!formatNumber) {
     return null;
@@ -26,9 +29,9 @@ function LinkTelephoneWithOptionArrow(
       alt="Converse no WhatsApp"
       class={clx(`${width ? `mobile:my-0 mobile:mx-auto` : "mobile:w-[130px]"} 
           mobile:relative mobile:py-[7px] mobile:mr-[20px] px-[10px] py-[10px] group flex items-center relative
-          text-16 uppercase bg-accent n1-btn-header-item--rounded border-none w-[142px] ml-[40px] hover:bg-[#F8BC33] duration-300
+          text-16 uppercase bg-accent n1-btn-header-item--rounded border-none w-[142px] ml-[40px] hover:bg-[#F8BC33] duration-300 
           ${customClass ? customClass : ""}`)}
-      style={{ width: `${width ? width + "px" : "130px"}` }}
+      style={{ width: `${width ? width + "px" : "130px"} `,  height:`${height && height + "px"}` }}
     >
       <span
         class={`${
