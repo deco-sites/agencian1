@@ -40,6 +40,10 @@ interface fieldsForm {
   subtitle?: string;
 
   ads?: boolean;
+
+  /**@description Tamanho de fonte dos campos */
+  fontSize?: "normal" | "base" | "large";
+
   /**
    * @title Campo 01
    * @description comercial
@@ -88,6 +92,10 @@ interface fieldsForm {
   message?: string;
   /**@title Digite o texto da máscara */
   placeholderMessage?: string;
+
+  /** @description Estilo do botão */
+  buttonStyle?: "normal" | "ads";
+
   /**@title Texto do botão*/
   textButton?: string;
 }
@@ -106,6 +114,17 @@ interface Props {
 const ACTIVEMODALFORM = {
   "Sim": true,
   "Não": false,
+};
+
+const variant = {
+  normal: "bg-base-200  text-[#585858] hover:bg-[#ffff",
+  ads: " bg-accent hover:bg-[#F8BC33] text-primary",
+};
+
+const size = {
+  normal: "text-14",
+  base: "text-16",
+  large: "text-24",
 };
 
 function ContactForm(
@@ -511,7 +530,9 @@ function ContactForm(
                 {fieldsForm?.name_user && (
                   <div class="form-control flex-col gap-[10px] w-full">
                     <LabelForm
-                      _class={`font-bold text-[#ffffff] text-14 leading-[21px] font-noto-sans`}
+                      _class={`font-bold text-[#ffffff]  ${
+                        size[fieldsForm.fontSize ?? "normal"]
+                      }  leading-[21px] font-noto-sans`}
                       nameAttr={"name_user"}
                     >
                       {fieldsForm.name_user}
@@ -537,7 +558,9 @@ function ContactForm(
                 {fieldsForm?.name_company && (
                   <div class="form-control gap-[10px] w-full">
                     <LabelForm
-                      _class="font-bold text-[#ffffff] text-14 leading-[21px] font-noto-sans"
+                      _class={`font-bold text-[#ffffff]   ${
+                        size[fieldsForm.fontSize ?? "normal"]
+                      }  leading-[21px] font-noto-sans `}
                       nameAttr="name_company"
                     >
                       {fieldsForm.name_company}
@@ -562,7 +585,9 @@ function ContactForm(
                 {fieldsForm?.phone_number && (
                   <div class="form-control gap-[10px] w-full">
                     <LabelForm
-                      _class="font-bold text-[#ffffff] text-14 leading-[21px] font-noto-sans"
+                      _class={`font-bold text-[#ffffff]  ${
+                        size[fieldsForm.fontSize ?? "normal"]
+                      }  leading-[21px] font-noto-sans `}
                       nameAttr="phone_number"
                     >
                       {fieldsForm.phone_number}
@@ -594,7 +619,9 @@ function ContactForm(
                   <div class="form-control gap-[10px] w-full">
                     <div class="form-control gap-[10px] w-full">
                       <LabelForm
-                        _class="font-bold text-[#ffffff] text-14 leading-[21px] font-noto-sans"
+                        _class={`font-bold text-[#ffffff]  ${
+                          size[fieldsForm.fontSize ?? "normal"]
+                        }  leading-[21px] font-noto-sans `}
                         nameAttr="email"
                       >
                         {fieldsForm.email}
@@ -652,7 +679,9 @@ function ContactForm(
                     type="submit"
                     disabled
                     class={clx(
-                      `n1-form__submit disabled:opacity-50 py-[20px] px-[30px] bg-base-200 rounded-[100px] text-[#585858] hover:bg-[#ffff] 
+                      `${
+                        variant[fieldsForm.buttonStyle ?? "normal"]
+                      } n1-form__submit disabled:opacity-50 py-[20px] px-[30px]  rounded-[100px] 
                       max-h-[52px] !leading-none text-16 font-archimoto-medium font-black`,
                     )}
                   >
