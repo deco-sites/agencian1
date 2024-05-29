@@ -532,7 +532,7 @@ function ContactForm(
                     <LabelForm
                       _class={`font-bold text-[#ffffff]  ${
                         size[fieldsForm.fontSize ?? "normal"]
-                      }  leading-[21px] font-noto-sans`}
+                      }  leading-[21px] font-archimoto-medium`}
                       nameAttr={"name_user"}
                     >
                       {fieldsForm.name_user}
@@ -560,7 +560,7 @@ function ContactForm(
                     <LabelForm
                       _class={`font-bold text-[#ffffff]   ${
                         size[fieldsForm.fontSize ?? "normal"]
-                      }  leading-[21px] font-noto-sans `}
+                      }  leading-[21px] font-archimoto-medium `}
                       nameAttr="name_company"
                     >
                       {fieldsForm.name_company}
@@ -587,7 +587,7 @@ function ContactForm(
                     <LabelForm
                       _class={`font-bold text-[#ffffff]  ${
                         size[fieldsForm.fontSize ?? "normal"]
-                      }  leading-[21px] font-noto-sans `}
+                      }  leading-[21px] font-archimoto-medium`}
                       nameAttr="phone_number"
                     >
                       {fieldsForm.phone_number}
@@ -621,7 +621,7 @@ function ContactForm(
                       <LabelForm
                         _class={`font-bold text-[#ffffff]  ${
                           size[fieldsForm.fontSize ?? "normal"]
-                        }  leading-[21px] font-noto-sans `}
+                        }  leading-[21px] font-archimoto-medium `}
                         nameAttr="email"
                       >
                         {fieldsForm.email}
@@ -649,7 +649,9 @@ function ContactForm(
               {fieldsForm?.message && (
                 <div class="form-control gap-[32px]">
                   <label
-                    class="font-bold text-[#ffffff] text-24 leading-[21px] font-archimoto-medium"
+                    class={` ${
+                      size[fieldsForm.fontSize ?? "normal"]
+                    } font-bold text-[#ffffff]  leading-[21px] font-archimoto-medium`}
                     for="message"
                   >
                     {fieldsForm.message}
