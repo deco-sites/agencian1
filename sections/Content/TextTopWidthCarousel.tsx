@@ -6,6 +6,7 @@ import { FnContext, SectionProps } from "deco/mod.ts";
 import Icon from "$store/components/ui/Icon.tsx";
 import { clx } from "$store/sdk/clx.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
+import LinkTelephoneWithOptionArrow from "deco-sites/agencian1/components/ui/LinkTelephoneWithOptionArrow.tsx";
 
 /** @titleBy name */
 interface InfoProps {
@@ -35,6 +36,10 @@ interface ImageGeneric {
 /** @titleBy alt */
 export interface ImageCarousel {
   settingsInfo?: InfoProps;
+
+  /**@description Estilo do button */
+  buttonStyle?: "normal" | "ads";
+
   /** @title Imagem Desktop */
   desktop?: ImageGeneric;
   mobile?: ImageGeneric;
@@ -74,107 +79,119 @@ export interface Props {
   mobileMargin?: MobileMargin;
 }
 
+const variant = {
+  normal:
+    "border border-[#fff] hover:bg-[#ffffff] text-[#ffffff]   mobile:w-[55%] md:w-[43%]",
+  ads:
+    "bg-accent hover:bg-[#F8BC33] text-primary border-none lg:w-[60%] w-[70%]",
+};
+
 function ImageCarouselItem(
   { image, lcp, id }: { image: ImageCarousel; lcp?: boolean; id: string },
 ) {
-  const { alt, desktop, mobile, settingsInfo } = image;
+  const { alt, desktop, mobile, settingsInfo, buttonStyle } = image;
 
   return (
-    <>
-      <a
-        href={settingsInfo?.href ?? "javascript:void(0)"}
-        style={{
-          pointerEvents: `${
-            settingsInfo?.href && settingsInfo?.href !== "#" ? "all" : "none"
-          }`,
-        }}
-        id={id}
-        aria-label={settingsInfo?.name}
-        class={clx(
-          `n1-text-top-width-carousel__link relative overflow-hidden w-full border border-[#3B5D5F] 
-          rounded-[20px] mobile:p-[20px] p-[20px] pb-[40px] px-[20px]`,
-        )}
-      >
-        <div class="n1-text-top-width-carousel__overlay absolute w-full h-full top-[0] left-[0] invisible opacity-0">
-        </div>
+    <a
+      href={buttonStyle !== "ads"
+        ? settingsInfo?.href ?? "javascript:void(0)"
+        : settingsInfo?.href}
+      style={{
+        pointerEvents: `${
+          settingsInfo?.href && settingsInfo?.href !== "#" ? "all" : "none"
+        }`,
+      }}
+      id={id}
+      aria-label={settingsInfo?.name}
+      class={clx(
+        `n1-text-top-width-carousel__link relative overflow-hidden w-full border border-[#3B5D5F] 
+        rounded-[20px] mobile:p-[20px] p-[20px] pb-[40px] px-[20px]`,
+      )}
+    >
+      <div class="n1-text-top-width-carousel__overlay absolute w-full h-full top-[0] left-[0] invisible opacity-0">
+      </div>
 
-        <Picture>
-          {mobile?.src && mobile?.width && mobile?.height && (
-            <Source
-              media="(max-width: 767px)"
-              src={mobile.src}
-              width={mobile.width}
-              height={mobile.height}
-            />
-          )}
-          {desktop?.src && desktop?.width && desktop?.height &&
-            (
-              <Source
-                media="(min-width: 768px)"
-                src={desktop.src}
-                width={desktop.width}
-                height={desktop.height}
-              />
-            )}
-          <img
-            src={desktop?.src}
-            loading={lcp ? "eager" : "lazy"}
-            width={desktop?.width}
-            height={desktop?.height}
-            alt={alt}
-            class="mobile:-translate-x-[20px]"
+      <Picture>
+        {mobile?.src && mobile?.width && mobile?.height && (
+          <Source
+            media="(max-width: 767px)"
+            src={mobile.src}
+            width={mobile.width}
+            height={mobile.height}
           />
-        </Picture>
+        )}
+        {desktop?.src && desktop?.width && desktop?.height && (
+          <Source
+            media="(min-width: 768px)"
+            src={desktop.src}
+            width={desktop.width}
+            height={desktop.height}
+          />
+        )}
+        <img
+          src={desktop?.src}
+          loading={lcp ? "eager" : "lazy"}
+          width={desktop?.width}
+          height={desktop?.height}
+          alt={alt}
+          class="mobile:-translate-x-[20px]"
+        />
+      </Picture>
 
-        <div>
-          {settingsInfo?.name && (
-            <span class="text-[#ffffff] flex font-archimoto-medium md:text-20 font-thin md:mt-[22px] mb-[8px]">
-              {settingsInfo?.name}
-            </span>
-          )}
-          {settingsInfo?.title && (
-            <h3
-              class={`text-[#ffffff] flex font-archimoto-medium md:text-40 font-black n1-text-top-width-carousel__title`}
+      <div>
+        {settingsInfo?.name && (
+          <span class="text-[#ffffff] flex font-archimoto-medium md:text-20 font-thin md:mt-[22px] mb-[8px]">
+            {settingsInfo?.name}
+          </span>
+        )}
+        {settingsInfo?.title && (
+          <h3
+            class={`text-[#ffffff] flex font-archimoto-medium md:text-40 font-black n1-text-top-width-carousel__title`}
+          >
+            {settingsInfo?.title}
+          </h3>
+        )}
+        {settingsInfo?.text && (
+          <span class="text-[#ffffff] flex font-noto-sans md:text-14 font-normal mt-[16px] mobile:mb-[32px] md:mb-[59px]">
+            {settingsInfo?.text}
+          </span>
+        )}
+        {settingsInfo?.textLink && (
+          <div
+            class={clx(
+              ` ${
+                variant[buttonStyle ?? "normal"]
+              } flex px-[20px] pb-[11px] pt-[12px] rounded-[100px]
+              justify-center items-center min-w-[144px] group   duration-300 cursor-pointer relative z-20`,
+            )}
+          >
+            <span
+              class={`duration-300 flex  font-archimoto-medium md:text-14 font-black ${
+                buttonStyle !== "ads" && "group-hover:text-[#585858]"
+              }`}
             >
-              {settingsInfo?.title}
-            </h3>
-          )}
-          {settingsInfo?.text && (
-            <span class="text-[#ffffff] flex font-noto-sans md:text-14 font-normal mt-[16px] mobile:mb-[32px] md:mb-[59px]">
-              {settingsInfo?.text}
+              {settingsInfo?.textLink}
             </span>
-          )}
-          {settingsInfo?.textLink && (
-            <div
-              class={clx(
-                `mobile:w-[55%] md:w-[43%] flex border border-[#fff] px-[20px] pb-[11px] pt-[12px] rounded-[100px]
-               justify-center items-center min-w-[144px] group hover:bg-[#ffffff] duration-300 cursor-pointer relative z-20`,
-              )}
+            <svg
+              class="ml-[10px] relative bottom-[2px]"
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="19"
+              viewBox="0 0 18 19"
+              fill="none"
             >
-              <span class="text-[#ffffff] group-hover:text-[#585858] duration-300 flex font-archimoto-medium md:text-14 font-black">
-                {settingsInfo?.textLink}
-              </span>
-              <svg
-                class="ml-[10px] relative bottom-[2px]"
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="19"
-                viewBox="0 0 18 19"
-                fill="none"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M5.25 6.22656C5.25 5.81235 5.58579 5.47656 6 5.47656H12.75C13.1642 5.47656 13.5 5.81235 13.5 6.22656V12.9766C13.5 13.3908 13.1642 13.7266 12.75 13.7266C12.3358 13.7266 12 13.3908 12 12.9766V8.03722L5.78033 14.2569C5.48744 14.5498 5.01256 14.5498 4.71967 14.2569C4.42678 13.964 4.42678 13.4891 4.71967 13.1962L10.9393 6.97656H6C5.58579 6.97656 5.25 6.64078 5.25 6.22656Z"
-                  fill="white"
-                  class="group-hover:fill-[#585858] duration-300"
-                />
-              </svg>
-            </div>
-          )}
-        </div>
-      </a>
-    </>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M5.25 6.22656C5.25 5.81235 5.58579 5.47656 6 5.47656H12.75C13.1642 5.47656 13.5 5.81235 13.5 6.22656V12.9766C13.5 13.3908 13.1642 13.7266 12.75 13.7266C12.3358 13.7266 12 13.3908 12 12.9766V8.03722L5.78033 14.2569C5.48744 14.5498 5.01256 14.5498 4.71967 14.2569C4.42678 13.964 4.42678 13.4891 4.71967 13.1962L10.9393 6.97656H6C5.58579 6.97656 5.25 6.64078 5.25 6.22656Z"
+                fill={`${buttonStyle === "ads" ? "#0C1F59" : "white"}`}
+                class="group-hover:fill-[#585858] duration-300"
+              />
+            </svg>
+          </div>
+        )}
+      </div>
+    </a>
   );
 }
 
