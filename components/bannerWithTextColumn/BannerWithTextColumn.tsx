@@ -2,6 +2,7 @@ import { FnContext, SectionProps } from "deco/mod.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import { clx } from "$store/sdk/clx.ts";
+import Ellipse from "deco-sites/agencian1/components/ui/Ellipse.tsx";
 
 export interface Img {
   /**@title Image Desktop*/
@@ -84,9 +85,21 @@ export interface Content {
   /** @description fonte de descrição (ex: text-14 = 14px) */
   fontSizeMobile?: "text-20" | "text-24";
 
+  alignmentContent?: "center" | "normal";
+
   list?: List;
 
   button?: Button;
+}
+
+export interface Ellipse {
+  horizontal: "left" | "center" | "right";
+  vertical: "top" | "center" | "bottom";
+  width: "100" | "200" | "300";
+  height: "100" | "200" | "300";
+  color: "yellow" | "blue";
+  activeDesktop?: boolean;
+  activeMobile?: boolean;
 }
 
 export interface Props {
@@ -109,8 +122,17 @@ export interface Props {
   /** @description espaçamento entre uma section e outra ex:10px*/
   marginBottom?: string;
 
+  /** @description espaçamento entre uma section e outra ex:10px*/
+  marginTopMobile?: string;
+
+  /** @description espaçamento entre uma section e outra ex:10px*/
+  marginBottomMobile?: string;
+
   /** @description imagem de fundo */
   imageBackground?: ImageWidget;
+
+  /** @description cor no fundo */
+  ellipse?: Ellipse;
 }
 
 const PLACEMENT = {
@@ -135,8 +157,11 @@ export default function BannerWithTextColumn({
   styleContainer = "normal",
   marginTop,
   marginBottom,
+  marginBottomMobile,
+  marginTopMobile,
   device,
   imageBackground,
+  ellipse,
 }: Props & { device: string }) {
   const widthContainerValue = contentText && contentText.list
     ? contentText.list.widthContainerList
@@ -148,14 +173,25 @@ export default function BannerWithTextColumn({
   const {
     fontSize = "text-16",
     fontSizeMobile = "text-14",
+    alignmentContent = "normal",
   } = contentText || {};
+
+  const { activeDesktop } = ellipse || {};
+
+  const isDesktop = device === "desktop";
+
   return (
-    <div class="w-full relative">
+    <div class="w-full relative overflow-x-clip">
       <div
         class={`w-full max-w-[1200px] m-auto z-10 px-5 lg:px-0 lg:py-0 flex ${
           PLACEMENT[placement]
         } justify-between `}
-        style={{ marginTop: `${marginTop}`, marginBottom: `${marginBottom}` }}
+        style={isDesktop
+          ? { marginTop: `${marginTop}`, marginBottom: `${marginBottom}` }
+          : {
+            marginTop: `${marginTopMobile || marginTop}`,
+            marginBottom: `${marginBottomMobile || marginBottom}`,
+          }}
       >
         <div class="lg:w-1/2 z-10">
           {device === "desktop"
@@ -187,7 +223,11 @@ export default function BannerWithTextColumn({
 
         {/** content text */}
         {contentText && (
-          <div class="flex flex-col gap lg:w-1/2">
+          <div
+            class={`flex flex-col gap lg:w-1/2 ${
+              variants[alignmentContent] === "center" && (`justify-center`)
+            }`}
+          >
             <div
               class={`w-full max-w-[526px] ${`${
                 variants[styleContainer] === "center" ? "mx-auto" : ""
@@ -284,9 +324,7 @@ export default function BannerWithTextColumn({
                             <img src={contentText.list?.iconCheck} />
                             <div
                               class={`text-14 lg:text-15 font-noto-sans font-normal  text-[#F3F4F7] !leading-[160%]
-                               w-full max-w-[${
-                                widthContainer[widthContainerValue]
-                              }`}
+                               w-full max-w-[${widthContainerValue}]`}
                               dangerouslySetInnerHTML={{
                                 __html: text.descriptionList,
                               }}
@@ -329,6 +367,8 @@ export default function BannerWithTextColumn({
           />
         </div>
       )}
+
+      {ellipse && <Ellipse ellipse={ellipse} />}
     </div>
   );
 }

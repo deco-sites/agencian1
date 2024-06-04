@@ -24,6 +24,8 @@ interface ImageDevice {
   alt?: string;
 }
 
+/**@title {{{alt}}}*/
+
 export interface CardCases {
   /** @title Image card desktop */
   imgCardDesktop: ImageWidget;
@@ -56,6 +58,9 @@ export interface CardCases {
 }
 
 export interface Props {
+  /** @format html */
+  title?: string;
+
   /** @title Icon do background bottom */
   IconBackgroundBottom?: ImageWidget;
 
@@ -66,6 +71,22 @@ export interface Props {
 
   /** @description Adicione os Cases */
   cardCases?: CardCases[];
+
+  layout?: {
+    /** @tilte Margin top */
+    /** @description Espaçamento entre uma section e outra ex:10px*/
+    marginTop?: string;
+
+    /** @tilte Margin Bottom*/
+    /** @description espaçamento entre uma section e outra ex:10px*/
+    marginBottom?: string;
+
+    /** @description espaçamento entre uma section e outra ex:10px*/
+    marginTopMobile?: string;
+
+    /** @description espaçamento entre uma section e outra ex:10px*/
+    marginBottomMobile?: string;
+  };
 }
 
 export default function Cases(props: Props & { device: string }) {
@@ -73,9 +94,31 @@ export default function Cases(props: Props & { device: string }) {
     return null;
   }
 
+  const isDesktop = props.device === "desktop";
+
+  const { layout } = props ?? {};
+
+  const { marginBottom, marginTop, marginBottomMobile, marginTopMobile } =
+    layout ?? {};
   return (
-    <div className="py-16 lg:py-[100px] relative">
-      <div className="px-4 md:px-28 grid md:grid-cols-1 lg:grid-cols-2 md:gap-3 gap-9 relative z-10">
+    <div
+      className="py-16 px-4 lg:px-0 w-full max-w-[1200px] m-auto lg:py-[100px] relative"
+      style={isDesktop
+        ? { marginTop: `${marginTop}`, marginBottom: `${marginBottom}` }
+        : {
+          marginTop: `${marginTopMobile || marginTop}`,
+          marginBottom: `${marginBottomMobile || marginBottom}`,
+        }}
+    >
+      {props.title && (
+        <div class="w-full">
+          <div
+            class="text-start font-archimoto-black font-black text-24 lg:text-32 text-[#f3f4f7] pb-8 lg:pb-9"
+            dangerouslySetInnerHTML={{ __html: props.title }}
+          />
+        </div>
+      )}
+      <div className="grid md:grid-cols-1 lg:grid-cols-2 md:gap-3 gap-9 relative z-10">
         {props.cardCases.map((card, index) => (
           <div
             className="flex items-center justify-center w-full md:mb-8 z-10"

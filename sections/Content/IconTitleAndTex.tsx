@@ -35,18 +35,60 @@ interface Props {
   backgroundImage?: ImageGeneric;
   /**@title Ativar imagem de fundo? */
   activeBackground?: boolean;
+
+  button?: {
+    textButton: string;
+    link: string;
+  };
+
+  layout?: {
+    /** @tilte Margin top */
+    /** @description Espaçamento entre uma section e outra ex:10px*/
+    marginTop?: string;
+
+    /** @tilte Margin Bottom*/
+    /** @description espaçamento entre uma section e outra ex:10px*/
+    marginBottom?: string;
+
+    /** @description espaçamento entre uma section e outra ex:10px*/
+    marginTopMobile?: string;
+
+    /** @description espaçamento entre uma section e outra ex:10px*/
+    marginBottomMobile?: string;
+  };
 }
 
 function IconTitleAndTex(props: SectionProps<ReturnType<typeof loader>>) {
-  const { icon, title, paragraph, backgroundImage, activeBackground, device } =
-    props;
+  const {
+    icon,
+    title,
+    paragraph,
+    backgroundImage,
+    activeBackground,
+    device,
+    button,
+    layout,
+  } = props;
   const validBackground = device == "desktop" && activeBackground &&
     backgroundImage && backgroundImage?.src && backgroundImage?.width &&
     backgroundImage?.height;
 
+  const isDesktop = device === "desktop";
+
+  const { marginBottom, marginTop, marginBottomMobile, marginTopMobile } =
+    layout ?? {};
+
   return (
     <>
-      <div class="text-[#ffffff]">
+      <div
+        class="text-[#ffffff]"
+        style={isDesktop
+          ? { marginTop: `${marginTop}`, marginBottom: `${marginBottom}` }
+          : {
+            marginTop: `${marginTopMobile || marginTop}`,
+            marginBottom: `${marginBottomMobile || marginBottom}`,
+          }}
+      >
         {validBackground && (
           <div class="relative">
             <div
@@ -117,6 +159,18 @@ function IconTitleAndTex(props: SectionProps<ReturnType<typeof loader>>) {
               </p>
             )}
           </div>
+
+          {button && (
+            <a
+              href={button.link}
+              aria-label={`link fale conosco`}
+              class="rounded-[100px] w-[316px] lg:w-[313px] h-[51px] flex items-center justify-center text-center mt-5 hover:brightness-90 bg-[#F6AB00] mb-20 lg:mb-0 "
+            >
+              <span class="text-[#0C1F59] lg:text-16 font-archimoto-black pt-[1px] font-black">
+                {button.textButton}
+              </span>
+            </a>
+          )}
         </div>
       </div>
     </>
