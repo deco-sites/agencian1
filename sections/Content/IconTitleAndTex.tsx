@@ -40,6 +40,22 @@ interface Props {
     textButton: string;
     link: string;
   };
+
+  layout?: {
+    /** @tilte Margin top */
+    /** @description Espaçamento entre uma section e outra ex:10px*/
+    marginTop?: string;
+
+    /** @tilte Margin Bottom*/
+    /** @description espaçamento entre uma section e outra ex:10px*/
+    marginBottom?: string;
+
+    /** @description espaçamento entre uma section e outra ex:10px*/
+    marginTopMobile?: string;
+
+    /** @description espaçamento entre uma section e outra ex:10px*/
+    marginBottomMobile?: string;
+  };
 }
 
 function IconTitleAndTex(props: SectionProps<ReturnType<typeof loader>>) {
@@ -51,14 +67,28 @@ function IconTitleAndTex(props: SectionProps<ReturnType<typeof loader>>) {
     activeBackground,
     device,
     button,
+    layout,
   } = props;
   const validBackground = device == "desktop" && activeBackground &&
     backgroundImage && backgroundImage?.src && backgroundImage?.width &&
     backgroundImage?.height;
 
+  const isDesktop = device === "desktop";
+
+  const { marginBottom, marginTop, marginBottomMobile, marginTopMobile } =
+    layout ?? {};
+
   return (
     <>
-      <div class="text-[#ffffff]">
+      <div
+        class="text-[#ffffff]"
+        style={isDesktop
+          ? { marginTop: `${marginTop}`, marginBottom: `${marginBottom}` }
+          : {
+            marginTop: `${marginTopMobile || marginTop}`,
+            marginBottom: `${marginBottomMobile || marginBottom}`,
+          }}
+      >
         {validBackground && (
           <div class="relative">
             <div

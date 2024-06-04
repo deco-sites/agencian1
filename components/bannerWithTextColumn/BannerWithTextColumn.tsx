@@ -122,6 +122,12 @@ export interface Props {
   /** @description espaçamento entre uma section e outra ex:10px*/
   marginBottom?: string;
 
+  /** @description espaçamento entre uma section e outra ex:10px*/
+  marginTopMobile?: string;
+
+  /** @description espaçamento entre uma section e outra ex:10px*/
+  marginBottomMobile?: string;
+
   /** @description imagem de fundo */
   imageBackground?: ImageWidget;
 
@@ -151,6 +157,8 @@ export default function BannerWithTextColumn({
   styleContainer = "normal",
   marginTop,
   marginBottom,
+  marginBottomMobile,
+  marginTopMobile,
   device,
   imageBackground,
   ellipse,
@@ -169,13 +177,21 @@ export default function BannerWithTextColumn({
   } = contentText || {};
 
   const { activeDesktop } = ellipse || {};
+
+  const isDesktop = device === "desktop";
+
   return (
     <div class="w-full relative overflow-x-clip">
       <div
         class={`w-full max-w-[1200px] m-auto z-10 px-5 lg:px-0 lg:py-0 flex ${
           PLACEMENT[placement]
         } justify-between `}
-        style={{ marginTop: `${marginTop}`, marginBottom: `${marginBottom}` }}
+        style={isDesktop
+          ? { marginTop: `${marginTop}`, marginBottom: `${marginBottom}` }
+          : {
+            marginTop: `${marginTopMobile || marginTop}`,
+            marginBottom: `${marginBottomMobile || marginBottom}`,
+          }}
       >
         <div class="lg:w-1/2 z-10">
           {device === "desktop"

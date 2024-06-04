@@ -71,6 +71,22 @@ export interface Props {
 
   /** @description Adicione os Cases */
   cardCases?: CardCases[];
+
+  layout?: {
+    /** @tilte Margin top */
+    /** @description Espaçamento entre uma section e outra ex:10px*/
+    marginTop?: string;
+
+    /** @tilte Margin Bottom*/
+    /** @description espaçamento entre uma section e outra ex:10px*/
+    marginBottom?: string;
+
+    /** @description espaçamento entre uma section e outra ex:10px*/
+    marginTopMobile?: string;
+
+    /** @description espaçamento entre uma section e outra ex:10px*/
+    marginBottomMobile?: string;
+  };
 }
 
 export default function Cases(props: Props & { device: string }) {
@@ -78,8 +94,22 @@ export default function Cases(props: Props & { device: string }) {
     return null;
   }
 
+  const isDesktop = props.device === "desktop";
+
+  const { layout } = props ?? {};
+
+  const { marginBottom, marginTop, marginBottomMobile, marginTopMobile } =
+    layout ?? {};
   return (
-    <div className="py-16 px-4 lg:px-0 w-full max-w-[1200px] m-auto lg:py-[100px] relative">
+    <div
+      className="py-16 px-4 lg:px-0 w-full max-w-[1200px] m-auto lg:py-[100px] relative"
+      style={isDesktop
+        ? { marginTop: `${marginTop}`, marginBottom: `${marginBottom}` }
+        : {
+          marginTop: `${marginTopMobile || marginTop}`,
+          marginBottom: `${marginBottomMobile || marginBottom}`,
+        }}
+    >
       {props.title && (
         <div class="w-full">
           <div

@@ -4,6 +4,7 @@ import { propsLoader } from "deco/blocks/propsLoader.ts";
 import Image from "apps/website/components/Image.tsx";
 import EllipseSnippet from "deco-sites/agencian1/components/ui/EllipseSnippet.tsx";
 import Ellipse from "deco-sites/agencian1/components/ui/Ellipse.tsx";
+import { FnContext } from "deco/types.ts";
 
 export interface Ellipse {
   horizontal: "left" | "center" | "right";
@@ -52,6 +53,12 @@ export interface Props {
   /** @tilte Margin Bottom*/
   /** @description espaçamento entre uma section e outra ex:10px*/
   marginBottom?: string;
+
+  /** @description espaçamento entre uma section e outra ex:10px*/
+  marginTopMobile?: string;
+
+  /** @description espaçamento entre uma section e outra ex:10px*/
+  marginBottomMobile?: string;
 }
 
 const positionTitle: { [key: string]: string } = {
@@ -77,6 +84,8 @@ export default function BenefitsList(
     title,
     marginBottom,
     marginTop,
+    marginBottomMobile,
+    marginTopMobile,
     lists,
     icon,
     activeBackgroundImage,
@@ -84,16 +93,24 @@ export default function BenefitsList(
     maxWidth = "285",
     columns = "4",
     ellipse,
-  }: Props,
+    device,
+  }: Props & { device?: string },
 ) {
   const { alignment = "center" } = titleStyle || {};
+
+  const isDesktop = device === "desktop";
 
   return (
     <div
       className={`relative w-full overflow-x-clip ${
         activeBackgroundImage && (`n1-custom-bg-img md:n1-custom-bg-img-2`)
       }`}
-      style={{ marginTop: `${marginTop}`, marginBottom: `${marginBottom}` }}
+      style={isDesktop
+        ? { marginTop: `${marginTop}`, marginBottom: `${marginBottom}` }
+        : {
+          marginTop: `${marginTopMobile || marginTop}`,
+          marginBottom: `${marginBottomMobile || marginBottom}`,
+        }}
     >
       <div
         className={`w-full max-w-[1200px] m-auto pb-20 md:py-[70px] px-5`}
@@ -156,3 +173,10 @@ export default function BenefitsList(
     </div>
   );
 }
+
+export const loader = (props: Props, _req: Request, ctx: FnContext) => {
+  return {
+    ...props,
+    device: ctx.device || "desktop",
+  };
+};
