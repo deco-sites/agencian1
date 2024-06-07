@@ -133,10 +133,10 @@ function ContactForm(
   const displayModalForm = useSignal(ACTIVEMODALFORM[activeModalForm]);
 
   useEffect(() => {
-    const btnSubmit = document.querySelector<HTMLButtonElement>(
-      ".n1-form__submit",
-    );
-    btnSubmit && btnSubmit?.removeAttribute("disabled");
+    const btnSubmits = document.querySelectorAll<HTMLButtonElement>(".n1-form__submit");
+    btnSubmits.forEach((btnSubmit) => {
+      btnSubmit.removeAttribute("disabled");
+    });
   }, []);
 
   function addMaskofTelephone(target: HTMLInputElement) {
