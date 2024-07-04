@@ -1,5 +1,5 @@
 import { Picture, Source } from "apps/website/components/Picture.tsx";
-import { Banner } from "deco-sites/agencian1/components/sliderCards/SliderCards.tsx";
+import { Banner } from "site/components/sliderCards/SliderCards.tsx";
 
 export default function CardItem(
   { image, lcp, id }: { image: Banner; lcp?: boolean; id: string },

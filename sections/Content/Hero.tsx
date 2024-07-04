@@ -3,7 +3,7 @@ import Image from "apps/website/components/Image.tsx";
 import { FnContext, SectionProps } from "deco/mod.ts";
 import { clx } from "$store/sdk/clx.ts";
 import { useEffect } from "preact/hooks";
-import LinkTelephoneWithOptionArrow from "deco-sites/agencian1/components/ui/LinkTelephoneWithOptionArrow.tsx";
+import LinkTelephoneWithOptionArrow from "site/components/ui/LinkTelephoneWithOptionArrow.tsx";
 
 export interface CTA {
   id?: string;

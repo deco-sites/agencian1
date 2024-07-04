@@ -1,5 +1,5 @@
 import { clx } from "$store/sdk/clx.ts";
-import PolicyTable from "deco-sites/agencian1/components/ui/PolicyTable.tsx";
+import PolicyTable from "site/components/ui/PolicyTable.tsx";
 
 /**@titleBy th */
 interface Thead {
