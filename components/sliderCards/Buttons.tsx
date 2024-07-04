@@ -1,5 +1,5 @@
-import Slider from "deco-sites/agencian1/components/ui/Slider.tsx";
-import Icon from "deco-sites/agencian1/components/ui/Icon.tsx";
+import Slider from "site/components/ui/Slider.tsx";
+import Icon from "site/components/ui/Icon.tsx";
 
 export default function Buttons() {
   return (

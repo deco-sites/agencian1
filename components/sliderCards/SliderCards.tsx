@@ -3,10 +3,10 @@ import SliderJS from "$store/islands/SliderJS.tsx";
 import { useId } from "$store/sdk/useId.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { FnContext, SectionProps } from "deco/mod.ts";
-import CardItem from "deco-sites/agencian1/components/sliderCards/CardItem.tsx";
-import Dots from "deco-sites/agencian1/components/sliderCards/Dotz.tsx";
-import Buttons from "deco-sites/agencian1/components/sliderCards/Buttons.tsx";
-import Icon from "deco-sites/agencian1/components/ui/Icon.tsx";
+import CardItem from "site/components/sliderCards/CardItem.tsx";
+import Dots from "site/components/sliderCards/Dotz.tsx";
+import Buttons from "site/components/sliderCards/Buttons.tsx";
+import Icon from "site/components/ui/Icon.tsx";
 import Image from "apps/website/components/Image.tsx";
 
 /**

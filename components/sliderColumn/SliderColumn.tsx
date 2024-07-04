@@ -3,9 +3,9 @@ import SliderJS from "$store/islands/SliderJS.tsx";
 import { useId } from "$store/sdk/useId.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { FnContext, SectionProps } from "deco/mod.ts";
-import { BannerItem } from "deco-sites/agencian1/components/sliderColumn/BannerItems.tsx";
-import Dots from "deco-sites/agencian1/components/sliderColumn/Dots.tsx";
-import Buttons from "deco-sites/agencian1/components/sliderColumn/Buttons.tsx";
+import { BannerItem } from "site/components/sliderColumn/BannerItems.tsx";
+import Dots from "site/components/sliderColumn/Dots.tsx";
+import Buttons from "site/components/sliderColumn/Buttons.tsx";
 import { clx } from "$store/sdk/clx.ts";
 
 export interface Banner {

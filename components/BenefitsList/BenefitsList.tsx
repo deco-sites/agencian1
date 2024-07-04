@@ -1,9 +1,9 @@
-import Icon from "deco-sites/agencian1/components/ui/Icon.tsx";
+import Icon from "site/components/ui/Icon.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { propsLoader } from "deco/blocks/propsLoader.ts";
 import Image from "apps/website/components/Image.tsx";
-import EllipseSnippet from "deco-sites/agencian1/components/ui/EllipseSnippet.tsx";
-import Ellipse from "deco-sites/agencian1/components/ui/Ellipse.tsx";
+import EllipseSnippet from "site/components/ui/EllipseSnippet.tsx";
+import Ellipse from "site/components/ui/Ellipse.tsx";
 import { FnContext } from "deco/types.ts";
 
 export interface Ellipse {

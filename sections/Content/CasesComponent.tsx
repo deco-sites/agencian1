@@ -4,7 +4,7 @@ import { FnContext, SectionProps } from "deco/mod.ts";
 import CasesComponentMobile from "$store/components/ui/CasesComponentMobile.tsx";
 import CasesComponentDesktop from "$store/components/ui/CasesComponentDesktop.tsx";
 import CasesComponentTextWithButton from "$store/components/ui/CasesComponentTextWithButton.tsx";
-import LinkTelephoneWithOptionArrow from "deco-sites/agencian1/components/ui/LinkTelephoneWithOptionArrow.tsx";
+import LinkTelephoneWithOptionArrow from "site/components/ui/LinkTelephoneWithOptionArrow.tsx";
 
 /** @title {{{nameTag}}}*/
 interface TagProps {

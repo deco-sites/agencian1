@@ -2,7 +2,7 @@ import { FnContext, SectionProps } from "deco/mod.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import { clx } from "$store/sdk/clx.ts";
-import Ellipse from "deco-sites/agencian1/components/ui/Ellipse.tsx";
+import Ellipse from "site/components/ui/Ellipse.tsx";
 
 export interface Img {
   /**@title Image Desktop*/

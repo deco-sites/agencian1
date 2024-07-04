@@ -1,5 +1,5 @@
-import Slider from "deco-sites/agencian1/components/ui/Slider.tsx";
-import { Banner } from "deco-sites/agencian1/components/sliderCards/SliderCards.tsx";
+import Slider from "site/components/ui/Slider.tsx";
+import { Banner } from "site/components/sliderCards/SliderCards.tsx";
 
 type Props = {
   /** @format html */

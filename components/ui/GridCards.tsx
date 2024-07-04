@@ -1,6 +1,6 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import { clx } from "deco-sites/agencian1/sdk/clx.ts";
+import { clx } from "site/sdk/clx.ts";
 import { FnContext } from "deco/mod.ts";
 
 /** @title {{{title}}} */
