@@ -1,1 +1,498 @@
-{"name":"Suporte","path":"/nossos-servicos/suporte","sections":{"variants":[{"rule":{"name":"N1_SelectedLanguage","value":"es-es","__resolveType":"website/matchers/cookie.ts"},"value":[{"__resolveType":"Theme"},{"__resolveType":"header-principal"},{"banners":[{"images":{"mobile":{"alt":"Banner suporte mobile","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bca414b7-44f0-4256-b082-90163620cf49","width":"390","height":"490"},"desktop":{"alt":"Banner Suporte","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5f0bace5-337e-46bf-93ec-6ea453abf425","width":"1440","height":"482"}},"matcher":"/nossos-servicos/suporte"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"items":[{"category":"Nossos Serviços","subcategory":"Suporte"}],"__resolveType":"site/sections/Content/BreadcrumbCustom.tsx"},{"icon":{"alt":"Icon top","mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ceae1847-7d65-4056-9efe-2ee4ab06c785","width":243,"height":106},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/449da941-cedd-41c9-9997-5981132b9532","width":298,"height":124}},"title":"Com o foco em aumentar a performance e a conversão da sua loja","__resolveType":"site/sections/Content/IconTitleAndTex.tsx","backgroundImage":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/54522cd0-bc9c-4458-b236-4e344ad0397b","width":1440,"height":430},"activeBackground":true},{"image":{"mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ad4b9dee-ddd1-4388-94db-60195e3435bd","width":"348","height":"279"},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/cdf118e3-135b-4854-b0ee-c0fa11280639","width":"625","height":"500"}},"blockText":{"subtitle":"<p><strong><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">{</span>orientação vtex<span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">}</span></strong></p>","widthBlock":50,"description":"<p><strong>Você tem dúvidas ou problemas com sua loja virtual, mas não sabe como resolver?</strong></p><p><br data-mce-bogus=\"1\"></p><p>A Agência N1 está aqui para ajudar, oferecendo suporte técnico especializado para lojas virtuais na plataforma VTEX. Nossa equipe altamente qualificada está pronta para resolver todos os seus desafios, desde integrações complexas até otimizações de módulos existentes.</p><p><br data-mce-bogus=\"1\"></p><p>Com nosso suporte dedicado, você pode ter certeza de alcançar sucesso e eficiência em sua operação de e-commerce. Não deixe que problemas técnicos atrapalhem o crescimento do seu negócio. Deixe-nos cuidar dos detalhes técnicos enquanto você se concentra em expandir sua presença online e atender às necessidades dos seus clientes.</p>","activeEclipseText":true},"placement":"esquerdo","titleCenter":"<p><br data-mce-bogus=\"1\"></p>","__resolveType":"site/sections/Content/TextIconAndImage.tsx"},{"grid":{"row":[{"image":[{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7c19a98-8dc6-418d-903a-070198b01aa2","name":"icon 1","text":"Dúvidas esclarecidas","width":51,"height":50},{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/52734761-913c-418d-8214-a113578762cd","name":"icon 2","text":"Agilidade no atendimento.","width":51,"height":50},{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9b61bd5a-f919-47a0-88c6-95b1c98b64ad","name":"icon 3","text":"Experiência técnica de alto nível.","width":51,"height":50},{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a35147b5-c9c7-47d2-9403-fe9e93f13f40","name":"icon 4","text":"Maior conversão de vendas.","width":51,"height":50}],"subtitle":"<p><strong><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">{</span>Benefícios<span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">}</span></strong></p>"},{"image":[{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/988dc70e-cec7-4a6e-9a00-c8678be72291","name":"icon 1","text":"Aumento da produtividade","width":51,"height":50},{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/15009424-bcc9-4593-b8c2-5d91e97171f8","name":"icon 2","text":"Redução de custos","width":51,"height":50},{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6e374bd6-9e2a-4f19-b2f6-63312f8f5f52","name":"icon 3","text":"Melhora da satisfação do cliente","width":51,"height":50},{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/647b143d-f137-473b-b424-0764899f3177","name":"icon 4","text":"Aumento do conhecimento do time interno","width":51,"height":50}],"subtitle":"<p><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">{</span>Resultados<span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">}</span></p>"}]},"__resolveType":"site/sections/Content/IconText.tsx"},{"__resolveType":"vamos-dar-vida"},{"__resolveType":"footer-principal"}]},{"rule":{"name":"N1_SelectedLanguage","value":"en-en","__resolveType":"website/matchers/cookie.ts"},"value":[{"__resolveType":"Theme"},{"__resolveType":"Header-english"},{"banners":[{"images":{"mobile":{"alt":"Banner suporte mobile","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bca414b7-44f0-4256-b082-90163620cf49","width":"390","height":"490"},"desktop":{"alt":"Banner Suporte","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5f0bace5-337e-46bf-93ec-6ea453abf425","width":"1440","height":"482"}},"matcher":"/nossos-servicos/suporte"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"items":[{"category":"Nossos Serviços","subcategory":"Suporte"}],"__resolveType":"site/sections/Content/BreadcrumbCustom.tsx"},{"icon":{"alt":"Icon top","mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ceae1847-7d65-4056-9efe-2ee4ab06c785","width":243,"height":106},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/449da941-cedd-41c9-9997-5981132b9532","width":298,"height":124}},"title":"With a focus on increasing your store’s performance and conversion","__resolveType":"site/sections/Content/IconTitleAndTex.tsx","backgroundImage":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/54522cd0-bc9c-4458-b236-4e344ad0397b","width":1440,"height":430},"activeBackground":true},{"image":{"mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ad4b9dee-ddd1-4388-94db-60195e3435bd","width":"348","height":"279"},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/cdf118e3-135b-4854-b0ee-c0fa11280639","width":"625","height":"500"}},"blockText":{"subtitle":"<p><strong><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">{</span>vtex guidance<span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">}</span></strong></p>","widthBlock":50,"description":"<p><strong>Do you have questions or problems with your online store, but don't know how to resolve them?</strong></p><p><br data-mce-bogus=\"1\"></p><p>N1 Agency is here to help, offering specialized technical support for virtual stores on the VTEX platform. Our highly qualified team is ready to solve all your challenges, from complex integrations to optimizations of existing modules.</p><p><br data-mce-bogus=\"1\"></p><p>With our dedicated support, you can be sure to achieve success and efficiency in your e-commerce operation. Don't let technical problems hinder the growth of your business. Let us take care of the technical details while you focus on expanding your online presence and meeting your customers' needs.</p>","activeEclipseText":true},"placement":"esquerdo","titleCenter":"<p><br data-mce-bogus=\"1\"></p>","__resolveType":"site/sections/Content/TextIconAndImage.tsx"},{"grid":{"row":[{"image":[{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7c19a98-8dc6-418d-903a-070198b01aa2","name":"icon 1","text":"Questions clarified","width":51,"height":50},{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/52734761-913c-418d-8214-a113578762cd","name":"icon 2","text":"Agility in service.","width":51,"height":50},{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9b61bd5a-f919-47a0-88c6-95b1c98b64ad","name":"icon 3","text":"High level technical experience.","width":51,"height":50},{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a35147b5-c9c7-47d2-9403-fe9e93f13f40","name":"icon 4","text":"Greater sales conversion.","width":51,"height":50}],"subtitle":"<p><strong><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">{</span>Benefits<span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">}</span></strong></p>"},{"image":[{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/988dc70e-cec7-4a6e-9a00-c8678be72291","name":"icon 1","text":"Increased productivity","width":51,"height":50},{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/15009424-bcc9-4593-b8c2-5d91e97171f8","name":"icon 2","text":"Cost reduction","width":51,"height":50},{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6e374bd6-9e2a-4f19-b2f6-63312f8f5f52","name":"icon 3","text":"Improved customer satisfaction","width":51,"height":50},{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/647b143d-f137-473b-b424-0764899f3177","name":"icon 4","text":"Increased knowledge of the internal team","width":51,"height":50}],"subtitle":"<p><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">{</span>Results<span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">}</span></p>"}]},"__resolveType":"site/sections/Content/IconText.tsx"},{"__resolveType":"vamos dar vida - english"},{"__resolveType":"footer-English"}]},{"rule":{"__resolveType":"website/matchers/always.ts"},"value":[{"__resolveType":"Theme"},{"__resolveType":"header-principal"},{"banners":[{"images":{"mobile":{"alt":"Banner suporte mobile","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bca414b7-44f0-4256-b082-90163620cf49","width":"390","height":"490"},"desktop":{"alt":"Banner Suporte","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5f0bace5-337e-46bf-93ec-6ea453abf425","width":"1440","height":"482"}},"matcher":"/nossos-servicos/suporte"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"items":[{"category":"Nossos Serviços","subcategory":"Suporte"}],"__resolveType":"site/sections/Content/BreadcrumbCustom.tsx"},{"icon":{"alt":"Icon top","mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ceae1847-7d65-4056-9efe-2ee4ab06c785","width":243,"height":106},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/449da941-cedd-41c9-9997-5981132b9532","width":298,"height":124}},"title":"Com o foco em aumentar a performance e a conversão da sua loja","__resolveType":"site/sections/Content/IconTitleAndTex.tsx","backgroundImage":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/54522cd0-bc9c-4458-b236-4e344ad0397b","width":1440,"height":430},"activeBackground":true},{"image":{"mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ad4b9dee-ddd1-4388-94db-60195e3435bd","width":"348","height":"279"},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/cdf118e3-135b-4854-b0ee-c0fa11280639","width":"625","height":"500"}},"blockText":{"subtitle":"<h2><strong><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">﻿</span></span>orientação vtex</strong></h2>","widthBlock":50,"description":"<p><strong>Você tem dúvidas ou problemas com sua loja virtual, mas não sabe como resolver?</strong></p><p><br data-mce-bogus=\"1\"></p><p>A Agência N1 está aqui para ajudar, oferecendo suporte técnico especializado para lojas virtuais na plataforma VTEX. Nossa equipe altamente qualificada está pronta para resolver todos os seus desafios, desde integrações complexas até otimizações de módulos existentes.</p><p><br data-mce-bogus=\"1\"></p><p>Com nosso suporte dedicado, você pode ter certeza de alcançar sucesso e eficiência em sua operação de e-commerce. Não deixe que problemas técnicos atrapalhem o crescimento do seu negócio. Deixe-nos cuidar dos detalhes técnicos enquanto você se concentra em expandir sua presença online e atender às necessidades dos seus clientes.</p>","addKeysInWords":true,"activeEclipseText":true},"placement":"esquerdo","titleCenter":"<p><br data-mce-bogus=\"1\"></p>","__resolveType":"site/sections/Content/TextIconAndImage.tsx"},{"grid":{"row":[{"image":[{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7c19a98-8dc6-418d-903a-070198b01aa2","name":"icon 1","text":"Dúvidas esclarecidas","width":51,"height":50},{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/52734761-913c-418d-8214-a113578762cd","name":"icon 2","text":"Agilidade no atendimento.","width":51,"height":50},{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9b61bd5a-f919-47a0-88c6-95b1c98b64ad","name":"icon 3","text":"Experiência técnica de alto nível.","width":51,"height":50},{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a35147b5-c9c7-47d2-9403-fe9e93f13f40","name":"icon 4","text":"Maior conversão de vendas.","width":51,"height":50}],"subtitle":"<h2><strong>Benefícios</strong></h2>","addKeysInWords":true},{"image":[{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/988dc70e-cec7-4a6e-9a00-c8678be72291","name":"icon 1","text":"Aumento da produtividade","width":51,"height":50},{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/15009424-bcc9-4593-b8c2-5d91e97171f8","name":"icon 2","text":"Redução de custos","width":51,"height":50},{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6e374bd6-9e2a-4f19-b2f6-63312f8f5f52","name":"icon 3","text":"Melhora da satisfação do cliente","width":51,"height":50},{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/647b143d-f137-473b-b424-0764899f3177","name":"icon 4","text":"Aumento do conhecimento do time interno","width":51,"height":50}],"subtitle":"<h2>Resultados</h2>","addKeysInWords":true}]},"__resolveType":"site/sections/Content/IconText.tsx"},{"__resolveType":"vamos-dar-vida"},{"__resolveType":"footer-principal"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/dba249a8-2b84-4c7e-85a7-e54880361dd6","title":"Suporte N1.AG | Solução de desafios VTEX e integrações","canonical":"/nossos-servicos/suporte","description":"Obtenha suporte completo para o seu e-commerce com os serviços especializados da N1.AG. Nossa equipe está pronta para oferecer assistência técnica e atualizações contínuas para garantir o máximo desempenho e segurança da sua loja online ou aplicativo. Conte com a expertise da N1.AG para manter sua presença digital sempre em pleno funcionamento.","__resolveType":"website/sections/Seo/SeoV2.tsx","titleTemplate":"Suporte N1.AG | Solução de desafios VTEX e integrações","descriptionTemplate":"Obtenha suporte completo para o seu e-commerce com os serviços especializados da N1.AG. Nossa equipe está pronta para oferecer assistência técnica e atualizações contínuas para garantir o máximo desempenho e segurança da sua loja online ou aplicativo. Conte com a expertise da N1.AG para manter sua presença digital sempre em pleno funcionamento."}]}],"__resolveType":"website/flags/multivariate.ts"},"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Suporte",
+  "path": "/nossos-servicos/suporte",
+  "sections": {
+    "variants": [
+      {
+        "rule": {
+          "name": "N1_SelectedLanguage",
+          "value": "es-es",
+          "__resolveType": "website/matchers/cookie.ts"
+        },
+        "value": [
+          { "__resolveType": "Theme" },
+          { "__resolveType": "header-principal" },
+          {
+            "banners": [
+              {
+                "images": {
+                  "mobile": {
+                    "alt": "Banner suporte mobile",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bca414b7-44f0-4256-b082-90163620cf49",
+                    "width": "390",
+                    "height": "490"
+                  },
+                  "desktop": {
+                    "alt": "Banner Suporte",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5f0bace5-337e-46bf-93ec-6ea453abf425",
+                    "width": "1440",
+                    "height": "482"
+                  }
+                },
+                "matcher": "/nossos-servicos/suporte"
+              }
+            ],
+            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+          },
+          {
+            "items": [
+              { "category": "Nossos Serviços", "subcategory": "Suporte" }
+            ],
+            "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
+          },
+          {
+            "icon": {
+              "alt": "Icon top",
+              "mobile": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ceae1847-7d65-4056-9efe-2ee4ab06c785",
+                "width": 243,
+                "height": 106
+              },
+              "desktop": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/449da941-cedd-41c9-9997-5981132b9532",
+                "width": 298,
+                "height": 124
+              }
+            },
+            "title": "Com o foco em aumentar a performance e a conversão da sua loja",
+            "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
+            "backgroundImage": {
+              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/54522cd0-bc9c-4458-b236-4e344ad0397b",
+              "width": 1440,
+              "height": 430
+            },
+            "activeBackground": true
+          },
+          {
+            "image": {
+              "mobile": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ad4b9dee-ddd1-4388-94db-60195e3435bd",
+                "width": "348",
+                "height": "279"
+              },
+              "desktop": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/cdf118e3-135b-4854-b0ee-c0fa11280639",
+                "width": "625",
+                "height": "500"
+              }
+            },
+            "blockText": {
+              "subtitle": "<p><strong><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">{</span>orientação vtex<span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">}</span></strong></p>",
+              "widthBlock": 50,
+              "description": "<p><strong>Você tem dúvidas ou problemas com sua loja virtual, mas não sabe como resolver?</strong></p><p><br data-mce-bogus=\"1\"></p><p>A Agência N1 está aqui para ajudar, oferecendo suporte técnico especializado para lojas virtuais na plataforma VTEX. Nossa equipe altamente qualificada está pronta para resolver todos os seus desafios, desde integrações complexas até otimizações de módulos existentes.</p><p><br data-mce-bogus=\"1\"></p><p>Com nosso suporte dedicado, você pode ter certeza de alcançar sucesso e eficiência em sua operação de e-commerce. Não deixe que problemas técnicos atrapalhem o crescimento do seu negócio. Deixe-nos cuidar dos detalhes técnicos enquanto você se concentra em expandir sua presença online e atender às necessidades dos seus clientes.</p>",
+              "activeEclipseText": true
+            },
+            "placement": "esquerdo",
+            "titleCenter": "<p><br data-mce-bogus=\"1\"></p>",
+            "__resolveType": "site/sections/Content/TextIconAndImage.tsx"
+          },
+          {
+            "grid": {
+              "row": [
+                {
+                  "image": [
+                    {
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7c19a98-8dc6-418d-903a-070198b01aa2",
+                      "name": "icon 1",
+                      "text": "Dúvidas esclarecidas",
+                      "width": 51,
+                      "height": 50
+                    },
+                    {
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/52734761-913c-418d-8214-a113578762cd",
+                      "name": "icon 2",
+                      "text": "Agilidade no atendimento.",
+                      "width": 51,
+                      "height": 50
+                    },
+                    {
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9b61bd5a-f919-47a0-88c6-95b1c98b64ad",
+                      "name": "icon 3",
+                      "text": "Experiência técnica de alto nível.",
+                      "width": 51,
+                      "height": 50
+                    },
+                    {
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a35147b5-c9c7-47d2-9403-fe9e93f13f40",
+                      "name": "icon 4",
+                      "text": "Maior conversão de vendas.",
+                      "width": 51,
+                      "height": 50
+                    }
+                  ],
+                  "subtitle": "<p><strong><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">{</span>Benefícios<span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">}</span></strong></p>"
+                },
+                {
+                  "image": [
+                    {
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/988dc70e-cec7-4a6e-9a00-c8678be72291",
+                      "name": "icon 1",
+                      "text": "Aumento da produtividade",
+                      "width": 51,
+                      "height": 50
+                    },
+                    {
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/15009424-bcc9-4593-b8c2-5d91e97171f8",
+                      "name": "icon 2",
+                      "text": "Redução de custos",
+                      "width": 51,
+                      "height": 50
+                    },
+                    {
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6e374bd6-9e2a-4f19-b2f6-63312f8f5f52",
+                      "name": "icon 3",
+                      "text": "Melhora da satisfação do cliente",
+                      "width": 51,
+                      "height": 50
+                    },
+                    {
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/647b143d-f137-473b-b424-0764899f3177",
+                      "name": "icon 4",
+                      "text": "Aumento do conhecimento do time interno",
+                      "width": 51,
+                      "height": 50
+                    }
+                  ],
+                  "subtitle": "<p><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">{</span>Resultados<span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">}</span></p>"
+                }
+              ]
+            },
+            "__resolveType": "site/sections/Content/IconText.tsx"
+          },
+          { "__resolveType": "vamos-dar-vida" },
+          { "__resolveType": "footer-principal" }
+        ]
+      },
+      {
+        "rule": {
+          "name": "N1_SelectedLanguage",
+          "value": "en-en",
+          "__resolveType": "website/matchers/cookie.ts"
+        },
+        "value": [
+          { "__resolveType": "Theme" },
+          { "__resolveType": "Header-english" },
+          {
+            "banners": [
+              {
+                "images": {
+                  "mobile": {
+                    "alt": "Banner suporte mobile",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bca414b7-44f0-4256-b082-90163620cf49",
+                    "width": "390",
+                    "height": "490"
+                  },
+                  "desktop": {
+                    "alt": "Banner Suporte",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5f0bace5-337e-46bf-93ec-6ea453abf425",
+                    "width": "1440",
+                    "height": "482"
+                  }
+                },
+                "matcher": "/nossos-servicos/suporte"
+              }
+            ],
+            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+          },
+          {
+            "items": [
+              { "category": "Nossos Serviços", "subcategory": "Suporte" }
+            ],
+            "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
+          },
+          {
+            "icon": {
+              "alt": "Icon top",
+              "mobile": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ceae1847-7d65-4056-9efe-2ee4ab06c785",
+                "width": 243,
+                "height": 106
+              },
+              "desktop": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/449da941-cedd-41c9-9997-5981132b9532",
+                "width": 298,
+                "height": 124
+              }
+            },
+            "title": "With a focus on increasing your store’s performance and conversion",
+            "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
+            "backgroundImage": {
+              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/54522cd0-bc9c-4458-b236-4e344ad0397b",
+              "width": 1440,
+              "height": 430
+            },
+            "activeBackground": true
+          },
+          {
+            "image": {
+              "mobile": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ad4b9dee-ddd1-4388-94db-60195e3435bd",
+                "width": "348",
+                "height": "279"
+              },
+              "desktop": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/cdf118e3-135b-4854-b0ee-c0fa11280639",
+                "width": "625",
+                "height": "500"
+              }
+            },
+            "blockText": {
+              "subtitle": "<p><strong><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">{</span>vtex guidance<span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">}</span></strong></p>",
+              "widthBlock": 50,
+              "description": "<p><strong>Do you have questions or problems with your online store, but don't know how to resolve them?</strong></p><p><br data-mce-bogus=\"1\"></p><p>N1 Agency is here to help, offering specialized technical support for virtual stores on the VTEX platform. Our highly qualified team is ready to solve all your challenges, from complex integrations to optimizations of existing modules.</p><p><br data-mce-bogus=\"1\"></p><p>With our dedicated support, you can be sure to achieve success and efficiency in your e-commerce operation. Don't let technical problems hinder the growth of your business. Let us take care of the technical details while you focus on expanding your online presence and meeting your customers' needs.</p>",
+              "activeEclipseText": true
+            },
+            "placement": "esquerdo",
+            "titleCenter": "<p><br data-mce-bogus=\"1\"></p>",
+            "__resolveType": "site/sections/Content/TextIconAndImage.tsx"
+          },
+          {
+            "grid": {
+              "row": [
+                {
+                  "image": [
+                    {
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7c19a98-8dc6-418d-903a-070198b01aa2",
+                      "name": "icon 1",
+                      "text": "Questions clarified",
+                      "width": 51,
+                      "height": 50
+                    },
+                    {
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/52734761-913c-418d-8214-a113578762cd",
+                      "name": "icon 2",
+                      "text": "Agility in service.",
+                      "width": 51,
+                      "height": 50
+                    },
+                    {
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9b61bd5a-f919-47a0-88c6-95b1c98b64ad",
+                      "name": "icon 3",
+                      "text": "High level technical experience.",
+                      "width": 51,
+                      "height": 50
+                    },
+                    {
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a35147b5-c9c7-47d2-9403-fe9e93f13f40",
+                      "name": "icon 4",
+                      "text": "Greater sales conversion.",
+                      "width": 51,
+                      "height": 50
+                    }
+                  ],
+                  "subtitle": "<p><strong><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">{</span>Benefits<span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">}</span></strong></p>"
+                },
+                {
+                  "image": [
+                    {
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/988dc70e-cec7-4a6e-9a00-c8678be72291",
+                      "name": "icon 1",
+                      "text": "Increased productivity",
+                      "width": 51,
+                      "height": 50
+                    },
+                    {
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/15009424-bcc9-4593-b8c2-5d91e97171f8",
+                      "name": "icon 2",
+                      "text": "Cost reduction",
+                      "width": 51,
+                      "height": 50
+                    },
+                    {
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6e374bd6-9e2a-4f19-b2f6-63312f8f5f52",
+                      "name": "icon 3",
+                      "text": "Improved customer satisfaction",
+                      "width": 51,
+                      "height": 50
+                    },
+                    {
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/647b143d-f137-473b-b424-0764899f3177",
+                      "name": "icon 4",
+                      "text": "Increased knowledge of the internal team",
+                      "width": 51,
+                      "height": 50
+                    }
+                  ],
+                  "subtitle": "<p><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">{</span>Results<span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">}</span></p>"
+                }
+              ]
+            },
+            "__resolveType": "site/sections/Content/IconText.tsx"
+          },
+          { "__resolveType": "vamos dar vida - english" },
+          { "__resolveType": "footer-English" }
+        ]
+      },
+      {
+        "rule": { "__resolveType": "website/matchers/always.ts" },
+        "value": [
+          { "__resolveType": "Theme" },
+          { "__resolveType": "header-principal" },
+          {
+            "banners": [
+              {
+                "images": {
+                  "mobile": {
+                    "alt": "Banner suporte mobile",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bca414b7-44f0-4256-b082-90163620cf49",
+                    "width": "390",
+                    "height": "490"
+                  },
+                  "desktop": {
+                    "alt": "Banner Suporte",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5f0bace5-337e-46bf-93ec-6ea453abf425",
+                    "width": "1440",
+                    "height": "482"
+                  }
+                },
+                "matcher": "/nossos-servicos/suporte"
+              }
+            ],
+            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+          },
+          {
+            "items": [
+              { "category": "Nossos Serviços", "subcategory": "Suporte" }
+            ],
+            "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
+          },
+          {
+            "icon": {
+              "alt": "Icon top",
+              "mobile": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ceae1847-7d65-4056-9efe-2ee4ab06c785",
+                "width": 243,
+                "height": 106
+              },
+              "desktop": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/449da941-cedd-41c9-9997-5981132b9532",
+                "width": 298,
+                "height": 124
+              }
+            },
+            "title": "Com o foco em aumentar a performance e a conversão da sua loja",
+            "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
+            "backgroundImage": {
+              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/54522cd0-bc9c-4458-b236-4e344ad0397b",
+              "width": 1440,
+              "height": 430
+            },
+            "activeBackground": true
+          },
+          {
+            "image": {
+              "mobile": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ad4b9dee-ddd1-4388-94db-60195e3435bd",
+                "width": "348",
+                "height": "279"
+              },
+              "desktop": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/cdf118e3-135b-4854-b0ee-c0fa11280639",
+                "width": "625",
+                "height": "500"
+              }
+            },
+            "blockText": {
+              "subtitle": "<h2><strong><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">﻿</span></span>orientação vtex</strong></h2>",
+              "widthBlock": 50,
+              "description": "<p><strong>Você tem dúvidas ou problemas com sua loja virtual, mas não sabe como resolver?</strong></p><p><br data-mce-bogus=\"1\"></p><p>A Agência N1 está aqui para ajudar, oferecendo suporte técnico especializado para lojas virtuais na plataforma VTEX. Nossa equipe altamente qualificada está pronta para resolver todos os seus desafios, desde integrações complexas até otimizações de módulos existentes.</p><p><br data-mce-bogus=\"1\"></p><p>Com nosso suporte dedicado, você pode ter certeza de alcançar sucesso e eficiência em sua operação de e-commerce. Não deixe que problemas técnicos atrapalhem o crescimento do seu negócio. Deixe-nos cuidar dos detalhes técnicos enquanto você se concentra em expandir sua presença online e atender às necessidades dos seus clientes.</p>",
+              "addKeysInWords": true,
+              "activeEclipseText": true
+            },
+            "placement": "esquerdo",
+            "titleCenter": "<p><br data-mce-bogus=\"1\"></p>",
+            "__resolveType": "site/sections/Content/TextIconAndImage.tsx"
+          },
+          {
+            "grid": {
+              "row": [
+                {
+                  "image": [
+                    {
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7c19a98-8dc6-418d-903a-070198b01aa2",
+                      "name": "icon 1",
+                      "text": "Dúvidas esclarecidas",
+                      "width": 51,
+                      "height": 50
+                    },
+                    {
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/52734761-913c-418d-8214-a113578762cd",
+                      "name": "icon 2",
+                      "text": "Agilidade no atendimento.",
+                      "width": 51,
+                      "height": 50
+                    },
+                    {
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9b61bd5a-f919-47a0-88c6-95b1c98b64ad",
+                      "name": "icon 3",
+                      "text": "Experiência técnica de alto nível.",
+                      "width": 51,
+                      "height": 50
+                    },
+                    {
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a35147b5-c9c7-47d2-9403-fe9e93f13f40",
+                      "name": "icon 4",
+                      "text": "Maior conversão de vendas.",
+                      "width": 51,
+                      "height": 50
+                    }
+                  ],
+                  "subtitle": "<h2><strong>Benefícios</strong></h2>",
+                  "addKeysInWords": true
+                },
+                {
+                  "image": [
+                    {
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/988dc70e-cec7-4a6e-9a00-c8678be72291",
+                      "name": "icon 1",
+                      "text": "Aumento da produtividade",
+                      "width": 51,
+                      "height": 50
+                    },
+                    {
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/15009424-bcc9-4593-b8c2-5d91e97171f8",
+                      "name": "icon 2",
+                      "text": "Redução de custos",
+                      "width": 51,
+                      "height": 50
+                    },
+                    {
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6e374bd6-9e2a-4f19-b2f6-63312f8f5f52",
+                      "name": "icon 3",
+                      "text": "Melhora da satisfação do cliente",
+                      "width": 51,
+                      "height": 50
+                    },
+                    {
+                      "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/647b143d-f137-473b-b424-0764899f3177",
+                      "name": "icon 4",
+                      "text": "Aumento do conhecimento do time interno",
+                      "width": 51,
+                      "height": 50
+                    }
+                  ],
+                  "subtitle": "<h2>Resultados</h2>",
+                  "addKeysInWords": true
+                }
+              ]
+            },
+            "__resolveType": "site/sections/Content/IconText.tsx"
+          },
+          { "__resolveType": "vamos-dar-vida" },
+          { "__resolveType": "footer-principal" },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/dba249a8-2b84-4c7e-85a7-e54880361dd6",
+            "title": "Suporte N1.AG | Solução de desafios VTEX e integrações",
+            "canonical": "/nossos-servicos/suporte",
+            "description": "Obtenha suporte completo para o seu e-commerce com os serviços especializados da N1.AG. Nossa equipe está pronta para oferecer assistência técnica e atualizações contínuas para garantir o máximo desempenho e segurança da sua loja online ou aplicativo. Conte com a expertise da N1.AG para manter sua presença digital sempre em pleno funcionamento.",
+            "__resolveType": "website/sections/Seo/SeoV2.tsx",
+            "titleTemplate": "Suporte N1.AG | Solução de desafios VTEX e integrações",
+            "descriptionTemplate": "Obtenha suporte completo para o seu e-commerce com os serviços especializados da N1.AG. Nossa equipe está pronta para oferecer assistência técnica e atualizações contínuas para garantir o máximo desempenho e segurança da sua loja online ou aplicativo. Conte com a expertise da N1.AG para manter sua presença digital sempre em pleno funcionamento."
+          }
+        ]
+      }
+    ],
+    "__resolveType": "website/flags/multivariate.ts"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

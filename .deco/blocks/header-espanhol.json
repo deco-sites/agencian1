@@ -1,1 +1,194 @@
-{"logo":{"alt":"Agência N1","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/36767b7a-ab81-457f-b92c-05cfcd642f0b","width":125,"height":54},"alerts":[],"drawer":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fc2ae9b0-a8df-4c6a-b5a6-1ac4fb59bd18","width":105,"height":44},"mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3b96566e-1c61-46c4-ab98-a9f2e5dd1920","width":105,"height":44},"buttons":{"hideCartButton":true,"hideSearchButton":true,"hideAccountButton":true,"hideWishlistButton":true},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ca328107-96bd-4b71-abba-e1410e6a7218","width":125,"height":54},"navItems":[{"url":"/quem-somos","name":"Quienes somos","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/cases","name":"casos","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/clientes","name":"Clientes","@type":"SiteNavigationElement","image":[],"children":[]},{"url":"/blog","name":"Blog","image":[],"children":[]},{"url":"/nossos-servicos","name":"Nuestros servicios","image":[],"children":[{"url":"/nossos-servicos/implantacao","name":"Implementacion","image":[{"url":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b5ca24f7-e00f-45a7-9908-feb241bbc1c9","image":[],"video":[]}],"children":[]},{"url":"/nossos-servicos/evolucao","name":"Evolucion","image":[{"url":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/e6114bfd-6398-4646-ba8f-aff5cba043a7","image":[],"video":[]}],"children":[]},{"url":"/nossos-servicos/web-insight","name":"web insight","image":[{"url":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/efadd77d-360c-4486-9ee4-0e0b44b5e018","image":[],"video":[]}],"children":[]},{"url":"/nossos-servicos/midia-paga","name":"Gestion Medios","image":[{"url":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7ce797dc-90ab-4dd7-902e-a8a1b3416932","image":[],"video":[]}],"children":[]},{"url":"/nossos-servicos/suporte","name":"Soporte","image":[{"url":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/85c46c84-fa6c-47cf-911a-735d85fc3a47","image":[{"url":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/87f8c6f0-3b14-42dc-9325-d16fb328bc5a","image":[{"url":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a0c3ac68-8f88-4f43-8e99-680043be4ddd","image":[],"video":[]}],"video":[]}],"video":[]}],"children":[]}],"linkMenu":"https://deco-sites-agencian1.deno.dev/servicos","btnUrlMenu":"/nossos-servicos","btnTextMenu":"conheça mais dos nossos serviços","activePropsText":false,"activePropsButton":true},{"url":"/ferramentas","name":"Ferramentas","image":[],"children":[{"url":"/ferramentas/multilista","name":"Multilista","image":[{"url":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9d4389b8-3b5f-440a-ab14-bcddad27fe4f","image":[],"video":[]}],"children":[]},{"url":"/ferramentas/n1-rush","name":"N1 Rush","image":[{"url":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/627671f0-ec7d-4fe9-824f-72496696e5a8","image":[],"video":[]}],"children":[]}],"titleSubMenu":"<h1><strong><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">/</span><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\">Explore nossas ferramentas</span></strong></h1>","activePropsText":true,"descriptionSubMenu":"<p><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\"><strong><em>{Descubra a excelência digital:&nbsp;</em></strong></span><br><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\">Ferramentas projetados para&nbsp;</span><br><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\">aprimorar sua jornada.} </span>🚀</p>"}],"whatsapp":"5521965744132","searchbar":{"name":"q","action":"/s","loader":{"data":{"products":[],"searches":[]},"__resolveType":"resolved"},"placeholder":"What are you looking for?"},"btnUrlMenu":"https://agencian1.com.br/","logoMobile":{"alt":"Agência N1","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9a89a9b0-721a-49a3-93ff-95bf7f3121a0","width":104,"height":44},"btnTextMenu":"Más información ","logoPosition":"left","titleSubMenu":"<h1>/Explore nossas ferramentas</h1>","__resolveType":"site/sections/Header/Header.tsx","descriptionSubMenu":"<p><strong><em>{Descubra a excelência digital: </em></strong><br>Ferramentas projetados para <br>aprimorar sua <span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">jornada</span>.}</span> 🚀</p>"}
+{
+  "logo": {
+    "alt": "Agência N1",
+    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/36767b7a-ab81-457f-b92c-05cfcd642f0b",
+    "width": 125,
+    "height": 54
+  },
+  "alerts": [],
+  "drawer": {
+    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fc2ae9b0-a8df-4c6a-b5a6-1ac4fb59bd18",
+    "width": 105,
+    "height": 44
+  },
+  "mobile": {
+    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3b96566e-1c61-46c4-ab98-a9f2e5dd1920",
+    "width": 105,
+    "height": 44
+  },
+  "buttons": {
+    "hideCartButton": true,
+    "hideSearchButton": true,
+    "hideAccountButton": true,
+    "hideWishlistButton": true
+  },
+  "desktop": {
+    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ca328107-96bd-4b71-abba-e1410e6a7218",
+    "width": 125,
+    "height": 54
+  },
+  "navItems": [
+    {
+      "url": "/quem-somos",
+      "name": "Quienes somos",
+      "@type": "SiteNavigationElement",
+      "image": [],
+      "children": []
+    },
+    {
+      "url": "/cases",
+      "name": "casos",
+      "@type": "SiteNavigationElement",
+      "image": [],
+      "children": []
+    },
+    {
+      "url": "/clientes",
+      "name": "Clientes",
+      "@type": "SiteNavigationElement",
+      "image": [],
+      "children": []
+    },
+    { "url": "/blog", "name": "Blog", "image": [], "children": [] },
+    {
+      "url": "/nossos-servicos",
+      "name": "Nuestros servicios",
+      "image": [],
+      "children": [
+        {
+          "url": "/nossos-servicos/implantacao",
+          "name": "Implementacion",
+          "image": [
+            {
+              "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b5ca24f7-e00f-45a7-9908-feb241bbc1c9",
+              "image": [],
+              "video": []
+            }
+          ],
+          "children": []
+        },
+        {
+          "url": "/nossos-servicos/evolucao",
+          "name": "Evolucion",
+          "image": [
+            {
+              "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/e6114bfd-6398-4646-ba8f-aff5cba043a7",
+              "image": [],
+              "video": []
+            }
+          ],
+          "children": []
+        },
+        {
+          "url": "/nossos-servicos/web-insight",
+          "name": "web insight",
+          "image": [
+            {
+              "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/efadd77d-360c-4486-9ee4-0e0b44b5e018",
+              "image": [],
+              "video": []
+            }
+          ],
+          "children": []
+        },
+        {
+          "url": "/nossos-servicos/midia-paga",
+          "name": "Gestion Medios",
+          "image": [
+            {
+              "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7ce797dc-90ab-4dd7-902e-a8a1b3416932",
+              "image": [],
+              "video": []
+            }
+          ],
+          "children": []
+        },
+        {
+          "url": "/nossos-servicos/suporte",
+          "name": "Soporte",
+          "image": [
+            {
+              "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/85c46c84-fa6c-47cf-911a-735d85fc3a47",
+              "image": [
+                {
+                  "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/87f8c6f0-3b14-42dc-9325-d16fb328bc5a",
+                  "image": [
+                    {
+                      "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a0c3ac68-8f88-4f43-8e99-680043be4ddd",
+                      "image": [],
+                      "video": []
+                    }
+                  ],
+                  "video": []
+                }
+              ],
+              "video": []
+            }
+          ],
+          "children": []
+        }
+      ],
+      "linkMenu": "https://deco-sites-agencian1.deno.dev/servicos",
+      "btnUrlMenu": "/nossos-servicos",
+      "btnTextMenu": "conheça mais dos nossos serviços",
+      "activePropsText": false,
+      "activePropsButton": true
+    },
+    {
+      "url": "/ferramentas",
+      "name": "Ferramentas",
+      "image": [],
+      "children": [
+        {
+          "url": "/ferramentas/multilista",
+          "name": "Multilista",
+          "image": [
+            {
+              "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9d4389b8-3b5f-440a-ab14-bcddad27fe4f",
+              "image": [],
+              "video": []
+            }
+          ],
+          "children": []
+        },
+        {
+          "url": "/ferramentas/n1-rush",
+          "name": "N1 Rush",
+          "image": [
+            {
+              "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/627671f0-ec7d-4fe9-824f-72496696e5a8",
+              "image": [],
+              "video": []
+            }
+          ],
+          "children": []
+        }
+      ],
+      "titleSubMenu": "<h1><strong><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">/</span><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\">Explore nossas ferramentas</span></strong></h1>",
+      "activePropsText": true,
+      "descriptionSubMenu": "<p><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\"><strong><em>{Descubra a excelência digital:&nbsp;</em></strong></span><br><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\">Ferramentas projetados para&nbsp;</span><br><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\">aprimorar sua jornada.} </span>🚀</p>"
+    }
+  ],
+  "whatsapp": "5521965744132",
+  "searchbar": {
+    "name": "q",
+    "action": "/s",
+    "loader": {
+      "data": { "products": [], "searches": [] },
+      "__resolveType": "resolved"
+    },
+    "placeholder": "What are you looking for?"
+  },
+  "btnUrlMenu": "https://agencian1.com.br/",
+  "logoMobile": {
+    "alt": "Agência N1",
+    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9a89a9b0-721a-49a3-93ff-95bf7f3121a0",
+    "width": 104,
+    "height": 44
+  },
+  "btnTextMenu": "Más información ",
+  "logoPosition": "left",
+  "titleSubMenu": "<h1>/Explore nossas ferramentas</h1>",
+  "__resolveType": "site/sections/Header/Header.tsx",
+  "descriptionSubMenu": "<p><strong><em>{Descubra a excelência digital: </em></strong><br>Ferramentas projetados para <br>aprimorar sua <span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">jornada</span>.}</span> 🚀</p>"
+}

@@ -44,8 +44,7 @@ const defaultContent = {
 export default function EmailContact(
   { layout, content, device }: Props & { device?: string },
 ) {
-  
-  console.log(device, "device")
+  console.log(device, "device");
 
   const { title, email, description } = content || defaultContent;
   const { marginTop, marginBottom, marginBottomMobile, marginTopMobile, icon } =

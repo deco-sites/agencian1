@@ -1,1 +1,722 @@
-{"name":"Euro","path":"/cases/euro-relogios","sections":{"variants":[{"rule":{"name":"N1_SelectedLanguage","value":"es-es","__resolveType":"website/matchers/cookie.ts"},"value":[{"__resolveType":"Theme"},{"__resolveType":"header-principal"},{"banners":[{"images":{"mobile":{"alt":"Banner mobile","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/896d2dfa-eb8a-45ab-aceb-b32c661ad53f","width":"390","height":"500"},"desktop":{"alt":"Banner Implantação","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9f1df089-3e74-4b8a-93d4-7f11fc6c2a5c","width":"1440","height":"482"}},"matcher":"/cases/hospitalar"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"items":[{"category":"cases","subcategory":"hospitalar"}],"__resolveType":"site/sections/Content/BreadcrumbCustom.tsx"},{"icon":{"alt":"Icon top","mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fab0f9ac-6070-49ea-8223-b0c6c5143d2d","width":243,"height":106},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d57ddc30-9227-4d8f-bff2-b8396e4d063b","width":298,"height":124}},"title":"parceria de sucesso DECO.CX","paragraph":"{Utilizando nosso Projeto Template, aprimoramos significativamente a interface da Hospitalar Distribuidora, resultando em notável melhoria no PageSpeed Insights. O cliente optou por agregar valor com serviços de Web Insight e Mídia Paga, garantindo um ótimo desempenho no mercado. Agora, com tempos de carregamento mais rápidos, o e-commerce está pronto para criar ainda mais oportunidades de vendas.}","__resolveType":"site/sections/Content/IconTitleAndTex.tsx","backgroundImage":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7f1db9c-ae6c-4aa8-b7e0-1f200601771c","width":1440,"height":430},"activeBackground":true},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0acb2bbe-7f56-4623-827e-fee6b17d2cdd","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/54874325-e492-4e96-84ee-ed693f9aea32","widthDesktop":632,"heightDesktop":372},"marginTop":"10px","placement":"direito","bannerImgw":{"alt":"banner","ImageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c6f656e6-37e3-410c-a50d-e68b6ac1775f","widthMobile":358,"ImageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/925d6603-e2fc-47e9-aeb9-a0aba2550bdd","heightMobile":229,"widthDesktop":632,"heightDesktop":372},"contentText":{"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Sobre o cliente</p>","description":"<p>Fundada em 1998, em Presidente Prudente - SP, a Hospitalar Distribuidora atua na venda de medicamentos e produtos hospitalares. Em 2008, de olho na demanda crescente, lançaram pioneiramente seu 1º e-commerce. </p><p><br data-mce-bogus=\"1\"></p><p>&nbsp;Essa transição permitiu que a empresa ampliasse sua visão de negócio e iniciasse o processo de consolidação da sua marca no mercado digital.</p>"},"marginBottom":"10px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx","styleContainer":"center"},{"cards":[{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/592065d6-140d-40b4-bc50-652c6e4b4c4d","title":"<p>Design atrativo</p>","description":"<p>Aprimorar a experiência do consumidor com melhorias de UX e obter valor agregado, diferenciação competitiva e aumento nas vendas.</p>"},{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8316137f-4bd8-430c-a72f-2764bf9d36f4","title":"<p>Colaboração estratégica</p>","description":"<p>Colaboração nas áreas estratégicas para o e-commerce da Hospitalar. Fornecimento de suporte em evolução, mídias e análise, com objetivo de ser um apoio integral às necessidades específicas do cliente.</p>"},{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/46b6e90b-3564-4923-bd73-8c49940eaf0a","title":"<p>Mudança de plataforma CMS</p>","description":"<p>Migração para a plataforma deco, exigindo aprendizado e adaptação da equipe.</p>"},{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9191ec0c-24d0-45fd-a1c1-7a362546bfc4","title":"<p>Mídia paga</p>","description":"<p>As campanhas de mídia paga não estavam gerando resultados satisfatórios.</p>"}],"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Principais Desafios</p>","marginTop":"120px","marginBottom":"20px","__resolveType":"site/sections/Challenges/challenges.tsx"},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/dbc96c3d-ad30-42a8-8ff0-766f5af24725","widthMobile":457,"heightMobile":467,"imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0ea99203-b364-486e-ad6f-bf1f01eebce4","widthDesktop":624,"heightDesktop":638},"marginTop":"120px","placement":"direito","contentText":{"list":{"textList":[{"descriptionList":"<p>A Agência N1 propôs migrar para a plataforma deco.cx, oferecendo a capacidade de manter a infraestrutura existente e incorporar a velocidade e flexibilidade da deco.cx no front-end.</p>"},{"descriptionList":"<p>A tecnologia deco foi aplicada ao nosso Projeto Template, nossa equipe aprimorou significativamente o design de interface das páginas com as melhores práticas de usabilidade.</p>"},{"descriptionList":"<p>Através da tecnologia, nossos desenvolvedores garantiram que o site alcançasse um desempenho excepcional, com pontuação superior a 90 no Pagespeed Insights e reduzindo as taxas de abandono de carrinho.</p>"},{},{"descriptionList":"<p>Conseguimos identificar as dificuldades enfrentadas pelos usuários durante a navegação no site, permitindo o mapeamento de melhorias para aprimorar a jornada de compra dos clientes.</p>"},{"descriptionList":"<p>Desempenhou um papel fundamental nos resultados positivos da migração, registrando um aumento significativo na conversão e no ROAS.</p>"},{"descriptionList":"<p>As Mídias Sociais acompanharam o rebranding da marca, assegurando consistência durante a transição de identidade e contribuindo para fortalecer a marca, agregando valor nas redes sociais.</p>"}],"iconCheck":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5549dfb5-a283-4568-9752-50ad7decdb01","widthContainerList":"500"},"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>soluções:</p>","button":{"link":"/","textButton":"Visite o novo site"}},"marginBottom":"120px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx","styleContainer":"normal","imageBackground":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/07600ab5-5b67-4fa1-a04a-f7bac5a4d68f"},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0dd9660d-89ba-4c99-8c44-1278ae1ca8f8","widthMobile":350,"heightMobile":267,"imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7281ea49-ff55-4e58-86ae-0c49234e10c3","widthDesktop":623,"heightDesktop":477},"marginTop":"120px","contentText":{"list":{"tags":[{"iconsMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ae7dafc6-4c91-44a9-ac42-2cf8837399c0","widthMobile":135,"heightMobile":33,"iconsDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/78a552b1-4188-42bd-a978-bf165fabd6d6","widthDesktop":135,"heightDesktop":33},{"iconsMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6cf8494b-ee28-43a8-bbae-2fd4ff5cb36a","widthMobile":137,"heightMobile":33,"iconsDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3551e055-47e7-45e3-9ec6-e5e8fe9b4b9e","widthDesktop":137,"heightDesktop":33}],"cardInfo":[{"about":"Aumento da receita","percentage":"+12,85%"},{"about":"Ticket médio","percentage":"+24,95"}],"widthContainerList":"500"},"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Resultados alcançados</p>","description":"<p>Em 3 meses de Golive do Projeto. A HD registrou uma melhoria significativa no desempenho do site após a implementação do CMS deco.cx</p><p><br>Os &nbsp;resultados indicam uma notável rapidez no carregamento do conteúdo principal da página e na exibição do primeiro elemento, contribuindo para uma experiência mais ágil e envolvente para os usuários, reduzindo potencialmente a taxa de abandono da loja.</p>"},"marginBottom":"120px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx"},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a3351756-2f6a-493c-8d2a-3159caf56824","widthMobile":375,"heightMobile":344,"imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a3484cbe-b9c8-42d2-934a-0baca5e05bb8","widthDesktop":501,"heightDesktop":460},"marginTop":"120px","placement":"esquerdo","contentText":{"list":{"cardInfo":[{"about":"ROAS","percentage":"19"},{"about":"Taxa de Conversão","percentage":"4,59%"}],"hiddenCardInfo":true,"widthContainerList":"500"},"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Resultados Mídias pagas</p>","description":"<p>Com a campanha de Mídia Paga, fizemos um trabalho bastante expressivo e transformador. Em comparativo, <span style=\"color: #f6ab00;\" data-mce-style=\"color: #f6ab00;\">anteriormente o ROAS médio estava entre 4 e 5.</span></p><p><br><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">Em 3 meses de trabalho, mesmo com todos os desafios dos múltiplos testes e sazonalidades anuais, conseguimos subir esta média para 12.</span></p>"},"marginBottom":"120px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx"},{"name":"Gabriele","photo":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4ca884e8-3ae6-4f0b-8502-c2d07b180b60","comment":"Participar do desenvolvimento desse projeto de loja nova com a N1 foi gratificante pelo fato de terem profissionais extremamente dedicados e atenciosos com o que fazem e na forma como atendem os seus clientes. Sempre dispostos a ajudar no que for preciso, com expertise e simpatia. Recomendo muito!","marginTop":"120px","profession":"Analista de Marketing","marginBottom":"120px","__resolveType":"site/sections/FeedBack/FeedBack.tsx","backgroundImage":true},{"__resolveType":"footer-principal"}]},{"rule":{"name":"N1_SelectedLanguage","value":"en-en","__resolveType":"website/matchers/cookie.ts"},"value":[{"__resolveType":"Theme"},{"__resolveType":"Header-english"},{"banners":[{"images":{"mobile":{"alt":"Banner mobile","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/896d2dfa-eb8a-45ab-aceb-b32c661ad53f","width":"390","height":"500"},"desktop":{"alt":"Banner Implantação","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9f1df089-3e74-4b8a-93d4-7f11fc6c2a5c","width":"1440","height":"482"}},"matcher":"/cases/euro-relogios"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"items":[{"category":"cases","subcategory":"hospitalar"}],"__resolveType":"site/sections/Content/BreadcrumbCustom.tsx"},{"icon":{"alt":"Icon top","mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fab0f9ac-6070-49ea-8223-b0c6c5143d2d","width":243,"height":106},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d57ddc30-9227-4d8f-bff2-b8396e4d063b","width":298,"height":124}},"title":"successful partnership DECO.CX","paragraph":"{Using our Template Project, we significantly improved the Hospitalar Distribuidora interface, resulting in a notable improvement in PageSpeed Insights. The client chose to add value with Web Insight and Paid Media services, ensuring excellent market performance. Now, with faster loading times, e-commerce is ready to create even more sales opportunities.}","__resolveType":"site/sections/Content/IconTitleAndTex.tsx","backgroundImage":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7f1db9c-ae6c-4aa8-b7e0-1f200601771c","width":1440,"height":430},"activeBackground":true},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0acb2bbe-7f56-4623-827e-fee6b17d2cdd","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/54874325-e492-4e96-84ee-ed693f9aea32","widthDesktop":632,"heightDesktop":372},"marginTop":"10px","placement":"direito","bannerImgw":{"alt":"banner","ImageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c6f656e6-37e3-410c-a50d-e68b6ac1775f","widthMobile":358,"ImageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/925d6603-e2fc-47e9-aeb9-a0aba2550bdd","heightMobile":229,"widthDesktop":632,"heightDesktop":372},"contentText":{"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>About the customer</p>","description":"<p>Founded in 1998, in Presidente Prudente - SP, Hospitalar Distribuidora operates in the sale of medicines and hospital products. In 2008, keeping an eye on growing demand, they pioneered their first e-commerce.</p><p><br data-mce-bogus=\"1\"></p><p>This transition allowed the company to expand its business vision and begin the process of consolidating its brand in the digital market.</p>"},"marginBottom":"10px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx","styleContainer":"center"},{"cards":[{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/592065d6-140d-40b4-bc50-652c6e4b4c4d","title":"<p>Attractive design</p>","description":"<p>Improve the consumer experience with UX improvements and obtain added value, competitive differentiation and increased sales.</p>"},{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8316137f-4bd8-430c-a72f-2764bf9d36f4","title":"<p>Strategic collaboration</p>","description":"<p>Collaboration in strategic areas for Hospitalar’s e-commerce. Provision of evolving support, media and analysis, with the aim of providing comprehensive support to the client's specific needs.</p>"},{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/46b6e90b-3564-4923-bd73-8c49940eaf0a","title":"<p>CMS platform change</p>","description":"<p>Migration to the deco platform, requiring learning and adaptation from the team.</p>"},{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9191ec0c-24d0-45fd-a1c1-7a362546bfc4","title":"<p>Paid media</p>","description":"<p>Paid media campaigns were not generating satisfactory results.</p>"}],"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Main Challenges</p>","marginTop":"120px","marginBottom":"20px","__resolveType":"site/sections/Challenges/challenges.tsx"},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/dbc96c3d-ad30-42a8-8ff0-766f5af24725","widthMobile":457,"heightMobile":467,"imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0ea99203-b364-486e-ad6f-bf1f01eebce4","widthDesktop":624,"heightDesktop":638},"marginTop":"120px","placement":"direito","contentText":{"list":{"textList":[{"descriptionList":"<p>N1 Agency proposed migrating to the deco.cx platform, offering the ability to maintain the existing infrastructure and incorporate deco.cx's speed and flexibility into the front-end.</p>"},{"descriptionList":"<p>Deco technology was applied to our Template Project, our team significantly improved the interface design of the pages with best usability practices.</p>"},{"descriptionList":"<p>Through technology, our developers ensured the site achieved exceptional performance, scoring over 90 on Pagespeed Insights and reducing cart abandonment rates.</p>"},{},{"descriptionList":"<p>We were able to identify the difficulties faced by users while browsing the website, allowing us to map improvements to improve customers' purchasing journeys.</p>"},{"descriptionList":"<p>It played a key role in the positive results of the migration, recording a significant increase in conversion and ROAS.</p>"},{"descriptionList":"<p>Social Media accompanied the brand's rebranding, ensuring consistency during the identity transition and contributing to strengthening the brand, adding value on social networks.</p>"}],"iconCheck":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5549dfb5-a283-4568-9752-50ad7decdb01","widthContainerList":"500"},"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>solutions:</p>","button":{"link":"/","textButton":"Visit the new website"}},"marginBottom":"120px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx","styleContainer":"normal","imageBackground":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/07600ab5-5b67-4fa1-a04a-f7bac5a4d68f"},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0dd9660d-89ba-4c99-8c44-1278ae1ca8f8","widthMobile":350,"heightMobile":267,"imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7281ea49-ff55-4e58-86ae-0c49234e10c3","widthDesktop":623,"heightDesktop":477},"marginTop":"120px","contentText":{"list":{"tags":[{"iconsMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ae7dafc6-4c91-44a9-ac42-2cf8837399c0","widthMobile":135,"heightMobile":33,"iconsDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/78a552b1-4188-42bd-a978-bf165fabd6d6","widthDesktop":135,"heightDesktop":33},{"iconsMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6cf8494b-ee28-43a8-bbae-2fd4ff5cb36a","widthMobile":137,"heightMobile":33,"iconsDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3551e055-47e7-45e3-9ec6-e5e8fe9b4b9e","widthDesktop":137,"heightDesktop":33}],"cardInfo":[{"about":"Aumento da receita","percentage":"+12,85%"},{"about":"Ticket médio","percentage":"+24,95"}],"widthContainerList":"500"},"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Results achieved</p>","description":"<p>In 3 months of Golive of the Project. HD saw a significant improvement in website performance after implementing the deco.cx CMS</p><p><br>The &nbsp;results indicate a remarkable speed in loading the page's main content and displaying the first element, contributing to a more agile and engaging experience for users, potentially reducing the store's abandonment rate.</p>"},"marginBottom":"120px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx"},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a3351756-2f6a-493c-8d2a-3159caf56824","widthMobile":375,"heightMobile":344,"imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a3484cbe-b9c8-42d2-934a-0baca5e05bb8","widthDesktop":501,"heightDesktop":460},"marginTop":"120px","placement":"esquerdo","contentText":{"list":{"cardInfo":[{"about":"ROAS","percentage":"19"},{"about":"Taxa de Conversão","percentage":"4,59%"}],"hiddenCardInfo":true,"widthContainerList":"500"},"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Results Paid media</p>","description":"<p>With the Paid Media campaign, we did some very expressive and transformative work. In comparison,&nbsp;<span style=\"color: #f6ab00;\" data-mce-style=\"color: #f6ab00;\">previously the average ROAS was between 4 and 5.</span></p><p><br><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">In 3 months of work, even with all the challenges of multiple tests and annual seasonalities, we managed to increase this average to 12.</span></p>"},"marginBottom":"120px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx"},{"name":"Gabriele","photo":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4ca884e8-3ae6-4f0b-8502-c2d07b180b60","comment":"Participating in the development of this new store project with N1 was rewarding due to the fact that they have professionals who are extremely dedicated and attentive to what they do and the way they serve their customers. Always willing to help with whatever is needed, with expertise and friendliness. I highly recommend it!","marginTop":"120px","profession":"Marketing analyst","marginBottom":"120px","__resolveType":"site/sections/FeedBack/FeedBack.tsx","backgroundImage":true},{"__resolveType":"footer-English"}]},{"rule":{"__resolveType":"website/matchers/always.ts"},"value":[{"__resolveType":"Theme"},{"__resolveType":"header-principal"},{"banners":[{"images":{"mobile":{"alt":"EURO Relógios","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/f37de226-6267-4e54-931d-79b1293373fc","width":"390","height":"500"},"desktop":{"alt":"EURO Relógios","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7c3f31ec-98de-43d2-bd1d-0a92d26e4ca8","width":"1440","height":"482"}},"matcher":"/cases/euro-relogios"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"items":[{"category":"cases","subcategory":"euro relógios"}],"__resolveType":"site/sections/Content/BreadcrumbCustom.tsx"},{"icon":{"alt":"Icon top","mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fab0f9ac-6070-49ea-8223-b0c6c5143d2d","width":243,"height":106},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d57ddc30-9227-4d8f-bff2-b8396e4d063b","width":298,"height":124}},"title":"parceria de sucesso DECO.CX","paragraph":"A Euro Relógios enfrentava dificuldades com sua antiga versão do CMS VTEX, prejudicando a operação e o desempenho do site. \n\nA N1.AG assumiu o desafio de migrar o storefront para a Deco.cx, uma solução headless com inúmeras vantagens. A parceria resultou em melhorias significativas na experiência do usuário, gerando mais oportunidades de vendas online. Acompanhe!","__resolveType":"site/sections/Content/IconTitleAndTex.tsx","backgroundImage":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7f1db9c-ae6c-4aa8-b7e0-1f200601771c","width":1440,"height":430},"activeBackground":true},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/eade672e-0856-4d46-9f62-09d6abe6b414","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3c81a3c6-de27-4999-ade4-b7df0f835960","widthDesktop":632,"heightDesktop":372},"marginTop":"10px","placement":"direito","bannerImgw":{"alt":"banner","ImageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c6f656e6-37e3-410c-a50d-e68b6ac1775f","widthMobile":358,"ImageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/925d6603-e2fc-47e9-aeb9-a0aba2550bdd","heightMobile":229,"widthDesktop":632,"heightDesktop":372},"contentText":{"title":"<h2>Sobre o cliente</h2>","addBar":true,"description":"<p>A Euro Relógios é uma marca de acessórios femininos fundada em 1996. Conhecida por sua qualidade e design, a empresa se destaca por incorporar as últimas tendências em pequenos detalhes, os quais são essenciais para expressar a personalidade de cada indivíduo.</p><p><br data-mce-bogus=\"1\"></p><p>As peças da Euro são confeccionadas com materiais de alta qualidade e apresentam um acabamento impecável. Disponíveis em diversos modelos, são ideais para atender a uma ampla gama de estilos e preferências.<br><br></p><p><br data-mce-bogus=\"1\"></p>","addKeysInWords":false},"marginBottom":"10px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx","styleContainer":"center"},{"cards":[{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6b53bb35-c267-4b2c-a42b-3bce0cf785d3","title":"<h3>Limitação técnica</h3>","description":"<p>Aprimorar a experiência do consumidor com melhorias de UX e obter valor agregado, diferenciação competitiva e aumento nas vendas.</p>"},{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7995d622-b4f9-4989-a6a2-695116eb2103","title":"<h3>Performance</h3>","description":"<p>Um dos principais pontos de dor era a lentidão no carregamento do storefront (vitrine), afetando diretamente a experiência dos consumidores e, consequentemente, as oportunidades de vendas online.</p>"},{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/00319d43-df11-46e7-882f-c3b9a4c45275","title":"<h3>Experiência do usuário</h3>","description":"<p>A empresa queria que os consumidores tivessem uma experiência de navegação fluida e agradável, que facilitasse a compra de produtos.</p>"},{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/948c55be-8657-4365-90b6-9d1df6e5f59b","title":"<h3>UX Design</h3>","description":"<p>A Euro queria atualizar o layout com uma estética mais atrativa, aprimorando as interações do usuário com a marca ao utilizar o site.</p>"}],"title":"<h2><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">﻿</span></span>Principais Desafios</h2>","addBar":true,"marginTop":"120px","marginBottom":"20px","__resolveType":"site/sections/Challenges/challenges.tsx","addKeysInWords":false},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/240a1053-84e1-498d-8817-037f7b5082fb","widthMobile":380,"heightMobile":380,"imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c9fdf7b4-26e8-4f1c-afc0-d1a5cf6d1531","widthDesktop":624,"heightDesktop":638},"marginTop":"120px","placement":"direito","contentText":{"list":{"textList":[{"descriptionList":"<p dir=\"ltr\"><strong id=\"docs-internal-guid-22941613-7fff-e223-fd70-ca1190a0dfa3\">Implantação headless deco.cx - </strong>O CMS deco permite a separação entre a interface do usuário (front-end) e o back-end do e-commerce. Sendo possível manter a infraestrutura existente (VTEX) e incorporar velocidade e flexibilidade no front-end (Deco).</p>"},{"descriptionList":"<p dir=\"ltr\"><strong>Projeto template deco.cx</strong> -&nbsp; Implementado com um design de interface moderno e responsivo para o e-commerce da Euro Relógios. Essa abordagem garantiu a aplicação das melhores práticas de usabilidade, resultando em uma interface intuitiva e de fácil navegação para os usuários da plataforma.</p>"},{"descriptionList":"<p><strong id=\"docs-internal-guid-92b0a2a1-7fff-7cb5-368a-7a43321c3929\">Desempenho - </strong>Utilizamos tecnologias de última geração, para garantir que o site da Euro Relógios alcançasse uma experiência de usuário otimizada, com velocidade de carregamento.</p>"},{"descriptionList":"<p><strong id=\"docs-internal-guid-69fe097a-7fff-284d-be97-db86d23331fd\">UX Design -</strong> Atualizamos o layout do site com uma estética moderna e intuitiva, tornando a navegação e a experiência de compra mais fluidas e reforçando a identidade da marca para os usuários.</p>"}],"iconCheck":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5549dfb5-a283-4568-9752-50ad7decdb01","widthContainerList":"500"},"title":"<h2><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">﻿</span></span>soluções:</h2>","addBar":true,"button":{"link":"https://www.eurorelogios.com.br/","textButton":"Visite o novo site"}},"marginBottom":"120px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx","styleContainer":"normal","imageBackground":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/07600ab5-5b67-4fa1-a04a-f7bac5a4d68f"},{"name":"Fabiana Rodrigues","photo":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8b3a0614-56e5-4e29-9ba1-e67d714a8fd3","comment":"A migração foi super rápida e com pouquíssimos traumas, quase nenhum para ser justa. A estética e performance da loja melhorou consideravelmente e o tempo de desenvolvimento também foi bem curto em relação a outras lojas.","marginTop":"120px","profession":"Gerente de E-commerce do Grupo Technos","marginBottom":"120px","__resolveType":"site/sections/FeedBack/FeedBack.tsx","backgroundImage":true},{"alt":"Imagem de Foguete","text":{"title":"<h2>implemente seu projeto com a n1.ag</h2>","addBar":false,"description":"<p>A N1.AG possui mais de 9 anos de experiência na execução bem-sucedida de projetos. Trabalhamos com uma ampla gama de empresas, abrangendo diversos setores, como moda, varejo, comércio eletrônico e serviços.</p><p><br data-mce-bogus=\"1\"></p><p>Estamos preparados para implementar projetos na plataforma Deco.cx com êxito. Contamos com a experiência, conhecimento e habilidades necessárias para garantir que os projetos superem as expectativas dos clientes, independentemente do porte ou segmento. Confie em nossa expertise para aprimorar a experiência do seu público e impulsionar suas vendas online!</p>","addKeysInWords":false,"addIconTagInWords":true},"title":"implemente seu projeto com a n1.ag","device":{"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/66601fe9-7b56-4e93-9da7-5885c4f7cd9a","width":507,"height":541}},"bgImage":{"mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6b748a0f-20f9-4c56-a39d-db392b2fd60f","width":562,"height":456},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/1153dc7a-ad8c-4661-8045-70f4b176b27b","width":1200,"height":384}},"btnText":"chama no whatsapp","whatsapp":"5521965744132","blockWidth":70,"responsive":{"mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/75ec4321-8316-4f19-8f52-deb92448fc4a","width":110,"height":180},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8cdf4ea0-f6f9-4bb2-8319-2d51124f0218","width":258,"height":428}},"description":"<p>A Agência N1 possui mais de 8 anos de experiência na execução bem-sucedida de projetos. Trabalhamos com uma ampla gama de empresas, abrangendo diversos setores, como moda, varejo, comércio eletrônico e serviços.</p><p><br data-mce-bogus=\"1\"></p><p>Estamos preparados para implementar projetos na plataforma deco.cx com êxito. Contamos com a experiência, conhecimento e habilidades necessárias para garantir que os projetos superem as expectativas dos clientes, independentemente do porte ou segmento. Confie em nossa expertise para aprimorar a experiência do seu público e impulsionar suas vendas online!</p>","__resolveType":"site/sections/Content/ConclusionArea.tsx"},{"__resolveType":"footer-principal"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/e78180b5-ff22-415b-89b7-6ffc5b8b26b1","title":"Case Euro Relógios N1.AG | Desenvolvimento Projeto Deco.cx","canonical":"/cases/euro-relogios","description":"Com o Projeto Deco.cx e a implementação de novas features junto à equipe especializada da N1.AG, a Euro Relógios tem proporcionado aos seus usuários melhorias significativas na navegação, gerando mais oportunidades de vendas online.","__resolveType":"website/sections/Seo/SeoV2.tsx","titleTemplate":"Case Euro Relógios N1.AG | Desenvolvimento Projeto Deco.cx","descriptionTemplate":"Com o Projeto Deco.cx e a implementação de novas features junto à equipe especializada da N1.AG, a Euro Relógios tem proporcionado aos seus usuários melhorias significativas na navegação, gerando mais oportunidades de vendas online."}]}],"__resolveType":"website/flags/multivariate.ts"},"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Euro",
+  "path": "/cases/euro-relogios",
+  "sections": {
+    "variants": [
+      {
+        "rule": {
+          "name": "N1_SelectedLanguage",
+          "value": "es-es",
+          "__resolveType": "website/matchers/cookie.ts"
+        },
+        "value": [
+          { "__resolveType": "Theme" },
+          { "__resolveType": "header-principal" },
+          {
+            "banners": [
+              {
+                "images": {
+                  "mobile": {
+                    "alt": "Banner mobile",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/896d2dfa-eb8a-45ab-aceb-b32c661ad53f",
+                    "width": "390",
+                    "height": "500"
+                  },
+                  "desktop": {
+                    "alt": "Banner Implantação",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9f1df089-3e74-4b8a-93d4-7f11fc6c2a5c",
+                    "width": "1440",
+                    "height": "482"
+                  }
+                },
+                "matcher": "/cases/hospitalar"
+              }
+            ],
+            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+          },
+          {
+            "items": [{ "category": "cases", "subcategory": "hospitalar" }],
+            "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
+          },
+          {
+            "icon": {
+              "alt": "Icon top",
+              "mobile": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fab0f9ac-6070-49ea-8223-b0c6c5143d2d",
+                "width": 243,
+                "height": 106
+              },
+              "desktop": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d57ddc30-9227-4d8f-bff2-b8396e4d063b",
+                "width": 298,
+                "height": 124
+              }
+            },
+            "title": "parceria de sucesso DECO.CX",
+            "paragraph": "{Utilizando nosso Projeto Template, aprimoramos significativamente a interface da Hospitalar Distribuidora, resultando em notável melhoria no PageSpeed Insights. O cliente optou por agregar valor com serviços de Web Insight e Mídia Paga, garantindo um ótimo desempenho no mercado. Agora, com tempos de carregamento mais rápidos, o e-commerce está pronto para criar ainda mais oportunidades de vendas.}",
+            "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
+            "backgroundImage": {
+              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7f1db9c-ae6c-4aa8-b7e0-1f200601771c",
+              "width": 1440,
+              "height": 430
+            },
+            "activeBackground": true
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0acb2bbe-7f56-4623-827e-fee6b17d2cdd",
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/54874325-e492-4e96-84ee-ed693f9aea32",
+              "widthDesktop": 632,
+              "heightDesktop": 372
+            },
+            "marginTop": "10px",
+            "placement": "direito",
+            "bannerImgw": {
+              "alt": "banner",
+              "ImageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c6f656e6-37e3-410c-a50d-e68b6ac1775f",
+              "widthMobile": 358,
+              "ImageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/925d6603-e2fc-47e9-aeb9-a0aba2550bdd",
+              "heightMobile": 229,
+              "widthDesktop": 632,
+              "heightDesktop": 372
+            },
+            "contentText": {
+              "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Sobre o cliente</p>",
+              "description": "<p>Fundada em 1998, em Presidente Prudente - SP, a Hospitalar Distribuidora atua na venda de medicamentos e produtos hospitalares. Em 2008, de olho na demanda crescente, lançaram pioneiramente seu 1º e-commerce. </p><p><br data-mce-bogus=\"1\"></p><p>&nbsp;Essa transição permitiu que a empresa ampliasse sua visão de negócio e iniciasse o processo de consolidação da sua marca no mercado digital.</p>"
+            },
+            "marginBottom": "10px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
+            "styleContainer": "center"
+          },
+          {
+            "cards": [
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/592065d6-140d-40b4-bc50-652c6e4b4c4d",
+                "title": "<p>Design atrativo</p>",
+                "description": "<p>Aprimorar a experiência do consumidor com melhorias de UX e obter valor agregado, diferenciação competitiva e aumento nas vendas.</p>"
+              },
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8316137f-4bd8-430c-a72f-2764bf9d36f4",
+                "title": "<p>Colaboração estratégica</p>",
+                "description": "<p>Colaboração nas áreas estratégicas para o e-commerce da Hospitalar. Fornecimento de suporte em evolução, mídias e análise, com objetivo de ser um apoio integral às necessidades específicas do cliente.</p>"
+              },
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/46b6e90b-3564-4923-bd73-8c49940eaf0a",
+                "title": "<p>Mudança de plataforma CMS</p>",
+                "description": "<p>Migração para a plataforma deco, exigindo aprendizado e adaptação da equipe.</p>"
+              },
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9191ec0c-24d0-45fd-a1c1-7a362546bfc4",
+                "title": "<p>Mídia paga</p>",
+                "description": "<p>As campanhas de mídia paga não estavam gerando resultados satisfatórios.</p>"
+              }
+            ],
+            "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Principais Desafios</p>",
+            "marginTop": "120px",
+            "marginBottom": "20px",
+            "__resolveType": "site/sections/Challenges/challenges.tsx"
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/dbc96c3d-ad30-42a8-8ff0-766f5af24725",
+              "widthMobile": 457,
+              "heightMobile": 467,
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0ea99203-b364-486e-ad6f-bf1f01eebce4",
+              "widthDesktop": 624,
+              "heightDesktop": 638
+            },
+            "marginTop": "120px",
+            "placement": "direito",
+            "contentText": {
+              "list": {
+                "textList": [
+                  {
+                    "descriptionList": "<p>A Agência N1 propôs migrar para a plataforma deco.cx, oferecendo a capacidade de manter a infraestrutura existente e incorporar a velocidade e flexibilidade da deco.cx no front-end.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>A tecnologia deco foi aplicada ao nosso Projeto Template, nossa equipe aprimorou significativamente o design de interface das páginas com as melhores práticas de usabilidade.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>Através da tecnologia, nossos desenvolvedores garantiram que o site alcançasse um desempenho excepcional, com pontuação superior a 90 no Pagespeed Insights e reduzindo as taxas de abandono de carrinho.</p>"
+                  },
+                  {},
+                  {
+                    "descriptionList": "<p>Conseguimos identificar as dificuldades enfrentadas pelos usuários durante a navegação no site, permitindo o mapeamento de melhorias para aprimorar a jornada de compra dos clientes.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>Desempenhou um papel fundamental nos resultados positivos da migração, registrando um aumento significativo na conversão e no ROAS.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>As Mídias Sociais acompanharam o rebranding da marca, assegurando consistência durante a transição de identidade e contribuindo para fortalecer a marca, agregando valor nas redes sociais.</p>"
+                  }
+                ],
+                "iconCheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5549dfb5-a283-4568-9752-50ad7decdb01",
+                "widthContainerList": "500"
+              },
+              "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>soluções:</p>",
+              "button": { "link": "/", "textButton": "Visite o novo site" }
+            },
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
+            "styleContainer": "normal",
+            "imageBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/07600ab5-5b67-4fa1-a04a-f7bac5a4d68f"
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0dd9660d-89ba-4c99-8c44-1278ae1ca8f8",
+              "widthMobile": 350,
+              "heightMobile": 267,
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7281ea49-ff55-4e58-86ae-0c49234e10c3",
+              "widthDesktop": 623,
+              "heightDesktop": 477
+            },
+            "marginTop": "120px",
+            "contentText": {
+              "list": {
+                "tags": [
+                  {
+                    "iconsMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ae7dafc6-4c91-44a9-ac42-2cf8837399c0",
+                    "widthMobile": 135,
+                    "heightMobile": 33,
+                    "iconsDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/78a552b1-4188-42bd-a978-bf165fabd6d6",
+                    "widthDesktop": 135,
+                    "heightDesktop": 33
+                  },
+                  {
+                    "iconsMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6cf8494b-ee28-43a8-bbae-2fd4ff5cb36a",
+                    "widthMobile": 137,
+                    "heightMobile": 33,
+                    "iconsDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3551e055-47e7-45e3-9ec6-e5e8fe9b4b9e",
+                    "widthDesktop": 137,
+                    "heightDesktop": 33
+                  }
+                ],
+                "cardInfo": [
+                  { "about": "Aumento da receita", "percentage": "+12,85%" },
+                  { "about": "Ticket médio", "percentage": "+24,95" }
+                ],
+                "widthContainerList": "500"
+              },
+              "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Resultados alcançados</p>",
+              "description": "<p>Em 3 meses de Golive do Projeto. A HD registrou uma melhoria significativa no desempenho do site após a implementação do CMS deco.cx</p><p><br>Os &nbsp;resultados indicam uma notável rapidez no carregamento do conteúdo principal da página e na exibição do primeiro elemento, contribuindo para uma experiência mais ágil e envolvente para os usuários, reduzindo potencialmente a taxa de abandono da loja.</p>"
+            },
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx"
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a3351756-2f6a-493c-8d2a-3159caf56824",
+              "widthMobile": 375,
+              "heightMobile": 344,
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a3484cbe-b9c8-42d2-934a-0baca5e05bb8",
+              "widthDesktop": 501,
+              "heightDesktop": 460
+            },
+            "marginTop": "120px",
+            "placement": "esquerdo",
+            "contentText": {
+              "list": {
+                "cardInfo": [
+                  { "about": "ROAS", "percentage": "19" },
+                  { "about": "Taxa de Conversão", "percentage": "4,59%" }
+                ],
+                "hiddenCardInfo": true,
+                "widthContainerList": "500"
+              },
+              "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Resultados Mídias pagas</p>",
+              "description": "<p>Com a campanha de Mídia Paga, fizemos um trabalho bastante expressivo e transformador. Em comparativo, <span style=\"color: #f6ab00;\" data-mce-style=\"color: #f6ab00;\">anteriormente o ROAS médio estava entre 4 e 5.</span></p><p><br><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">Em 3 meses de trabalho, mesmo com todos os desafios dos múltiplos testes e sazonalidades anuais, conseguimos subir esta média para 12.</span></p>"
+            },
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx"
+          },
+          {
+            "name": "Gabriele",
+            "photo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4ca884e8-3ae6-4f0b-8502-c2d07b180b60",
+            "comment": "Participar do desenvolvimento desse projeto de loja nova com a N1 foi gratificante pelo fato de terem profissionais extremamente dedicados e atenciosos com o que fazem e na forma como atendem os seus clientes. Sempre dispostos a ajudar no que for preciso, com expertise e simpatia. Recomendo muito!",
+            "marginTop": "120px",
+            "profession": "Analista de Marketing",
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/FeedBack/FeedBack.tsx",
+            "backgroundImage": true
+          },
+          { "__resolveType": "footer-principal" }
+        ]
+      },
+      {
+        "rule": {
+          "name": "N1_SelectedLanguage",
+          "value": "en-en",
+          "__resolveType": "website/matchers/cookie.ts"
+        },
+        "value": [
+          { "__resolveType": "Theme" },
+          { "__resolveType": "Header-english" },
+          {
+            "banners": [
+              {
+                "images": {
+                  "mobile": {
+                    "alt": "Banner mobile",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/896d2dfa-eb8a-45ab-aceb-b32c661ad53f",
+                    "width": "390",
+                    "height": "500"
+                  },
+                  "desktop": {
+                    "alt": "Banner Implantação",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9f1df089-3e74-4b8a-93d4-7f11fc6c2a5c",
+                    "width": "1440",
+                    "height": "482"
+                  }
+                },
+                "matcher": "/cases/euro-relogios"
+              }
+            ],
+            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+          },
+          {
+            "items": [{ "category": "cases", "subcategory": "hospitalar" }],
+            "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
+          },
+          {
+            "icon": {
+              "alt": "Icon top",
+              "mobile": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fab0f9ac-6070-49ea-8223-b0c6c5143d2d",
+                "width": 243,
+                "height": 106
+              },
+              "desktop": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d57ddc30-9227-4d8f-bff2-b8396e4d063b",
+                "width": 298,
+                "height": 124
+              }
+            },
+            "title": "successful partnership DECO.CX",
+            "paragraph": "{Using our Template Project, we significantly improved the Hospitalar Distribuidora interface, resulting in a notable improvement in PageSpeed Insights. The client chose to add value with Web Insight and Paid Media services, ensuring excellent market performance. Now, with faster loading times, e-commerce is ready to create even more sales opportunities.}",
+            "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
+            "backgroundImage": {
+              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7f1db9c-ae6c-4aa8-b7e0-1f200601771c",
+              "width": 1440,
+              "height": 430
+            },
+            "activeBackground": true
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0acb2bbe-7f56-4623-827e-fee6b17d2cdd",
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/54874325-e492-4e96-84ee-ed693f9aea32",
+              "widthDesktop": 632,
+              "heightDesktop": 372
+            },
+            "marginTop": "10px",
+            "placement": "direito",
+            "bannerImgw": {
+              "alt": "banner",
+              "ImageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c6f656e6-37e3-410c-a50d-e68b6ac1775f",
+              "widthMobile": 358,
+              "ImageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/925d6603-e2fc-47e9-aeb9-a0aba2550bdd",
+              "heightMobile": 229,
+              "widthDesktop": 632,
+              "heightDesktop": 372
+            },
+            "contentText": {
+              "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>About the customer</p>",
+              "description": "<p>Founded in 1998, in Presidente Prudente - SP, Hospitalar Distribuidora operates in the sale of medicines and hospital products. In 2008, keeping an eye on growing demand, they pioneered their first e-commerce.</p><p><br data-mce-bogus=\"1\"></p><p>This transition allowed the company to expand its business vision and begin the process of consolidating its brand in the digital market.</p>"
+            },
+            "marginBottom": "10px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
+            "styleContainer": "center"
+          },
+          {
+            "cards": [
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/592065d6-140d-40b4-bc50-652c6e4b4c4d",
+                "title": "<p>Attractive design</p>",
+                "description": "<p>Improve the consumer experience with UX improvements and obtain added value, competitive differentiation and increased sales.</p>"
+              },
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8316137f-4bd8-430c-a72f-2764bf9d36f4",
+                "title": "<p>Strategic collaboration</p>",
+                "description": "<p>Collaboration in strategic areas for Hospitalar’s e-commerce. Provision of evolving support, media and analysis, with the aim of providing comprehensive support to the client's specific needs.</p>"
+              },
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/46b6e90b-3564-4923-bd73-8c49940eaf0a",
+                "title": "<p>CMS platform change</p>",
+                "description": "<p>Migration to the deco platform, requiring learning and adaptation from the team.</p>"
+              },
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9191ec0c-24d0-45fd-a1c1-7a362546bfc4",
+                "title": "<p>Paid media</p>",
+                "description": "<p>Paid media campaigns were not generating satisfactory results.</p>"
+              }
+            ],
+            "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Main Challenges</p>",
+            "marginTop": "120px",
+            "marginBottom": "20px",
+            "__resolveType": "site/sections/Challenges/challenges.tsx"
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/dbc96c3d-ad30-42a8-8ff0-766f5af24725",
+              "widthMobile": 457,
+              "heightMobile": 467,
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0ea99203-b364-486e-ad6f-bf1f01eebce4",
+              "widthDesktop": 624,
+              "heightDesktop": 638
+            },
+            "marginTop": "120px",
+            "placement": "direito",
+            "contentText": {
+              "list": {
+                "textList": [
+                  {
+                    "descriptionList": "<p>N1 Agency proposed migrating to the deco.cx platform, offering the ability to maintain the existing infrastructure and incorporate deco.cx's speed and flexibility into the front-end.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>Deco technology was applied to our Template Project, our team significantly improved the interface design of the pages with best usability practices.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>Through technology, our developers ensured the site achieved exceptional performance, scoring over 90 on Pagespeed Insights and reducing cart abandonment rates.</p>"
+                  },
+                  {},
+                  {
+                    "descriptionList": "<p>We were able to identify the difficulties faced by users while browsing the website, allowing us to map improvements to improve customers' purchasing journeys.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>It played a key role in the positive results of the migration, recording a significant increase in conversion and ROAS.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>Social Media accompanied the brand's rebranding, ensuring consistency during the identity transition and contributing to strengthening the brand, adding value on social networks.</p>"
+                  }
+                ],
+                "iconCheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5549dfb5-a283-4568-9752-50ad7decdb01",
+                "widthContainerList": "500"
+              },
+              "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>solutions:</p>",
+              "button": { "link": "/", "textButton": "Visit the new website" }
+            },
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
+            "styleContainer": "normal",
+            "imageBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/07600ab5-5b67-4fa1-a04a-f7bac5a4d68f"
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0dd9660d-89ba-4c99-8c44-1278ae1ca8f8",
+              "widthMobile": 350,
+              "heightMobile": 267,
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7281ea49-ff55-4e58-86ae-0c49234e10c3",
+              "widthDesktop": 623,
+              "heightDesktop": 477
+            },
+            "marginTop": "120px",
+            "contentText": {
+              "list": {
+                "tags": [
+                  {
+                    "iconsMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ae7dafc6-4c91-44a9-ac42-2cf8837399c0",
+                    "widthMobile": 135,
+                    "heightMobile": 33,
+                    "iconsDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/78a552b1-4188-42bd-a978-bf165fabd6d6",
+                    "widthDesktop": 135,
+                    "heightDesktop": 33
+                  },
+                  {
+                    "iconsMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6cf8494b-ee28-43a8-bbae-2fd4ff5cb36a",
+                    "widthMobile": 137,
+                    "heightMobile": 33,
+                    "iconsDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3551e055-47e7-45e3-9ec6-e5e8fe9b4b9e",
+                    "widthDesktop": 137,
+                    "heightDesktop": 33
+                  }
+                ],
+                "cardInfo": [
+                  { "about": "Aumento da receita", "percentage": "+12,85%" },
+                  { "about": "Ticket médio", "percentage": "+24,95" }
+                ],
+                "widthContainerList": "500"
+              },
+              "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Results achieved</p>",
+              "description": "<p>In 3 months of Golive of the Project. HD saw a significant improvement in website performance after implementing the deco.cx CMS</p><p><br>The &nbsp;results indicate a remarkable speed in loading the page's main content and displaying the first element, contributing to a more agile and engaging experience for users, potentially reducing the store's abandonment rate.</p>"
+            },
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx"
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a3351756-2f6a-493c-8d2a-3159caf56824",
+              "widthMobile": 375,
+              "heightMobile": 344,
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a3484cbe-b9c8-42d2-934a-0baca5e05bb8",
+              "widthDesktop": 501,
+              "heightDesktop": 460
+            },
+            "marginTop": "120px",
+            "placement": "esquerdo",
+            "contentText": {
+              "list": {
+                "cardInfo": [
+                  { "about": "ROAS", "percentage": "19" },
+                  { "about": "Taxa de Conversão", "percentage": "4,59%" }
+                ],
+                "hiddenCardInfo": true,
+                "widthContainerList": "500"
+              },
+              "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Results Paid media</p>",
+              "description": "<p>With the Paid Media campaign, we did some very expressive and transformative work. In comparison,&nbsp;<span style=\"color: #f6ab00;\" data-mce-style=\"color: #f6ab00;\">previously the average ROAS was between 4 and 5.</span></p><p><br><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">In 3 months of work, even with all the challenges of multiple tests and annual seasonalities, we managed to increase this average to 12.</span></p>"
+            },
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx"
+          },
+          {
+            "name": "Gabriele",
+            "photo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4ca884e8-3ae6-4f0b-8502-c2d07b180b60",
+            "comment": "Participating in the development of this new store project with N1 was rewarding due to the fact that they have professionals who are extremely dedicated and attentive to what they do and the way they serve their customers. Always willing to help with whatever is needed, with expertise and friendliness. I highly recommend it!",
+            "marginTop": "120px",
+            "profession": "Marketing analyst",
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/FeedBack/FeedBack.tsx",
+            "backgroundImage": true
+          },
+          { "__resolveType": "footer-English" }
+        ]
+      },
+      {
+        "rule": { "__resolveType": "website/matchers/always.ts" },
+        "value": [
+          { "__resolveType": "Theme" },
+          { "__resolveType": "header-principal" },
+          {
+            "banners": [
+              {
+                "images": {
+                  "mobile": {
+                    "alt": "EURO Relógios",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/f37de226-6267-4e54-931d-79b1293373fc",
+                    "width": "390",
+                    "height": "500"
+                  },
+                  "desktop": {
+                    "alt": "EURO Relógios",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7c3f31ec-98de-43d2-bd1d-0a92d26e4ca8",
+                    "width": "1440",
+                    "height": "482"
+                  }
+                },
+                "matcher": "/cases/euro-relogios"
+              }
+            ],
+            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+          },
+          {
+            "items": [{ "category": "cases", "subcategory": "euro relógios" }],
+            "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
+          },
+          {
+            "icon": {
+              "alt": "Icon top",
+              "mobile": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fab0f9ac-6070-49ea-8223-b0c6c5143d2d",
+                "width": 243,
+                "height": 106
+              },
+              "desktop": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d57ddc30-9227-4d8f-bff2-b8396e4d063b",
+                "width": 298,
+                "height": 124
+              }
+            },
+            "title": "parceria de sucesso DECO.CX",
+            "paragraph": "A Euro Relógios enfrentava dificuldades com sua antiga versão do CMS VTEX, prejudicando a operação e o desempenho do site. \n\nA N1.AG assumiu o desafio de migrar o storefront para a Deco.cx, uma solução headless com inúmeras vantagens. A parceria resultou em melhorias significativas na experiência do usuário, gerando mais oportunidades de vendas online. Acompanhe!",
+            "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
+            "backgroundImage": {
+              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7f1db9c-ae6c-4aa8-b7e0-1f200601771c",
+              "width": 1440,
+              "height": 430
+            },
+            "activeBackground": true
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/eade672e-0856-4d46-9f62-09d6abe6b414",
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3c81a3c6-de27-4999-ade4-b7df0f835960",
+              "widthDesktop": 632,
+              "heightDesktop": 372
+            },
+            "marginTop": "10px",
+            "placement": "direito",
+            "bannerImgw": {
+              "alt": "banner",
+              "ImageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c6f656e6-37e3-410c-a50d-e68b6ac1775f",
+              "widthMobile": 358,
+              "ImageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/925d6603-e2fc-47e9-aeb9-a0aba2550bdd",
+              "heightMobile": 229,
+              "widthDesktop": 632,
+              "heightDesktop": 372
+            },
+            "contentText": {
+              "title": "<h2>Sobre o cliente</h2>",
+              "addBar": true,
+              "description": "<p>A Euro Relógios é uma marca de acessórios femininos fundada em 1996. Conhecida por sua qualidade e design, a empresa se destaca por incorporar as últimas tendências em pequenos detalhes, os quais são essenciais para expressar a personalidade de cada indivíduo.</p><p><br data-mce-bogus=\"1\"></p><p>As peças da Euro são confeccionadas com materiais de alta qualidade e apresentam um acabamento impecável. Disponíveis em diversos modelos, são ideais para atender a uma ampla gama de estilos e preferências.<br><br></p><p><br data-mce-bogus=\"1\"></p>",
+              "addKeysInWords": false
+            },
+            "marginBottom": "10px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
+            "styleContainer": "center"
+          },
+          {
+            "cards": [
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6b53bb35-c267-4b2c-a42b-3bce0cf785d3",
+                "title": "<h3>Limitação técnica</h3>",
+                "description": "<p>Aprimorar a experiência do consumidor com melhorias de UX e obter valor agregado, diferenciação competitiva e aumento nas vendas.</p>"
+              },
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7995d622-b4f9-4989-a6a2-695116eb2103",
+                "title": "<h3>Performance</h3>",
+                "description": "<p>Um dos principais pontos de dor era a lentidão no carregamento do storefront (vitrine), afetando diretamente a experiência dos consumidores e, consequentemente, as oportunidades de vendas online.</p>"
+              },
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/00319d43-df11-46e7-882f-c3b9a4c45275",
+                "title": "<h3>Experiência do usuário</h3>",
+                "description": "<p>A empresa queria que os consumidores tivessem uma experiência de navegação fluida e agradável, que facilitasse a compra de produtos.</p>"
+              },
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/948c55be-8657-4365-90b6-9d1df6e5f59b",
+                "title": "<h3>UX Design</h3>",
+                "description": "<p>A Euro queria atualizar o layout com uma estética mais atrativa, aprimorando as interações do usuário com a marca ao utilizar o site.</p>"
+              }
+            ],
+            "title": "<h2><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">﻿</span></span>Principais Desafios</h2>",
+            "addBar": true,
+            "marginTop": "120px",
+            "marginBottom": "20px",
+            "__resolveType": "site/sections/Challenges/challenges.tsx",
+            "addKeysInWords": false
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/240a1053-84e1-498d-8817-037f7b5082fb",
+              "widthMobile": 380,
+              "heightMobile": 380,
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c9fdf7b4-26e8-4f1c-afc0-d1a5cf6d1531",
+              "widthDesktop": 624,
+              "heightDesktop": 638
+            },
+            "marginTop": "120px",
+            "placement": "direito",
+            "contentText": {
+              "list": {
+                "textList": [
+                  {
+                    "descriptionList": "<p dir=\"ltr\"><strong id=\"docs-internal-guid-22941613-7fff-e223-fd70-ca1190a0dfa3\">Implantação headless deco.cx - </strong>O CMS deco permite a separação entre a interface do usuário (front-end) e o back-end do e-commerce. Sendo possível manter a infraestrutura existente (VTEX) e incorporar velocidade e flexibilidade no front-end (Deco).</p>"
+                  },
+                  {
+                    "descriptionList": "<p dir=\"ltr\"><strong>Projeto template deco.cx</strong> -&nbsp; Implementado com um design de interface moderno e responsivo para o e-commerce da Euro Relógios. Essa abordagem garantiu a aplicação das melhores práticas de usabilidade, resultando em uma interface intuitiva e de fácil navegação para os usuários da plataforma.</p>"
+                  },
+                  {
+                    "descriptionList": "<p><strong id=\"docs-internal-guid-92b0a2a1-7fff-7cb5-368a-7a43321c3929\">Desempenho - </strong>Utilizamos tecnologias de última geração, para garantir que o site da Euro Relógios alcançasse uma experiência de usuário otimizada, com velocidade de carregamento.</p>"
+                  },
+                  {
+                    "descriptionList": "<p><strong id=\"docs-internal-guid-69fe097a-7fff-284d-be97-db86d23331fd\">UX Design -</strong> Atualizamos o layout do site com uma estética moderna e intuitiva, tornando a navegação e a experiência de compra mais fluidas e reforçando a identidade da marca para os usuários.</p>"
+                  }
+                ],
+                "iconCheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5549dfb5-a283-4568-9752-50ad7decdb01",
+                "widthContainerList": "500"
+              },
+              "title": "<h2><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">﻿</span></span>soluções:</h2>",
+              "addBar": true,
+              "button": {
+                "link": "https://www.eurorelogios.com.br/",
+                "textButton": "Visite o novo site"
+              }
+            },
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
+            "styleContainer": "normal",
+            "imageBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/07600ab5-5b67-4fa1-a04a-f7bac5a4d68f"
+          },
+          {
+            "name": "Fabiana Rodrigues",
+            "photo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8b3a0614-56e5-4e29-9ba1-e67d714a8fd3",
+            "comment": "A migração foi super rápida e com pouquíssimos traumas, quase nenhum para ser justa. A estética e performance da loja melhorou consideravelmente e o tempo de desenvolvimento também foi bem curto em relação a outras lojas.",
+            "marginTop": "120px",
+            "profession": "Gerente de E-commerce do Grupo Technos",
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/FeedBack/FeedBack.tsx",
+            "backgroundImage": true
+          },
+          {
+            "alt": "Imagem de Foguete",
+            "text": {
+              "title": "<h2>implemente seu projeto com a n1.ag</h2>",
+              "addBar": false,
+              "description": "<p>A N1.AG possui mais de 9 anos de experiência na execução bem-sucedida de projetos. Trabalhamos com uma ampla gama de empresas, abrangendo diversos setores, como moda, varejo, comércio eletrônico e serviços.</p><p><br data-mce-bogus=\"1\"></p><p>Estamos preparados para implementar projetos na plataforma Deco.cx com êxito. Contamos com a experiência, conhecimento e habilidades necessárias para garantir que os projetos superem as expectativas dos clientes, independentemente do porte ou segmento. Confie em nossa expertise para aprimorar a experiência do seu público e impulsionar suas vendas online!</p>",
+              "addKeysInWords": false,
+              "addIconTagInWords": true
+            },
+            "title": "implemente seu projeto com a n1.ag",
+            "device": {
+              "desktop": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/66601fe9-7b56-4e93-9da7-5885c4f7cd9a",
+                "width": 507,
+                "height": 541
+              }
+            },
+            "bgImage": {
+              "mobile": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6b748a0f-20f9-4c56-a39d-db392b2fd60f",
+                "width": 562,
+                "height": 456
+              },
+              "desktop": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/1153dc7a-ad8c-4661-8045-70f4b176b27b",
+                "width": 1200,
+                "height": 384
+              }
+            },
+            "btnText": "chama no whatsapp",
+            "whatsapp": "5521965744132",
+            "blockWidth": 70,
+            "responsive": {
+              "mobile": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/75ec4321-8316-4f19-8f52-deb92448fc4a",
+                "width": 110,
+                "height": 180
+              },
+              "desktop": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8cdf4ea0-f6f9-4bb2-8319-2d51124f0218",
+                "width": 258,
+                "height": 428
+              }
+            },
+            "description": "<p>A Agência N1 possui mais de 8 anos de experiência na execução bem-sucedida de projetos. Trabalhamos com uma ampla gama de empresas, abrangendo diversos setores, como moda, varejo, comércio eletrônico e serviços.</p><p><br data-mce-bogus=\"1\"></p><p>Estamos preparados para implementar projetos na plataforma deco.cx com êxito. Contamos com a experiência, conhecimento e habilidades necessárias para garantir que os projetos superem as expectativas dos clientes, independentemente do porte ou segmento. Confie em nossa expertise para aprimorar a experiência do seu público e impulsionar suas vendas online!</p>",
+            "__resolveType": "site/sections/Content/ConclusionArea.tsx"
+          },
+          { "__resolveType": "footer-principal" },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/e78180b5-ff22-415b-89b7-6ffc5b8b26b1",
+            "title": "Case Euro Relógios N1.AG | Desenvolvimento Projeto Deco.cx",
+            "canonical": "/cases/euro-relogios",
+            "description": "Com o Projeto Deco.cx e a implementação de novas features junto à equipe especializada da N1.AG, a Euro Relógios tem proporcionado aos seus usuários melhorias significativas na navegação, gerando mais oportunidades de vendas online.",
+            "__resolveType": "website/sections/Seo/SeoV2.tsx",
+            "titleTemplate": "Case Euro Relógios N1.AG | Desenvolvimento Projeto Deco.cx",
+            "descriptionTemplate": "Com o Projeto Deco.cx e a implementação de novas features junto à equipe especializada da N1.AG, a Euro Relógios tem proporcionado aos seus usuários melhorias significativas na navegação, gerando mais oportunidades de vendas online."
+          }
+        ]
+      }
+    ],
+    "__resolveType": "website/flags/multivariate.ts"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

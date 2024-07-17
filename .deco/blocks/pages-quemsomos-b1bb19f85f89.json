@@ -1,1 +1,930 @@
-{"name":"Quem Somos","path":"/quem-somos","sections":{"variants":[{"rule":{"name":"N1_SelectedLanguage","value":"es-es","__resolveType":"website/matchers/cookie.ts"},"value":[{"__resolveType":"Theme"},{"__resolveType":"header-espanhol"},{"banners":[{"images":{"mobile":{"alt":"Banner quienes somos mobile","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7d137631-8c07-4de4-9228-ad1ba297e473","width":"390","height":"490"},"desktop":{"alt":"Banner quienes somos","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/1f2f429a-2a45-47a3-b764-2735a336e3ac","width":"1440","height":"482"}},"matcher":"/quem-somos"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"__resolveType":"somos-experts - spanish"},{"link":{"url":"/nossos-servicos","textLink":"Descubra nuestros servicios"},"image":{"Mobile":{"alt":"Quem somos imagem 1","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/f61f7b49-1b92-4ef1-9408-99fc94e519f2","width":342,"height":321},"mobile":{"alt":"Quem somos imagem mobile","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/041873d4-36ff-490d-b2b9-9a622244fde5","width":342,"height":321},"desktop":{"alt":"Quem somos imagem 1","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/92706f32-6426-4be5-9c5f-fa31d054c0b4","width":605,"height":517}},"title":"<p>Pensamos en tu e-commerce</p>","ellipse":{"ellipse01":{"desktop":false},"ellipse02":{"desktop":false},"ellipse03":{"desktop":false},"ellipse04":{"mobile":false,"desktop":false}},"flexCol":"Superior","flexRow":"Direito","widthBlock":44,"description":"<p>Aquí en N1.AG sabemos que cada cliente tiene necesidades únicas. Por lo tanto, estamos listos para crear la solución ideal para usted, ¡sin importar en qué sector opere!</p>","fontIconText":"Noto Sans","maxWidthText":100,"__resolveType":"site/sections/Content/TitleTextIconsAndImage.tsx","iconWidthText":[{"alt":"Personalización","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b7856e84-8e98-415d-83d0-97e10789a337","width":36,"height":36},{"alt":"Optimización de la tienda","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/aa2cc7c0-66a1-4c9f-8290-77c14691b6e2","width":36,"height":36},{"alt":"Guía","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/419cc8df-408b-4045-af92-536a1d34e905","width":36,"height":36},{"alt":"Visibilidad","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0a794b61-9117-41c3-9b56-fb9e820f2031","width":36,"height":36}],"spaceTextAndImage":68},{"image":{"mobile":{"alt":"Premiações Mobile","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ca2c326f-2ac0-470e-859a-37959126eb6b","width":352,"height":375},"desktop":{"alt":"Premiações","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/77207389-f47b-42c8-af20-de307ffe25d7","width":473,"height":504}},"title":"<p>Premios</p>","ellipse":{"ellipse01":{"mobile":true,"desktop":true},"ellipse02":{"mobile":true,"desktop":true},"ellipse03":{"mobile":true,"desktop":true},"ellipse04":{"mobile":true,"desktop":true}},"flexCol":"Superior","flexRow":"Esquerdo","activeBold":true,"gridActive":true,"widthBlock":57,"description":"<p><span style=\"font-size: 14px !important;\" data-mce-style=\"font-size: 14px !important;\">Lorem ipsum dolor sit amet consectetur. Vitae in nulla vehicula pretium neque auctor. Cursus adipiscing a ac arcu vulputate amet non urna diam. Laoreet sapien tincidunt sed est. Orci elit nec turpis aliquam mus faucibus tristique.</span></p>","fontIconText":"Archimoto V01","maxWidthText":100,"__resolveType":"site/sections/Content/TitleTextIconsAndImage.tsx","gridColCustom":2,"iconWidthText":[{"alt":"Hackathon VPS Vtex IO","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b2e79068-8f84-4429-8a25-dea20a8e6973","width":44,"height":43},{"alt":"La mejor extensión de información N1","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3f7358f9-07fc-41dc-934d-9c96bf09c9e2","width":44,"height":43},{"alt":"Vtex Partner Challenge","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/79baf0a7-e848-4eaf-8aa6-e29512934df9","width":44,"height":43},{"alt":"Vtex Partner Expert","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3f2f5fbe-3b3e-4b00-83e5-ece23fcab228","width":44,"height":43}],"spaceTextAndImage":85},{"bg":{"alt":"Background","mobile":{"alt":"Background Mobile","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/793abb07-4809-4303-ac82-9c4942fd8fb0","width":350,"height":221},"desktop":{"alt":"Background Desktop","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/780195da-0823-4bc1-a57a-812648a7a578","width":1206,"height":302}},"sideLeft":{"title":"<p>Certificaciones</p>","device":[{"alt":"vtex io","mobile":{"alt":"vtex-io","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ca5b854f-18e6-4de0-a1bf-902c30d82a49","width":144,"height":58},"desktop":{"alt":"vtex-io","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a0d01e66-6a23-4395-bbbf-e995da2a3165","width":200,"height":80}},{"alt":"vtex sales","mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bd0c44fc-1aeb-4c6f-9d48-aaa171b20ebb","width":144,"height":58},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5664d628-da36-4aee-aa01-fef8e12d3636","width":200,"height":80}},{"alt":"vtex implementation","mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2d60861a-5d19-43b6-92f4-75022f8a071f","width":144,"height":58},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8d73daba-6b33-41db-886c-cf4855926a81","width":200,"height":80}},{"alt":"deco","mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b53b9b19-a32e-4644-b9bc-a47574cc7938","width":144,"height":58},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/950fa941-26f9-4e0b-b8a8-c587a6131ce9","width":200,"height":80}}]},"sideRight":{"title":"<p><br data-mce-bogus=\"1\"></p>","device":[]},"__resolveType":"site/sections/Content/ImagesAndBackground.tsx"},{"image":{"mobile":{"alt":"Redes sociais Mobile","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0f78a705-00b8-4e8e-bf26-4d738039d296","width":390,"height":363},"desktop":{"alt":"Redes sociais","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3508b988-cf31-4f4f-a390-24326cd51a67","width":579,"height":393}},"title":"<p>descubre nuestras redes sociales</p>","ellipse":{"ellipse01":{"mobile":true,"desktop":true},"ellipse02":{"mobile":true,"desktop":true},"ellipse03":{"mobile":true,"desktop":true},"ellipse04":{"mobile":true,"desktop":true}},"flexCol":"Inferior","flexRow":"Direito","activeBold":true,"gridActive":false,"description":"<p>¡Descubre el poder del comercio electrónico! Sigue nuestras redes sociales y sumérgete en un océano de contenido especializado. Desde consejos prácticos hasta conocimientos del mercado, estamos aquí para impulsar su negocio en línea. Únase a nosotros y convierta su viaje de comercio electrónico en un verdadero éxito &nbsp;💖 ✨</p>","fontIconText":"Archimoto V01","__resolveType":"site/sections/Content/TitleTextIconsAndImage.tsx","iconWidthText":[{"alt":"Instagram","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/58d945d1-fa0f-4c9d-90c8-f40d8257d468","href":"https://www.instagram.com/agencian1","width":50,"height":50},{"alt":"Youtube","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bb762a87-9547-40cf-8b7f-110eda57d514","href":"https://www.youtube.com/channel/UCYpELMcq2-xs3qe_OK0ldYA","width":50,"height":50},{"alt":"Linkedin","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/20fd3dc8-f5da-4bc8-bbba-fc7e20bdb1c0","href":"https://br.linkedin.com/company/ag%C3%AAncia-n1","width":50,"height":50},{"alt":"Blog","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/15c538ae-67ac-491f-ace0-a90978e97489","width":50,"height":50}],"positionImageX":0,"positionImageY":160,"activePositionManualImage":true},{"__resolveType":"Footer-Spanish"}]},{"rule":{"name":"N1_SelectedLanguage","value":"en-en","__resolveType":"website/matchers/cookie.ts"},"value":[{"__resolveType":"Theme"},{"__resolveType":"Header-english"},{"banners":[{"images":{"mobile":{"alt":"Banner who we are mobile","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6b7caecb-6ae6-4752-89f8-4d9c2519fcb1","width":"390","height":"490"},"desktop":{"alt":"Banner who we are","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/992bc75b-b477-4ceb-bc03-f62884908ce5","width":"1440","height":"482"}},"matcher":"/quem-somos"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"__resolveType":"somos-experts - english"},{"link":{"url":"/nossos-servicos","textLink":"Discover our services"},"image":{"Mobile":{"alt":"Quem somos imagem 1","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/f61f7b49-1b92-4ef1-9408-99fc94e519f2","width":342,"height":321},"mobile":{"alt":"Who we are mobile image","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/041873d4-36ff-490d-b2b9-9a622244fde5","width":342,"height":321},"desktop":{"alt":"Quem somos imagem 1","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/92706f32-6426-4be5-9c5f-fa31d054c0b4","width":605,"height":517}},"title":"<p>We think about your e-commerce</p>","ellipse":{"ellipse01":{"desktop":false},"ellipse02":{"desktop":false},"ellipse03":{"desktop":false},"ellipse04":{"mobile":false,"desktop":false}},"flexCol":"Superior","flexRow":"Direito","widthBlock":44,"description":"<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti dolores et quas molestias excepturi sint occaecati cupiditate provident, similique sunt in culpa qui officia deserunt mollitia</p>","fontIconText":"Noto Sans","maxWidthText":100,"__resolveType":"site/sections/Content/TitleTextIconsAndImage.tsx","iconWidthText":[{"alt":"Customization","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b7856e84-8e98-415d-83d0-97e10789a337","width":36,"height":36},{"alt":"Store optimization","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/aa2cc7c0-66a1-4c9f-8290-77c14691b6e2","width":36,"height":36},{"alt":"Guidance","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/419cc8df-408b-4045-af92-536a1d34e905","width":36,"height":36},{"alt":"Visibility","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0a794b61-9117-41c3-9b56-fb9e820f2031","width":36,"height":36}],"spaceTextAndImage":68},{"image":{"mobile":{"alt":"Premiações Mobile","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ca2c326f-2ac0-470e-859a-37959126eb6b","width":352,"height":375},"desktop":{"alt":"Premiações","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/77207389-f47b-42c8-af20-de307ffe25d7","width":473,"height":504}},"title":"<p>Awards</p>","ellipse":{"ellipse01":{"mobile":true,"desktop":true},"ellipse02":{"mobile":true,"desktop":true},"ellipse03":{"mobile":true,"desktop":true},"ellipse04":{"mobile":true,"desktop":true}},"flexCol":"Superior","flexRow":"Esquerdo","activeBold":true,"gridActive":true,"widthBlock":57,"description":"<p><span style=\"font-size: 14px !important;\" data-mce-style=\"font-size: 14px !important;\">Lorem ipsum dolor sit amet consectetur. Vitae in nulla vehicula pretium neque auctor. Cursus adipiscing a ac arcu vulputate amet non urna diam. Laoreet sapien tincidunt sed est. Orci elit nec turpis aliquam mus faucibus tristique.</span></p>","fontIconText":"Archimoto V01","maxWidthText":100,"__resolveType":"site/sections/Content/TitleTextIconsAndImage.tsx","gridColCustom":2,"iconWidthText":[{"alt":"Hackathon VPS Vtex IO","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b2e79068-8f84-4429-8a25-dea20a8e6973","width":44,"height":43},{"alt":"Best N1 Insight Extension","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3f7358f9-07fc-41dc-934d-9c96bf09c9e2","width":44,"height":43},{"alt":"Vtex Partner Challenge","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/79baf0a7-e848-4eaf-8aa6-e29512934df9","width":44,"height":43},{"alt":"Vtex Partner Expert","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3f2f5fbe-3b3e-4b00-83e5-ece23fcab228","width":44,"height":43}],"spaceTextAndImage":85},{"bg":{"alt":"Background","mobile":{"alt":"Background Mobile","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/793abb07-4809-4303-ac82-9c4942fd8fb0","width":350,"height":221},"desktop":{"alt":"Background Desktop","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/780195da-0823-4bc1-a57a-812648a7a578","width":1206,"height":302}},"sideLeft":{"title":"<p>Certifications</p>","device":[{"alt":"vtex io","mobile":{"alt":"vtex-io","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ca5b854f-18e6-4de0-a1bf-902c30d82a49","width":144,"height":58},"desktop":{"alt":"vtex-io","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a0d01e66-6a23-4395-bbbf-e995da2a3165","width":200,"height":80}},{"alt":"vtex sales","mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bd0c44fc-1aeb-4c6f-9d48-aaa171b20ebb","width":144,"height":58},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5664d628-da36-4aee-aa01-fef8e12d3636","width":200,"height":80}},{"alt":"vtex implementation","mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2d60861a-5d19-43b6-92f4-75022f8a071f","width":144,"height":58},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8d73daba-6b33-41db-886c-cf4855926a81","width":200,"height":80}},{"alt":"deco","mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b53b9b19-a32e-4644-b9bc-a47574cc7938","width":144,"height":58},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/950fa941-26f9-4e0b-b8a8-c587a6131ce9","width":200,"height":80}}]},"sideRight":{"title":"<p><br data-mce-bogus=\"1\"></p>","device":[]},"__resolveType":"site/sections/Content/ImagesAndBackground.tsx"},{"image":{"mobile":{"alt":"Redes sociais Mobile","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0f78a705-00b8-4e8e-bf26-4d738039d296","width":390,"height":363},"desktop":{"alt":"Redes sociais","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3508b988-cf31-4f4f-a390-24326cd51a67","width":579,"height":393}},"title":"<p>discover our social networks</p>","ellipse":{"ellipse01":{"mobile":true,"desktop":true},"ellipse02":{"mobile":true,"desktop":true},"ellipse03":{"mobile":true,"desktop":true},"ellipse04":{"mobile":true,"desktop":true}},"flexCol":"Inferior","flexRow":"Direito","activeBold":true,"gridActive":false,"description":"<p>Discover the power of e-commerce! Follow our social networks and dive into an ocean of specialized content. From practical tips to market insights, we are here to boost your online business. Join us and turn your e-commerce journey into a true success &nbsp;💖 ✨</p>","fontIconText":"Archimoto V01","__resolveType":"site/sections/Content/TitleTextIconsAndImage.tsx","iconWidthText":[{"alt":"Instagram","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/58d945d1-fa0f-4c9d-90c8-f40d8257d468","href":"https://www.instagram.com/agencian1/","width":50,"height":50},{"alt":"Youtube","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bb762a87-9547-40cf-8b7f-110eda57d514","href":"https://www.youtube.com/channel/UCYpELMcq2-xs3qe_OK0ldYA","width":50,"height":50},{"alt":"Linkedin","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/20fd3dc8-f5da-4bc8-bbba-fc7e20bdb1c0","href":"https://br.linkedin.com/company/ag%C3%AAncia-n1","width":50,"height":50},{"alt":"Blog","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/15c538ae-67ac-491f-ace0-a90978e97489","width":50,"height":50}],"positionImageX":0,"positionImageY":160,"activePositionManualImage":true},{"__resolveType":"footer-English"}]},{"rule":{"__resolveType":"website/matchers/always.ts"},"value":[{"__resolveType":"Theme"},{"__resolveType":"header-principal"},{"banners":[{"images":{"mobile":{"alt":"Banner quem somos mobile","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b1e4364e-54ee-442f-9f38-bff0029f9631","width":"390","height":"490"},"desktop":{"alt":"Banner quem somos","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/815db9a1-e6f2-428d-a968-b9565f23d554","width":"1440","height":"482"}},"matcher":"/quem-somos"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"__resolveType":"somos-experts"},{"link":{"url":"/nossos-servicos","textLink":"Conheça nossos serviços"},"image":{"Mobile":{"alt":"Quem somos imagem 1","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/f61f7b49-1b92-4ef1-9408-99fc94e519f2","width":342,"height":321},"mobile":{"alt":"Quem somos imagem mobile","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/041873d4-36ff-490d-b2b9-9a622244fde5","width":342,"height":321},"desktop":{"alt":"Quem somos imagem 1","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/92706f32-6426-4be5-9c5f-fa31d054c0b4","width":605,"height":517}},"title":"<h2>Pensamos no seu <br>e-commerce</h2>","ellipse":{"ellipse01":{"desktop":false},"ellipse02":{"desktop":false},"ellipse03":{"desktop":false},"ellipse04":{"mobile":false,"desktop":false}},"flexCol":"Superior","flexRow":"Direito","widthBlock":44,"description":"<p dir=\"ltr\"><span style=\"color: rgb(236, 240, 241);\" data-mce-style=\"color: rgb(236, 240, 241);\">Aqui na N1.AG, a gente sabe que cada cliente possui necessidades únicas. Por isso, estamos prontos para criar a solução ideal para você, não importa o setor em que você atua!</span></p>","fontIconText":"Noto Sans","maxWidthText":100,"__resolveType":"site/sections/Content/TitleTextIconsAndImage.tsx","iconWidthText":[{"alt":"Personalização","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b7856e84-8e98-415d-83d0-97e10789a337","width":36,"height":36},{"alt":"Otimização da loja","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b7856e84-8e98-415d-83d0-97e10789a337","width":36,"height":36},{"alt":"Orientação","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/aa2cc7c0-66a1-4c9f-8290-77c14691b6e2","width":36,"height":36},{"alt":"Visibilidade","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/419cc8df-408b-4045-af92-536a1d34e905","width":36,"height":36}],"spaceTextAndImage":68},{"image":{"mobile":{"alt":"Premiações Mobile","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ca2c326f-2ac0-470e-859a-37959126eb6b","width":352,"height":375},"desktop":{"alt":"Premiações","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/77207389-f47b-42c8-af20-de307ffe25d7","width":473,"height":504}},"title":"<h2>Premiações</h2>","ellipse":{"ellipse01":{"mobile":true,"desktop":true},"ellipse02":{"mobile":true,"desktop":true},"ellipse03":{"mobile":true,"desktop":true},"ellipse04":{"mobile":true,"desktop":true}},"flexCol":"Superior","flexRow":"Esquerdo","activeBold":true,"gridActive":true,"widthBlock":57,"description":"<p dir=\"ltr\"><span style=\"color: rgb(236, 240, 241);\" data-mce-style=\"color: rgb(236, 240, 241);\">Somos reconhecidos pela VTEX, uma das principais plataformas de e-commerce do mundo, com prêmios conquistados e a chancela VTEX Partner. Somos pioneiros em tecnologias headless como Deco.cx, além de sermos uma agência certificada pela Uappi, preparada para implementar projetos cross-border.<br><br></span><span style=\"color: rgb(236, 240, 241);\" data-mce-style=\"color: rgb(236, 240, 241);\">Com a inovação e o futuro como principais pilares de seu trabalho, a N1.AG deseja ser um parceiro que garante excelência, produtividade e resultados cada vez mais significativos para os seus parceiros.</span></p><p><br data-mce-bogus=\"1\"></p>","fontIconText":"Archimoto V01","maxWidthText":100,"__resolveType":"site/sections/Content/TitleTextIconsAndImage.tsx","gridColCustom":2,"iconWidthText":[{"alt":"Hackathon VPS Vtex IO","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b2e79068-8f84-4429-8a25-dea20a8e6973","width":44,"height":43},{"alt":"Melhor Extensão N1 Insight","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3f7358f9-07fc-41dc-934d-9c96bf09c9e2","width":44,"height":43},{"alt":"Vtex Partner Challenge","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/79baf0a7-e848-4eaf-8aa6-e29512934df9","width":44,"height":43},{"alt":"Vtex Partner Expert","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3f2f5fbe-3b3e-4b00-83e5-ece23fcab228","width":44,"height":43}],"spaceTextAndImage":85},{"bg":{"alt":"Background","mobile":{"alt":"Background Mobile","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/793abb07-4809-4303-ac82-9c4942fd8fb0","width":350,"height":221},"desktop":{"alt":"Background Desktop","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/780195da-0823-4bc1-a57a-812648a7a578","width":1206,"height":302}},"sideLeft":{"title":"<h2>Certificações</h2>","device":[{"alt":"vtex io","mobile":{"alt":"vtex-io","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ca5b854f-18e6-4de0-a1bf-902c30d82a49","width":144,"height":58},"desktop":{"alt":"vtex-io","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a0d01e66-6a23-4395-bbbf-e995da2a3165","width":200,"height":80}},{"alt":"vtex sales","mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bd0c44fc-1aeb-4c6f-9d48-aaa171b20ebb","width":144,"height":58},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5664d628-da36-4aee-aa01-fef8e12d3636","width":200,"height":80}},{"alt":"vtex implementation","mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2d60861a-5d19-43b6-92f4-75022f8a071f","width":144,"height":58},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8d73daba-6b33-41db-886c-cf4855926a81","width":200,"height":80}},{"alt":"deco","mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b53b9b19-a32e-4644-b9bc-a47574cc7938","width":144,"height":58},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/950fa941-26f9-4e0b-b8a8-c587a6131ce9","width":200,"height":80}}]},"sideRight":{"title":"<p><br data-mce-bogus=\"1\"></p>","device":[]},"__resolveType":"site/sections/Content/ImagesAndBackground.tsx"},{"image":{"mobile":{"alt":"Redes sociais Mobile","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0f78a705-00b8-4e8e-bf26-4d738039d296","width":390,"height":363},"desktop":{"alt":"Redes sociais","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3508b988-cf31-4f4f-a390-24326cd51a67","width":579,"height":393}},"title":"<h2>conheça nossas redes sociais</h2>","ellipse":{"ellipse01":{"mobile":true,"desktop":true},"ellipse02":{"mobile":true,"desktop":true},"ellipse03":{"mobile":true,"desktop":true},"ellipse04":{"mobile":true,"desktop":true}},"flexCol":"Inferior","flexRow":"Direito","activeBold":true,"gridActive":false,"description":"<p><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">Simplificamos os desafios do varejo online, transformando-os em valiosos insights de mercado. Siga nossas redes sociais e junte-se a nós!</span>&nbsp;✨</p>","fontIconText":"Archimoto V01","__resolveType":"site/sections/Content/TitleTextIconsAndImage.tsx","iconWidthText":[{"alt":"Instagram","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/58d945d1-fa0f-4c9d-90c8-f40d8257d468","href":"https://www.instagram.com/agencian1","width":50,"height":50},{"alt":"Youtube","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bb762a87-9547-40cf-8b7f-110eda57d514","href":"https://www.youtube.com/channel/UCYpELMcq2-xs3qe_OK0ldYA","width":50,"height":50},{"alt":"Linkedin","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/20fd3dc8-f5da-4bc8-bbba-fc7e20bdb1c0","href":"https://www.linkedin.com/company/agência-n1/mycompany","width":50,"height":50},{"alt":"Blog","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/15c538ae-67ac-491f-ace0-a90978e97489","width":50,"height":50}],"positionImageX":0,"positionImageY":160,"activePositionManualImage":true},{"__resolveType":"footer-principal"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/786a5333-0012-47c1-9681-c216cdfc6e3a","title":"Quem Somos N1.AG | Agência Especializada em e-commerce e parceira plataforma VTEX","canonical":"https://www.n1.ag/quem-somos","description":"Somos especialistas em impulsionar os melhores sites VTEX e oferecer consultoria especializada em e-commerce. Como Agência VTEX Partner, fornecemos soluções de implantação e evolução, garantindo que sua loja online alcance todo o potencial. Conheça a equipe por trás da agência líder em e-commerce e VTEX.","__resolveType":"website/sections/Seo/SeoV2.tsx","titleTemplate":"Quem Somos N1.AG | Agência Especializada em e-commerce e parceira plataforma VTEX","descriptionTemplate":"Somos especialistas em impulsionar os melhores sites VTEX e oferecer consultoria especializada em e-commerce. Como Agência VTEX Partner, fornecemos soluções de implantação e evolução, garantindo que sua loja online alcance todo o potencial. Conheça a equipe por trás da agência líder em e-commerce e VTEX."}]}],"__resolveType":"website/flags/multivariate.ts"},"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Quem Somos",
+  "path": "/quem-somos",
+  "sections": {
+    "variants": [
+      {
+        "rule": {
+          "name": "N1_SelectedLanguage",
+          "value": "es-es",
+          "__resolveType": "website/matchers/cookie.ts"
+        },
+        "value": [
+          { "__resolveType": "Theme" },
+          { "__resolveType": "header-espanhol" },
+          {
+            "banners": [
+              {
+                "images": {
+                  "mobile": {
+                    "alt": "Banner quienes somos mobile",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7d137631-8c07-4de4-9228-ad1ba297e473",
+                    "width": "390",
+                    "height": "490"
+                  },
+                  "desktop": {
+                    "alt": "Banner quienes somos",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/1f2f429a-2a45-47a3-b764-2735a336e3ac",
+                    "width": "1440",
+                    "height": "482"
+                  }
+                },
+                "matcher": "/quem-somos"
+              }
+            ],
+            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+          },
+          { "__resolveType": "somos-experts - spanish" },
+          {
+            "link": {
+              "url": "/nossos-servicos",
+              "textLink": "Descubra nuestros servicios"
+            },
+            "image": {
+              "Mobile": {
+                "alt": "Quem somos imagem 1",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/f61f7b49-1b92-4ef1-9408-99fc94e519f2",
+                "width": 342,
+                "height": 321
+              },
+              "mobile": {
+                "alt": "Quem somos imagem mobile",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/041873d4-36ff-490d-b2b9-9a622244fde5",
+                "width": 342,
+                "height": 321
+              },
+              "desktop": {
+                "alt": "Quem somos imagem 1",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/92706f32-6426-4be5-9c5f-fa31d054c0b4",
+                "width": 605,
+                "height": 517
+              }
+            },
+            "title": "<p>Pensamos en tu e-commerce</p>",
+            "ellipse": {
+              "ellipse01": { "desktop": false },
+              "ellipse02": { "desktop": false },
+              "ellipse03": { "desktop": false },
+              "ellipse04": { "mobile": false, "desktop": false }
+            },
+            "flexCol": "Superior",
+            "flexRow": "Direito",
+            "widthBlock": 44,
+            "description": "<p>Aquí en N1.AG sabemos que cada cliente tiene necesidades únicas. Por lo tanto, estamos listos para crear la solución ideal para usted, ¡sin importar en qué sector opere!</p>",
+            "fontIconText": "Noto Sans",
+            "maxWidthText": 100,
+            "__resolveType": "site/sections/Content/TitleTextIconsAndImage.tsx",
+            "iconWidthText": [
+              {
+                "alt": "Personalización",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b7856e84-8e98-415d-83d0-97e10789a337",
+                "width": 36,
+                "height": 36
+              },
+              {
+                "alt": "Optimización de la tienda",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/aa2cc7c0-66a1-4c9f-8290-77c14691b6e2",
+                "width": 36,
+                "height": 36
+              },
+              {
+                "alt": "Guía",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/419cc8df-408b-4045-af92-536a1d34e905",
+                "width": 36,
+                "height": 36
+              },
+              {
+                "alt": "Visibilidad",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0a794b61-9117-41c3-9b56-fb9e820f2031",
+                "width": 36,
+                "height": 36
+              }
+            ],
+            "spaceTextAndImage": 68
+          },
+          {
+            "image": {
+              "mobile": {
+                "alt": "Premiações Mobile",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ca2c326f-2ac0-470e-859a-37959126eb6b",
+                "width": 352,
+                "height": 375
+              },
+              "desktop": {
+                "alt": "Premiações",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/77207389-f47b-42c8-af20-de307ffe25d7",
+                "width": 473,
+                "height": 504
+              }
+            },
+            "title": "<p>Premios</p>",
+            "ellipse": {
+              "ellipse01": { "mobile": true, "desktop": true },
+              "ellipse02": { "mobile": true, "desktop": true },
+              "ellipse03": { "mobile": true, "desktop": true },
+              "ellipse04": { "mobile": true, "desktop": true }
+            },
+            "flexCol": "Superior",
+            "flexRow": "Esquerdo",
+            "activeBold": true,
+            "gridActive": true,
+            "widthBlock": 57,
+            "description": "<p><span style=\"font-size: 14px !important;\" data-mce-style=\"font-size: 14px !important;\">Lorem ipsum dolor sit amet consectetur. Vitae in nulla vehicula pretium neque auctor. Cursus adipiscing a ac arcu vulputate amet non urna diam. Laoreet sapien tincidunt sed est. Orci elit nec turpis aliquam mus faucibus tristique.</span></p>",
+            "fontIconText": "Archimoto V01",
+            "maxWidthText": 100,
+            "__resolveType": "site/sections/Content/TitleTextIconsAndImage.tsx",
+            "gridColCustom": 2,
+            "iconWidthText": [
+              {
+                "alt": "Hackathon VPS Vtex IO",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b2e79068-8f84-4429-8a25-dea20a8e6973",
+                "width": 44,
+                "height": 43
+              },
+              {
+                "alt": "La mejor extensión de información N1",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3f7358f9-07fc-41dc-934d-9c96bf09c9e2",
+                "width": 44,
+                "height": 43
+              },
+              {
+                "alt": "Vtex Partner Challenge",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/79baf0a7-e848-4eaf-8aa6-e29512934df9",
+                "width": 44,
+                "height": 43
+              },
+              {
+                "alt": "Vtex Partner Expert",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3f2f5fbe-3b3e-4b00-83e5-ece23fcab228",
+                "width": 44,
+                "height": 43
+              }
+            ],
+            "spaceTextAndImage": 85
+          },
+          {
+            "bg": {
+              "alt": "Background",
+              "mobile": {
+                "alt": "Background Mobile",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/793abb07-4809-4303-ac82-9c4942fd8fb0",
+                "width": 350,
+                "height": 221
+              },
+              "desktop": {
+                "alt": "Background Desktop",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/780195da-0823-4bc1-a57a-812648a7a578",
+                "width": 1206,
+                "height": 302
+              }
+            },
+            "sideLeft": {
+              "title": "<p>Certificaciones</p>",
+              "device": [
+                {
+                  "alt": "vtex io",
+                  "mobile": {
+                    "alt": "vtex-io",
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ca5b854f-18e6-4de0-a1bf-902c30d82a49",
+                    "width": 144,
+                    "height": 58
+                  },
+                  "desktop": {
+                    "alt": "vtex-io",
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a0d01e66-6a23-4395-bbbf-e995da2a3165",
+                    "width": 200,
+                    "height": 80
+                  }
+                },
+                {
+                  "alt": "vtex sales",
+                  "mobile": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bd0c44fc-1aeb-4c6f-9d48-aaa171b20ebb",
+                    "width": 144,
+                    "height": 58
+                  },
+                  "desktop": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5664d628-da36-4aee-aa01-fef8e12d3636",
+                    "width": 200,
+                    "height": 80
+                  }
+                },
+                {
+                  "alt": "vtex implementation",
+                  "mobile": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2d60861a-5d19-43b6-92f4-75022f8a071f",
+                    "width": 144,
+                    "height": 58
+                  },
+                  "desktop": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8d73daba-6b33-41db-886c-cf4855926a81",
+                    "width": 200,
+                    "height": 80
+                  }
+                },
+                {
+                  "alt": "deco",
+                  "mobile": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b53b9b19-a32e-4644-b9bc-a47574cc7938",
+                    "width": 144,
+                    "height": 58
+                  },
+                  "desktop": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/950fa941-26f9-4e0b-b8a8-c587a6131ce9",
+                    "width": 200,
+                    "height": 80
+                  }
+                }
+              ]
+            },
+            "sideRight": {
+              "title": "<p><br data-mce-bogus=\"1\"></p>",
+              "device": []
+            },
+            "__resolveType": "site/sections/Content/ImagesAndBackground.tsx"
+          },
+          {
+            "image": {
+              "mobile": {
+                "alt": "Redes sociais Mobile",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0f78a705-00b8-4e8e-bf26-4d738039d296",
+                "width": 390,
+                "height": 363
+              },
+              "desktop": {
+                "alt": "Redes sociais",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3508b988-cf31-4f4f-a390-24326cd51a67",
+                "width": 579,
+                "height": 393
+              }
+            },
+            "title": "<p>descubre nuestras redes sociales</p>",
+            "ellipse": {
+              "ellipse01": { "mobile": true, "desktop": true },
+              "ellipse02": { "mobile": true, "desktop": true },
+              "ellipse03": { "mobile": true, "desktop": true },
+              "ellipse04": { "mobile": true, "desktop": true }
+            },
+            "flexCol": "Inferior",
+            "flexRow": "Direito",
+            "activeBold": true,
+            "gridActive": false,
+            "description": "<p>¡Descubre el poder del comercio electrónico! Sigue nuestras redes sociales y sumérgete en un océano de contenido especializado. Desde consejos prácticos hasta conocimientos del mercado, estamos aquí para impulsar su negocio en línea. Únase a nosotros y convierta su viaje de comercio electrónico en un verdadero éxito &nbsp;💖 ✨</p>",
+            "fontIconText": "Archimoto V01",
+            "__resolveType": "site/sections/Content/TitleTextIconsAndImage.tsx",
+            "iconWidthText": [
+              {
+                "alt": "Instagram",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/58d945d1-fa0f-4c9d-90c8-f40d8257d468",
+                "href": "https://www.instagram.com/agencian1",
+                "width": 50,
+                "height": 50
+              },
+              {
+                "alt": "Youtube",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bb762a87-9547-40cf-8b7f-110eda57d514",
+                "href": "https://www.youtube.com/channel/UCYpELMcq2-xs3qe_OK0ldYA",
+                "width": 50,
+                "height": 50
+              },
+              {
+                "alt": "Linkedin",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/20fd3dc8-f5da-4bc8-bbba-fc7e20bdb1c0",
+                "href": "https://br.linkedin.com/company/ag%C3%AAncia-n1",
+                "width": 50,
+                "height": 50
+              },
+              {
+                "alt": "Blog",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/15c538ae-67ac-491f-ace0-a90978e97489",
+                "width": 50,
+                "height": 50
+              }
+            ],
+            "positionImageX": 0,
+            "positionImageY": 160,
+            "activePositionManualImage": true
+          },
+          { "__resolveType": "Footer-Spanish" }
+        ]
+      },
+      {
+        "rule": {
+          "name": "N1_SelectedLanguage",
+          "value": "en-en",
+          "__resolveType": "website/matchers/cookie.ts"
+        },
+        "value": [
+          { "__resolveType": "Theme" },
+          { "__resolveType": "Header-english" },
+          {
+            "banners": [
+              {
+                "images": {
+                  "mobile": {
+                    "alt": "Banner who we are mobile",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6b7caecb-6ae6-4752-89f8-4d9c2519fcb1",
+                    "width": "390",
+                    "height": "490"
+                  },
+                  "desktop": {
+                    "alt": "Banner who we are",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/992bc75b-b477-4ceb-bc03-f62884908ce5",
+                    "width": "1440",
+                    "height": "482"
+                  }
+                },
+                "matcher": "/quem-somos"
+              }
+            ],
+            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+          },
+          { "__resolveType": "somos-experts - english" },
+          {
+            "link": {
+              "url": "/nossos-servicos",
+              "textLink": "Discover our services"
+            },
+            "image": {
+              "Mobile": {
+                "alt": "Quem somos imagem 1",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/f61f7b49-1b92-4ef1-9408-99fc94e519f2",
+                "width": 342,
+                "height": 321
+              },
+              "mobile": {
+                "alt": "Who we are mobile image",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/041873d4-36ff-490d-b2b9-9a622244fde5",
+                "width": 342,
+                "height": 321
+              },
+              "desktop": {
+                "alt": "Quem somos imagem 1",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/92706f32-6426-4be5-9c5f-fa31d054c0b4",
+                "width": 605,
+                "height": 517
+              }
+            },
+            "title": "<p>We think about your e-commerce</p>",
+            "ellipse": {
+              "ellipse01": { "desktop": false },
+              "ellipse02": { "desktop": false },
+              "ellipse03": { "desktop": false },
+              "ellipse04": { "mobile": false, "desktop": false }
+            },
+            "flexCol": "Superior",
+            "flexRow": "Direito",
+            "widthBlock": 44,
+            "description": "<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti dolores et quas molestias excepturi sint occaecati cupiditate provident, similique sunt in culpa qui officia deserunt mollitia</p>",
+            "fontIconText": "Noto Sans",
+            "maxWidthText": 100,
+            "__resolveType": "site/sections/Content/TitleTextIconsAndImage.tsx",
+            "iconWidthText": [
+              {
+                "alt": "Customization",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b7856e84-8e98-415d-83d0-97e10789a337",
+                "width": 36,
+                "height": 36
+              },
+              {
+                "alt": "Store optimization",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/aa2cc7c0-66a1-4c9f-8290-77c14691b6e2",
+                "width": 36,
+                "height": 36
+              },
+              {
+                "alt": "Guidance",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/419cc8df-408b-4045-af92-536a1d34e905",
+                "width": 36,
+                "height": 36
+              },
+              {
+                "alt": "Visibility",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0a794b61-9117-41c3-9b56-fb9e820f2031",
+                "width": 36,
+                "height": 36
+              }
+            ],
+            "spaceTextAndImage": 68
+          },
+          {
+            "image": {
+              "mobile": {
+                "alt": "Premiações Mobile",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ca2c326f-2ac0-470e-859a-37959126eb6b",
+                "width": 352,
+                "height": 375
+              },
+              "desktop": {
+                "alt": "Premiações",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/77207389-f47b-42c8-af20-de307ffe25d7",
+                "width": 473,
+                "height": 504
+              }
+            },
+            "title": "<p>Awards</p>",
+            "ellipse": {
+              "ellipse01": { "mobile": true, "desktop": true },
+              "ellipse02": { "mobile": true, "desktop": true },
+              "ellipse03": { "mobile": true, "desktop": true },
+              "ellipse04": { "mobile": true, "desktop": true }
+            },
+            "flexCol": "Superior",
+            "flexRow": "Esquerdo",
+            "activeBold": true,
+            "gridActive": true,
+            "widthBlock": 57,
+            "description": "<p><span style=\"font-size: 14px !important;\" data-mce-style=\"font-size: 14px !important;\">Lorem ipsum dolor sit amet consectetur. Vitae in nulla vehicula pretium neque auctor. Cursus adipiscing a ac arcu vulputate amet non urna diam. Laoreet sapien tincidunt sed est. Orci elit nec turpis aliquam mus faucibus tristique.</span></p>",
+            "fontIconText": "Archimoto V01",
+            "maxWidthText": 100,
+            "__resolveType": "site/sections/Content/TitleTextIconsAndImage.tsx",
+            "gridColCustom": 2,
+            "iconWidthText": [
+              {
+                "alt": "Hackathon VPS Vtex IO",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b2e79068-8f84-4429-8a25-dea20a8e6973",
+                "width": 44,
+                "height": 43
+              },
+              {
+                "alt": "Best N1 Insight Extension",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3f7358f9-07fc-41dc-934d-9c96bf09c9e2",
+                "width": 44,
+                "height": 43
+              },
+              {
+                "alt": "Vtex Partner Challenge",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/79baf0a7-e848-4eaf-8aa6-e29512934df9",
+                "width": 44,
+                "height": 43
+              },
+              {
+                "alt": "Vtex Partner Expert",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3f2f5fbe-3b3e-4b00-83e5-ece23fcab228",
+                "width": 44,
+                "height": 43
+              }
+            ],
+            "spaceTextAndImage": 85
+          },
+          {
+            "bg": {
+              "alt": "Background",
+              "mobile": {
+                "alt": "Background Mobile",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/793abb07-4809-4303-ac82-9c4942fd8fb0",
+                "width": 350,
+                "height": 221
+              },
+              "desktop": {
+                "alt": "Background Desktop",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/780195da-0823-4bc1-a57a-812648a7a578",
+                "width": 1206,
+                "height": 302
+              }
+            },
+            "sideLeft": {
+              "title": "<p>Certifications</p>",
+              "device": [
+                {
+                  "alt": "vtex io",
+                  "mobile": {
+                    "alt": "vtex-io",
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ca5b854f-18e6-4de0-a1bf-902c30d82a49",
+                    "width": 144,
+                    "height": 58
+                  },
+                  "desktop": {
+                    "alt": "vtex-io",
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a0d01e66-6a23-4395-bbbf-e995da2a3165",
+                    "width": 200,
+                    "height": 80
+                  }
+                },
+                {
+                  "alt": "vtex sales",
+                  "mobile": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bd0c44fc-1aeb-4c6f-9d48-aaa171b20ebb",
+                    "width": 144,
+                    "height": 58
+                  },
+                  "desktop": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5664d628-da36-4aee-aa01-fef8e12d3636",
+                    "width": 200,
+                    "height": 80
+                  }
+                },
+                {
+                  "alt": "vtex implementation",
+                  "mobile": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2d60861a-5d19-43b6-92f4-75022f8a071f",
+                    "width": 144,
+                    "height": 58
+                  },
+                  "desktop": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8d73daba-6b33-41db-886c-cf4855926a81",
+                    "width": 200,
+                    "height": 80
+                  }
+                },
+                {
+                  "alt": "deco",
+                  "mobile": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b53b9b19-a32e-4644-b9bc-a47574cc7938",
+                    "width": 144,
+                    "height": 58
+                  },
+                  "desktop": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/950fa941-26f9-4e0b-b8a8-c587a6131ce9",
+                    "width": 200,
+                    "height": 80
+                  }
+                }
+              ]
+            },
+            "sideRight": {
+              "title": "<p><br data-mce-bogus=\"1\"></p>",
+              "device": []
+            },
+            "__resolveType": "site/sections/Content/ImagesAndBackground.tsx"
+          },
+          {
+            "image": {
+              "mobile": {
+                "alt": "Redes sociais Mobile",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0f78a705-00b8-4e8e-bf26-4d738039d296",
+                "width": 390,
+                "height": 363
+              },
+              "desktop": {
+                "alt": "Redes sociais",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3508b988-cf31-4f4f-a390-24326cd51a67",
+                "width": 579,
+                "height": 393
+              }
+            },
+            "title": "<p>discover our social networks</p>",
+            "ellipse": {
+              "ellipse01": { "mobile": true, "desktop": true },
+              "ellipse02": { "mobile": true, "desktop": true },
+              "ellipse03": { "mobile": true, "desktop": true },
+              "ellipse04": { "mobile": true, "desktop": true }
+            },
+            "flexCol": "Inferior",
+            "flexRow": "Direito",
+            "activeBold": true,
+            "gridActive": false,
+            "description": "<p>Discover the power of e-commerce! Follow our social networks and dive into an ocean of specialized content. From practical tips to market insights, we are here to boost your online business. Join us and turn your e-commerce journey into a true success &nbsp;💖 ✨</p>",
+            "fontIconText": "Archimoto V01",
+            "__resolveType": "site/sections/Content/TitleTextIconsAndImage.tsx",
+            "iconWidthText": [
+              {
+                "alt": "Instagram",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/58d945d1-fa0f-4c9d-90c8-f40d8257d468",
+                "href": "https://www.instagram.com/agencian1/",
+                "width": 50,
+                "height": 50
+              },
+              {
+                "alt": "Youtube",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bb762a87-9547-40cf-8b7f-110eda57d514",
+                "href": "https://www.youtube.com/channel/UCYpELMcq2-xs3qe_OK0ldYA",
+                "width": 50,
+                "height": 50
+              },
+              {
+                "alt": "Linkedin",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/20fd3dc8-f5da-4bc8-bbba-fc7e20bdb1c0",
+                "href": "https://br.linkedin.com/company/ag%C3%AAncia-n1",
+                "width": 50,
+                "height": 50
+              },
+              {
+                "alt": "Blog",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/15c538ae-67ac-491f-ace0-a90978e97489",
+                "width": 50,
+                "height": 50
+              }
+            ],
+            "positionImageX": 0,
+            "positionImageY": 160,
+            "activePositionManualImage": true
+          },
+          { "__resolveType": "footer-English" }
+        ]
+      },
+      {
+        "rule": { "__resolveType": "website/matchers/always.ts" },
+        "value": [
+          { "__resolveType": "Theme" },
+          { "__resolveType": "header-principal" },
+          {
+            "banners": [
+              {
+                "images": {
+                  "mobile": {
+                    "alt": "Banner quem somos mobile",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b1e4364e-54ee-442f-9f38-bff0029f9631",
+                    "width": "390",
+                    "height": "490"
+                  },
+                  "desktop": {
+                    "alt": "Banner quem somos",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/815db9a1-e6f2-428d-a968-b9565f23d554",
+                    "width": "1440",
+                    "height": "482"
+                  }
+                },
+                "matcher": "/quem-somos"
+              }
+            ],
+            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+          },
+          { "__resolveType": "somos-experts" },
+          {
+            "link": {
+              "url": "/nossos-servicos",
+              "textLink": "Conheça nossos serviços"
+            },
+            "image": {
+              "Mobile": {
+                "alt": "Quem somos imagem 1",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/f61f7b49-1b92-4ef1-9408-99fc94e519f2",
+                "width": 342,
+                "height": 321
+              },
+              "mobile": {
+                "alt": "Quem somos imagem mobile",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/041873d4-36ff-490d-b2b9-9a622244fde5",
+                "width": 342,
+                "height": 321
+              },
+              "desktop": {
+                "alt": "Quem somos imagem 1",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/92706f32-6426-4be5-9c5f-fa31d054c0b4",
+                "width": 605,
+                "height": 517
+              }
+            },
+            "title": "<h2>Pensamos no seu <br>e-commerce</h2>",
+            "ellipse": {
+              "ellipse01": { "desktop": false },
+              "ellipse02": { "desktop": false },
+              "ellipse03": { "desktop": false },
+              "ellipse04": { "mobile": false, "desktop": false }
+            },
+            "flexCol": "Superior",
+            "flexRow": "Direito",
+            "widthBlock": 44,
+            "description": "<p dir=\"ltr\"><span style=\"color: rgb(236, 240, 241);\" data-mce-style=\"color: rgb(236, 240, 241);\">Aqui na N1.AG, a gente sabe que cada cliente possui necessidades únicas. Por isso, estamos prontos para criar a solução ideal para você, não importa o setor em que você atua!</span></p>",
+            "fontIconText": "Noto Sans",
+            "maxWidthText": 100,
+            "__resolveType": "site/sections/Content/TitleTextIconsAndImage.tsx",
+            "iconWidthText": [
+              {
+                "alt": "Personalização",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b7856e84-8e98-415d-83d0-97e10789a337",
+                "width": 36,
+                "height": 36
+              },
+              {
+                "alt": "Otimização da loja",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b7856e84-8e98-415d-83d0-97e10789a337",
+                "width": 36,
+                "height": 36
+              },
+              {
+                "alt": "Orientação",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/aa2cc7c0-66a1-4c9f-8290-77c14691b6e2",
+                "width": 36,
+                "height": 36
+              },
+              {
+                "alt": "Visibilidade",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/419cc8df-408b-4045-af92-536a1d34e905",
+                "width": 36,
+                "height": 36
+              }
+            ],
+            "spaceTextAndImage": 68
+          },
+          {
+            "image": {
+              "mobile": {
+                "alt": "Premiações Mobile",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ca2c326f-2ac0-470e-859a-37959126eb6b",
+                "width": 352,
+                "height": 375
+              },
+              "desktop": {
+                "alt": "Premiações",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/77207389-f47b-42c8-af20-de307ffe25d7",
+                "width": 473,
+                "height": 504
+              }
+            },
+            "title": "<h2>Premiações</h2>",
+            "ellipse": {
+              "ellipse01": { "mobile": true, "desktop": true },
+              "ellipse02": { "mobile": true, "desktop": true },
+              "ellipse03": { "mobile": true, "desktop": true },
+              "ellipse04": { "mobile": true, "desktop": true }
+            },
+            "flexCol": "Superior",
+            "flexRow": "Esquerdo",
+            "activeBold": true,
+            "gridActive": true,
+            "widthBlock": 57,
+            "description": "<p dir=\"ltr\"><span style=\"color: rgb(236, 240, 241);\" data-mce-style=\"color: rgb(236, 240, 241);\">Somos reconhecidos pela VTEX, uma das principais plataformas de e-commerce do mundo, com prêmios conquistados e a chancela VTEX Partner. Somos pioneiros em tecnologias headless como Deco.cx, além de sermos uma agência certificada pela Uappi, preparada para implementar projetos cross-border.<br><br></span><span style=\"color: rgb(236, 240, 241);\" data-mce-style=\"color: rgb(236, 240, 241);\">Com a inovação e o futuro como principais pilares de seu trabalho, a N1.AG deseja ser um parceiro que garante excelência, produtividade e resultados cada vez mais significativos para os seus parceiros.</span></p><p><br data-mce-bogus=\"1\"></p>",
+            "fontIconText": "Archimoto V01",
+            "maxWidthText": 100,
+            "__resolveType": "site/sections/Content/TitleTextIconsAndImage.tsx",
+            "gridColCustom": 2,
+            "iconWidthText": [
+              {
+                "alt": "Hackathon VPS Vtex IO",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b2e79068-8f84-4429-8a25-dea20a8e6973",
+                "width": 44,
+                "height": 43
+              },
+              {
+                "alt": "Melhor Extensão N1 Insight",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3f7358f9-07fc-41dc-934d-9c96bf09c9e2",
+                "width": 44,
+                "height": 43
+              },
+              {
+                "alt": "Vtex Partner Challenge",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/79baf0a7-e848-4eaf-8aa6-e29512934df9",
+                "width": 44,
+                "height": 43
+              },
+              {
+                "alt": "Vtex Partner Expert",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3f2f5fbe-3b3e-4b00-83e5-ece23fcab228",
+                "width": 44,
+                "height": 43
+              }
+            ],
+            "spaceTextAndImage": 85
+          },
+          {
+            "bg": {
+              "alt": "Background",
+              "mobile": {
+                "alt": "Background Mobile",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/793abb07-4809-4303-ac82-9c4942fd8fb0",
+                "width": 350,
+                "height": 221
+              },
+              "desktop": {
+                "alt": "Background Desktop",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/780195da-0823-4bc1-a57a-812648a7a578",
+                "width": 1206,
+                "height": 302
+              }
+            },
+            "sideLeft": {
+              "title": "<h2>Certificações</h2>",
+              "device": [
+                {
+                  "alt": "vtex io",
+                  "mobile": {
+                    "alt": "vtex-io",
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ca5b854f-18e6-4de0-a1bf-902c30d82a49",
+                    "width": 144,
+                    "height": 58
+                  },
+                  "desktop": {
+                    "alt": "vtex-io",
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a0d01e66-6a23-4395-bbbf-e995da2a3165",
+                    "width": 200,
+                    "height": 80
+                  }
+                },
+                {
+                  "alt": "vtex sales",
+                  "mobile": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bd0c44fc-1aeb-4c6f-9d48-aaa171b20ebb",
+                    "width": 144,
+                    "height": 58
+                  },
+                  "desktop": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5664d628-da36-4aee-aa01-fef8e12d3636",
+                    "width": 200,
+                    "height": 80
+                  }
+                },
+                {
+                  "alt": "vtex implementation",
+                  "mobile": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2d60861a-5d19-43b6-92f4-75022f8a071f",
+                    "width": 144,
+                    "height": 58
+                  },
+                  "desktop": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8d73daba-6b33-41db-886c-cf4855926a81",
+                    "width": 200,
+                    "height": 80
+                  }
+                },
+                {
+                  "alt": "deco",
+                  "mobile": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b53b9b19-a32e-4644-b9bc-a47574cc7938",
+                    "width": 144,
+                    "height": 58
+                  },
+                  "desktop": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/950fa941-26f9-4e0b-b8a8-c587a6131ce9",
+                    "width": 200,
+                    "height": 80
+                  }
+                }
+              ]
+            },
+            "sideRight": {
+              "title": "<p><br data-mce-bogus=\"1\"></p>",
+              "device": []
+            },
+            "__resolveType": "site/sections/Content/ImagesAndBackground.tsx"
+          },
+          {
+            "image": {
+              "mobile": {
+                "alt": "Redes sociais Mobile",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0f78a705-00b8-4e8e-bf26-4d738039d296",
+                "width": 390,
+                "height": 363
+              },
+              "desktop": {
+                "alt": "Redes sociais",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3508b988-cf31-4f4f-a390-24326cd51a67",
+                "width": 579,
+                "height": 393
+              }
+            },
+            "title": "<h2>conheça nossas redes sociais</h2>",
+            "ellipse": {
+              "ellipse01": { "mobile": true, "desktop": true },
+              "ellipse02": { "mobile": true, "desktop": true },
+              "ellipse03": { "mobile": true, "desktop": true },
+              "ellipse04": { "mobile": true, "desktop": true }
+            },
+            "flexCol": "Inferior",
+            "flexRow": "Direito",
+            "activeBold": true,
+            "gridActive": false,
+            "description": "<p><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">Simplificamos os desafios do varejo online, transformando-os em valiosos insights de mercado. Siga nossas redes sociais e junte-se a nós!</span>&nbsp;✨</p>",
+            "fontIconText": "Archimoto V01",
+            "__resolveType": "site/sections/Content/TitleTextIconsAndImage.tsx",
+            "iconWidthText": [
+              {
+                "alt": "Instagram",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/58d945d1-fa0f-4c9d-90c8-f40d8257d468",
+                "href": "https://www.instagram.com/agencian1",
+                "width": 50,
+                "height": 50
+              },
+              {
+                "alt": "Youtube",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bb762a87-9547-40cf-8b7f-110eda57d514",
+                "href": "https://www.youtube.com/channel/UCYpELMcq2-xs3qe_OK0ldYA",
+                "width": 50,
+                "height": 50
+              },
+              {
+                "alt": "Linkedin",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/20fd3dc8-f5da-4bc8-bbba-fc7e20bdb1c0",
+                "href": "https://www.linkedin.com/company/agência-n1/mycompany",
+                "width": 50,
+                "height": 50
+              },
+              {
+                "alt": "Blog",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/15c538ae-67ac-491f-ace0-a90978e97489",
+                "width": 50,
+                "height": 50
+              }
+            ],
+            "positionImageX": 0,
+            "positionImageY": 160,
+            "activePositionManualImage": true
+          },
+          { "__resolveType": "footer-principal" },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/786a5333-0012-47c1-9681-c216cdfc6e3a",
+            "title": "Quem Somos N1.AG | Agência Especializada em e-commerce e parceira plataforma VTEX",
+            "canonical": "https://www.n1.ag/quem-somos",
+            "description": "Somos especialistas em impulsionar os melhores sites VTEX e oferecer consultoria especializada em e-commerce. Como Agência VTEX Partner, fornecemos soluções de implantação e evolução, garantindo que sua loja online alcance todo o potencial. Conheça a equipe por trás da agência líder em e-commerce e VTEX.",
+            "__resolveType": "website/sections/Seo/SeoV2.tsx",
+            "titleTemplate": "Quem Somos N1.AG | Agência Especializada em e-commerce e parceira plataforma VTEX",
+            "descriptionTemplate": "Somos especialistas em impulsionar os melhores sites VTEX e oferecer consultoria especializada em e-commerce. Como Agência VTEX Partner, fornecemos soluções de implantação e evolução, garantindo que sua loja online alcance todo o potencial. Conheça a equipe por trás da agência líder em e-commerce e VTEX."
+          }
+        ]
+      }
+    ],
+    "__resolveType": "website/flags/multivariate.ts"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

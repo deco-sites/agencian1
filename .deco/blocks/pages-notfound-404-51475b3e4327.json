@@ -1,1 +1,539 @@
-{"name":"NotFound- 404","path":"/404","sections":{"variants":[{"rule":{"name":"N1_SelectedLanguage","value":"es-es","__resolveType":"website/matchers/cookie.ts"},"value":[{"__resolveType":"Theme"},{"__resolveType":"header-espanhol"},{"banners":[{"images":{"mobile":{"alt":"Banner mobile","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/38cda44f-6fc8-4bcc-96d3-732b62a8ddf2","width":"390","height":"500"},"desktop":{"alt":"Banner Implantação","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b075e3ee-a732-48d8-9e14-8639453dea7d","width":"1442","height":"735"}},"matcher":"/cases/oh-boy"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"items":[{"category":"cases","subcategory":"oh boy"}],"__resolveType":"site/sections/Content/BreadcrumbCustom.tsx"},{"icon":{"alt":"Icon top","mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fab0f9ac-6070-49ea-8223-b0c6c5143d2d","width":243,"height":106},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d57ddc30-9227-4d8f-bff2-b8396e4d063b","width":298,"height":124}},"title":"parceria de sucesso vtex.io","paragraph":"{Com a migração para o VTEX IO e a implementação de novas features junto à equipe especializada da Agência N1, a OH BOY! tem proporcionado aos seus usuários melhor experiência de navegação. Descubra como a Agência N1 melhorou a experiência do consumidor e impulsionou os resultados da OH BOY! com a plataforma VTEX.}","__resolveType":"site/sections/Content/IconTitleAndTex.tsx","backgroundImage":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7f1db9c-ae6c-4aa8-b7e0-1f200601771c","width":1440,"height":430},"activeBackground":true},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0acb2bbe-7f56-4623-827e-fee6b17d2cdd","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9eaae5f6-0e29-4a7e-83c5-783baad59902","widthDesktop":632,"heightDesktop":372},"marginTop":"10px","placement":"direito","bannerImgw":{"alt":"banner","ImageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c6f656e6-37e3-410c-a50d-e68b6ac1775f","widthMobile":358,"ImageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/925d6603-e2fc-47e9-aeb9-a0aba2550bdd","heightMobile":229,"widthDesktop":632,"heightDesktop":372},"contentText":{"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Sobre o cliente</p>","description":"<p>Com mais de 20 anos no mercado, 30 lojas próprias e presença em mais de 500 multimarcas, a OH, BOY! é uma marca carioca que reflete uma essência jovem e urbana. Suas coleções confortáveis e descontraídas misturam estilos, refletindo uma personalidade moderna e única.</p><p><br data-mce-bogus=\"1\"></p><p>A marca mantém sua originalidade, e entende que precisa se apresentar de um jeito fresh e inovador para conquistar as novas gerações.</p>"},"marginBottom":"10px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx","styleContainer":"center"},{"cards":[{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b29e7878-a28b-48fb-a99b-1342e7b68023","title":"<p>UX Design</p>","description":"<p>Aprimorar a experiência do consumidor com melhorias de UX e obter valor agregado, diferenciação competitiva e aumento nas vendas.</p>"},{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/cb730e92-31b1-46e3-b979-28b5745b09f5","title":"<p>Performance</p>","description":"<p>Garantir que todas as páginas do site carreguem rapidamente é fundamental. O desafio está em otimizar imagens, scripts e conteúdo para manter o site ágil.</p>"},{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6b53bb35-c267-4b2c-a42b-3bce0cf785d3","title":"<p>Limitações técnicas</p>","description":"<p>A OH BOY! enfrentava limitações técnicas em seu e-commerce, com bugs, instabilidades e problemas de carregamento e velocidade comprometendo a experiência do cliente.</p>"},{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c19ecd5e-1eea-49f7-921c-5ba7631a2995","title":"<p>Escalabilidade:</p>","description":"<p>À medida que o tráfego aumenta, o site deve ser capaz de lidar com a carga adicional. Escalar a infraestrutura para acomodar picos de tráfego é um desafio técnico.</p>"}],"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Principais Desafios</p>","marginTop":"120px","marginBottom":"20px","__resolveType":"site/sections/Challenges/challenges.tsx"},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/72dd2dbf-9211-40a1-93e7-3353baa71768","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d018ae6b-c0ac-4e84-bba3-226f177aa602","widthDesktop":596.64,"heightDesktop":451.569},"marginTop":"120px","contentText":{"list":{"textList":[{"descriptionList":"<p>A Agência N1 propôs migrar o e-commerce da OH BOY! para o VTEX IO, oferecendo uma gestão focada na experiência do usuário.</p>"},{"descriptionList":"<p>Com o VTEX IO, foi possível criar layouts responsivos e personalizados, otimizados para dispositivos móveis, proporcionando experiências de compra únicas, alinhadas à identidade da marca.</p>"},{"descriptionList":"<p>A tecnologia do VTEX IO também permitiu superar desafios de infraestrutura, possibilitando um foco total nas soluções.</p>"},{"descriptionList":"<p>Com a migração para o VTEX IO e a implementação de novas features junto à equipe especializada da Agência N1, a OH BOY! tem proporcionado aos seus usuários melhor experiência de navegação.</p>"}],"iconCheck":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/509809ed-9793-4361-9b7f-f09787a9bf25","widthContainerList":"500"},"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>soluções:</p>","button":{"link":"/","textButton":"Visite o novo site"}},"marginBottom":"120px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx","imageBackground":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/07600ab5-5b67-4fa1-a04a-f7bac5a4d68f"},{"variants":[{"rule":{"mobile":true,"tablet":true,"__resolveType":"website/matchers/device.ts"},"value":{"dots":false,"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Destaques do projeto&nbsp;</p>","arrows":true,"images":[{"alt":"oh boy","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/f9ae10e8-83f4-4c69-9bb2-f22e2ed0975e","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/1bb6aeca-85d7-4181-8662-b36016dee8ec","subTitle":"<p>{Compra rápida nas Prateleiras}</p>","description":"<p>A funcionalidade permite que o usuário adicione um item no carrinho, direto da prateleira, sem precisar clicar no produto, economizando tempo e tornando o processo de compra mais ágil.</p>"},{"alt":"Oh BOY ","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fd9f6c77-7733-4f11-8395-0a12d4486960","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2ef8c98f-5226-479a-bcd0-daa285d37b85","subTitle":"<p>{Compra rápida nas Prateleiras}</p>","description":"<p>A funcionalidade permite que o usuário adicione um item no carrinho, direto da prateleira, sem precisar clicar no produto, economizando tempo e tornando o processo de compra mais ágil.</p>"}],"preload":true,"marginBottom":"100px","__resolveType":"site/sections/SliderColumn/SliderColumn.tsx"}},{"rule":{"__resolveType":"website/matchers/always.ts"},"value":{"dots":false,"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Destaques do projeto&nbsp;</p>","arrows":true,"images":[{"alt":"oh boy","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/636100e1-2e4c-4daa-bb8a-20f2892daa36","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/1bb6aeca-85d7-4181-8662-b36016dee8ec","subTitle":"<p>{Compra rápida nas Prateleiras}</p>","description":"<p>A funcionalidade permite que o usuário adicione um item no carrinho, direto da prateleira, sem precisar clicar no produto, economizando tempo e tornando o processo de compra mais ágil.</p>"},{"alt":"Oh BOY ","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/35cd12fc-b814-45ef-ad9f-98574aee1844","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fda9d24a-45f2-4f45-9655-f195c8866412","subTitle":"<p>{Compra rápida nas Prateleiras}</p>","description":"<p>A funcionalidade com visualização das variações dos produtos oferece uma experiência de compra mais conveniente e eficiente. Isso permite que os clientes vejam as opções de um produto sem precisar clicar em cada item, economizando tempo e tornando o processo de compra mais ágil.</p>"}],"preload":true,"marginTop":"120px","marginBottom":"120px","__resolveType":"site/sections/SliderColumn/SliderColumn.tsx"}}],"__resolveType":"website/flags/multivariate/section.ts"},{"tags":[{"IconsMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9f047ea6-51cd-4fae-9401-0d87fdc414d2","widthMobile":119,"IconsDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7ccdc5aa-8293-4615-aeb7-43f250ea569a","heightMobile":33,"widthDesktop":135,"heightDesktop":33},{"IconsMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8d25f164-d1b9-449d-b66b-4aac5c406154","widthMobile":188,"IconsDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/eca32aec-8f33-45e6-9334-bc31717b062e","heightMobile":33,"widthDesktop":214,"heightDesktop":33}],"cards":[{"Iconcheck":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/f5ee2969-dd65-4129-b495-ec9f6b8b44c3","description":"<p>A atualização tecnológica permitiu uma significativa melhoria na performance do site, resultado direto da otimização do código implementada durante o projeto. A resposta ágil do VTEX IO à escalabilidade e a flexibilidade da arquitetura headless foram cruciais para alcançar um ambiente mais robusto e eficiente.</p>"},{"Iconcheck":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/70eca0f8-6113-4c3b-b32e-fbf181423f11","description":"<p>A incorporação de novas funcionalidades, como a \"Compra Rápida na Prateleira\" e o \"Monte Seu Look com Compra Rápida\", não apenas simplificou o processo de compra, mas também aumentou a interatividade e envolvimento dos clientes. Essas melhorias se traduziram em uma experiência do usuário mais rica, evidenciada pelo aumento nas taxas de conversão e no tempo médio de permanência no site.</p>"},{"Iconcheck":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/323a6ff4-7b42-4880-82c2-da43f964553f","description":"<p>A edição simplificada de conteúdo também proporcionou agilidade à equipe da OH BOY!, permitindo uma resposta mais rápida às tendências e demandas do mercado. Como resultado, a marca conquistou uma posição mais competitiva no cenário de e-commerce. O projeto refletiu em uma presença digital mais sólida e eficaz.</p>"},{"Iconcheck":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d455cd14-ce14-4006-911e-0b8507f306bb","description":"<p>Facilita e incentiva a colaboração entre clientes, permitindo que compartilhem produtos e carrinhos, aumentando as vendas e a fidelização.</p>"}],"title":"<p>/Resultados alcançados</p>","marginBottom":"68px","__resolveType":"site/sections/Result_chievements/result_chievements.tsx"},{"__resolveType":"footer-principal"}]},{"rule":{"name":"N1_SelectedLanguage","value":"en-en","__resolveType":"website/matchers/cookie.ts"},"value":[{"__resolveType":"Theme"},{"__resolveType":"Header-english"},{"banners":[{"images":{"mobile":{"alt":"Banner mobile","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/38cda44f-6fc8-4bcc-96d3-732b62a8ddf2","width":"390","height":"500"},"desktop":{"alt":"Banner Implantação","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b075e3ee-a732-48d8-9e14-8639453dea7d","width":"1442","height":"735"}},"matcher":"/cases/oh-boy"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"items":[{"category":"cases","subcategory":"oh boy"}],"__resolveType":"site/sections/Content/BreadcrumbCustom.tsx"},{"icon":{"alt":"Icon top","mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fab0f9ac-6070-49ea-8223-b0c6c5143d2d","width":243,"height":106},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d57ddc30-9227-4d8f-bff2-b8396e4d063b","width":298,"height":124}},"title":"successful partnership vtex.io","paragraph":"{With the migration to VTEX IO and the implementation of new features together with the specialized team at Agência N1, OH BOY! has provided its users with a better browsing experience. Discover how Agência N1 improved the consumer experience and boosted OH BOY’s results! with the VTEX platform.}","__resolveType":"site/sections/Content/IconTitleAndTex.tsx","backgroundImage":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7f1db9c-ae6c-4aa8-b7e0-1f200601771c","width":1440,"height":430},"activeBackground":true},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0acb2bbe-7f56-4623-827e-fee6b17d2cdd","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9eaae5f6-0e29-4a7e-83c5-783baad59902","widthDesktop":632,"heightDesktop":372},"marginTop":"10px","placement":"direito","bannerImgw":{"alt":"banner","ImageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c6f656e6-37e3-410c-a50d-e68b6ac1775f","widthMobile":358,"ImageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/925d6603-e2fc-47e9-aeb9-a0aba2550bdd","heightMobile":229,"widthDesktop":632,"heightDesktop":372},"contentText":{"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>About the customer</p>","description":"<p>With more than 20 years in the market, 30 own stores and presence in more than 500 multi-brands, OH, BOY! is a Rio brand that reflects a young and urban essence. Its comfortable and relaxed collections mix styles, reflecting a modern and unique personality.</p><p><br data-mce-bogus=\"1\"></p><p>The brand maintains its originality, and understands that it needs to present itself in a fresh and innovative way to win over new generations.</p>"},"marginBottom":"10px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx","styleContainer":"center"},{"cards":[{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b29e7878-a28b-48fb-a99b-1342e7b68023","title":"<p>UX Design</p>","description":"<p>Improve the consumer experience with UX improvements and obtain added value, competitive differentiation and increased sales.</p>"},{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/cb730e92-31b1-46e3-b979-28b5745b09f5","title":"<p>Performance</p>","description":"<p>Ensuring that all pages on your website load quickly is critical. The challenge is optimizing images, scripts and content to keep the site agile.</p>"},{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6b53bb35-c267-4b2c-a42b-3bce0cf785d3","title":"<p>Technical limitations</p>","description":"<p>THE OH BOY! faced technical limitations in its e-commerce, with bugs, instabilities and loading and speed problems compromising the customer experience.</p>"},{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c19ecd5e-1eea-49f7-921c-5ba7631a2995","title":"<p>Scalability:</p>","description":"<p>As traffic increases, the website must be able to handle the additional load. Scaling infrastructure to accommodate traffic spikes is a technical challenge.</p>"}],"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Main Challenges</p>","marginTop":"120px","marginBottom":"20px","__resolveType":"site/sections/Challenges/challenges.tsx"},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/72dd2dbf-9211-40a1-93e7-3353baa71768","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d018ae6b-c0ac-4e84-bba3-226f177aa602","widthDesktop":596.64,"heightDesktop":451.569},"marginTop":"120px","contentText":{"list":{"textList":[{"descriptionList":"<p>N1 Agency proposed migrating e-commerce from OH BOY! for VTEX IO, offering management focused on the user experience.</p>"},{"descriptionList":"<p>With VTEX IO, it was possible to create responsive and personalized layouts, optimized for mobile devices, providing unique shopping experiences, aligned with the brand's identity.</p>"},{"descriptionList":"<p>VTEX IO technology also made it possible to overcome infrastructure challenges, enabling a total focus on solutions.</p>"},{"descriptionList":"<p>With the migration to VTEX IO and the implementation of new features together with the specialized team at Agência N1, OH BOY! has provided its users with a better browsing experience.</p>"}],"iconCheck":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/509809ed-9793-4361-9b7f-f09787a9bf25","widthContainerList":"500"},"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>solutions:</p>","button":{"link":"/","textButton":"Visit the new website"}},"marginBottom":"120px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx","imageBackground":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/07600ab5-5b67-4fa1-a04a-f7bac5a4d68f"},{"variants":[{"rule":{"mobile":true,"tablet":true,"__resolveType":"website/matchers/device.ts"},"value":{"dots":false,"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Destaques do projeto&nbsp;</p>","arrows":true,"images":[{"alt":"oh boy","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/f9ae10e8-83f4-4c69-9bb2-f22e2ed0975e","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/1bb6aeca-85d7-4181-8662-b36016dee8ec","subTitle":"<p>{Compra rápida nas Prateleiras}</p>","description":"<p>A funcionalidade permite que o usuário adicione um item no carrinho, direto da prateleira, sem precisar clicar no produto, economizando tempo e tornando o processo de compra mais ágil.</p>"},{"alt":"Oh BOY ","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fd9f6c77-7733-4f11-8395-0a12d4486960","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2ef8c98f-5226-479a-bcd0-daa285d37b85","subTitle":"<p>{Compra rápida nas Prateleiras}</p>","description":"<p>A funcionalidade permite que o usuário adicione um item no carrinho, direto da prateleira, sem precisar clicar no produto, economizando tempo e tornando o processo de compra mais ágil.</p>"}],"preload":true,"marginBottom":"100px","__resolveType":"site/sections/SliderColumn/SliderColumn.tsx"}},{"rule":{"__resolveType":"website/matchers/always.ts"},"value":{"dots":false,"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Project highlights</p>","arrows":true,"images":[{"alt":"oh boy","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/636100e1-2e4c-4daa-bb8a-20f2892daa36","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/1bb6aeca-85d7-4181-8662-b36016dee8ec","subTitle":"<p>{Quick purchase on the Shelves}</p>","description":"<p>The functionality allows the user to add an item to the cart, directly from the shelf, without having to click on the product, saving time and making the purchasing process more agile.</p>"},{"alt":"Oh BOY ","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/35cd12fc-b814-45ef-ad9f-98574aee1844","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fda9d24a-45f2-4f45-9655-f195c8866412","subTitle":"<p>{Quick purchase on the Shelves}</p>","description":"<p>The functionality with visualization of product variations offers a more convenient and efficient shopping experience. This allows customers to see product options without having to click on each item, saving time and making the purchasing process more agile.</p>"}],"preload":true,"marginTop":"120px","marginBottom":"120px","__resolveType":"site/sections/SliderColumn/SliderColumn.tsx"}}],"__resolveType":"website/flags/multivariate/section.ts"},{"tags":[{"IconsMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9f047ea6-51cd-4fae-9401-0d87fdc414d2","widthMobile":119,"IconsDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7ccdc5aa-8293-4615-aeb7-43f250ea569a","heightMobile":33,"widthDesktop":135,"heightDesktop":33},{"IconsMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8d25f164-d1b9-449d-b66b-4aac5c406154","widthMobile":188,"IconsDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/eca32aec-8f33-45e6-9334-bc31717b062e","heightMobile":33,"widthDesktop":214,"heightDesktop":33}],"cards":[{"Iconcheck":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/f5ee2969-dd65-4129-b495-ec9f6b8b44c3","description":"<p>The technological update allowed a significant improvement in the site's performance, a direct result of the code optimization implemented during the project. VTEX IO's agile response to scalability and the flexibility of the headless architecture were crucial to achieving a more robust and efficient environment.</p>"},{"Iconcheck":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/70eca0f8-6113-4c3b-b32e-fbf181423f11","description":"<p>The incorporation of new features, such as \"Quick Purchase on the Shelf\" and \"Build Your Look with Quick Purchase\", not only simplified the purchasing process, but also increased interactivity and customer engagement. These improvements translated into a richer user experience, evidenced by increased conversion rates and average time spent on site.</p>"},{"Iconcheck":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/323a6ff4-7b42-4880-82c2-da43f964553f","description":"<p>Simplified content editing also provided agility to the OH BOY! team, allowing a faster response to market trends and demands. As a result, the brand gained a more competitive position in the e-commerce scenario. The project resulted in a more solid and effective digital presence.</p>"},{"Iconcheck":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d455cd14-ce14-4006-911e-0b8507f306bb","description":"<p>Facilitates and encourages collaboration between customers, allowing them to share products and carts, increasing sales and loyalty.</p>"}],"title":"<p><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">/</span>Results achieved</p>","marginBottom":"68px","__resolveType":"site/sections/Result_chievements/result_chievements.tsx"},{"__resolveType":"footer-English"}]},{"rule":{"__resolveType":"website/matchers/always.ts"},"value":[{"__resolveType":"Theme"},{"__resolveType":"header-principal"},{"title":"Ops! Página Não Encontrada","button":{"href":"/","text":"Voltar para Home"},"__resolveType":"site/sections/Content/NotFound.tsx","image404Mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/f719ad1e-21b5-46fd-b812-7e0470e20d17","image404Desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c3f2a443-42bf-4056-81bc-7202a5bb16c5"},{"__resolveType":"footer-principal"}]}],"__resolveType":"website/flags/multivariate.ts"},"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "NotFound- 404",
+  "path": "/404",
+  "sections": {
+    "variants": [
+      {
+        "rule": {
+          "name": "N1_SelectedLanguage",
+          "value": "es-es",
+          "__resolveType": "website/matchers/cookie.ts"
+        },
+        "value": [
+          { "__resolveType": "Theme" },
+          { "__resolveType": "header-espanhol" },
+          {
+            "banners": [
+              {
+                "images": {
+                  "mobile": {
+                    "alt": "Banner mobile",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/38cda44f-6fc8-4bcc-96d3-732b62a8ddf2",
+                    "width": "390",
+                    "height": "500"
+                  },
+                  "desktop": {
+                    "alt": "Banner Implantação",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b075e3ee-a732-48d8-9e14-8639453dea7d",
+                    "width": "1442",
+                    "height": "735"
+                  }
+                },
+                "matcher": "/cases/oh-boy"
+              }
+            ],
+            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+          },
+          {
+            "items": [{ "category": "cases", "subcategory": "oh boy" }],
+            "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
+          },
+          {
+            "icon": {
+              "alt": "Icon top",
+              "mobile": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fab0f9ac-6070-49ea-8223-b0c6c5143d2d",
+                "width": 243,
+                "height": 106
+              },
+              "desktop": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d57ddc30-9227-4d8f-bff2-b8396e4d063b",
+                "width": 298,
+                "height": 124
+              }
+            },
+            "title": "parceria de sucesso vtex.io",
+            "paragraph": "{Com a migração para o VTEX IO e a implementação de novas features junto à equipe especializada da Agência N1, a OH BOY! tem proporcionado aos seus usuários melhor experiência de navegação. Descubra como a Agência N1 melhorou a experiência do consumidor e impulsionou os resultados da OH BOY! com a plataforma VTEX.}",
+            "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
+            "backgroundImage": {
+              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7f1db9c-ae6c-4aa8-b7e0-1f200601771c",
+              "width": 1440,
+              "height": 430
+            },
+            "activeBackground": true
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0acb2bbe-7f56-4623-827e-fee6b17d2cdd",
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9eaae5f6-0e29-4a7e-83c5-783baad59902",
+              "widthDesktop": 632,
+              "heightDesktop": 372
+            },
+            "marginTop": "10px",
+            "placement": "direito",
+            "bannerImgw": {
+              "alt": "banner",
+              "ImageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c6f656e6-37e3-410c-a50d-e68b6ac1775f",
+              "widthMobile": 358,
+              "ImageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/925d6603-e2fc-47e9-aeb9-a0aba2550bdd",
+              "heightMobile": 229,
+              "widthDesktop": 632,
+              "heightDesktop": 372
+            },
+            "contentText": {
+              "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Sobre o cliente</p>",
+              "description": "<p>Com mais de 20 anos no mercado, 30 lojas próprias e presença em mais de 500 multimarcas, a OH, BOY! é uma marca carioca que reflete uma essência jovem e urbana. Suas coleções confortáveis e descontraídas misturam estilos, refletindo uma personalidade moderna e única.</p><p><br data-mce-bogus=\"1\"></p><p>A marca mantém sua originalidade, e entende que precisa se apresentar de um jeito fresh e inovador para conquistar as novas gerações.</p>"
+            },
+            "marginBottom": "10px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
+            "styleContainer": "center"
+          },
+          {
+            "cards": [
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b29e7878-a28b-48fb-a99b-1342e7b68023",
+                "title": "<p>UX Design</p>",
+                "description": "<p>Aprimorar a experiência do consumidor com melhorias de UX e obter valor agregado, diferenciação competitiva e aumento nas vendas.</p>"
+              },
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/cb730e92-31b1-46e3-b979-28b5745b09f5",
+                "title": "<p>Performance</p>",
+                "description": "<p>Garantir que todas as páginas do site carreguem rapidamente é fundamental. O desafio está em otimizar imagens, scripts e conteúdo para manter o site ágil.</p>"
+              },
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6b53bb35-c267-4b2c-a42b-3bce0cf785d3",
+                "title": "<p>Limitações técnicas</p>",
+                "description": "<p>A OH BOY! enfrentava limitações técnicas em seu e-commerce, com bugs, instabilidades e problemas de carregamento e velocidade comprometendo a experiência do cliente.</p>"
+              },
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c19ecd5e-1eea-49f7-921c-5ba7631a2995",
+                "title": "<p>Escalabilidade:</p>",
+                "description": "<p>À medida que o tráfego aumenta, o site deve ser capaz de lidar com a carga adicional. Escalar a infraestrutura para acomodar picos de tráfego é um desafio técnico.</p>"
+              }
+            ],
+            "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Principais Desafios</p>",
+            "marginTop": "120px",
+            "marginBottom": "20px",
+            "__resolveType": "site/sections/Challenges/challenges.tsx"
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/72dd2dbf-9211-40a1-93e7-3353baa71768",
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d018ae6b-c0ac-4e84-bba3-226f177aa602",
+              "widthDesktop": 596.64,
+              "heightDesktop": 451.569
+            },
+            "marginTop": "120px",
+            "contentText": {
+              "list": {
+                "textList": [
+                  {
+                    "descriptionList": "<p>A Agência N1 propôs migrar o e-commerce da OH BOY! para o VTEX IO, oferecendo uma gestão focada na experiência do usuário.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>Com o VTEX IO, foi possível criar layouts responsivos e personalizados, otimizados para dispositivos móveis, proporcionando experiências de compra únicas, alinhadas à identidade da marca.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>A tecnologia do VTEX IO também permitiu superar desafios de infraestrutura, possibilitando um foco total nas soluções.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>Com a migração para o VTEX IO e a implementação de novas features junto à equipe especializada da Agência N1, a OH BOY! tem proporcionado aos seus usuários melhor experiência de navegação.</p>"
+                  }
+                ],
+                "iconCheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/509809ed-9793-4361-9b7f-f09787a9bf25",
+                "widthContainerList": "500"
+              },
+              "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>soluções:</p>",
+              "button": { "link": "/", "textButton": "Visite o novo site" }
+            },
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
+            "imageBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/07600ab5-5b67-4fa1-a04a-f7bac5a4d68f"
+          },
+          {
+            "variants": [
+              {
+                "rule": {
+                  "mobile": true,
+                  "tablet": true,
+                  "__resolveType": "website/matchers/device.ts"
+                },
+                "value": {
+                  "dots": false,
+                  "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Destaques do projeto&nbsp;</p>",
+                  "arrows": true,
+                  "images": [
+                    {
+                      "alt": "oh boy",
+                      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/f9ae10e8-83f4-4c69-9bb2-f22e2ed0975e",
+                      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/1bb6aeca-85d7-4181-8662-b36016dee8ec",
+                      "subTitle": "<p>{Compra rápida nas Prateleiras}</p>",
+                      "description": "<p>A funcionalidade permite que o usuário adicione um item no carrinho, direto da prateleira, sem precisar clicar no produto, economizando tempo e tornando o processo de compra mais ágil.</p>"
+                    },
+                    {
+                      "alt": "Oh BOY ",
+                      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fd9f6c77-7733-4f11-8395-0a12d4486960",
+                      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2ef8c98f-5226-479a-bcd0-daa285d37b85",
+                      "subTitle": "<p>{Compra rápida nas Prateleiras}</p>",
+                      "description": "<p>A funcionalidade permite que o usuário adicione um item no carrinho, direto da prateleira, sem precisar clicar no produto, economizando tempo e tornando o processo de compra mais ágil.</p>"
+                    }
+                  ],
+                  "preload": true,
+                  "marginBottom": "100px",
+                  "__resolveType": "site/sections/SliderColumn/SliderColumn.tsx"
+                }
+              },
+              {
+                "rule": { "__resolveType": "website/matchers/always.ts" },
+                "value": {
+                  "dots": false,
+                  "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Destaques do projeto&nbsp;</p>",
+                  "arrows": true,
+                  "images": [
+                    {
+                      "alt": "oh boy",
+                      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/636100e1-2e4c-4daa-bb8a-20f2892daa36",
+                      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/1bb6aeca-85d7-4181-8662-b36016dee8ec",
+                      "subTitle": "<p>{Compra rápida nas Prateleiras}</p>",
+                      "description": "<p>A funcionalidade permite que o usuário adicione um item no carrinho, direto da prateleira, sem precisar clicar no produto, economizando tempo e tornando o processo de compra mais ágil.</p>"
+                    },
+                    {
+                      "alt": "Oh BOY ",
+                      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/35cd12fc-b814-45ef-ad9f-98574aee1844",
+                      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fda9d24a-45f2-4f45-9655-f195c8866412",
+                      "subTitle": "<p>{Compra rápida nas Prateleiras}</p>",
+                      "description": "<p>A funcionalidade com visualização das variações dos produtos oferece uma experiência de compra mais conveniente e eficiente. Isso permite que os clientes vejam as opções de um produto sem precisar clicar em cada item, economizando tempo e tornando o processo de compra mais ágil.</p>"
+                    }
+                  ],
+                  "preload": true,
+                  "marginTop": "120px",
+                  "marginBottom": "120px",
+                  "__resolveType": "site/sections/SliderColumn/SliderColumn.tsx"
+                }
+              }
+            ],
+            "__resolveType": "website/flags/multivariate/section.ts"
+          },
+          {
+            "tags": [
+              {
+                "IconsMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9f047ea6-51cd-4fae-9401-0d87fdc414d2",
+                "widthMobile": 119,
+                "IconsDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7ccdc5aa-8293-4615-aeb7-43f250ea569a",
+                "heightMobile": 33,
+                "widthDesktop": 135,
+                "heightDesktop": 33
+              },
+              {
+                "IconsMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8d25f164-d1b9-449d-b66b-4aac5c406154",
+                "widthMobile": 188,
+                "IconsDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/eca32aec-8f33-45e6-9334-bc31717b062e",
+                "heightMobile": 33,
+                "widthDesktop": 214,
+                "heightDesktop": 33
+              }
+            ],
+            "cards": [
+              {
+                "Iconcheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/f5ee2969-dd65-4129-b495-ec9f6b8b44c3",
+                "description": "<p>A atualização tecnológica permitiu uma significativa melhoria na performance do site, resultado direto da otimização do código implementada durante o projeto. A resposta ágil do VTEX IO à escalabilidade e a flexibilidade da arquitetura headless foram cruciais para alcançar um ambiente mais robusto e eficiente.</p>"
+              },
+              {
+                "Iconcheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/70eca0f8-6113-4c3b-b32e-fbf181423f11",
+                "description": "<p>A incorporação de novas funcionalidades, como a \"Compra Rápida na Prateleira\" e o \"Monte Seu Look com Compra Rápida\", não apenas simplificou o processo de compra, mas também aumentou a interatividade e envolvimento dos clientes. Essas melhorias se traduziram em uma experiência do usuário mais rica, evidenciada pelo aumento nas taxas de conversão e no tempo médio de permanência no site.</p>"
+              },
+              {
+                "Iconcheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/323a6ff4-7b42-4880-82c2-da43f964553f",
+                "description": "<p>A edição simplificada de conteúdo também proporcionou agilidade à equipe da OH BOY!, permitindo uma resposta mais rápida às tendências e demandas do mercado. Como resultado, a marca conquistou uma posição mais competitiva no cenário de e-commerce. O projeto refletiu em uma presença digital mais sólida e eficaz.</p>"
+              },
+              {
+                "Iconcheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d455cd14-ce14-4006-911e-0b8507f306bb",
+                "description": "<p>Facilita e incentiva a colaboração entre clientes, permitindo que compartilhem produtos e carrinhos, aumentando as vendas e a fidelização.</p>"
+              }
+            ],
+            "title": "<p>/Resultados alcançados</p>",
+            "marginBottom": "68px",
+            "__resolveType": "site/sections/Result_chievements/result_chievements.tsx"
+          },
+          { "__resolveType": "footer-principal" }
+        ]
+      },
+      {
+        "rule": {
+          "name": "N1_SelectedLanguage",
+          "value": "en-en",
+          "__resolveType": "website/matchers/cookie.ts"
+        },
+        "value": [
+          { "__resolveType": "Theme" },
+          { "__resolveType": "Header-english" },
+          {
+            "banners": [
+              {
+                "images": {
+                  "mobile": {
+                    "alt": "Banner mobile",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/38cda44f-6fc8-4bcc-96d3-732b62a8ddf2",
+                    "width": "390",
+                    "height": "500"
+                  },
+                  "desktop": {
+                    "alt": "Banner Implantação",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b075e3ee-a732-48d8-9e14-8639453dea7d",
+                    "width": "1442",
+                    "height": "735"
+                  }
+                },
+                "matcher": "/cases/oh-boy"
+              }
+            ],
+            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+          },
+          {
+            "items": [{ "category": "cases", "subcategory": "oh boy" }],
+            "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
+          },
+          {
+            "icon": {
+              "alt": "Icon top",
+              "mobile": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fab0f9ac-6070-49ea-8223-b0c6c5143d2d",
+                "width": 243,
+                "height": 106
+              },
+              "desktop": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d57ddc30-9227-4d8f-bff2-b8396e4d063b",
+                "width": 298,
+                "height": 124
+              }
+            },
+            "title": "successful partnership vtex.io",
+            "paragraph": "{With the migration to VTEX IO and the implementation of new features together with the specialized team at Agência N1, OH BOY! has provided its users with a better browsing experience. Discover how Agência N1 improved the consumer experience and boosted OH BOY’s results! with the VTEX platform.}",
+            "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
+            "backgroundImage": {
+              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7f1db9c-ae6c-4aa8-b7e0-1f200601771c",
+              "width": 1440,
+              "height": 430
+            },
+            "activeBackground": true
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0acb2bbe-7f56-4623-827e-fee6b17d2cdd",
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9eaae5f6-0e29-4a7e-83c5-783baad59902",
+              "widthDesktop": 632,
+              "heightDesktop": 372
+            },
+            "marginTop": "10px",
+            "placement": "direito",
+            "bannerImgw": {
+              "alt": "banner",
+              "ImageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c6f656e6-37e3-410c-a50d-e68b6ac1775f",
+              "widthMobile": 358,
+              "ImageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/925d6603-e2fc-47e9-aeb9-a0aba2550bdd",
+              "heightMobile": 229,
+              "widthDesktop": 632,
+              "heightDesktop": 372
+            },
+            "contentText": {
+              "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>About the customer</p>",
+              "description": "<p>With more than 20 years in the market, 30 own stores and presence in more than 500 multi-brands, OH, BOY! is a Rio brand that reflects a young and urban essence. Its comfortable and relaxed collections mix styles, reflecting a modern and unique personality.</p><p><br data-mce-bogus=\"1\"></p><p>The brand maintains its originality, and understands that it needs to present itself in a fresh and innovative way to win over new generations.</p>"
+            },
+            "marginBottom": "10px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
+            "styleContainer": "center"
+          },
+          {
+            "cards": [
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b29e7878-a28b-48fb-a99b-1342e7b68023",
+                "title": "<p>UX Design</p>",
+                "description": "<p>Improve the consumer experience with UX improvements and obtain added value, competitive differentiation and increased sales.</p>"
+              },
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/cb730e92-31b1-46e3-b979-28b5745b09f5",
+                "title": "<p>Performance</p>",
+                "description": "<p>Ensuring that all pages on your website load quickly is critical. The challenge is optimizing images, scripts and content to keep the site agile.</p>"
+              },
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6b53bb35-c267-4b2c-a42b-3bce0cf785d3",
+                "title": "<p>Technical limitations</p>",
+                "description": "<p>THE OH BOY! faced technical limitations in its e-commerce, with bugs, instabilities and loading and speed problems compromising the customer experience.</p>"
+              },
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c19ecd5e-1eea-49f7-921c-5ba7631a2995",
+                "title": "<p>Scalability:</p>",
+                "description": "<p>As traffic increases, the website must be able to handle the additional load. Scaling infrastructure to accommodate traffic spikes is a technical challenge.</p>"
+              }
+            ],
+            "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Main Challenges</p>",
+            "marginTop": "120px",
+            "marginBottom": "20px",
+            "__resolveType": "site/sections/Challenges/challenges.tsx"
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/72dd2dbf-9211-40a1-93e7-3353baa71768",
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d018ae6b-c0ac-4e84-bba3-226f177aa602",
+              "widthDesktop": 596.64,
+              "heightDesktop": 451.569
+            },
+            "marginTop": "120px",
+            "contentText": {
+              "list": {
+                "textList": [
+                  {
+                    "descriptionList": "<p>N1 Agency proposed migrating e-commerce from OH BOY! for VTEX IO, offering management focused on the user experience.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>With VTEX IO, it was possible to create responsive and personalized layouts, optimized for mobile devices, providing unique shopping experiences, aligned with the brand's identity.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>VTEX IO technology also made it possible to overcome infrastructure challenges, enabling a total focus on solutions.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>With the migration to VTEX IO and the implementation of new features together with the specialized team at Agência N1, OH BOY! has provided its users with a better browsing experience.</p>"
+                  }
+                ],
+                "iconCheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/509809ed-9793-4361-9b7f-f09787a9bf25",
+                "widthContainerList": "500"
+              },
+              "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>solutions:</p>",
+              "button": { "link": "/", "textButton": "Visit the new website" }
+            },
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
+            "imageBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/07600ab5-5b67-4fa1-a04a-f7bac5a4d68f"
+          },
+          {
+            "variants": [
+              {
+                "rule": {
+                  "mobile": true,
+                  "tablet": true,
+                  "__resolveType": "website/matchers/device.ts"
+                },
+                "value": {
+                  "dots": false,
+                  "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Destaques do projeto&nbsp;</p>",
+                  "arrows": true,
+                  "images": [
+                    {
+                      "alt": "oh boy",
+                      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/f9ae10e8-83f4-4c69-9bb2-f22e2ed0975e",
+                      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/1bb6aeca-85d7-4181-8662-b36016dee8ec",
+                      "subTitle": "<p>{Compra rápida nas Prateleiras}</p>",
+                      "description": "<p>A funcionalidade permite que o usuário adicione um item no carrinho, direto da prateleira, sem precisar clicar no produto, economizando tempo e tornando o processo de compra mais ágil.</p>"
+                    },
+                    {
+                      "alt": "Oh BOY ",
+                      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fd9f6c77-7733-4f11-8395-0a12d4486960",
+                      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2ef8c98f-5226-479a-bcd0-daa285d37b85",
+                      "subTitle": "<p>{Compra rápida nas Prateleiras}</p>",
+                      "description": "<p>A funcionalidade permite que o usuário adicione um item no carrinho, direto da prateleira, sem precisar clicar no produto, economizando tempo e tornando o processo de compra mais ágil.</p>"
+                    }
+                  ],
+                  "preload": true,
+                  "marginBottom": "100px",
+                  "__resolveType": "site/sections/SliderColumn/SliderColumn.tsx"
+                }
+              },
+              {
+                "rule": { "__resolveType": "website/matchers/always.ts" },
+                "value": {
+                  "dots": false,
+                  "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Project highlights</p>",
+                  "arrows": true,
+                  "images": [
+                    {
+                      "alt": "oh boy",
+                      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/636100e1-2e4c-4daa-bb8a-20f2892daa36",
+                      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/1bb6aeca-85d7-4181-8662-b36016dee8ec",
+                      "subTitle": "<p>{Quick purchase on the Shelves}</p>",
+                      "description": "<p>The functionality allows the user to add an item to the cart, directly from the shelf, without having to click on the product, saving time and making the purchasing process more agile.</p>"
+                    },
+                    {
+                      "alt": "Oh BOY ",
+                      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/35cd12fc-b814-45ef-ad9f-98574aee1844",
+                      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fda9d24a-45f2-4f45-9655-f195c8866412",
+                      "subTitle": "<p>{Quick purchase on the Shelves}</p>",
+                      "description": "<p>The functionality with visualization of product variations offers a more convenient and efficient shopping experience. This allows customers to see product options without having to click on each item, saving time and making the purchasing process more agile.</p>"
+                    }
+                  ],
+                  "preload": true,
+                  "marginTop": "120px",
+                  "marginBottom": "120px",
+                  "__resolveType": "site/sections/SliderColumn/SliderColumn.tsx"
+                }
+              }
+            ],
+            "__resolveType": "website/flags/multivariate/section.ts"
+          },
+          {
+            "tags": [
+              {
+                "IconsMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9f047ea6-51cd-4fae-9401-0d87fdc414d2",
+                "widthMobile": 119,
+                "IconsDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7ccdc5aa-8293-4615-aeb7-43f250ea569a",
+                "heightMobile": 33,
+                "widthDesktop": 135,
+                "heightDesktop": 33
+              },
+              {
+                "IconsMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8d25f164-d1b9-449d-b66b-4aac5c406154",
+                "widthMobile": 188,
+                "IconsDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/eca32aec-8f33-45e6-9334-bc31717b062e",
+                "heightMobile": 33,
+                "widthDesktop": 214,
+                "heightDesktop": 33
+              }
+            ],
+            "cards": [
+              {
+                "Iconcheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/f5ee2969-dd65-4129-b495-ec9f6b8b44c3",
+                "description": "<p>The technological update allowed a significant improvement in the site's performance, a direct result of the code optimization implemented during the project. VTEX IO's agile response to scalability and the flexibility of the headless architecture were crucial to achieving a more robust and efficient environment.</p>"
+              },
+              {
+                "Iconcheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/70eca0f8-6113-4c3b-b32e-fbf181423f11",
+                "description": "<p>The incorporation of new features, such as \"Quick Purchase on the Shelf\" and \"Build Your Look with Quick Purchase\", not only simplified the purchasing process, but also increased interactivity and customer engagement. These improvements translated into a richer user experience, evidenced by increased conversion rates and average time spent on site.</p>"
+              },
+              {
+                "Iconcheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/323a6ff4-7b42-4880-82c2-da43f964553f",
+                "description": "<p>Simplified content editing also provided agility to the OH BOY! team, allowing a faster response to market trends and demands. As a result, the brand gained a more competitive position in the e-commerce scenario. The project resulted in a more solid and effective digital presence.</p>"
+              },
+              {
+                "Iconcheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d455cd14-ce14-4006-911e-0b8507f306bb",
+                "description": "<p>Facilitates and encourages collaboration between customers, allowing them to share products and carts, increasing sales and loyalty.</p>"
+              }
+            ],
+            "title": "<p><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">/</span>Results achieved</p>",
+            "marginBottom": "68px",
+            "__resolveType": "site/sections/Result_chievements/result_chievements.tsx"
+          },
+          { "__resolveType": "footer-English" }
+        ]
+      },
+      {
+        "rule": { "__resolveType": "website/matchers/always.ts" },
+        "value": [
+          { "__resolveType": "Theme" },
+          { "__resolveType": "header-principal" },
+          {
+            "title": "Ops! Página Não Encontrada",
+            "button": { "href": "/", "text": "Voltar para Home" },
+            "__resolveType": "site/sections/Content/NotFound.tsx",
+            "image404Mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/f719ad1e-21b5-46fd-b812-7e0470e20d17",
+            "image404Desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c3f2a443-42bf-4056-81bc-7202a5bb16c5"
+          },
+          { "__resolveType": "footer-principal" }
+        ]
+      }
+    ],
+    "__resolveType": "website/flags/multivariate.ts"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

@@ -1,1 +1,74 @@
-{"layout":{"hide":{"logo":false,"extraLinks":false,"mobileApps":true},"variation":"Variation 1","backgroundColor":"Primary"},"social":{"items":[{"link":"https://www.linkedin.com/company/n1-ag/","label":"Linkedin"},{"link":"https://www.instagram.com/n1.ag_oficial","label":"Instagram"},{"link":"https://www.youtube.com/@n1.ag_oficial","label":"Youtube"},{"link":"https://www.facebook.com/somosn1.ag","label":"Facebook"},{"link":"#","label":"Twitter","disabledSocial":true},{"link":"contato@n1.ag","label":"Email"}]},"payments":{"items":[]},"sections":[{"items":[{"href":"/quem-somos","label":"Quem somos"},{"href":"/cases","label":"Cases"},{"href":"/clientes","label":"Clientes"},{"href":"/contato","label":"Contato"},{"href":"/trabalhe-conosco","label":"Trabalhe conosco"},{"href":"/","label":"Blog","disabledItem":true}],"label":"Institucional"},{"items":[{"href":"/nossos-servicos/evolucao","label":"Evolução da Loja"},{"href":"/nossos-servicos/implantacao","label":"Implantação"},{"href":"/nossos-servicos/web-insight","label":"Web Insight","disabledItem":false},{"href":"/nossos-servicos/midia-paga","label":"Mídia Paga"},{"href":"/nossos-servicos/suporte","label":"Suporte"},{"href":"#","label":"Treinamento e Consultoria","disabledItem":true}],"label":"Nossos Serviços"},{"items":[{"href":"/","label":"vtex-io"},{"href":"/","label":"vtex-sales"},{"href":"/","label":"vtex-implementation"},{"href":"/","label":"deco"}],"label":"Certificações"}],"copyright":"®2024 N1.AG - Todos os Direitos Reservados","extraLinks":[],"newsletter":{"form":{"buttonText":"Cadastrar","placeholder":"Seu melhor e-mail"},"title":"Assine a nossa newsletter","description":"Assine e fique atualizado com as novidades. Conteúdo premium ao alcance do seu e-mail ✨"},"__resolveType":"site/sections/Footer/Footer.tsx","regionOptions":{"currency":[],"language":[]}}
+{
+  "layout": {
+    "hide": { "logo": false, "extraLinks": false, "mobileApps": true },
+    "variation": "Variation 1",
+    "backgroundColor": "Primary"
+  },
+  "social": {
+    "items": [
+      {
+        "link": "https://www.linkedin.com/company/n1-ag/",
+        "label": "Linkedin"
+      },
+      {
+        "link": "https://www.instagram.com/n1.ag_oficial",
+        "label": "Instagram"
+      },
+      { "link": "https://www.youtube.com/@n1.ag_oficial", "label": "Youtube" },
+      { "link": "https://www.facebook.com/somosn1.ag", "label": "Facebook" },
+      { "link": "#", "label": "Twitter", "disabledSocial": true },
+      { "link": "contato@n1.ag", "label": "Email" }
+    ]
+  },
+  "payments": { "items": [] },
+  "sections": [
+    {
+      "items": [
+        { "href": "/quem-somos", "label": "Quem somos" },
+        { "href": "/cases", "label": "Cases" },
+        { "href": "/clientes", "label": "Clientes" },
+        { "href": "/contato", "label": "Contato" },
+        { "href": "/trabalhe-conosco", "label": "Trabalhe conosco" },
+        { "href": "/", "label": "Blog", "disabledItem": true }
+      ],
+      "label": "Institucional"
+    },
+    {
+      "items": [
+        { "href": "/nossos-servicos/evolucao", "label": "Evolução da Loja" },
+        { "href": "/nossos-servicos/implantacao", "label": "Implantação" },
+        {
+          "href": "/nossos-servicos/web-insight",
+          "label": "Web Insight",
+          "disabledItem": false
+        },
+        { "href": "/nossos-servicos/midia-paga", "label": "Mídia Paga" },
+        { "href": "/nossos-servicos/suporte", "label": "Suporte" },
+        {
+          "href": "#",
+          "label": "Treinamento e Consultoria",
+          "disabledItem": true
+        }
+      ],
+      "label": "Nossos Serviços"
+    },
+    {
+      "items": [
+        { "href": "/", "label": "vtex-io" },
+        { "href": "/", "label": "vtex-sales" },
+        { "href": "/", "label": "vtex-implementation" },
+        { "href": "/", "label": "deco" }
+      ],
+      "label": "Certificações"
+    }
+  ],
+  "copyright": "®2024 N1.AG - Todos os Direitos Reservados",
+  "extraLinks": [],
+  "newsletter": {
+    "form": { "buttonText": "Cadastrar", "placeholder": "Seu melhor e-mail" },
+    "title": "Assine a nossa newsletter",
+    "description": "Assine e fique atualizado com as novidades. Conteúdo premium ao alcance do seu e-mail ✨"
+  },
+  "__resolveType": "site/sections/Footer/Footer.tsx",
+  "regionOptions": { "currency": [], "language": [] }
+}

@@ -49,7 +49,8 @@ export default function GridCards(
     device?: string;
   },
 ) {
-  const { marginTop, marginBottom, marginBottomMobile, marginTopMobile } = layout || {};
+  const { marginTop, marginBottom, marginBottomMobile, marginTopMobile } =
+    layout || {};
   const isDesktop = device === "desktop";
 
   return (

@@ -1,1 +1,831 @@
-{"name":"Case - Hospitalar","path":"/cases/hospitalar","sections":{"variants":[{"rule":{"name":"N1_SelectedLanguage","value":"es-es","__resolveType":"website/matchers/cookie.ts"},"value":[{"__resolveType":"Theme"},{"__resolveType":"header-espanhol"},{"banners":[{"images":{"mobile":{"alt":"Banner mobile","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/896d2dfa-eb8a-45ab-aceb-b32c661ad53f","width":"390","height":"500"},"desktop":{"alt":"Banner Implantação","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9f1df089-3e74-4b8a-93d4-7f11fc6c2a5c","width":"1440","height":"482"}},"matcher":"/cases/hospitalar"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"items":[{"category":"cases","subcategory":"hospitalar"}],"__resolveType":"site/sections/Content/BreadcrumbCustom.tsx"},{"icon":{"alt":"Icon top","mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fab0f9ac-6070-49ea-8223-b0c6c5143d2d","width":243,"height":106},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d57ddc30-9227-4d8f-bff2-b8396e4d063b","width":298,"height":124}},"title":"asociación exitosa DECO.CX","paragraph":"{Utilizando nuestro Proyecto de Plantilla, mejoramos significativamente la interfaz de Hospitalar Distribuidora, lo que resultó en una mejora notable en PageSpeed ​​​​Insights. El cliente optó por agregar valor con los servicios Web Insight y Paid Media, asegurando un excelente desempeño en el mercado. Ahora, con tiempos de carga más rápidos, el comercio electrónico está listo para crear aún más oportunidades de ventas.}","__resolveType":"site/sections/Content/IconTitleAndTex.tsx","backgroundImage":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7f1db9c-ae6c-4aa8-b7e0-1f200601771c","width":1440,"height":430},"activeBackground":true},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0acb2bbe-7f56-4623-827e-fee6b17d2cdd","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/54874325-e492-4e96-84ee-ed693f9aea32","widthDesktop":632,"heightDesktop":372},"marginTop":"10px","placement":"direito","bannerImgw":{"alt":"banner","ImageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c6f656e6-37e3-410c-a50d-e68b6ac1775f","widthMobile":358,"ImageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/925d6603-e2fc-47e9-aeb9-a0aba2550bdd","heightMobile":229,"widthDesktop":632,"heightDesktop":372},"contentText":{"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Sobre el cliente</p>","description":"<p>Fundada en 1998, en Presidente Prudente - SP, Hospitalar Distribuidora actúa en la venta de medicamentos y productos hospitalarios. En 2008, atentos a la creciente demanda, fueron pioneros en su primer comercio electrónico.</p><p><br data-mce-bogus=\"1\"></p><p>Esta transición le permitió a la empresa ampliar su visión de negocios e iniciar el proceso de consolidación de su marca en el mercado digital.</p>"},"marginBottom":"10px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx","styleContainer":"center"},{"cards":[{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/592065d6-140d-40b4-bc50-652c6e4b4c4d","title":"<p>Diseño atractivo</p>","description":"<p>Mejorar la experiencia del consumidor con mejoras UX y obtener valor añadido, diferenciación competitiva y aumento de ventas.</p>"},{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8316137f-4bd8-430c-a72f-2764bf9d36f4","title":"<p>Colaboración estratégica</p>","description":"<p>Colaboración en áreas estratégicas para el comercio electrónico de Hospitalar. Prestación de soporte, medios y análisis evolutivos, con el objetivo de dar soporte integral a las necesidades específicas del cliente.</p>"},{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/46b6e90b-3564-4923-bd73-8c49940eaf0a","title":"<p>Cambio de plataforma CMS</p>","description":"<p>Migración a la plataforma deco, requiriendo aprendizaje y adaptación por parte del equipo.</p>"},{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9191ec0c-24d0-45fd-a1c1-7a362546bfc4","title":"<p>Medios pagados</p>","description":"<p>Las campañas en medios pagados no estaban generando resultados satisfactorios.</p>"}],"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Retos principales</p>","marginTop":"120px","marginBottom":"20px","__resolveType":"site/sections/Challenges/challenges.tsx"},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/dbc96c3d-ad30-42a8-8ff0-766f5af24725","widthMobile":457,"heightMobile":467,"imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0ea99203-b364-486e-ad6f-bf1f01eebce4","widthDesktop":624,"heightDesktop":638},"marginTop":"120px","placement":"direito","contentText":{"list":{"textList":[{"descriptionList":"<p>La Agencia N1 propuso migrar a la plataforma deco.cx, ofreciendo la capacidad de mantener la infraestructura existente e incorporar la velocidad y flexibilidad de deco.cx en el front-end.</p>"},{"descriptionList":"<p>Se aplicó la tecnología Deco a nuestro Proyecto de Plantilla, nuestro equipo mejoró significativamente el diseño de la interfaz de las páginas con las mejores prácticas de usabilidad.</p>"},{"descriptionList":"<p>A través de la tecnología, nuestros desarrolladores se aseguraron de que el sitio lograra un rendimiento excepcional, obteniendo una puntuación de más de 90 en Pagespeed Insights y reduciendo las tasas de abandono del carrito.</p>"},{},{"descriptionList":"<p>Pudimos identificar las dificultades que enfrentan los usuarios mientras navegan por el sitio web, lo que nos permitió mapear mejoras para mejorar los procesos de compra de los clientes.</p>"},{"descriptionList":"<p>Desempeñó un papel clave en los resultados positivos de la migración, registrando un aumento significativo en la conversión y el ROAS.</p>"},{"descriptionList":"<p>Las Redes Sociales acompañaron el rebranding de la marca, asegurando consistencia durante la transición identitaria y contribuyendo al fortalecimiento de la marca, agregando valor en las redes sociales.</p>"}],"iconCheck":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5549dfb5-a283-4568-9752-50ad7decdb01","widthContainerList":"500"},"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>soluciones:</p>","button":{"link":"/","textButton":"Visita el nuevo sitio web"}},"marginBottom":"120px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx","styleContainer":"normal","imageBackground":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/07600ab5-5b67-4fa1-a04a-f7bac5a4d68f"},{"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Aspectos destacados del proyecto</p>","arrows":true,"images":[{"alt":"hospitalar","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/979d8e6e-cd7a-47a4-b1fc-83f5487f7ba9","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6ad47004-ac80-4cfb-a481-30c80f595570","subTitle":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">{</span>Búsqueda Inteligente VTEX<span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">}</span></p>","description":"<p>La herramienta de búsqueda tiene la funcionalidad de autocompletar, que interpreta un término de búsqueda y presenta la lista de productos como resultado de la búsqueda, mejorando la experiencia de compra.</p>"},{"alt":"hospitalar-cases","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8017613e-d7c4-4c57-bceb-7036498bddc7","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7166a1b6-1b2f-4d76-b264-1c71c952c00d","subTitle":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">{</span>Compra rápida en las estanterías<span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">}</span></p>","description":"<p>La funcionalidad permite al usuario añadir un artículo al carrito, directamente desde la estantería, sin tener que hacer clic en el producto, ahorrando tiempo y agilizando el proceso de compra.</p>"}],"preload":true,"marginTop":"120px","marginBottom":"120px","__resolveType":"site/sections/SliderColumn/SliderColumn.tsx"},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0dd9660d-89ba-4c99-8c44-1278ae1ca8f8","widthMobile":350,"heightMobile":267,"imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7281ea49-ff55-4e58-86ae-0c49234e10c3","widthDesktop":623,"heightDesktop":477},"marginTop":"120px","contentText":{"list":{"tags":[{"iconsMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ae7dafc6-4c91-44a9-ac42-2cf8837399c0","widthMobile":135,"heightMobile":33,"iconsDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/78a552b1-4188-42bd-a978-bf165fabd6d6","widthDesktop":135,"heightDesktop":33},{"iconsMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6cf8494b-ee28-43a8-bbae-2fd4ff5cb36a","widthMobile":137,"heightMobile":33,"iconsDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3551e055-47e7-45e3-9ec6-e5e8fe9b4b9e","widthDesktop":137,"heightDesktop":33}],"cardInfo":[{"about":"Mayores ingresos","percentage":"+12,85%"},{"about":"Boleto promedio","percentage":"+24,95"}],"widthContainerList":"500"},"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Resultados archivados</p>","description":"<p>En 3 meses de Golive del Proyecto. HD experimentó una mejora significativa en el rendimiento del sitio web después de implementar el CMS deco.cx</p><p><br>Los resultados indican una velocidad notable a la hora de cargar el contenido principal de la página y mostrar el primer elemento, lo que contribuye a una experiencia más ágil y atractiva para los usuarios y reduce potencialmente la tasa de abandono de la tienda.</p>"},"marginBottom":"120px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx"},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a3351756-2f6a-493c-8d2a-3159caf56824","widthMobile":375,"heightMobile":344,"imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a3484cbe-b9c8-42d2-934a-0baca5e05bb8","widthDesktop":501,"heightDesktop":460},"marginTop":"120px","placement":"esquerdo","contentText":{"list":{"cardInfo":[{"about":"ROAS","percentage":"19"},{"about":"Tasa de conversión","percentage":"4,59%"}],"hiddenCardInfo":true,"widthContainerList":"500"},"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Resultados Medios pagos</p>","description":"<p>Con la campaña Paid Media, hicimos un trabajo muy expresivo y transformador. En comparación, a<span style=\"color: #f6ab00;\" data-mce-style=\"color: #f6ab00;\">nteriormente, el ROAS promedio estaba entre 4 y 5.</span></p><p><br><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">En 3 meses de trabajo, incluso con todos los desafíos de múltiples pruebas y estacionalidades anuales, logramos aumentar este promedio a 12.</span></p>"},"marginBottom":"120px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx"},{"name":"Gabriele","photo":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4ca884e8-3ae6-4f0b-8502-c2d07b180b60","comment":"Participar en el desarrollo de este nuevo proyecto de tienda con N1 fue gratificante debido a que cuentan con profesionales sumamente dedicados y atentos a lo que hacen y la forma en que atienden a sus clientes. Siempre dispuesto a ayudar en lo que sea necesario, con experiencia y amabilidad. ¡Lo recomiendo altamente!","marginTop":"120px","profession":"Analista de Marketing","marginBottom":"120px","__resolveType":"site/sections/FeedBack/FeedBack.tsx","backgroundImage":true},{"__resolveType":"Footer-Spanish"}]},{"rule":{"name":"N1_SelectedLanguage","value":"en-en","__resolveType":"website/matchers/cookie.ts"},"value":[{"__resolveType":"Theme"},{"__resolveType":"Header-english"},{"banners":[{"images":{"mobile":{"alt":"Banner mobile","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/896d2dfa-eb8a-45ab-aceb-b32c661ad53f","width":"390","height":"500"},"desktop":{"alt":"Banner Hospitalar","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9f1df089-3e74-4b8a-93d4-7f11fc6c2a5c","width":"1440","height":"482"}},"matcher":"/cases/hospitalar"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"items":[{"category":"cases","subcategory":"hospitalar"}],"__resolveType":"site/sections/Content/BreadcrumbCustom.tsx"},{"icon":{"alt":"Icon top","mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fab0f9ac-6070-49ea-8223-b0c6c5143d2d","width":243,"height":106},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d57ddc30-9227-4d8f-bff2-b8396e4d063b","width":298,"height":124}},"title":"successful partnership DECO.CX","paragraph":"{Using our Template Project, we significantly improved the Hospitalar Distribuidora interface, resulting in a notable improvement in PageSpeed Insights. The client chose to add value with Web Insight and Paid Media services, ensuring excellent market performance. Now, with faster loading times, e-commerce is ready to create even more sales opportunities.}","__resolveType":"site/sections/Content/IconTitleAndTex.tsx","backgroundImage":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7f1db9c-ae6c-4aa8-b7e0-1f200601771c","width":1440,"height":430},"activeBackground":true},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0acb2bbe-7f56-4623-827e-fee6b17d2cdd","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/54874325-e492-4e96-84ee-ed693f9aea32","widthDesktop":632,"heightDesktop":372},"marginTop":"10px","placement":"direito","bannerImgw":{"alt":"banner","ImageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c6f656e6-37e3-410c-a50d-e68b6ac1775f","widthMobile":358,"ImageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/925d6603-e2fc-47e9-aeb9-a0aba2550bdd","heightMobile":229,"widthDesktop":632,"heightDesktop":372},"contentText":{"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>About the customer</p>","description":"<p>Founded in 1998, in Presidente Prudente - SP, Hospitalar Distribuidora operates in the sale of medicines and hospital products. In 2008, keeping an eye on growing demand, they pioneered their first e-commerce.</p><p><br data-mce-bogus=\"1\"></p><p>This transition allowed the company to expand its business vision and begin the process of consolidating its brand in the digital market.</p>"},"marginBottom":"10px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx","styleContainer":"center"},{"cards":[{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/592065d6-140d-40b4-bc50-652c6e4b4c4d","title":"<p>Attractive design</p>","description":"<p>Improve the consumer experience with UX improvements and obtain added value, competitive differentiation and increased sales.</p>"},{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8316137f-4bd8-430c-a72f-2764bf9d36f4","title":"<p>Strategic collaboration</p>","description":"<p>Collaboration in strategic areas for Hospitalar’s e-commerce. Provision of evolving support, media and analysis, with the aim of providing comprehensive support to the client's specific needs.</p>"},{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/46b6e90b-3564-4923-bd73-8c49940eaf0a","title":"<p>CMS platform change</p>","description":"<p>Migration to the deco platform, requiring learning and adaptation from the team.</p>"},{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9191ec0c-24d0-45fd-a1c1-7a362546bfc4","title":"<p>Paid media</p>","description":"<p>Paid media campaigns were not generating satisfactory results.</p>"}],"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Main Challenges</p>","marginTop":"120px","marginBottom":"20px","__resolveType":"site/sections/Challenges/challenges.tsx"},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/dbc96c3d-ad30-42a8-8ff0-766f5af24725","widthMobile":457,"heightMobile":467,"imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0ea99203-b364-486e-ad6f-bf1f01eebce4","widthDesktop":624,"heightDesktop":638},"marginTop":"120px","placement":"direito","contentText":{"list":{"textList":[{"descriptionList":"<p>N1 Agency proposed migrating to the deco.cx platform, offering the ability to maintain the existing infrastructure and incorporate deco.cx's speed and flexibility into the front-end.</p>"},{"descriptionList":"<p>Deco technology was applied to our Template Project, our team significantly improved the interface design of the pages with best usability practices.</p>"},{"descriptionList":"<p>Through technology, our developers ensured the site achieved exceptional performance, scoring over 90 on Pagespeed Insights and reducing cart abandonment rates.</p>"},{},{"descriptionList":"<p>We were able to identify the difficulties faced by users while browsing the website, allowing us to map improvements to improve customers' purchasing journeys.</p>"},{"descriptionList":"<p>It played a key role in the positive results of the migration, recording a significant increase in conversion and ROAS.</p>"},{"descriptionList":"<p>Social Media accompanied the brand's rebranding, ensuring consistency during the identity transition and contributing to strengthening the brand, adding value on social networks.</p>"}],"iconCheck":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5549dfb5-a283-4568-9752-50ad7decdb01","widthContainerList":"500"},"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>solutions:</p>","button":{"link":"/","textButton":"Visit the new website"}},"marginBottom":"120px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx","styleContainer":"normal","imageBackground":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/07600ab5-5b67-4fa1-a04a-f7bac5a4d68f"},{"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Project highlights</p>","arrows":true,"images":[{"alt":"hospitalar","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/979d8e6e-cd7a-47a4-b1fc-83f5487f7ba9","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6ad47004-ac80-4cfb-a481-30c80f595570","subTitle":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">{</span>VTEX Intelligent Search<span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">}</span></p>","description":"<p>The search tool has the autocomplete functionality, which interprets a search term and presents the list of products as a search result, improving the shopping experience.</p>"},{"alt":"hospitalar-cases","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8017613e-d7c4-4c57-bceb-7036498bddc7","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7166a1b6-1b2f-4d76-b264-1c71c952c00d","subTitle":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">{</span>Quick purchase on the shelves<span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">}</span></p>","description":"<p>The functionality allows the user to add an item to the cart, directly from the shelf, without having to click on the product, saving time and making the purchasing process more agile.</p>"}],"preload":true,"marginTop":"120px","marginBottom":"120px","__resolveType":"site/sections/SliderColumn/SliderColumn.tsx"},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0dd9660d-89ba-4c99-8c44-1278ae1ca8f8","widthMobile":350,"heightMobile":267,"imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7281ea49-ff55-4e58-86ae-0c49234e10c3","widthDesktop":623,"heightDesktop":477},"marginTop":"120px","contentText":{"list":{"tags":[{"iconsMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ae7dafc6-4c91-44a9-ac42-2cf8837399c0","widthMobile":135,"heightMobile":33,"iconsDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/78a552b1-4188-42bd-a978-bf165fabd6d6","widthDesktop":135,"heightDesktop":33},{"iconsMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6cf8494b-ee28-43a8-bbae-2fd4ff5cb36a","widthMobile":137,"heightMobile":33,"iconsDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3551e055-47e7-45e3-9ec6-e5e8fe9b4b9e","widthDesktop":137,"heightDesktop":33}],"cardInfo":[{"about":"Increased revenue","percentage":"+12,85%"},{"about":"Average ticket","percentage":"+24,95"}],"widthContainerList":"500"},"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Results achieved</p>","description":"<p>In 3 months of Golive of the Project. HD saw a significant improvement in website performance after implementing the deco.cx CMS</p><p><br>The &nbsp;results indicate a remarkable speed in loading the page's main content and displaying the first element, contributing to a more agile and engaging experience for users, potentially reducing the store's abandonment rate.<br></p>"},"marginBottom":"120px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx"},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a3351756-2f6a-493c-8d2a-3159caf56824","widthMobile":375,"heightMobile":344,"imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a3484cbe-b9c8-42d2-934a-0baca5e05bb8","widthDesktop":501,"heightDesktop":460},"marginTop":"120px","placement":"esquerdo","contentText":{"list":{"cardInfo":[{"about":"ROAS","percentage":"19"},{"about":"Conversion rate","percentage":"4,59%"}],"hiddenCardInfo":true,"widthContainerList":"500"},"title":"<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Results Paid media</p>","description":"<p>With the Paid Media campaign, we did some very expressive and transformative work. In comparison, <span style=\"color: #f6ab00;\" data-mce-style=\"color: #f6ab00;\">previously the average ROAS was between 4 and 5.</span></p><p><br><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">In 3 months of work, even with all the challenges of multiple tests and annual seasonalities, we managed to increase this average to 12.</span></p>"},"marginBottom":"120px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx"},{"name":"Gabriele","photo":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4ca884e8-3ae6-4f0b-8502-c2d07b180b60","comment":"Participating in the development of this new store project with N1 was rewarding due to the fact that they have professionals who are extremely dedicated and attentive to what they do and the way they serve their customers. Always willing to help with whatever is needed, with expertise and friendliness. I highly recommend it!","marginTop":"120px","profession":"Marketing analyst","marginBottom":"120px","__resolveType":"site/sections/FeedBack/FeedBack.tsx","backgroundImage":true},{"__resolveType":"footer-English"}]},{"rule":{"__resolveType":"website/matchers/always.ts"},"value":[{"__resolveType":"Theme"},{"__resolveType":"header-principal"},{"banners":[{"images":{"mobile":{"alt":"Banner mobile","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/896d2dfa-eb8a-45ab-aceb-b32c661ad53f","width":"390","height":"500"},"desktop":{"alt":"Banner Implantação","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9f1df089-3e74-4b8a-93d4-7f11fc6c2a5c","width":"1440","height":"482"}},"matcher":"/cases/hospitalar"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"items":[{"category":"cases","subcategory":"hospitalar"}],"__resolveType":"site/sections/Content/BreadcrumbCustom.tsx"},{"icon":{"alt":"Icon top","mobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fab0f9ac-6070-49ea-8223-b0c6c5143d2d","width":243,"height":106},"desktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d57ddc30-9227-4d8f-bff2-b8396e4d063b","width":298,"height":124}},"title":"parceria de sucesso DECO.CX","paragraph":"{Utilizando nosso Projeto Template, aprimoramos significativamente a interface da Hospitalar Distribuidora, resultando em notável melhoria no PageSpeed Insights. O cliente optou por agregar valor com serviços de Web Insight e Mídia Paga, garantindo um ótimo desempenho no mercado. Agora, com tempos de carregamento mais rápidos, o e-commerce está pronto para criar ainda mais oportunidades de vendas.}","__resolveType":"site/sections/Content/IconTitleAndTex.tsx","backgroundImage":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7f1db9c-ae6c-4aa8-b7e0-1f200601771c","width":1440,"height":430},"activeBackground":true},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0acb2bbe-7f56-4623-827e-fee6b17d2cdd","imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/54874325-e492-4e96-84ee-ed693f9aea32","widthDesktop":632,"heightDesktop":372},"marginTop":"10px","placement":"direito","bannerImgw":{"alt":"banner","ImageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c6f656e6-37e3-410c-a50d-e68b6ac1775f","widthMobile":358,"ImageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/925d6603-e2fc-47e9-aeb9-a0aba2550bdd","heightMobile":229,"widthDesktop":632,"heightDesktop":372},"contentText":{"title":"<h2>Sobre o cliente</h2>","addBar":true,"description":"<p>Fundada em 1998, em Presidente Prudente - SP, a Hospitalar Distribuidora atua na venda de medicamentos e produtos hospitalares. Em 2008, de olho na demanda crescente, lançaram pioneiramente seu 1º e-commerce. </p><p><br data-mce-bogus=\"1\"></p><p>&nbsp;Essa transição permitiu que a empresa ampliasse sua visão de negócio e iniciasse o processo de consolidação da sua marca no mercado digital.</p>"},"marginBottom":"10px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx","styleContainer":"center"},{"cards":[{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/592065d6-140d-40b4-bc50-652c6e4b4c4d","title":"<h3>Design atrativo</h3>","description":"<p>Aprimorar a experiência do consumidor com melhorias de UX e obter valor agregado, diferenciação competitiva e aumento nas vendas.</p>"},{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8316137f-4bd8-430c-a72f-2764bf9d36f4","title":"<h3>Colaboração estratégica</h3>","description":"<p>Colaboração nas áreas estratégicas para o e-commerce da Hospitalar. Fornecimento de suporte em evolução, mídias e análise, com objetivo de ser um apoio integral às necessidades específicas do cliente.</p>"},{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/46b6e90b-3564-4923-bd73-8c49940eaf0a","title":"<h3>Mudança de plataforma CMS</h3>","description":"<p>Migração para a plataforma deco, exigindo aprendizado e adaptação da equipe.</p>"},{"Icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9191ec0c-24d0-45fd-a1c1-7a362546bfc4","title":"<h3>Mídia paga</h3>","description":"<p>As campanhas de mídia paga não estavam gerando resultados satisfatórios.</p>"}],"title":"<h2><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">﻿</span></span>Principais Desafios</h2>","addBar":true,"marginTop":"120px","marginBottom":"20px","__resolveType":"site/sections/Challenges/challenges.tsx"},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/dbc96c3d-ad30-42a8-8ff0-766f5af24725","widthMobile":457,"heightMobile":467,"imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0ea99203-b364-486e-ad6f-bf1f01eebce4","widthDesktop":624,"heightDesktop":638},"marginTop":"120px","placement":"direito","contentText":{"list":{"textList":[{"descriptionList":"<p>A Agência N1 propôs migrar para a plataforma deco.cx, oferecendo a capacidade de manter a infraestrutura existente e incorporar a velocidade e flexibilidade da deco.cx no front-end.</p>"},{"descriptionList":"<p>A tecnologia deco foi aplicada ao nosso Projeto Template, nossa equipe aprimorou significativamente o design de interface das páginas com as melhores práticas de usabilidade.</p>"},{"descriptionList":"<p>Através da tecnologia, nossos desenvolvedores garantiram que o site alcançasse um desempenho excepcional, com pontuação superior a 90 no Pagespeed Insights e reduzindo as taxas de abandono de carrinho.</p>"},{},{"descriptionList":"<p>Conseguimos identificar as dificuldades enfrentadas pelos usuários durante a navegação no site, permitindo o mapeamento de melhorias para aprimorar a jornada de compra dos clientes.</p>"},{"descriptionList":"<p>Desempenhou um papel fundamental nos resultados positivos da migração, registrando um aumento significativo na conversão e no ROAS.</p>"},{"descriptionList":"<p>As Mídias Sociais acompanharam o rebranding da marca, assegurando consistência durante a transição de identidade e contribuindo para fortalecer a marca, agregando valor nas redes sociais.</p>"}],"iconCheck":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5549dfb5-a283-4568-9752-50ad7decdb01","widthContainerList":"500"},"title":"<h2><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">﻿</span></span>soluções:</h2>","addBar":true,"button":{"link":"https://www.hospitalardistribuidora.com.br/","textButton":"Visite o novo site"}},"marginBottom":"120px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx","styleContainer":"normal","imageBackground":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/07600ab5-5b67-4fa1-a04a-f7bac5a4d68f"},{"title":"<h2><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">﻿</span></span>Destaque do projeto</h2>","addBar":true,"arrows":true,"images":[{"alt":"hospitalar","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/979d8e6e-cd7a-47a4-b1fc-83f5487f7ba9","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6ad47004-ac80-4cfb-a481-30c80f595570","subTitle":"<p><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">﻿</span></span>VTEX Intelligent Search</p>","addBarSlide":true,"description":"<p>A ferramenta de busca conta com a funcionalidade autocomplete, que interpreta um termo pesquisado e apresenta a lista de produtos como um resultado de pesquisa, &nbsp;aprimorando a experiência de compra.</p>"},{"alt":"hospitalar-cases","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8017613e-d7c4-4c57-bceb-7036498bddc7","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7166a1b6-1b2f-4d76-b264-1c71c952c00d","subTitle":"<p><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">﻿</span></span>Compra rápida nas Prateleiras</p>","addBarSlide":true,"description":"<p>A funcionalidade permite que o usuário adicione um item no carrinho, direto da prateleira, sem precisar clicar no produto, economizando tempo e tornando o processo de compra mais ágil.</p>"}],"preload":true,"marginTop":"120px","marginBottom":"120px","__resolveType":"site/sections/SliderColumn/SliderColumn.tsx"},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0dd9660d-89ba-4c99-8c44-1278ae1ca8f8","widthMobile":350,"heightMobile":267,"imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7281ea49-ff55-4e58-86ae-0c49234e10c3","widthDesktop":623,"heightDesktop":477},"marginTop":"120px","contentText":{"list":{"tags":[{"iconsMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ae7dafc6-4c91-44a9-ac42-2cf8837399c0","widthMobile":135,"heightMobile":33,"iconsDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/78a552b1-4188-42bd-a978-bf165fabd6d6","widthDesktop":135,"heightDesktop":33},{"iconsMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6cf8494b-ee28-43a8-bbae-2fd4ff5cb36a","widthMobile":137,"heightMobile":33,"iconsDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3551e055-47e7-45e3-9ec6-e5e8fe9b4b9e","widthDesktop":137,"heightDesktop":33}],"cardInfo":[{"about":"Aumento da receita","percentage":"+12,85%"},{"about":"Ticket médio","percentage":"+24,95"}],"widthContainerList":"500"},"title":"<p><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">﻿</span></span>Resultados alcançados</p>","addBar":true,"description":"<p>Em 3 meses de Golive do Projeto. A HD registrou uma melhoria significativa no desempenho do site após a implementação do CMS deco.cx</p><p><br>Os &nbsp;resultados indicam uma notável rapidez no carregamento do conteúdo principal da página e na exibição do primeiro elemento, contribuindo para uma experiência mais ágil e envolvente para os usuários, reduzindo potencialmente a taxa de abandono da loja.</p>"},"marginBottom":"120px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx","styleContainer":"center"},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a3351756-2f6a-493c-8d2a-3159caf56824","widthMobile":375,"heightMobile":344,"imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a3484cbe-b9c8-42d2-934a-0baca5e05bb8","widthDesktop":501,"heightDesktop":460},"marginTop":"120px","placement":"esquerdo","contentText":{"list":{"cardInfo":[{"about":"ROAS","percentage":"19"},{"about":"Taxa de Conversão","percentage":"4,59%"}],"hiddenCardInfo":true,"widthContainerList":"500"},"title":"<p><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">﻿</span></span>Resultados Mídias pagas</p>","addBar":true,"description":"<p>Com a campanha de Mídia Paga, fizemos um trabalho bastante expressivo e transformador. Em comparativo, <span style=\"color: #f6ab00;\" data-mce-style=\"color: #f6ab00;\">anteriormente o ROAS médio estava entre 4 e 5.</span></p><p><br><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">Em 3 meses de trabalho, mesmo com todos os desafios dos múltiplos testes e sazonalidades anuais, conseguimos subir esta média para 12.</span></p>"},"marginBottom":"120px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx"},{"name":"Gabriele","photo":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4ca884e8-3ae6-4f0b-8502-c2d07b180b60","comment":"Participar do desenvolvimento desse projeto de loja nova com a N1 foi gratificante pelo fato de terem profissionais extremamente dedicados e atenciosos com o que fazem e na forma como atendem os seus clientes. Sempre dispostos a ajudar no que for preciso, com expertise e simpatia. Recomendo muito!","marginTop":"120px","profession":"Analista de Marketing","marginBottom":"120px","__resolveType":"site/sections/FeedBack/FeedBack.tsx","backgroundImage":true},{"__resolveType":"footer-principal"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0ea99203-b364-486e-ad6f-bf1f01eebce4","title":"Case Hospitalar N1.AG | Desenvolvimento Projeto Deco.cx","canonical":"/cases/hospitalar","description":"Utilizando nosso Projeto Template Deco.cx, aprimoramos significativamente a interface da Hospitalar Distribuidora, resultando em notável melhoria no PageSpeed Insights.","__resolveType":"website/sections/Seo/SeoV2.tsx","titleTemplate":"Case Hospitalar N1.AG | Desenvolvimento Projeto Deco.cx","descriptionTemplate":"Utilizando nosso Projeto Template Deco.cx, aprimoramos significativamente a interface da Hospitalar Distribuidora, resultando em notável melhoria no PageSpeed Insights."}]}],"__resolveType":"website/flags/multivariate.ts"},"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Case - Hospitalar",
+  "path": "/cases/hospitalar",
+  "sections": {
+    "variants": [
+      {
+        "rule": {
+          "name": "N1_SelectedLanguage",
+          "value": "es-es",
+          "__resolveType": "website/matchers/cookie.ts"
+        },
+        "value": [
+          { "__resolveType": "Theme" },
+          { "__resolveType": "header-espanhol" },
+          {
+            "banners": [
+              {
+                "images": {
+                  "mobile": {
+                    "alt": "Banner mobile",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/896d2dfa-eb8a-45ab-aceb-b32c661ad53f",
+                    "width": "390",
+                    "height": "500"
+                  },
+                  "desktop": {
+                    "alt": "Banner Implantação",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9f1df089-3e74-4b8a-93d4-7f11fc6c2a5c",
+                    "width": "1440",
+                    "height": "482"
+                  }
+                },
+                "matcher": "/cases/hospitalar"
+              }
+            ],
+            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+          },
+          {
+            "items": [{ "category": "cases", "subcategory": "hospitalar" }],
+            "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
+          },
+          {
+            "icon": {
+              "alt": "Icon top",
+              "mobile": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fab0f9ac-6070-49ea-8223-b0c6c5143d2d",
+                "width": 243,
+                "height": 106
+              },
+              "desktop": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d57ddc30-9227-4d8f-bff2-b8396e4d063b",
+                "width": 298,
+                "height": 124
+              }
+            },
+            "title": "asociación exitosa DECO.CX",
+            "paragraph": "{Utilizando nuestro Proyecto de Plantilla, mejoramos significativamente la interfaz de Hospitalar Distribuidora, lo que resultó en una mejora notable en PageSpeed ​​​​Insights. El cliente optó por agregar valor con los servicios Web Insight y Paid Media, asegurando un excelente desempeño en el mercado. Ahora, con tiempos de carga más rápidos, el comercio electrónico está listo para crear aún más oportunidades de ventas.}",
+            "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
+            "backgroundImage": {
+              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7f1db9c-ae6c-4aa8-b7e0-1f200601771c",
+              "width": 1440,
+              "height": 430
+            },
+            "activeBackground": true
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0acb2bbe-7f56-4623-827e-fee6b17d2cdd",
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/54874325-e492-4e96-84ee-ed693f9aea32",
+              "widthDesktop": 632,
+              "heightDesktop": 372
+            },
+            "marginTop": "10px",
+            "placement": "direito",
+            "bannerImgw": {
+              "alt": "banner",
+              "ImageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c6f656e6-37e3-410c-a50d-e68b6ac1775f",
+              "widthMobile": 358,
+              "ImageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/925d6603-e2fc-47e9-aeb9-a0aba2550bdd",
+              "heightMobile": 229,
+              "widthDesktop": 632,
+              "heightDesktop": 372
+            },
+            "contentText": {
+              "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Sobre el cliente</p>",
+              "description": "<p>Fundada en 1998, en Presidente Prudente - SP, Hospitalar Distribuidora actúa en la venta de medicamentos y productos hospitalarios. En 2008, atentos a la creciente demanda, fueron pioneros en su primer comercio electrónico.</p><p><br data-mce-bogus=\"1\"></p><p>Esta transición le permitió a la empresa ampliar su visión de negocios e iniciar el proceso de consolidación de su marca en el mercado digital.</p>"
+            },
+            "marginBottom": "10px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
+            "styleContainer": "center"
+          },
+          {
+            "cards": [
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/592065d6-140d-40b4-bc50-652c6e4b4c4d",
+                "title": "<p>Diseño atractivo</p>",
+                "description": "<p>Mejorar la experiencia del consumidor con mejoras UX y obtener valor añadido, diferenciación competitiva y aumento de ventas.</p>"
+              },
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8316137f-4bd8-430c-a72f-2764bf9d36f4",
+                "title": "<p>Colaboración estratégica</p>",
+                "description": "<p>Colaboración en áreas estratégicas para el comercio electrónico de Hospitalar. Prestación de soporte, medios y análisis evolutivos, con el objetivo de dar soporte integral a las necesidades específicas del cliente.</p>"
+              },
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/46b6e90b-3564-4923-bd73-8c49940eaf0a",
+                "title": "<p>Cambio de plataforma CMS</p>",
+                "description": "<p>Migración a la plataforma deco, requiriendo aprendizaje y adaptación por parte del equipo.</p>"
+              },
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9191ec0c-24d0-45fd-a1c1-7a362546bfc4",
+                "title": "<p>Medios pagados</p>",
+                "description": "<p>Las campañas en medios pagados no estaban generando resultados satisfactorios.</p>"
+              }
+            ],
+            "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Retos principales</p>",
+            "marginTop": "120px",
+            "marginBottom": "20px",
+            "__resolveType": "site/sections/Challenges/challenges.tsx"
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/dbc96c3d-ad30-42a8-8ff0-766f5af24725",
+              "widthMobile": 457,
+              "heightMobile": 467,
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0ea99203-b364-486e-ad6f-bf1f01eebce4",
+              "widthDesktop": 624,
+              "heightDesktop": 638
+            },
+            "marginTop": "120px",
+            "placement": "direito",
+            "contentText": {
+              "list": {
+                "textList": [
+                  {
+                    "descriptionList": "<p>La Agencia N1 propuso migrar a la plataforma deco.cx, ofreciendo la capacidad de mantener la infraestructura existente e incorporar la velocidad y flexibilidad de deco.cx en el front-end.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>Se aplicó la tecnología Deco a nuestro Proyecto de Plantilla, nuestro equipo mejoró significativamente el diseño de la interfaz de las páginas con las mejores prácticas de usabilidad.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>A través de la tecnología, nuestros desarrolladores se aseguraron de que el sitio lograra un rendimiento excepcional, obteniendo una puntuación de más de 90 en Pagespeed Insights y reduciendo las tasas de abandono del carrito.</p>"
+                  },
+                  {},
+                  {
+                    "descriptionList": "<p>Pudimos identificar las dificultades que enfrentan los usuarios mientras navegan por el sitio web, lo que nos permitió mapear mejoras para mejorar los procesos de compra de los clientes.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>Desempeñó un papel clave en los resultados positivos de la migración, registrando un aumento significativo en la conversión y el ROAS.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>Las Redes Sociales acompañaron el rebranding de la marca, asegurando consistencia durante la transición identitaria y contribuyendo al fortalecimiento de la marca, agregando valor en las redes sociales.</p>"
+                  }
+                ],
+                "iconCheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5549dfb5-a283-4568-9752-50ad7decdb01",
+                "widthContainerList": "500"
+              },
+              "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>soluciones:</p>",
+              "button": {
+                "link": "/",
+                "textButton": "Visita el nuevo sitio web"
+              }
+            },
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
+            "styleContainer": "normal",
+            "imageBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/07600ab5-5b67-4fa1-a04a-f7bac5a4d68f"
+          },
+          {
+            "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Aspectos destacados del proyecto</p>",
+            "arrows": true,
+            "images": [
+              {
+                "alt": "hospitalar",
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/979d8e6e-cd7a-47a4-b1fc-83f5487f7ba9",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6ad47004-ac80-4cfb-a481-30c80f595570",
+                "subTitle": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">{</span>Búsqueda Inteligente VTEX<span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">}</span></p>",
+                "description": "<p>La herramienta de búsqueda tiene la funcionalidad de autocompletar, que interpreta un término de búsqueda y presenta la lista de productos como resultado de la búsqueda, mejorando la experiencia de compra.</p>"
+              },
+              {
+                "alt": "hospitalar-cases",
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8017613e-d7c4-4c57-bceb-7036498bddc7",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7166a1b6-1b2f-4d76-b264-1c71c952c00d",
+                "subTitle": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">{</span>Compra rápida en las estanterías<span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">}</span></p>",
+                "description": "<p>La funcionalidad permite al usuario añadir un artículo al carrito, directamente desde la estantería, sin tener que hacer clic en el producto, ahorrando tiempo y agilizando el proceso de compra.</p>"
+              }
+            ],
+            "preload": true,
+            "marginTop": "120px",
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/SliderColumn/SliderColumn.tsx"
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0dd9660d-89ba-4c99-8c44-1278ae1ca8f8",
+              "widthMobile": 350,
+              "heightMobile": 267,
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7281ea49-ff55-4e58-86ae-0c49234e10c3",
+              "widthDesktop": 623,
+              "heightDesktop": 477
+            },
+            "marginTop": "120px",
+            "contentText": {
+              "list": {
+                "tags": [
+                  {
+                    "iconsMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ae7dafc6-4c91-44a9-ac42-2cf8837399c0",
+                    "widthMobile": 135,
+                    "heightMobile": 33,
+                    "iconsDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/78a552b1-4188-42bd-a978-bf165fabd6d6",
+                    "widthDesktop": 135,
+                    "heightDesktop": 33
+                  },
+                  {
+                    "iconsMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6cf8494b-ee28-43a8-bbae-2fd4ff5cb36a",
+                    "widthMobile": 137,
+                    "heightMobile": 33,
+                    "iconsDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3551e055-47e7-45e3-9ec6-e5e8fe9b4b9e",
+                    "widthDesktop": 137,
+                    "heightDesktop": 33
+                  }
+                ],
+                "cardInfo": [
+                  { "about": "Mayores ingresos", "percentage": "+12,85%" },
+                  { "about": "Boleto promedio", "percentage": "+24,95" }
+                ],
+                "widthContainerList": "500"
+              },
+              "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Resultados archivados</p>",
+              "description": "<p>En 3 meses de Golive del Proyecto. HD experimentó una mejora significativa en el rendimiento del sitio web después de implementar el CMS deco.cx</p><p><br>Los resultados indican una velocidad notable a la hora de cargar el contenido principal de la página y mostrar el primer elemento, lo que contribuye a una experiencia más ágil y atractiva para los usuarios y reduce potencialmente la tasa de abandono de la tienda.</p>"
+            },
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx"
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a3351756-2f6a-493c-8d2a-3159caf56824",
+              "widthMobile": 375,
+              "heightMobile": 344,
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a3484cbe-b9c8-42d2-934a-0baca5e05bb8",
+              "widthDesktop": 501,
+              "heightDesktop": 460
+            },
+            "marginTop": "120px",
+            "placement": "esquerdo",
+            "contentText": {
+              "list": {
+                "cardInfo": [
+                  { "about": "ROAS", "percentage": "19" },
+                  { "about": "Tasa de conversión", "percentage": "4,59%" }
+                ],
+                "hiddenCardInfo": true,
+                "widthContainerList": "500"
+              },
+              "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Resultados Medios pagos</p>",
+              "description": "<p>Con la campaña Paid Media, hicimos un trabajo muy expresivo y transformador. En comparación, a<span style=\"color: #f6ab00;\" data-mce-style=\"color: #f6ab00;\">nteriormente, el ROAS promedio estaba entre 4 y 5.</span></p><p><br><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">En 3 meses de trabajo, incluso con todos los desafíos de múltiples pruebas y estacionalidades anuales, logramos aumentar este promedio a 12.</span></p>"
+            },
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx"
+          },
+          {
+            "name": "Gabriele",
+            "photo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4ca884e8-3ae6-4f0b-8502-c2d07b180b60",
+            "comment": "Participar en el desarrollo de este nuevo proyecto de tienda con N1 fue gratificante debido a que cuentan con profesionales sumamente dedicados y atentos a lo que hacen y la forma en que atienden a sus clientes. Siempre dispuesto a ayudar en lo que sea necesario, con experiencia y amabilidad. ¡Lo recomiendo altamente!",
+            "marginTop": "120px",
+            "profession": "Analista de Marketing",
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/FeedBack/FeedBack.tsx",
+            "backgroundImage": true
+          },
+          { "__resolveType": "Footer-Spanish" }
+        ]
+      },
+      {
+        "rule": {
+          "name": "N1_SelectedLanguage",
+          "value": "en-en",
+          "__resolveType": "website/matchers/cookie.ts"
+        },
+        "value": [
+          { "__resolveType": "Theme" },
+          { "__resolveType": "Header-english" },
+          {
+            "banners": [
+              {
+                "images": {
+                  "mobile": {
+                    "alt": "Banner mobile",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/896d2dfa-eb8a-45ab-aceb-b32c661ad53f",
+                    "width": "390",
+                    "height": "500"
+                  },
+                  "desktop": {
+                    "alt": "Banner Hospitalar",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9f1df089-3e74-4b8a-93d4-7f11fc6c2a5c",
+                    "width": "1440",
+                    "height": "482"
+                  }
+                },
+                "matcher": "/cases/hospitalar"
+              }
+            ],
+            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+          },
+          {
+            "items": [{ "category": "cases", "subcategory": "hospitalar" }],
+            "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
+          },
+          {
+            "icon": {
+              "alt": "Icon top",
+              "mobile": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fab0f9ac-6070-49ea-8223-b0c6c5143d2d",
+                "width": 243,
+                "height": 106
+              },
+              "desktop": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d57ddc30-9227-4d8f-bff2-b8396e4d063b",
+                "width": 298,
+                "height": 124
+              }
+            },
+            "title": "successful partnership DECO.CX",
+            "paragraph": "{Using our Template Project, we significantly improved the Hospitalar Distribuidora interface, resulting in a notable improvement in PageSpeed Insights. The client chose to add value with Web Insight and Paid Media services, ensuring excellent market performance. Now, with faster loading times, e-commerce is ready to create even more sales opportunities.}",
+            "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
+            "backgroundImage": {
+              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7f1db9c-ae6c-4aa8-b7e0-1f200601771c",
+              "width": 1440,
+              "height": 430
+            },
+            "activeBackground": true
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0acb2bbe-7f56-4623-827e-fee6b17d2cdd",
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/54874325-e492-4e96-84ee-ed693f9aea32",
+              "widthDesktop": 632,
+              "heightDesktop": 372
+            },
+            "marginTop": "10px",
+            "placement": "direito",
+            "bannerImgw": {
+              "alt": "banner",
+              "ImageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c6f656e6-37e3-410c-a50d-e68b6ac1775f",
+              "widthMobile": 358,
+              "ImageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/925d6603-e2fc-47e9-aeb9-a0aba2550bdd",
+              "heightMobile": 229,
+              "widthDesktop": 632,
+              "heightDesktop": 372
+            },
+            "contentText": {
+              "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>About the customer</p>",
+              "description": "<p>Founded in 1998, in Presidente Prudente - SP, Hospitalar Distribuidora operates in the sale of medicines and hospital products. In 2008, keeping an eye on growing demand, they pioneered their first e-commerce.</p><p><br data-mce-bogus=\"1\"></p><p>This transition allowed the company to expand its business vision and begin the process of consolidating its brand in the digital market.</p>"
+            },
+            "marginBottom": "10px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
+            "styleContainer": "center"
+          },
+          {
+            "cards": [
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/592065d6-140d-40b4-bc50-652c6e4b4c4d",
+                "title": "<p>Attractive design</p>",
+                "description": "<p>Improve the consumer experience with UX improvements and obtain added value, competitive differentiation and increased sales.</p>"
+              },
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8316137f-4bd8-430c-a72f-2764bf9d36f4",
+                "title": "<p>Strategic collaboration</p>",
+                "description": "<p>Collaboration in strategic areas for Hospitalar’s e-commerce. Provision of evolving support, media and analysis, with the aim of providing comprehensive support to the client's specific needs.</p>"
+              },
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/46b6e90b-3564-4923-bd73-8c49940eaf0a",
+                "title": "<p>CMS platform change</p>",
+                "description": "<p>Migration to the deco platform, requiring learning and adaptation from the team.</p>"
+              },
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9191ec0c-24d0-45fd-a1c1-7a362546bfc4",
+                "title": "<p>Paid media</p>",
+                "description": "<p>Paid media campaigns were not generating satisfactory results.</p>"
+              }
+            ],
+            "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Main Challenges</p>",
+            "marginTop": "120px",
+            "marginBottom": "20px",
+            "__resolveType": "site/sections/Challenges/challenges.tsx"
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/dbc96c3d-ad30-42a8-8ff0-766f5af24725",
+              "widthMobile": 457,
+              "heightMobile": 467,
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0ea99203-b364-486e-ad6f-bf1f01eebce4",
+              "widthDesktop": 624,
+              "heightDesktop": 638
+            },
+            "marginTop": "120px",
+            "placement": "direito",
+            "contentText": {
+              "list": {
+                "textList": [
+                  {
+                    "descriptionList": "<p>N1 Agency proposed migrating to the deco.cx platform, offering the ability to maintain the existing infrastructure and incorporate deco.cx's speed and flexibility into the front-end.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>Deco technology was applied to our Template Project, our team significantly improved the interface design of the pages with best usability practices.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>Through technology, our developers ensured the site achieved exceptional performance, scoring over 90 on Pagespeed Insights and reducing cart abandonment rates.</p>"
+                  },
+                  {},
+                  {
+                    "descriptionList": "<p>We were able to identify the difficulties faced by users while browsing the website, allowing us to map improvements to improve customers' purchasing journeys.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>It played a key role in the positive results of the migration, recording a significant increase in conversion and ROAS.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>Social Media accompanied the brand's rebranding, ensuring consistency during the identity transition and contributing to strengthening the brand, adding value on social networks.</p>"
+                  }
+                ],
+                "iconCheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5549dfb5-a283-4568-9752-50ad7decdb01",
+                "widthContainerList": "500"
+              },
+              "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>solutions:</p>",
+              "button": { "link": "/", "textButton": "Visit the new website" }
+            },
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
+            "styleContainer": "normal",
+            "imageBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/07600ab5-5b67-4fa1-a04a-f7bac5a4d68f"
+          },
+          {
+            "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Project highlights</p>",
+            "arrows": true,
+            "images": [
+              {
+                "alt": "hospitalar",
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/979d8e6e-cd7a-47a4-b1fc-83f5487f7ba9",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6ad47004-ac80-4cfb-a481-30c80f595570",
+                "subTitle": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">{</span>VTEX Intelligent Search<span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">}</span></p>",
+                "description": "<p>The search tool has the autocomplete functionality, which interprets a search term and presents the list of products as a search result, improving the shopping experience.</p>"
+              },
+              {
+                "alt": "hospitalar-cases",
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8017613e-d7c4-4c57-bceb-7036498bddc7",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7166a1b6-1b2f-4d76-b264-1c71c952c00d",
+                "subTitle": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">{</span>Quick purchase on the shelves<span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">}</span></p>",
+                "description": "<p>The functionality allows the user to add an item to the cart, directly from the shelf, without having to click on the product, saving time and making the purchasing process more agile.</p>"
+              }
+            ],
+            "preload": true,
+            "marginTop": "120px",
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/SliderColumn/SliderColumn.tsx"
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0dd9660d-89ba-4c99-8c44-1278ae1ca8f8",
+              "widthMobile": 350,
+              "heightMobile": 267,
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7281ea49-ff55-4e58-86ae-0c49234e10c3",
+              "widthDesktop": 623,
+              "heightDesktop": 477
+            },
+            "marginTop": "120px",
+            "contentText": {
+              "list": {
+                "tags": [
+                  {
+                    "iconsMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ae7dafc6-4c91-44a9-ac42-2cf8837399c0",
+                    "widthMobile": 135,
+                    "heightMobile": 33,
+                    "iconsDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/78a552b1-4188-42bd-a978-bf165fabd6d6",
+                    "widthDesktop": 135,
+                    "heightDesktop": 33
+                  },
+                  {
+                    "iconsMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6cf8494b-ee28-43a8-bbae-2fd4ff5cb36a",
+                    "widthMobile": 137,
+                    "heightMobile": 33,
+                    "iconsDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3551e055-47e7-45e3-9ec6-e5e8fe9b4b9e",
+                    "widthDesktop": 137,
+                    "heightDesktop": 33
+                  }
+                ],
+                "cardInfo": [
+                  { "about": "Increased revenue", "percentage": "+12,85%" },
+                  { "about": "Average ticket", "percentage": "+24,95" }
+                ],
+                "widthContainerList": "500"
+              },
+              "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Results achieved</p>",
+              "description": "<p>In 3 months of Golive of the Project. HD saw a significant improvement in website performance after implementing the deco.cx CMS</p><p><br>The &nbsp;results indicate a remarkable speed in loading the page's main content and displaying the first element, contributing to a more agile and engaging experience for users, potentially reducing the store's abandonment rate.<br></p>"
+            },
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx"
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a3351756-2f6a-493c-8d2a-3159caf56824",
+              "widthMobile": 375,
+              "heightMobile": 344,
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a3484cbe-b9c8-42d2-934a-0baca5e05bb8",
+              "widthDesktop": 501,
+              "heightDesktop": 460
+            },
+            "marginTop": "120px",
+            "placement": "esquerdo",
+            "contentText": {
+              "list": {
+                "cardInfo": [
+                  { "about": "ROAS", "percentage": "19" },
+                  { "about": "Conversion rate", "percentage": "4,59%" }
+                ],
+                "hiddenCardInfo": true,
+                "widthContainerList": "500"
+              },
+              "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Results Paid media</p>",
+              "description": "<p>With the Paid Media campaign, we did some very expressive and transformative work. In comparison, <span style=\"color: #f6ab00;\" data-mce-style=\"color: #f6ab00;\">previously the average ROAS was between 4 and 5.</span></p><p><br><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">In 3 months of work, even with all the challenges of multiple tests and annual seasonalities, we managed to increase this average to 12.</span></p>"
+            },
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx"
+          },
+          {
+            "name": "Gabriele",
+            "photo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4ca884e8-3ae6-4f0b-8502-c2d07b180b60",
+            "comment": "Participating in the development of this new store project with N1 was rewarding due to the fact that they have professionals who are extremely dedicated and attentive to what they do and the way they serve their customers. Always willing to help with whatever is needed, with expertise and friendliness. I highly recommend it!",
+            "marginTop": "120px",
+            "profession": "Marketing analyst",
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/FeedBack/FeedBack.tsx",
+            "backgroundImage": true
+          },
+          { "__resolveType": "footer-English" }
+        ]
+      },
+      {
+        "rule": { "__resolveType": "website/matchers/always.ts" },
+        "value": [
+          { "__resolveType": "Theme" },
+          { "__resolveType": "header-principal" },
+          {
+            "banners": [
+              {
+                "images": {
+                  "mobile": {
+                    "alt": "Banner mobile",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/896d2dfa-eb8a-45ab-aceb-b32c661ad53f",
+                    "width": "390",
+                    "height": "500"
+                  },
+                  "desktop": {
+                    "alt": "Banner Implantação",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9f1df089-3e74-4b8a-93d4-7f11fc6c2a5c",
+                    "width": "1440",
+                    "height": "482"
+                  }
+                },
+                "matcher": "/cases/hospitalar"
+              }
+            ],
+            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+          },
+          {
+            "items": [{ "category": "cases", "subcategory": "hospitalar" }],
+            "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
+          },
+          {
+            "icon": {
+              "alt": "Icon top",
+              "mobile": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fab0f9ac-6070-49ea-8223-b0c6c5143d2d",
+                "width": 243,
+                "height": 106
+              },
+              "desktop": {
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d57ddc30-9227-4d8f-bff2-b8396e4d063b",
+                "width": 298,
+                "height": 124
+              }
+            },
+            "title": "parceria de sucesso DECO.CX",
+            "paragraph": "{Utilizando nosso Projeto Template, aprimoramos significativamente a interface da Hospitalar Distribuidora, resultando em notável melhoria no PageSpeed Insights. O cliente optou por agregar valor com serviços de Web Insight e Mídia Paga, garantindo um ótimo desempenho no mercado. Agora, com tempos de carregamento mais rápidos, o e-commerce está pronto para criar ainda mais oportunidades de vendas.}",
+            "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
+            "backgroundImage": {
+              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7f1db9c-ae6c-4aa8-b7e0-1f200601771c",
+              "width": 1440,
+              "height": 430
+            },
+            "activeBackground": true
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0acb2bbe-7f56-4623-827e-fee6b17d2cdd",
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/54874325-e492-4e96-84ee-ed693f9aea32",
+              "widthDesktop": 632,
+              "heightDesktop": 372
+            },
+            "marginTop": "10px",
+            "placement": "direito",
+            "bannerImgw": {
+              "alt": "banner",
+              "ImageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c6f656e6-37e3-410c-a50d-e68b6ac1775f",
+              "widthMobile": 358,
+              "ImageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/925d6603-e2fc-47e9-aeb9-a0aba2550bdd",
+              "heightMobile": 229,
+              "widthDesktop": 632,
+              "heightDesktop": 372
+            },
+            "contentText": {
+              "title": "<h2>Sobre o cliente</h2>",
+              "addBar": true,
+              "description": "<p>Fundada em 1998, em Presidente Prudente - SP, a Hospitalar Distribuidora atua na venda de medicamentos e produtos hospitalares. Em 2008, de olho na demanda crescente, lançaram pioneiramente seu 1º e-commerce. </p><p><br data-mce-bogus=\"1\"></p><p>&nbsp;Essa transição permitiu que a empresa ampliasse sua visão de negócio e iniciasse o processo de consolidação da sua marca no mercado digital.</p>"
+            },
+            "marginBottom": "10px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
+            "styleContainer": "center"
+          },
+          {
+            "cards": [
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/592065d6-140d-40b4-bc50-652c6e4b4c4d",
+                "title": "<h3>Design atrativo</h3>",
+                "description": "<p>Aprimorar a experiência do consumidor com melhorias de UX e obter valor agregado, diferenciação competitiva e aumento nas vendas.</p>"
+              },
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8316137f-4bd8-430c-a72f-2764bf9d36f4",
+                "title": "<h3>Colaboração estratégica</h3>",
+                "description": "<p>Colaboração nas áreas estratégicas para o e-commerce da Hospitalar. Fornecimento de suporte em evolução, mídias e análise, com objetivo de ser um apoio integral às necessidades específicas do cliente.</p>"
+              },
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/46b6e90b-3564-4923-bd73-8c49940eaf0a",
+                "title": "<h3>Mudança de plataforma CMS</h3>",
+                "description": "<p>Migração para a plataforma deco, exigindo aprendizado e adaptação da equipe.</p>"
+              },
+              {
+                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9191ec0c-24d0-45fd-a1c1-7a362546bfc4",
+                "title": "<h3>Mídia paga</h3>",
+                "description": "<p>As campanhas de mídia paga não estavam gerando resultados satisfatórios.</p>"
+              }
+            ],
+            "title": "<h2><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">﻿</span></span>Principais Desafios</h2>",
+            "addBar": true,
+            "marginTop": "120px",
+            "marginBottom": "20px",
+            "__resolveType": "site/sections/Challenges/challenges.tsx"
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/dbc96c3d-ad30-42a8-8ff0-766f5af24725",
+              "widthMobile": 457,
+              "heightMobile": 467,
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0ea99203-b364-486e-ad6f-bf1f01eebce4",
+              "widthDesktop": 624,
+              "heightDesktop": 638
+            },
+            "marginTop": "120px",
+            "placement": "direito",
+            "contentText": {
+              "list": {
+                "textList": [
+                  {
+                    "descriptionList": "<p>A Agência N1 propôs migrar para a plataforma deco.cx, oferecendo a capacidade de manter a infraestrutura existente e incorporar a velocidade e flexibilidade da deco.cx no front-end.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>A tecnologia deco foi aplicada ao nosso Projeto Template, nossa equipe aprimorou significativamente o design de interface das páginas com as melhores práticas de usabilidade.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>Através da tecnologia, nossos desenvolvedores garantiram que o site alcançasse um desempenho excepcional, com pontuação superior a 90 no Pagespeed Insights e reduzindo as taxas de abandono de carrinho.</p>"
+                  },
+                  {},
+                  {
+                    "descriptionList": "<p>Conseguimos identificar as dificuldades enfrentadas pelos usuários durante a navegação no site, permitindo o mapeamento de melhorias para aprimorar a jornada de compra dos clientes.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>Desempenhou um papel fundamental nos resultados positivos da migração, registrando um aumento significativo na conversão e no ROAS.</p>"
+                  },
+                  {
+                    "descriptionList": "<p>As Mídias Sociais acompanharam o rebranding da marca, assegurando consistência durante a transição de identidade e contribuindo para fortalecer a marca, agregando valor nas redes sociais.</p>"
+                  }
+                ],
+                "iconCheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5549dfb5-a283-4568-9752-50ad7decdb01",
+                "widthContainerList": "500"
+              },
+              "title": "<h2><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">﻿</span></span>soluções:</h2>",
+              "addBar": true,
+              "button": {
+                "link": "https://www.hospitalardistribuidora.com.br/",
+                "textButton": "Visite o novo site"
+              }
+            },
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
+            "styleContainer": "normal",
+            "imageBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/07600ab5-5b67-4fa1-a04a-f7bac5a4d68f"
+          },
+          {
+            "title": "<h2><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">﻿</span></span>Destaque do projeto</h2>",
+            "addBar": true,
+            "arrows": true,
+            "images": [
+              {
+                "alt": "hospitalar",
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/979d8e6e-cd7a-47a4-b1fc-83f5487f7ba9",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6ad47004-ac80-4cfb-a481-30c80f595570",
+                "subTitle": "<p><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">﻿</span></span>VTEX Intelligent Search</p>",
+                "addBarSlide": true,
+                "description": "<p>A ferramenta de busca conta com a funcionalidade autocomplete, que interpreta um termo pesquisado e apresenta a lista de produtos como um resultado de pesquisa, &nbsp;aprimorando a experiência de compra.</p>"
+              },
+              {
+                "alt": "hospitalar-cases",
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8017613e-d7c4-4c57-bceb-7036498bddc7",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7166a1b6-1b2f-4d76-b264-1c71c952c00d",
+                "subTitle": "<p><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">﻿</span></span>Compra rápida nas Prateleiras</p>",
+                "addBarSlide": true,
+                "description": "<p>A funcionalidade permite que o usuário adicione um item no carrinho, direto da prateleira, sem precisar clicar no produto, economizando tempo e tornando o processo de compra mais ágil.</p>"
+              }
+            ],
+            "preload": true,
+            "marginTop": "120px",
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/SliderColumn/SliderColumn.tsx"
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0dd9660d-89ba-4c99-8c44-1278ae1ca8f8",
+              "widthMobile": 350,
+              "heightMobile": 267,
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7281ea49-ff55-4e58-86ae-0c49234e10c3",
+              "widthDesktop": 623,
+              "heightDesktop": 477
+            },
+            "marginTop": "120px",
+            "contentText": {
+              "list": {
+                "tags": [
+                  {
+                    "iconsMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ae7dafc6-4c91-44a9-ac42-2cf8837399c0",
+                    "widthMobile": 135,
+                    "heightMobile": 33,
+                    "iconsDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/78a552b1-4188-42bd-a978-bf165fabd6d6",
+                    "widthDesktop": 135,
+                    "heightDesktop": 33
+                  },
+                  {
+                    "iconsMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6cf8494b-ee28-43a8-bbae-2fd4ff5cb36a",
+                    "widthMobile": 137,
+                    "heightMobile": 33,
+                    "iconsDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3551e055-47e7-45e3-9ec6-e5e8fe9b4b9e",
+                    "widthDesktop": 137,
+                    "heightDesktop": 33
+                  }
+                ],
+                "cardInfo": [
+                  { "about": "Aumento da receita", "percentage": "+12,85%" },
+                  { "about": "Ticket médio", "percentage": "+24,95" }
+                ],
+                "widthContainerList": "500"
+              },
+              "title": "<p><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">﻿</span></span>Resultados alcançados</p>",
+              "addBar": true,
+              "description": "<p>Em 3 meses de Golive do Projeto. A HD registrou uma melhoria significativa no desempenho do site após a implementação do CMS deco.cx</p><p><br>Os &nbsp;resultados indicam uma notável rapidez no carregamento do conteúdo principal da página e na exibição do primeiro elemento, contribuindo para uma experiência mais ágil e envolvente para os usuários, reduzindo potencialmente a taxa de abandono da loja.</p>"
+            },
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
+            "styleContainer": "center"
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a3351756-2f6a-493c-8d2a-3159caf56824",
+              "widthMobile": 375,
+              "heightMobile": 344,
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a3484cbe-b9c8-42d2-934a-0baca5e05bb8",
+              "widthDesktop": 501,
+              "heightDesktop": 460
+            },
+            "marginTop": "120px",
+            "placement": "esquerdo",
+            "contentText": {
+              "list": {
+                "cardInfo": [
+                  { "about": "ROAS", "percentage": "19" },
+                  { "about": "Taxa de Conversão", "percentage": "4,59%" }
+                ],
+                "hiddenCardInfo": true,
+                "widthContainerList": "500"
+              },
+              "title": "<p><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">﻿</span></span>Resultados Mídias pagas</p>",
+              "addBar": true,
+              "description": "<p>Com a campanha de Mídia Paga, fizemos um trabalho bastante expressivo e transformador. Em comparativo, <span style=\"color: #f6ab00;\" data-mce-style=\"color: #f6ab00;\">anteriormente o ROAS médio estava entre 4 e 5.</span></p><p><br><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">Em 3 meses de trabalho, mesmo com todos os desafios dos múltiplos testes e sazonalidades anuais, conseguimos subir esta média para 12.</span></p>"
+            },
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx"
+          },
+          {
+            "name": "Gabriele",
+            "photo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4ca884e8-3ae6-4f0b-8502-c2d07b180b60",
+            "comment": "Participar do desenvolvimento desse projeto de loja nova com a N1 foi gratificante pelo fato de terem profissionais extremamente dedicados e atenciosos com o que fazem e na forma como atendem os seus clientes. Sempre dispostos a ajudar no que for preciso, com expertise e simpatia. Recomendo muito!",
+            "marginTop": "120px",
+            "profession": "Analista de Marketing",
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/FeedBack/FeedBack.tsx",
+            "backgroundImage": true
+          },
+          { "__resolveType": "footer-principal" },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0ea99203-b364-486e-ad6f-bf1f01eebce4",
+            "title": "Case Hospitalar N1.AG | Desenvolvimento Projeto Deco.cx",
+            "canonical": "/cases/hospitalar",
+            "description": "Utilizando nosso Projeto Template Deco.cx, aprimoramos significativamente a interface da Hospitalar Distribuidora, resultando em notável melhoria no PageSpeed Insights.",
+            "__resolveType": "website/sections/Seo/SeoV2.tsx",
+            "titleTemplate": "Case Hospitalar N1.AG | Desenvolvimento Projeto Deco.cx",
+            "descriptionTemplate": "Utilizando nosso Projeto Template Deco.cx, aprimoramos significativamente a interface da Hospitalar Distribuidora, resultando em notável melhoria no PageSpeed Insights."
+          }
+        ]
+      }
+    ],
+    "__resolveType": "website/flags/multivariate.ts"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

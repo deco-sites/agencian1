@@ -1,1 +1,67 @@
-{"layout":{"hide":{"logo":false,"extraLinks":false,"mobileApps":true},"variation":"Variation 1","backgroundColor":"Primary"},"social":{"items":[{"link":"https://www.linkedin.com/company/agência-n1/mycompany/","label":"Linkedin"},{"link":"https://www.instagram.com/agencian1","label":"Instagram"},{"link":"https://www.youtube.com/channel/UCYpELMcq2-xs3qe_OK0ldYA","label":"Youtube"},{"link":"https://www.facebook.com/agencian1","label":"Facebook"},{"link":"#","label":"Twitter","disabledSocial":true},{"link":"contato@n1.ag","label":"Email"}]},"payments":{"items":[]},"sections":[{"items":[{"href":"/quem-somos","label":"Who we are"},{"href":"/","label":"Blog","disabledItem":true},{"href":"/contato","label":"Work with us"},{"href":"/contato","label":"Contact"}],"label":"Institutional"},{"items":[{"href":"/nossos-servicos/evolucao","label":"Ongoing"},{"href":"/nossos-servicos/implantacao","label":"Implantation"},{"href":"/nossos-servicos/suporte","label":"Support"},{"href":"/servicos/web-insight","label":"Web Insight"},{"href":"#","label":"Training and Consulting","disabledItem":true}],"label":"Our services"},{"items":[{"href":"/","label":"vtex-io"},{"href":"/","label":"vtex-sales"},{"href":"/","label":"vtex-implementation"},{"href":"/","label":"deco"}],"label":"Certifications"}],"copyright":"N1 Agency {2024} - All Rights Reserved","extraLinks":[],"newsletter":{"form":{"buttonText":"Register","placeholder":"Your best email"},"title":"Subscribe to our newsletter","description":"Subscribe and stay up to date with the latest news. Premium content within reach of your email ✨"},"__resolveType":"site/sections/Footer/Footer.tsx","regionOptions":{"currency":[],"language":[]}}
+{
+  "layout": {
+    "hide": { "logo": false, "extraLinks": false, "mobileApps": true },
+    "variation": "Variation 1",
+    "backgroundColor": "Primary"
+  },
+  "social": {
+    "items": [
+      {
+        "link": "https://www.linkedin.com/company/agência-n1/mycompany/",
+        "label": "Linkedin"
+      },
+      { "link": "https://www.instagram.com/agencian1", "label": "Instagram" },
+      {
+        "link": "https://www.youtube.com/channel/UCYpELMcq2-xs3qe_OK0ldYA",
+        "label": "Youtube"
+      },
+      { "link": "https://www.facebook.com/agencian1", "label": "Facebook" },
+      { "link": "#", "label": "Twitter", "disabledSocial": true },
+      { "link": "contato@n1.ag", "label": "Email" }
+    ]
+  },
+  "payments": { "items": [] },
+  "sections": [
+    {
+      "items": [
+        { "href": "/quem-somos", "label": "Who we are" },
+        { "href": "/", "label": "Blog", "disabledItem": true },
+        { "href": "/contato", "label": "Work with us" },
+        { "href": "/contato", "label": "Contact" }
+      ],
+      "label": "Institutional"
+    },
+    {
+      "items": [
+        { "href": "/nossos-servicos/evolucao", "label": "Ongoing" },
+        { "href": "/nossos-servicos/implantacao", "label": "Implantation" },
+        { "href": "/nossos-servicos/suporte", "label": "Support" },
+        { "href": "/servicos/web-insight", "label": "Web Insight" },
+        {
+          "href": "#",
+          "label": "Training and Consulting",
+          "disabledItem": true
+        }
+      ],
+      "label": "Our services"
+    },
+    {
+      "items": [
+        { "href": "/", "label": "vtex-io" },
+        { "href": "/", "label": "vtex-sales" },
+        { "href": "/", "label": "vtex-implementation" },
+        { "href": "/", "label": "deco" }
+      ],
+      "label": "Certifications"
+    }
+  ],
+  "copyright": "N1 Agency {2024} - All Rights Reserved",
+  "extraLinks": [],
+  "newsletter": {
+    "form": { "buttonText": "Register", "placeholder": "Your best email" },
+    "title": "Subscribe to our newsletter",
+    "description": "Subscribe and stay up to date with the latest news. Premium content within reach of your email ✨"
+  },
+  "__resolveType": "site/sections/Footer/Footer.tsx",
+  "regionOptions": { "currency": [], "language": [] }
+}

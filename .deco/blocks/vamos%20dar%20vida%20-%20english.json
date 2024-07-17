@@ -1,1 +1,12 @@
-{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4ea5d6a2-4912-4f24-9644-827a71fb2f36","phone":"5521965744132","width":296,"height":252,"textOne":"Fale com a gente","textTwo":"Diga oi!","textLarge":"Let's bring your ideas to life!","textCircleLg":"Talk to us","textCircleSm":"Say hi!","__resolveType":"site/sections/Content/TextWithImageCustom.tsx"}
+{
+  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4ea5d6a2-4912-4f24-9644-827a71fb2f36",
+  "phone": "5521965744132",
+  "width": 296,
+  "height": 252,
+  "textOne": "Fale com a gente",
+  "textTwo": "Diga oi!",
+  "textLarge": "Let's bring your ideas to life!",
+  "textCircleLg": "Talk to us",
+  "textCircleSm": "Say hi!",
+  "__resolveType": "site/sections/Content/TextWithImageCustom.tsx"
+}

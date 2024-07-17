@@ -1,1 +1,37 @@
-{"cta":[{"text":"90","color":"#b71f1f","text2":"Nota média das lojas no Page Speed","variant":"Normal","colorText":"#ffffff"},{"text":"+300","text2":"Lojas atendidas e satisfeitas","variant":"Normal","colorText":"#ffffff"},{"text":"3 anos","color":"#ffffff","text2":"Lifetime value dos nossos clientes","variant":"Normal","colorText":"#ffffff"}],"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4a7cc0d4-8ae0-492c-87f8-28839bc987a8","title":"<h2><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><strong><span style=\"font-size: 70px; line-height: 77px;\" data-mce-style=\"font-size: 70px; line-height: 77px;\">Somos experts em</span></strong></span></h2>","titleCta":"<h3><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><strong><span style=\"font-size: 20px; line-height: 46px;\" data-mce-style=\"font-size: 20px; line-height: 46px;\">Nossos resultados em números:</span></strong></span></h3>","placement":"left","translateX":-60,"translateY":70,"widthImage":487,"description":"<h1><span style=\"color: rgb(255, 255, 255); font-size: 20px; line-height: 28px;\" data-mce-style=\"color: rgb(255, 255, 255); font-size: 20px; line-height: 28px;\"><strong>9 anos como uma das melhores agências de e-commerce, atuando com plataformas como VTEX, Deco.cx, Shopify e Sales Force. Somos especialista em consultoria de e-commerce para a sua loja online.</strong></span></h1>","__resolveType":"site/sections/Content/Hero.tsx","placementImage":"right","positionManual":true,"colorDescription":"#3ccbda","descriptionAnimation":"Uau Commerce, Performance, Digital"}
+{
+  "cta": [
+    {
+      "text": "90",
+      "color": "#b71f1f",
+      "text2": "Nota média das lojas no Page Speed",
+      "variant": "Normal",
+      "colorText": "#ffffff"
+    },
+    {
+      "text": "+300",
+      "text2": "Lojas atendidas e satisfeitas",
+      "variant": "Normal",
+      "colorText": "#ffffff"
+    },
+    {
+      "text": "3 anos",
+      "color": "#ffffff",
+      "text2": "Lifetime value dos nossos clientes",
+      "variant": "Normal",
+      "colorText": "#ffffff"
+    }
+  ],
+  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4a7cc0d4-8ae0-492c-87f8-28839bc987a8",
+  "title": "<h2><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><strong><span style=\"font-size: 70px; line-height: 77px;\" data-mce-style=\"font-size: 70px; line-height: 77px;\">Somos experts em</span></strong></span></h2>",
+  "titleCta": "<h3><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><strong><span style=\"font-size: 20px; line-height: 46px;\" data-mce-style=\"font-size: 20px; line-height: 46px;\">Nossos resultados em números:</span></strong></span></h3>",
+  "placement": "left",
+  "translateX": -60,
+  "translateY": 70,
+  "widthImage": 487,
+  "description": "<h1><span style=\"color: rgb(255, 255, 255); font-size: 20px; line-height: 28px;\" data-mce-style=\"color: rgb(255, 255, 255); font-size: 20px; line-height: 28px;\"><strong>9 anos como uma das melhores agências de e-commerce, atuando com plataformas como VTEX, Deco.cx, Shopify e Sales Force. Somos especialista em consultoria de e-commerce para a sua loja online.</strong></span></h1>",
+  "__resolveType": "site/sections/Content/Hero.tsx",
+  "placementImage": "right",
+  "positionManual": true,
+  "colorDescription": "#3ccbda",
+  "descriptionAnimation": "Uau Commerce, Performance, Digital"
+}

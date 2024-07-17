@@ -77,7 +77,10 @@ function NavItem({ item, btnTextMenu, btnUrlMenu }: Props) {
           style={{ pointerEvents: `${url ? "all" : "none"}` }}
           class="overflow-y-hidden h-5 mr-[10px]"
         >
-          <span data-title={name} class="after:content-[attr(data-title)] -translate-y-5 flex-col group-hover:translate-y-0 leading-5 transition-all text-xs flex moveFromTop duration-500 font-black n1-links--repeat">
+          <span
+            data-title={name}
+            class="after:content-[attr(data-title)] -translate-y-5 flex-col group-hover:translate-y-0 leading-5 transition-all text-xs flex moveFromTop duration-500 font-black n1-links--repeat"
+          >
             {name}
           </span>
         </a>

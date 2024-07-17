@@ -1,1 +1,39 @@
-{"seo":{"type":"website","title":"N1.AG : Especializada em e-commerce e plataforma VTEX","favicon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7d1c8269-a925-467e-9e83-244a3b04ed99","jsonLDs":[],"canonical":"https://fashion.deco.site","noIndexing":false,"themeColor":"#0C1F59","description":"Nós da N1.AG somos experts em Jornadas Digitais e Performance. Agência oficialmente reconhecida como expert nas plataformas de e-commerce VTEX e Deco.cx! Clique e confira nossos cases e serviços.","titleTemplate":"%s","descriptionTemplate":"%s"},"theme":{"__resolveType":"Theme"},"global":[{"trackingIds":["GTM-NPF8WV"],"__resolveType":"website/sections/Analytics/Analytics.tsx","dangerouslyRunOnMainThread":true}],"routes":[{"__resolveType":"website/loaders/pages.ts"},{"__resolveType":"website/loaders/redirects.ts"},{"__resolveType":"site/loaders/Sitemap/sitemap.ts","includeSiteMap":[],"extraPathsToProxy":[],"generateDecoSiteMap":true,"includeScriptsToHead":{"includes":[]},"excludePathsFromDecoSiteMap":["/home-2-teste"]}],"caching":{"directives":[]},"commerce":{"platform":"other"},"platform":"vtex","__resolveType":"site/apps/site.ts","firstByteThresholdMS":false}
+{
+  "seo": {
+    "type": "website",
+    "title": "N1.AG : Especializada em e-commerce e plataforma VTEX",
+    "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7d1c8269-a925-467e-9e83-244a3b04ed99",
+    "jsonLDs": [],
+    "canonical": "https://fashion.deco.site",
+    "noIndexing": false,
+    "themeColor": "#0C1F59",
+    "description": "Nós da N1.AG somos experts em Jornadas Digitais e Performance. Agência oficialmente reconhecida como expert nas plataformas de e-commerce VTEX e Deco.cx! Clique e confira nossos cases e serviços.",
+    "titleTemplate": "%s",
+    "descriptionTemplate": "%s"
+  },
+  "theme": { "__resolveType": "Theme" },
+  "global": [
+    {
+      "trackingIds": ["GTM-NPF8WV"],
+      "__resolveType": "website/sections/Analytics/Analytics.tsx",
+      "dangerouslyRunOnMainThread": true
+    }
+  ],
+  "routes": [
+    { "__resolveType": "website/loaders/pages.ts" },
+    { "__resolveType": "website/loaders/redirects.ts" },
+    {
+      "__resolveType": "site/loaders/Sitemap/sitemap.ts",
+      "includeSiteMap": [],
+      "extraPathsToProxy": [],
+      "generateDecoSiteMap": true,
+      "includeScriptsToHead": { "includes": [] },
+      "excludePathsFromDecoSiteMap": ["/home-2-teste"]
+    }
+  ],
+  "caching": { "directives": [] },
+  "commerce": { "platform": "other" },
+  "platform": "vtex",
+  "__resolveType": "site/apps/site.ts",
+  "firstByteThresholdMS": false
+}

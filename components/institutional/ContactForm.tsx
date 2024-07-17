@@ -133,7 +133,9 @@ function ContactForm(
   const displayModalForm = useSignal(ACTIVEMODALFORM[activeModalForm]);
 
   useEffect(() => {
-    const btnSubmits = document.querySelectorAll<HTMLButtonElement>(".n1-form__submit");
+    const btnSubmits = document.querySelectorAll<HTMLButtonElement>(
+      ".n1-form__submit",
+    );
     btnSubmits.forEach((btnSubmit) => {
       btnSubmit.removeAttribute("disabled");
     });

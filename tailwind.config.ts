@@ -42,7 +42,7 @@ export default {
       50: ["50px", "60px"],
       56: ["56px", "20px"],
       60: ["60px", "66px"],
-      68: ["68px", "81.6px"]
+      68: ["68px", "81.6px"],
     },
     extend: {
       gridTemplateColumns: {

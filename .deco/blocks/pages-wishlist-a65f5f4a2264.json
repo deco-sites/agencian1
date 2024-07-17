@@ -1,1 +1,210 @@
-{"name":"Multilista","path":"/multilista","sections":{"variants":[{"rule":{"__resolveType":"website/matchers/always.ts"},"value":[{"__resolveType":"Theme"},{"__resolveType":"header-principal"},{"banners":[{"images":{"mobile":{"alt":"Banner mobile","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ba1693c9-4c0d-44ca-bf13-3db031383972","width":"390","height":"500"},"desktop":{"alt":"Banner Implantação","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7d6e80fa-f483-4173-9104-7241ef2d3e0b","width":"1440","height":"482"}},"matcher":"/multilista"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/525e90bf-4ab9-4992-a099-78ff01b6155e","widthMobile":330,"heightMobile":191,"imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9708a50d-7f93-451f-81a3-e0a27d068a19","widthDesktop":571,"heightDesktop":328},"marginTop":"80px","placement":"esquerdo","bannerImgw":{"alt":"banner","ImageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c6f656e6-37e3-410c-a50d-e68b6ac1775f","widthMobile":358,"ImageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/925d6603-e2fc-47e9-aeb9-a0aba2550bdd","heightMobile":229,"widthDesktop":632,"heightDesktop":372},"contentText":{"title":"<h2>Crie listas exclusivas e personalizadas</h2>","fontSize":"text-14","description":"<p>A Multi Lista de presentes é mais completa e integrada à plataforma VTEX. Uma forma bastante prática do consumidor agrupar os principais produtos que ele tem interesse em adquirir e compartilhar como quiser.&nbsp;</p><p><br data-mce-bogus=\"1\"></p><p>Uma solução desenvolvida para atender as demandas atuais das operações de e-commerce e facilitar o processo interno, com mais liberdade no gerenciamento da lista.<br><br></p><p><br data-mce-bogus=\"1\"></p>","addKeysInWords":true,"fontSizeTitleMobile":"text-24"},"marginBottom":"80px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx","styleContainer":"normal"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2889c1bc-4a6e-42ff-b9c5-f554932260be","lists":[{"description":"<h3>Compartilhamento da sua lista através de url, redes sociais e Whatsapp;</h3>"},{"description":"<h3>Acesso ao perfil de vendedor, cliente e administrador.</h3>"},{"description":"<h3>Relatórios de produtos da lista com os itens já vendidos e pendentes.</h3>"},{"description":"<h3>O vendedor pode inserir manualmente os pedidos na loja física.</h3>"},{"description":"<h3>Possibilidade do usuário inserir uma lista padrão, com produtos pré estabelecidos pelo lojista.</h3>"},{"description":"<h3>Exibição de produtos sugeridos, ampliando a possibilidade de conversão e o aumento de vendas.</h3>"},{"description":"<p>Escolha de tipo de entrega: vale compras, retirada em loja ou entrega para endereço.</p>"},{"description":"<h3>Registro dos pedidos feitos através da lista, com a exibição do total de compras da loja online e total da loja física.</h3>"}],"title":"<h1>Vantagens da MultiLista ✨</h1>","columns":"4","maxWidth":"285","marginTop":"20px","titleStyle":{"alignment":"center"},"marginBottom":"20px","__resolveType":"site/sections/BenefitsList/BenefitsList.tsx","activeBackgroundImage":true},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/01fb51b4-e087-4313-b412-66aa1f24f3d6","arrows":true,"images":[{"alt":"Casamento","action":{"href":"/","label":"casamento","title":"Casamento"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3e9b18c7-141d-4a80-9ca3-868051e29f7e","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bc17e2f1-0e7b-430c-954f-0225548490ec"},{"alt":"Chá de bebê","action":{"href":"/","label":"Chá de Bebe ","title":"Chá de Bebê"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a973ae6b-b9d8-4ec0-a8e4-96c2cd0692d6","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4f561317-2a19-481d-b4c2-eabe3aab0574"},{"alt":"Chá de Panela","action":{"href":"/","label":"Chá de Panela","title":"Chá de Panela"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2a04b1e4-b53b-410a-b690-7c7cc4853236","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c9099e8f-1857-4204-80eb-9cbfbed4c4cd"},{"alt":"Open House ","action":{"href":"/","label":"Open House ","title":"Open House "},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/003cca0e-105c-49d9-836a-10e3aff0599d","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/83511a2f-c954-41f4-b099-fcd56a876e36"},{"alt":"Bodas","action":{"href":"/","label":"Bodas","title":"Bodas"},"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ce00d64f-0624-46f5-bac4-b4e83080e57c","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b9540ded-f8a8-483e-a309-1030748f5266"}],"preload":true,"marginTop":"120px","marginBottom":"120px","__resolveType":"site/sections/SliderCards/SliderCards.tsx"},{"bannerImg":{"alt":"banner","imageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3f8671a0-5b45-4130-818b-b4bbea13c246","widthMobile":454,"heightMobile":370,"imageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a66d2cab-6ac3-4d22-bdd8-fa40f783b0c7","widthDesktop":454,"heightDesktop":370},"marginTop":"80px","placement":"direito","bannerImgw":{"alt":"banner","ImageMobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c6f656e6-37e3-410c-a50d-e68b6ac1775f","widthMobile":358,"ImageDesktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/925d6603-e2fc-47e9-aeb9-a0aba2550bdd","heightMobile":229,"widthDesktop":632,"heightDesktop":372},"contentText":{"list":{"widthContainerList":"500"},"title":"<h2>Saiba mais sobre Multilista N1</h2>","button":{"link":"https://www.casagoianita.com.br/wishlist#/","textButton":"Conheça nosso case"},"fontSize":"text-14","description":"<p>Descubra como seu e-commerce pode se beneficiar de novas tecnologias que contribuem para uma melhor experiência do usuário e aumento da receita.</p><p><br data-mce-bogus=\"1\"></p><p>A Multilista N1 é responsiva e com possibilidade de criação de aplicativo mobile. Funciona tanto para a loja online quanto para a loja física, pois integramos as informações<br><br></p><p>Por reduzir o tempo de compra, a lista facilita a experiência do consumidor e aumenta as chances de conversão. Também é um excelente indicador dos desejos do público, insights que podem ser trabalhados pelo marketing de forma estratégica e inteligente.&nbsp;</p><p><br data-mce-bogus=\"1\"></p>","fontSizeTitle":"text-32"},"marginBottom":"80px","__resolveType":"site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx","styleContainer":"normal"},{"__resolveType":"footer-principal"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d0c3e512-5165-4dbd-9f93-30637678ced1","title":"Multilista N1.AG | Crie whishlist exclusiva e personalizada","canonical":"/multilista","description":"Descubra como seu e-commerce pode se beneficiar de novas tecnologias que contribuem para uma melhor experiência do usuário e aumento da receita.","__resolveType":"website/sections/Seo/SeoV2.tsx","titleTemplate":"Multilista N1.AG | Crie whishlist exclusiva e personalizada","descriptionTemplate":"Descubra como seu e-commerce pode se beneficiar de novas tecnologias que contribuem para uma melhor experiência do usuário e aumento da receita."}]}],"__resolveType":"website/flags/multivariate.ts"},"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Multilista",
+  "path": "/multilista",
+  "sections": {
+    "variants": [
+      {
+        "rule": { "__resolveType": "website/matchers/always.ts" },
+        "value": [
+          { "__resolveType": "Theme" },
+          { "__resolveType": "header-principal" },
+          {
+            "banners": [
+              {
+                "images": {
+                  "mobile": {
+                    "alt": "Banner mobile",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ba1693c9-4c0d-44ca-bf13-3db031383972",
+                    "width": "390",
+                    "height": "500"
+                  },
+                  "desktop": {
+                    "alt": "Banner Implantação",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7d6e80fa-f483-4173-9104-7241ef2d3e0b",
+                    "width": "1440",
+                    "height": "482"
+                  }
+                },
+                "matcher": "/multilista"
+              }
+            ],
+            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/525e90bf-4ab9-4992-a099-78ff01b6155e",
+              "widthMobile": 330,
+              "heightMobile": 191,
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9708a50d-7f93-451f-81a3-e0a27d068a19",
+              "widthDesktop": 571,
+              "heightDesktop": 328
+            },
+            "marginTop": "80px",
+            "placement": "esquerdo",
+            "bannerImgw": {
+              "alt": "banner",
+              "ImageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c6f656e6-37e3-410c-a50d-e68b6ac1775f",
+              "widthMobile": 358,
+              "ImageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/925d6603-e2fc-47e9-aeb9-a0aba2550bdd",
+              "heightMobile": 229,
+              "widthDesktop": 632,
+              "heightDesktop": 372
+            },
+            "contentText": {
+              "title": "<h2>Crie listas exclusivas e personalizadas</h2>",
+              "fontSize": "text-14",
+              "description": "<p>A Multi Lista de presentes é mais completa e integrada à plataforma VTEX. Uma forma bastante prática do consumidor agrupar os principais produtos que ele tem interesse em adquirir e compartilhar como quiser.&nbsp;</p><p><br data-mce-bogus=\"1\"></p><p>Uma solução desenvolvida para atender as demandas atuais das operações de e-commerce e facilitar o processo interno, com mais liberdade no gerenciamento da lista.<br><br></p><p><br data-mce-bogus=\"1\"></p>",
+              "addKeysInWords": true,
+              "fontSizeTitleMobile": "text-24"
+            },
+            "marginBottom": "80px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
+            "styleContainer": "normal"
+          },
+          {
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2889c1bc-4a6e-42ff-b9c5-f554932260be",
+            "lists": [
+              {
+                "description": "<h3>Compartilhamento da sua lista através de url, redes sociais e Whatsapp;</h3>"
+              },
+              {
+                "description": "<h3>Acesso ao perfil de vendedor, cliente e administrador.</h3>"
+              },
+              {
+                "description": "<h3>Relatórios de produtos da lista com os itens já vendidos e pendentes.</h3>"
+              },
+              {
+                "description": "<h3>O vendedor pode inserir manualmente os pedidos na loja física.</h3>"
+              },
+              {
+                "description": "<h3>Possibilidade do usuário inserir uma lista padrão, com produtos pré estabelecidos pelo lojista.</h3>"
+              },
+              {
+                "description": "<h3>Exibição de produtos sugeridos, ampliando a possibilidade de conversão e o aumento de vendas.</h3>"
+              },
+              {
+                "description": "<p>Escolha de tipo de entrega: vale compras, retirada em loja ou entrega para endereço.</p>"
+              },
+              {
+                "description": "<h3>Registro dos pedidos feitos através da lista, com a exibição do total de compras da loja online e total da loja física.</h3>"
+              }
+            ],
+            "title": "<h1>Vantagens da MultiLista ✨</h1>",
+            "columns": "4",
+            "maxWidth": "285",
+            "marginTop": "20px",
+            "titleStyle": { "alignment": "center" },
+            "marginBottom": "20px",
+            "__resolveType": "site/sections/BenefitsList/BenefitsList.tsx",
+            "activeBackgroundImage": true
+          },
+          {
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/01fb51b4-e087-4313-b412-66aa1f24f3d6",
+            "arrows": true,
+            "images": [
+              {
+                "alt": "Casamento",
+                "action": {
+                  "href": "/",
+                  "label": "casamento",
+                  "title": "Casamento"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3e9b18c7-141d-4a80-9ca3-868051e29f7e",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bc17e2f1-0e7b-430c-954f-0225548490ec"
+              },
+              {
+                "alt": "Chá de bebê",
+                "action": {
+                  "href": "/",
+                  "label": "Chá de Bebe ",
+                  "title": "Chá de Bebê"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a973ae6b-b9d8-4ec0-a8e4-96c2cd0692d6",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4f561317-2a19-481d-b4c2-eabe3aab0574"
+              },
+              {
+                "alt": "Chá de Panela",
+                "action": {
+                  "href": "/",
+                  "label": "Chá de Panela",
+                  "title": "Chá de Panela"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2a04b1e4-b53b-410a-b690-7c7cc4853236",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c9099e8f-1857-4204-80eb-9cbfbed4c4cd"
+              },
+              {
+                "alt": "Open House ",
+                "action": {
+                  "href": "/",
+                  "label": "Open House ",
+                  "title": "Open House "
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/003cca0e-105c-49d9-836a-10e3aff0599d",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/83511a2f-c954-41f4-b099-fcd56a876e36"
+              },
+              {
+                "alt": "Bodas",
+                "action": { "href": "/", "label": "Bodas", "title": "Bodas" },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ce00d64f-0624-46f5-bac4-b4e83080e57c",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b9540ded-f8a8-483e-a309-1030748f5266"
+              }
+            ],
+            "preload": true,
+            "marginTop": "120px",
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/SliderCards/SliderCards.tsx"
+          },
+          {
+            "bannerImg": {
+              "alt": "banner",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3f8671a0-5b45-4130-818b-b4bbea13c246",
+              "widthMobile": 454,
+              "heightMobile": 370,
+              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a66d2cab-6ac3-4d22-bdd8-fa40f783b0c7",
+              "widthDesktop": 454,
+              "heightDesktop": 370
+            },
+            "marginTop": "80px",
+            "placement": "direito",
+            "bannerImgw": {
+              "alt": "banner",
+              "ImageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c6f656e6-37e3-410c-a50d-e68b6ac1775f",
+              "widthMobile": 358,
+              "ImageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/925d6603-e2fc-47e9-aeb9-a0aba2550bdd",
+              "heightMobile": 229,
+              "widthDesktop": 632,
+              "heightDesktop": 372
+            },
+            "contentText": {
+              "list": { "widthContainerList": "500" },
+              "title": "<h2>Saiba mais sobre Multilista N1</h2>",
+              "button": {
+                "link": "https://www.casagoianita.com.br/wishlist#/",
+                "textButton": "Conheça nosso case"
+              },
+              "fontSize": "text-14",
+              "description": "<p>Descubra como seu e-commerce pode se beneficiar de novas tecnologias que contribuem para uma melhor experiência do usuário e aumento da receita.</p><p><br data-mce-bogus=\"1\"></p><p>A Multilista N1 é responsiva e com possibilidade de criação de aplicativo mobile. Funciona tanto para a loja online quanto para a loja física, pois integramos as informações<br><br></p><p>Por reduzir o tempo de compra, a lista facilita a experiência do consumidor e aumenta as chances de conversão. Também é um excelente indicador dos desejos do público, insights que podem ser trabalhados pelo marketing de forma estratégica e inteligente.&nbsp;</p><p><br data-mce-bogus=\"1\"></p>",
+              "fontSizeTitle": "text-32"
+            },
+            "marginBottom": "80px",
+            "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
+            "styleContainer": "normal"
+          },
+          { "__resolveType": "footer-principal" },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d0c3e512-5165-4dbd-9f93-30637678ced1",
+            "title": "Multilista N1.AG | Crie whishlist exclusiva e personalizada",
+            "canonical": "/multilista",
+            "description": "Descubra como seu e-commerce pode se beneficiar de novas tecnologias que contribuem para uma melhor experiência do usuário e aumento da receita.",
+            "__resolveType": "website/sections/Seo/SeoV2.tsx",
+            "titleTemplate": "Multilista N1.AG | Crie whishlist exclusiva e personalizada",
+            "descriptionTemplate": "Descubra como seu e-commerce pode se beneficiar de novas tecnologias que contribuem para uma melhor experiência do usuário e aumento da receita."
+          }
+        ]
+      }
+    ],
+    "__resolveType": "website/flags/multivariate.ts"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

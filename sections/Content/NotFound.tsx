@@ -1,1 +1,1 @@
-export {default, loader}  from '../../components/ui/NotFoundN1.tsx'
+export { default, loader } from "../../components/ui/NotFoundN1.tsx";

@@ -242,7 +242,8 @@
               "telephone": "111111",
               "activeArrow": true,
               "width": "360px"
-            }
+            },
+            "layout": {}
           },
           {
             "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx",

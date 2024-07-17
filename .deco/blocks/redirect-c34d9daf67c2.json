@@ -1,1 +1,8 @@
-{"redirect":{"to":"/cases/hospitalar","from":"/hospitalar-distribuidora-br","type":"permanent"},"__resolveType":"website/loaders/redirect.ts"}
+{
+  "redirect": {
+    "to": "/cases/hospitalar",
+    "from": "/hospitalar-distribuidora-br",
+    "type": "permanent"
+  },
+  "__resolveType": "website/loaders/redirect.ts"
+}

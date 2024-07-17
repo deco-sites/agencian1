@@ -55,7 +55,11 @@ export default function NotFoundN1(
             href={button.href}
             class=" rounded-[30px] w-44 md:w-48 h-9 md:h-[51px]   flex items-center justify-center hover:brightness-90 bg-[#3CCBDA] text-[#0C1F59] text-14 md:text-16 font-archimoto-black font-black "
           >
-            <span class={`py-4 px-5 md:py-5 md:px-8 !text-nowrap flex items-center justify-center`}>{button.text}</span>
+            <span
+              class={`py-4 px-5 md:py-5 md:px-8 !text-nowrap flex items-center justify-center`}
+            >
+              {button.text}
+            </span>
           </a>
         </div>
       </div>

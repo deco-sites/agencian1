@@ -1,27 +1,29 @@
 import LinkTelephoneWithOptionArrow from "site/components/ui/LinkTelephoneWithOptionArrow.tsx";
 import { clx } from "$store/sdk/clx.ts";
 
-
-interface CTAPhone {
-    text?: string;
-    telephone?: string;
-    activeArrow?: boolean;
-    width?: string;
-    height?: string;
-    customClass?: string;
-    fontSize?: string;
+export interface CTAPhone {
+  text?: string;
+  telephone?: string;
+  activeArrow?: boolean;
+  width?: string;
+  height?: string;
+  customClass?: string;
+  fontSize?: string;
 }
-interface CTALayout{
-    customClass?: string;
+export interface CTALayout {
+  backgroundColor?: string
+  customClass?: string;
 }
-  
 
 export interface Props {
   buttonAds?: CTAPhone;
+  /**
+   * @title layout
+   */
   layout?: CTALayout;
 }
 
-function Cta({buttonAds, layout}: Props) {
+function Cta({ buttonAds, layout }: Props) {
   return (
     <div class={clx(`${layout?.customClass ? layout?.customClass : ""}`)}>
       <LinkTelephoneWithOptionArrow

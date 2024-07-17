@@ -1,1 +1,552 @@
-{"name":"clientes","path":"/clientes","sections":{"variants":[{"rule":{"name":"N1_SelectedLanguage","value":"es-es","__resolveType":"website/matchers/cookie.ts"},"value":[{"__resolveType":"Theme"},{"__resolveType":"header-principal"},{"banners":[{"images":{"mobile":{"alt":"Banner clientes mobile","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ca46ada8-a939-4a82-bb27-21d5a72d95ca","width":"390","height":"500"},"desktop":{"alt":"Banner Clientes","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a30de75b-ce77-49e7-a6da-d3bb68e391a0","width":"1440","height":"482"}},"matcher":"/clientes"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"brand":[{"alt":"Technos","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/14366d4d-d030-4d32-b383-51bdb168069a","width":200,"height":140},{"alt":"euro","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/81dfef5d-4f7b-4d63-83fd-e2593f437ac2","width":200,"height":140},{"alt":"fossil","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0e233236-d4d1-45f9-93fc-0a35a3aa20c6","width":200,"height":140},{"alt":"timecenter","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/64cd8af9-48a0-4218-9cf9-71a2b3a127c7","width":200,"height":140},{"alt":"ohboy","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7519cde-6a2b-4571-adc8-475e7ff7a713","width":200,"height":140},{"alt":"sacada","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9c6bbc89-a682-4390-8d90-396d10fa39e9","width":200,"height":140},{"alt":"bagaggio","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8d776b48-76b2-4fdf-ba51-da8f878c00ba","width":200,"height":140},{"alt":"aviator","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/356c2a6c-336b-4fec-9604-0e79687ae53c","width":200,"height":140},{"alt":"outer","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a41222a8-df7b-4171-b25f-65240fe9fa78","width":200,"height":140},{"alt":"viamia","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d4875168-133a-4ba6-abd7-57b549b38653","width":200,"height":140},{"alt":"damyller","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2e8699ec-0c72-46ab-b71b-9c1321b94004","width":200,"height":140},{"alt":"lojasmm","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a17fa17c-0263-411a-a95c-fb1bb1968733","width":200,"height":140},{"alt":"euro","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/461e716a-2d2c-4144-a50c-ae96c8d1028c","width":200,"height":140},{"alt":"nossa drogaria","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/10ce36ba-8077-4624-b387-be544bb2569d","width":200,"height":140},{"alt":"hospitalar","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a5b25a58-f677-491f-acad-378381ba6de0","width":200,"height":140},{"alt":"yoboh","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/56e942e8-f137-4f44-a15a-8a5deca16a74","width":200,"height":140},{"alt":"clovis","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ac4e6e3b-6cbd-42be-94ae-b96f0fc336a7","width":200,"height":140},{"alt":"costa","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/64520434-1867-4010-8b8f-e628a7e2b1bb","width":200,"height":140},{"alt":"copel","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/1afa6de1-64d2-406e-a87b-58c0841dec9e","width":200,"height":140},{"alt":"cepel","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/54d2c274-4514-449d-81b0-706468fc83b5","width":200,"height":140},{"alt":"motobr","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6622dddb-7367-46b7-a32d-be7013effe2a","width":200,"height":140},{"alt":"gatabakana","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/355e93ed-028a-4a6d-a808-ac9049c24d8c","width":200,"height":140},{"alt":"rema","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4adb7ad4-daeb-4c24-afed-9e23e46126d6","width":200,"height":140}],"title":"<p><strong>Marcas que Confiam em Nós:</strong></p>","__resolveType":"site/sections/Content/BrandImage.tsx"},{"__resolveType":"vamos-dar-vida"},{"__resolveType":"footer-principal"}]},{"rule":{"name":"N1_SelectedLanguage","value":"en-en","__resolveType":"website/matchers/cookie.ts"},"value":[{"__resolveType":"Theme"},{"__resolveType":"Header-english"},{"banners":[{"images":{"mobile":{"alt":"Banner clientes mobile","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ca46ada8-a939-4a82-bb27-21d5a72d95ca","width":"390","height":"500"},"desktop":{"alt":"Banner Clientes","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a30de75b-ce77-49e7-a6da-d3bb68e391a0","width":"1440","height":"482"}},"matcher":"/clientes"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"brand":[{"alt":"Technos","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/14366d4d-d030-4d32-b383-51bdb168069a","width":200,"height":140},{"alt":"euro","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/81dfef5d-4f7b-4d63-83fd-e2593f437ac2","width":200,"height":140},{"alt":"fossil","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0e233236-d4d1-45f9-93fc-0a35a3aa20c6","width":200,"height":140},{"alt":"timecenter","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/64cd8af9-48a0-4218-9cf9-71a2b3a127c7","width":200,"height":140},{"alt":"ohboy","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7519cde-6a2b-4571-adc8-475e7ff7a713","width":200,"height":140},{"alt":"sacada","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9c6bbc89-a682-4390-8d90-396d10fa39e9","width":200,"height":140},{"alt":"bagaggio","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8d776b48-76b2-4fdf-ba51-da8f878c00ba","width":200,"height":140},{"alt":"aviator","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/356c2a6c-336b-4fec-9604-0e79687ae53c","width":200,"height":140},{"alt":"outer","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a41222a8-df7b-4171-b25f-65240fe9fa78","width":200,"height":140},{"alt":"viamia","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d4875168-133a-4ba6-abd7-57b549b38653","width":200,"height":140},{"alt":"damyller","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2e8699ec-0c72-46ab-b71b-9c1321b94004","width":200,"height":140},{"alt":"lojasmm","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a17fa17c-0263-411a-a95c-fb1bb1968733","width":200,"height":140},{"alt":"euro","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/461e716a-2d2c-4144-a50c-ae96c8d1028c","width":200,"height":140},{"alt":"nossa drogaria","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/10ce36ba-8077-4624-b387-be544bb2569d","width":200,"height":140},{"alt":"hospitalar","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a5b25a58-f677-491f-acad-378381ba6de0","width":200,"height":140},{"alt":"yoboh","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/56e942e8-f137-4f44-a15a-8a5deca16a74","width":200,"height":140},{"alt":"clovis","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ac4e6e3b-6cbd-42be-94ae-b96f0fc336a7","width":200,"height":140},{"alt":"costa","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/64520434-1867-4010-8b8f-e628a7e2b1bb","width":200,"height":140},{"alt":"copel","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/1afa6de1-64d2-406e-a87b-58c0841dec9e","width":200,"height":140},{"alt":"cepel","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/54d2c274-4514-449d-81b0-706468fc83b5","width":200,"height":140},{"alt":"motobr","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6622dddb-7367-46b7-a32d-be7013effe2a","width":200,"height":140},{"alt":"gatabakana","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/355e93ed-028a-4a6d-a808-ac9049c24d8c","width":200,"height":140},{"alt":"rema","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4adb7ad4-daeb-4c24-afed-9e23e46126d6","width":200,"height":140}],"title":"<p><strong>Brands that Trust Us:</strong></p>","__resolveType":"site/sections/Content/BrandImage.tsx"},{"__resolveType":"vamos dar vida - english"},{"__resolveType":"footer-English"}]},{"rule":{"__resolveType":"website/matchers/always.ts"},"value":[{"__resolveType":"Theme"},{"__resolveType":"header-principal"},{"banners":[{"images":{"mobile":{"alt":"Banner clientes mobile","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ca46ada8-a939-4a82-bb27-21d5a72d95ca","width":"390","height":"500"},"desktop":{"alt":"Banner Clientes","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a30de75b-ce77-49e7-a6da-d3bb68e391a0","width":"1440","height":"482"}},"matcher":"/clientes"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},{"brand":[{"alt":"Technos","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/14366d4d-d030-4d32-b383-51bdb168069a","width":200,"height":140},{"alt":"euro","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/81dfef5d-4f7b-4d63-83fd-e2593f437ac2","width":200,"height":140},{"alt":"fossil","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0e233236-d4d1-45f9-93fc-0a35a3aa20c6","width":200,"height":140},{"alt":"timecenter","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/64cd8af9-48a0-4218-9cf9-71a2b3a127c7","width":200,"height":140},{"alt":"ohboy","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7519cde-6a2b-4571-adc8-475e7ff7a713","width":200,"height":140},{"alt":"sacada","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9c6bbc89-a682-4390-8d90-396d10fa39e9","width":200,"height":140},{"alt":"bagaggio","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8d776b48-76b2-4fdf-ba51-da8f878c00ba","width":200,"height":140},{"alt":"aviator","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/356c2a6c-336b-4fec-9604-0e79687ae53c","width":200,"height":140},{"alt":"outer","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a41222a8-df7b-4171-b25f-65240fe9fa78","width":200,"height":140},{"alt":"viamia","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d4875168-133a-4ba6-abd7-57b549b38653","width":200,"height":140},{"alt":"damyller","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2e8699ec-0c72-46ab-b71b-9c1321b94004","width":200,"height":140},{"alt":"lojasmm","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a17fa17c-0263-411a-a95c-fb1bb1968733","width":200,"height":140},{"alt":"euro","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/461e716a-2d2c-4144-a50c-ae96c8d1028c","width":200,"height":140},{"alt":"nossa drogaria","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/10ce36ba-8077-4624-b387-be544bb2569d","width":200,"height":140},{"alt":"hospitalar","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a5b25a58-f677-491f-acad-378381ba6de0","width":200,"height":140},{"alt":"yoboh","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/56e942e8-f137-4f44-a15a-8a5deca16a74","width":200,"height":140},{"alt":"clovis","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ac4e6e3b-6cbd-42be-94ae-b96f0fc336a7","width":200,"height":140},{"alt":"costa","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/64520434-1867-4010-8b8f-e628a7e2b1bb","width":200,"height":140},{"alt":"copel","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/1afa6de1-64d2-406e-a87b-58c0841dec9e","width":200,"height":140},{"alt":"cepel","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/54d2c274-4514-449d-81b0-706468fc83b5","width":200,"height":140},{"alt":"motobr","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6622dddb-7367-46b7-a32d-be7013effe2a","width":200,"height":140},{"alt":"gatabakana","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/355e93ed-028a-4a6d-a808-ac9049c24d8c","width":200,"height":140},{"alt":"rema","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4adb7ad4-daeb-4c24-afed-9e23e46126d6","width":200,"height":140}],"title":"<h1><strong>Marcas que Confiam em Nós:</strong></h1>","__resolveType":"site/sections/Content/BrandImage.tsx"},{"__resolveType":"vamos-dar-vida"},{"__resolveType":"footer-principal"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/689ab746-9129-4fcd-a7c0-16df1015be9f","title":"Clientes N1.AG | Lojas Online que confiam na nossa Consultoria Ecommerce","canonical":"https://www.n1.ag/clientes","description":"Conheça os clientes da N1.AG que confiam em nossa consultoria em e-commerce. Como uma agência especializada em e-commerce e parceira oficial da plataforma VTEX e Deco.cx, nossos clientes contam com as melhores estratégias para alcançar o sucesso no mundo do comércio eletrônico.","__resolveType":"website/sections/Seo/SeoV2.tsx","titleTemplate":"Clientes N1.AG | Lojas Online que confiam na nossa Consultoria Ecommerce","descriptionTemplate":"Conheça os clientes da N1.AG que confiam em nossa consultoria em e-commerce. Como uma agência especializada em e-commerce e parceira oficial da plataforma VTEX e Deco.cx, nossos clientes contam com as melhores estratégias para alcançar o sucesso no mundo do comércio eletrônico."}]}],"__resolveType":"website/flags/multivariate.ts"},"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "clientes",
+  "path": "/clientes",
+  "sections": {
+    "variants": [
+      {
+        "rule": {
+          "name": "N1_SelectedLanguage",
+          "value": "es-es",
+          "__resolveType": "website/matchers/cookie.ts"
+        },
+        "value": [
+          { "__resolveType": "Theme" },
+          { "__resolveType": "header-principal" },
+          {
+            "banners": [
+              {
+                "images": {
+                  "mobile": {
+                    "alt": "Banner clientes mobile",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ca46ada8-a939-4a82-bb27-21d5a72d95ca",
+                    "width": "390",
+                    "height": "500"
+                  },
+                  "desktop": {
+                    "alt": "Banner Clientes",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a30de75b-ce77-49e7-a6da-d3bb68e391a0",
+                    "width": "1440",
+                    "height": "482"
+                  }
+                },
+                "matcher": "/clientes"
+              }
+            ],
+            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+          },
+          {
+            "brand": [
+              {
+                "alt": "Technos",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/14366d4d-d030-4d32-b383-51bdb168069a",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "euro",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/81dfef5d-4f7b-4d63-83fd-e2593f437ac2",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "fossil",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0e233236-d4d1-45f9-93fc-0a35a3aa20c6",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "timecenter",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/64cd8af9-48a0-4218-9cf9-71a2b3a127c7",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "ohboy",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7519cde-6a2b-4571-adc8-475e7ff7a713",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "sacada",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9c6bbc89-a682-4390-8d90-396d10fa39e9",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "bagaggio",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8d776b48-76b2-4fdf-ba51-da8f878c00ba",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "aviator",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/356c2a6c-336b-4fec-9604-0e79687ae53c",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "outer",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a41222a8-df7b-4171-b25f-65240fe9fa78",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "viamia",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d4875168-133a-4ba6-abd7-57b549b38653",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "damyller",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2e8699ec-0c72-46ab-b71b-9c1321b94004",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "lojasmm",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a17fa17c-0263-411a-a95c-fb1bb1968733",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "euro",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/461e716a-2d2c-4144-a50c-ae96c8d1028c",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "nossa drogaria",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/10ce36ba-8077-4624-b387-be544bb2569d",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "hospitalar",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a5b25a58-f677-491f-acad-378381ba6de0",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "yoboh",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/56e942e8-f137-4f44-a15a-8a5deca16a74",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "clovis",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ac4e6e3b-6cbd-42be-94ae-b96f0fc336a7",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "costa",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/64520434-1867-4010-8b8f-e628a7e2b1bb",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "copel",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/1afa6de1-64d2-406e-a87b-58c0841dec9e",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "cepel",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/54d2c274-4514-449d-81b0-706468fc83b5",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "motobr",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6622dddb-7367-46b7-a32d-be7013effe2a",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "gatabakana",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/355e93ed-028a-4a6d-a808-ac9049c24d8c",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "rema",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4adb7ad4-daeb-4c24-afed-9e23e46126d6",
+                "width": 200,
+                "height": 140
+              }
+            ],
+            "title": "<p><strong>Marcas que Confiam em Nós:</strong></p>",
+            "__resolveType": "site/sections/Content/BrandImage.tsx"
+          },
+          { "__resolveType": "vamos-dar-vida" },
+          { "__resolveType": "footer-principal" }
+        ]
+      },
+      {
+        "rule": {
+          "name": "N1_SelectedLanguage",
+          "value": "en-en",
+          "__resolveType": "website/matchers/cookie.ts"
+        },
+        "value": [
+          { "__resolveType": "Theme" },
+          { "__resolveType": "Header-english" },
+          {
+            "banners": [
+              {
+                "images": {
+                  "mobile": {
+                    "alt": "Banner clientes mobile",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ca46ada8-a939-4a82-bb27-21d5a72d95ca",
+                    "width": "390",
+                    "height": "500"
+                  },
+                  "desktop": {
+                    "alt": "Banner Clientes",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a30de75b-ce77-49e7-a6da-d3bb68e391a0",
+                    "width": "1440",
+                    "height": "482"
+                  }
+                },
+                "matcher": "/clientes"
+              }
+            ],
+            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+          },
+          {
+            "brand": [
+              {
+                "alt": "Technos",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/14366d4d-d030-4d32-b383-51bdb168069a",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "euro",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/81dfef5d-4f7b-4d63-83fd-e2593f437ac2",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "fossil",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0e233236-d4d1-45f9-93fc-0a35a3aa20c6",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "timecenter",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/64cd8af9-48a0-4218-9cf9-71a2b3a127c7",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "ohboy",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7519cde-6a2b-4571-adc8-475e7ff7a713",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "sacada",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9c6bbc89-a682-4390-8d90-396d10fa39e9",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "bagaggio",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8d776b48-76b2-4fdf-ba51-da8f878c00ba",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "aviator",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/356c2a6c-336b-4fec-9604-0e79687ae53c",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "outer",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a41222a8-df7b-4171-b25f-65240fe9fa78",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "viamia",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d4875168-133a-4ba6-abd7-57b549b38653",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "damyller",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2e8699ec-0c72-46ab-b71b-9c1321b94004",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "lojasmm",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a17fa17c-0263-411a-a95c-fb1bb1968733",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "euro",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/461e716a-2d2c-4144-a50c-ae96c8d1028c",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "nossa drogaria",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/10ce36ba-8077-4624-b387-be544bb2569d",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "hospitalar",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a5b25a58-f677-491f-acad-378381ba6de0",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "yoboh",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/56e942e8-f137-4f44-a15a-8a5deca16a74",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "clovis",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ac4e6e3b-6cbd-42be-94ae-b96f0fc336a7",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "costa",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/64520434-1867-4010-8b8f-e628a7e2b1bb",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "copel",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/1afa6de1-64d2-406e-a87b-58c0841dec9e",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "cepel",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/54d2c274-4514-449d-81b0-706468fc83b5",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "motobr",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6622dddb-7367-46b7-a32d-be7013effe2a",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "gatabakana",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/355e93ed-028a-4a6d-a808-ac9049c24d8c",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "rema",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4adb7ad4-daeb-4c24-afed-9e23e46126d6",
+                "width": 200,
+                "height": 140
+              }
+            ],
+            "title": "<p><strong>Brands that Trust Us:</strong></p>",
+            "__resolveType": "site/sections/Content/BrandImage.tsx"
+          },
+          { "__resolveType": "vamos dar vida - english" },
+          { "__resolveType": "footer-English" }
+        ]
+      },
+      {
+        "rule": { "__resolveType": "website/matchers/always.ts" },
+        "value": [
+          { "__resolveType": "Theme" },
+          { "__resolveType": "header-principal" },
+          {
+            "banners": [
+              {
+                "images": {
+                  "mobile": {
+                    "alt": "Banner clientes mobile",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ca46ada8-a939-4a82-bb27-21d5a72d95ca",
+                    "width": "390",
+                    "height": "500"
+                  },
+                  "desktop": {
+                    "alt": "Banner Clientes",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a30de75b-ce77-49e7-a6da-d3bb68e391a0",
+                    "width": "1440",
+                    "height": "482"
+                  }
+                },
+                "matcher": "/clientes"
+              }
+            ],
+            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+          },
+          {
+            "brand": [
+              {
+                "alt": "Technos",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/14366d4d-d030-4d32-b383-51bdb168069a",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "euro",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/81dfef5d-4f7b-4d63-83fd-e2593f437ac2",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "fossil",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0e233236-d4d1-45f9-93fc-0a35a3aa20c6",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "timecenter",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/64cd8af9-48a0-4218-9cf9-71a2b3a127c7",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "ohboy",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7519cde-6a2b-4571-adc8-475e7ff7a713",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "sacada",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9c6bbc89-a682-4390-8d90-396d10fa39e9",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "bagaggio",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8d776b48-76b2-4fdf-ba51-da8f878c00ba",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "aviator",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/356c2a6c-336b-4fec-9604-0e79687ae53c",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "outer",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a41222a8-df7b-4171-b25f-65240fe9fa78",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "viamia",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d4875168-133a-4ba6-abd7-57b549b38653",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "damyller",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2e8699ec-0c72-46ab-b71b-9c1321b94004",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "lojasmm",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a17fa17c-0263-411a-a95c-fb1bb1968733",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "euro",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/461e716a-2d2c-4144-a50c-ae96c8d1028c",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "nossa drogaria",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/10ce36ba-8077-4624-b387-be544bb2569d",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "hospitalar",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a5b25a58-f677-491f-acad-378381ba6de0",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "yoboh",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/56e942e8-f137-4f44-a15a-8a5deca16a74",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "clovis",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ac4e6e3b-6cbd-42be-94ae-b96f0fc336a7",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "costa",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/64520434-1867-4010-8b8f-e628a7e2b1bb",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "copel",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/1afa6de1-64d2-406e-a87b-58c0841dec9e",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "cepel",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/54d2c274-4514-449d-81b0-706468fc83b5",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "motobr",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6622dddb-7367-46b7-a32d-be7013effe2a",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "gatabakana",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/355e93ed-028a-4a6d-a808-ac9049c24d8c",
+                "width": 200,
+                "height": 140
+              },
+              {
+                "alt": "rema",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4adb7ad4-daeb-4c24-afed-9e23e46126d6",
+                "width": 200,
+                "height": 140
+              }
+            ],
+            "title": "<h1><strong>Marcas que Confiam em Nós:</strong></h1>",
+            "__resolveType": "site/sections/Content/BrandImage.tsx"
+          },
+          { "__resolveType": "vamos-dar-vida" },
+          { "__resolveType": "footer-principal" },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/689ab746-9129-4fcd-a7c0-16df1015be9f",
+            "title": "Clientes N1.AG | Lojas Online que confiam na nossa Consultoria Ecommerce",
+            "canonical": "https://www.n1.ag/clientes",
+            "description": "Conheça os clientes da N1.AG que confiam em nossa consultoria em e-commerce. Como uma agência especializada em e-commerce e parceira oficial da plataforma VTEX e Deco.cx, nossos clientes contam com as melhores estratégias para alcançar o sucesso no mundo do comércio eletrônico.",
+            "__resolveType": "website/sections/Seo/SeoV2.tsx",
+            "titleTemplate": "Clientes N1.AG | Lojas Online que confiam na nossa Consultoria Ecommerce",
+            "descriptionTemplate": "Conheça os clientes da N1.AG que confiam em nossa consultoria em e-commerce. Como uma agência especializada em e-commerce e parceira oficial da plataforma VTEX e Deco.cx, nossos clientes contam com as melhores estratégias para alcançar o sucesso no mundo do comércio eletrônico."
+          }
+        ]
+      }
+    ],
+    "__resolveType": "website/flags/multivariate.ts"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
