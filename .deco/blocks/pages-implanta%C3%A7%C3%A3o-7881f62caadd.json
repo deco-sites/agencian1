@@ -442,15 +442,22 @@
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
           {
-            "items": [
-              {
-                "category": "Nossos Serviços",
-                "subcategory": "Implantação"
-              }
-            ],
-            "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
+            "__resolveType": "site/sections/Links/CTA.tsx",
+            "buttonAds": {
+              "text": "Fale com nossos especialistas",
+              "telephone": "22",
+              "width": "376",
+              "activeArrow": true
+            },
+            "layout": {
+              "marginTop": "-110px",
+              "marginTopMobile": "0",
+              "marginLeft": "70px",
+              "marginLeftMobile": "0"
+            }
           },
           {
+            "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
             "icon": {
               "alt": "Icon top",
               "mobile": {
@@ -465,7 +472,6 @@
               }
             },
             "title": "Com o foco em aumentar a performance e a conversão da sua loja",
-            "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
             "backgroundImage": {
               "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7f1db9c-ae6c-4aa8-b7e0-1f200601771c",
               "width": 1440,
@@ -474,6 +480,7 @@
             "activeBackground": true
           },
           {
+            "__resolveType": "site/sections/Content/TextIconAndImage.tsx",
             "image": {
               "mobile": {
                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/e499635d-f929-4717-94a0-35bb97d4d909",
@@ -496,10 +503,10 @@
               "addKeysInWords": false,
               "activeEclipseText": true
             },
-            "placement": "esquerdo",
-            "__resolveType": "site/sections/Content/TextIconAndImage.tsx"
+            "placement": "esquerdo"
           },
           {
+            "__resolveType": "site/sections/Content/IconText.tsx",
             "grid": {
               "row": [
                 {
@@ -571,10 +578,10 @@
                   "addKeysInWords": true
                 }
               ]
-            },
-            "__resolveType": "site/sections/Content/IconText.tsx"
+            }
           },
           {
+            "__resolveType": "site/sections/Content/TextIconAndImage.tsx",
             "image": {
               "mobile": {
                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/35a8f62a-37a9-40e5-b832-70536c5d0876",
@@ -598,8 +605,7 @@
               "description": "<p>A Euro Relógios enfrentava dificuldades com sua antiga versão do CMS VTEX, prejudicando a operação e o desempenho do site. A N1.AG assumiu o desafio de migrar o storefront para a Deco.cx, uma solução headless com inúmeras vantagens. A parceria resultou em melhorias significativas na experiência do usuário, gerando mais oportunidades de vendas online.&nbsp;</p>",
               "addKeysInWords": true
             },
-            "placement": "esquerdo",
-            "__resolveType": "site/sections/Content/TextIconAndImage.tsx"
+            "placement": "esquerdo"
           },
           {
             "__resolveType": "vamos-dar-vida"
@@ -608,11 +614,11 @@
             "__resolveType": "footer-principal"
           },
           {
+            "__resolveType": "website/sections/Seo/SeoV2.tsx",
             "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/996e3099-bb1d-423b-9498-a77eaab10d39",
             "title": "Implantação N1.AG | Construímos a sua loja virtual personalizada",
             "canonical": "/nossos-servicos/implantacao",
             "description": "Conheça o serviço de implantação da N1.AG e leve sua loja virtual do planejamento à realidade. Implementamos lojas online nas principais plataformas de e-commerce como  VTEX, Deco.cx, Shopify e Sales Force. Somos especialista em consultoria de e-commerce para a sua loja online. ",
-            "__resolveType": "website/sections/Seo/SeoV2.tsx",
             "titleTemplate": "Implantação N1.AG | Construímos a sua loja virtual personalizada",
             "descriptionTemplate": "Conheça o serviço de implantação da N1.AG e leve sua loja virtual do planejamento à realidade. Implementamos lojas online nas principais plataformas de e-commerce como  VTEX, Deco.cx, Shopify e Sales Force. Somos especialista em consultoria de e-commerce para a sua loja online. "
           }

@@ -10,8 +10,17 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "fonts": [{ "fontFamily": "Poppins" }], "__resolveType": "Theme" },
-          { "__resolveType": "header-espanhol" },
+          {
+            "fonts": [
+              {
+                "fontFamily": "Poppins"
+              }
+            ],
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-espanhol"
+          },
           {
             "dots": true,
             "arrows": true,
@@ -23,13 +32,17 @@
               },
               {
                 "alt": "Banner 02",
-                "action": { "href": "https://www.n1.ag/cases/euro-relogios" },
+                "action": {
+                  "href": "https://www.n1.ag/cases/euro-relogios"
+                },
                 "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/67220716-1ec0-4c78-a07e-4361482f013b",
                 "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/21ca4921-8947-494e-bb31-6d174e17fee9"
               },
               {
                 "alt": "Banner 03",
-                "action": { "href": "https://www.n1.ag/cases/hospitalar" },
+                "action": {
+                  "href": "https://www.n1.ag/cases/hospitalar"
+                },
                 "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/dd492fb5-62ea-40be-9842-2b09fbd1e374",
                 "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4d9a99de-ccad-4cd9-af41-80bfdb9290ad"
               }
@@ -37,7 +50,9 @@
             "preload": true,
             "__resolveType": "site/sections/Images/Carousel.tsx"
           },
-          { "__resolveType": "somos-experts" },
+          {
+            "__resolveType": "somos-experts"
+          },
           {
             "image": [
               "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bf2fb4ec-ed03-43c1-9b1f-0d93a09bd4cf"
@@ -1039,8 +1054,12 @@
               }
             ]
           },
-          { "__resolveType": "vamos-dar-vida" },
-          { "__resolveType": "footer-principal" }
+          {
+            "__resolveType": "vamos-dar-vida"
+          },
+          {
+            "__resolveType": "footer-principal"
+          }
         ]
       },
       {
@@ -1050,8 +1069,17 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "fonts": [{ "fontFamily": "Poppins" }], "__resolveType": "Theme" },
-          { "__resolveType": "Header-english" },
+          {
+            "fonts": [
+              {
+                "fontFamily": "Poppins"
+              }
+            ],
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "Header-english"
+          },
           {
             "dots": true,
             "arrows": false,
@@ -1063,13 +1091,17 @@
               },
               {
                 "alt": "Banner 02",
-                "action": { "href": "https://www.n1.ag/cases/hospitalar" },
+                "action": {
+                  "href": "https://www.n1.ag/cases/hospitalar"
+                },
                 "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2a3a5087-ea29-4e20-9f06-324129db7857",
                 "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/12476747-481f-4392-83a1-e281b84c1735"
               },
               {
                 "alt": "Banner 03",
-                "action": { "href": "https://www.n1.ag/cases/euro-relogios" },
+                "action": {
+                  "href": "https://www.n1.ag/cases/euro-relogios"
+                },
                 "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/f9012f1d-7d70-4006-8a95-c0d43143ac32",
                 "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b79360a9-262d-4fbe-8daf-4e0541d2b41a"
               }
@@ -2121,14 +2153,22 @@
               }
             ]
           },
-          { "__resolveType": "vamos dar vida - english" },
-          { "__resolveType": "footer-English" }
+          {
+            "__resolveType": "vamos dar vida - english"
+          },
+          {
+            "__resolveType": "footer-English"
+          }
         ]
       },
       {
-        "rule": { "__resolveType": "website/matchers/always.ts" },
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
         "value": [
-          { "__resolveType": "Theme" },
+          {
+            "__resolveType": "Theme"
+          },
           {
             "url": "https://www.n1.ag/",
             "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2ad88db8-bab0-4e55-8877-a5041085bf3e",
@@ -2154,33 +2194,12 @@
             "url": "https://www.n1.ag/ads",
             "__resolveType": "site/sections/Analytics/UrlCanonical.tsx"
           },
-          { "__resolveType": "header-principal" },
           {
-            "text": {
-              "title": "<p>Olá🤩!</p>",
-              "description": "<p><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">Recebemos sua mensagem!</span> Estamos trabalhando para responder o mais rápido possível. Em breve, estaremos de volta com uma resposta! 🌟</p>"
-            },
-            "image": { "mobile": {}, "desktop": {} },
-            "fieldsForm": {
-              "ads": true,
-              "email": "E-MAIL",
-              "title": "VAMOS CONVERSAR? NOS CONTATE VIA WHATSAPP OU PREENCHENDO AS INFORMAÇÕES ABAIXO:",
-              "message": "Mensagem",
-              "fontSize": "base",
-              "name_user": "Nome",
-              "textButton": "Enviar",
-              "buttonStyle": "ads",
-              "name_company": "Nome da Empresa",
-              "phone_number": "CELULAR / WHATSAPP",
-              "placeholderEmail": "Digite seu e-mail",
-              "placeholderMessage": "Descreva brevemente a sua necessidade para identificarmos a melhor proposta",
-              "placeholderName_user": "Seu nome aqui",
-              "placeholderName_company": "Opcional*"
-            },
-            "__resolveType": "site/sections/Institucional/ContactForm.tsx",
-            "activeModalForm": "Não"
+            "__resolveType": "header-principal"
           },
           {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4a7cc0d4-8ae0-492c-87f8-28839bc987a8",
+            "__resolveType": "site/sections/Content/Hero.tsx",
             "cta": [
               {
                 "text": "90",
@@ -2203,7 +2222,6 @@
                 "colorText": "#ffffff"
               }
             ],
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4a7cc0d4-8ae0-492c-87f8-28839bc987a8",
             "title": "<h2><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><strong><span style=\"font-size: 70px; line-height: 77px;\" data-mce-style=\"font-size: 70px; line-height: 77px;\">Somos experts em</span></strong></span></h2>",
             "titleCta": "<h3><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><strong><span style=\"font-size: 20px; line-height: 46px;\" data-mce-style=\"font-size: 20px; line-height: 46px;\">Nossos resultados em números:</span></strong></span></h3>",
             "ButtonAds": {
@@ -2219,11 +2237,38 @@
             "translateY": 70,
             "widthImage": 487,
             "description": "<h1><span style=\"color: rgb(255, 255, 255); font-size: 20px; line-height: 28px;\" data-mce-style=\"color: rgb(255, 255, 255); font-size: 20px; line-height: 28px;\"><strong>9 anos como uma das melhores agências de e-commerce, atuando com plataformas como VTEX, Deco.cx, Shopify e Sales Force. Somos especialista em consultoria de e-commerce para a sua loja online.</strong></span></h1>",
-            "__resolveType": "site/sections/Content/Hero.tsx",
             "placementImage": "right",
             "positionManual": true,
             "colorDescription": "#3ccbda",
             "descriptionAnimation": "Uau Commerce, Performance, Digital"
+          },
+          {
+            "image": {
+              "mobile": {},
+              "desktop": {}
+            },
+            "__resolveType": "site/sections/Institucional/ContactForm.tsx",
+            "text": {
+              "title": "<p>Olá🤩!</p>",
+              "description": "<p><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">Recebemos sua mensagem!</span> Estamos trabalhando para responder o mais rápido possível. Em breve, estaremos de volta com uma resposta! 🌟</p>"
+            },
+            "fieldsForm": {
+              "ads": true,
+              "email": "E-MAIL",
+              "title": "VAMOS CONVERSAR? NOS CONTATE VIA WHATSAPP OU PREENCHENDO AS INFORMAÇÕES ABAIXO:",
+              "message": "Mensagem",
+              "fontSize": "base",
+              "name_user": "Nome",
+              "textButton": "Enviar",
+              "buttonStyle": "ads",
+              "name_company": "Nome da Empresa",
+              "phone_number": "CELULAR / WHATSAPP",
+              "placeholderEmail": "Digite seu e-mail",
+              "placeholderMessage": "Descreva brevemente a sua necessidade para identificarmos a melhor proposta",
+              "placeholderName_user": "Seu nome aqui",
+              "placeholderName_company": "Opcional*"
+            },
+            "activeModalForm": "Não"
           },
           {
             "image": [
@@ -2444,7 +2489,9 @@
                   "width": 123,
                   "height": 132
                 },
-                "ButtonAds": { "activeArrow": true },
+                "ButtonAds": {
+                  "activeArrow": true
+                },
                 "buttonStyle": "ads",
                 "settingsInfo": {
                   "href": "https://api.whatsapp.com/send/?phone=5521965744132&text&type=phone_number&app_absent=0",
@@ -2520,13 +2567,18 @@
               }
             ],
             "interval": 2,
-            "mobileMargin": { "bottom": 80, "marginBottomMobile": 80 },
+            "mobileMargin": {
+              "bottom": 80,
+              "marginBottomMobile": 80
+            },
             "__resolveType": "site/sections/Content/TextTopWidthCarousel.tsx"
           },
           {
             "text": "{Confira alguns dos nossos projetos abaixo} 🚀",
             "addBar": true,
-            "margin": { "bottom": 80 },
+            "margin": {
+              "bottom": 80
+            },
             "subtitle": "<h2><span style=\"color: rgb(255, 255, 255); font-size: 56px; font-weight: 900; line-height: 61.6px;\" data-mce-style=\"color: rgb(255, 255, 255); font-size: 56px; font-weight: 900; line-height: 61.6px;\"><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">﻿</span></span>cases de sucesso</span></h2>",
             "ButtonAds": {
               "text": "Entre em contato ",
@@ -2762,13 +2814,18 @@
             "backgroundImageActive": true,
             "backgroundImageHeight": 854
           },
-          { "__resolveType": "vamos-dar-vida" },
+          {
+            "__resolveType": "vamos-dar-vida"
+          },
           {
             "text": {
               "title": "<p>Olá🤩!</p>",
               "description": "<p><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">Recebemos sua mensagem!</span> Estamos trabalhando para responder o mais rápido possível. Em breve, estaremos de volta com uma resposta! 🌟</p>"
             },
-            "image": { "mobile": {}, "desktop": {} },
+            "image": {
+              "mobile": {},
+              "desktop": {}
+            },
             "fieldsForm": {
               "ads": true,
               "email": "E-MAIL",
