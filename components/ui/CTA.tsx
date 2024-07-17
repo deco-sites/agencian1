@@ -11,7 +11,7 @@ export interface CTAPhone {
   fontSize?: string;
 }
 export interface CTALayout {
-  backgroundColor?: string
+  backgroundColor?: string;
   customClass?: string;
 }
 
