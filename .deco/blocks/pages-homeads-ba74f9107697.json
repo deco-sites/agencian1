@@ -2774,13 +2774,11 @@
               "activeArrow": true,
               "customClass": "!m-0"
             },
-            "hrefButton": "/cases",
             "textButton": "confira outros cases",
             "__resolveType": "site/sections/Content/CasesComponent.tsx",
             "settingsImage": [
               {
                 "alt": "Euro Relógios",
-                "href": "/cases/euro-relogios",
                 "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/cc4acfac-a718-4251-80eb-f0d4c31b7772",
                 "infoText": "Performance",
                 "tagProps": [
@@ -2816,7 +2814,6 @@
               },
               {
                 "alt": "Hospitalar",
-                "href": "/cases/hospitalar",
                 "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/de121eab-9a8c-4dc9-9fb0-3b0e6a8f9803",
                 "infoText": "Receita",
                 "tagProps": [
@@ -2871,7 +2868,6 @@
               },
               {
                 "alt": "Ohboy",
-                "href": "/cases/oh-boy",
                 "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/26e40687-b752-464a-aae3-23b6dbf2e9a1",
                 "infoText": "Rápido",
                 "tagProps": [

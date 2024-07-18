@@ -696,7 +696,7 @@
               "width": "376"
             },
             "layout": {
-              "customClass": "md:n1-container md:px-[120px]",
+              "customClass": "md:n1-container md:px-[120px] z-10 relative",
               "marginLeft": "-40px",
               "marginTop": "-110px",
               "marginTopMobile": "-70px",
