@@ -453,7 +453,10 @@
               "customClass": "container ",
               "marginTop": "-110px",
               "marginLeft": "-52px",
-              "marginBottom": "20px"
+              "marginBottom": "20px",
+              "marginTopMobile": "0",
+              "marginBottomMobile": "0",
+              "marginLeftMobile": "0"
             }
           },
           {
@@ -516,7 +519,9 @@
             "layout": {
               "marginTop": "-120px",
               "customClass": "md:n1-container md:px-[120px]",
-              "marginLeft": "-40px"
+              "marginLeft": "-40px",
+              "marginTopMobile": "-20px",
+              "marginLeftMobile": "0"
             }
           },
           {

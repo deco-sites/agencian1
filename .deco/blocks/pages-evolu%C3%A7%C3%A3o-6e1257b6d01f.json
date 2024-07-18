@@ -636,7 +636,9 @@
             "layout": {
               "customClass": "container ",
               "marginLeft": "-52px",
-              "marginTop": "-120px"
+              "marginTop": "-120px",
+              "marginTopMobile": "0",
+              "marginLeftMobile": "0"
             }
           },
           {
@@ -696,7 +698,10 @@
             "layout": {
               "marginTop": "-120px",
               "marginLeft": "-40px",
-              "customClass": "md:n1-container md:px-[120px]"
+              "customClass": "md:n1-container md:px-[120px]",
+              "marginLeftMobile": "0",
+              "marginTopMobile": "-70px",
+              "marginBottom": "10px"
             }
           },
           {
