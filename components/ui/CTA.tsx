@@ -38,28 +38,35 @@ export interface Props {
 }
 
 function Cta({ buttonAds, layout, device }: ReturnType<typeof loader>) {
-  const { marginTop, marginTopMobile, marginBottom, marginBottomMobile, marginLeft, marginLeftMobile } = layout || {};
+  const {
+    marginTop,
+    marginTopMobile,
+    marginBottom,
+    marginBottomMobile,
+    marginLeft,
+    marginLeftMobile,
+  } = layout || {};
   const isDesktop = device === "desktop";
+
+  console.log(device, ">>>>>>");
+  
 
   return (
     <div
-
       class={clx(`${layout?.customClass ? layout?.customClass : ""}`)}
     >
       <div
-        style={
-          isDesktop
-            ? {
-                marginTop: `${marginTop}`,
-                marginBottom: `${marginBottom}`,
-                marginLeft: `${marginLeft}`,
-              }
-            : {
-                marginTop: `${marginTopMobile || marginTop}`,
-                marginBottom: `${marginBottomMobile || marginBottom}`,
-                marginLeft: `${marginLeft || marginLeftMobile}}`,
-              }
-        }
+        style={isDesktop
+          ? {
+            marginTop: `${marginTop}`,
+            marginBottom: `${marginBottom}`,
+            marginLeft: `${marginLeft}`,
+          }
+          : {
+            marginTop: `${marginTopMobile || marginTop}`,
+            marginBottom: `${marginBottomMobile || marginBottom}`,
+            marginLeft: `${marginLeft || marginLeftMobile}`,
+          }}
       >
         <LinkTelephoneWithOptionArrow
           text={buttonAds?.text}

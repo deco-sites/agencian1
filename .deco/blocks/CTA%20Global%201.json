@@ -9,7 +9,8 @@
   "layout": {
     "marginTop": "-110px",
     "marginTopMobile": "0",
-    "marginLeft": "70px",
-    "marginLeftMobile": "0"
+    "marginLeft": "0",
+    "marginLeftMobile": "0",
+    "customClass": "md:n1-container md:px-[120px]"
   }
 }

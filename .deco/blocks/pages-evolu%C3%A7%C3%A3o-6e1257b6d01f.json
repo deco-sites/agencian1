@@ -626,7 +626,18 @@
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
           {
-            "__resolveType": "CTA Global 1"
+            "__resolveType": "site/sections/Links/CTA.tsx",
+            "buttonAds": {
+              "text": "Fale com nossos especialistas",
+              "telephone": "21965744132",
+              "activeArrow": true,
+              "width": "376"
+            },
+            "layout": {
+              "customClass": "container ",
+              "marginLeft": "-52px",
+              "marginTop": "-120px"
+            }
           },
           {
             "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
@@ -675,7 +686,18 @@
             "placement": "esquerdo"
           },
           {
-            "__resolveType": "CTA Global 2"
+            "__resolveType": "site/sections/Links/CTA.tsx",
+            "buttonAds": {
+              "text": "Fale com nossos especialistas",
+              "telephone": "21965744132",
+              "activeArrow": true,
+              "width": "376"
+            },
+            "layout": {
+              "marginTop": "-120px",
+              "marginLeft": "-40px",
+              "customClass": "md:n1-container md:px-[120px]"
+            }
           },
           {
             "__resolveType": "site/sections/Content/IconText.tsx",
