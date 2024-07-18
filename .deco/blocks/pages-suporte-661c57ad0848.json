@@ -10,8 +10,12 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-principal" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-principal"
+          },
           {
             "banners": [
               {
@@ -36,7 +40,10 @@
           },
           {
             "items": [
-              { "category": "Nossos Serviços", "subcategory": "Suporte" }
+              {
+                "category": "Nossos Serviços",
+                "subcategory": "Suporte"
+              }
             ],
             "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
           },
@@ -159,8 +166,12 @@
             },
             "__resolveType": "site/sections/Content/IconText.tsx"
           },
-          { "__resolveType": "vamos-dar-vida" },
-          { "__resolveType": "footer-principal" }
+          {
+            "__resolveType": "vamos-dar-vida"
+          },
+          {
+            "__resolveType": "footer-principal"
+          }
         ]
       },
       {
@@ -170,8 +181,12 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "Header-english" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "Header-english"
+          },
           {
             "banners": [
               {
@@ -196,7 +211,10 @@
           },
           {
             "items": [
-              { "category": "Nossos Serviços", "subcategory": "Suporte" }
+              {
+                "category": "Nossos Serviços",
+                "subcategory": "Suporte"
+              }
             ],
             "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
           },
@@ -319,15 +337,25 @@
             },
             "__resolveType": "site/sections/Content/IconText.tsx"
           },
-          { "__resolveType": "vamos dar vida - english" },
-          { "__resolveType": "footer-English" }
+          {
+            "__resolveType": "vamos dar vida - english"
+          },
+          {
+            "__resolveType": "footer-English"
+          }
         ]
       },
       {
-        "rule": { "__resolveType": "website/matchers/always.ts" },
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-principal" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-principal"
+          },
           {
             "banners": [
               {
@@ -351,12 +379,10 @@
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
           {
-            "items": [
-              { "category": "Nossos Serviços", "subcategory": "Suporte" }
-            ],
-            "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
+            "__resolveType": "CTA Global 1"
           },
           {
+            "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
             "icon": {
               "alt": "Icon top",
               "mobile": {
@@ -371,7 +397,6 @@
               }
             },
             "title": "Com o foco em aumentar a performance e a conversão da sua loja",
-            "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
             "backgroundImage": {
               "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/54522cd0-bc9c-4458-b236-4e344ad0397b",
               "width": 1440,
@@ -380,6 +405,7 @@
             "activeBackground": true
           },
           {
+            "__resolveType": "site/sections/Content/TextIconAndImage.tsx",
             "image": {
               "mobile": {
                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ad4b9dee-ddd1-4388-94db-60195e3435bd",
@@ -400,10 +426,13 @@
               "activeEclipseText": true
             },
             "placement": "esquerdo",
-            "titleCenter": "<p><br data-mce-bogus=\"1\"></p>",
-            "__resolveType": "site/sections/Content/TextIconAndImage.tsx"
+            "titleCenter": "<p><br data-mce-bogus=\"1\"></p>"
           },
           {
+            "__resolveType": "CTA Global 2"
+          },
+          {
+            "__resolveType": "site/sections/Content/IconText.tsx",
             "grid": {
               "row": [
                 {
@@ -475,17 +504,20 @@
                   "addKeysInWords": true
                 }
               ]
-            },
-            "__resolveType": "site/sections/Content/IconText.tsx"
+            }
           },
-          { "__resolveType": "vamos-dar-vida" },
-          { "__resolveType": "footer-principal" },
           {
+            "__resolveType": "vamos-dar-vida"
+          },
+          {
+            "__resolveType": "footer-principal"
+          },
+          {
+            "__resolveType": "website/sections/Seo/SeoV2.tsx",
             "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/dba249a8-2b84-4c7e-85a7-e54880361dd6",
             "title": "Suporte N1.AG | Solução de desafios VTEX e integrações",
             "canonical": "/nossos-servicos/suporte",
             "description": "Obtenha suporte completo para o seu e-commerce com os serviços especializados da N1.AG. Nossa equipe está pronta para oferecer assistência técnica e atualizações contínuas para garantir o máximo desempenho e segurança da sua loja online ou aplicativo. Conte com a expertise da N1.AG para manter sua presença digital sempre em pleno funcionamento.",
-            "__resolveType": "website/sections/Seo/SeoV2.tsx",
             "titleTemplate": "Suporte N1.AG | Solução de desafios VTEX e integrações",
             "descriptionTemplate": "Obtenha suporte completo para o seu e-commerce com os serviços especializados da N1.AG. Nossa equipe está pronta para oferecer assistência técnica e atualizações contínuas para garantir o máximo desempenho e segurança da sua loja online ou aplicativo. Conte com a expertise da N1.AG para manter sua presença digital sempre em pleno funcionamento."
           }

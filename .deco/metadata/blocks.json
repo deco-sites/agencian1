@@ -212,5 +212,13 @@
     "path": "/politica-de-privacidade",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/CTA%20Global%201.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Links/CTA.tsx"
+  },
+  "/.deco/blocks/CTA%20Global%202.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Links/CTA.tsx"
   }
 }

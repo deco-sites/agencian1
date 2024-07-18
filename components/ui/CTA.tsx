@@ -43,30 +43,34 @@ function Cta({ buttonAds, layout, device }: ReturnType<typeof loader>) {
 
   return (
     <div
-      style={
-        isDesktop
-          ? {
-              marginTop: `${marginTop}`,
-              marginBottom: `${marginBottom}`,
-              marginLeft: `${marginLeft}`,
-            }
-          : {
-              marginTop: `${marginTopMobile || marginTop}`,
-              marginBottom: `${marginBottomMobile || marginBottom}`,
-              marginLeft: `${marginLeft || marginLeftMobile}}`,
-            }
-      }
+
       class={clx(`${layout?.customClass ? layout?.customClass : ""}`)}
     >
-      <LinkTelephoneWithOptionArrow
-        text={buttonAds?.text}
-        telephone={buttonAds?.telephone}
-        activeArrow={buttonAds?.activeArrow}
-        width={buttonAds?.width}
-        height={buttonAds?.height}
-        customClass={buttonAds?.customClass}
-        fontSize={buttonAds?.fontSize}
-      />
+      <div
+        style={
+          isDesktop
+            ? {
+                marginTop: `${marginTop}`,
+                marginBottom: `${marginBottom}`,
+                marginLeft: `${marginLeft}`,
+              }
+            : {
+                marginTop: `${marginTopMobile || marginTop}`,
+                marginBottom: `${marginBottomMobile || marginBottom}`,
+                marginLeft: `${marginLeft || marginLeftMobile}}`,
+              }
+        }
+      >
+        <LinkTelephoneWithOptionArrow
+          text={buttonAds?.text}
+          telephone={buttonAds?.telephone}
+          activeArrow={buttonAds?.activeArrow}
+          width={buttonAds?.width}
+          height={buttonAds?.height}
+          customClass={buttonAds?.customClass}
+          fontSize={buttonAds?.fontSize}
+        />
+      </div>
     </div>
   );
 }

@@ -445,15 +445,17 @@
             "__resolveType": "site/sections/Links/CTA.tsx",
             "buttonAds": {
               "text": "Fale com nossos especialistas",
-              "telephone": "22",
+              "telephone": "21965744132",
               "width": "376",
-              "activeArrow": true
+              "activeArrow": true,
+              "customClass": "ml-0"
             },
             "layout": {
               "marginTop": "-110px",
               "marginTopMobile": "0",
-              "marginLeft": "70px",
-              "marginLeftMobile": "0"
+              "marginLeft": "0",
+              "marginLeftMobile": "0",
+              "customClass": "md:n1-container md:px-[120px]  "
             }
           },
           {
@@ -504,6 +506,9 @@
               "activeEclipseText": true
             },
             "placement": "esquerdo"
+          },
+          {
+            "__resolveType": "CTA Global 2"
           },
           {
             "__resolveType": "site/sections/Content/IconText.tsx",

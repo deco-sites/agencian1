@@ -10,8 +10,12 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-principal" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-principal"
+          },
           {
             "banners": [
               {
@@ -35,7 +39,12 @@
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
           {
-            "items": [{ "category": "Serviços", "subcategory": "Evolução" }],
+            "items": [
+              {
+                "category": "Serviços",
+                "subcategory": "Evolução"
+              }
+            ],
             "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
           },
           {
@@ -63,7 +72,10 @@
           },
           {
             "image": {
-              "mobile": { "width": "350", "height": "369" },
+              "mobile": {
+                "width": "350",
+                "height": "369"
+              },
               "desktop": {
                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6f46c086-99df-4407-ba66-136dd0d6db38",
                 "width": "439",
@@ -266,7 +278,10 @@
               "activeEclipse": false
             },
             "blockText": {
-              "cta": { "text": "Confira mais sobre", "colorLink": false },
+              "cta": {
+                "text": "Confira mais sobre",
+                "colorLink": false
+              },
               "subtitle": "<p><strong><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">{</span>Confira um case deste serviço<span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">}</span></strong></p>",
               "widthBlock": 50,
               "description": "<p>Lorem ipsum dolor sit amet consectetur. Erat ut ipsum velit nunc enim in. Et amet nibh malesuada odio ut. Tristique tortor placerat eget tellus dignissim. Tristique accumsan maecenas condimentum vel amet nibh.</p>"
@@ -274,8 +289,12 @@
             "placement": "esquerdo",
             "__resolveType": "site/sections/Content/TextIconAndImage.tsx"
           },
-          { "__resolveType": "vamos-dar-vida" },
-          { "__resolveType": "footer-principal" }
+          {
+            "__resolveType": "vamos-dar-vida"
+          },
+          {
+            "__resolveType": "footer-principal"
+          }
         ]
       },
       {
@@ -285,8 +304,12 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "Header-english" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "Header-english"
+          },
           {
             "banners": [
               {
@@ -310,7 +333,12 @@
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
           {
-            "items": [{ "category": "Serviços", "subcategory": "Evolução" }],
+            "items": [
+              {
+                "category": "Serviços",
+                "subcategory": "Evolução"
+              }
+            ],
             "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
           },
           {
@@ -338,7 +366,10 @@
           },
           {
             "image": {
-              "mobile": { "width": "350", "height": "369" },
+              "mobile": {
+                "width": "350",
+                "height": "369"
+              },
               "desktop": {
                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6f46c086-99df-4407-ba66-136dd0d6db38",
                 "width": "439",
@@ -553,15 +584,25 @@
             "placement": "esquerdo",
             "__resolveType": "site/sections/Content/TextIconAndImage.tsx"
           },
-          { "__resolveType": "vamos dar vida - english" },
-          { "__resolveType": "footer-English" }
+          {
+            "__resolveType": "vamos dar vida - english"
+          },
+          {
+            "__resolveType": "footer-English"
+          }
         ]
       },
       {
-        "rule": { "__resolveType": "website/matchers/always.ts" },
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-principal" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-principal"
+          },
           {
             "banners": [
               {
@@ -585,10 +626,10 @@
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
           {
-            "items": [{ "category": "Serviços", "subcategory": "Web Insight" }],
-            "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
+            "__resolveType": "CTA Global 1"
           },
           {
+            "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
             "icon": {
               "alt": "Icon Top",
               "mobile": {
@@ -603,7 +644,6 @@
               }
             },
             "title": "Com o foco em aumentar a performance e a conversão da sua loja",
-            "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
             "backgroundImage": {
               "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8e06ab03-131e-4591-b8ec-6101da3929fb",
               "width": 1440,
@@ -612,8 +652,12 @@
             "activeBackground": true
           },
           {
+            "__resolveType": "site/sections/Content/TextIconAndImage.tsx",
             "image": {
-              "mobile": { "width": "350", "height": "369" },
+              "mobile": {
+                "width": "350",
+                "height": "369"
+              },
               "desktop": {
                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/989ad333-8b8b-47bb-b803-47ddf4e1536d",
                 "width": "439",
@@ -628,10 +672,13 @@
               "addKeysInWords": true,
               "activeEclipseText": true
             },
-            "placement": "esquerdo",
-            "__resolveType": "site/sections/Content/TextIconAndImage.tsx"
+            "placement": "esquerdo"
           },
           {
+            "__resolveType": "CTA Global 2"
+          },
+          {
+            "__resolveType": "site/sections/Content/IconText.tsx",
             "row": {
               "icon": [
                 {
@@ -802,10 +849,10 @@
                   ]
                 }
               ]
-            },
-            "__resolveType": "site/sections/Content/IconText.tsx"
+            }
           },
           {
+            "__resolveType": "site/sections/Content/TextIconAndImage.tsx",
             "image": {
               "mobile": {
                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0ea99203-b364-486e-ad6f-bf1f01eebce4",
@@ -830,17 +877,20 @@
               "description": "<p>Utilizando nosso Projeto Template, aprimoramos significativamente a interface da Hospitalar Distribuidora, resultando em notável melhoria no PageSpeed Insights. O cliente optou por agregar valor com serviços de Web Insight e Mídia Paga, garantindo um ótimo desempenho no mercado. Agora, com tempos de carregamento mais rápidos, o e-commerce está pronto para criar ainda mais oportunidades de vendas.</p>",
               "addKeysInWords": true
             },
-            "placement": "esquerdo",
-            "__resolveType": "site/sections/Content/TextIconAndImage.tsx"
+            "placement": "esquerdo"
           },
-          { "__resolveType": "vamos-dar-vida" },
-          { "__resolveType": "footer-principal" },
           {
+            "__resolveType": "vamos-dar-vida"
+          },
+          {
+            "__resolveType": "footer-principal"
+          },
+          {
+            "__resolveType": "website/sections/Seo/SeoV2.tsx",
             "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ae167206-a28f-445e-a40c-77efb1fa56b3",
             "title": "WEB Insight N1.AG | Identifique comportamentos dos usuários e aumente conversão",
             "canonical": "/nossos-servicos/web-insight",
             "description": "Com a consultoria Web Insight, você vai identificar o comportamento do seu público, tomar decisões estratégicas e melhorar a conversão da sua loja online.",
-            "__resolveType": "website/sections/Seo/SeoV2.tsx",
             "titleTemplate": "WEB Insight N1.AG | Identifique comportamentos dos usuários e aumente conversão",
             "descriptionTemplate": "Com a consultoria Web Insight, você vai identificar o comportamento do seu público, tomar decisões estratégicas e melhorar a conversão da sua loja online."
           }

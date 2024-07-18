@@ -10,8 +10,12 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-principal" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-principal"
+          },
           {
             "banners": [
               {
@@ -36,7 +40,10 @@
           },
           {
             "items": [
-              { "category": "Nossos Serviços", "subcategory": "Mídia Paga" }
+              {
+                "category": "Nossos Serviços",
+                "subcategory": "Mídia Paga"
+              }
             ],
             "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
           },
@@ -65,7 +72,10 @@
           },
           {
             "image": {
-              "mobile": { "width": "327", "height": "271" },
+              "mobile": {
+                "width": "327",
+                "height": "271"
+              },
               "desktop": {
                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2278467d-32f1-4ef3-9720-d67590fdbf10",
                 "width": "625",
@@ -154,8 +164,12 @@
             },
             "__resolveType": "site/sections/Content/IconText.tsx"
           },
-          { "__resolveType": "vamos-dar-vida" },
-          { "__resolveType": "footer-principal" }
+          {
+            "__resolveType": "vamos-dar-vida"
+          },
+          {
+            "__resolveType": "footer-principal"
+          }
         ]
       },
       {
@@ -165,8 +179,12 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "Header-english" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "Header-english"
+          },
           {
             "banners": [
               {
@@ -191,7 +209,10 @@
           },
           {
             "items": [
-              { "category": "Nossos Serviços", "subcategory": "Mídia Paga" }
+              {
+                "category": "Nossos Serviços",
+                "subcategory": "Mídia Paga"
+              }
             ],
             "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
           },
@@ -220,7 +241,10 @@
           },
           {
             "image": {
-              "mobile": { "width": "327", "height": "271" },
+              "mobile": {
+                "width": "327",
+                "height": "271"
+              },
               "desktop": {
                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2278467d-32f1-4ef3-9720-d67590fdbf10",
                 "width": "625",
@@ -309,15 +333,25 @@
             },
             "__resolveType": "site/sections/Content/IconText.tsx"
           },
-          { "__resolveType": "vamos dar vida - english" },
-          { "__resolveType": "footer-English" }
+          {
+            "__resolveType": "vamos dar vida - english"
+          },
+          {
+            "__resolveType": "footer-English"
+          }
         ]
       },
       {
-        "rule": { "__resolveType": "website/matchers/always.ts" },
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-principal" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-principal"
+          },
           {
             "banners": [
               {
@@ -341,12 +375,10 @@
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
           {
-            "items": [
-              { "category": "Nossos Serviços", "subcategory": "Mídia Paga" }
-            ],
-            "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
+            "__resolveType": "CTA Global 1"
           },
           {
+            "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
             "icon": {
               "alt": "Icon top",
               "mobile": {
@@ -361,7 +393,6 @@
               }
             },
             "title": "Com o foco em aumentar a performance e a conversão da sua loja",
-            "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
             "backgroundImage": {
               "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ad747893-7e00-4812-9a40-54808d51f1a8",
               "width": 1440,
@@ -370,8 +401,12 @@
             "activeBackground": true
           },
           {
+            "__resolveType": "site/sections/Content/TextIconAndImage.tsx",
             "image": {
-              "mobile": { "width": "327", "height": "271" },
+              "mobile": {
+                "width": "327",
+                "height": "271"
+              },
               "desktop": {
                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2278467d-32f1-4ef3-9720-d67590fdbf10",
                 "width": "625",
@@ -385,10 +420,13 @@
               "addKeysInWords": true,
               "activeEclipseText": true
             },
-            "placement": "esquerdo",
-            "__resolveType": "site/sections/Content/TextIconAndImage.tsx"
+            "placement": "esquerdo"
           },
           {
+            "__resolveType": "CTA Global 2"
+          },
+          {
+            "__resolveType": "site/sections/Content/IconText.tsx",
             "grid": {
               "row": [
                 {
@@ -460,10 +498,10 @@
                   "addKeysInWords": true
                 }
               ]
-            },
-            "__resolveType": "site/sections/Content/IconText.tsx"
+            }
           },
           {
+            "__resolveType": "site/sections/Content/TextIconAndImage.tsx",
             "image": {
               "mobile": {
                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0ea99203-b364-486e-ad6f-bf1f01eebce4",
@@ -486,17 +524,20 @@
               "description": "<p><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">Com a campanha de Mídia Paga, fizemos um trabalho bastante expressivo e transformador. Em comparativo,&nbsp;anteriormente o ROAS médio estava entre 4 e 5. Em 3 meses de trabalho, mesmo com todos os desafios dos múltiplos testes e sazonalidades anuais, conseguimos subir esta média para 19.</span></p>",
               "addKeysInWords": true
             },
-            "placement": "esquerdo",
-            "__resolveType": "site/sections/Content/TextIconAndImage.tsx"
+            "placement": "esquerdo"
           },
-          { "__resolveType": "vamos-dar-vida" },
-          { "__resolveType": "footer-principal" },
           {
+            "__resolveType": "vamos-dar-vida"
+          },
+          {
+            "__resolveType": "footer-principal"
+          },
+          {
+            "__resolveType": "website/sections/Seo/SeoV2.tsx",
             "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/44e5b9b3-eed2-40ed-8a21-8bb64a88c491",
             "title": "Mídia Paga N1.AG | Aumente a visibilidade da sua loja online",
             "canonical": "/nossos-servicos/midia-paga",
             "description": "Potencialize sua visibilidade online com o serviço de Mídia Paga da N1.AG. Nossa equipe especializada em marketing digital oferece estratégias eficazes de anúncios pagos para aumentar o alcance, engajamento e conversões. Maximize o retorno sobre o investimento (ROI) e impulsione o crescimento do seu negócio com a expertise da N1.AG.",
-            "__resolveType": "website/sections/Seo/SeoV2.tsx",
             "titleTemplate": "Mídia Paga N1.AG | Aumente a visibilidade da sua loja online",
             "descriptionTemplate": "Potencialize sua visibilidade online com o serviço de Mídia Paga da N1.AG. Nossa equipe especializada em marketing digital oferece estratégias eficazes de anúncios pagos para aumentar o alcance, engajamento e conversões. Maximize o retorno sobre o investimento (ROI) e impulsione o crescimento do seu negócio com a expertise da N1.AG."
           }

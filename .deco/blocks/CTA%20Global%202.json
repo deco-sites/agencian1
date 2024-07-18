@@ -1,0 +1,15 @@
+{
+  "__resolveType": "site/sections/Links/CTA.tsx",
+  "buttonAds": {
+    "text": "Fale com nossos especialistas",
+    "telephone": "21965744132",
+    "width": "376",
+    "activeArrow": true
+  },
+  "layout": {
+    "marginLeft": "80px",
+    "marginLeftMobile": "0",
+    "marginTopMobile": "0",
+    "marginTop": "-120px"
+  }
+}

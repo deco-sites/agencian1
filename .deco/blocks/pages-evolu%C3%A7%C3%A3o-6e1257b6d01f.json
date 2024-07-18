@@ -10,8 +10,12 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-principal" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-principal"
+          },
           {
             "banners": [
               {
@@ -36,7 +40,10 @@
           },
           {
             "items": [
-              { "category": "Nossos Serviços", "subcategory": "Evolução" }
+              {
+                "category": "Nossos Serviços",
+                "subcategory": "Evolução"
+              }
             ],
             "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
           },
@@ -65,7 +72,10 @@
           },
           {
             "image": {
-              "mobile": { "width": "350", "height": "369" },
+              "mobile": {
+                "width": "350",
+                "height": "369"
+              },
               "desktop": {
                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6f46c086-99df-4407-ba66-136dd0d6db38",
                 "width": "439",
@@ -268,7 +278,10 @@
               "activeEclipse": false
             },
             "blockText": {
-              "cta": { "text": "Confira mais sobre", "colorLink": false },
+              "cta": {
+                "text": "Confira mais sobre",
+                "colorLink": false
+              },
               "subtitle": "<p><strong><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">{</span>Confira um case deste serviço<span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">}</span></strong></p>",
               "widthBlock": 50,
               "description": "<p>Lorem ipsum dolor sit amet consectetur. Erat ut ipsum velit nunc enim in. Et amet nibh malesuada odio ut. Tristique tortor placerat eget tellus dignissim. Tristique accumsan maecenas condimentum vel amet nibh.</p>"
@@ -276,8 +289,12 @@
             "placement": "esquerdo",
             "__resolveType": "site/sections/Content/TextIconAndImage.tsx"
           },
-          { "__resolveType": "vamos-dar-vida" },
-          { "__resolveType": "footer-principal" }
+          {
+            "__resolveType": "vamos-dar-vida"
+          },
+          {
+            "__resolveType": "footer-principal"
+          }
         ]
       },
       {
@@ -287,8 +304,12 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "Header-english" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "Header-english"
+          },
           {
             "banners": [
               {
@@ -313,7 +334,10 @@
           },
           {
             "items": [
-              { "category": "Nossos Serviços", "subcategory": "Evolução" }
+              {
+                "category": "Nossos Serviços",
+                "subcategory": "Evolução"
+              }
             ],
             "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
           },
@@ -342,7 +366,10 @@
           },
           {
             "image": {
-              "mobile": { "width": "350", "height": "369" },
+              "mobile": {
+                "width": "350",
+                "height": "369"
+              },
               "desktop": {
                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6f46c086-99df-4407-ba66-136dd0d6db38",
                 "width": "439",
@@ -557,15 +584,25 @@
             "placement": "esquerdo",
             "__resolveType": "site/sections/Content/TextIconAndImage.tsx"
           },
-          { "__resolveType": "vamos dar vida - english" },
-          { "__resolveType": "footer-English" }
+          {
+            "__resolveType": "vamos dar vida - english"
+          },
+          {
+            "__resolveType": "footer-English"
+          }
         ]
       },
       {
-        "rule": { "__resolveType": "website/matchers/always.ts" },
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-principal" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-principal"
+          },
           {
             "banners": [
               {
@@ -589,12 +626,10 @@
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
           {
-            "items": [
-              { "category": "Nossos Serviços", "subcategory": "Evolução" }
-            ],
-            "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
+            "__resolveType": "CTA Global 1"
           },
           {
+            "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
             "icon": {
               "alt": "Icon Top",
               "mobile": {
@@ -609,7 +644,6 @@
               }
             },
             "title": "Com o foco em aumentar a performance e a conversão da sua loja",
-            "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
             "backgroundImage": {
               "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8e06ab03-131e-4591-b8ec-6101da3929fb",
               "width": 1440,
@@ -618,8 +652,12 @@
             "activeBackground": true
           },
           {
+            "__resolveType": "site/sections/Content/TextIconAndImage.tsx",
             "image": {
-              "mobile": { "width": "350", "height": "369" },
+              "mobile": {
+                "width": "350",
+                "height": "369"
+              },
               "desktop": {
                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6f46c086-99df-4407-ba66-136dd0d6db38",
                 "width": "439",
@@ -634,10 +672,13 @@
               "addKeysInWords": true,
               "activeEclipseText": true
             },
-            "placement": "esquerdo",
-            "__resolveType": "site/sections/Content/TextIconAndImage.tsx"
+            "placement": "esquerdo"
           },
           {
+            "__resolveType": "CTA Global 2"
+          },
+          {
+            "__resolveType": "site/sections/Content/IconText.tsx",
             "row": {
               "icon": [
                 {
@@ -807,10 +848,10 @@
                   ]
                 }
               ]
-            },
-            "__resolveType": "site/sections/Content/IconText.tsx"
+            }
           },
           {
+            "__resolveType": "site/sections/Content/TextIconAndImage.tsx",
             "image": {
               "mobile": {
                 "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a44be8fb-e3dc-406e-9df4-c9360f045c12",
@@ -835,17 +876,20 @@
               "description": "<p>Com a migração para o VTEX IO e a implementação de novas features junto à equipe especializada da N1.AG, a OH BOY! tem proporcionado aos seus usuários uma melhor experiência de navegação e compras.&nbsp;</p>",
               "addKeysInWords": true
             },
-            "placement": "esquerdo",
-            "__resolveType": "site/sections/Content/TextIconAndImage.tsx"
+            "placement": "esquerdo"
           },
-          { "__resolveType": "vamos-dar-vida" },
-          { "__resolveType": "footer-principal" },
           {
+            "__resolveType": "vamos-dar-vida"
+          },
+          {
+            "__resolveType": "footer-principal"
+          },
+          {
+            "__resolveType": "website/sections/Seo/SeoV2.tsx",
             "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/75ec4321-8316-4f19-8f52-deb92448fc4a",
             "title": "Evolução N1.AG | Melhorias e Soluções para o seu E-commerce",
             "canonical": "/nossos-servicos/evolucao",
             "description": "Descubra como a N1.AG pode impulsionar a evolução da sua loja online. Aumente as vendas e o tráfego do seu E-commerce! A N1.AG realiza análises mensais para identificar oportunidades de melhoria e aumentar o desempenho da sua loja virtual.",
-            "__resolveType": "website/sections/Seo/SeoV2.tsx",
             "titleTemplate": "Evolução N1.AG | Melhorias e Soluções para o seu E-commerce",
             "descriptionTemplate": "Descubra como a N1.AG pode impulsionar a evolução da sua loja online. Aumente as vendas e o tráfego do seu E-commerce! A N1.AG realiza análises mensais para identificar oportunidades de melhoria e aumentar o desempenho da sua loja virtual."
           }
