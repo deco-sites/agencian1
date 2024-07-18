@@ -2774,7 +2774,6 @@
               "activeArrow": true,
               "customClass": "!m-0"
             },
-            "textButton": "confira outros cases",
             "__resolveType": "site/sections/Content/CasesComponent.tsx",
             "settingsImage": [
               {

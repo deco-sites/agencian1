@@ -49,7 +49,6 @@ function Cta({ buttonAds, layout, device }: ReturnType<typeof loader>) {
   const isDesktop = device === "desktop";
 
   console.log(device, ">>>>>>");
-  
 
   return (
     <div
