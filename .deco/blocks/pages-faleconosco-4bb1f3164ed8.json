@@ -10,8 +10,12 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-principal" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-principal"
+          },
           {
             "banners": [
               {
@@ -58,7 +62,9 @@
               "email": "teste@",
               "phone": "333333",
               "title": "teste",
-              "schedule": ["xcwceec"]
+              "schedule": [
+                "xcwceec"
+              ]
             },
             "__resolveType": "site/sections/Institucional/ContactForm.tsx",
             "activeModalForm": "Não"
@@ -75,42 +81,39 @@
               "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c479914c-2e0a-4813-8b36-a16e594cd57e",
               "width": 363,
               "height": 396,
-              "position": { "X": 0, "Y": -80, "positionX": 0, "positionY": 0 }
+              "position": {
+                "X": 0,
+                "Y": -80,
+                "positionX": 0,
+                "positionY": 0
+              }
             },
             "__resolveType": "site/sections/Content/TextAndImageManualPosition.tsx"
           },
-          { "__resolveType": "footer-principal" }
+          {
+            "__resolveType": "footer-principal"
+          }
         ]
       },
       {
         "rule": {
-          "name": "N1_SelectedLanguage",
-          "value": "en-en",
-          "__resolveType": "website/matchers/cookie.ts"
+          "__resolveType": "website/matchers/location.ts",
+          "includeLocations": [
+            {
+              "coordinates": "49.908307796259486,-95.67832008000306,3070976.69974984"
+            }
+          ],
+          "excludeLocations": []
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "Header-english" },
           {
-            "banners": [
-              {
-                "images": {
-                  "mobile": {
-                    "alt": "Banner Fale conosco mobile",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/726c460e-c86f-49f6-a405-2d645876cbbb",
-                    "width": "390",
-                    "height": "500"
-                  },
-                  "desktop": {
-                    "alt": "Banner Fale conosco",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5ade5ffb-5826-400c-b0ff-ad3103c105f2",
-                    "width": "1440",
-                    "height": "482"
-                  }
-                },
-                "matcher": "/contato"
-              }
-            ],
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "Header-english"
+          },
+          {
+            "banners": [],
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
           {
@@ -154,35 +157,29 @@
               "email": "teste@",
               "phone": "333333",
               "title": "teste",
-              "schedule": ["xcwceec"]
+              "schedule": [
+                "xcwceec"
+              ]
             },
             "__resolveType": "site/sections/Institucional/ContactForm.tsx",
             "activeModalForm": "Não"
           },
           {
-            "link": {
-              "textLink": "Work with us",
-              "activeArrowInButton": false,
-              "activeButtonTransparent": false
-            },
-            "text": "<p>Do you want to be part of our team? 👩🏻‍💻</p>",
-            "image": {
-              "alt": "Background Espiral",
-              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c479914c-2e0a-4813-8b36-a16e594cd57e",
-              "width": 363,
-              "height": 396,
-              "position": { "X": 0, "Y": -80, "positionX": 0, "positionY": 0 }
-            },
-            "__resolveType": "site/sections/Content/TextAndImageManualPosition.tsx"
-          },
-          { "__resolveType": "footer-English" }
+            "__resolveType": "footer-English"
+          }
         ]
       },
       {
-        "rule": { "__resolveType": "website/matchers/always.ts" },
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-principal" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-principal"
+          },
           {
             "banners": [
               {
@@ -246,7 +243,9 @@
               "email": "teste@",
               "phone": "333333",
               "title": "teste",
-              "schedule": ["xcwceec"]
+              "schedule": [
+                "xcwceec"
+              ]
             },
             "__resolveType": "site/sections/Institucional/ContactForm.tsx",
             "activeModalForm": "Não"
@@ -264,11 +263,18 @@
               "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c479914c-2e0a-4813-8b36-a16e594cd57e",
               "width": 363,
               "height": 396,
-              "position": { "X": 0, "Y": -80, "positionX": 0, "positionY": 0 }
+              "position": {
+                "X": 0,
+                "Y": -80,
+                "positionX": 0,
+                "positionY": 0
+              }
             },
             "__resolveType": "site/sections/Content/TextAndImageManualPosition.tsx"
           },
-          { "__resolveType": "footer-principal" },
+          {
+            "__resolveType": "footer-principal"
+          },
           {
             "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ca924f6a-b8c4-4b8f-b227-d203d122ef28",
             "title": "Contato N1.AG | Fale com um de nossos especialistas em e-commerce",
