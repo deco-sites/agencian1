@@ -97,13 +97,9 @@
       },
       {
         "rule": {
-          "__resolveType": "website/matchers/location.ts",
-          "includeLocations": [
-            {
-              "coordinates": "49.908307796259486,-95.67832008000306,3070976.69974984"
-            }
-          ],
-          "excludeLocations": []
+          "__resolveType": "website/matchers/cookie.ts",
+          "name": "N1_SelectedLanguage",
+          "value": "en-en"
         },
         "value": [
           {
