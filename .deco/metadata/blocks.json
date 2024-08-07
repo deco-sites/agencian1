@@ -220,5 +220,11 @@
   "/.deco/blocks/CTA%20Global%202.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Links/CTA.tsx"
+  },
+  "/.deco/blocks/pages-Contact-983297.json": {
+    "name": "Contact",
+    "path": "/contact",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
