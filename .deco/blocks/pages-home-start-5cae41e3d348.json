@@ -10,8 +10,17 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "fonts": [{ "fontFamily": "Poppins" }], "__resolveType": "Theme" },
-          { "__resolveType": "header-espanhol" },
+          {
+            "fonts": [
+              {
+                "fontFamily": "Poppins"
+              }
+            ],
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-espanhol"
+          },
           {
             "dots": true,
             "arrows": true,
@@ -23,13 +32,17 @@
               },
               {
                 "alt": "Banner 02",
-                "action": { "href": "https://www.n1.ag/cases/euro-relogios" },
+                "action": {
+                  "href": "https://www.n1.ag/cases/euro-relogios"
+                },
                 "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/67220716-1ec0-4c78-a07e-4361482f013b",
                 "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/21ca4921-8947-494e-bb31-6d174e17fee9"
               },
               {
                 "alt": "Banner 03",
-                "action": { "href": "https://www.n1.ag/cases/hospitalar" },
+                "action": {
+                  "href": "https://www.n1.ag/cases/hospitalar"
+                },
                 "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/dd492fb5-62ea-40be-9842-2b09fbd1e374",
                 "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4d9a99de-ccad-4cd9-af41-80bfdb9290ad"
               }
@@ -37,7 +50,9 @@
             "preload": true,
             "__resolveType": "site/sections/Images/Carousel.tsx"
           },
-          { "__resolveType": "somos-experts" },
+          {
+            "__resolveType": "somos-experts"
+          },
           {
             "image": [
               "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bf2fb4ec-ed03-43c1-9b1f-0d93a09bd4cf"
@@ -1039,8 +1054,12 @@
               }
             ]
           },
-          { "__resolveType": "vamos-dar-vida" },
-          { "__resolveType": "footer-principal" }
+          {
+            "__resolveType": "vamos-dar-vida"
+          },
+          {
+            "__resolveType": "footer-principal"
+          }
         ]
       },
       {
@@ -1050,8 +1069,17 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "fonts": [{ "fontFamily": "Poppins" }], "__resolveType": "Theme" },
-          { "__resolveType": "Header-english" },
+          {
+            "fonts": [
+              {
+                "fontFamily": "Poppins"
+              }
+            ],
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "Header-english"
+          },
           {
             "dots": true,
             "arrows": false,
@@ -1063,13 +1091,17 @@
               },
               {
                 "alt": "Banner 02",
-                "action": { "href": "https://www.n1.ag/cases/hospitalar" },
+                "action": {
+                  "href": "https://www.n1.ag/cases/hospitalar"
+                },
                 "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2a3a5087-ea29-4e20-9f06-324129db7857",
                 "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/12476747-481f-4392-83a1-e281b84c1735"
               },
               {
                 "alt": "Banner 03",
-                "action": { "href": "https://www.n1.ag/cases/euro-relogios" },
+                "action": {
+                  "href": "https://www.n1.ag/cases/euro-relogios"
+                },
                 "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/f9012f1d-7d70-4006-8a95-c0d43143ac32",
                 "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b79360a9-262d-4fbe-8daf-4e0541d2b41a"
               }
@@ -2022,113 +2054,21 @@
             "__resolveType": "site/sections/Content/TextWithImage.tsx"
           },
           {
-            "text": {
-              "title": "<h2>Depoimentos</h2>",
-              "addBar": true,
-              "description": "<div><h3>Vozes dos nossos clientes: Confiança e Experiências 🥰</h3></div>",
-              "addKeysInWords": false,
-              "addIconTagInWords": false
-            },
-            "image": [
-              {
-                "alt": "Lojas MM",
-                "mobile": {
-                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2b1eecfc-ef8f-40ed-8f9c-0acc969aedad",
-                  "width": 60,
-                  "height": 60
-                },
-                "desktop": {
-                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/16c147f1-012c-42b9-9b5f-6b9b5192fff6",
-                  "width": 176,
-                  "height": 176
-                }
-              },
-              {
-                "alt": "Sacada",
-                "mobile": {
-                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4a08c84b-deae-42fb-aa68-2b2507b4d300",
-                  "width": 60,
-                  "height": 60
-                },
-                "desktop": {
-                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/34b69f15-f613-4fd5-ab67-7c865b411379",
-                  "width": 176,
-                  "height": 176
-                }
-              },
-              {
-                "alt": "Technos",
-                "mobile": {
-                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/af55488d-e7bb-4ab1-adf0-0c3e0e086d80",
-                  "width": 60,
-                  "height": 60
-                },
-                "desktop": {
-                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d981f7a3-4f1e-44c9-93d9-773e289b2f49",
-                  "width": 176,
-                  "height": 176
-                }
-              }
-            ],
-            "__resolveType": "site/sections/Content/Depositions.tsx",
-            "textPrincipal": {
-              "title": "<h2>depoimentos&nbsp;</h2>",
-              "addBar": true,
-              "description": "<p>{Vozes dos nossos clientes: Confiança e Experiências} 🥰</p>"
-            },
-            "disabledSection": false,
-            "depositionAndImage": [
-              {
-                "alt": "Euro Relógios",
-                "image": {
-                  "alt": "Lojas MM",
-                  "mobile": {
-                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5a4797fb-a737-43b0-b507-1f44e60f37a8",
-                    "width": 60,
-                    "height": 60
-                  },
-                  "desktop": {
-                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/dfdfb3f9-6732-420a-afe8-ad6ab475f10d",
-                    "width": 176,
-                    "height": 176
-                  }
-                },
-                "textSticky": {
-                  "author": "Fabiana Rodrigues",
-                  "description": "<p>A migração foi super rápida e com pouquíssimos traumas, quase nenhum para ser justa. A estética e performance da loja melhorou consideravelmente e o tempo de desenvolvimento também foi bem curto em relação a outras lojas.</p>",
-                  "jobPosition": "Gerente de E-commerce do Grupo Technos"
-                }
-              },
-              {
-                "alt": "Hospitalar Distribuidora",
-                "image": {
-                  "mobile": {
-                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b0cfdfed-fb9c-44b3-b183-15bf95fc63b4",
-                    "width": 60,
-                    "height": 60
-                  },
-                  "desktop": {
-                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a97c9b0a-24d0-4c9b-bb13-6947abbdc476",
-                    "width": 176,
-                    "height": 176
-                  }
-                },
-                "textSticky": {
-                  "author": "Gabriele",
-                  "description": "<p>Participar do desenvolvimento desse projeto de loja nova com a N1 foi gratificante pelo fato de terem profissionais extremamente dedicados e atenciosos com o que fazem e na forma como atendem os seus clientes. Sempre dispostos a ajudar no que for preciso, com expertise e simpatia. Recomendo muito!</p>",
-                  "jobPosition": "Analista de Marketing"
-                }
-              }
-            ]
+            "__resolveType": "vamos dar vida - english"
           },
-          { "__resolveType": "vamos dar vida - english" },
-          { "__resolveType": "footer-English" }
+          {
+            "__resolveType": "footer-English"
+          }
         ]
       },
       {
-        "rule": { "__resolveType": "website/matchers/always.ts" },
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
         "value": [
-          { "__resolveType": "Theme" },
+          {
+            "__resolveType": "Theme"
+          },
           {
             "url": "https://www.n1.ag/",
             "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2ad88db8-bab0-4e55-8877-a5041085bf3e",
@@ -2154,7 +2094,9 @@
             "url": "https://www.n1.ag/",
             "__resolveType": "site/sections/Analytics/UrlCanonical.tsx"
           },
-          { "__resolveType": "header-principal" },
+          {
+            "__resolveType": "header-principal"
+          },
           {
             "dots": true,
             "arrows": true,
@@ -2166,13 +2108,17 @@
               },
               {
                 "alt": "Banner 02",
-                "action": { "href": "/cases/euro-relogios" },
+                "action": {
+                  "href": "/cases/euro-relogios"
+                },
                 "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/622b1f71-9dcb-4992-9764-322ab03d36d9",
                 "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/18cec228-e8ab-44f6-84a6-9b058c07f915"
               },
               {
                 "alt": "Hospitalar Distribuidora",
-                "action": { "href": "https://www.n1.ag/cases/euro-relogios" },
+                "action": {
+                  "href": "https://www.n1.ag/cases/euro-relogios"
+                },
                 "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/864f0ea7-1cad-475c-a6a6-88c4483ce207",
                 "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/730bddbd-4933-43d6-af42-8da2566c1046"
               }
@@ -2181,7 +2127,9 @@
             "interval": 10,
             "__resolveType": "site/sections/Images/Carousel.tsx"
           },
-          { "__resolveType": "somos-experts" },
+          {
+            "__resolveType": "somos-experts"
+          },
           {
             "image": [
               "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bf2fb4ec-ed03-43c1-9b1f-0d93a09bd4cf"
@@ -2410,7 +2358,9 @@
           {
             "text": "{Confira alguns dos nossos projetos abaixo} 🚀",
             "addBar": true,
-            "margin": { "bottom": 80 },
+            "margin": {
+              "bottom": 80
+            },
             "subtitle": "<h2><span style=\"color: rgb(255, 255, 255); font-size: 56px; font-weight: 900; line-height: 61.6px;\" data-mce-style=\"color: rgb(255, 255, 255); font-size: 56px; font-weight: 900; line-height: 61.6px;\"><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">﻿</span></span>cases de sucesso</span></h2>",
             "hrefButton": "/cases",
             "textButton": "confira outros cases",
@@ -2701,7 +2651,10 @@
               }
             ],
             "interval": 2,
-            "mobileMargin": { "bottom": 80, "marginBottomMobile": 80 },
+            "mobileMargin": {
+              "bottom": 80,
+              "marginBottomMobile": 80
+            },
             "__resolveType": "site/sections/Content/TextTopWidthCarousel.tsx"
           },
           {
@@ -3546,9 +3499,15 @@
               }
             ]
           },
-          { "__resolveType": "vamos-dar-vida" },
-          { "__resolveType": "site/sections/Content/ButtonTop.tsx" },
-          { "__resolveType": "footer-principal" },
+          {
+            "__resolveType": "vamos-dar-vida"
+          },
+          {
+            "__resolveType": "site/sections/Content/ButtonTop.tsx"
+          },
+          {
+            "__resolveType": "footer-principal"
+          },
           {
             "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0ce5c73c-aa3b-4928-9d38-d8af27775e7d",
             "title": "N1.AG | Especializada em e-commerce e plataforma VTEX",

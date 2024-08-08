@@ -226,5 +226,11 @@
     "path": "/contact",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Home%2520EN-581765.json": {
+    "name": "Home EN",
+    "path": "/en",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
