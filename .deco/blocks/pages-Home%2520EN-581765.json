@@ -991,6 +991,13 @@
     },
     {
       "__resolveType": "footer-English"
+    },
+    {
+      "__resolveType": "website/sections/Seo/SeoV2.tsx",
+      "title": "N1.AG | Specialized in e-commerce and VTEX, Shopify, Deco.cx platforms ",
+      "description": "We are a VTEX Agency, a Deco.cx Agency, an officially recognized Partner specializing in these e-commerce platforms.",
+      "canonical": "/en",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/62284483-b23b-4d8a-b1d1-f8c7d9e3441d"
     }
   ],
   "seo": {
