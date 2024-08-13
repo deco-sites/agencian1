@@ -6,7 +6,6 @@ import { FnContext, SectionProps } from "deco/mod.ts";
 import CardItem from "site/components/sliderCards/CardItem.tsx";
 import Dots from "site/components/sliderCards/Dotz.tsx";
 import Buttons from "site/components/sliderCards/Buttons.tsx";
-import Icon from "site/components/ui/Icon.tsx";
 import Image from "apps/website/components/Image.tsx";
 
 /**
@@ -120,8 +119,10 @@ const DEFAULT_PROPS = {
 
 function BannerCarousel(props: SectionProps<ReturnType<typeof loader>>) {
   const id = useId();
-  const { images, preload, interval, device, marginTop, marginBottom, title } =
-    { ...DEFAULT_PROPS, ...props };
+  const { images, preload, interval, marginTop, marginBottom, title } = {
+    ...DEFAULT_PROPS,
+    ...props,
+  };
 
   return (
     <div className="relative w-full overflow-x-clip">
@@ -142,7 +143,6 @@ function BannerCarousel(props: SectionProps<ReturnType<typeof loader>>) {
         >
           <Slider className="carousel carousel-center sm:carousel-end sm:gap-1 row-start-2 row-end-5">
             {images?.map((image, index) => {
-              const params = { promotion_name: image.alt };
               return (
                 <Slider.Item
                   index={index}

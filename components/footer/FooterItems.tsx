@@ -1,4 +1,3 @@
-import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
 import CertificationImage from "$store/components/footer/CertificationImage.tsx";
 import { clx } from "$store/sdk/clx.ts";
 

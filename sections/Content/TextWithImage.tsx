@@ -78,7 +78,7 @@ export interface Props {
 function ImageCarouselItem(
   { image, lcp, id }: { image: ImageCarousel; lcp?: boolean; id: string },
 ) {
-  const { alt, desktop, settingsInfo } = image;
+  const { desktop, settingsInfo } = image;
 
   return (
     <>

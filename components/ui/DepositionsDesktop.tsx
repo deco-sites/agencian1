@@ -1,6 +1,5 @@
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import { useId } from "$store/sdk/useId.ts";
 import { clx } from "$store/sdk/clx.ts";
 import { useEffect } from "preact/hooks";
 import { IS_BROWSER } from "$fresh/runtime.ts";
@@ -97,8 +96,6 @@ function queryElements(el: unknown) {
 
 function DepositionsDesktop({ depositionAndImage }: Props) {
   const window_ = window;
-
-  const id = useId();
 
   useEffect(() => {
     window_.addEventListener("scroll", () => {

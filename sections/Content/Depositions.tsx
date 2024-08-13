@@ -1,9 +1,6 @@
-import { Picture, Source } from "apps/website/components/Picture.tsx";
 import { FnContext, SectionProps } from "deco/mod.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { clx } from "$store/sdk/clx.ts";
-import { useEffect } from "preact/hooks";
-import { IS_BROWSER } from "$fresh/runtime.ts";
 import DepositionsDesktop from "$store/components/ui/DepositionsDesktop.tsx";
 import DepositionsMobile from "$store/components/ui/DepositionsMobile.tsx";
 import { useId } from "$store/sdk/useId.ts";

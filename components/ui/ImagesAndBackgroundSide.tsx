@@ -24,7 +24,7 @@ interface Props {
   side?: Side;
 }
 
-function ImagesAndBackgroundSide({ bg, side }: Props) {
+function ImagesAndBackgroundSide({ side }: Props) {
   return (
     <>
       <div class="portatil:w-[80%] tablet:w-[80%] tablet:ml-[30px] portatil:ml-[30px]">

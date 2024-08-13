@@ -228,7 +228,7 @@ function Buttons() {
 
 function BannerCarousel(props: SectionProps<ReturnType<typeof loader>>) {
   const id = useId();
-  const { images, preload, interval, device } = { ...DEFAULT_PROPS, ...props };
+  const { images, preload, interval } = { ...DEFAULT_PROPS, ...props };
 
   return (
     <div

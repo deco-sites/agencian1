@@ -1,5 +1,4 @@
 import { FnContext, SectionProps } from "deco/mod.ts";
-import LinkWithOptionArrow from "$store/components/ui/LinkWithOptionArrow.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import { clx } from "$store/sdk/clx.ts";

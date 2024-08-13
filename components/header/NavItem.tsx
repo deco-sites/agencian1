@@ -32,7 +32,7 @@ interface Props {
   btnUrlMenu?: string;
 }
 
-function NavItem({ item, btnTextMenu, btnUrlMenu }: Props) {
+function NavItem({ item, btnTextMenu }: Props) {
   const {
     url,
     name,

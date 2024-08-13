@@ -1,10 +1,8 @@
-import { Picture, Source } from "apps/website/components/Picture.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import { clx } from "$store/sdk/clx.ts";
 import Icon from "site/components/ui/Icon.tsx";
-import { useId } from "$store/sdk/useId.ts";
 
 interface ImageGeneric {
   src?: ImageWidget;

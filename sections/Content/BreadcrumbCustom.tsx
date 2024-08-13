@@ -23,10 +23,6 @@ function Breadcrumb({ items }: Breadcrumb) {
               /[\u0300-\u036f]/g,
               "",
             ).replaceAll(/\s/g, "-").toLowerCase();
-            const subcategoryScape = subcategory?.normalize("NFD").replaceAll(
-              /[\u0300-\u036f]/g,
-              "",
-            ).replaceAll(/\s/g, "-").toLowerCase();
 
             return (
               <>

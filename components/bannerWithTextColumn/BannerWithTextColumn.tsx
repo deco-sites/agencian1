@@ -1,4 +1,4 @@
-import { FnContext, SectionProps } from "deco/mod.ts";
+import { FnContext } from "deco/mod.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import { clx } from "$store/sdk/clx.ts";
@@ -145,11 +145,6 @@ const variants = {
   normal: "normal",
 };
 
-const widthContainer = {
-  400: "400px",
-  500: "500px",
-};
-
 export default function BannerWithTextColumn({
   bannerImg,
   contentText,
@@ -175,8 +170,6 @@ export default function BannerWithTextColumn({
     fontSizeMobile = "text-14",
     alignmentContent = "normal",
   } = contentText || {};
-
-  const { activeDesktop } = ellipse || {};
 
   const isDesktop = device === "desktop";
 
