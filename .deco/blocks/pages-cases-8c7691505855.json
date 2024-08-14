@@ -10,8 +10,12 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-principal" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-principal"
+          },
           {
             "banners": [
               {
@@ -138,7 +142,9 @@
             "IconBackgroundBottom": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c9a3721c-0f4d-4376-847d-ee12200df2d3",
             "iconBackgroundLeftBottom": false
           },
-          { "__resolveType": "footer-principal" }
+          {
+            "__resolveType": "footer-principal"
+          }
         ]
       },
       {
@@ -148,8 +154,12 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "Header-english" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "Header-english"
+          },
           {
             "banners": [
               {
@@ -265,7 +275,7 @@
               {
                 "alt": "Banner Euro",
                 "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/e8d449cc-52db-4373-a31c-ecf3228f925f",
-                "link": "/euro",
+                "link": "/cases/euro-relogios",
                 "width": 580,
                 "height": 430,
                 "buttonName": "Know more",
@@ -298,14 +308,22 @@
             "IconBackgroundBottom": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c9a3721c-0f4d-4376-847d-ee12200df2d3",
             "iconBackgroundLeftBottom": false
           },
-          { "__resolveType": "footer-English" }
+          {
+            "__resolveType": "footer-English"
+          }
         ]
       },
       {
-        "rule": { "__resolveType": "website/matchers/always.ts" },
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-principal" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-principal"
+          },
           {
             "banners": [
               {
@@ -481,7 +499,9 @@
             "IconBackgroundBottom": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c9a3721c-0f4d-4376-847d-ee12200df2d3",
             "iconBackgroundLeftBottom": false
           },
-          { "__resolveType": "footer-principal" },
+          {
+            "__resolveType": "footer-principal"
+          },
           {
             "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/240a1053-84e1-498d-8817-037f7b5082fb",
             "title": "Cases N1.AG | Lojas Virtuais que implementamos e evoluímos ",
