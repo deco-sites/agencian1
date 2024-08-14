@@ -33,7 +33,7 @@ interface ActionProps {
 }
 
 export function BannerItem(
-  { image, lcp, id, title, addBarSlide, addKeysInWordsSlide }: {
+  { image, lcp, id, addBarSlide, addKeysInWordsSlide }: {
     image: Banner;
     lcp?: boolean;
     id: string;

@@ -6,7 +6,6 @@ import { FnContext, SectionProps } from "deco/mod.ts";
 import Icon from "$store/components/ui/Icon.tsx";
 import { clx } from "$store/sdk/clx.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
-import LinkTelephoneWithOptionArrow from "site/components/ui/LinkTelephoneWithOptionArrow.tsx";
 
 /** @titleBy name */
 interface InfoProps {

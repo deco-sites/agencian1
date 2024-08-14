@@ -52,7 +52,7 @@ interface Props {
   interval?: number;
 }
 
-export default function Dots({ images, interval = 0 }: Props) {
+export default function Dots({ images }: Props) {
   return (
     <>
       <style

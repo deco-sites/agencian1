@@ -1,8 +1,6 @@
 import Icon from "site/components/ui/Icon.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import { propsLoader } from "deco/blocks/propsLoader.ts";
 import Image from "apps/website/components/Image.tsx";
-import EllipseSnippet from "site/components/ui/EllipseSnippet.tsx";
 import Ellipse from "site/components/ui/Ellipse.tsx";
 import { FnContext } from "deco/types.ts";
 
@@ -131,7 +129,7 @@ export default function BenefitsList(
           }  lg:grid-cols-3 gap-8 justify-evenly"`}
         >
           {lists && lists?.length > 0 &&
-            lists.map((list, index) => (
+            lists.map((list) => (
               <li className="flex justify-center items-center gap-5 n1-custom-card-benefits py-4 px-4">
                 <div
                   className={`flex justify-center items-center gap-4 w-full   max-w-[${

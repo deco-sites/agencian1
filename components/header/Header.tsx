@@ -9,6 +9,7 @@ import LinkTelephoneWithOptionArrow from "../ui/LinkTelephoneWithOptionArrow.tsx
 import { HTMLWidget as HTML } from "apps/admin/widgets.ts";
 import { FnContext, SectionProps } from "deco/mod.ts";
 import { getCookies, setCookie } from "std/http/mod.ts";
+import apiIp from "$store/sdk/useFetchIp.ts";
 
 export interface Logo {
   src: ImageWidget;
@@ -160,13 +161,29 @@ export const loader = (props: Props, req: Request, ctx: FnContext) => {
   const cookies = getCookies(req.headers);
   const selectedLanguage = cookies["N1_SelectedLanguage"] || "pt-br";
 
-  if (!cookies["N1_SelectedLanguage"]) {
+  const userIp = apiIp;
+
+  if (userIp?.countryCode === "US") {
+    setCookie(ctx.response.headers, {
+      name: "N1_SelectedLanguage",
+      value: "en-en",
+      path: "/",
+    });
+  } else {
     setCookie(ctx.response.headers, {
       name: "N1_SelectedLanguage",
       value: "pt-br",
       path: "/",
     });
   }
+
+  // if (!cookies["N1_SelectedLanguage"]) {
+  //   setCookie(ctx.response.headers, {
+  //     name: "N1_SelectedLanguage",
+  //     value: "pt-br",
+  //     path: "/",
+  //   });
+  // }
 
   return {
     ...props,

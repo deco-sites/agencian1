@@ -15,6 +15,7 @@ import * as $BlueBallAnimation from "./islands/BlueBallAnimation.tsx";
 import * as $ButtonTop from "./islands/ButtonTop.tsx";
 import * as $CasesComponent from "./islands/CasesComponent.tsx";
 import * as $ContactForm from "./islands/ContactForm.tsx";
+import * as $CustomIp from "./islands/CustomIp.tsx";
 import * as $Depositions from "./islands/Depositions.tsx";
 import * as $Header_Buttons from "./islands/Header/Buttons.tsx";
 import * as $Header_Cart_linx from "./islands/Header/Cart/linx.tsx";
@@ -54,6 +55,7 @@ const manifest = {
     "./islands/ButtonTop.tsx": $ButtonTop,
     "./islands/CasesComponent.tsx": $CasesComponent,
     "./islands/ContactForm.tsx": $ContactForm,
+    "./islands/CustomIp.tsx": $CustomIp,
     "./islands/Depositions.tsx": $Depositions,
     "./islands/Header/Buttons.tsx": $Header_Buttons,
     "./islands/Header/Cart/linx.tsx": $Header_Cart_linx,

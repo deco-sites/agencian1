@@ -1,4 +1,3 @@
-import { invoke } from "$store/runtime.ts";
 import type { JSX } from "preact";
 import { clx } from "$store/sdk/clx.ts";
 
@@ -101,6 +100,8 @@ function Newsletter(
               "accept": "application/json",
             },
           });
+
+          if (!response.ok) return;
         } catch (err) {
           loadingElement?.classList.add("hidden");
           console.log("error: ", err.message);

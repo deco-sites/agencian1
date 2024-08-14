@@ -1,4 +1,4 @@
-import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
+import Icon from "$store/components/ui/Icon.tsx";
 import { clx } from "$store/sdk/clx.ts";
 
 export interface SocialItem {

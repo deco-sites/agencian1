@@ -81,9 +81,9 @@ function activeCard(
       : bgWidthModeFalse;
     logoWidth && logoHover?.setAttribute("style", `width: ${logoWidth}px`);
 
-    allCardElement && Array.from(allCardElement).forEach((e, i) => {
+    Array.from(allCardElement)?.forEach((e, _i) => {
       if (
-        e && i === 0 && validActive && Object.assign(validActive).length === 0
+        e && _i === 0 && validActive && Object.assign(validActive).length === 0
       ) {
         const logo = e.querySelector<HTMLElement>(".logo-width-hover")?.dataset
           ?.logowidthhover;
@@ -135,7 +135,7 @@ function CasesComponentDesktop({ settingsImage }: Props) {
       const allCardElement = cardElement &&
         cardElement.parentElement?.getElementsByClassName("n1-cases-card");
 
-      allCardElement && Array.from(allCardElement).forEach((e, i) => {
+      allCardElement && Array.from(allCardElement).forEach((e) => {
         e?.classList.remove("is-active");
         e?.setAttribute("style", "width: 300px");
       });

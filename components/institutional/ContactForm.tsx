@@ -318,6 +318,8 @@ function ContactForm(
               "accept": "application/json",
             },
           });
+
+          if (!response.ok) return;
         } finally {
           document.body.style.overflow = "hidden";
 

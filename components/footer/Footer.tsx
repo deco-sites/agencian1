@@ -1,5 +1,3 @@
-import BackToTop from "$store/components/footer/BackToTop.tsx";
-import ColorClasses from "$store/components/footer/ColorClasses.tsx";
 import Divider from "$store/components/footer/Divider.tsx";
 import FooterItems from "$store/components/footer/FooterItems.tsx";
 import Logo from "$store/components/footer/Logo.tsx";

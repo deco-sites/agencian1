@@ -6,7 +6,6 @@ import { useUI } from "$store/sdk/useUI.ts";
 import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import type { ComponentChildren } from "preact";
 import { lazy, Suspense } from "preact/compat";
-import Image from "apps/website/components/Image.tsx";
 import { LogoMobile } from "$store/components/header/Header.tsx";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
@@ -48,7 +47,7 @@ interface PropsAside {
 }
 
 const Aside = (
-  { title, onClose, children, drawer, alt, whatsapp }: PropsAside,
+  { title, onClose, children, drawer, alt }: PropsAside,
 ) => {
   const titleScape = title ? "is-" + title?.toLocaleLowerCase() : "";
 
