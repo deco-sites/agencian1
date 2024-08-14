@@ -10,8 +10,12 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-espanhol" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-espanhol"
+          },
           {
             "banners": [
               {
@@ -34,7 +38,9 @@
             ],
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
-          { "__resolveType": "somos-experts - spanish" },
+          {
+            "__resolveType": "somos-experts - spanish"
+          },
           {
             "link": {
               "url": "/nossos-servicos",
@@ -62,10 +68,19 @@
             },
             "title": "<p>Pensamos en tu e-commerce</p>",
             "ellipse": {
-              "ellipse01": { "desktop": false },
-              "ellipse02": { "desktop": false },
-              "ellipse03": { "desktop": false },
-              "ellipse04": { "mobile": false, "desktop": false }
+              "ellipse01": {
+                "desktop": false
+              },
+              "ellipse02": {
+                "desktop": false
+              },
+              "ellipse03": {
+                "desktop": false
+              },
+              "ellipse04": {
+                "mobile": false,
+                "desktop": false
+              }
             },
             "flexCol": "Superior",
             "flexRow": "Direito",
@@ -119,10 +134,22 @@
             },
             "title": "<p>Premios</p>",
             "ellipse": {
-              "ellipse01": { "mobile": true, "desktop": true },
-              "ellipse02": { "mobile": true, "desktop": true },
-              "ellipse03": { "mobile": true, "desktop": true },
-              "ellipse04": { "mobile": true, "desktop": true }
+              "ellipse01": {
+                "mobile": true,
+                "desktop": true
+              },
+              "ellipse02": {
+                "mobile": true,
+                "desktop": true
+              },
+              "ellipse03": {
+                "mobile": true,
+                "desktop": true
+              },
+              "ellipse04": {
+                "mobile": true,
+                "desktop": true
+              }
             },
             "flexCol": "Superior",
             "flexRow": "Esquerdo",
@@ -260,10 +287,22 @@
             },
             "title": "<p>descubre nuestras redes sociales</p>",
             "ellipse": {
-              "ellipse01": { "mobile": true, "desktop": true },
-              "ellipse02": { "mobile": true, "desktop": true },
-              "ellipse03": { "mobile": true, "desktop": true },
-              "ellipse04": { "mobile": true, "desktop": true }
+              "ellipse01": {
+                "mobile": true,
+                "desktop": true
+              },
+              "ellipse02": {
+                "mobile": true,
+                "desktop": true
+              },
+              "ellipse03": {
+                "mobile": true,
+                "desktop": true
+              },
+              "ellipse04": {
+                "mobile": true,
+                "desktop": true
+              }
             },
             "flexCol": "Inferior",
             "flexRow": "Direito",
@@ -305,7 +344,9 @@
             "positionImageY": 160,
             "activePositionManualImage": true
           },
-          { "__resolveType": "Footer-Spanish" }
+          {
+            "__resolveType": "Footer-Spanish"
+          }
         ]
       },
       {
@@ -315,8 +356,12 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "Header-english" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "Header-english"
+          },
           {
             "banners": [
               {
@@ -339,7 +384,9 @@
             ],
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
-          { "__resolveType": "somos-experts - english" },
+          {
+            "__resolveType": "somos-experts - english"
+          },
           {
             "link": {
               "url": "/nossos-servicos",
@@ -367,15 +414,24 @@
             },
             "title": "<p>We think about your e-commerce</p>",
             "ellipse": {
-              "ellipse01": { "desktop": false },
-              "ellipse02": { "desktop": false },
-              "ellipse03": { "desktop": false },
-              "ellipse04": { "mobile": false, "desktop": false }
+              "ellipse01": {
+                "desktop": false
+              },
+              "ellipse02": {
+                "desktop": false
+              },
+              "ellipse03": {
+                "desktop": false
+              },
+              "ellipse04": {
+                "mobile": false,
+                "desktop": false
+              }
             },
             "flexCol": "Superior",
             "flexRow": "Direito",
             "widthBlock": 44,
-            "description": "<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti dolores et quas molestias excepturi sint occaecati cupiditate provident, similique sunt in culpa qui officia deserunt mollitia</p>",
+            "description": "<p>We know that each client has unique needs. That's why we're ready to create the ideal solution for you, no matter what industry you're in!</p>",
             "fontIconText": "Noto Sans",
             "maxWidthText": 100,
             "__resolveType": "site/sections/Content/TitleTextIconsAndImage.tsx",
@@ -424,17 +480,29 @@
             },
             "title": "<p>Awards</p>",
             "ellipse": {
-              "ellipse01": { "mobile": true, "desktop": true },
-              "ellipse02": { "mobile": true, "desktop": true },
-              "ellipse03": { "mobile": true, "desktop": true },
-              "ellipse04": { "mobile": true, "desktop": true }
+              "ellipse01": {
+                "mobile": true,
+                "desktop": true
+              },
+              "ellipse02": {
+                "mobile": true,
+                "desktop": true
+              },
+              "ellipse03": {
+                "mobile": true,
+                "desktop": true
+              },
+              "ellipse04": {
+                "mobile": true,
+                "desktop": true
+              }
             },
             "flexCol": "Superior",
             "flexRow": "Esquerdo",
             "activeBold": true,
             "gridActive": true,
             "widthBlock": 57,
-            "description": "<p><span style=\"font-size: 14px !important;\" data-mce-style=\"font-size: 14px !important;\">Lorem ipsum dolor sit amet consectetur. Vitae in nulla vehicula pretium neque auctor. Cursus adipiscing a ac arcu vulputate amet non urna diam. Laoreet sapien tincidunt sed est. Orci elit nec turpis aliquam mus faucibus tristique.</span></p>",
+            "description": "<p>We are recognized by VTEX, one of the world's leading e-commerce platforms, with awards and the VTEX Partner seal. We are pioneers in headless technologies such as Deco.cx, as well as being a Uappi certified agency, prepared to implement cross-border projects.</p><p>With innovation and the future as the main pillars of its work, N1.AG wants to be a partner that guarantees excellence, productivity and increasingly significant results for its partners.</p>",
             "fontIconText": "Archimoto V01",
             "maxWidthText": 100,
             "__resolveType": "site/sections/Content/TitleTextIconsAndImage.tsx",
@@ -565,10 +633,22 @@
             },
             "title": "<p>discover our social networks</p>",
             "ellipse": {
-              "ellipse01": { "mobile": true, "desktop": true },
-              "ellipse02": { "mobile": true, "desktop": true },
-              "ellipse03": { "mobile": true, "desktop": true },
-              "ellipse04": { "mobile": true, "desktop": true }
+              "ellipse01": {
+                "mobile": true,
+                "desktop": true
+              },
+              "ellipse02": {
+                "mobile": true,
+                "desktop": true
+              },
+              "ellipse03": {
+                "mobile": true,
+                "desktop": true
+              },
+              "ellipse04": {
+                "mobile": true,
+                "desktop": true
+              }
             },
             "flexCol": "Inferior",
             "flexRow": "Direito",
@@ -610,14 +690,22 @@
             "positionImageY": 160,
             "activePositionManualImage": true
           },
-          { "__resolveType": "footer-English" }
+          {
+            "__resolveType": "footer-English"
+          }
         ]
       },
       {
-        "rule": { "__resolveType": "website/matchers/always.ts" },
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-principal" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-principal"
+          },
           {
             "banners": [
               {
@@ -640,7 +728,9 @@
             ],
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
-          { "__resolveType": "somos-experts" },
+          {
+            "__resolveType": "somos-experts"
+          },
           {
             "link": {
               "url": "/nossos-servicos",
@@ -668,10 +758,19 @@
             },
             "title": "<h2>Pensamos no seu <br>e-commerce</h2>",
             "ellipse": {
-              "ellipse01": { "desktop": false },
-              "ellipse02": { "desktop": false },
-              "ellipse03": { "desktop": false },
-              "ellipse04": { "mobile": false, "desktop": false }
+              "ellipse01": {
+                "desktop": false
+              },
+              "ellipse02": {
+                "desktop": false
+              },
+              "ellipse03": {
+                "desktop": false
+              },
+              "ellipse04": {
+                "mobile": false,
+                "desktop": false
+              }
             },
             "flexCol": "Superior",
             "flexRow": "Direito",
@@ -725,10 +824,22 @@
             },
             "title": "<h2>Premiações</h2>",
             "ellipse": {
-              "ellipse01": { "mobile": true, "desktop": true },
-              "ellipse02": { "mobile": true, "desktop": true },
-              "ellipse03": { "mobile": true, "desktop": true },
-              "ellipse04": { "mobile": true, "desktop": true }
+              "ellipse01": {
+                "mobile": true,
+                "desktop": true
+              },
+              "ellipse02": {
+                "mobile": true,
+                "desktop": true
+              },
+              "ellipse03": {
+                "mobile": true,
+                "desktop": true
+              },
+              "ellipse04": {
+                "mobile": true,
+                "desktop": true
+              }
             },
             "flexCol": "Superior",
             "flexRow": "Esquerdo",
@@ -866,10 +977,22 @@
             },
             "title": "<h2>conheça nossas redes sociais</h2>",
             "ellipse": {
-              "ellipse01": { "mobile": true, "desktop": true },
-              "ellipse02": { "mobile": true, "desktop": true },
-              "ellipse03": { "mobile": true, "desktop": true },
-              "ellipse04": { "mobile": true, "desktop": true }
+              "ellipse01": {
+                "mobile": true,
+                "desktop": true
+              },
+              "ellipse02": {
+                "mobile": true,
+                "desktop": true
+              },
+              "ellipse03": {
+                "mobile": true,
+                "desktop": true
+              },
+              "ellipse04": {
+                "mobile": true,
+                "desktop": true
+              }
             },
             "flexCol": "Inferior",
             "flexRow": "Direito",
@@ -911,7 +1034,9 @@
             "positionImageY": 160,
             "activePositionManualImage": true
           },
-          { "__resolveType": "footer-principal" },
+          {
+            "__resolveType": "footer-principal"
+          },
           {
             "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/786a5333-0012-47c1-9681-c216cdfc6e3a",
             "title": "Quem Somos N1.AG | Agência Especializada em e-commerce e parceira plataforma VTEX",
