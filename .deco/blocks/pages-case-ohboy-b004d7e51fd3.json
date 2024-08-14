@@ -10,8 +10,12 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-espanhol" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-espanhol"
+          },
           {
             "banners": [
               {
@@ -35,7 +39,12 @@
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
           {
-            "items": [{ "category": "cases", "subcategory": "oh boy" }],
+            "items": [
+              {
+                "category": "cases",
+                "subcategory": "oh boy"
+              }
+            ],
             "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
           },
           {
@@ -146,7 +155,10 @@
                 "widthContainerList": "500"
               },
               "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>soluções:</p>",
-              "button": { "link": "/", "textButton": "Visite o novo site" }
+              "button": {
+                "link": "/",
+                "textButton": "Visite o novo site"
+              }
             },
             "marginBottom": "120px",
             "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
@@ -186,7 +198,9 @@
                 }
               },
               {
-                "rule": { "__resolveType": "website/matchers/always.ts" },
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                },
                 "value": {
                   "dots": false,
                   "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Destaques do projeto&nbsp;</p>",
@@ -257,7 +271,9 @@
             "marginBottom": "68px",
             "__resolveType": "site/sections/Result_chievements/result_chievements.tsx"
           },
-          { "__resolveType": "footer-principal" }
+          {
+            "__resolveType": "footer-principal"
+          }
         ]
       },
       {
@@ -267,23 +283,27 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "Header-english" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "Header-english"
+          },
           {
             "banners": [
               {
                 "images": {
                   "mobile": {
                     "alt": "Banner mobile",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/38cda44f-6fc8-4bcc-96d3-732b62a8ddf2",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2f01fcae-07ec-4d50-ae5f-808f84e564ce",
                     "width": "390",
                     "height": "500"
                   },
                   "desktop": {
                     "alt": "Banner Implantação",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b075e3ee-a732-48d8-9e14-8639453dea7d",
-                    "width": "1442",
-                    "height": "735"
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/e6c75391-5cb4-4877-a3da-92a4831677b1",
+                    "width": "1440",
+                    "height": "480"
                   }
                 },
                 "matcher": "/cases/oh-boy"
@@ -292,7 +312,12 @@
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
           {
-            "items": [{ "category": "cases", "subcategory": "oh boy" }],
+            "items": [
+              {
+                "category": "cases",
+                "subcategory": "oh boy"
+              }
+            ],
             "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
           },
           {
@@ -403,7 +428,10 @@
                 "widthContainerList": "500"
               },
               "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>solutions:</p>",
-              "button": { "link": "/", "textButton": "Visit the new website" }
+              "button": {
+                "link": "https://www.ohboy.com.br/",
+                "textButton": "Visit the new website"
+              }
             },
             "marginBottom": "120px",
             "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
@@ -443,7 +471,9 @@
                 }
               },
               {
-                "rule": { "__resolveType": "website/matchers/always.ts" },
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                },
                 "value": {
                   "dots": false,
                   "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Project highlights</p>",
@@ -514,14 +544,22 @@
             "marginBottom": "68px",
             "__resolveType": "site/sections/Result_chievements/result_chievements.tsx"
           },
-          { "__resolveType": "footer-English" }
+          {
+            "__resolveType": "footer-English"
+          }
         ]
       },
       {
-        "rule": { "__resolveType": "website/matchers/always.ts" },
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-principal" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-principal"
+          },
           {
             "banners": [
               {
@@ -545,7 +583,12 @@
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
           {
-            "items": [{ "category": "cases", "subcategory": "oh boy" }],
+            "items": [
+              {
+                "category": "cases",
+                "subcategory": "oh boy"
+              }
+            ],
             "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
           },
           {
@@ -699,7 +742,9 @@
                 }
               },
               {
-                "rule": { "__resolveType": "website/matchers/always.ts" },
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                },
                 "value": {
                   "dots": false,
                   "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Destaques do projeto&nbsp;</p>",
@@ -777,7 +822,9 @@
             "marginBottom": "68px",
             "__resolveType": "site/sections/Result_chievements/result_chievements.tsx"
           },
-          { "__resolveType": "footer-principal" },
+          {
+            "__resolveType": "footer-principal"
+          },
           {
             "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/72dd2dbf-9211-40a1-93e7-3353baa71768",
             "title": "Case OH Boy! N1.AG | Desenvolvimento Projeto VTEX IO",
