@@ -2336,7 +2336,6 @@
                 "orderImage": 5
               }
             ],
-            "telephone": "21-96574-4132",
             "textImage": "Tecnologias de Ponta",
             "textbutton": "Fale com um dos nossos especialistas",
             "activeArrow": true,
@@ -2353,7 +2352,8 @@
             "backgroundImageRight": 0,
             "backgroundImageWidth": 650,
             "backgroundImageActive": true,
-            "backgroundImageHeight": 854
+            "backgroundImageHeight": 854,
+            "telephone": "5521965744132"
           },
           {
             "text": "{Confira alguns dos nossos projetos abaixo} 🚀",
