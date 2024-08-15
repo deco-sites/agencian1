@@ -15,8 +15,6 @@ function LinkTelephoneWithOptionArrow(
 ) {
   const formatNumber = telephone && telephone.replace(/\D/g, "");
 
-  console.log(formatNumber);
-
   if (!formatNumber) {
     return null;
   }

@@ -48,8 +48,6 @@ function Cta({ buttonAds, layout, device }: ReturnType<typeof loader>) {
   } = layout || {};
   const isDesktop = device === "desktop";
 
-  console.log(device, ">>>>>>");
-
   return (
     <div
       class={clx(`${layout?.customClass ? layout?.customClass : ""}`)}

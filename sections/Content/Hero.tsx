@@ -98,8 +98,6 @@ export default function HeroFlats(
 
   const HEIGHT = 508;
 
-  console.log(ButtonAds);
-
   function typingWrite(word: number) {
     const loop = localStorage.getItem("loop")
       ? localStorage.getItem("loop")
