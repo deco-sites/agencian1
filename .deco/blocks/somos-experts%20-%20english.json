@@ -1,22 +1,22 @@
 {
   "cta": [
     {
-      "text": "126%",
+      "text": "90",
       "color": "#b71f1f",
-      "text2": "Average increase in revenue",
+      "text2": "Average score of stores on Page Speed",
       "variant": "Normal",
       "colorText": "#ffffff"
     },
     {
-      "text": "+3M",
-      "text2": "On reduced expenses",
+      "text": "+300",
+      "text2": "Satisfied stores",
       "variant": "Normal",
       "colorText": "#ffffff"
     },
     {
-      "text": "4,97/5",
+      "text": "5 years",
       "color": "#ffffff",
-      "text2": "Average satisfaction rate",
+      "text2": "Lifetime value of our Clients",
       "variant": "Normal",
       "colorText": "#ffffff"
     }

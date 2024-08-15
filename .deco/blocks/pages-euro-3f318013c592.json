@@ -10,8 +10,12 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-principal" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-principal"
+          },
           {
             "banners": [
               {
@@ -35,7 +39,12 @@
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
           {
-            "items": [{ "category": "cases", "subcategory": "hospitalar" }],
+            "items": [
+              {
+                "category": "cases",
+                "subcategory": "hospitalar"
+              }
+            ],
             "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
           },
           {
@@ -156,7 +165,10 @@
                 "widthContainerList": "500"
               },
               "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>soluções:</p>",
-              "button": { "link": "/", "textButton": "Visite o novo site" }
+              "button": {
+                "link": "/",
+                "textButton": "Visite o novo site"
+              }
             },
             "marginBottom": "120px",
             "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
@@ -195,8 +207,14 @@
                   }
                 ],
                 "cardInfo": [
-                  { "about": "Aumento da receita", "percentage": "+12,85%" },
-                  { "about": "Ticket médio", "percentage": "+24,95" }
+                  {
+                    "about": "Aumento da receita",
+                    "percentage": "+12,85%"
+                  },
+                  {
+                    "about": "Ticket médio",
+                    "percentage": "+24,95"
+                  }
                 ],
                 "widthContainerList": "500"
               },
@@ -221,8 +239,14 @@
             "contentText": {
               "list": {
                 "cardInfo": [
-                  { "about": "ROAS", "percentage": "19" },
-                  { "about": "Taxa de Conversão", "percentage": "4,59%" }
+                  {
+                    "about": "ROAS",
+                    "percentage": "19"
+                  },
+                  {
+                    "about": "Taxa de Conversão",
+                    "percentage": "4,59%"
+                  }
                 ],
                 "hiddenCardInfo": true,
                 "widthContainerList": "500"
@@ -243,7 +267,9 @@
             "__resolveType": "site/sections/FeedBack/FeedBack.tsx",
             "backgroundImage": true
           },
-          { "__resolveType": "footer-principal" }
+          {
+            "__resolveType": "footer-principal"
+          }
         ]
       },
       {
@@ -253,8 +279,12 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "Header-english" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "Header-english"
+          },
           {
             "banners": [
               {
@@ -278,7 +308,12 @@
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
           {
-            "items": [{ "category": "cases", "subcategory": "hospitalar" }],
+            "items": [
+              {
+                "category": "cases",
+                "subcategory": "hospitalar"
+              }
+            ],
             "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
           },
           {
@@ -399,7 +434,10 @@
                 "widthContainerList": "500"
               },
               "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>solutions:</p>",
-              "button": { "link": "/", "textButton": "Visit the new website" }
+              "button": {
+                "link": "/",
+                "textButton": "Visit the new website"
+              }
             },
             "marginBottom": "120px",
             "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
@@ -438,8 +476,14 @@
                   }
                 ],
                 "cardInfo": [
-                  { "about": "Aumento da receita", "percentage": "+12,85%" },
-                  { "about": "Ticket médio", "percentage": "+24,95" }
+                  {
+                    "about": "Aumento da receita",
+                    "percentage": "+12,85%"
+                  },
+                  {
+                    "about": "Ticket médio",
+                    "percentage": "+24,95"
+                  }
                 ],
                 "widthContainerList": "500"
               },
@@ -464,8 +508,14 @@
             "contentText": {
               "list": {
                 "cardInfo": [
-                  { "about": "ROAS", "percentage": "19" },
-                  { "about": "Taxa de Conversão", "percentage": "4,59%" }
+                  {
+                    "about": "ROAS",
+                    "percentage": "19"
+                  },
+                  {
+                    "about": "Taxa de Conversão",
+                    "percentage": "4,59%"
+                  }
                 ],
                 "hiddenCardInfo": true,
                 "widthContainerList": "500"
@@ -486,14 +536,22 @@
             "__resolveType": "site/sections/FeedBack/FeedBack.tsx",
             "backgroundImage": true
           },
-          { "__resolveType": "footer-English" }
+          {
+            "__resolveType": "footer-English"
+          }
         ]
       },
       {
-        "rule": { "__resolveType": "website/matchers/always.ts" },
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-principal" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-principal"
+          },
           {
             "banners": [
               {
@@ -517,7 +575,12 @@
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
           {
-            "items": [{ "category": "cases", "subcategory": "euro relógios" }],
+            "items": [
+              {
+                "category": "cases",
+                "subcategory": "euro relógios"
+              }
+            ],
             "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
           },
           {
@@ -565,8 +628,8 @@
             },
             "contentText": {
               "title": "<h2>Sobre o cliente</h2>",
-              "addBar": true,
               "description": "<p>A Euro Relógios é uma marca de acessórios femininos fundada em 1996. Conhecida por sua qualidade e design, a empresa se destaca por incorporar as últimas tendências em pequenos detalhes, os quais são essenciais para expressar a personalidade de cada indivíduo.</p><p><br data-mce-bogus=\"1\"></p><p>As peças da Euro são confeccionadas com materiais de alta qualidade e apresentam um acabamento impecável. Disponíveis em diversos modelos, são ideais para atender a uma ampla gama de estilos e preferências.<br><br></p><p><br data-mce-bogus=\"1\"></p>",
+              "addBar": true,
               "addKeysInWords": false
             },
             "marginBottom": "10px",
@@ -597,10 +660,10 @@
               }
             ],
             "title": "<h2><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">﻿</span></span>Principais Desafios</h2>",
-            "addBar": true,
             "marginTop": "120px",
             "marginBottom": "20px",
             "__resolveType": "site/sections/Challenges/challenges.tsx",
+            "addBar": true,
             "addKeysInWords": false
           },
           {
@@ -635,11 +698,11 @@
                 "widthContainerList": "500"
               },
               "title": "<h2><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">﻿</span></span>soluções:</h2>",
-              "addBar": true,
               "button": {
                 "link": "https://www.eurorelogios.com.br/",
                 "textButton": "Visite o novo site"
-              }
+              },
+              "addBar": true
             },
             "marginBottom": "120px",
             "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
@@ -647,16 +710,17 @@
             "imageBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/07600ab5-5b67-4fa1-a04a-f7bac5a4d68f"
           },
           {
+            "marginTop": "120px",
+            "marginBottom": "120px",
+            "__resolveType": "site/sections/FeedBack/FeedBack.tsx",
             "name": "Fabiana Rodrigues",
             "photo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8b3a0614-56e5-4e29-9ba1-e67d714a8fd3",
             "comment": "A migração foi super rápida e com pouquíssimos traumas, quase nenhum para ser justa. A estética e performance da loja melhorou consideravelmente e o tempo de desenvolvimento também foi bem curto em relação a outras lojas.",
-            "marginTop": "120px",
             "profession": "Gerente de E-commerce do Grupo Technos",
-            "marginBottom": "120px",
-            "__resolveType": "site/sections/FeedBack/FeedBack.tsx",
             "backgroundImage": true
           },
           {
+            "__resolveType": "site/sections/Content/ConclusionArea.tsx",
             "alt": "Imagem de Foguete",
             "text": {
               "title": "<h2>implemente seu projeto com a n1.ag</h2>",
@@ -700,16 +764,17 @@
                 "height": 428
               }
             },
-            "description": "<p>A Agência N1 possui mais de 8 anos de experiência na execução bem-sucedida de projetos. Trabalhamos com uma ampla gama de empresas, abrangendo diversos setores, como moda, varejo, comércio eletrônico e serviços.</p><p><br data-mce-bogus=\"1\"></p><p>Estamos preparados para implementar projetos na plataforma deco.cx com êxito. Contamos com a experiência, conhecimento e habilidades necessárias para garantir que os projetos superem as expectativas dos clientes, independentemente do porte ou segmento. Confie em nossa expertise para aprimorar a experiência do seu público e impulsionar suas vendas online!</p>",
-            "__resolveType": "site/sections/Content/ConclusionArea.tsx"
+            "description": "<p>A Agência N1 possui mais de 8 anos de experiência na execução bem-sucedida de projetos. Trabalhamos com uma ampla gama de empresas, abrangendo diversos setores, como moda, varejo, comércio eletrônico e serviços.</p><p><br data-mce-bogus=\"1\"></p><p>Estamos preparados para implementar projetos na plataforma deco.cx com êxito. Contamos com a experiência, conhecimento e habilidades necessárias para garantir que os projetos superem as expectativas dos clientes, independentemente do porte ou segmento. Confie em nossa expertise para aprimorar a experiência do seu público e impulsionar suas vendas online!</p>"
           },
-          { "__resolveType": "footer-principal" },
           {
+            "__resolveType": "footer-principal"
+          },
+          {
+            "__resolveType": "website/sections/Seo/SeoV2.tsx",
             "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/e78180b5-ff22-415b-89b7-6ffc5b8b26b1",
             "title": "Case Euro Relógios N1.AG | Desenvolvimento Projeto Deco.cx",
             "canonical": "/cases/euro-relogios",
             "description": "Com o Projeto Deco.cx e a implementação de novas features junto à equipe especializada da N1.AG, a Euro Relógios tem proporcionado aos seus usuários melhorias significativas na navegação, gerando mais oportunidades de vendas online.",
-            "__resolveType": "website/sections/Seo/SeoV2.tsx",
             "titleTemplate": "Case Euro Relógios N1.AG | Desenvolvimento Projeto Deco.cx",
             "descriptionTemplate": "Com o Projeto Deco.cx e a implementação de novas features junto à equipe especializada da N1.AG, a Euro Relógios tem proporcionado aos seus usuários melhorias significativas na navegação, gerando mais oportunidades de vendas online."
           }

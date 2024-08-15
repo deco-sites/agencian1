@@ -193,13 +193,13 @@
                 "images": {
                   "mobile": {
                     "alt": "Banner suporte mobile",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bca414b7-44f0-4256-b082-90163620cf49",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d461f0ef-acb4-4c6e-99bc-cba518d7a433",
                     "width": "390",
                     "height": "490"
                   },
                   "desktop": {
                     "alt": "Banner Suporte",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5f0bace5-337e-46bf-93ec-6ea453abf425",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5a550652-235e-49a9-85b5-277c592db3e6",
                     "width": "1440",
                     "height": "482"
                   }
@@ -382,7 +382,7 @@
             "__resolveType": "site/sections/Links/CTA.tsx",
             "buttonAds": {
               "text": "Fale com nossos especialistas",
-              "telephone": "21965744132",
+              "telephone": "5521965744132",
               "activeArrow": true,
               "width": "376"
             },
@@ -445,7 +445,7 @@
             "__resolveType": "site/sections/Links/CTA.tsx",
             "buttonAds": {
               "text": "Fale com nossos especialistas",
-              "telephone": "21965744132",
+              "telephone": "5521965744132",
               "activeArrow": true,
               "width": "376"
             },
