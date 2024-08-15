@@ -162,11 +162,21 @@ export const loader = (props: Props, req: Request, ctx: FnContext) => {
   const selectedLanguage = cookies["N1_SelectedLanguage"] || "pt-br";
 
   const userIp = apiIp;
-  const countryCode = userIp?.countryCode === "BR"
-    ? "pt-br"
-    : userIp?.countryCode === "US"
-    ? "en-en"
-    : "pt-br";
+  let countryCode;
+
+  if(!userIp?.countryCode) return countryCode = 'pt-br';
+
+  switch (userIp?.countryCode) {
+    case 'BR': countryCode = 'pt-br'; break;
+    case 'ES': countryCode = 'es-es'; break;
+    case 'US': countryCode = 'en-en'; break;
+    case 'AR': countryCode = 'es-es'; break;
+    case 'CU': countryCode = 'es-es'; break;
+    case 'MX': countryCode = 'es-es'; break;
+    case 'PT': countryCode = 'pt-br'; break;
+  
+    default: countryCode = 'en-en';
+  }
 
   if (!cookies["N1_SelectedLanguage"]) {
     setCookie(ctx.response.headers, {
