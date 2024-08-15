@@ -219,13 +219,13 @@
                 "images": {
                   "mobile": {
                     "alt": "Banner mobile",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/adc6d1f0-b335-48ad-9109-9a0c6803729d",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ec008fa2-2152-4cad-9d8b-8a1cb31136c7",
                     "width": "390",
                     "height": "490"
                   },
                   "desktop": {
                     "alt": "Banner Implantação",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/871a8c52-95f2-4dc5-a291-0231afa60cad",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6635c6d1-7d15-43d3-a218-a1946c666d5e",
                     "width": "1440",
                     "height": "482"
                   }
@@ -238,9 +238,9 @@
           {
             "__resolveType": "site/sections/Links/CTA.tsx",
             "buttonAds": {
-              "text": "dd",
-              "telephone": "111111",
+              "text": "SPEAK TO ONE OF OUR EXPERTS",
               "activeArrow": true,
+              "telephone": "https://wa.me/21965744132",
               "width": "360px"
             },
             "layout": {}
