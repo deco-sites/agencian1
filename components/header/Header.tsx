@@ -162,28 +162,19 @@ export const loader = (props: Props, req: Request, ctx: FnContext) => {
   const selectedLanguage = cookies["N1_SelectedLanguage"] || "pt-br";
 
   const userIp = apiIp;
+  const countryCode = userIp?.countryCode === "BR"
+    ? "pt-br"
+    : userIp?.countryCode === "US"
+    ? "en-en"
+    : "pt-br";
 
-  if (userIp?.countryCode === "US") {
+  if (!cookies["N1_SelectedLanguage"]) {
     setCookie(ctx.response.headers, {
       name: "N1_SelectedLanguage",
-      value: "en-en",
-      path: "/",
-    });
-  } else {
-    setCookie(ctx.response.headers, {
-      name: "N1_SelectedLanguage",
-      value: "pt-br",
+      value: countryCode,
       path: "/",
     });
   }
-
-  // if (!cookies["N1_SelectedLanguage"]) {
-  //   setCookie(ctx.response.headers, {
-  //     name: "N1_SelectedLanguage",
-  //     value: "pt-br",
-  //     path: "/",
-  //   });
-  // }
 
   return {
     ...props,

@@ -22,7 +22,6 @@ async function getIp() {
     if (!response.ok) throw new Error(`Response status: ${response.status}`);
 
     const json: Data = await response.json();
-    console.log("json ---> ", json);
     return json;
   } catch (error) {
     console.error(error.message);
