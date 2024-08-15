@@ -10,8 +10,12 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-espanhol" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-espanhol"
+          },
           {
             "banners": [
               {
@@ -35,7 +39,12 @@
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
           {
-            "items": [{ "category": "cases", "subcategory": "hospitalar" }],
+            "items": [
+              {
+                "category": "cases",
+                "subcategory": "hospitalar"
+              }
+            ],
             "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
           },
           {
@@ -222,8 +231,14 @@
                   }
                 ],
                 "cardInfo": [
-                  { "about": "Mayores ingresos", "percentage": "+12,85%" },
-                  { "about": "Boleto promedio", "percentage": "+24,95" }
+                  {
+                    "about": "Mayores ingresos",
+                    "percentage": "+12,85%"
+                  },
+                  {
+                    "about": "Boleto promedio",
+                    "percentage": "+24,95"
+                  }
                 ],
                 "widthContainerList": "500"
               },
@@ -248,8 +263,14 @@
             "contentText": {
               "list": {
                 "cardInfo": [
-                  { "about": "ROAS", "percentage": "19" },
-                  { "about": "Tasa de conversión", "percentage": "4,59%" }
+                  {
+                    "about": "ROAS",
+                    "percentage": "19"
+                  },
+                  {
+                    "about": "Tasa de conversión",
+                    "percentage": "4,59%"
+                  }
                 ],
                 "hiddenCardInfo": true,
                 "widthContainerList": "500"
@@ -270,7 +291,9 @@
             "__resolveType": "site/sections/FeedBack/FeedBack.tsx",
             "backgroundImage": true
           },
-          { "__resolveType": "Footer-Spanish" }
+          {
+            "__resolveType": "Footer-Spanish"
+          }
         ]
       },
       {
@@ -280,21 +303,25 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "Header-english" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "Header-english"
+          },
           {
             "banners": [
               {
                 "images": {
                   "mobile": {
                     "alt": "Banner mobile",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/896d2dfa-eb8a-45ab-aceb-b32c661ad53f",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b2407e8e-9264-4cde-9ebd-80f2c12bc49f",
                     "width": "390",
                     "height": "500"
                   },
                   "desktop": {
                     "alt": "Banner Hospitalar",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9f1df089-3e74-4b8a-93d4-7f11fc6c2a5c",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/197bc073-ec11-442a-ac42-f61497afffc6",
                     "width": "1440",
                     "height": "482"
                   }
@@ -305,7 +332,12 @@
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
           {
-            "items": [{ "category": "cases", "subcategory": "hospitalar" }],
+            "items": [
+              {
+                "category": "cases",
+                "subcategory": "hospitalar"
+              }
+            ],
             "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
           },
           {
@@ -426,7 +458,10 @@
                 "widthContainerList": "500"
               },
               "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>solutions:</p>",
-              "button": { "link": "/", "textButton": "Visit the new website" }
+              "button": {
+                "link": "/",
+                "textButton": "Visit the new website"
+              }
             },
             "marginBottom": "120px",
             "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
@@ -489,8 +524,14 @@
                   }
                 ],
                 "cardInfo": [
-                  { "about": "Increased revenue", "percentage": "+12,85%" },
-                  { "about": "Average ticket", "percentage": "+24,95" }
+                  {
+                    "about": "Increased revenue",
+                    "percentage": "+12,85%"
+                  },
+                  {
+                    "about": "Average ticket",
+                    "percentage": "+24,95"
+                  }
                 ],
                 "widthContainerList": "500"
               },
@@ -515,8 +556,14 @@
             "contentText": {
               "list": {
                 "cardInfo": [
-                  { "about": "ROAS", "percentage": "19" },
-                  { "about": "Conversion rate", "percentage": "4,59%" }
+                  {
+                    "about": "ROAS",
+                    "percentage": "19"
+                  },
+                  {
+                    "about": "Conversion rate",
+                    "percentage": "4,59%"
+                  }
                 ],
                 "hiddenCardInfo": true,
                 "widthContainerList": "500"
@@ -537,14 +584,22 @@
             "__resolveType": "site/sections/FeedBack/FeedBack.tsx",
             "backgroundImage": true
           },
-          { "__resolveType": "footer-English" }
+          {
+            "__resolveType": "footer-English"
+          }
         ]
       },
       {
-        "rule": { "__resolveType": "website/matchers/always.ts" },
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-principal" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-principal"
+          },
           {
             "banners": [
               {
@@ -568,7 +623,12 @@
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
           {
-            "items": [{ "category": "cases", "subcategory": "hospitalar" }],
+            "items": [
+              {
+                "category": "cases",
+                "subcategory": "hospitalar"
+              }
+            ],
             "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
           },
           {
@@ -761,8 +821,14 @@
                   }
                 ],
                 "cardInfo": [
-                  { "about": "Aumento da receita", "percentage": "+12,85%" },
-                  { "about": "Ticket médio", "percentage": "+24,95" }
+                  {
+                    "about": "Aumento da receita",
+                    "percentage": "+12,85%"
+                  },
+                  {
+                    "about": "Ticket médio",
+                    "percentage": "+24,95"
+                  }
                 ],
                 "widthContainerList": "500"
               },
@@ -789,8 +855,14 @@
             "contentText": {
               "list": {
                 "cardInfo": [
-                  { "about": "ROAS", "percentage": "19" },
-                  { "about": "Taxa de Conversão", "percentage": "4,59%" }
+                  {
+                    "about": "ROAS",
+                    "percentage": "19"
+                  },
+                  {
+                    "about": "Taxa de Conversão",
+                    "percentage": "4,59%"
+                  }
                 ],
                 "hiddenCardInfo": true,
                 "widthContainerList": "500"
@@ -812,7 +884,9 @@
             "__resolveType": "site/sections/FeedBack/FeedBack.tsx",
             "backgroundImage": true
           },
-          { "__resolveType": "footer-principal" },
+          {
+            "__resolveType": "footer-principal"
+          },
           {
             "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0ea99203-b364-486e-ad6f-bf1f01eebce4",
             "title": "Case Hospitalar N1.AG | Desenvolvimento Projeto Deco.cx",
