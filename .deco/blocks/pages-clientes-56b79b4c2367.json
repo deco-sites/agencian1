@@ -10,8 +10,12 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-principal" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-principal"
+          },
           {
             "banners": [
               {
@@ -178,8 +182,12 @@
             "title": "<p><strong>Marcas que Confiam em Nós:</strong></p>",
             "__resolveType": "site/sections/Content/BrandImage.tsx"
           },
-          { "__resolveType": "vamos-dar-vida" },
-          { "__resolveType": "footer-principal" }
+          {
+            "__resolveType": "vamos-dar-vida"
+          },
+          {
+            "__resolveType": "footer-principal"
+          }
         ]
       },
       {
@@ -189,21 +197,25 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "Header-english" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "Header-english"
+          },
           {
             "banners": [
               {
                 "images": {
                   "mobile": {
                     "alt": "Banner clientes mobile",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ca46ada8-a939-4a82-bb27-21d5a72d95ca",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/60c041e2-534a-442d-b960-a3f7dac275f2",
                     "width": "390",
                     "height": "500"
                   },
                   "desktop": {
                     "alt": "Banner Clientes",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a30de75b-ce77-49e7-a6da-d3bb68e391a0",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/658da7ce-27b9-4da0-86d2-b5a475e14d9b",
                     "width": "1440",
                     "height": "482"
                   }
@@ -357,15 +369,25 @@
             "title": "<p><strong>Brands that Trust Us:</strong></p>",
             "__resolveType": "site/sections/Content/BrandImage.tsx"
           },
-          { "__resolveType": "vamos dar vida - english" },
-          { "__resolveType": "footer-English" }
+          {
+            "__resolveType": "vamos dar vida - english"
+          },
+          {
+            "__resolveType": "footer-English"
+          }
         ]
       },
       {
-        "rule": { "__resolveType": "website/matchers/always.ts" },
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-principal" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-principal"
+          },
           {
             "banners": [
               {
@@ -532,8 +554,12 @@
             "title": "<h1><strong>Marcas que Confiam em Nós:</strong></h1>",
             "__resolveType": "site/sections/Content/BrandImage.tsx"
           },
-          { "__resolveType": "vamos-dar-vida" },
-          { "__resolveType": "footer-principal" },
+          {
+            "__resolveType": "vamos-dar-vida"
+          },
+          {
+            "__resolveType": "footer-principal"
+          },
           {
             "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/689ab746-9129-4fcd-a7c0-16df1015be9f",
             "title": "Clientes N1.AG | Lojas Online que confiam na nossa Consultoria Ecommerce",
