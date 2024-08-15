@@ -10,8 +10,12 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-espanhol" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-espanhol"
+          },
           {
             "banners": [
               {
@@ -35,7 +39,12 @@
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
           {
-            "items": [{ "category": "cases", "subcategory": "oh boy" }],
+            "items": [
+              {
+                "category": "cases",
+                "subcategory": "oh boy"
+              }
+            ],
             "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
           },
           {
@@ -146,7 +155,10 @@
                 "widthContainerList": "500"
               },
               "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>soluções:</p>",
-              "button": { "link": "/", "textButton": "Visite o novo site" }
+              "button": {
+                "link": "/",
+                "textButton": "Visite o novo site"
+              }
             },
             "marginBottom": "120px",
             "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
@@ -186,7 +198,9 @@
                 }
               },
               {
-                "rule": { "__resolveType": "website/matchers/always.ts" },
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                },
                 "value": {
                   "dots": false,
                   "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Destaques do projeto&nbsp;</p>",
@@ -257,7 +271,9 @@
             "marginBottom": "68px",
             "__resolveType": "site/sections/Result_chievements/result_chievements.tsx"
           },
-          { "__resolveType": "footer-principal" }
+          {
+            "__resolveType": "footer-principal"
+          }
         ]
       },
       {
@@ -267,8 +283,12 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "Header-english" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "Header-english"
+          },
           {
             "banners": [
               {
@@ -292,7 +312,12 @@
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
           {
-            "items": [{ "category": "cases", "subcategory": "oh boy" }],
+            "items": [
+              {
+                "category": "cases",
+                "subcategory": "oh boy"
+              }
+            ],
             "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
           },
           {
@@ -403,7 +428,10 @@
                 "widthContainerList": "500"
               },
               "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>solutions:</p>",
-              "button": { "link": "/", "textButton": "Visit the new website" }
+              "button": {
+                "link": "/",
+                "textButton": "Visit the new website"
+              }
             },
             "marginBottom": "120px",
             "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
@@ -443,7 +471,9 @@
                 }
               },
               {
-                "rule": { "__resolveType": "website/matchers/always.ts" },
+                "rule": {
+                  "__resolveType": "website/matchers/always.ts"
+                },
                 "value": {
                   "dots": false,
                   "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Project highlights</p>",
@@ -514,14 +544,22 @@
             "marginBottom": "68px",
             "__resolveType": "site/sections/Result_chievements/result_chievements.tsx"
           },
-          { "__resolveType": "footer-English" }
+          {
+            "__resolveType": "footer-English"
+          }
         ]
       },
       {
-        "rule": { "__resolveType": "website/matchers/always.ts" },
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-principal" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-principal"
+          },
           {
             "banners": [
               {
@@ -545,7 +583,11 @@
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
           {
-            "items": [{ "category": "N1 RUSH" }],
+            "items": [
+              {
+                "category": "N1 RUSH"
+              }
+            ],
             "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
           },
           {
@@ -573,7 +615,7 @@
             "contentText": {
               "title": "<p>o que é?</p>",
               "button": {
-                "link": "/cases/oh-boy",
+                "link": "/cases/euro-relogios",
                 "textButton": "VEJA O CASE"
               },
               "description": "<p>O N1 Rush é uma solução de loja online desenvolvida com as funcionalidades nativas da VTEX, fornecendo tudo o que você precisa para criar um e-commerce no VTEX IO.</p><p><br data-mce-bogus=\"1\"></p><p>O N1 Rush é uma solução de loja online desenvolvida com as funcionalidades nativas da VTEX, fornecendo tudo o que você precisa para criar um e-commerce no VTEX IO.</p>"
@@ -612,7 +654,9 @@
               "activeDesktop": true
             },
             "maxWidth": "392",
-            "titleStyle": { "alignment": "left" },
+            "titleStyle": {
+              "alignment": "left"
+            },
             "__resolveType": "site/sections/BenefitsList/BenefitsList.tsx",
             "activeBackgroundImage": false
           },
@@ -620,8 +664,8 @@
             "title": "<h2>Conheça nossos cases N1 Rush!</h2>",
             "cardCases": [
               {
-                "alt": "case oh boy ",
-                "link": "/cases/euro",
+                "alt": "case euro relogios",
+                "link": "/cases/euro-relogios",
                 "buttonName": "saiba mais ",
                 "technology": [
                   {
@@ -641,7 +685,7 @@
               },
               {
                 "alt": "case hospitalar",
-                "link": "/case/hospitalar",
+                "link": "/cases/hospitalar",
                 "buttonName": "saiba mais ",
                 "technology": [
                   {
@@ -680,7 +724,7 @@
               "activeDesktop": true
             },
             "bannerImg": {
-              "alt": "Banner o que é ",
+              "alt": "Porque escolher a N1.AG",
               "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/62324b6d-6b9b-44a1-8b3d-62c160c3f563",
               "widthMobile": 347,
               "heightMobile": 420,
@@ -729,7 +773,9 @@
             },
             "activeBackground": true
           },
-          { "__resolveType": "footer-principal" }
+          {
+            "__resolveType": "footer-principal"
+          }
         ]
       }
     ],
