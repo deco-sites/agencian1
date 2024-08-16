@@ -294,35 +294,35 @@
                       "height": 50
                     }
                   ],
-                  "subtitle": "<p><strong><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">{</span>Benefícios<span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">}</span></strong></p>"
+                  "subtitle": "<p><strong><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">{<span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\">Benefits</span></span><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">}</span></strong></p>"
                 },
                 {
                   "image": [
                     {
                       "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a3306e90-8f82-4707-b48e-5d66733deba8",
                       "name": "icon 1",
-                      "text": "Melhora da satisfação do cliente",
+                      "text": "Improved customer satisfaction",
                       "width": 51,
                       "height": 50
                     },
                     {
                       "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/1d589d43-db53-4dfd-9c96-c0a4a4765a8c",
                       "name": "icon 2",
-                      "text": "Negócios bem-sucedidos",
+                      "text": "Successful business",
                       "width": 51,
                       "height": 50
                     },
                     {
                       "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/78e6b5b9-ee36-4b82-91f8-ddcd4a0b8ffc",
                       "name": "icon 3",
-                      "text": "Melhora da satisfação do cliente",
+                      "text": "Improved customer satisfaction",
                       "width": 51,
                       "height": 50
                     },
                     {
                       "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/29aab9c8-ade4-4b2b-8b30-d8f1be89c83b",
                       "name": "icon 4",
-                      "text": "Atração de novos clientes",
+                      "text": "Attracting new customers",
                       "width": 51,
                       "height": 50
                     }
