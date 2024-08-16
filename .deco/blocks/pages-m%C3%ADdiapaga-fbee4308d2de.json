@@ -191,13 +191,13 @@
                 "images": {
                   "mobile": {
                     "alt": "Banner mídia paga mobile",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b9cd383d-fc3f-46aa-b0f3-f68c1a69ae6d",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a1c0d4a3-0732-4188-aa90-318e2beeced6",
                     "width": "390",
                     "height": "490"
                   },
                   "desktop": {
                     "alt": "Banner Mídia paga",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8a51bb55-210b-46db-babd-3ad0ddafb746",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/cf164ff0-13fe-4b7e-97eb-ac40bdc71004",
                     "width": "1440",
                     "height": "482"
                   }
@@ -268,28 +268,28 @@
                     {
                       "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8c455bbe-b283-4694-a1b0-5a6b1675d26b",
                       "name": "icon 1",
-                      "text": "Aumento das vendas",
+                      "text": "Increased sales",
                       "width": 51,
                       "height": 50
                     },
                     {
                       "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/3b418d46-e507-43ec-8525-44cc83007af6",
                       "name": "icon 2",
-                      "text": "Tomadas de decisão mais informadas.",
+                      "text": "More informed decision-making",
                       "width": 51,
                       "height": 50
                     },
                     {
                       "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/808d8555-3051-4b89-b9e9-f4496d37c758",
                       "name": "icon 3",
-                      "text": "Melhor experiência do cliente.",
+                      "text": "Better customer experience",
                       "width": 51,
                       "height": 50
                     },
                     {
                       "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b1cfdf3b-1fc2-46ec-9168-ba06296ef93f",
                       "name": "icon 4",
-                      "text": "Maior conversão de vendas.",
+                      "text": "Increased sales conversion",
                       "width": 51,
                       "height": 50
                     }
@@ -378,7 +378,7 @@
             "__resolveType": "site/sections/Links/CTA.tsx",
             "buttonAds": {
               "text": "Fale com nossos especialistas",
-              "telephone": "21965744132",
+              "telephone": "5521965744132",
               "activeArrow": true,
               "width": "376"
             },
@@ -429,7 +429,7 @@
             "blockText": {
               "subtitle": "<h2><strong><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">﻿</span></span>visibilidade</strong></h2>",
               "widthBlock": 50,
-              "description": "<p><strong>Aumente a visibilidade da sua loja online!</strong> A Agência N1 utiliza ferramentas de análise de ponta para identificar oportunidades de melhoria e aumentar o desempenho da sua loja. Nossa estratégia é fazer sua marca ser encontrada com facilidade pelos clientes em potencial. Além disso, essa abordagem oferece resultados rápidos e mensuráveis, impulsionando o tráfego e as oportunidades de vendas.</p>",
+              "description": "<p><strong>Aumente a visibilidade da sua loja online!</strong> Nós utilizamos ferramentas de análise de ponta para identificar oportunidades de melhoria e aumentar o desempenho da sua loja. Nossa estratégia é fazer sua marca ser encontrada com facilidade pelos clientes em potencial. Além disso, essa abordagem oferece resultados rápidos e mensuráveis, impulsionando o tráfego e as oportunidades de vendas.</p>",
               "addKeysInWords": true,
               "activeEclipseText": true
             },
@@ -440,7 +440,7 @@
             "buttonAds": {
               "text": "Fale com nossos especialistas",
               "activeArrow": true,
-              "telephone": "21965744132",
+              "telephone": "5521965744132",
               "width": "376"
             },
             "layout": {
