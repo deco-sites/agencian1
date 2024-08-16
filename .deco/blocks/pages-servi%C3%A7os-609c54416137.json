@@ -1035,13 +1035,13 @@
                 "images": {
                   "mobile": {
                     "alt": "banner serviços mobile",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fe8cd262-6502-40b7-8b83-af22bf7094be",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bdd0532e-3dc8-40b4-a269-625644c3f5e7",
                     "width": "390",
                     "height": "490"
                   },
                   "desktop": {
                     "alt": "banner serviços",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a8a43188-ce4b-4940-9538-54c268be2549",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/91418fd3-7ab9-4e24-9142-61e713b600db",
                     "width": "1440",
                     "height": "482"
                   }
@@ -1363,7 +1363,7 @@
               },
               "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c4c7afdf-1a28-4f4e-9aba-5969aa124ebc",
               "nameIcon": "{Deployment}",
-              "subtitle": "<p><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">Personalização</span></p>",
+              "subtitle": "<p><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">Customization</span></p>",
               "widthBlock": 95,
               "description": "<p>Visualize a reality where the customer journey becomes a fascinating experience from the first moment.</p><p>&nbsp;<br>Our experts have the knowledge and skill to deliver a high-performing online store where visitors are readily converted into loyal customers.</p><p>&nbsp;<br>With the solid technological foundations of vtex.io or deco, your store stands out as a beacon of modernity and reliability.</p>",
               "subtitleWithTags": [
@@ -1463,7 +1463,7 @@
                 "colorLink": true
               },
               "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fb3e7c0d-5035-447d-ac9c-6232f4ae6b73",
-              "nameIcon": "{Evolução}",
+              "nameIcon": "{Ongoing}",
               "subtitle": "<p><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">Store optimization</span></p>",
               "widthBlock": 40,
               "description": "<p>Increase your store's sales and traffic! N1 Agency carries out monthly analyzes to identify opportunities for improvement and increase the performance of your store.</p>"
@@ -1501,7 +1501,7 @@
                 "colorLink": true
               },
               "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9fd5cb6c-9221-4a03-aa64-bcf5fc07c615",
-              "nameIcon": "{Vtex Support}",
+              "nameIcon": "{Support}",
               "subtitle": "<p><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">Guidance</span></p>",
               "widthBlock": 45,
               "description": "<p>Do you have questions or problems with your online store, but don't know how to resolve them?<br>N1 Agency offers specialized technical support for online stores.</p><p><br data-mce-bogus=\"1\"></p><p>Our team is ready to solve your challenges on the VTEX platform, from integrations to existing modules. Have success and agility in your e-commerce operation!</p>"
