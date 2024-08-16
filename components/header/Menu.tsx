@@ -83,7 +83,6 @@ function Menu({ items, whatsapp, selectedLanguage }: Props) {
             >
               <a
                 href={`${item?.url ? item?.url : "javascript:void(0)"}`}
-                style={{ pointerEvents: `${item?.url ? "all" : "none"}` }}
               >
                 <MenuItem item={item} />
               </a>
