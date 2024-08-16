@@ -10,8 +10,12 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-principal" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-principal"
+          },
           {
             "banners": [
               {
@@ -438,7 +442,9 @@
             "title": "<p><br data-mce-bogus=\"1\"></p>",
             "subtitle": "<h3><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><strong><span style=\"font-size: 32px; line-height: 38.4px;\" data-mce-style=\"font-size: 32px; line-height: 38.4px;\">Sabe o que nos destaca entre as melhores?</span></strong></span></h3>",
             "blockText": {
-              "cta": { "colorLink": false },
+              "cta": {
+                "colorLink": false
+              },
               "subtitle": "<p><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><strong>Sabe o que nos destaca entre as melhores?</strong></span></p>",
               "miniImage": [
                 {
@@ -550,11 +556,19 @@
             "placement": "esquerdo",
             "description": "<p>Uma marca de distinção que confere à Agência N1 sua posição entre as melhores do ecossistema é a nossa homologação no Quadrante da VTEX.</p><p><br data-mce-bogus=\"1\"></p><p>Esse selo de aprovação reforça nossa credibilidade como uma parceira estratégica que traz resultados excepcionais, capacitada para impulsionar sua presença digital de maneira inovadora e eficaz.</p>",
             "__resolveType": "site/sections/Content/TextIconAndImage.tsx",
-            "disabledProps": { "tags": false, "miniImage": false },
-            "disableSpacing": { "top": false, "bottom": false }
+            "disabledProps": {
+              "tags": false,
+              "miniImage": false
+            },
+            "disableSpacing": {
+              "top": false,
+              "bottom": false
+            }
           },
           {
-            "cta": { "text": "Saiba Mais" },
+            "cta": {
+              "text": "Saiba Mais"
+            },
             "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c3b66b8f-ed6b-44b6-9abb-4347b9b65a5c",
             "image": {
               "mobile": {
@@ -653,7 +667,9 @@
             ]
           },
           {
-            "cta": { "text": "Saiva mais" },
+            "cta": {
+              "text": "Saiva mais"
+            },
             "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9603c95c-098c-4592-9017-2ae06531265f",
             "image": {
               "mobile": {
@@ -685,8 +701,13 @@
             "placement": "esquerdo",
             "description": "<p>Aumente as vendas e o tráfego da sua loja! A Agência N1 realiza análises mensais para identificar oportunidades de melhoria e aumentar o desempenho da sua loja.</p>",
             "__resolveType": "site/sections/Content/TextIconAndImage.tsx",
-            "disabledProps": { "icon": false, "tags": false },
-            "disableSpacing": { "top": true }
+            "disabledProps": {
+              "icon": false,
+              "tags": false
+            },
+            "disableSpacing": {
+              "top": true
+            }
           },
           {
             "image": {
@@ -747,7 +768,9 @@
             "placement": "esquerdo",
             "__resolveType": "site/sections/Content/TextIconAndImage.tsx"
           },
-          { "__resolveType": "footer-principal" }
+          {
+            "__resolveType": "footer-principal"
+          }
         ]
       },
       {
@@ -757,8 +780,12 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "Header-english" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "Header-english"
+          },
           {
             "banners": [
               {
@@ -1008,13 +1035,13 @@
                 "images": {
                   "mobile": {
                     "alt": "banner serviços mobile",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fe8cd262-6502-40b7-8b83-af22bf7094be",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/bdd0532e-3dc8-40b4-a269-625644c3f5e7",
                     "width": "390",
                     "height": "490"
                   },
                   "desktop": {
                     "alt": "banner serviços",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a8a43188-ce4b-4940-9538-54c268be2549",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/91418fd3-7ab9-4e24-9142-61e713b600db",
                     "width": "1440",
                     "height": "482"
                   }
@@ -1185,7 +1212,9 @@
             "title": "<p><br data-mce-bogus=\"1\"></p>",
             "subtitle": "<h3><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><strong><span style=\"font-size: 32px; line-height: 38.4px;\" data-mce-style=\"font-size: 32px; line-height: 38.4px;\">Sabe o que nos destaca entre as melhores?</span></strong></span></h3>",
             "blockText": {
-              "cta": { "colorLink": false },
+              "cta": {
+                "colorLink": false
+              },
               "subtitle": "<p><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><strong>Do you know what makes us stand out among the best?</strong></span></p>",
               "miniImage": [
                 {
@@ -1297,11 +1326,19 @@
             "placement": "esquerdo",
             "description": "<p>Uma marca de distinção que confere à Agência N1 sua posição entre as melhores do ecossistema é a nossa homologação no Quadrante da VTEX.</p><p><br data-mce-bogus=\"1\"></p><p>Esse selo de aprovação reforça nossa credibilidade como uma parceira estratégica que traz resultados excepcionais, capacitada para impulsionar sua presença digital de maneira inovadora e eficaz.</p>",
             "__resolveType": "site/sections/Content/TextIconAndImage.tsx",
-            "disabledProps": { "tags": false, "miniImage": false },
-            "disableSpacing": { "top": false, "bottom": false }
+            "disabledProps": {
+              "tags": false,
+              "miniImage": false
+            },
+            "disableSpacing": {
+              "top": false,
+              "bottom": false
+            }
           },
           {
-            "cta": { "text": "Saiba Mais" },
+            "cta": {
+              "text": "Saiba Mais"
+            },
             "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c3b66b8f-ed6b-44b6-9abb-4347b9b65a5c",
             "image": {
               "mobile": {
@@ -1325,8 +1362,8 @@
                 "colorLink": true
               },
               "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c4c7afdf-1a28-4f4e-9aba-5969aa124ebc",
-              "nameIcon": "{Implantation}",
-              "subtitle": "<p><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">Personalização</span></p>",
+              "nameIcon": "{Deployment}",
+              "subtitle": "<p><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">Customization</span></p>",
               "widthBlock": 95,
               "description": "<p>Visualize a reality where the customer journey becomes a fascinating experience from the first moment.</p><p>&nbsp;<br>Our experts have the knowledge and skill to deliver a high-performing online store where visitors are readily converted into loyal customers.</p><p>&nbsp;<br>With the solid technological foundations of vtex.io or deco, your store stands out as a beacon of modernity and reliability.</p>",
               "subtitleWithTags": [
@@ -1400,7 +1437,9 @@
             ]
           },
           {
-            "cta": { "text": "Saiva mais" },
+            "cta": {
+              "text": "Saiva mais"
+            },
             "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9603c95c-098c-4592-9017-2ae06531265f",
             "image": {
               "mobile": {
@@ -1424,7 +1463,7 @@
                 "colorLink": true
               },
               "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fb3e7c0d-5035-447d-ac9c-6232f4ae6b73",
-              "nameIcon": "{Evolução}",
+              "nameIcon": "{Ongoing}",
               "subtitle": "<p><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">Store optimization</span></p>",
               "widthBlock": 40,
               "description": "<p>Increase your store's sales and traffic! N1 Agency carries out monthly analyzes to identify opportunities for improvement and increase the performance of your store.</p>"
@@ -1432,8 +1471,13 @@
             "placement": "esquerdo",
             "description": "<p>Aumente as vendas e o tráfego da sua loja! A Agência N1 realiza análises mensais para identificar oportunidades de melhoria e aumentar o desempenho da sua loja.</p>",
             "__resolveType": "site/sections/Content/TextIconAndImage.tsx",
-            "disabledProps": { "icon": false, "tags": false },
-            "disableSpacing": { "top": true }
+            "disabledProps": {
+              "icon": false,
+              "tags": false
+            },
+            "disableSpacing": {
+              "top": true
+            }
           },
           {
             "image": {
@@ -1457,7 +1501,7 @@
                 "colorLink": true
               },
               "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9fd5cb6c-9221-4a03-aa64-bcf5fc07c615",
-              "nameIcon": "{Vtex Support}",
+              "nameIcon": "{Support}",
               "subtitle": "<p><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">Guidance</span></p>",
               "widthBlock": 45,
               "description": "<p>Do you have questions or problems with your online store, but don't know how to resolve them?<br>N1 Agency offers specialized technical support for online stores.</p><p><br data-mce-bogus=\"1\"></p><p>Our team is ready to solve your challenges on the VTEX platform, from integrations to existing modules. Have success and agility in your e-commerce operation!</p>"
@@ -1494,14 +1538,22 @@
             "placement": "esquerdo",
             "__resolveType": "site/sections/Content/TextIconAndImage.tsx"
           },
-          { "__resolveType": "footer-English" }
+          {
+            "__resolveType": "footer-English"
+          }
         ]
       },
       {
-        "rule": { "__resolveType": "website/matchers/always.ts" },
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-principal" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-principal"
+          },
           {
             "banners": [
               {
@@ -1928,7 +1980,9 @@
             "title": "<p><br data-mce-bogus=\"1\"></p>",
             "subtitle": "<h3><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><strong><span style=\"font-size: 32px; line-height: 38.4px;\" data-mce-style=\"font-size: 32px; line-height: 38.4px;\">Sabe o que nos destaca entre as melhores?</span></strong></span></h3>",
             "blockText": {
-              "cta": { "colorLink": false },
+              "cta": {
+                "colorLink": false
+              },
               "subtitle": "<h2><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><strong>Sabe o que nos destaca entre as melhores?</strong></span></h2>",
               "miniImage": [
                 {
@@ -2040,11 +2094,19 @@
             "placement": "esquerdo",
             "description": "<p>Uma marca de distinção que confere à Agência N1 sua posição entre as melhores do ecossistema é a nossa homologação no Quadrante da VTEX.</p><p><br data-mce-bogus=\"1\"></p><p>Esse selo de aprovação reforça nossa credibilidade como uma parceira estratégica que traz resultados excepcionais, capacitada para impulsionar sua presença digital de maneira inovadora e eficaz.</p>",
             "__resolveType": "site/sections/Content/TextIconAndImage.tsx",
-            "disabledProps": { "tags": false, "miniImage": false },
-            "disableSpacing": { "top": false, "bottom": false }
+            "disabledProps": {
+              "tags": false,
+              "miniImage": false
+            },
+            "disableSpacing": {
+              "top": false,
+              "bottom": false
+            }
           },
           {
-            "cta": { "text": "Saiba Mais" },
+            "cta": {
+              "text": "Saiba Mais"
+            },
             "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c3b66b8f-ed6b-44b6-9abb-4347b9b65a5c",
             "image": {
               "mobile": {
@@ -2147,7 +2209,9 @@
             ]
           },
           {
-            "cta": { "text": "Saiva mais" },
+            "cta": {
+              "text": "Saiva mais"
+            },
             "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9603c95c-098c-4592-9017-2ae06531265f",
             "image": {
               "mobile": {
@@ -2181,8 +2245,13 @@
             "placement": "esquerdo",
             "description": "<p>Aumente as vendas e o tráfego da sua loja! A Agência N1 realiza análises mensais para identificar oportunidades de melhoria e aumentar o desempenho da sua loja.</p>",
             "__resolveType": "site/sections/Content/TextIconAndImage.tsx",
-            "disabledProps": { "icon": false, "tags": false },
-            "disableSpacing": { "top": true }
+            "disabledProps": {
+              "icon": false,
+              "tags": false
+            },
+            "disableSpacing": {
+              "top": true
+            }
           },
           {
             "image": {
@@ -2279,7 +2348,9 @@
             "placement": "direito",
             "__resolveType": "site/sections/Content/TextIconAndImage.tsx"
           },
-          { "__resolveType": "footer-principal" },
+          {
+            "__resolveType": "footer-principal"
+          },
           {
             "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a3351756-2f6a-493c-8d2a-3159caf56824",
             "title": "Serviços N1.AG | Implantação, Evolução e Consultoria Ecommerce VTEX",
