@@ -37,21 +37,6 @@
       "children": []
     },
     {
-      "url": "/cases",
-      "name": "Cases",
-      "@type": "SiteNavigationElement",
-      "image": [],
-      "children": []
-    },
-    {
-      "url": "/clientes",
-      "name": "Customers",
-      "@type": "SiteNavigationElement",
-      "image": [],
-      "children": []
-    },
-    { "url": "/blog", "name": "Blog", "image": [], "children": [] },
-    {
       "url": "/nossos-servicos",
       "name": "Our services",
       "image": [],
@@ -136,6 +121,26 @@
       "activePropsButton": true
     },
     {
+      "url": "/cases",
+      "name": "Cases",
+      "@type": "SiteNavigationElement",
+      "image": [],
+      "children": []
+    },
+    {
+      "url": "/clientes",
+      "name": "Customers",
+      "image": [],
+      "children": [],
+      "@type": "SiteNavigationElement"
+    },
+    {
+      "url": "/blog",
+      "name": "Blog",
+      "image": [],
+      "children": []
+    },
+    {
       "url": "/ferramentas",
       "name": "tools",
       "image": [],
@@ -175,7 +180,10 @@
     "name": "q",
     "action": "/s",
     "loader": {
-      "data": { "products": [], "searches": [] },
+      "data": {
+        "products": [],
+        "searches": []
+      },
       "__resolveType": "resolved"
     },
     "placeholder": "What are you looking for?"
