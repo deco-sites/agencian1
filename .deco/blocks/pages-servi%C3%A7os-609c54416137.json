@@ -1553,6 +1553,28 @@
                 "height": 238,
                 "alt": "modal image mobile"
               }
+            },
+            "text": {
+              "title": "<p>Hello! 🤩</p>",
+              "description": "<p><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">We received your message!</span> We are working to respond as quickly as possible. We'll be back with an answer soon! 🌟</p>"
+            },
+            "activeModalForm": "Não",
+            "fieldsForm": {
+              "title": "Contact Type",
+              "subtitle": "Data",
+              "commercial": "Commercial",
+              "partnership": "Partnership",
+              "others": "Others",
+              "name_user": "Name",
+              "placeholderName_user": "Your name here",
+              "name_company": "Company Name",
+              "placeholderName_company": "Optional*",
+              "phone_number": "Telephone",
+              "email": "E-mail",
+              "placeholderEmail": "Your best email",
+              "placeholderMessage": "Your best email",
+              "message": "Message",
+              "textButton": "Send"
             }
           },
           {
