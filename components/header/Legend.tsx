@@ -6,9 +6,16 @@ interface Props {
   selectedLanguage?: string;
 }
 
+function setCookie(cname: string, cvalue: string) {
+  document.cookie = cname + "=" + cvalue + ";path=/";
+}
+
 function handleOnClick(id: string) {
-  document.cookie = `N1_SelectedLanguage=${id};path=/`;
-  globalThis?.window.location.reload();
+  setCookie("N1_SelectedLanguage", id);
+
+  setTimeout(() => {
+    globalThis?.window.location.reload();
+  }, 500);
 }
 
 function Legend({ nameItemScape, mobile, selectedLanguage }: Props) {
