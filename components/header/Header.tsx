@@ -167,13 +167,36 @@ export const loader = (props: Props, req: Request, ctx: FnContext) => {
   if(!userIp?.countryCode) return countryCode = 'pt-br';
 
   switch (userIp?.countryCode) {
-    case 'BR': countryCode = 'pt-br'; break;
-    case 'ES': countryCode = 'es-es'; break;
-    case 'US': countryCode = 'en-en'; break;
-    case 'AR': countryCode = 'es-es'; break;
-    case 'CU': countryCode = 'es-es'; break;
-    case 'MX': countryCode = 'es-es'; break;
-    case 'PT': countryCode = 'pt-br'; break;
+    case 'BR': countryCode = 'pt-br'; break; // Brasil
+    case 'AO': countryCode = 'pt-br'; break; // Angola
+    case 'CV': countryCode = 'pt-br'; break; // Cabo Verde
+    case 'GW': countryCode = 'pt-br'; break; // Guiné-Bissau
+    case 'CQ': countryCode = 'pt-br'; break; // Guiné Equatorial
+    case 'MZ': countryCode = 'pt-br'; break; // Moçambique
+    case 'ST': countryCode = 'pt-br'; break; // São Tomé e Príncipe
+    case 'PT': countryCode = 'pt-br'; break; // Portugal
+    case 'US': countryCode = 'en-en'; break; // Estados Unidos
+    case 'ES': countryCode = 'es-es'; break; // Espanha
+    case 'AR': countryCode = 'es-es'; break; // Argentina
+    case 'CU': countryCode = 'es-es'; break; // Cuba
+    case 'MX': countryCode = 'es-es'; break; // México
+    case 'CO': countryCode = 'es-es'; break; // Colombia
+    case 'CL': countryCode = 'es-es'; break; // Chile
+    case 'CR': countryCode = 'es-es'; break; // Costa Rica
+    case 'SV': countryCode = 'es-es'; break; // El Salvador
+    case 'EC': countryCode = 'es-es'; break; // Equador
+    case 'GT': countryCode = 'es-es'; break; // Guatemala
+    case 'GQ': countryCode = 'es-es'; break; // Guiné Equatorial
+    case 'HN': countryCode = 'es-es'; break; // Honduras
+    case 'NI': countryCode = 'es-es'; break; // Nicarágua
+    case 'PA': countryCode = 'es-es'; break; // Panamá
+    case 'PY': countryCode = 'es-es'; break; // Paraguai
+    case 'PE': countryCode = 'es-es'; break; // Peru
+    case 'PR': countryCode = 'es-es'; break; // Porto Rico
+    case 'DO': countryCode = 'es-es'; break; // República Dominicana
+    case 'EH': countryCode = 'es-es'; break; // Saara Ocidental
+    case 'UY': countryCode = 'es-es'; break; // Uruguai
+    case 'VE': countryCode = 'es-es'; break; // Venezuela
   
     default: countryCode = 'en-en';
   }
