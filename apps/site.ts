@@ -29,7 +29,7 @@ const color = (platform: string) => {
     case "vtex":
       return vtex;
     case "deco":
-      return 0x02f77d;      
+      return 0x02f77d;
   }
 };
 

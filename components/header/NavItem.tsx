@@ -53,21 +53,17 @@ function NavItem({ item, btnTextMenu }: Props) {
   return (
     <>
       <li
-        class={clx(`n1-header__navlink
+        class={clx(
+          `n1-header__navlink ${
+            nameItemScape === "blog" ? "active--tooltip" : ""
+          }
         ${
-          nameItemScape === "blog"
-            ? "active--tooltip"
-            : nameItemScape === "ferramentas" || nameItemScape === "tools" ||
-                nameItemScape === "herramientas"
-            ? "hidden"
-            : ""
-        }
-        ${
-          children && children.length > 0
-            ? "n1-header__navlink--active relative pr-[25px] pl-[10px] cursor-pointer hover:is-active hover:before:rotate-[135deg] hover:after:rotate-[45deg] hover:before:border-secondary hover:after:border-secondary hover:text-secondary"
-            : ""
-        } 
-          group flex justify-between text-16 font-archimoto-medium uppercase whitespace-nowrap is-${nameItemScape} items-center`)}
+            children && children.length > 0
+              ? "n1-header__navlink--active relative pr-[25px] pl-[10px] cursor-pointer hover:is-active hover:before:rotate-[135deg] hover:after:rotate-[45deg] hover:before:border-secondary hover:after:border-secondary hover:text-secondary"
+              : ""
+          } 
+          group flex justify-between text-16 font-archimoto-medium uppercase whitespace-nowrap is-${nameItemScape} items-center`,
+        )}
         data-tip={`${nameItemScape === "blog" ? "Em breve" : ""}`}
       >
         <a
