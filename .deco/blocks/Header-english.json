@@ -139,40 +139,6 @@
       "name": "Blog",
       "image": [],
       "children": []
-    },
-    {
-      "url": "/ferramentas",
-      "name": "tools",
-      "image": [],
-      "children": [
-        {
-          "url": "/ferramentas/multilista",
-          "name": "Multilista",
-          "image": [
-            {
-              "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9d4389b8-3b5f-440a-ab14-bcddad27fe4f",
-              "image": [],
-              "video": []
-            }
-          ],
-          "children": []
-        },
-        {
-          "url": "/ferramentas/n1-rush",
-          "name": "N1 Rush",
-          "image": [
-            {
-              "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/627671f0-ec7d-4fe9-824f-72496696e5a8",
-              "image": [],
-              "video": []
-            }
-          ],
-          "children": []
-        }
-      ],
-      "titleSubMenu": "<p><strong><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">﻿</span></span><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\">Explore nossas ferramentas</span></strong></p>",
-      "activePropsText": true,
-      "descriptionSubMenu": "<p><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\"><strong><em>{Descubra a excelência digital:&nbsp;</em></strong></span><br><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\">Ferramentas projetados para&nbsp;</span><br><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\">aprimorar sua jornada.} </span>🚀</p>"
     }
   ],
   "whatsapp": "5521965744132",
