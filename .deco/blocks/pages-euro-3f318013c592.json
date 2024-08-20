@@ -364,7 +364,7 @@
                 "description": "<p>A Euro queria atualizar o layout com uma estética mais atrativa, aprimorando as interações do usuário com a marca ao utilizar o site.</p>"
               }
             ],
-            "title": "<h2><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">﻿</span></span>Principais Desafios</h2>",
+            "title": "<h2>Main Challenges</h2>",
             "marginTop": "120px",
             "marginBottom": "20px",
             "__resolveType": "site/sections/Challenges/challenges.tsx",
