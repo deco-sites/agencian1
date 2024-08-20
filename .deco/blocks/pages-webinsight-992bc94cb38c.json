@@ -560,12 +560,12 @@
           {
             "image": {
               "mobile": {
-                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a44be8fb-e3dc-406e-9df4-c9360f045c12",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0ea99203-b364-486e-ad6f-bf1f01eebce4",
                 "width": "376",
                 "height": "262"
               },
               "desktop": {
-                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b0b2c9bd-e5ae-4df7-9bd1-0f6bd6d241b7",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7281ea49-ff55-4e58-86ae-0c49234e10c3",
                 "width": "675",
                 "height": "488"
               },
@@ -573,13 +573,13 @@
             },
             "blockText": {
               "cta": {
-                "href": "/servicos",
+                "href": "/cases/hospitalar",
                 "text": "Check out more about",
                 "colorLink": false
               },
               "subtitle": "<p><strong><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">{</span>Check out a case of this service<span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">}</span></strong></p>",
               "widthBlock": 50,
-              "description": "<p>Lorem ipsum dolor sit amet consectetur. Erat ut ipsum velit nunc enim in. Et amet nibh malesuada odio ut. Tristique tortor placerat eget tellus dignissim. Tristique accumsan maecenas condimentum vel amet nibh.</p>"
+              "description": "<p>Using our Template Project, we significantly improved Hospitalar Distribuidora's interface, resulting in a notable improvement in PageSpeed Insights. The client chose to add value with Web Insight and Paid Media services, ensuring optimum performance in the marketplace. Now, with faster loading times, the e-commerce site is ready to create even more sales opportunities.</p>"
             },
             "placement": "esquerdo",
             "__resolveType": "site/sections/Content/TextIconAndImage.tsx"
