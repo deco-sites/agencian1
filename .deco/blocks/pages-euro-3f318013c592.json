@@ -263,13 +263,13 @@
                 "images": {
                   "mobile": {
                     "alt": "EURO Relógios",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/f37de226-6267-4e54-931d-79b1293373fc",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/a56bb13c-e4a5-4f14-bb31-f361cad6d7d6",
                     "width": "390",
                     "height": "500"
                   },
                   "desktop": {
                     "alt": "EURO Relógios",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7c3f31ec-98de-43d2-bd1d-0a92d26e4ca8",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fdb731e8-5074-461e-964d-f603407df626",
                     "width": "1440",
                     "height": "482"
                   }
@@ -302,8 +302,8 @@
                 "height": 124
               }
             },
-            "title": "parceria de sucesso DECO.CX",
-            "paragraph": "A Euro Relógios enfrentava dificuldades com sua antiga versão do CMS VTEX, prejudicando a operação e o desempenho do site. \n\nA N1.AG assumiu o desafio de migrar o storefront para a Deco.cx, uma solução headless com inúmeras vantagens. A parceria resultou em melhorias significativas na experiência do usuário, gerando mais oportunidades de vendas online. Acompanhe!",
+            "title": "SUCCESSFUL PARTNERSHIP DECO.CX",
+            "paragraph": "Euro Relógios was experiencing difficulties with its old version of the VTEX CMS, which was hampering the site's operation and performance. \n\nN1.AG took on the challenge of migrating the storefront to Deco.cx, a headless solution with numerous advantages. The partnership resulted in significant improvements in the user experience, generating more online sales opportunities.",
             "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
             "backgroundImage": {
               "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7f1db9c-ae6c-4aa8-b7e0-1f200601771c",
@@ -332,8 +332,8 @@
               "heightDesktop": 372
             },
             "contentText": {
-              "title": "<h2>Sobre o cliente</h2>",
-              "description": "<p>A Euro Relógios é uma marca de acessórios femininos fundada em 1996. Conhecida por sua qualidade e design, a empresa se destaca por incorporar as últimas tendências em pequenos detalhes, os quais são essenciais para expressar a personalidade de cada indivíduo.</p><p><br data-mce-bogus=\"1\"></p><p>As peças da Euro são confeccionadas com materiais de alta qualidade e apresentam um acabamento impecável. Disponíveis em diversos modelos, são ideais para atender a uma ampla gama de estilos e preferências.<br><br></p><p><br data-mce-bogus=\"1\"></p>",
+              "title": "<h2>About the customer</h2>",
+              "description": "<p>Euro Relógios is a brand of women's accessories founded in 1996. Known for its quality and design, the company stands out for incorporating the latest trends into small details, which are essential for expressing each individual's personality.</p><p><br data-mce-bogus=\"1\"></p><p>Euro pieces are made from high-quality materials and have an impeccable finish. Available in a variety of models, they are ideal for a wide range of styles and preferences.</p><p><br></p><p><br data-mce-bogus=\"1\"></p>",
               "addBar": true,
               "addKeysInWords": false
             },
