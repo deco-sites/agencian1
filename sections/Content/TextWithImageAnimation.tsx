@@ -30,7 +30,7 @@ interface PropsImage {
 interface PropsText {
   /**
    * @title Insira o subtítulo
-   * @format html
+   * @format rich-text
    */
   subtitle?: string;
   /** @title adicionar barra "/" antes da frase? */
@@ -39,7 +39,7 @@ interface PropsText {
   addKeysInWords?: boolean;
   /**
    * @title Insira o parágrafo
-   * @format html
+   * @format rich-text
    */
   paragraph?: string;
 }

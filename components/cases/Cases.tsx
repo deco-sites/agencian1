@@ -58,7 +58,7 @@ export interface CardCases {
 }
 
 export interface Props {
-  /** @format html */
+  /** @format rich-text */
   title?: string;
 
   /** @title Icon do background bottom */

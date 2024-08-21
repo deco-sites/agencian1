@@ -68,14 +68,14 @@ interface BlockTextProps {
   addKeysInIcons?: boolean;
   keysInIconsColor?: "Sim" | "Não";
   /** @title Subtítulo */
-  /** @format html */
+  /** @format rich-text */
   subtitle?: string;
   /** @title adicionar chaves "{}" antes e depois da frase? */
   addKeysInWords?: boolean;
   /** @title adicionar barra "/" antes da frase? */
   addBar?: boolean;
   /** @title Descrição */
-  /** @format html */
+  /** @format rich-text */
   description: string;
   /** @title Tags */
   /** @maxItems 2 */
@@ -104,7 +104,7 @@ export interface Props {
   blockText: BlockTextProps;
 
   /** @title Título */
-  /** @format html */
+  /** @format rich-text */
   titleCenter?: string;
 
   /** @title Imagem */

@@ -28,12 +28,12 @@ export interface telephoneProps {
 
 export interface Props {
   /**
-   * @format html
+   * @format rich-text
    */
   /** @title Título */
   title: string;
   /** @title Descrição */
-  /** @format html */
+  /** @format rich-text */
   description: string;
   /** @title Texto para animação */
   /** @description (Separar frase por vírgula. Ex: Uau commerce, Performance ) */
@@ -59,7 +59,7 @@ export interface Props {
   placementImage?: "right" | "left";
   /**
    * @title Título CTA
-   * @format html
+   * @format rich-text
    */
   titleCta?: string;
   /** @title CTA */

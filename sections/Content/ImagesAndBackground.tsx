@@ -22,10 +22,10 @@ interface DeviceImage {
 
 interface Side {
   /**@title Título */
-  /**@format html */
+  /**@format rich-text */
   title?: string;
   /**@title Descrição */
-  /**@format html */
+  /**@format rich-text */
   description?: string;
   /**@title Imagem */
   device?: DeviceImage[];

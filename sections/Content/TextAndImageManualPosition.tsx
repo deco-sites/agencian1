@@ -37,7 +37,7 @@ interface Image {
 
 interface Props {
   /**@title Texto*/
-  /**@format html */
+  /**@format rich-text */
   text?: string;
   /**@title Imagem*/
   image?: Image;

@@ -3,12 +3,12 @@ import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 
 export interface content {
-  /** @format html */
+  /** @format rich-text */
   title?: string;
 
-  /** @format html */
+  /** @format rich-text */
   email?: string;
-  /** @format html */
+  /** @format rich-text */
   description?: string;
 }
 

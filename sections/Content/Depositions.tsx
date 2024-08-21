@@ -35,7 +35,7 @@ interface DepositionAndImage {
 interface Deposition {
   /**
    * @title Descrição
-   * @format html
+   * @format rich-text
    */
   description?: string;
   /**@title Autora */
@@ -47,7 +47,7 @@ interface Deposition {
 interface TextPrincipal {
   /**
    * @title Título
-   * @format html
+   * @format rich-text
    */
   title?: string;
   /** @title adicionar barra "/" antes da frase? */
@@ -58,7 +58,7 @@ interface TextPrincipal {
   addIconTagInWords?: boolean;
   /**
    * @title Descrição
-   * @format html
+   * @format rich-text
    */
   description?: string;
 }

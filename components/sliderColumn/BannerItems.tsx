@@ -12,11 +12,11 @@ export interface Banner {
 
   action?: ActionProps;
 
-  /** @format html */
+  /** @format rich-text */
   subTitle?: string;
   addBarSlide?: boolean;
   addKeysInWordsSlide?: boolean;
-  /** @format html */
+  /** @format rich-text */
   description?: string;
 }
 

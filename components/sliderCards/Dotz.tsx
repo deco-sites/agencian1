@@ -2,7 +2,7 @@ import Slider from "site/components/ui/Slider.tsx";
 import { Banner } from "site/components/sliderCards/SliderCards.tsx";
 
 type Props = {
-  /** @format html */
+  /** @format rich-text */
   title?: string;
 
   images?: Banner[];

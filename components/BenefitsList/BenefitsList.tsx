@@ -17,12 +17,12 @@ export interface Ellipse {
 /** @title {{{description}}}  */
 export interface Lists {
   /** @title Descrição */
-  /** @format html */
+  /** @format rich-text */
   description: string;
 }
 export interface Props {
   /** @title Título */
-  /** @format html */
+  /** @format rich-text */
   title?: string;
 
   titleStyle: {
