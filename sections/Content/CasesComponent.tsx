@@ -102,7 +102,7 @@ export interface telephoneProps {
 
 interface Props {
   /**@title Subtítulo */
-  /**@format html */
+  /**@format rich-text */
   subtitle?: string;
   /** @title adicionar barra "/" antes da frase? */
   addBar?: boolean;

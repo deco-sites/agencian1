@@ -14,7 +14,7 @@ interface Image {
 
 interface Props {
   /**@title Título */
-  /**@format html */
+  /**@format rich-text */
   title?: string;
   /**@title Marca */
   /**@format maxItems 50 */

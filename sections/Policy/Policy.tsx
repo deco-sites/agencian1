@@ -15,7 +15,7 @@ interface Td {
   name?: string;
   /**
    * @title Dados da Coluna
-   * @format html
+   * @format rich-text
    */
   td?: string;
   /**@title Texto centralizado? */
@@ -53,7 +53,7 @@ interface Accordion {
   title?: string;
   /**
    * @title Descrição
-   * @format html
+   * @format rich-text
    */
   description?: string;
   /** @title Existe fonte Archimoto? (Se sim, tranforme-o em H4) */
@@ -68,7 +68,7 @@ interface Accordion {
   disableTable?: boolean;
   /**
    * @title Texto pós tabela
-   * @format html
+   * @format rich-text
    */
   descriptionAfterTable?: string;
 }
@@ -76,7 +76,7 @@ interface Accordion {
 interface Props {
   /**
    * @title Título
-   * @format html
+   * @format rich-text
    */
   title?: string;
   accordion?: Accordion[];

@@ -66,10 +66,10 @@ interface Props {
   /** @description (ex: 50 - somente números, o resultado é porcentagem) */
   maxWidthText?: number;
   /**@title Título */
-  /**@format html */
+  /**@format rich-text */
   title?: string;
   /**@title Descrição */
-  /**@format html */
+  /**@format rich-text */
   description?: string;
   /**@title Ícone */
   /**@maxItems 4 */

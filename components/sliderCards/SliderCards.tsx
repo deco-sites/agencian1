@@ -36,7 +36,7 @@ export interface Banner {
 }
 
 export interface Props {
-  /** @format html */
+  /** @format rich-text */
   title?: string;
 
   images?: Banner[];

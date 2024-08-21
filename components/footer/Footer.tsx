@@ -67,7 +67,7 @@ export interface NewsletterForm {
   placeholder?: string;
   /** @title Texto do botão */
   buttonText?: string;
-  /** @format html */
+  /** @format rich-text */
   helpText?: string;
 }
 

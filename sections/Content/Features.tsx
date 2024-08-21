@@ -6,7 +6,7 @@ import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
 export interface Card {
   icon?: AvailableIcons;
   /**
-   * @format html
+   * @format rich-text
    */
   title: string;
   text: string;

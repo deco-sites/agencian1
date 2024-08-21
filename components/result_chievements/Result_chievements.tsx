@@ -19,13 +19,13 @@ export interface Card {
   /**@title Icon Seal Check */
   Iconcheck: ImageWidget;
   /** @title  description */
-  /** @format html */
+  /** @format rich-text */
   description: string;
 }
 
 export interface Props {
   /** @title Título */
-  /** @format html */
+  /** @format rich-text */
   title?: string;
 
   tags?: TagsIcons[];

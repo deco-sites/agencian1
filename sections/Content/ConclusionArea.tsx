@@ -23,7 +23,7 @@ interface DeviceImage {
 interface TextGeneric {
   /**
    * @title Título
-   * @format html
+   * @format rich-text
    */
   title?: string;
   /** @title adicionar barra "/" antes da frase? */
@@ -34,7 +34,7 @@ interface TextGeneric {
   addIconTagInWords?: boolean;
   /**
    * @title Descrição
-   * @format html
+   * @format rich-text
    */
   description?: string;
 }

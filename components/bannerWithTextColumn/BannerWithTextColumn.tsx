@@ -24,7 +24,7 @@ export interface Img {
 }
 
 export interface TextList {
-  /** @format html */
+  /** @format rich-text */
   descriptionList?: string;
 }
 
@@ -70,13 +70,13 @@ export interface Button {
 }
 
 export interface Content {
-  /** @format html */
+  /** @format rich-text */
   title?: string;
   /** @title adicionar barra "/" antes da frase? */
   addBar?: boolean;
   /** @title adicionar chaves "{}" antes e depois da frase? */
   addKeysInWords?: boolean;
-  /** @format html */
+  /** @format rich-text */
   description?: string;
   /** @title Tamanho de fonte Desktop */
   /** @description fonte de descrição (ex: text-14 = 14px) */

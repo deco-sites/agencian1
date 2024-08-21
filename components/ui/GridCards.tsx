@@ -9,16 +9,16 @@ export interface Card {
   /**@title Icon  */
   Icon: ImageWidget;
   /** @title  title */
-  /** @format html */
+  /** @format rich-text */
   title?: string;
   /** @title  description */
-  /** @format html */
+  /** @format rich-text */
   description?: string;
 }
 
 export interface Props {
   /** @tilte Title */
-  /** @format html */
+  /** @format rich-text */
   title?: string;
   /** @title adicionar barra "/" antes da frase? */
   addBar?: boolean;

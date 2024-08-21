@@ -18,7 +18,7 @@ interface ImageGeneric {
 // INTERFACE GENERICA P/ TEXTOS
 interface TextGeneric {
   /** @title Título */
-  /** @format html */
+  /** @format rich-text */
   title?: string;
   /** @title adicionar barra "/" antes da frase? */
   addBar?: boolean;

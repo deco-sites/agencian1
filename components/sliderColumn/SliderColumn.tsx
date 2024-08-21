@@ -18,7 +18,7 @@ export interface Banner {
 
   action?: ActionProps;
 
-  /** @format html */
+  /** @format rich-text */
   subTitle: string;
   /** @title adicionar barra "/" antes da frase?. */
   addBarSlide?: boolean;
@@ -26,7 +26,7 @@ export interface Banner {
   /** @title adicionar chaves "{}" antes e depois da frase? */
   addKeysInWordsSlide?: boolean;
 
-  /** @format html */
+  /** @format rich-text */
   description: string;
 }
 
@@ -43,7 +43,7 @@ interface ActionProps {
 }
 
 export interface Props {
-  /** @format html */
+  /** @format rich-text */
   title?: string;
 
   /** @title adicionar barra "/" antes da frase? */

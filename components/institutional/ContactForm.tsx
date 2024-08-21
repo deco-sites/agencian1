@@ -25,10 +25,10 @@ interface Device {
 
 interface Text {
   /**@title Título */
-  /**@format html */
+  /**@format rich-text */
   title?: string;
   /**@title Texto */
-  /**@format html */
+  /**@format rich-text */
   description?: string;
 }
 

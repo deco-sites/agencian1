@@ -18,7 +18,7 @@ interface Props {
   /**@title  Imagem */
   image?: ImageGeneric;
   /**@title  Texto */
-  /** @format html */
+  /** @format rich-text */
   text?: string;
   /**@title Texto do botão */
   textBtn?: string;

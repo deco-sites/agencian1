@@ -55,14 +55,14 @@ interface MobileMargin {
 
 export interface Props {
   /**@title Título  */
-  /**@format html  */
+  /**@format rich-text  */
   title?: string;
   /** @title adicionar barra "/" antes da frase? */
   addBar?: boolean;
   /** @title adicionar chaves "{}" antes e depois da frase? */
   addKeysInWords?: boolean;
   /**@title Texto  */
-  /**@format html  */
+  /**@format rich-text  */
   text?: string;
 
   images?: ImageCarousel[];
