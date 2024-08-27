@@ -2230,19 +2230,24 @@
                 "name": "Quem somos",
                 "@type": "SiteNavigationElement",
                 "image": [],
-                "children": []
+                "children": [],
+                "nameBlock": "Quem somos",
+                "btnUrlMenu": "/"
               },
               {
                 "name": "Cases",
                 "@type": "SiteNavigationElement",
                 "image": [],
-                "children": []
+                "children": [],
+                "nameBlock": "Cases",
+                "btnTextMenu": "cases"
               },
               {
                 "name": "Clientes",
                 "@type": "SiteNavigationElement",
                 "image": [],
-                "children": []
+                "children": [],
+                "nameBlock": "clientes"
               },
               {
                 "name": "Blog",
@@ -2381,7 +2386,8 @@
             "btnTextMenu": "Conheça mais dos nossos serviços",
             "logoPosition": "left",
             "titleSubMenu": "<h1>/Explore nossas ferramentas</h1>",
-            "descriptionSubMenu": "<p><strong><em>{Descubra a excelência digital: </em></strong><br>Ferramentas projetados para <br>aprimorar sua <span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">jornada</span>.}</span> 🚀</p>"
+            "descriptionSubMenu": "<p><strong><em>{Descubra a excelência digital: </em></strong><br>Ferramentas projetados para <br>aprimorar sua <span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">jornada</span>.}</span> 🚀</p>",
+            "disabledHeader": true
           },
           {
             "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4a7cc0d4-8ae0-492c-87f8-28839bc987a8",

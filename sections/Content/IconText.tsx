@@ -1,5 +1,4 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import { HTMLWidget as HTML } from "apps/admin/widgets.ts";
 import { clx } from "$store/sdk/clx.ts";
 
 /**@titleBy name */
@@ -20,8 +19,11 @@ interface Image {
 }
 
 interface Icon {
-  /**@title Subtítulo */
-  subtitle?: HTML;
+  /**
+   * @title Subtítulo 
+   * @format rich-text
+   * */
+  subtitle?: string;
   /** @title adicionar barra "/" antes da frase? */
   addBar?: boolean;
   /** @title adicionar chaves "{}" antes e depois da frase? */

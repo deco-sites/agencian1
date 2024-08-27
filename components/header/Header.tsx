@@ -6,7 +6,6 @@ import Alert from "./Alert.tsx";
 import Navbar from "./Navbar.tsx";
 import { headerHeight } from "./constants.ts";
 import LinkTelephoneWithOptionArrow from "../ui/LinkTelephoneWithOptionArrow.tsx";
-import { HTMLWidget as HTML } from "apps/admin/widgets.ts";
 import { FnContext, SectionProps } from "deco/mod.ts";
 import { getCookies, setCookie } from "std/http/mod.ts";
 import apiIp from "$store/sdk/useFetchIp.ts";
@@ -30,12 +29,21 @@ export interface Buttons {
   hideCartButton?: boolean;
 }
 
+/**@titleBy nameBlock */
 export interface PropsChildren extends SiteNavigationElement {
-  /** @title Título Submenu*/
-  titleSubMenu?: HTML;
+  /**@title Nome do Bloco */
+  nameBlock?: string;
+  /** 
+   * @title Título Submenu
+   * @format rich-text
+   * */
+  titleSubMenu?: string;
 
-  /** @title Descrição Submenu */
-  descriptionSubMenu?: HTML;
+  /** 
+   * @title Descrição Submenu 
+   * @format rich-text
+   * */
+  descriptionSubMenu?: string;
 
   /** @title Texto para do botão */
   /** @description (ex: conheça mais dos nossos serviços ) */
@@ -60,7 +68,11 @@ interface ImageGeneric {
   height?: number;
 }
 
-export interface Props {
+export interface Props { 
+  /**
+ * @title Desativar o Header? 
+ * */
+  disabledHeader?: boolean;   
   alerts?: string[];
   /**
    * @title Itens de navegação
@@ -100,6 +112,7 @@ export interface Props {
 
 function Header(props: SectionProps<ReturnType<typeof loader>>) {
   const {
+    disabledHeader = false,
     alerts,
     navItems,
     desktop,
@@ -116,43 +129,45 @@ function Header(props: SectionProps<ReturnType<typeof loader>>) {
 
   return (
     <>
-      <header style={{ height: headerHeight }}>
-        <Drawers
-          menu={{ items, whatsapp }}
-          platform={platform}
-          drawer={drawer}
-          selectedLanguage={selectedLanguage}
-        >
-          <div
-            class="fixed w-full z-50 n1-header__desktop"
-            style={{ height: headerHeight }}
+      {!disabledHeader && (
+        <header style={{ height: headerHeight }}>
+          <Drawers
+            menu={{ items, whatsapp }}
+            platform={platform}
+            drawer={drawer}
+            selectedLanguage={selectedLanguage}
           >
             <div
-              class={"grid grid-cols-2-auto md:n1-container md:px-[120px] items-center portatil:max-w-[90%] portatil:px-0"}
+              class="fixed w-full z-50 n1-header__desktop"
+              style={{ height: headerHeight }}
             >
-              {alerts && alerts.length > 0 && <Alert alerts={alerts} />}
-              <Navbar
-                items={items}
-                desktop={desktop}
-                mobile={mobile}
-                logoPosition={logoPosition}
-                buttons={buttons}
-                btnTextMenu={btnTextMenu}
-                selectedLanguage={selectedLanguage}
-              />
-              {whatsapp && (
-                <div class="mobile:flex mobile:justify-center">
-                  <LinkTelephoneWithOptionArrow
-                    fontSize="14"
-                    activeArrow={true}
-                    telephone={whatsapp}
-                  />
-                </div>
-              )}
+              <div
+                class={"grid grid-cols-2-auto md:n1-container md:px-[120px] items-center portatil:max-w-[90%] portatil:px-0"}
+              >
+                {alerts && alerts.length > 0 && <Alert alerts={alerts} />}
+                <Navbar
+                  items={items}
+                  desktop={desktop}
+                  mobile={mobile}
+                  logoPosition={logoPosition}
+                  buttons={buttons}
+                  btnTextMenu={btnTextMenu}
+                  selectedLanguage={selectedLanguage}
+                />
+                {whatsapp && (
+                  <div class="mobile:flex mobile:justify-center">
+                    <LinkTelephoneWithOptionArrow
+                      fontSize="14"
+                      activeArrow={true}
+                      telephone={whatsapp}
+                    />
+                  </div>
+                )}
+              </div>
             </div>
-          </div>
-        </Drawers>
-      </header>
+          </Drawers>
+        </header>
+      )}
     </>
   );
 }
