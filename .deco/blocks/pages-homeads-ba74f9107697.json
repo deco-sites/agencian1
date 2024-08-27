@@ -2252,7 +2252,8 @@
               {
                 "name": "Blog",
                 "image": [],
-                "children": []
+                "children": [],
+                "nameBlock": "a"
               },
               {
                 "name": "Nossos Serviços",
