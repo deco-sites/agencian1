@@ -2331,7 +2331,8 @@
                 "linkMenu": "https://deco-sites-agencian1.deno.dev/servicos",
                 "btnTextMenu": "conheça mais dos nossos serviços",
                 "activePropsText": false,
-                "activePropsButton": true
+                "activePropsButton": true,
+                "nameBlock": "nossos serviços"
               },
               {
                 "name": "Ferramentas",
@@ -2363,7 +2364,8 @@
                 ],
                 "titleSubMenu": "<p><strong><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\">Explore nossas ferramentas</span></strong></p>",
                 "activePropsText": true,
-                "descriptionSubMenu": "<p><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\"><strong><em>Descubra a excelência digital:&nbsp;</em></strong></span><br><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\">Ferramentas projetados para&nbsp;</span><br><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\">aprimorar sua jornada. </span>🚀</p>"
+                "descriptionSubMenu": "<p><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\"><strong><em>Descubra a excelência digital:&nbsp;</em></strong></span><br><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\">Ferramentas projetados para&nbsp;</span><br><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\">aprimorar sua jornada. </span>🚀</p>",
+                "nameBlock": "ferramentas"
               }
             ],
             "whatsapp": "5521965744132",
