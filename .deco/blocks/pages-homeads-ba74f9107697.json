@@ -2258,6 +2258,7 @@
               {
                 "name": "Nossos Serviços",
                 "image": [],
+                "nameBlock": "nossos serviços",
                 "children": [
                   {
                     "name": "Implantação",
@@ -2335,6 +2336,7 @@
               {
                 "name": "Ferramentas",
                 "image": [],
+                "nameBlock": "ferramentas",
                 "children": [
                   {
                     "name": "Multilista",
