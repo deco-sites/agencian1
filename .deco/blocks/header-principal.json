@@ -34,7 +34,8 @@
       "name": "Quem somos",
       "@type": "SiteNavigationElement",
       "image": [],
-      "children": []
+      "children": [],
+      "nameBlock": "quem somos"
     },
     {
       "url": "/nossos-servicos",
