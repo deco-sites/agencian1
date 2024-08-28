@@ -672,7 +672,7 @@ function ContactForm(
                         font-medium text-[#ffffff] text-12 leading-[18px] font-noto-sans outline-none focus:border-[#646363]`,
                     )}
                   />
-                  <span class="hidden -mt-[20px] text-error text-[12px] leading-[15.6px]">
+                  <span class="hidden text-error text-[12px] leading-[15.6px]">
                     Campo obrigatório
                   </span>
                 </div>
