@@ -117,8 +117,8 @@ const ACTIVEMODALFORM = {
 };
 
 const variant = {
-  normal: "bg-base-200  text-[#585858] hover:bg-[#ffff",
-  ads: " bg-accent hover:bg-[#F8BC33] text-primary",
+  normal: "bg-base-200 duration-200  text-[#585858] hover:bg-[#ffffff]",
+  ads: "bg-accent duration-200 hover:bg-[#F8BC33] text-primary",
 };
 
 const size = {
@@ -686,7 +686,7 @@ function ContactForm(
                     disabled
                     class={clx(
                       `${
-                        variant[fieldsForm.buttonStyle ?? "normal"]
+                        variant[fieldsForm.buttonStyle ?? "ads"]
                       } n1-form__submit disabled:opacity-50 py-[20px] px-[30px]  rounded-[100px] 
                       max-h-[52px] !leading-none text-16 font-archimoto-medium font-black`,
                     )}
