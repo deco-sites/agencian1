@@ -414,15 +414,15 @@ function ContactForm(
 
   return (
     <>
-      <div class="md:n1-container md:px-[120px] !pb-[80px] mobile:mt-[80px] mobile:px-[20px]">
+      <div class="md:n1-container md:px-[120px] !pb-5 mobile:px-[20px]">
         <div class="flex flex-col">
-          <div class="flex flex-col gap-[32px]">
+          <div class="flex flex-col">
             <form
-              class="n1-contact__form text-sm flex flex-col gap-[32px]"
+              class="n1-contact__form text-sm flex flex-col gap-4"
               onSubmit={handleSubmit}
             >
               {/* TIPO DE CONTATO __________________________________________________________________________| INICIAL | */}
-              <div class="flex flex-col gap-[32px]">
+              <div class="flex flex-col">
                 {fieldsForm?.title && (
                   <h3 class="text-24 font-black font-archimoto-medium text-[#ffffff]">
                     {fieldsForm.title}
@@ -430,7 +430,7 @@ function ContactForm(
                 )}
 
                 <div>
-                  <ul class="flex gap-[30px] mb-2.5">
+                  <ul class="flex gap-4 mb-2.5">
                     {/* Comercial*/}
                     {fieldsForm?.commercial && (
                       <li class="flex flex-row gap-[8px] lg:flex-row items-center">
@@ -529,7 +529,7 @@ function ContactForm(
                 </h3>
               )}
               {/* DADOS __________________________________________________________________________________| INICIAL | */}
-              <div class="flex flex-col gap-[30px] lg:flex-row">
+              <div class="flex flex-col gap-4 lg:flex-row">
                 {/* Nome*/}
                 {fieldsForm?.name_user && (
                   <div class="form-control flex-col gap-[10px] w-full">
@@ -584,7 +584,7 @@ function ContactForm(
                   </div>
                 )}
               </div>
-              <div class="flex flex-col gap-[30px] lg:flex-row">
+              <div class="flex flex-col gap-4 lg:flex-row">
                 {/* Telefone*/}
                 {fieldsForm?.phone_number && (
                   <div class="form-control gap-[10px] w-full">
@@ -651,7 +651,7 @@ function ContactForm(
               </div>
               {/* Mensagem*/}
               {fieldsForm?.message && (
-                <div class="form-control gap-[32px]">
+                <div class="form-control gap-4">
                   <label
                     class={` ${
                       size[fieldsForm.fontSize ?? "normal"]

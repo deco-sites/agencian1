@@ -2230,28 +2230,35 @@
                 "name": "Quem somos",
                 "@type": "SiteNavigationElement",
                 "image": [],
-                "children": []
+                "children": [],
+                "nameBlock": "Quem somos",
+                "btnUrlMenu": "/"
               },
               {
                 "name": "Cases",
                 "@type": "SiteNavigationElement",
                 "image": [],
-                "children": []
+                "children": [],
+                "nameBlock": "nossos ",
+                "btnTextMenu": "cases"
               },
               {
                 "name": "Clientes",
                 "@type": "SiteNavigationElement",
                 "image": [],
-                "children": []
+                "children": [],
+                "nameBlock": "clientes"
               },
               {
                 "name": "Blog",
                 "image": [],
-                "children": []
+                "children": [],
+                "nameBlock": "blog"
               },
               {
                 "name": "Nossos Serviços",
                 "image": [],
+                "nameBlock": "nossos serviços",
                 "children": [
                   {
                     "name": "Implantação",
@@ -2324,11 +2331,13 @@
                 "linkMenu": "https://deco-sites-agencian1.deno.dev/servicos",
                 "btnTextMenu": "conheça mais dos nossos serviços",
                 "activePropsText": false,
-                "activePropsButton": true
+                "activePropsButton": true,
+                "nameBlock": "nossos serviços"
               },
               {
                 "name": "Ferramentas",
                 "image": [],
+                "nameBlock": "ferramentas",
                 "children": [
                   {
                     "name": "Multilista",
@@ -2355,7 +2364,8 @@
                 ],
                 "titleSubMenu": "<p><strong><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\">Explore nossas ferramentas</span></strong></p>",
                 "activePropsText": true,
-                "descriptionSubMenu": "<p><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\"><strong><em>Descubra a excelência digital:&nbsp;</em></strong></span><br><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\">Ferramentas projetados para&nbsp;</span><br><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\">aprimorar sua jornada. </span>🚀</p>"
+                "descriptionSubMenu": "<p><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\"><strong><em>Descubra a excelência digital:&nbsp;</em></strong></span><br><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\">Ferramentas projetados para&nbsp;</span><br><span style=\"color: rgb(12, 31, 89);\" data-mce-style=\"color: rgb(12, 31, 89);\">aprimorar sua jornada. </span>🚀</p>",
+                "nameBlock": "ferramentas"
               }
             ],
             "whatsapp": "5521965744132",
@@ -2381,7 +2391,8 @@
             "btnTextMenu": "Conheça mais dos nossos serviços",
             "logoPosition": "left",
             "titleSubMenu": "<h1>/Explore nossas ferramentas</h1>",
-            "descriptionSubMenu": "<p><strong><em>{Descubra a excelência digital: </em></strong><br>Ferramentas projetados para <br>aprimorar sua <span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">jornada</span>.}</span> 🚀</p>"
+            "descriptionSubMenu": "<p><strong><em>{Descubra a excelência digital: </em></strong><br>Ferramentas projetados para <br>aprimorar sua <span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">jornada</span>.}</span> 🚀</p>",
+            "disabledHeader": true
           },
           {
             "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4a7cc0d4-8ae0-492c-87f8-28839bc987a8",

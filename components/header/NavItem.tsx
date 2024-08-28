@@ -2,18 +2,29 @@ import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
 import { headerHeight } from "./constants.ts";
 import LinkButtonSubMenu from "$store/components/header/LinkButtonSubMenu.tsx";
-import { HTMLWidget as HTML } from "apps/admin/widgets.ts";
 import { clx } from "$store/sdk/clx.ts";
 
+/**@titleBy nameBlock */
 export interface PropsChildren extends SiteNavigationElement {
-  /** @title Título Submenu*/
-  titleSubMenu?: HTML;
+  /**@title Nome do Bloco */
+  nameBlock?: string;  
+  /** 
+   * @title Título Submenu
+   * @format rich-text
+   * */
+  titleSubMenu?: string;
 
-  /** @title Descrição Submenu - (Submenu de serviços) */
-  descriptionSubMenu?: HTML;
+  /** 
+   * @title Descrição Submenu - (Submenu de serviços) 
+   * @format rich-text
+  */
+  descriptionSubMenu?: string;
 
-  /** @title Texto para do botão */
-  /** @description (ex: conheça mais dos nossos serviços ) */
+  /** 
+   * @title Texto para do botão 
+   * @description (ex: conheça mais dos nossos serviços ) 
+   * @format rich-text
+   * */
   btnTextMenu?: string;
   /** @title Link do botão */
   /** @description (ex: https://agencian1.com.br/ ) */
