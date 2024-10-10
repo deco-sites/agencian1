@@ -26,7 +26,12 @@
             "arrows": true,
             "images": [
               {
-                "alt": "Banner 01"
+                "alt": "Banner 02",
+                "action": {
+                  "href": "https://www.n1.ag/quem-somos"
+                },
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/35f1a45c-4212-480a-b8c6-0174e459347a",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/47dcc421-c084-450c-a0a2-eaf787fee026"
               },
               {
                 "alt": "Banner 02",
