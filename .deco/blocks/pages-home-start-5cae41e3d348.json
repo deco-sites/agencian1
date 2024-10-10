@@ -1092,7 +1092,7 @@
                 "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/e9d7abed-225f-4359-b9a9-0333583ad84c",
                 "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/48d897a0-0448-4a92-8b0d-6efee1f6e899",
                 "action": {
-                  "href": "n1.ag/quem-somos"
+                  "href": "/quem-somos"
                 }
               },
               {
