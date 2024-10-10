@@ -2110,7 +2110,10 @@
               {
                 "alt": "Banner 01",
                 "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ef8ac90a-938a-494d-9d28-99efe3c6b5bc",
-                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d7eb1e72-3c02-4c15-8f7b-be9bd2c880da"
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d7eb1e72-3c02-4c15-8f7b-be9bd2c880da",
+                "action": {
+                  "href": "n1.ag/quem-somos"
+                }
               },
               {
                 "alt": "Banner 02",
