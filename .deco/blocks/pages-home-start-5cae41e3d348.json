@@ -26,9 +26,7 @@
             "arrows": true,
             "images": [
               {
-                "alt": "Banner 01",
-                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/35f1a45c-4212-480a-b8c6-0174e459347a",
-                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0a30c6d3-f60b-4080-8af0-37125e1ba5b4"
+                "alt": "Banner 01"
               },
               {
                 "alt": "Banner 02",
