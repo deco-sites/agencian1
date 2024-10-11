@@ -618,7 +618,7 @@
                 "link": "/cases/euro-relogios",
                 "textButton": "VEJA O CASE"
               },
-              "description": "<p>O N1 Rush é uma solução de loja online desenvolvida com as funcionalidades nativas da VTEX, fornecendo tudo o que você precisa para criar um e-commerce no VTEX IO.</p><p><br data-mce-bogus=\"1\"></p><p>O N1 Rush é uma solução de loja online desenvolvida com as funcionalidades nativas da VTEX, fornecendo tudo o que você precisa para criar um e-commerce no VTEX IO.</p>"
+              "description": "<p>O N1 Rush é uma solução de loja online desenvolvida com as funcionalidades nativas da VTEX, fornecendo tudo o que você precisa para criar um e-commerce no VTEX IO.</p>"
             },
             "marginBottom": "80px",
             "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
