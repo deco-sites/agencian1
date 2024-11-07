@@ -635,7 +635,7 @@
               "heightDesktop": 372
             },
             "contentText": {
-              "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Sobre o cliente</p>",
+              "title": "<p><span style=\"color: rgb(60, 203, 218)\">/</span>Sobre a Bagaggio</p><p></p><p></p>",
               "description": "<p>Fundada em 1942 no Rio de Janeiro, a Bagaggio se consolidou como uma marca de referência em malas e acessórios de viagem no Brasil. <br><br>Com mais de 200 lojas físicas e uma forte presença digital, a Bagaggio é sinônimo de tradição, qualidade e confiabilidade. A marca é reconhecida por acompanhar seus clientes em todas as suas jornadas, seja nas viagens ou no dia a dia.</p>"
             },
             "marginBottom": "10px",
@@ -645,24 +645,19 @@
           {
             "cards": [
               {
-                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b29e7878-a28b-48fb-a99b-1342e7b68023",
-                "title": "<p>UX Design</p>",
-                "description": "<p>Aprimorar a experiência do consumidor com melhorias de UX e obter valor agregado, diferenciação competitiva e aumento nas vendas.</p>"
-              },
-              {
                 "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/cb730e92-31b1-46e3-b979-28b5745b09f5",
-                "title": "<p>Performance</p>",
-                "description": "<p>Garantir que todas as páginas do site carreguem rapidamente é fundamental. O desafio está em otimizar imagens, scripts e conteúdo para manter o site ágil.</p>"
+                "title": "<p>Migração do front-end</p>",
+                "description": "<p>Essa estratégia permitiu medir o sucesso da nova ferramenta sem interferências externas e acelerou o processo, evitando um redesign. A migração separou a interface do usuário do back-end do e-commerce, mantendo a infraestrutura VTEXIO e incorporando maior velocidade e flexibilidade.</p>"
               },
               {
                 "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6b53bb35-c267-4b2c-a42b-3bce0cf785d3",
-                "title": "<p>Limitações técnicas</p>",
-                "description": "<p>A OH BOY! enfrentava limitações técnicas em seu e-commerce, com bugs, instabilidades e problemas de carregamento e velocidade comprometendo a experiência do cliente.</p>"
+                "title": "<p>Tecnologia HTMX</p>",
+                "description": "<p>A adoção da tecnologia HTMX foi essencial para simplificar o desenvolvimento e criar interfaces interativas e leves, minimizando o uso de JavaScript. Isso trouxe mais agilidade e reduziu o tempo de carregamento do site, impactando diretamente a experiência do usuário.<span style=\"color: rgb(0, 0, 0); font-size: 11pt\"><br></span></p>"
               },
               {
                 "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c19ecd5e-1eea-49f7-921c-5ba7631a2995",
-                "title": "<p>Escalabilidade:</p>",
-                "description": "<p>À medida que o tráfego aumenta, o site deve ser capaz de lidar com a carga adicional. Escalar a infraestrutura para acomodar picos de tráfego é um desafio técnico.</p>"
+                "title": "<p>Gestão colaborativa</p>",
+                "description": "<p>A <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://N1.AG\">N1.AG</a> trabalhou de maneira colaborativa com a Bagaggio durante todo o processo, aplicando suas habilidades e ferramentas para garantir que o projeto fosse entregue dentro do prazo, atendendo às expectativas e demandas do cliente.</p>"
               }
             ],
             "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Principais Desafios</p>",
