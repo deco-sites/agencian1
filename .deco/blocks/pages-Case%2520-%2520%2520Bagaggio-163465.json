@@ -636,7 +636,7 @@
             },
             "contentText": {
               "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Sobre o cliente</p>",
-              "description": "<p>Com mais de 20 anos no mercado, 30 lojas próprias e presença em mais de 500 multimarcas, a OH, BOY! é uma marca carioca que reflete uma essência jovem e urbana. Suas coleções confortáveis e descontraídas misturam estilos, refletindo uma personalidade moderna e única.</p><p><br data-mce-bogus=\"1\"></p><p>A marca mantém sua originalidade, e entende que precisa se apresentar de um jeito fresh e inovador para conquistar as novas gerações.</p>"
+              "description": "<p>Fundada em 1942 no Rio de Janeiro, a Bagaggio se consolidou como uma marca de referência em malas e acessórios de viagem no Brasil. <br><br>Com mais de 200 lojas físicas e uma forte presença digital, a Bagaggio é sinônimo de tradição, qualidade e confiabilidade. A marca é reconhecida por acompanhar seus clientes em todas as suas jornadas, seja nas viagens ou no dia a dia.</p>"
             },
             "marginBottom": "10px",
             "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
@@ -683,16 +683,16 @@
               "list": {
                 "textList": [
                   {
-                    "descriptionList": "<p>A N1.AG propôs migrar o e-commerce da OH BOY! para o VTEX IO, oferecendo uma gestão focada na experiência do usuário.</p>"
+                    "descriptionList": "<p><span style=\"font-size: 14px\">A adoção do HTMX facilitou a criação de interfaces interativas e leves, reduzindo a dependência de JavaScript e focando na melhoria da performance do projeto.</span></p>"
                   },
                   {
-                    "descriptionList": "<p>Com o VTEX IO, foi possível criar layouts responsivos e personalizados, otimizados para dispositivos móveis, proporcionando experiências de compra únicas, alinhadas à identidade da marca.</p>"
+                    "descriptionList": "<p>Isso resultou em uma navegação mais ágil e eficiente para os clientes. <span style=\"font-size: 14px\">A Bagaggio alcançou a pontuação de 90+ pontos no PageSpeed, um aumento significativo em relação aos pontos anteriores.</span></p>"
                   },
                   {
-                    "descriptionList": "<p>A tecnologia do VTEX IO também permitiu superar desafios de infraestrutura, possibilitando um foco total nas soluções.</p>"
+                    "descriptionList": "<p>Trabalhamos junto à Bagaggio, desde a concepção até a implementação, garantindo que cada etapa fosse concluída com eficiência e dentro dos prazos estabelecidos.</p>"
                   },
                   {
-                    "descriptionList": "<p>Com a migração para o VTEX IO e a implementação de novas features junto à equipe especializada da N1.AG, a OH BOY! tem proporcionado aos seus usuários melhor experiência de navegação.</p>"
+                    "descriptionList": "<p><span style=\"font-size: 14px\">O buscador utiliza indicadores de performance, como a velocidade de carregamento, para ranquear páginas. Após a migração, a Bagaggio melhorou nesses critérios, o que pode favorecer seu posicionamento orgânico.</span></p>"
                   }
                 ],
                 "iconCheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/509809ed-9793-4361-9b7f-f09787a9bf25",
