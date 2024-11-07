@@ -572,9 +572,9 @@
                   },
                   "desktop": {
                     "alt": "Banner Implantação",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b075e3ee-a732-48d8-9e14-8639453dea7d",
+                    "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/5a66b159-29c4-4778-86ec-77230998252e/Case-bagaggio.png",
                     "width": "1442",
-                    "height": "735"
+                    "height": "440"
                   }
                 },
                 "matcher": "/cases/oh-boy"
