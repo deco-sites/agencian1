@@ -798,22 +798,14 @@
             "cards": [
               {
                 "Iconcheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/f5ee2969-dd65-4129-b495-ec9f6b8b44c3",
-                "description": "<p>A atualização tecnológica permitiu uma significativa melhoria na performance do site, resultado direto da otimização do código implementada durante o projeto. A resposta ágil do VTEX IO à escalabilidade e a flexibilidade da arquitetura headless foram cruciais para alcançar um ambiente mais robusto e eficiente.</p>"
+                "description": "<p><span style=\"color: #ffffff; font-size: small\">A migração para deco HTMX trouxe resultados excepcionais: a performance do site aumentou em mais de 30%, elevando a pontuação de 78 para 100 no desktop</span><span style=\"color: #ffffff\">, proporcionando uma navegação mais ágil e facilitando a busca por produtos. </span></p>"
               },
               {
                 "Iconcheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/70eca0f8-6113-4c3b-b32e-fbf181423f11",
-                "description": "<p>A incorporação de novas funcionalidades, como a \"Compra Rápida na Prateleira\" e o \"Monte Seu Look com Compra Rápida\", não apenas simplificou o processo de compra, mas também aumentou a interatividade e envolvimento dos clientes. Essas melhorias se traduziram em uma experiência do usuário mais rica, evidenciada pelo aumento nas taxas de conversão e no tempo médio de permanência no site.</p>"
-              },
-              {
-                "Iconcheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/323a6ff4-7b42-4880-82c2-da43f964553f",
-                "description": "<p>A edição simplificada de conteúdo também proporcionou agilidade à equipe da OH BOY!, permitindo uma resposta mais rápida às tendências e demandas do mercado. Como resultado, a marca conquistou uma posição mais competitiva no cenário de e-commerce. O projeto refletiu em uma presença digital mais sólida e eficaz.</p>"
-              },
-              {
-                "Iconcheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d455cd14-ce14-4006-911e-0b8507f306bb",
-                "description": "<p>Facilita e incentiva a colaboração entre clientes, permitindo que compartilhem produtos e carrinhos, aumentando as vendas e a fidelização.</p>"
+                "description": "<p><span style=\"color: #ffffff; font-size: 14px\">A flexibilidade do HTMX oferece à Bagaggio a capacidade de realizar atualizações e personalizações na plataforma de maneira rápida e eficiente, permitindo que a marca acompanhe as mudanças do mercado com agilidade.</span></p>"
               }
             ],
-            "title": "<p>/Resultados alcançados</p>",
+            "title": "<p>/Resultado</p>",
             "marginBottom": "68px",
             "__resolveType": "site/sections/Result_chievements/result_chievements.tsx"
           },
