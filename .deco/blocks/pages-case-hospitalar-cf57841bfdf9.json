@@ -675,9 +675,9 @@
               "heightDesktop": 372
             },
             "contentText": {
-              "title": "<h2>Sobre o cliente</h2>",
+              "title": "<h2>Sobre a Hospitalar</h2>",
               "addBar": true,
-              "description": "<p>Fundada em 1998, em Presidente Prudente - SP, a Hospitalar Distribuidora atua na venda de medicamentos e produtos hospitalares. Em 2008, de olho na demanda crescente, lançaram pioneiramente seu 1º e-commerce. </p><p><br data-mce-bogus=\"1\"></p><p>&nbsp;Essa transição permitiu que a empresa ampliasse sua visão de negócio e iniciasse o processo de consolidação da sua marca no mercado digital.</p>"
+              "description": "<p>Fundada em 1998, em Presidente Prudente - SP, a Hospitalar Distribuidora atua na venda de medicamentos e produtos hospitalares. <br><br>Em 2008, de olho na demanda crescente, lançaram pioneiramente seu 1º e-commerce.&nbsp;Essa transição permitiu que a empresa ampliasse sua visão de negócio e iniciasse o processo de consolidação da sua marca no mercado digital.</p>"
             },
             "marginBottom": "10px",
             "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
@@ -693,12 +693,12 @@
               {
                 "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/8316137f-4bd8-430c-a72f-2764bf9d36f4",
                 "title": "<h3>Colaboração estratégica</h3>",
-                "description": "<p>Colaboração nas áreas estratégicas para o e-commerce da Hospitalar. Fornecimento de suporte em evolução, mídias e análise, com objetivo de ser um apoio integral às necessidades específicas do cliente.</p>"
+                "description": "<p>Suporte em evolução, CRO, tráfego pago e mídias sociais, com objetivo de ser um apoio integral às necessidades específicas do cliente.</p>"
               },
               {
                 "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/46b6e90b-3564-4923-bd73-8c49940eaf0a",
                 "title": "<h3>Mudança de plataforma CMS</h3>",
-                "description": "<p>Migração para a plataforma deco, exigindo aprendizado e adaptação da equipe.</p>"
+                "description": "<p><span style=\"color: rgb(243, 244, 247); font-size: 14px\">Migra o front-end para Deco oferecendo a capacidade de manter a infraestrutura existente e incorporar a velocidade e flexibilidade.</span></p><p></p>"
               },
               {
                 "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9191ec0c-24d0-45fd-a1c1-7a362546bfc4",
