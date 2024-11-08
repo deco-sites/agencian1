@@ -1,6 +1,6 @@
 {
   "name": "Case -  Bagaggio",
-  "path": "/example-path",
+  "path": "/cases/bagaggio",
   "sections": {
     "variants": [
       {
@@ -577,7 +577,7 @@
                     "height": "440"
                   }
                 },
-                "matcher": "/cases/oh-boy"
+                "matcher": "/cases/bagaggio"
               }
             ],
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
