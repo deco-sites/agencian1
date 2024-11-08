@@ -586,7 +586,7 @@
             "items": [
               {
                 "category": "cases",
-                "subcategory": "oh boy"
+                "subcategory": "bagaggio"
               }
             ],
             "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
