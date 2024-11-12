@@ -33,16 +33,16 @@ export interface Buttons {
 export interface PropsChildren extends SiteNavigationElement {
   /**@title Nome do Bloco */
   nameBlock?: string;
-  /** 
+  /**
    * @title Título Submenu
    * @format rich-text
-   * */
+   */
   titleSubMenu?: string;
 
-  /** 
-   * @title Descrição Submenu 
+  /**
+   * @title Descrição Submenu
    * @format rich-text
-   * */
+   */
   descriptionSubMenu?: string;
 
   /** @title Texto para do botão */
@@ -68,11 +68,11 @@ interface ImageGeneric {
   height?: number;
 }
 
-export interface Props { 
+export interface Props {
   /**
- * @title Desativar o Header? 
- * */
-  disabledHeader?: boolean;   
+   * @title Desativar o Header?
+   */
+  disabledHeader?: boolean;
   alerts?: string[];
   /**
    * @title Itens de navegação

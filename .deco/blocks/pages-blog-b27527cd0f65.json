@@ -10,9 +10,15 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-espanhol" },
-          { "__resolveType": "Footer-Spanish" }
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-espanhol"
+          },
+          {
+            "__resolveType": "Footer-Spanish"
+          }
         ]
       },
       {
@@ -22,16 +28,28 @@
           "__resolveType": "website/matchers/cookie.ts"
         },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "Header-english" },
-          { "__resolveType": "footer-English" }
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "Header-english"
+          },
+          {
+            "__resolveType": "footer-English"
+          }
         ]
       },
       {
-        "rule": { "__resolveType": "website/matchers/always.ts" },
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
         "value": [
-          { "__resolveType": "Theme" },
-          { "__resolveType": "header-principal" },
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-principal"
+          },
           {
             "banners": [
               {
@@ -55,10 +73,24 @@
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
           {
-            "items": [{ "category": "Nosso Blog" }],
-            "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
+            "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx",
+            "items": [
+              {
+                "category": "Nosso Blog"
+              }
+            ]
           },
-          { "__resolveType": "footer-principal" }
+          {
+            "__resolveType": "site/sections/Blog/BlogMainPage.tsx",
+            "mainContainer": [
+              {
+                "__resolveType": "site/sections/Blog/BlogPosts.tsx"
+              }
+            ]
+          },
+          {
+            "__resolveType": "footer-principal"
+          }
         ]
       }
     ],

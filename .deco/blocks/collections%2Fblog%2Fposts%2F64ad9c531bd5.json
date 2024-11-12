@@ -1,0 +1,24 @@
+{
+  "name": "collections/blog/posts/64ad9c531bd5",
+  "__resolveType": "blog/loaders/Blogpost.ts",
+  "post": {
+    "authors": [
+      {
+        "name": "Agencian1",
+        "email": "Agencian1@n1"
+      }
+    ],
+    "categories": [
+      {
+        "name": "BlackFriday",
+        "slug": "blackfriday"
+      }
+    ],
+    "title": "Black Friday: Os hábitos de compra dos consumidores em 2023",
+    "excerpt": "dd",
+    "slug": "ddddd",
+    "content": "<p><span>A Black Friday 2023 está se aproximando rapidamente, e temos boas notícias para compartilhar com vocês. De acordo com um estudo recente da Conversion, a Black Friday deste ano está prevista para crescer 9% em relação a 2022. Isso é uma excelente notícia para todos aqueles que estão comprometidos em fazer vendas recordes e aproveitar […]</span></p>",
+    "date": "2024-11-12",
+    "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/6895acb2-63e5-45b8-a62d-76bbd1fc78eb/Image-(16).png"
+  }
+}
