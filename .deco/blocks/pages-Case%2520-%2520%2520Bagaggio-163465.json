@@ -746,24 +746,24 @@
                   "arrows": true,
                   "images": [
                     {
-                      "alt": "oh boy",
+                      "alt": "Bagaggio",
                       "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/cdf73f26-ed13-49b8-9379-b5f24b13999f",
                       "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/53ad9581-d176-4f48-88fa-6516a91843be",
-                      "subTitle": "<p>{Compra rápida nas Prateleiras}</p>",
+                      "subTitle": "<p>{personalização do produto}</p>",
                       "description": "<p>A funcionalidade permite que o usuário adicione um item no carrinho, direto da prateleira, sem precisar clicar no produto, economizando tempo e tornando o processo de compra mais ágil.</p>"
                     },
                     {
-                      "alt": "Oh BOY ",
+                      "alt": "Bagaggio",
                       "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/734c352e-0940-4920-8b1a-ea8b24d3e34a",
                       "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c4a79a6c-b16c-4a4d-996b-98e8e3aecfa9",
-                      "subTitle": "<p>{Monte Seu Look com Compra Rápida}</p>",
+                      "subTitle": "<p>{vídeo e 360º}</p>",
                       "description": "<p>Permite aos clientes personalizarem suas escolhas diretamente na página inicial, agilizando a compra e melhorando a experiência do usuário.</p>"
                     },
                     {
-                      "alt": "Oh Boy",
+                      "alt": "Bagaggio",
                       "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/290d043c-ca9a-4752-bfba-c34044e25266",
                       "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5bd5446d-1817-4ccf-9e3e-a5450dd3b123",
-                      "subTitle": "<p>{Checkout com Cupom de Desconto<br>e Código de Vendedor}</p>",
+                      "subTitle": "<p>{Compre junto}</p>",
                       "description": "<p>Ofereça descontos exclusivos ao consumidor, administre a performance de seus vendedores, extraindo dados como número de vendas / ticket médio por vendedor, ranking para comissionamento de vendas, entre outros.<strong id=\"docs-internal-guid-bb2ff015-7fff-32da-c4c6-3661099f5f25\"><br></strong></p>"
                     }
                   ],
