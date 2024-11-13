@@ -747,22 +747,22 @@
                   "images": [
                     {
                       "alt": "Bagaggio",
-                      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/cdf73f26-ed13-49b8-9379-b5f24b13999f",
-                      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/53ad9581-d176-4f48-88fa-6516a91843be",
+                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/c31a570e-0f0a-42f8-bd7b-49054518dd66/Captura-de-tela-2024-11-13-190955.png",
+                      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/c31a570e-0f0a-42f8-bd7b-49054518dd66/Captura-de-tela-2024-11-13-190955.png",
                       "subTitle": "<p>{personalização do produto}</p>",
                       "description": "<p>A funcionalidade permite que o usuário adicione um item no carrinho, direto da prateleira, sem precisar clicar no produto, economizando tempo e tornando o processo de compra mais ágil.</p>"
                     },
                     {
                       "alt": "Bagaggio",
-                      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/734c352e-0940-4920-8b1a-ea8b24d3e34a",
-                      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c4a79a6c-b16c-4a4d-996b-98e8e3aecfa9",
+                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/b083c048-e348-44e3-839e-1ec57fa5e5e7/Captura-de-tela-2024-11-13-190908.png",
+                      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/b083c048-e348-44e3-839e-1ec57fa5e5e7/Captura-de-tela-2024-11-13-190908.png",
                       "subTitle": "<p>{vídeo e 360º}</p>",
                       "description": "<p>Permite aos clientes personalizarem suas escolhas diretamente na página inicial, agilizando a compra e melhorando a experiência do usuário.</p>"
                     },
                     {
                       "alt": "Bagaggio",
-                      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/290d043c-ca9a-4752-bfba-c34044e25266",
-                      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5bd5446d-1817-4ccf-9e3e-a5450dd3b123",
+                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/c930c34d-4bb9-43d8-9ff6-524e1299954f/Captura-de-tela-2024-11-13-191249.png",
+                      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/c930c34d-4bb9-43d8-9ff6-524e1299954f/Captura-de-tela-2024-11-13-191249.png",
                       "subTitle": "<p>{Compre junto}</p>",
                       "description": "<p>Ofereça descontos exclusivos ao consumidor, administre a performance de seus vendedores, extraindo dados como número de vendas / ticket médio por vendedor, ranking para comissionamento de vendas, entre outros.<strong id=\"docs-internal-guid-bb2ff015-7fff-32da-c4c6-3661099f5f25\"><br></strong></p>"
                     }
