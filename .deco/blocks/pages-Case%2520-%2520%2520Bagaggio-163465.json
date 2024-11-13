@@ -619,7 +619,7 @@
             "bannerImg": {
               "alt": "banner",
               "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0acb2bbe-7f56-4623-827e-fee6b17d2cdd",
-              "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/d3a5cf4d-c51a-4df3-99b6-1fe4df759c3f/bagaggio-(2).png",
+              "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/e869511e-0ef1-4e92-9620-abd077afc654/bagaggio-(4).png",
               "widthDesktop": 632,
               "heightDesktop": 372
             },
@@ -668,7 +668,7 @@
           {
             "bannerImg": {
               "alt": "banner",
-              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/72dd2dbf-9211-40a1-93e7-3353baa71768",
+              "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/42e1a6a4-8227-45bb-9bbf-f4aabb06f13a/Design-sem-nome.png",
               "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/375eb951-6cf8-4939-a42e-edd949645e00/Design-sem-nome-(1).png",
               "widthDesktop": 596.64,
               "heightDesktop": 451.569
@@ -695,7 +695,7 @@
               },
               "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>soluções:</p>",
               "button": {
-                "link": "https://www.ohboy.com.br/",
+                "link": "https://www.bagaggio.com.br/",
                 "textButton": "Visite o novo site"
               }
             },
