@@ -571,13 +571,14 @@
                     "height": "500"
                   },
                   "desktop": {
-                    "alt": "Banner Implantação",
+                    "alt": "Banner ",
                     "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/5a66b159-29c4-4778-86ec-77230998252e/Case-bagaggio.png",
                     "width": "1442",
                     "height": "440"
                   }
                 },
-                "matcher": "/cases/bagaggio"
+                "matcher": "/cases/bagaggio",
+                "title": "Bagaggio"
               }
             ],
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
@@ -668,7 +669,7 @@
           {
             "bannerImg": {
               "alt": "banner",
-              "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/42e1a6a4-8227-45bb-9bbf-f4aabb06f13a/Design-sem-nome.png",
+              "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/375eb951-6cf8-4939-a42e-edd949645e00/Design-sem-nome-(1).png",
               "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/375eb951-6cf8-4939-a42e-edd949645e00/Design-sem-nome-(1).png",
               "widthDesktop": 596.64,
               "heightDesktop": 451.569
