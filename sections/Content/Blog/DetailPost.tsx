@@ -1,5 +1,6 @@
 import { AppContext } from "apps/blog/mod.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
+import type { RequestURLParam } from "apps/website/functions/requestToParam.ts";
 import { Section, SectionProps } from "deco/mod.ts";
 import { BlogPost } from "apps/blog/types.ts";
 import { clx } from "$store/sdk/clx.ts";
@@ -7,7 +8,6 @@ import BlogTitle from "$store/components/Blog/BlogTitle.tsx";
 import BlogDescription from "$store/components/Blog/BlogDescription.tsx";
 import BlogImage from "$store/components/Blog/BlogImage.tsx";
 import BlogSocialMidia from "$store/components/Blog/BlogSocialMidia.tsx";
-
 
 export interface Button {
   /**@title Texto do botão */
@@ -57,18 +57,19 @@ export interface Layout {
 }
 
 export interface Props {
-  posts?: BlogPost[];
+  post?: BlogPost;
+  slug?: RequestURLParam;
   asideCotent?: Section[];
   /**@title Blog layout */
   layout?: Layout;
 }
 
 export default function DetailPost({
-  posts,
+  post,
   layout,
   asideCotent,
 }: SectionProps<typeof loader>) {
-  if (!posts) return <></>;
+  if (!post) return <></>;
 
   return (
     <>
@@ -80,72 +81,70 @@ export default function DetailPost({
         <div
           class={clx(
             `flex flex-col px-[20px] md:px-0 md:grid ${
-                !(asideCotent && asideCotent?.length > 0) ? "md:grid-cols-[1fr]" : "md:grid-cols-[auto_1fr]"
+              !(asideCotent && asideCotent?.length > 0)
+                ? "md:grid-cols-[1fr]"
+                : "md:grid-cols-[auto_1fr]"
             } md:gap-x-[30px]`
           )}
         >
           <div class={clx(`n1-blog__content flex flex-col gap-y-[30px]`)}>
-            {posts &&
-              posts.length > 0 &&
-              posts.map((post: BlogPost) => {
-                return (
-                  <>
-                    <div
-                      class={`n1-blog__content-item ${
-                        !(asideCotent && asideCotent?.length > 0) ? "my-0 mx-auto" : ""
-                      } md:max-w-[790px] `}
-                    >
-                      <div
-                        class={`n1-blog__content-subitem py-[30px] px-[20px] rounded-[10px]`}
-                      >
-                        <div class={`n1-blog`}>
-                          <div>
-                            {post?.title && (
-                              <BlogTitle
-                                title={post?.title}
-                                fontSizeDesk={`md:[&_*]:text-32`}
-                                fontSizeMobile={`[&_*]:text-20`}
-                              />
-                            )}
+            {post && (
+              <>
+                <div
+                  class={`n1-blog__content-item ${
+                    !(asideCotent && asideCotent?.length > 0)
+                      ? "my-0 mx-auto"
+                      : ""
+                  } md:max-w-[790px] `}
+                >
+                  <div
+                    class={`n1-blog__content-subitem py-[30px] px-[20px] rounded-[10px]`}
+                  >
+                    <div class={`n1-blog`}>
+                      <div>
+                        {post?.title && (
+                          <BlogTitle
+                            title={post?.title}
+                            fontSizeDesk={`md:[&_*]:text-32`}
+                            fontSizeMobile={`[&_*]:text-20`}
+                            link={`/nosso-blog/post?slug=${post?.slug}`}
+                          />
+                        )}
 
-                            {layout && (
-                              <BlogSocialMidia
-                                socialMedia={layout?.socialMedia}
-                              />
-                            )}
+                        {layout && (
+                          <BlogSocialMidia socialMedia={layout?.socialMedia} />
+                        )}
 
-                            {post?.image && (
-                              <BlogImage imageBlog={post.image} />
-                            )}
+                        {post?.image && <BlogImage imageBlog={post.image} />}
 
-                            {post?.content && (
-                              <BlogDescription description={post.content} />
-                            )}
+                        {post?.content && (
+                          <BlogDescription description={post.content} />
+                        )}
 
-                            {layout?.button?.text && (
-                              <button
-                                class={clx(` mt-[30px] py-[15px] px-[20px] rounded-[100px] border border-[#ffffff] flex items-center
+                        {layout?.button?.text && (
+                          <a
+                            href={`/nosso-blog/post?slug=${post?.slug}`}
+                            class={clx(`w-fit mt-[30px] py-[15px] px-[20px] rounded-[100px] border border-[#ffffff] flex items-center
                              text-[14px] leading-[14px] font-archimoto-medium font-black max-h-[40px]`)}
-                              >
-                                {layout?.button.text}
-                              </button>
-                            )}
-                          </div>
-                        </div>
+                          >
+                            {layout?.button.text}
+                          </a>
+                        )}
                       </div>
                     </div>
-                  </>
-                );
-              })}
+                  </div>
+                </div>
+              </>
+            )}
           </div>
-          {(asideCotent && asideCotent?.length > 0)  && (
+          {asideCotent && asideCotent?.length > 0 && (
             <aside class={`n1-blog__aside md:w-[378px] mt-[40px] md:mt-0`}>
               <div class={clx(`flex flex-col gap-y-[30px] md:gap-y-[32px]`)}>
                 {asideCotent.map(({ Component, props }, index) => (
                   <Component key={index} {...props} />
                 ))}
               </div>
-            </aside>    
+            </aside>
           )}
         </div>
       </section>
@@ -153,14 +152,16 @@ export default function DetailPost({
   );
 }
 
-export const loader = async (props: Props, __: Request, ctx: AppContext) => {
-  const posts = await ctx.invoke.blog.loaders.BlogpostList({
-    count: 2,
-  });
-  console.log(posts);
+export const loader = async (props: Props, req: Request, ctx: AppContext) => {
+  const url = new URL(req.url);
+  const urlParams = new URLSearchParams(url.search);
+  const slug = props?.slug ?? urlParams.get("slug");
+  console.log(slug);
+
+  const post = await ctx.invoke.blog.loaders.BlogPostItem({ slug });
 
   return {
     ...props,
-    posts,
+    post,
   };
 };

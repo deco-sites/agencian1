@@ -97,7 +97,8 @@
                   ]
                 }
               }
-            ]
+            ],
+            "post": {}
           },
           {
             "__resolveType": "footer-principal"
