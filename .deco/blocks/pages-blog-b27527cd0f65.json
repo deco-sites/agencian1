@@ -148,12 +148,27 @@
             ],
             "asideCotent": [
               {
+                "__resolveType": "site/sections/Content/Blog/BlogAsideNewsletter.tsx",
+                "newsletter": {
+                  "titleNewsletter": "<p>Cadastre-se para receber nossas novidades</p>",
+                  "maskNewsletterName": "Nome",
+                  "textButton": "Cadastrar",
+                  "maskNewsletterEmail": "E-mail"
+                }
+              },
+              {
+                "__resolveType": "site/sections/Content/Blog/BlogAsideCategories.tsx",
+                "categories": {
+                  "title": "<p>Categoria</p>"
+                }
+              },
+              {
                 "__resolveType": "site/sections/Content/Blog/BlogAsideTags.tsx",
                 "tag": {
                   "nameTag": [
                     "dddd"
                   ],
-                  "title": "<p>ccc</p>"
+                  "title": "<p>Nuvem com Tags</p>"
                 }
               }
             ],
