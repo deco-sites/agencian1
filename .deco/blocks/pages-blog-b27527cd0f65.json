@@ -145,7 +145,23 @@
                   "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2528296b-6b18-4dc9-b07d-73c5f6db5309"
                 }
               }
-            ]
+            ],
+            "asideCotent": [
+              {
+                "__resolveType": "site/sections/Content/Blog/BlogAsideTags.tsx",
+                "tag": {
+                  "nameTag": [
+                    "dddd"
+                  ],
+                  "title": "<p>ccc</p>"
+                }
+              }
+            ],
+            "layout": {
+              "button": {
+                "text": "Continue lendo"
+              }
+            }
           },
           {
             "__resolveType": "footer-principal"

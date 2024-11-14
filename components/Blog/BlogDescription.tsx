@@ -12,13 +12,12 @@ function BlogDescription({ description, fontSizeDesk, fontSizeMobile }: Props) {
       {description && (
         <div
           class={clx(`
-                        [&_*]:n1-blog__description 
+                        n1-blog__description 
                         ${fontSizeDesk ? fontSizeDesk : "text-16"} 
                         ${fontSizeMobile ? fontSizeMobile : "text-14"} 
-                        [&_*]:font-noto-sans`)}
+                        font-noto-sans`)}
           dangerouslySetInnerHTML={{ __html: description }}
-        >
-        </div>
+        ></div>
       )}
     </>
   );
