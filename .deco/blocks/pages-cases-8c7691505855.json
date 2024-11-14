@@ -518,15 +518,17 @@
                 "imgCardMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/4da7e942-044d-4ce5-9ab9-bfee1c1659ca/Imagem1-1-1200x801.jpg",
                 "imgCardDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/4da7e942-044d-4ce5-9ab9-bfee1c1659ca/Imagem1-1-1200x801.jpg",
                 "imgIconStoreMobile": {
-                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/1c7b4f64-6bc1-42cf-b9e0-c7387de9edf0",
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/5b73e2c7-6ba2-4960-914b-dd19af588e01/bagaggio.png",
                   "width": "108",
                   "height": "32"
                 },
                 "imgIconStoreDesktop": {
-                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/e2ef952e-2404-42ef-a8e6-0c0873528ca2",
+                  "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/5b73e2c7-6ba2-4960-914b-dd19af588e01/bagaggio.png",
                   "width": "185",
                   "height": "60"
-                }
+                },
+                "widthDesktop": 580,
+                "heightDesktop": 430
               }
             ],
             "__resolveType": "site/sections/cases/cases.tsx",
