@@ -718,18 +718,25 @@
                   "arrows": true,
                   "images": [
                     {
-                      "alt": "oh boy",
-                      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/f9ae10e8-83f4-4c69-9bb2-f22e2ed0975e",
-                      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/1bb6aeca-85d7-4181-8662-b36016dee8ec",
-                      "subTitle": "<p>{Compra rápida nas Prateleiras}</p>",
-                      "description": "<p>A funcionalidade permite que o usuário adicione um item no carrinho, direto da prateleira, sem precisar clicar no produto, economizando tempo e tornando o processo de compra mais ágil.</p>"
+                      "alt": "Bagaggio",
+                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/96897c8b-71bf-4f1c-8d29-cb76bd8a463e/Captura-de-tela-2024-11-14-175120.png",
+                      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/96897c8b-71bf-4f1c-8d29-cb76bd8a463e/Captura-de-tela-2024-11-14-175120.png",
+                      "subTitle": "<p>{vídeo e 360º}</p>",
+                      "description": "<p>Vídeos 360° são a nova fronteira do marketing digital. Com eles, você captura a atenção do seu público por mais tempo, aumenta o tempo de visualização e impulsiona as conversões.</p>"
                     },
                     {
                       "alt": "Oh BOY ",
-                      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fd9f6c77-7733-4f11-8395-0a12d4486960",
-                      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2ef8c98f-5226-479a-bcd0-daa285d37b85",
-                      "subTitle": "<p>{Compra rápida nas Prateleiras}</p>",
-                      "description": "<p>A funcionalidade permite que o usuário adicione um item no carrinho, direto da prateleira, sem precisar clicar no produto, economizando tempo e tornando o processo de compra mais ágil.</p>"
+                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/63d928e8-a47a-4e61-843f-16cd2371a062/Captura-de-tela-2024-11-14-122501.png",
+                      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/63d928e8-a47a-4e61-843f-16cd2371a062/Captura-de-tela-2024-11-14-122501.png",
+                      "subTitle": "<p>{Personalização de Produto}</p>",
+                      "description": "<p>Nossa solução de personalização de produtos permite que seus clientes criem produtos únicos e expressem sua individualidade. O resultado? Uma experiência de compra memorável e um aumento nas suas vendas.</p>"
+                    },
+                    {
+                      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/c31a570e-0f0a-42f8-bd7b-49054518dd66/Captura-de-tela-2024-11-13-190955.png",
+                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/c31a570e-0f0a-42f8-bd7b-49054518dd66/Captura-de-tela-2024-11-13-190955.png",
+                      "alt": "personalização",
+                      "description": "<p>Impulsione seus resultados com nossa ferramenta que aumenta o valor médio das compras. Ao recomendar produtos perfeitos para cada cliente, você incentiva a compra de mais itens por pedido, elevando seus lucros e fidelizando seus clientes.</p>",
+                      "subTitle": "<p>{Compre Junto}</p>"
                     }
                   ],
                   "preload": true,
