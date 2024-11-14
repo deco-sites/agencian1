@@ -2109,8 +2109,8 @@
             "images": [
               {
                 "alt": "Banner 01",
-                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/ef8ac90a-938a-494d-9d28-99efe3c6b5bc",
-                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d7eb1e72-3c02-4c15-8f7b-be9bd2c880da",
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/040f2cce-9b25-455e-bcc9-0fb69e4ff3e5/03---mobile.png",
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/6e829222-f399-4d55-ba46-b767098e4cd0/banner.png",
                 "action": {
                   "href": "/quem-somos"
                 }
