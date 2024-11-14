@@ -1,11 +1,15 @@
 import { clx } from "$store/sdk/clx.ts";
 
-interface AsideSearch {
+export interface AsideSearch {
+  /**
+   * @title Nome do campo Pesquisa
+   * @format html
+   */
   titleSearch?: string;
   maskSearch?: string;
 }
 
-interface Props {
+export interface Props {
   search?: AsideSearch;
 }
 

@@ -148,6 +148,13 @@
             ],
             "asideCotent": [
               {
+                "__resolveType": "site/sections/Content/Blog/BlogAsideSearch.tsx",
+                "search": {
+                  "titleSearch": "<p>Buscar no Blog</p>",
+                  "maskSearch": "Digite o que você procura"
+                }
+              },
+              {
                 "__resolveType": "site/sections/Content/Blog/BlogAsideNewsletter.tsx",
                 "newsletter": {
                   "titleNewsletter": "<p>Cadastre-se para receber nossas novidades</p>",
