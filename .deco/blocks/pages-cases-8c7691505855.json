@@ -491,6 +491,42 @@
                   "width": "185",
                   "height": "60"
                 }
+              },
+              {
+                "alt": "Banner ",
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/5e68b877-6e31-4fd8-8b5a-fef4002ebc5f",
+                "link": "/cases/bagaggio",
+                "width": 580,
+                "height": 420,
+                "storeNome": "OH, BOY",
+                "buttonName": "Saiba Mais",
+                "technology": [
+                  {
+                    "services": "#deco.cx",
+                    "IconMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d426126c-6bed-4fac-91b1-73621eeb3931",
+                    "IconDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/dd7b8b40-073e-443c-96aa-39329e467ad8"
+                  },
+                  {
+                    "services": "#vtexio",
+                    "IconMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7f9fbde2-0030-4734-99a0-9648db1d5ab8",
+                    "IconDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/dc916941-d779-4942-8639-9f1f297fabca"
+                  }
+                ],
+                "widthMobile": 350,
+                "heightMobile": 342,
+                "imgIconStore": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/427e1f0e-3fc7-41c2-bd26-d9e1a0d55992",
+                "imgCardMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/4da7e942-044d-4ce5-9ab9-bfee1c1659ca/Imagem1-1-1200x801.jpg",
+                "imgCardDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/4da7e942-044d-4ce5-9ab9-bfee1c1659ca/Imagem1-1-1200x801.jpg",
+                "imgIconStoreMobile": {
+                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/1c7b4f64-6bc1-42cf-b9e0-c7387de9edf0",
+                  "width": "108",
+                  "height": "32"
+                },
+                "imgIconStoreDesktop": {
+                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/e2ef952e-2404-42ef-a8e6-0c0873528ca2",
+                  "width": "185",
+                  "height": "60"
+                }
               }
             ],
             "__resolveType": "site/sections/cases/cases.tsx",
