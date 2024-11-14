@@ -7,6 +7,12 @@ import BlogTitle from "$store/components/Blog/BlogTitle.tsx";
 import BlogDescription from "$store/components/Blog/BlogDescription.tsx";
 import BlogImage from "$store/components/Blog/BlogImage.tsx";
 import BlogSocialMidia from "$store/components/Blog/BlogSocialMidia.tsx";
+import { RequestURLParam } from "apps/website/functions/requestToParam.ts";
+import handlePosts, {
+  slicePosts,
+  SortBy,
+} from "site/components/Blog/utils/handlePosts.ts";
+import { getRecordsByPath } from "apps/blog/utils/records.ts";
 
 export interface AsideSearch {
   /**
@@ -123,13 +129,41 @@ export interface Layout {
    */
   socialMedia?: SocialMedia[];
 }
+
+export interface Pagination {
+  /**
+   * @title Category Slug
+   * @description Filter by a specific category slug.
+   */
+  slug?: RequestURLParam;
+  /**
+   * @title Items per page
+   * @description Number of posts per page to display.
+   */
+  count?: number;
+  /**
+   * @title Page query parameter
+   * @description The current page number. Defaults to 1.
+   */
+  page?: number;
+  /**
+   * @title Page sorting parameter
+   * @description The sorting option. Default is "date_desc"
+   */
+  sortBy?: SortBy;
+}
+
 export interface Props {
   posts?: BlogPost[];
+  pagination?: Pagination;
   /**@title Ocultar seção Aside */
   asideCotent?: Section[];
   /**@title Blog layout */
   layout?: Layout;
 }
+
+const COLLECTION_PATH = "collections/blog/posts";
+const ACCESSOR = "post";
 
 export default function MainPost({
   posts,
@@ -155,8 +189,7 @@ export default function MainPost({
           )}
         >
           <div class={clx(`n1-blog__content flex flex-col gap-y-[30px]`)}>
-            {posts &&
-              posts.length > 0 &&
+            {posts && posts.length > 0 ? (
               posts.map((post: BlogPost) => {
                 return (
                   <>
@@ -210,7 +243,28 @@ export default function MainPost({
                     </div>
                   </>
                 );
-              })}
+              })
+            ) : (
+              <>
+                <div
+                  class={`n1-blog__content-item ${
+                    !(asideCotent && asideCotent?.length > 0)
+                      ? "my-0 mx-auto"
+                      : ""
+                  } md:max-w-[790px] `}
+                >
+                  <div
+                    class={`n1-blog__content-subitem py-[30px] px-[20px] rounded-[10px]`}
+                  >
+                    <div class={`n1-blog`}>
+                      <div>
+                        <h1 class="w-[300px] md:w-[790px]">Sem Post</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
           </div>
           {asideCotent && asideCotent?.length > 0 && (
             <aside class={`n1-blog__aside md:w-[378px] mt-[40px] md:mt-0`}>
@@ -227,14 +281,30 @@ export default function MainPost({
   );
 }
 
-export const loader = async (props: Props, __: Request, ctx: AppContext) => {
-  const posts = await ctx.invoke.blog.loaders.BlogpostList({
-    count: 2,
-  });
-  console.log(posts);
+export const loader = async (props: Props, req: Request, ctx: AppContext) => {
+  const url = new URL(req.url);
+  const params = url.searchParams;
+  const postsPerPage = Number(
+    props?.pagination?.count ?? params.get("count") ?? 12
+  );
+  const pageNumber = Number(props?.pagination?.page ?? params.get("page") ?? 1);
+  const pageSort =
+    props?.pagination?.sortBy ??
+    (params.get("sortBy") as SortBy) ??
+    "date_desc";
+  const slug = props?.pagination?.slug ?? (params.get("slug") as SortBy) ?? "";
+
+  const posts = await getRecordsByPath<BlogPost>(
+    ctx,
+    COLLECTION_PATH,
+    ACCESSOR
+  );
+
+  const handledPosts = handlePosts(posts, pageSort, slug);
+  const slicedPosts = slicePosts(handledPosts ?? [], pageNumber, postsPerPage);
 
   return {
     ...props,
-    posts,
+    posts: slicedPosts,
   };
 };

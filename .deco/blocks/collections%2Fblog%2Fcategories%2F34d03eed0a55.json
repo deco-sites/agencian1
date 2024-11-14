@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/categories/34d03eed0a55",
+  "__resolveType": "blog/loaders/Category.ts",
+  "category": {
+    "name": "Contato",
+    "slug": "contato"
+  }
+}

@@ -156,7 +156,6 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
   const url = new URL(req.url);
   const urlParams = new URLSearchParams(url.search);
   const slug = props?.slug ?? urlParams.get("slug");
-  console.log(slug);
 
   const post = await ctx.invoke.blog.loaders.BlogPostItem({ slug });
 
