@@ -595,18 +595,18 @@
             "icon": {
               "alt": "Icon top",
               "mobile": {
-                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fab0f9ac-6070-49ea-8223-b0c6c5143d2d",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/692bb756-f5c8-4f04-b8df-e768bf2925e9",
                 "width": 243,
                 "height": 106
               },
               "desktop": {
-                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d57ddc30-9227-4d8f-bff2-b8396e4d063b",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/692bb756-f5c8-4f04-b8df-e768bf2925e9",
                 "width": 298,
                 "height": 124
               }
             },
             "title": "parceria deco.cx - HTMX",
-            "paragraph": "Bagaggio escolhe a N1.AG para escala sua estratégia digital e conquista +30% de perfomance ao migrar para a deco.cx - HTMX. Neste projeto, trouxemos toda a nossa expertise, combinando inovação e fortalecendo ainda mais a presença digital da Bagaggio. 🔒💻",
+            "paragraph": "Bagaggio escolhe a N1.AG para potencializar sua estratégia digital, alcançando um aumento de +30% em performance com a migração para a plataforma deco.cx - HTMX. Nesse projeto, aplicamos toda nossa expertise, unindo inovação e fortalecendo ainda mais a presença digital da marca.🔒💻",
             "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
             "backgroundImage": {
               "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7f1db9c-ae6c-4aa8-b7e0-1f200601771c",
