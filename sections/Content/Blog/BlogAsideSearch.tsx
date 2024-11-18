@@ -1,1 +1,2 @@
-export { default } from "$store/components/Blog/BlogAsideSearch.tsx";
+export { default } from "$store/islands/BlogAsideSearch.tsx";
+
