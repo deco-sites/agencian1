@@ -170,7 +170,8 @@ export default function MainPost({
   asideCotent,
   layout,
 }: SectionProps<typeof loader>) {
-  if (!posts) return <></>;
+
+  if(!posts) return <></>
 
   return (
     <>
@@ -293,6 +294,7 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
     (params.get("sortBy") as SortBy) ??
     "date_desc";
   const slug = props?.pagination?.slug ?? (params.get("slug") as SortBy) ?? "";
+  const categories = (params.get("categories") as SortBy) ?? "";
 
   const posts = await getRecordsByPath<BlogPost>(
     ctx,
@@ -300,7 +302,7 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
     ACCESSOR
   );
 
-  const handledPosts = handlePosts(posts, pageSort, slug);
+  const handledPosts = handlePosts(posts, pageSort, slug, categories);
   const slicedPosts = slicePosts(handledPosts ?? [], pageNumber, postsPerPage);
 
   return {

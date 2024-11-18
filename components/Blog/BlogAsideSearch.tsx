@@ -14,6 +14,15 @@ export interface Props {
 }
 
 function BlogAsideSearch({ search }: Props) {
+
+  const handleSearch = (event:KeyboardEvent) => {
+    if (event.key === "Enter") {
+      const val = (event.currentTarget as HTMLInputElement).value;
+      location.href = `/nosso-blog?slug=${val}`;
+    }
+    
+  } 
+
   return (
     <>
       <div
@@ -35,6 +44,7 @@ function BlogAsideSearch({ search }: Props) {
             id="search"
             type="text"
             placeholder={search.maskSearch}
+            onKeyPress={handleSearch}
             class={clx(
               `rounded-[100px] py-[14px] px-[20px] max-h-[48px] bg-[#ffffff]
                             font-normal text-primary text-[14px] leading-[18.2px] font-noto-sans outline-none`,

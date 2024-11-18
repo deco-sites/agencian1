@@ -67,7 +67,7 @@
                     "height": "362"
                   }
                 },
-                "matcher": "/nosso-blog"
+                "matcher": "/nosso-blog/post"
               }
             ],
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
@@ -83,6 +83,22 @@
           {
             "__resolveType": "site/sections/Content/Blog/DetailPost.tsx",
             "asideCotent": [
+              {
+                "__resolveType": "site/sections/Content/Blog/BlogAsideSearch.tsx",
+                "search": {
+                  "titleSearch": "<p>Buscar no Blog</p>",
+                  "maskSearch": "Digite o que você procura"
+                }
+              },
+              {
+                "__resolveType": "site/sections/Content/Blog/BlogAsideNewsletter.tsx",
+                "newsletter": {
+                  "titleNewsletter": "<p>Cadastre-se para receber nossas novidades</p>",
+                  "maskNewsletterName": "Nome",
+                  "maskNewsletterEmail": "E-mail",
+                  "textButton": "Cadastrar"
+                }
+              },
               {
                 "__resolveType": "site/sections/Content/Blog/BlogAsideCategories.tsx",
                 "categories": {

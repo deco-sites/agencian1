@@ -41,7 +41,7 @@ function BlogAsideCategories({ categories }: Props) {
                 return (
                   <>
                     {category && (
-                      <a href={`/nosso-blog?slug=${category?.slug}`}>
+                      <a href={`/nosso-blog?categories=${category?.slug}`}>
                         <li
                           class={clx(`
                                                 rounded-[30px] bg-[rgba(255,_255,_255,_0.10)] flex pl-[20px] 
@@ -97,8 +97,6 @@ export const loader = async (props: Props, _: Request, ctx: AppContext) => {
         slug,
       };
     });
-
-  console.log(">>>>>>>>>>>>>>>>>>>", arrayCategories);
 
   return {
     ...props,
