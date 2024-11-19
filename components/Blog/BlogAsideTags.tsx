@@ -1,5 +1,11 @@
 import { clx } from "$store/sdk/clx.ts";
 
+/**@titleBy name */
+export interface Tag {
+  name?: string
+  link?: string
+}
+
 export interface AsideTags {
   /**
    * @title Nome do campo Tag

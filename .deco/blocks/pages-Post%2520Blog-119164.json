@@ -115,7 +115,20 @@
                 }
               }
             ],
-            "post": {}
+            "post": {},
+            "tags": [
+              {
+                "name": "Lorem ipsum ",
+                "link": "/ "
+              },
+              {
+                "name": "Lorem",
+                "link": "/ "
+              }
+            ]
+          },
+          {
+            "__resolveType": "MorePostsBlog"
           },
           {
             "__resolveType": "footer-principal"

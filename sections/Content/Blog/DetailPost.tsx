@@ -5,7 +5,7 @@ import { Section, SectionProps } from "deco/mod.ts";
 import { BlogPost } from "apps/blog/types.ts";
 import { clx } from "$store/sdk/clx.ts";
 import BlogTitle from "$store/components/Blog/BlogTitle.tsx";
-import BlogDescription from "$store/components/Blog/BlogDescription.tsx";
+import { Tag } from "$store/components/Blog/BlogAsideTags.tsx";
 import BlogImage from "$store/components/Blog/BlogImage.tsx";
 import BlogSocialMidia from "$store/components/Blog/BlogSocialMidia.tsx";
 
@@ -44,10 +44,6 @@ export interface SocialMedia {
 }
 
 export interface Layout {
-  /**@title Botão do Blog */
-  button?: Button;
-  /**@title Botão de continue lendo? */
-  btnContinue?: boolean;
   /**
    * @title Social Mídia
    * @description (ex: máximo de 6 itens)
@@ -59,6 +55,7 @@ export interface Layout {
 export interface Props {
   post?: BlogPost;
   slug?: RequestURLParam;
+  tags?: Tag[];
   asideCotent?: Section[];
   /**@title Blog layout */
   layout?: Layout;
@@ -66,6 +63,7 @@ export interface Props {
 
 export default function DetailPost({
   post,
+  tags,
   layout,
   asideCotent,
 }: SectionProps<typeof loader>) {
@@ -118,17 +116,27 @@ export default function DetailPost({
                         {post?.image && <BlogImage imageBlog={post.image} />}
 
                         {post?.content && (
-                          <BlogDescription description={post.content} />
+                          <div
+                            class={clx(`text-16 font-normal`)}
+                            dangerouslySetInnerHTML={{ __html: post?.content }}
+                          ></div>
                         )}
-
-                        {layout?.button?.text && (
-                          <a
-                            href={`/nosso-blog/post?slug=${post?.slug}`}
-                            class={clx(`w-fit mt-[30px] py-[15px] px-[20px] rounded-[100px] border border-[#ffffff] flex items-center
-                             text-[14px] leading-[14px] font-archimoto-medium font-black max-h-[40px]`)}
-                          >
-                            {layout?.button.text}
-                          </a>
+                        
+                        {tags && (
+                          <div class="flex flex-col items-start self-stretch gap-[20px] mt-[30px]">
+                            <h2 class="font-archimoto-medium font-black text-24">
+                              Nuvem com tags
+                            </h2>
+                            <ul class="flex flex-wrap gap-[10px]">
+                              {tags.map(({link, name}, idx) => (
+                                <li key={`tag-${idx}`} class="inline-flex">
+                                  <a href={link} class=" flex px-[14px] py-[8px] items-center rounded-[30px] border border-[#ffffff] text-[14px] leading-[22.4px] font-noto-sans">
+                                    {name}
+                                  </a>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
                         )}
                       </div>
                     </div>
