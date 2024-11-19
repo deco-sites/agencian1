@@ -11,7 +11,7 @@ import { RequestURLParam } from "apps/website/functions/requestToParam.ts";
 import handlePosts, {
   slicePosts,
   SortBy,
-} from "site/components/Blog/utils/handlePosts.ts";
+} from "$store/components/Blog/utils/handlePosts.ts";
 import { getRecordsByPath } from "apps/blog/utils/records.ts";
 
 export interface AsideSearch {
@@ -170,8 +170,7 @@ export default function MainPost({
   asideCotent,
   layout,
 }: SectionProps<typeof loader>) {
-
-  if(!posts) return <></>
+  if (!posts) return <></>;
 
   return (
     <>
@@ -192,6 +191,8 @@ export default function MainPost({
           <div class={clx(`n1-blog__content flex flex-col gap-y-[30px]`)}>
             {posts && posts.length > 0 ? (
               posts.map((post: BlogPost) => {
+                if (!post) return null;
+                if (!post?.title) return null;
                 return (
                   <>
                     <div

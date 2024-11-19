@@ -73,12 +73,7 @@
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
           },
           {
-            "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx",
-            "items": [
-              {
-                "category": "Nosso Blog"
-              }
-            ]
+            "__resolveType": "site/sections/Content/Blog/BlogBreadcrumb.tsx"
           },
           {
             "__resolveType": "site/sections/Content/Blog/MainPost.tsx",
@@ -184,6 +179,9 @@
                 "text": "Continue lendo"
               }
             }
+          },
+          {
+            "__resolveType": "MorePostsBlog"
           },
           {
             "__resolveType": "footer-principal"

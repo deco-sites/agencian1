@@ -1,82 +1,13 @@
-import type { ImageWidget } from "apps/admin/widgets.ts";
 import { clx } from "$store/sdk/clx.ts";
 import BlogTitle from "$store/components/Blog/BlogTitle.tsx";
 import BlogImage from "$store/components/Blog/BlogImage.tsx";
 import BlogDescription from "$store/components/Blog/BlogDescription.tsx";
+import { BlogPost } from "apps/blog/types.ts";
+import { Button } from "$store/sections/Content/Blog/DetailPost.tsx";
 
-interface ImageGeneric {
-  /**@title Imagem */
-  src?: ImageWidget;
-  /**
-   * @title Largura
-   * @description (ex: 150, resultado é em pixel)
-   */
-  width?: number;
-  /**
-   * @title Altura
-   * @description (ex: 150, resultado é em pixel)
-   */
-  height?: number;
-}
-
-/**@titleBy alt */
-interface SocialMedia {
-  /**@title Nome da Mídia */
-  alt?: string;
-  /**@title Link da Mídia */
-  link?: string;
-  /**@title Desktop */
-  desktop?: ImageGeneric;
-  /**@title Mobile */
-  mobile?: ImageGeneric;
-}
-
-interface TextBlog {
-  /**
-   * @title Título
-   * @format html
-   */
-  title?: string;
-  /**
-   * @title Texto
-   * @format html
-   */
-  description?: string;
-}
-
-interface ImageBlog {
-  /**@title Nome da Imagem */
-  alt?: string;
-  /**@title Desktop */
-  desktop?: ImageGeneric;
-  /**@title Mobile */
-  mobile?: ImageGeneric;
-}
-
-interface Button {
-  /**@title Texto do botão */
-  text?: string;
-  /**@title Link do botão */
-  link?: string;
-}
-
-/**@titleBy nameBlog */
-interface Content {
-  nameBlog: string;
-  /**
-   * @title Social Mídia
-   * @description (ex: máximo de 6 itens)
-   * @maxItems 6
-   */
-  socialMedia?: SocialMedia[];
-  /**@title Imagem do Blog */
-  imageBlog?: ImageBlog;
-  /**@title Textos do Blog */
-  text?: TextBlog;
+export interface Layout {
   /**@title Botão do Blog */
   button?: Button;
-  /**@title Botão de continue lendo? */
-  btnContinue?: boolean;
 }
 
 interface Props {
@@ -86,17 +17,19 @@ interface Props {
    */
   title?: string;
   /**@title Conteúdo Blog */
-  content: Content[];
+  posts?: BlogPost[];
   /**@title Seção Aside está visível? */
   disableAside?: boolean;
+  /**@title Blog layout */
+  layout?: Layout;
 }
 
-function MoreContentBlog({ title, content, disableAside }: Props) {
+function MoreContentBlog({ title, posts, disableAside, layout }: Props) {
   return (
     <>
       <section
         class={clx(
-          `n1-moreContentBlog n1-blog md:n1-container md:px-[120px] md:my-0 md:mb-[60px] md:mx-auto text-[#ffffff]`,
+          `n1-moreContentBlog n1-blog md:n1-container md:px-[120px] md:my-0 md:mb-[60px] md:mx-auto text-[#ffffff]`
         )}
       >
         <div>
@@ -106,82 +39,78 @@ function MoreContentBlog({ title, content, disableAside }: Props) {
                                 md:[&_*]:text-[32px] md:[&_*]:leading-[38.4px] [&_*]:text-24
                                 [&_*]:font-archimoto-medium [&_*]:font-black mb-[30px]`)}
               dangerouslySetInnerHTML={{ __html: title }}
-            >
-            </div>
+            ></div>
           )}
 
           <div
             class={clx(`
                             md:gap-[30px] ${
-              disableAside
-                ? "flex flex-wrap md:max-w-[1440px]"
-                : "md:grid md:grid-cols-2-auto md:max-w-[790px]"
-            }
+                              disableAside
+                                ? "flex flex-wrap md:max-w-[1440px]"
+                                : "md:grid md:grid-cols-2-auto md:max-w-[790px]"
+                            }
                         `)}
           >
-            {content && content.length > 0 && content.map((post) => {
-              return (
-                <>
-                  <div
-                    class={clx(`
+            {posts &&
+              posts.length > 0 &&
+              posts.map((post) => {
+                return (
+                  <>
+                    <div
+                      class={clx(`
                                                 n1-blog__content-item 
                                                 ${
-                      disableAside
-                        ? "w-[calc(25%_-_30px)] min-w-[270px]"
-                        : "my-0 mx-auto"
-                    }
+                                                  disableAside
+                                                    ? "w-[calc(25%_-_30px)] min-w-[270px]"
+                                                    : "my-0 mx-auto"
+                                                }
                                             `)}
-                  >
-                    <div
-                      class={`n1-blog__content-subitem py-[30px] px-[20px] rounded-[10px]`}
                     >
-                      <div class={`n1-blog`}>
-                        <div>
-                          {post.imageBlog && (
-                            <BlogImage imageBlog={post.imageBlog} />
-                          )}
+                      <div
+                        class={`n1-blog__content-subitem py-[30px] px-[20px] rounded-[10px]`}
+                      >
+                        <div class={`n1-blog`}>
+                          <div>
+                            {post.image && <BlogImage imageBlog={post.image} />}
 
-                          {post.text?.title && (
-                            <div
-                              class={clx(`n1-moreContentBlog__title`)}
-                            >
-                              <BlogTitle
-                                title={post.text.title}
-                                fontSizeDesk={`md:[&_*]:text-24`}
-                                fontSizeMobile={`[&_*]:text-16`}
-                              />
-                            </div>
-                          )}
+                            {post?.title && (
+                              <div class={clx(`n1-moreContentBlog__title`)}>
+                                <BlogTitle
+                                  title={post?.title}
+                                  fontSizeDesk={`md:[&_*]:text-24`}
+                                  fontSizeMobile={`[&_*]:text-16`}
+                                />
+                              </div>
+                            )}
 
-                          {post.text?.description && (
-                            <div
-                              class={clx(`n1-moreContentBlog__description`)}
-                            >
-                              <BlogDescription
-                                description={post.text.description}
-                                fontSizeDesk={`md:[&_*]:text-16 md:[&_*]:leading-[25.6px]`}
-                                fontSizeMobile={`[&_*]:text-16 [&_*]:leading-[25.6px]`}
-                              />
-                            </div>
-                          )}
+                            {post?.content && (
+                              <div
+                                class={clx(`n1-moreContentBlog__description`)}
+                              >
+                                <BlogDescription
+                                  description={post?.content}
+                                  fontSizeDesk={`md:[&_*]:text-16 md:[&_*]:leading-[25.6px]`}
+                                  fontSizeMobile={`[&_*]:text-16 [&_*]:leading-[25.6px]`}
+                                />
+                              </div>
+                            )}
 
-                          {post.button?.text && (
-                            <button
-                              class={clx(`
-                                                                    mt-[30px] py-[15px] px-[20px] rounded-[100px] border border-[#ffffff] flex items-center
-                                                                    text-[14px] leading-[14px] font-archimoto-medium font-black max-h-[40px]
-                                                                `)}
-                            >
-                              {post.button.text}
-                            </button>
-                          )}
+                            {layout?.button?.text && (
+                              <a
+                                href={`/nosso-blog/post?slug=${post?.slug}`}
+                                class={clx(`w-fit mt-[30px] py-[15px] px-[20px] rounded-[100px] border border-[#ffffff] flex items-center
+                             text-[14px] leading-[14px] font-archimoto-medium font-black max-h-[40px]`)}
+                              >
+                                {layout?.button.text}
+                              </a>
+                            )}
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </>
-              );
-            })}
+                  </>
+                );
+              })}
           </div>
         </div>
       </section>
