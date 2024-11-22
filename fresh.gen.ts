@@ -13,6 +13,7 @@ import * as $AddToCartButton_vtex from "./islands/AddToCartButton/vtex.tsx";
 import * as $AddToCartButton_wake from "./islands/AddToCartButton/wake.tsx";
 import * as $BlogAsideNewsletter from "./islands/BlogAsideNewsletter.tsx";
 import * as $BlogAsideSearch from "./islands/BlogAsideSearch.tsx";
+import * as $BlogContentPartial from "./islands/BlogContentPartial.tsx";
 import * as $BlueBallAnimation from "./islands/BlueBallAnimation.tsx";
 import * as $ButtonTop from "./islands/ButtonTop.tsx";
 import * as $CasesComponent from "./islands/CasesComponent.tsx";
@@ -55,6 +56,7 @@ const manifest = {
     "./islands/AddToCartButton/wake.tsx": $AddToCartButton_wake,
     "./islands/BlogAsideNewsletter.tsx": $BlogAsideNewsletter,
     "./islands/BlogAsideSearch.tsx": $BlogAsideSearch,
+    "./islands/BlogContentPartial.tsx": $BlogContentPartial,
     "./islands/BlueBallAnimation.tsx": $BlueBallAnimation,
     "./islands/ButtonTop.tsx": $ButtonTop,
     "./islands/CasesComponent.tsx": $CasesComponent,
