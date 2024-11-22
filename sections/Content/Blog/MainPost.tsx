@@ -2,17 +2,12 @@ import { AppContext } from "apps/blog/mod.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { Section, SectionProps } from "deco/mod.ts";
 import { BlogPost } from "apps/blog/types.ts";
-import { clx } from "$store/sdk/clx.ts";
-import BlogTitle from "$store/components/Blog/BlogTitle.tsx";
-import BlogDescription from "$store/components/Blog/BlogDescription.tsx";
-import BlogImage from "$store/components/Blog/BlogImage.tsx";
-import BlogSocialMidia from "$store/components/Blog/BlogSocialMidia.tsx";
 import { RequestURLParam } from "apps/website/functions/requestToParam.ts";
 import handlePosts, {
-  slicePosts,
   SortBy,
 } from "$store/components/Blog/utils/handlePosts.ts";
 import { getRecordsByPath } from "apps/blog/utils/records.ts";
+import BlogContent from "$store/components/Blog/BlogContent.tsx";
 
 export interface AsideSearch {
   /**
@@ -169,116 +164,18 @@ export default function MainPost({
   posts,
   asideCotent,
   layout,
+  pagination,
 }: SectionProps<typeof loader>) {
   if (!posts) return <></>;
 
   return (
     <>
-      <section
-        class={clx(
-          `n1-blog md:n1-container md:px-[120px] md:my-0 md:mb-[60px] md:mx-auto text-[#ffffff]`
-        )}
-      >
-        <div
-          class={clx(
-            `flex flex-col px-[20px] md:px-0 md:grid ${
-              !(asideCotent && asideCotent?.length > 0)
-                ? "md:grid-cols-[1fr]"
-                : "md:grid-cols-[auto_1fr]"
-            } md:gap-x-[30px]`
-          )}
-        >
-          <div class={clx(`n1-blog__content flex flex-col gap-y-[30px]`)}>
-            {posts && posts.length > 0 ? (
-              posts.map((post: BlogPost) => {
-                if (!post) return null;
-                if (!post?.title) return null;
-                return (
-                  <>
-                    <div
-                      class={`n1-blog__content-item ${
-                        !(asideCotent && asideCotent?.length > 0)
-                          ? "my-0 mx-auto"
-                          : ""
-                      } md:max-w-[790px] `}
-                    >
-                      <div
-                        class={`n1-blog__content-subitem py-[30px] px-[20px] rounded-[10px]`}
-                      >
-                        <div class={`n1-blog`}>
-                          <div>
-                            {post?.title && (
-                              <BlogTitle
-                                title={post?.title}
-                                fontSizeDesk={`md:[&_*]:text-32`}
-                                fontSizeMobile={`[&_*]:text-20`}
-                                link={`/nosso-blog/post?slug=${post?.slug}`}
-                              />
-                            )}
-
-                            {layout && (
-                              <BlogSocialMidia
-                                socialMedia={layout?.socialMedia}
-                              />
-                            )}
-
-                            {post?.image && (
-                              <BlogImage imageBlog={post.image} />
-                            )}
-
-                            {post?.content && (
-                              <BlogDescription description={post.content} />
-                            )}
-
-                            {layout?.button?.text && (
-                              <a
-                                href={`/nosso-blog/post?slug=${post?.slug}`}
-                                class={clx(`w-fit mt-[30px] py-[15px] px-[20px] rounded-[100px] border border-[#ffffff] flex items-center
-                             text-[14px] leading-[14px] font-archimoto-medium font-black max-h-[40px]`)}
-                              >
-                                {layout?.button.text}
-                              </a>
-                            )}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </>
-                );
-              })
-            ) : (
-              <>
-                <div
-                  class={`n1-blog__content-item ${
-                    !(asideCotent && asideCotent?.length > 0)
-                      ? "my-0 mx-auto"
-                      : ""
-                  } md:max-w-[790px] `}
-                >
-                  <div
-                    class={`n1-blog__content-subitem py-[30px] px-[20px] rounded-[10px]`}
-                  >
-                    <div class={`n1-blog`}>
-                      <div>
-                        <h1 class="w-[300px] md:w-[790px]">Sem Post</h1>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </>
-            )}
-          </div>
-          {asideCotent && asideCotent?.length > 0 && (
-            <aside class={`n1-blog__aside md:w-[378px] mt-[40px] md:mt-0`}>
-              <div class={clx(`flex flex-col gap-y-[30px] md:gap-y-[32px]`)}>
-                {asideCotent.map(({ Component, props }, index) => (
-                  <Component key={index} {...props} />
-                ))}
-              </div>
-            </aside>
-          )}
-        </div>
-      </section>
+      <BlogContent
+        posts={posts}
+        asideCotent={asideCotent}
+        pagination={pagination}
+        layout={layout}
+      />
     </>
   );
 }
@@ -304,10 +201,15 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
   );
 
   const handledPosts = handlePosts(posts, pageSort, slug, categories);
-  const slicedPosts = slicePosts(handledPosts ?? [], pageNumber, postsPerPage);
 
   return {
     ...props,
-    posts: slicedPosts,
+    pagination: {
+      slug,
+      count: postsPerPage,
+      page: pageNumber,
+      sortBy: pageSort,
+    },
+    posts: handledPosts,
   };
 };
