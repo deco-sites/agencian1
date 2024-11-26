@@ -42,7 +42,7 @@ export default function BlogContent({
 
           {asideCotent && asideCotent?.length > 0 && (
             <aside class={`n1-blog__aside md:w-[378px] mt-[40px] md:mt-0`}>
-              <div class={clx(`flex flex-col gap-y-[30px] md:gap-y-[32px]`)}>
+              <div class={clx(`flex flex-col gap-y-[30px] md:gap-y-[32px]  static md:sticky top-[103px]`)}>
                 {asideCotent.map(({ Component, props }, index) => (
                   <Component key={index} {...props} />
                 ))}
