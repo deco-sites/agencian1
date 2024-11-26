@@ -47,7 +47,7 @@ function BlogAside({ aside }: Props) {
     <>
       <aside class={`n1-blog__aside md:w-[378px] mt-[40px] md:mt-0`}>
         <div
-          class={clx(`flex flex-col gap-y-[30px] md:gap-y-[32px] static md:sticky top-[103px]`)}
+          class={clx(`flex flex-col gap-y-[30px] md:gap-y-[32px]  static md:sticky top-[103px]`)}
         >
           {aside?.search && <BlogAsideSearch search={aside.search} />}
 
