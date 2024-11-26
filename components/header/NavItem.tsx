@@ -7,24 +7,24 @@ import { clx } from "$store/sdk/clx.ts";
 /**@titleBy nameBlock */
 export interface PropsChildren extends SiteNavigationElement {
   /**@title Nome do Bloco */
-  nameBlock?: string;  
-  /** 
+  nameBlock?: string;
+  /**
    * @title Título Submenu
    * @format rich-text
-   * */
+   */
   titleSubMenu?: string;
 
-  /** 
-   * @title Descrição Submenu - (Submenu de serviços) 
+  /**
+   * @title Descrição Submenu - (Submenu de serviços)
    * @format rich-text
-  */
+   */
   descriptionSubMenu?: string;
 
-  /** 
-   * @title Texto para do botão 
-   * @description (ex: conheça mais dos nossos serviços ) 
+  /**
+   * @title Texto para do botão
+   * @description (ex: conheça mais dos nossos serviços )
    * @format rich-text
-   * */
+   */
   btnTextMenu?: string;
   /** @title Link do botão */
   /** @description (ex: https://agencian1.com.br/ ) */

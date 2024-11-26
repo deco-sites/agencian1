@@ -1,1 +1,37 @@
-{"cta":[{"text":"90","color":"#b71f1f","text2":"Average score of stores on Page Speed","variant":"Normal","colorText":"#ffffff"},{"text":"+300","text2":"Satisfied stores","variant":"Normal","colorText":"#ffffff"},{"text":"5 years","color":"#ffffff","text2":"Lifetime value of our Clients","variant":"Normal","colorText":"#ffffff"}],"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4a7cc0d4-8ae0-492c-87f8-28839bc987a8","title":"<p><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><strong><span style=\"font-size: 70px; line-height: 77px;\" data-mce-style=\"font-size: 70px; line-height: 77px;\">We are experts in</span></strong></span></p>","titleCta":"<p><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><strong><span style=\"font-size: 20px; line-height: 46px;\" data-mce-style=\"font-size: 20px; line-height: 46px;\">Our results in numbers:</span></strong></span></p>","placement":"left","translateX":-60,"translateY":70,"widthImage":487,"description":"<p><span style=\"color: rgb(255, 255, 255); font-size: 20px; line-height: 28px;\" data-mce-style=\"color: rgb(255, 255, 255); font-size: 20px; line-height: 28px;\">#9 years improving the online journey, transforming visitors into satisfied customers and driving sales through the roof! 😎</span></p>","__resolveType":"site/sections/Content/Hero.tsx","placementImage":"right","positionManual":true,"colorDescription":"#3ccbda","descriptionAnimation":"Wow Commerce, Performance, Digital"}
+{
+  "cta": [
+    {
+      "text": "90",
+      "color": "#b71f1f",
+      "text2": "Average score of stores on Page Speed",
+      "variant": "Normal",
+      "colorText": "#ffffff"
+    },
+    {
+      "text": "+300",
+      "text2": "Satisfied stores",
+      "variant": "Normal",
+      "colorText": "#ffffff"
+    },
+    {
+      "text": "5 years",
+      "color": "#ffffff",
+      "text2": "Lifetime value of our Clients",
+      "variant": "Normal",
+      "colorText": "#ffffff"
+    }
+  ],
+  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/4a7cc0d4-8ae0-492c-87f8-28839bc987a8",
+  "title": "<p><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><strong><span style=\"font-size: 70px; line-height: 77px;\" data-mce-style=\"font-size: 70px; line-height: 77px;\">We are experts in</span></strong></span></p>",
+  "titleCta": "<p><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><strong><span style=\"font-size: 20px; line-height: 46px;\" data-mce-style=\"font-size: 20px; line-height: 46px;\">Our results in numbers:</span></strong></span></p>",
+  "placement": "left",
+  "translateX": -60,
+  "translateY": 70,
+  "widthImage": 487,
+  "description": "<p><span style=\"color: rgb(255, 255, 255); font-size: 20px; line-height: 28px;\" data-mce-style=\"color: rgb(255, 255, 255); font-size: 20px; line-height: 28px;\">#9 years improving the online journey, transforming visitors into satisfied customers and driving sales through the roof! 😎</span></p>",
+  "__resolveType": "site/sections/Content/Hero.tsx",
+  "placementImage": "right",
+  "positionManual": true,
+  "colorDescription": "#3ccbda",
+  "descriptionAnimation": "Wow Commerce, Performance, Digital"
+}
