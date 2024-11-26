@@ -177,7 +177,59 @@
             "layout": {
               "button": {
                 "text": "Continue lendo"
-              }
+              },
+              "socialMedia": [
+                {
+                  "desktop": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2528296b-6b18-4dc9-b07d-73c5f6db5309"
+                  },
+                  "link": "/",
+                  "alt": "Facebook",
+                  "mobile": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2528296b-6b18-4dc9-b07d-73c5f6db5309"
+                  }
+                },
+                {
+                  "desktop": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/39b3892d-5b7c-4c01-9958-d2b081cdf10e"
+                  },
+                  "link": "/",
+                  "alt": "Twitter",
+                  "mobile": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/39b3892d-5b7c-4c01-9958-d2b081cdf10e"
+                  }
+                },
+                {
+                  "desktop": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/11c370fd-73d3-4c89-9bf7-0dbb2ca8890c"
+                  },
+                  "link": "/",
+                  "alt": "instagram",
+                  "mobile": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/11c370fd-73d3-4c89-9bf7-0dbb2ca8890c"
+                  }
+                },
+                {
+                  "desktop": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/33af9464-5412-4b9b-a2ea-d306762e6bea"
+                  },
+                  "mobile": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/33af9464-5412-4b9b-a2ea-d306762e6bea"
+                  },
+                  "link": "/",
+                  "alt": "Linkedin"
+                },
+                {
+                  "link": "/",
+                  "alt": "Whatsapp",
+                  "desktop": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fe7c864f-abd8-4c87-9a66-ad8468e5782a"
+                  },
+                  "mobile": {
+                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fe7c864f-abd8-4c87-9a66-ad8468e5782a"
+                  }
+                }
+              ]
             }
           },
           {

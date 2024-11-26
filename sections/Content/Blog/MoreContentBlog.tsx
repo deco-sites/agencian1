@@ -16,6 +16,8 @@ interface Props {
    * @format html
    */
   title?: string;
+  /**@title Tag Blog */
+  showTag?: boolean;
   /**@title Conteúdo Blog */
   posts?: BlogPost[];
   /**@title Seção Aside está visível? */
@@ -24,12 +26,12 @@ interface Props {
   layout?: Layout;
 }
 
-function MoreContentBlog({ title, posts, disableAside, layout }: Props) {
+function MoreContentBlog({ title, posts, disableAside, layout, showTag = true }: Props) {
   return (
     <>
       <section
         class={clx(
-          `n1-moreContentBlog n1-blog md:n1-container md:px-[120px] md:my-0 md:mb-[60px] md:mx-auto text-[#ffffff]`
+          `n1-moreContentBlog px-[20px] n1-blog md:n1-container md:px-[120px] mb-[60px] mt-[40px] md:my-0 md:mb-[60px] md:mx-auto text-[#ffffff]`
         )}
       >
         <div>
@@ -43,8 +45,7 @@ function MoreContentBlog({ title, posts, disableAside, layout }: Props) {
           )}
 
           <div
-            class={clx(`
-                            md:gap-[30px] ${
+            class={clx(`mobile:flex mobile:gap-[30px] mobile:flex-col md:gap-[30px] ${
                               disableAside
                                 ? "flex flex-wrap md:max-w-[1440px]"
                                 : "md:grid md:grid-cols-2-auto md:max-w-[790px]"
@@ -67,19 +68,44 @@ function MoreContentBlog({ title, posts, disableAside, layout }: Props) {
                                             `)}
                     >
                       <div
-                        class={`n1-blog__content-subitem py-[30px] px-[20px] rounded-[10px]`}
+                        class={`n1-blog__content-subitem py-[30px] px-[20px] rounded-[10px] `}
                       >
-                        <div class={`n1-blog`}>
-                          <div>
-                            {post.image && <BlogImage imageBlog={post.image} />}
+                        <div class={`n1-blog relative`}>
+                          {
+                            (post?.categories?.length > 0 && showTag) && (
+                              <div class="left-3 top-3 absolute w-fit font-semibold text-14 text-[#0C1F59] py-[6px] px-[14px] rounded-[30px] bg-[#3CCBDA]">{post?.categories?.[0]?.name}</div>
+                            )
+                          }
+                          <div >
+                            {/* {post.image && <BlogImage imageBlog={post.image} />} */}
+
+                            {post.image && (
+                              <img
+                                class="rounded-[10px] mb-[30px]"
+                                src={post.image}
+                                width={340}
+                                height={297}
+                                loading={"lazy"}
+                              />
+                            )}
 
                             {post?.title && (
-                              <div class={clx(`n1-moreContentBlog__title`)}>
-                                <BlogTitle
+                              <div class={clx(`n1-moreContentBlog__title mb-[10px]`)}>
+                                {/* <BlogTitle
                                   title={post?.title}
                                   fontSizeDesk={`md:[&_*]:text-24`}
                                   fontSizeMobile={`[&_*]:text-16`}
-                                />
+                                /> */}
+                                <a href={`/nosso-blog/post?slug=${post?.slug}`}>
+                                  {title && (
+                                    <div
+                                      class={clx(`text-24 n1-blog__title font-archimoto-medium font-black`)}
+                                      dangerouslySetInnerHTML={{
+                                        __html: title,
+                                      }}
+                                    ></div>
+                                  )}
+                                </a>
                               </div>
                             )}
 
@@ -98,7 +124,7 @@ function MoreContentBlog({ title, posts, disableAside, layout }: Props) {
                             {layout?.button?.text && (
                               <a
                                 href={`/nosso-blog/post?slug=${post?.slug}`}
-                                class={clx(`w-fit mt-[30px] py-[15px] px-[20px] rounded-[100px] border border-[#ffffff] flex items-center
+                                class={clx(`w-fit mt-[30px] py-[15px] px-[20px] rounded-[100px] hover:bg-[#ffffff] hover:text-[#585858] border border-[#ffffff] flex items-center
                              text-[14px] leading-[14px] font-archimoto-medium font-black max-h-[40px]`)}
                               >
                                 {layout?.button.text}

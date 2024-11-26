@@ -52,7 +52,7 @@ function BlogAsideCategories({ categories }: Props) {
                           {category?.count && (
                             <span
                               class={clx(`
-                                                        text-[#585858] text-14 leading-[22.4px] flex p-[7px] flex-col md:size-[36px]
+                                                        text-[#585858] text-14 leading-[22.4px] flex p-[7px] flex-col size-[30px] md:size-[36px]
                                                         justify-center items-center rounded-[30px] bg-secondary font-noto-sans `)}
                             >
                               {category.count}

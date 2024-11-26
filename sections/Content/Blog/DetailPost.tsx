@@ -130,7 +130,7 @@ export default function DetailPost({
                             <ul class="flex flex-wrap gap-[10px]">
                               {tags.map(({link, name}, idx) => (
                                 <li key={`tag-${idx}`} class="inline-flex">
-                                  <a href={link} class=" flex px-[14px] py-[8px] items-center rounded-[30px] border border-[#ffffff] text-[14px] leading-[22.4px] font-noto-sans">
+                                  <a href={link} class=" flex px-[14px] py-[8px] items-center rounded-[30px] border border-[#ffffff] hover:bg-[#ffffff] hover:text-[#585858] text-[14px] leading-[22.4px] font-noto-sans">
                                     {name}
                                   </a>
                                 </li>

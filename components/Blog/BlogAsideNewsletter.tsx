@@ -109,7 +109,7 @@ function BlogAsideNewsletter({ newsletter }: Props) {
           <div>
             <button
               class={clx(`
-                                mt-[10px] py-[15px] px-[20px] rounded-[100px] bg-accent text-primary flex items-center
+                                mt-[10px] py-[15px] px-[20px] rounded-[100px]  bg-accent hover:bg-[#F8BC33] text-primary flex items-center
                                 text-[14px] leading-[14px] font-archimoto-medium font-black max-h-[40px]
                             `)}
             >
