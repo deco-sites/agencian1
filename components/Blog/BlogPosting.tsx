@@ -45,8 +45,8 @@ export default function BlogPosting({
             {layout?.button?.text && (
               <a
                 href={`/nosso-blog/post?slug=${post?.slug}`}
-                class={clx(`w-fit mt-[30px] py-[15px] px-[20px] rounded-[100px] border border-[#ffffff] flex items-center
-           text-[14px] leading-[14px] font-archimoto-medium font-black max-h-[40px]`)}
+                class={clx(`w-fit mt-[30px] py-[15px] px-[20px] rounded-[100px] hover:bg-[#ffffff] hover:text-[#585858] border border-[#ffffff] flex items-center
+                             text-[14px] leading-[14px] font-archimoto-medium font-black max-h-[40px]`)}
               >
                 {layout?.button.text}
               </a>

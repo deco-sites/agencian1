@@ -43,6 +43,7 @@ function BlogImage({ imageBlog }: Content) {
           )}
           {imageBlog && (
             <img
+             class="rounded-[10px] md:rounded-none"
               src={imageBlog}
               width={750}
               height={268}

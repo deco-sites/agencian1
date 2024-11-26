@@ -19,8 +19,8 @@ interface Props {
 function Breadcrumb({ items }: Props) {
   return (
     <>
-      <div class="n1-breadcrumb md:n1-container md:px-[120px] mobile:px-[20px] py-[40px]">
-        <ul class="text-[#ffffff] flex gap-x-[35px] rounded-[100px] bg-[rgba(255,_255,_255,_0.10)] p-[20px] font-archimoto-medium text-14 font-black">
+      <div class="n1-breadcrumb md:n1-container md:px-[120px] mobile:px-[20px] py-[40px] mobile:py-[20px] ">
+        <ul class="text-[#ffffff] flex gap-x-[35px] rounded-[100px] bg-[rgba(255,_255,_255,_0.10)] p-[20px] font-archimoto-medium text-14 font-black mobile:leading-normal">
           <li class="relative">
             <a href={"/"} class="n1-breadcrumb__item hover:underline">
               Home

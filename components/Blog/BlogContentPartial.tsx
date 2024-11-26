@@ -112,7 +112,7 @@ export default function BlogContentPartial({
         {hasMore && !loading && (
           <button
             // disabled={historico.value?.number == 0}
-            class="w-fit m-auto font-archimoto-medium font-black textarea-md text-center flex justify-center items-center rounded-[100px] bg-[#F6AB00] px-[30px] py-[10px] text-[#0C1F59]"
+            class="w-fit  m-auto font-archimoto-medium font-black textarea-md text-center flex justify-center items-center rounded-[100px] bg-accent hover:bg-[#F8BC33]  px-[30px] py-[10px] text-[#0C1F59]"
             onClick={loadMorePosts}
           >
             Ver mais notícias

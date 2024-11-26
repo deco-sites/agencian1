@@ -19,7 +19,7 @@ function BlogTitle({ title, fontSizeDesk, fontSizeMobile, link }: Props) {
                         n1-blog__title
                         ${fontSizeMobile ? fontSizeMobile : "text-20"} 
                         ${fontSizeDesk ? fontSizeDesk : "text-32"} 
-                        font-archimoto-medium font-black mb-[10px]`)}
+                        font-archimoto-medium font-black mb-[10px] mobile:text-20`)}
           dangerouslySetInnerHTML={{ __html: title }}
         >
         </div>
