@@ -62,7 +62,7 @@ function Breadcrumb({ items }: Props) {
 
 export const loader = async (props: Props, req: Request, ctx: AppContext) => {
   const hasDetailPage = new URLPattern({ pathname: "/nosso-blog/post" }).test(
-    req.url
+    req.url,
   );
 
   const items: Props["items"] = [
@@ -82,14 +82,14 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
     const posts = await getRecordsByPath<BlogPost>(
       ctx,
       COLLECTION_PATH,
-      ACCESSOR
+      ACCESSOR,
     );
 
     const post = posts.find(({ slug: s }) => s == slug);
     if (post) {
       items.push({
         category: post?.categories?.[0]?.name,
-        link: '',
+        link: "",
       });
     }
   }

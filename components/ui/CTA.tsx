@@ -1,7 +1,6 @@
 import LinkTelephoneWithOptionArrow from "site/components/ui/LinkTelephoneWithOptionArrow.tsx";
 import { clx } from "$store/sdk/clx.ts";
-import { FnContext } from "deco/mod.ts";
-
+import { type FnContext } from "@deco/deco";
 export interface CTAPhone {
   text?: string;
   telephone?: string;
@@ -28,7 +27,6 @@ export interface CTALayout {
   backgroundColor?: string;
   customClass?: string;
 }
-
 export interface Props {
   buttonAds?: CTAPhone;
   /**
@@ -36,7 +34,6 @@ export interface Props {
    */
   layout?: CTALayout;
 }
-
 function Cta({ buttonAds, layout, device }: ReturnType<typeof loader>) {
   const {
     marginTop,
@@ -47,11 +44,8 @@ function Cta({ buttonAds, layout, device }: ReturnType<typeof loader>) {
     marginLeftMobile,
   } = layout || {};
   const isDesktop = device === "desktop";
-
   return (
-    <div
-      class={clx(`${layout?.customClass ? layout?.customClass : ""}`)}
-    >
+    <div class={clx(`${layout?.customClass ? layout?.customClass : ""}`)}>
       <div
         style={isDesktop
           ? {
@@ -78,12 +72,10 @@ function Cta({ buttonAds, layout, device }: ReturnType<typeof loader>) {
     </div>
   );
 }
-
 export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   return {
     ...props,
     device: ctx.device || "desktop",
   };
 };
-
 export default Cta;

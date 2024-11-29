@@ -13,10 +13,9 @@ export type SortBy = "date_desc" | "date_asc" | "title_asc" | "title_desc";
 export const sortPosts = (blogPosts: BlogPost[], sortBy: SortBy) => {
   try {
     const splittedSort = sortBy.split("_");
-    const sortMethod =
-      splittedSort[0] in blogPosts[0]
-        ? (splittedSort[0] as keyof BlogPost)
-        : "date";
+    const sortMethod = splittedSort[0] in blogPosts[0]
+      ? (splittedSort[0] as keyof BlogPost)
+      : "date";
     const sortOrder = VALID_SORT_ORDERS.includes(splittedSort[1])
       ? splittedSort[1]
       : "desc";
@@ -31,12 +30,11 @@ export const sortPosts = (blogPosts: BlogPost[], sortBy: SortBy) => {
       if (!b[sortMethod]) {
         return -1; // If post b doesn't have sort method, put it after post a
       }
-      const comparison =
-        sortMethod === "date"
-          ? new Date(b.date).getTime() - new Date(a.date).getTime()
-          : a[sortMethod]
-              ?.toString()
-              .localeCompare(b[sortMethod]?.toString() ?? "") ?? 0;
+      const comparison = sortMethod === "date"
+        ? new Date(b.date).getTime() - new Date(a.date).getTime()
+        : a[sortMethod]
+          ?.toString()
+          .localeCompare(b[sortMethod]?.toString() ?? "") ?? 0;
       return sortOrder === "desc" ? comparison : -comparison; // Invert sort depending of desc or asc
     });
   } catch {
@@ -53,8 +51,8 @@ export const sortPosts = (blogPosts: BlogPost[], sortBy: SortBy) => {
 export const filterPostsByCategory = (posts: BlogPost[], category?: string) =>
   category
     ? posts.filter(({ categories }) =>
-        categories.find((c) => c.slug === category)
-      )
+      categories.find((c) => c.slug === category)
+    )
     : posts;
 
 /**
@@ -67,7 +65,7 @@ export const filterPostsByCategory = (posts: BlogPost[], category?: string) =>
 export const slicePosts = (
   posts: BlogPost[],
   pageNumber: number,
-  postsPerPage: number
+  postsPerPage: number,
 ) => {
   const startIndex = (pageNumber - 1) * postsPerPage;
   const endIndex = startIndex + postsPerPage;
@@ -97,14 +95,15 @@ export default function handlePosts(
   posts: BlogPost[],
   sortBy: SortBy,
   slug?: string,
-  categories?: string
+  categories?: string,
 ) {
   let filteredPosts = posts;
 
   if (slug && slug !== "") filteredPosts = filterPostsByTitle(posts, slug);
 
-  if (categories && categories !== "")
+  if (categories && categories !== "") {
     filteredPosts = filterPostsByCategory(posts, categories);
+  }
 
   return sortPosts(filteredPosts, sortBy);
 }

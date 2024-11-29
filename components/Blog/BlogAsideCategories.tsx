@@ -29,43 +29,44 @@ function BlogAsideCategories({ categories }: Props) {
         {categories?.title && (
           <div
             class={clx(
-              `text-24 font-archimoto-medium font-black`
+              `text-24 font-archimoto-medium font-black`,
             )}
             dangerouslySetInnerHTML={{ __html: categories.title }}
-          ></div>
+          >
+          </div>
         )}
         {categories?.arrayCategories &&
           categories?.arrayCategories.length > 0 && (
-            <ul class={clx(`flex flex-col gap-y-[10px]`)}>
-              {categories?.arrayCategories.map((category) => {
-                return (
-                  <>
-                    {category && (
-                      <a href={`/nosso-blog?categories=${category?.slug}`}>
-                        <li
-                          class={clx(`
+          <ul class={clx(`flex flex-col gap-y-[10px]`)}>
+            {categories?.arrayCategories.map((category) => {
+              return (
+                <>
+                  {category && (
+                    <a href={`/nosso-blog?categories=${category?.slug}`}>
+                      <li
+                        class={clx(`
                                                 rounded-[30px] bg-[rgba(255,_255,_255,_0.10)] flex pl-[20px] 
                                                 pr-[8px] py-[8px] justify-between items-center font-noto-sans`)}
-                        >
-                          {category.category}
+                      >
+                        {category.category}
 
-                          {category?.count && (
-                            <span
-                              class={clx(`
+                        {category?.count && (
+                          <span
+                            class={clx(`
                                                         text-[#585858] text-14 leading-[22.4px] flex p-[7px] flex-col size-[30px] md:size-[36px]
                                                         justify-center items-center rounded-[30px] bg-secondary font-noto-sans `)}
-                            >
-                              {category.count}
-                            </span>
-                          )}
-                        </li>
-                      </a>
-                    )}
-                  </>
-                );
-              })}
-            </ul>
-          )}
+                          >
+                            {category.count}
+                          </span>
+                        )}
+                      </li>
+                    </a>
+                  )}
+                </>
+              );
+            })}
+          </ul>
+        )}
       </div>
     </>
   );
@@ -85,7 +86,7 @@ export const loader = async (props: Props, _: Request, ctx: AppContext) => {
   const categories = await getRecordsByPath<Category>(
     ctx,
     COLLECTION_PATH,
-    ACCESSOR
+    ACCESSOR,
   );
 
   const arrayCategories: ArrayCategory[] = categories

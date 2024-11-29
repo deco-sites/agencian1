@@ -1,18 +1,16 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import { FnContext, SectionProps } from "deco/mod.ts";
 import CasesComponentMobile from "$store/components/ui/CasesComponentMobile.tsx";
 import CasesComponentDesktop from "$store/components/ui/CasesComponentDesktop.tsx";
 import CasesComponentTextWithButton from "$store/components/ui/CasesComponentTextWithButton.tsx";
 import LinkTelephoneWithOptionArrow from "site/components/ui/LinkTelephoneWithOptionArrow.tsx";
-
+import { type FnContext, type SectionProps } from "@deco/deco";
 /** @title {{{nameTag}}}*/
 interface TagProps {
   imageTag?: ImageWidget;
   /**@title nome da TAG */
   nameTag?: string;
 }
-
 /** @title {{{alt}}}*/
 interface PropsImage {
   /**@title Logo */
@@ -47,9 +45,7 @@ interface PropsImage {
   infoText?: string;
   /**@title Ícone */
   icon?: ImageWidget;
-
   /********CONFIGURAÇÃO DO HOVER******* */
-
   /**@title Logo (efeito hover) */
   imageLogoHover?: ImageWidget;
   /**@title Logo (efeito hover) Mobile*/
@@ -82,14 +78,12 @@ interface PropsImage {
   /** @maxItems 6 */
   tagProps?: TagProps[];
 }
-
 interface MarginProps {
   /** @title Margem superior */
   top?: number;
   /** @title Margem inferior */
   bottom?: number;
 }
-
 export interface telephoneProps {
   text?: string;
   telephone?: string;
@@ -99,7 +93,6 @@ export interface telephoneProps {
   customClass?: string;
   fontSize?: string;
 }
-
 interface Props {
   /**@title Subtítulo */
   /**@format rich-text */
@@ -138,10 +131,8 @@ interface Props {
    * @description (Mobile)
    */
   margin?: MarginProps;
-
   ButtonAds?: telephoneProps;
 }
-
 function CasesComponent(props: SectionProps<ReturnType<typeof loader>>) {
   const {
     subtitle,
@@ -159,7 +150,6 @@ function CasesComponent(props: SectionProps<ReturnType<typeof loader>>) {
     margin,
     ButtonAds,
   } = props;
-
   return (
     <>
       <div
@@ -225,12 +215,10 @@ function CasesComponent(props: SectionProps<ReturnType<typeof loader>>) {
     </>
   );
 }
-
 export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   return {
     ...props,
     device: ctx.device,
   };
 };
-
 export default CasesComponent;

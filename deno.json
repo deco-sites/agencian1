@@ -1,18 +1,21 @@
 {
   "imports": {
     "$store/": "./",
-    "deco/": "https://denopkg.com/deco-cx/deco@1.75.2/",
-    "apps/": "https://denopkg.com/deco-cx/apps@0.47.8/",
-    "$fresh/": "https://deno.land/x/fresh@1.6.8/",
-    "preact": "https://esm.sh/preact@10.19.6",
-    "preact/": "https://esm.sh/preact@10.19.6/",
-    "preact-render-to-string": "https://esm.sh/*preact-render-to-string@6.2.2",
+    "deco/": "https://denopkg.com/deco-cx/deco@1.107.1/",
+    "apps/": "https://denopkg.com/deco-cx/apps@0.64.2/",
+    "$fresh/": "https://deno.land/x/fresh@1.7.3/",
+    "preact": "npm:preact@10.23.1",
+    "preact-render-to-string": "npm:preact-render-to-string@6.4.2",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
     "std/": "https://deno.land/std@0.190.0/",
     "partytown/": "https://denopkg.com/deco-cx/partytown@0.4.8/",
     "daisyui": "npm:daisyui@4.6.0",
-    "site/": "./"
+    "site/": "./",
+    "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
+    "@deco/deco": "jsr:@deco/deco@1.107.0",
+    "@deco/durable": "jsr:@deco/durable@0.5.3",
+    "@deco/dev": "jsr:@deco/dev@1.107.0"
   },
   "tasks": {
     "localhost": "DECO_SITE_NAME=agencian1 DECO_ENV_NAME=localhost deno task start",
@@ -22,14 +25,15 @@
     "component": "deno eval 'import \"deco/scripts/component.ts\"'",
     "release": "deno eval 'import \"deco/scripts/release.ts\"'",
     "update": "deno run -Ar https://deco.cx/update",
-    "check": "deno fmt && deno lint && deno check dev.ts main.ts",
+    "check": "deno fmt && deno lint && deno check --allow-import dev.ts main.ts",
     "install": "deno eval 'import \"deco/scripts/apps/install.ts\"'",
     "uninstall": "deno eval 'import \"deco/scripts/apps/uninstall.ts\"'",
-    "bundle": "deno eval 'import \"deco/scripts/apps/bundle.ts\"' site",
+    "bundle": "deno run -A jsr:@deco/deco/scripts/bundle site",
     "cache_clean": "rm deno.lock; deno cache -r main.ts",
     "build": "deno run -A dev.ts build",
     "preview": "deno run -A main.ts",
-    "dev": "deno run -A --env --unstable --unstable-hmr dev.ts"
+    "dev": "deno run -A --env --unstable-kv --unstable-hmr dev.ts",
+    "reload": "deno cache -r https://deco.cx/run"
   },
   "githooks": {
     "pre-commit": "check"
@@ -39,7 +43,8 @@
     "static/",
     "README.md",
     "_fresh",
-    "**/_fresh/*"
+    "**/_fresh/*",
+    "**/*.css"
   ],
   "lint": {
     "rules": {
@@ -49,10 +54,9 @@
       ]
     }
   },
-  "nodeModulesDir": false,
+  "nodeModulesDir": "none",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "preact",
-    "experimentalDecorators": true
+    "jsxImportSource": "preact"
   }
 }

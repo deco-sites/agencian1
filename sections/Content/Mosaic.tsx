@@ -1,8 +1,7 @@
-import { FnContext, SectionProps } from "deco/mod.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import { clx } from "$store/sdk/clx.ts";
-
+import { type FnContext, type SectionProps } from "@deco/deco";
 // INTERFACE GENERICA P/ IMAGEM
 interface ImageGeneric {
   /**@title Imagem */
@@ -14,7 +13,6 @@ interface ImageGeneric {
   /**@description (ex: 250) */
   height?: number;
 }
-
 // INTERFACE GENERICA P/ TEXTOS
 interface TextGeneric {
   /** @title Título */
@@ -39,58 +37,46 @@ interface TextGeneric {
   /** @title Cor de fundo do card */
   bgColor?: "primary" | "base-50";
 }
-
 const colorBackground = {
   "primary": "#0C1F59",
   "base-50": "#F3F4F7",
 };
-
 //* LAYOUT SUPERIOR
 /** @titleBy name */
 interface LayoutTop {
   /**@title Nome do Bloco */
   name?: string;
-
   /** @title Textos */
   text?: TextGeneric;
-
   /** @title Desktop */
   desktop?: ImageGeneric;
-
   /** @title Mobile */
   mobile?: ImageGeneric;
 }
-
 interface BottomLayout {
   /** @title Imagem Superior */
   top: ImageGeneric;
   /** @title Imagem Inferior */
   bottom: ImageGeneric;
 }
-
 interface BottomSide {
   /** @title Lado esquerdo */
   left?: BottomLayout;
   /** @title Lado direito */
   right?: BottomLayout;
 }
-
 //* LAYOUT INFERIOR
 /** @titleBy name */
 interface LayoutBottom {
   /**@title Nome do Bloco */
   name?: string;
-
   /** @title Textos */
   text?: TextGeneric;
-
   /** @title Desktop */
   desktop?: BottomSide;
-
   /** @title Mobile */
   mobile?: BottomSide;
 }
-
 interface Props {
   /** @title Imagem Superior */
   /** @description (Limite 3 imagens) */
@@ -103,13 +89,13 @@ interface Props {
   /** @title Ativar imagem de fundo eclipse? */
   activeEclipse?: boolean;
 }
-
 function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
   const { imageTop, imageBottom, device, activeEclipse } = props;
-
   function handleMouserHover(e: MouseEvent) {
     const { target } = e;
-    if (!target) return;
+    if (!target) {
+      return;
+    }
     if (target && target instanceof HTMLElement) {
       switch (e.type) {
         case "mouseleave":
@@ -121,7 +107,6 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
       }
     }
   }
-
   return (
     <>
       <div
@@ -523,12 +508,10 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
     </>
   );
 }
-
 export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   return {
     ...props,
     device: ctx.device,
   };
 };
-
 export default Mosaic;

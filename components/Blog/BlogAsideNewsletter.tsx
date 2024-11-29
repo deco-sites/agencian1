@@ -70,15 +70,15 @@ function BlogAsideNewsletter({ newsletter }: Props) {
   return (
     <div class="news">
       {newsletter?.titleNewsletter && (
-          <div
-            class={clx(
-              `mb-[20px] [&_*]:text-24 [&_*]:font-archimoto-medium [&_*]:font-black`
-            )}
-            dangerouslySetInnerHTML={{ __html: newsletter.titleNewsletter }}
-          ></div>
-        )}
+        <div
+          class={clx(
+            `mb-[20px] [&_*]:text-24 [&_*]:font-archimoto-medium [&_*]:font-black`,
+          )}
+          dangerouslySetInnerHTML={{ __html: newsletter.titleNewsletter }}
+        >
+        </div>
+      )}
       <form class={clx(`flex flex-col gap-y-[20px]`)} onSubmit={handleSubmit}>
-        
         {newsletter?.maskNewsletterName && (
           <input
             id="name"
@@ -87,7 +87,7 @@ function BlogAsideNewsletter({ newsletter }: Props) {
             placeholder={newsletter?.maskNewsletterName}
             class={clx(
               `rounded-[100px] py-[14px] px-[20px] max-h-[48px] bg-[#ffffff]
-                            font-normal text-primary text-[14px] leading-[18.2px] font-noto-sans outline-none`
+                            font-normal text-primary text-[14px] leading-[18.2px] font-noto-sans outline-none`,
             )}
           />
         )}
@@ -99,7 +99,7 @@ function BlogAsideNewsletter({ newsletter }: Props) {
             placeholder={newsletter?.maskNewsletterEmail}
             class={clx(
               `rounded-[100px] py-[14px] px-[20px] max-h-[48px] bg-[#ffffff]
-                            font-normal text-primary text-[14px] leading-[18.2px] font-noto-sans outline-none`
+                            font-normal text-primary text-[14px] leading-[18.2px] font-noto-sans outline-none`,
             )}
           />
         )}

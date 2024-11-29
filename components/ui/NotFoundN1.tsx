@@ -1,19 +1,16 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
-import { FnContext } from "deco/mod.ts";
 import Image from "apps/website/components/Image.tsx";
-
+import { type FnContext } from "@deco/deco";
 export interface ButtonProps {
   text: string;
   href: string;
 }
-
 export interface Props {
   image404Desktop: ImageWidget;
   image404Mobile: ImageWidget;
   title?: string;
   button: ButtonProps;
 }
-
 export default function NotFoundN1(
   { image404Desktop, image404Mobile, button, device, title }: Props & {
     device?: string;
@@ -66,7 +63,6 @@ export default function NotFoundN1(
     </>
   );
 }
-
 export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   return { ...props, device: ctx.device };
 };

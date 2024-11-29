@@ -3,12 +3,11 @@ import { useEffect } from "preact/hooks";
 import { useSignal } from "@preact/signals";
 
 function ButtonTop() {
-  const window_ = window;
   const buttomTopVisible = useSignal(false);
 
   function handleScroll() {
-    const deviceHeight = window_.outerHeight;
-    const windowScrollY = window_.scrollY.toFixed();
+    const deviceHeight = globalThis.outerHeight;
+    const windowScrollY = globalThis.scrollY.toFixed();
 
     if (Number(windowScrollY) > deviceHeight) {
       buttomTopVisible.value = true;
@@ -18,14 +17,14 @@ function ButtonTop() {
   }
 
   function handleClick() {
-    window_.scrollTo({
+    globalThis.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   }
 
   useEffect(() => {
-    window_.addEventListener("scroll", () => {
+    globalThis.addEventListener("scroll", () => {
       handleScroll();
     });
   });

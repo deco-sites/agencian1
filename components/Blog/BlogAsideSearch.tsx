@@ -14,14 +14,12 @@ export interface Props {
 }
 
 function BlogAsideSearch({ search }: Props) {
-
-  const handleSearch = (event:KeyboardEvent) => {
+  const handleSearch = (event: KeyboardEvent) => {
     if (event.key === "Enter") {
       const val = (event.currentTarget as HTMLInputElement).value;
       location.href = `/nosso-blog?slug=${val}`;
     }
-    
-  } 
+  };
 
   return (
     <>

@@ -2,12 +2,11 @@ import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import { useId } from "$store/sdk/useId.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import { FnContext, SectionProps } from "deco/mod.ts";
 import { BannerItem } from "site/components/sliderColumn/BannerItems.tsx";
 import Dots from "site/components/sliderColumn/Dots.tsx";
 import Buttons from "site/components/sliderColumn/Buttons.tsx";
 import { clx } from "$store/sdk/clx.ts";
-
+import { type FnContext, type SectionProps } from "@deco/deco";
 export interface Banner {
   /** @title Imagem Desktop */
   desktop: ImageWidget;
@@ -15,21 +14,16 @@ export interface Banner {
   mobile: ImageWidget;
   /** @title Alt */
   alt: string;
-
   action?: ActionProps;
-
   /** @format rich-text */
   subTitle: string;
   /** @title adicionar barra "/" antes da frase?. */
   addBarSlide?: boolean;
-
   /** @title adicionar chaves "{}" antes e depois da frase? */
   addKeysInWordsSlide?: boolean;
-
   /** @format rich-text */
   description: string;
 }
-
 interface ActionProps {
   /** @title link */
   /** @description (ex: https://agencian1.com.br/) */
@@ -41,16 +35,13 @@ interface ActionProps {
   /** @title Texto do botão */
   label: string;
 }
-
 export interface Props {
   /** @format rich-text */
   title?: string;
-
   /** @title adicionar barra "/" antes da frase? */
   addBar?: boolean;
   /** @title adicionar chaves "{}" antes e depois da frase? */
   addKeysInWords?: boolean;
-
   images?: Banner[];
   /**
    * @description (Marque esta opção quando este banner for a maior imagem na tela para otimizações de imagem)
@@ -71,16 +62,13 @@ export interface Props {
    * @description [tempo (em segundos) para iniciar a reprodução automática do carrossel (ex: 1 - significa 1 segundo)]
    */
   interval?: number;
-
   /** @tilte Margin top */
   /** @description Espaçamento entre uma section e outra ex:10px*/
   marginTop?: string;
-
   /** @tilte Margin Bottom*/
   /** @description spaçamento entre uma section e outra ex:10px*/
   marginBottom?: string;
 }
-
 export default function SliderColumn(
   props: SectionProps<ReturnType<typeof loader>>,
 ) {
@@ -96,7 +84,6 @@ export default function SliderColumn(
     addKeysInWords,
     addBar,
   } = props;
-
   return (
     <div
       class="w-full flex  flex-col  relative max-w-[1300px] m-auto justify-between  px-5 md:px-0 lg:py-0 z-10"
@@ -149,7 +136,6 @@ export default function SliderColumn(
     </div>
   );
 }
-
 export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   return {
     ...props,

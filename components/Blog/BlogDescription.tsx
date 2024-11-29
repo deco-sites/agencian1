@@ -17,7 +17,8 @@ function BlogDescription({ description, fontSizeDesk, fontSizeMobile }: Props) {
                         ${fontSizeMobile ? fontSizeMobile : "text-14"} 
                         font-noto-sans`)}
           dangerouslySetInnerHTML={{ __html: description }}
-        ></div>
+        >
+        </div>
       )}
     </>
   );

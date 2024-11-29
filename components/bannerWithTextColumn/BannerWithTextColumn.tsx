@@ -1,20 +1,16 @@
-import { FnContext } from "deco/mod.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import { clx } from "$store/sdk/clx.ts";
 import Ellipse from "site/components/ui/Ellipse.tsx";
-
+import { type FnContext } from "@deco/deco";
 export interface Img {
   /**@title Image Desktop*/
   imageDesktop?: ImageWidget;
-
   alt?: string;
-
   /** @description width ex: 500 */
   widthDesktop?: number;
   /** @description height ex: 300 */
   heightDesktop?: number;
-
   /**@title Image Mobile*/
   imageMobile: ImageWidget;
   /** @description width ex: 500 */
@@ -22,53 +18,40 @@ export interface Img {
   /** @description height ex: 300 */
   heightMobile?: number;
 }
-
 export interface TextList {
   /** @format rich-text */
   descriptionList?: string;
 }
-
 export interface Tags {
   /**@title Tags Desktop*/
   iconsDesktop: ImageWidget;
   widthDesktop?: number;
   heightDesktop?: number;
-
   /**@title Tags Mobile*/
   iconsMobile: ImageWidget;
   widthMobile?: number;
   heightMobile?: number;
 }
-
 export interface CardInfo {
   /**@description ex: +12,85% */
   percentage?: string;
-
   /**@description short text ex: Aumento da receita */
   about?: string;
 }
-
 export interface List {
   /**@description Adicione o icon para o check list */
   iconCheck?: ImageWidget;
-
   textList?: TextList[];
-
   widthContainerList: "400" | "500";
-
   tags?: Tags[];
-
   cardInfo?: CardInfo[];
-
   /** @title Ocultar o card no mobile */
   hiddenCardInfo?: boolean;
 }
-
 export interface Button {
   textButton: string;
   link: string;
 }
-
 export interface Content {
   /** @format rich-text */
   title?: string;
@@ -84,14 +67,10 @@ export interface Content {
   /** @title Tamanho de fonte Mobile */
   /** @description fonte de descrição (ex: text-14 = 14px) */
   fontSizeMobile?: "text-20" | "text-24";
-
   alignmentContent?: "center" | "normal";
-
   list?: List;
-
   button?: Button;
 }
-
 export interface Ellipse {
   horizontal: "left" | "center" | "right";
   vertical: "top" | "center" | "bottom";
@@ -101,50 +80,37 @@ export interface Ellipse {
   activeDesktop?: boolean;
   activeMobile?: boolean;
 }
-
 export interface Props {
   bannerImg: Img;
-
   contentText?: Content;
-
   /** @title Espaçamento do container*/
   /** @description margem do container para deixar conteúdo centralizado ou normal */
   styleContainer?: "center" | "normal";
-
   /** @title Posicionamento */
   placement?: "esquerdo" | "direito";
-
   /** @tilte Margin top */
   /** @description Espaçamento entre uma section e outra ex:10px*/
   marginTop?: string;
-
   /** @tilte Margin Bottom*/
   /** @description espaçamento entre uma section e outra ex:10px*/
   marginBottom?: string;
-
   /** @description espaçamento entre uma section e outra ex:10px*/
   marginTopMobile?: string;
-
   /** @description espaçamento entre uma section e outra ex:10px*/
   marginBottomMobile?: string;
-
   /** @description imagem de fundo */
   imageBackground?: ImageWidget;
-
   /** @description cor no fundo */
   ellipse?: Ellipse;
 }
-
 const PLACEMENT = {
   esquerdo: "flex-col lg:flex-row-reverse",
   direito: "flex-col lg:flex-row",
 };
-
 const variants = {
   center: "center",
   normal: "normal",
 };
-
 export default function BannerWithTextColumn({
   bannerImg,
   contentText,
@@ -157,22 +123,21 @@ export default function BannerWithTextColumn({
   device,
   imageBackground,
   ellipse,
-}: Props & { device: string }) {
+}: Props & {
+  device: string;
+}) {
   const widthContainerValue = contentText && contentText.list
     ? contentText.list.widthContainerList
     : 400;
   const ishidden = contentText && contentText.list?.hiddenCardInfo
     ? contentText.list?.hiddenCardInfo
     : false;
-
   const {
     fontSize = "text-16",
     fontSizeMobile = "text-14",
     alignmentContent = "normal",
   } = contentText || {};
-
   const isDesktop = device === "desktop";
-
   return (
     <div class="w-full relative overflow-x-clip">
       <div
@@ -188,30 +153,26 @@ export default function BannerWithTextColumn({
       >
         <div class="lg:w-1/2 z-10">
           {device === "desktop"
-            ? (
-              bannerImg?.imageDesktop && (
-                <Image
-                  src={bannerImg.imageDesktop}
-                  width={bannerImg.widthDesktop || 632}
-                  height={bannerImg.heightDesktop || 372}
-                  alt={bannerImg.alt}
-                  loading="eager"
-                  className="hidden  mx-auto lg:block"
-                />
-              )
-            )
-            : (
-              bannerImg.imageMobile && (
-                <Image
-                  src={bannerImg.imageMobile}
-                  width={bannerImg.widthMobile || 358}
-                  height={bannerImg.heightMobile || 229}
-                  alt={bannerImg.alt}
-                  loading="eager"
-                  className="block w-full mx-auto lg:hidden"
-                />
-              )
-            )}
+            ? (bannerImg?.imageDesktop && (
+              <Image
+                src={bannerImg.imageDesktop}
+                width={bannerImg.widthDesktop || 632}
+                height={bannerImg.heightDesktop || 372}
+                alt={bannerImg.alt}
+                loading="eager"
+                className="hidden  mx-auto lg:block"
+              />
+            ))
+            : (bannerImg.imageMobile && (
+              <Image
+                src={bannerImg.imageMobile}
+                width={bannerImg.widthMobile || 358}
+                height={bannerImg.heightMobile || 229}
+                alt={bannerImg.alt}
+                loading="eager"
+                className="block w-full mx-auto lg:hidden"
+              />
+            ))}
         </div>
 
         {/** content text */}
@@ -365,7 +326,6 @@ export default function BannerWithTextColumn({
     </div>
   );
 }
-
 export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   return {
     ...props,

@@ -95,10 +95,8 @@ function queryElements(el: unknown) {
 }
 
 function DepositionsDesktop({ depositionAndImage }: Props) {
-  const window_ = window;
-
   useEffect(() => {
-    window_.addEventListener("scroll", () => {
+    globalThis.addEventListener("scroll", () => {
       if (elementDescription instanceof HTMLDivElement) {
         queryElements(elementDescription);
       }

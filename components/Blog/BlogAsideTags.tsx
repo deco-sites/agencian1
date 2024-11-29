@@ -2,8 +2,8 @@ import { clx } from "$store/sdk/clx.ts";
 
 /**@titleBy name */
 export interface Tag {
-  name?: string
-  link?: string
+  name?: string;
+  link?: string;
 }
 
 export interface AsideTags {
@@ -48,7 +48,9 @@ function BlogAsideTags({ tag }: Props) {
                 <>
                   <li class={clx(`inline-flex`)}>
                     <span
-                      class={clx(`flex px-[14px] py-[8px] items-center rounded-[30px] border border-[#ffffff] text-[14px] hover:bg-[#ffffff] hover:text-[#585858]  leading-[22.4px] font-noto-sans`)}
+                      class={clx(
+                        `flex px-[14px] py-[8px] items-center rounded-[30px] border border-[#ffffff] text-[14px] hover:bg-[#ffffff] hover:text-[#585858]  leading-[22.4px] font-noto-sans`,
+                      )}
                     >
                       {tag}
                     </span>

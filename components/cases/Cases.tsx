@@ -2,17 +2,14 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
-import type { FnContext } from "deco/types.ts";
-
+import { type FnContext } from "@deco/deco";
 export interface Technology {
   /** @title Icon services desktop */
   IconDesktop: ImageWidget;
   /** @title Icon services mobile */
   IconMobile: ImageWidget;
-
   services: string;
 }
-
 interface ImageDevice {
   /** @title Imagem */
   src: ImageWidget;
@@ -23,81 +20,62 @@ interface ImageDevice {
   /** @title Nome da Imagem */
   alt?: string;
 }
-
 /**@title {{{alt}}}*/
-
 export interface CardCases {
   /** @title Image card desktop */
   imgCardDesktop: ImageWidget;
-
   alt: string;
-
   /** @description widht ex: 580 */
   widthDesktop?: number;
   /** @description height ex: 430 */
   heightDesktop?: number;
-
   /** @title Image card mobile */
-
   imgCardMobile: ImageWidget;
-
   /** @description widht ex: 350 */
   widthMobile?: number;
   /** @description height ex: 342 */
   heightMobile?: number;
-
   /** @title  Logo store desktop */
   imgIconStoreDesktop: ImageDevice;
-
   /**@title Logo store mobile */
   imgIconStoreMobile: ImageDevice;
-
   link: string;
   buttonName: string;
   technology: Technology[];
 }
-
 export interface Props {
   /** @format rich-text */
   title?: string;
-
   /** @title Icon do background bottom */
   IconBackgroundBottom?: ImageWidget;
-
   iconBackgroundTop?: ImageWidget;
-
   /** @title Ocultar eclipse de fundo? */
   iconBackgroundLeftBottom?: boolean;
-
   /** @description Adicione os Cases */
   cardCases?: CardCases[];
-
   layout?: {
     /** @tilte Margin top */
     /** @description Espaçamento entre uma section e outra ex:10px*/
     marginTop?: string;
-
     /** @tilte Margin Bottom*/
     /** @description espaçamento entre uma section e outra ex:10px*/
     marginBottom?: string;
-
     /** @description espaçamento entre uma section e outra ex:10px*/
     marginTopMobile?: string;
-
     /** @description espaçamento entre uma section e outra ex:10px*/
     marginBottomMobile?: string;
   };
 }
-
-export default function Cases(props: Props & { device: string }) {
+export default function Cases(
+  props: Props & {
+    device: string;
+  },
+) {
   if (!props.cardCases) {
     return null;
   }
-
   const isDesktop = props.device === "desktop";
-
   const { layout } = props ?? {};
-
   const { marginBottom, marginTop, marginBottomMobile, marginTopMobile } =
     layout ?? {};
   return (
@@ -271,12 +249,7 @@ export default function Cases(props: Props & { device: string }) {
     </div>
   );
 }
-
-export const loader = (
-  props: Props,
-  _req: Request,
-  ctx: FnContext,
-) => {
+export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   const device = ctx.device;
   return {
     ...props,

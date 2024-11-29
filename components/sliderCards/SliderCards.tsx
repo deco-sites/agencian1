@@ -2,12 +2,11 @@ import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import { useId } from "$store/sdk/useId.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import { FnContext, SectionProps } from "deco/mod.ts";
 import CardItem from "site/components/sliderCards/CardItem.tsx";
 import Dots from "site/components/sliderCards/Dotz.tsx";
 import Buttons from "site/components/sliderCards/Buttons.tsx";
 import Image from "apps/website/components/Image.tsx";
-
+import { type FnContext, type SectionProps } from "@deco/deco";
 /**
  * @titleBy title
  */
@@ -17,11 +16,9 @@ interface ActionProps {
   href: string;
   /** @title Título da imagem */
   title: string;
-
   /** @title Texto do botão */
   label: string;
 }
-
 /**
  * @titleBy alt
  */
@@ -34,11 +31,9 @@ export interface Banner {
   alt: string;
   action?: ActionProps;
 }
-
 export interface Props {
   /** @format rich-text */
   title?: string;
-
   images?: Banner[];
   /**
    * @description (Marque esta opção quando este banner for a maior imagem na tela para otimizações de imagem)
@@ -59,19 +54,15 @@ export interface Props {
    * @description [tempo (em segundos) para iniciar a reprodução automática do carrossel (ex: 1 - significa 1 segundo)]
    */
   interval?: number;
-
   /** @tilte Margin top */
   /** @description Espaçamento entre uma section e outra ex:10px*/
   marginTop?: string;
-
   /** @tilte Margin Bottom*/
   /** @description spaçamento entre uma section e outra ex:10px*/
   marginBottom?: string;
-
   /** Icon Background */
   icon?: ImageWidget;
 }
-
 const DEFAULT_PROPS = {
   images: [
     {
@@ -116,14 +107,12 @@ const DEFAULT_PROPS = {
   ],
   preload: true,
 };
-
 function BannerCarousel(props: SectionProps<ReturnType<typeof loader>>) {
   const id = useId();
   const { images, preload, interval, marginTop, marginBottom, title } = {
     ...DEFAULT_PROPS,
     ...props,
   };
-
   return (
     <div className="relative w-full overflow-x-clip">
       <div
@@ -190,12 +179,10 @@ function BannerCarousel(props: SectionProps<ReturnType<typeof loader>>) {
     </div>
   );
 }
-
 export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   return {
     ...props,
     device: ctx.device,
   };
 };
-
 export default BannerCarousel;

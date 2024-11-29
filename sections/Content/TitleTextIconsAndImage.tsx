@@ -1,9 +1,8 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import { clx } from "$store/sdk/clx.ts";
-import { FnContext, SectionProps } from "deco/mod.ts";
 import EllipseSnippet from "../../components/ui/EllipseSnippet.tsx";
-
+import { type FnContext, type SectionProps } from "@deco/deco";
 /**@titleBy alt */
 interface ImageGeneric {
   /**@title Nome da Imagem */
@@ -22,14 +21,12 @@ interface ImageGeneric {
   /** @title Desativar item? */
   disabledLink?: boolean;
 }
-
 interface ImageDevice {
   /**@title Desktop */
   desktop?: ImageGeneric;
   /**@title Mobile */
   mobile?: ImageGeneric;
 }
-
 /**@titleBy textLink */
 interface Link {
   /**@title URL */
@@ -38,12 +35,10 @@ interface Link {
   /**@title Texto do botão */
   textLink?: string;
 }
-
 interface EllipseProps {
   desktop?: boolean;
   mobile?: boolean;
 }
-
 interface Ellipse {
   /**@title Ellipse 01 */
   ellipse01?: EllipseProps;
@@ -54,7 +49,6 @@ interface Ellipse {
   /**@title Ellipse 04 */
   ellipse04?: EllipseProps;
 }
-
 interface Props {
   /**@title Espaço entre Bloco de texto e imagem (somente números) */
   /** @description (ex: 50 - somente números, o resultado é pixel) */
@@ -104,28 +98,23 @@ interface Props {
   /**@title Desativar imagem de fundo? */
   ellipse?: Ellipse;
 }
-
 const FONTICONTEXT = {
   "Noto Sans": "font-noto-sans",
   "Archimoto V01": "font-archimoto-medium",
 };
-
 const GRIDCOLCUSTOM = {
   2: "xl:grid-cols-2-auto",
   3: "xl:grid-cols-3-auto",
   4: "xl:grid-cols-4-auto",
 };
-
 const FLEXROW = {
   "Esquerdo": "xl:flex-row-reverse",
   "Direito": "xl:flex-row",
 };
-
 const FLEXCOL = {
   "Inferior": "mobile:flex-col",
   "Superior": "mobile:flex-col-reverse",
 };
-
 function TitleTextIconsAndImage(
   props: SectionProps<ReturnType<typeof loader>>,
 ) {
@@ -150,7 +139,6 @@ function TitleTextIconsAndImage(
     ellipse,
     device,
   } = props;
-
   return (
     <>
       <div class="relative xl:py-[80px] xl:mb-[32px] mobile:px-[20px]">
@@ -333,12 +321,10 @@ function TitleTextIconsAndImage(
     </>
   );
 }
-
 export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   return {
     ...props,
     device: ctx.device,
   };
 };
-
 export default TitleTextIconsAndImage;

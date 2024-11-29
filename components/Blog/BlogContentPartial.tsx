@@ -1,27 +1,26 @@
 import { clx } from "$store/sdk/clx.ts";
 import { BlogPost } from "apps/blog/types.ts";
-import { Section } from "deco/mod.ts";
-import { Pagination, Layout } from "$store/sections/Content/Blog/MainPost.tsx";
+import { Layout, Pagination } from "$store/sections/Content/Blog/MainPost.tsx";
 import BlogPosting from "$store/components/Blog/BlogPosting.tsx";
 import { useState } from "preact/hooks";
 
 export interface Props {
   posts: BlogPost[];
   pagination?: Pagination;
-  asideCotent?: Section[];
+  asideContent?: unknown[];
   layout?: Layout;
 }
 
 export default function BlogContentPartial({
   posts: postsInitial,
-  asideCotent,
+  asideContent,
   pagination,
   layout,
 }: Props) {
   const slicePosts = (
     posts: BlogPost[],
     page: number,
-    postsPerPage: number
+    postsPerPage: number,
   ) => {
     const startIndex = (page - 1) * postsPerPage;
     const endIndex = startIndex + postsPerPage;
@@ -29,26 +28,26 @@ export default function BlogContentPartial({
   };
 
   const [posts, setPosts] = useState(
-    slicePosts(postsInitial, pagination?.page ?? 1, pagination?.count ?? 12)
+    slicePosts(postsInitial, pagination?.page ?? 1, pagination?.count ?? 12),
   );
   const [page, setPage] = useState(pagination?.page ?? 1);
-  const [postsPerPage, setPostsPerPage] = useState(pagination?.count ?? 12);
+  const [postsPerPage, _] = useState(pagination?.count ?? 12);
   const [loading, setLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
 
-  const checkForDuplicates = (
-    newPosts: BlogPost[],
-    existingPosts: BlogPost[]
-  ) => {
-    const existingPostIds = new Set(existingPosts.map((post) => post.slug));
-    for (const post of newPosts) {
-      if (existingPostIds.has(post.slug)) {
-        return true;
-      }
-    }
+  // const checkForDuplicates = (
+  //   newPosts: BlogPost[],
+  //   existingPosts: BlogPost[],
+  // ) => {
+  //   const existingPostIds = new Set(existingPosts.map((post) => post.slug));
+  //   for (const post of newPosts) {
+  //     if (existingPostIds.has(post.slug)) {
+  //       return true;
+  //     }
+  //   }
 
-    return false;
-  };
+  //   return false;
+  // };
 
   const loadMorePosts = () => {
     if (loading || !hasMore) return;
@@ -57,7 +56,7 @@ export default function BlogContentPartial({
     try {
       const newPage = page + 1;
       const slicedPosts = slicePosts(postsInitial, newPage, postsPerPage);
-    //   console.log(checkForDuplicates(slicedPosts, posts));
+      //   console.log(checkForDuplicates(slicedPosts, posts));
 
       if (slicedPosts && slicedPosts.length > 0) {
         setPosts((prevPosts) => [...prevPosts, ...slicedPosts]);
@@ -75,39 +74,43 @@ export default function BlogContentPartial({
   return (
     <>
       <div class={clx(`n1-blog__content flex flex-col gap-y-[30px]`)}>
-        {posts && posts.length > 0 ? (
-          posts.map((post: BlogPost) => {
-            if (!post) return null;
-            if (!post?.title) return null;
-            return (
-              <>
-                <BlogPosting
-                  post={post}
-                  asideCotent={asideCotent}
-                  layout={layout}
-                />
-              </>
-            );
-          })
-        ) : (
-          <>
-            <div
-              class={`n1-blog__content-item ${
-                !(asideCotent && asideCotent?.length > 0) ? "my-0 mx-auto" : ""
-              } md:max-w-[790px] `}
-            >
+        {posts && posts.length > 0
+          ? (
+            posts.map((post: BlogPost) => {
+              if (!post) return null;
+              if (!post?.title) return null;
+              return (
+                <>
+                  <BlogPosting
+                    post={post}
+                    asideContent={asideContent}
+                    layout={layout}
+                  />
+                </>
+              );
+            })
+          )
+          : (
+            <>
               <div
-                class={`n1-blog__content-subitem py-[30px] px-[20px] rounded-[10px]`}
+                class={`n1-blog__content-item ${
+                  !(asideContent && asideContent?.length > 0)
+                    ? "my-0 mx-auto"
+                    : ""
+                } md:max-w-[790px] `}
               >
-                <div class={`n1-blog`}>
-                  <div>
-                    <h1 class="w-[300px] md:w-[790px]">Sem Post</h1>
+                <div
+                  class={`n1-blog__content-subitem py-[30px] px-[20px] rounded-[10px]`}
+                >
+                  <div class={`n1-blog`}>
+                    <div>
+                      <h1 class="w-[300px] md:w-[790px]">Sem Post</h1>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </>
-        )}
+            </>
+          )}
 
         {hasMore && !loading && (
           <button

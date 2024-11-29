@@ -2,12 +2,11 @@ import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import { useId } from "$store/sdk/useId.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import { FnContext, SectionProps } from "deco/mod.ts";
 import Image from "apps/website/components/Image.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import { clx } from "$store/sdk/clx.ts";
 import LinkWithOptionArrow from "$store/components/ui/LinkWithOptionArrow.tsx";
-
+import { type FnContext, type SectionProps } from "@deco/deco";
 interface InfoProps {
   /**@title Título*/
   /**@format textarea*/
@@ -21,7 +20,6 @@ interface InfoProps {
   /**@description (ex: https://agencian1.com.br/)*/
   href?: string;
 }
-
 interface ImageGeneric {
   /** @title Imagem */
   image?: ImageWidget;
@@ -32,7 +30,6 @@ interface ImageGeneric {
   /** @title Nome da Imagem */
   alt?: string;
 }
-
 /** @titleBy alt */
 export interface ImageCarousel {
   /** @title Nome do Bloco */
@@ -42,7 +39,6 @@ export interface ImageCarousel {
   /** @title Imagem */
   desktop: ImageGeneric;
 }
-
 export interface Props {
   /** @title Texto do Link */
   textLink?: string;
@@ -74,12 +70,12 @@ export interface Props {
   /** @title Ocultar Seção toda?*/
   noneSection?: boolean;
 }
-
-function ImageCarouselItem(
-  { image, lcp, id }: { image: ImageCarousel; lcp?: boolean; id: string },
-) {
+function ImageCarouselItem({ image, lcp, id }: {
+  image: ImageCarousel;
+  lcp?: boolean;
+  id: string;
+}) {
   const { desktop, settingsInfo } = image;
-
   return (
     <>
       <a
@@ -134,7 +130,6 @@ function ImageCarouselItem(
     </>
   );
 }
-
 function Dots({ images }: Props) {
   return (
     <>
@@ -178,34 +173,24 @@ function Dots({ images }: Props) {
     </>
   );
 }
-
 function Buttons() {
   return (
     <>
       <div class="absolute w-full flex mobile:justify-center mobile:items-end justify-between h-full top-[0] items-center pb-[10px]">
         <div class="flex items-center justify-start z-10 col-start-1 row-start-2 md:ml-[5%] mobile:mr-[30px]">
           <Slider.PrevButton class="btn btn-circle bg-[#ffffff] w-[40px] !h-[40px]">
-            <Icon
-              size={18}
-              id="Banner-arrow-left"
-              strokeWidth={3}
-            />
+            <Icon size={18} id="Banner-arrow-left" strokeWidth={3} />
           </Slider.PrevButton>
         </div>
         <div class="flex items-center justify-end z-10 col-start-3 row-start-2 md:mr-[5%] mobile:ml-[30px]">
           <Slider.NextButton class="btn btn-circle bg-[#ffffff] w-[40px] !h-[40px]">
-            <Icon
-              size={18}
-              id="Banner-arrow-right"
-              strokeWidth={3}
-            />
+            <Icon size={18} id="Banner-arrow-right" strokeWidth={3} />
           </Slider.NextButton>
         </div>
       </div>
     </>
   );
 }
-
 function TextTopWidthCarousel(props: SectionProps<ReturnType<typeof loader>>) {
   const id = useId();
   const {
@@ -220,7 +205,6 @@ function TextTopWidthCarousel(props: SectionProps<ReturnType<typeof loader>>) {
     noneSection,
     device,
   } = props;
-
   return (
     <>
       <div
@@ -297,12 +281,10 @@ function TextTopWidthCarousel(props: SectionProps<ReturnType<typeof loader>>) {
     </>
   );
 }
-
 export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   return {
     ...props,
     device: ctx.device,
   };
 };
-
 export default TextTopWidthCarousel;

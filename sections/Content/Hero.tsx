@@ -1,10 +1,9 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import { FnContext, SectionProps } from "deco/mod.ts";
 import { clx } from "$store/sdk/clx.ts";
 import { useEffect } from "preact/hooks";
 import LinkTelephoneWithOptionArrow from "site/components/ui/LinkTelephoneWithOptionArrow.tsx";
-
+import { type FnContext, type SectionProps } from "@deco/deco";
 export interface CTA {
   id?: string;
   /**@title Link do botão */
@@ -15,7 +14,6 @@ export interface CTA {
   text2?: string;
   variant: "Normal" | "Reverse";
 }
-
 export interface telephoneProps {
   text?: string;
   telephone?: string;
@@ -25,7 +23,6 @@ export interface telephoneProps {
   customClass?: string;
   fontSize?: string;
 }
-
 export interface Props {
   /**
    * @format rich-text
@@ -64,15 +61,12 @@ export interface Props {
   titleCta?: string;
   /** @title CTA */
   cta: CTA[];
-
   ButtonAds?: telephoneProps;
 }
-
 const PLACEMENT = {
   left: "flex-col text-left lg:flex-row-reverse",
   right: "flex-col text-left lg:flex-row",
 };
-
 export default function HeroFlats(
   props: SectionProps<ReturnType<typeof loader>>,
 ) {
@@ -92,19 +86,15 @@ export default function HeroFlats(
     device,
     ButtonAds,
   } = props;
-
   const positionX = translateX ? translateX + "px" : 0;
   const positionY = translateY ? translateY + "px" : 0;
-
   const HEIGHT = 508;
-
   function typingWrite(word: number) {
     const loop = localStorage.getItem("loop")
       ? localStorage.getItem("loop")
       : null;
     const loopNumber = Number(loop);
     const modeTablet = globalThis.matchMedia("(max-width:768px)").matches;
-
     if (loop && loopNumber < 2) {
       word = loopNumber + 1;
     } else if (loopNumber > 2) {
@@ -112,21 +102,16 @@ export default function HeroFlats(
     } else {
       word = 0;
     }
-
     localStorage.setItem("loop", String(word));
-
     const textElement = document.querySelector<HTMLElement>(
       ".text-animation--typing",
     );
-
     if (textElement && textElement instanceof HTMLElement) {
       const elementDataType = textElement.getAttribute("data-write");
       const textArray = elementDataType ? elementDataType.split(",") : null;
-
       if (textArray) {
         textElement.classList.add("is-active");
         textElement.innerHTML = textArray[word];
-
         if (modeTablet) {
           setTimeout(typingWrite, 6000);
           setTimeout(() => {
@@ -143,11 +128,9 @@ export default function HeroFlats(
       }
     }
   }
-
   useEffect(() => {
     typingWrite(0);
   }, []);
-
   return (
     <div class="mobile:mt-[10px] mobile:px-[20px]">
       <div class="mx-auto flex flex-col items-center gap-8 overflow-hidden">
@@ -282,7 +265,6 @@ export default function HeroFlats(
     </div>
   );
 }
-
 export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   return {
     ...props,
