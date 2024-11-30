@@ -1,61 +1,45 @@
-import { clx } from "$store/sdk/clx.ts";
-
-/**@titleBy name */
-export interface Tag {
+interface Tag {
+  /**
+   * @title Nome da tag
+   */
   name?: string;
+  /**
+   * @title Link da tag
+   */
   link?: string;
 }
 
-export interface AsideTags {
+export interface Props {
   /**
-   * @title Nome do campo Tag
-   * @format html
+   * @title Título da seção
    */
   title?: string;
   /**
-   * @title Tag
-   * @description (max: 9)
-   * @maxItems 9
+   * @title Tags
    */
-  nameTag?: string[];
+  tags?: Tag[];
 }
 
-export interface Props {
-  tag?: AsideTags;
-}
-
-function BlogAsideTags({ tag }: Props) {
+function BlogAsideTags({ title, tags }: Props) {
   return (
     <>
-      <div
-        class={clx(`flex flex-col gap-y-[20px]`)}
-      >
-        {tag?.title && (
-          <div
-            class={clx(`
-                        [&_*]:text-24 [&_*]:font-archimoto-medium [&_*]:font-black`)}
-            dangerouslySetInnerHTML={{ __html: tag.title }}
-          >
-          </div>
-        )}
+      <div class="flex flex-col gap-y-[20px]">
+        <div class="text-24 font-archimoto-medium font-black">
+          {title || "Tags"}
+        </div>
 
-        {tag?.nameTag && tag.nameTag.length > 0 && (
-          <ul
-            class={clx(`flex flex-wrap gap-[10px]`)}
-          >
-            {tag.nameTag.map((tag) => {
+        {tags?.length && (
+          <ul class="flex flex-wrap gap-[10px]">
+            {tags.map((tag) => {
               return (
-                <>
-                  <li class={clx(`inline-flex`)}>
-                    <span
-                      class={clx(
-                        `flex px-[14px] py-[8px] items-center rounded-[30px] border border-[#ffffff] text-[14px] hover:bg-[#ffffff] hover:text-[#585858]  leading-[22.4px] font-noto-sans`,
-                      )}
-                    >
-                      {tag}
-                    </span>
-                  </li>
-                </>
+                <li class="inline-flex">
+                  <a
+                    href={tag.link}
+                    class="flex px-[14px] py-[8px] items-center rounded-[30px] border border-[#ffffff] text-[14px] hover:bg-[#ffffff] hover:text-[#585858]  leading-[22.4px] font-noto-sans"
+                  >
+                    {tag.name}
+                  </a>
+                </li>
               );
             })}
           </ul>
@@ -63,6 +47,10 @@ function BlogAsideTags({ tag }: Props) {
       </div>
     </>
   );
+}
+
+export function LoadingFallback() {
+  return <></>;
 }
 
 export default BlogAsideTags;

@@ -230,7 +230,72 @@
                   }
                 }
               ]
-            }
+            },
+            "asideContent": [
+              {
+                "__resolveType": "site/sections/Content/Blog/BlogAsideSearch.tsx",
+                "title": "Buscar no blog",
+                "placeholder": "Digite o que você procura"
+              },
+              {
+                "__resolveType": "website/sections/Rendering/Lazy.tsx",
+                "section": {
+                  "__resolveType": "site/sections/Content/Blog/BlogAsideNewsletter.tsx",
+                  "newsletter": {
+                    "maskNewsletterName": "Nome",
+                    "maskNewsletterEmail": "E-mail",
+                    "textButton": "Cadastrar",
+                    "titleNewsletter": "<p>Cadastre-se para receber nossas novidades</p>"
+                  }
+                }
+              },
+              {
+                "__resolveType": "website/sections/Rendering/Lazy.tsx",
+                "section": {
+                  "__resolveType": "site/sections/Content/Blog/BlogAsideCategories.tsx",
+                  "title": "Categorias",
+                  "categories": [
+                    {
+                      "name": "Contato",
+                      "count": "1"
+                    },
+                    {
+                      "name": "Black Friday",
+                      "count": "2"
+                    }
+                  ]
+                }
+              },
+              {
+                "__resolveType": "website/sections/Rendering/Lazy.tsx",
+                "section": {
+                  "__resolveType": "site/sections/Content/Blog/BlogAsideTags.tsx",
+                  "title": "Nuvem com tags",
+                  "tags": [
+                    {
+                      "name": "Social",
+                      "link": "#"
+                    },
+                    {
+                      "name": "2024",
+                      "link": "#"
+                    },
+                    {
+                      "name": "Black Friday",
+                      "link": "#"
+                    },
+                    {
+                      "name": "VTEX",
+                      "link": "#"
+                    },
+                    {
+                      "name": "Deco",
+                      "link": "#"
+                    }
+                  ]
+                }
+              }
+            ]
           },
           {
             "__resolveType": "MorePostsBlog"

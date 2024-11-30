@@ -3,11 +3,12 @@ import { BlogPost } from "apps/blog/types.ts";
 import { Layout, Pagination } from "$store/sections/Content/Blog/MainPost.tsx";
 import BlogPosting from "$store/components/Blog/BlogPosting.tsx";
 import { useState } from "preact/hooks";
+import { type Section } from "@deco/deco/blocks";
 
 export interface Props {
   posts: BlogPost[];
   pagination?: Pagination;
-  asideContent?: unknown[];
+  asideContent?: Section[];
   layout?: Layout;
 }
 

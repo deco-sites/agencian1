@@ -91,22 +91,22 @@ interface Props {
 }
 function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
   const { imageTop, imageBottom, device, activeEclipse } = props;
-  function handleMouserHover(e: MouseEvent) {
-    const { target } = e;
-    if (!target) {
-      return;
-    }
-    if (target && target instanceof HTMLElement) {
-      switch (e.type) {
-        case "mouseleave":
-          console.log("event mouseleave ----> ", target);
-          break;
-        case "mouseover":
-          console.log("event mouseover ----> ", target);
-          break;
-      }
-    }
-  }
+  // function handleMouserHover(e: MouseEvent) {
+  //   const { target } = e;
+  //   if (!target) {
+  //     return;
+  //   }
+  //   if (target && target instanceof HTMLElement) {
+  //     switch (e.type) {
+  //       case "mouseleave":
+  //         console.log("event mouseleave ----> ", target);
+  //         break;
+  //       case "mouseover":
+  //         console.log("event mouseover ----> ", target);
+  //         break;
+  //     }
+  //   }
+  // }
   return (
     <>
       <div
@@ -114,9 +114,7 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
           activeEclipse ? "md:is-active" : ""
         }`}
       >
-        <div
-          class="flex flex-col text-[#ffffff] md:n1-container md:px-[120px] gap-[22px] pb-[10px] mobile:px-[20px]"
-          onMouseLeave={handleMouserHover}
+        <div class="flex flex-col text-[#ffffff] md:n1-container md:px-[120px] gap-[22px] pb-[10px] mobile:px-[20px]" // onMouseLeave={handleMouserHover}
         >
           {/* ITEMS TOP - INITIAL */}
 
@@ -139,7 +137,7 @@ function Mosaic(props: SectionProps<ReturnType<typeof loader>>) {
                           : "primary"
                       } rounded-[16px] bg-primary md:pt-[30px] mobile:max-h-[345px] h-[430px] overflow-hidden`,
                     )}
-                    onMouseLeave={handleMouserHover}
+                    // onMouseLeave={handleMouserHover}
                     style={{
                       backgroundColor: `${
                         text && text?.bgColor

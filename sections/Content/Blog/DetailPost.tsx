@@ -8,6 +8,7 @@ import { Tag } from "$store/components/Blog/BlogAsideTags.tsx";
 import BlogImage from "$store/components/Blog/BlogImage.tsx";
 import BlogSocialMidia from "$store/components/Blog/BlogSocialMidia.tsx";
 import { type SectionProps } from "@deco/deco";
+import { type Section } from "@deco/deco/blocks";
 export interface Button {
   /**@title Texto do botão */
   text?: string;
@@ -51,7 +52,7 @@ export interface Props {
   post?: BlogPost;
   slug?: RequestURLParam;
   tags?: Tag[];
-  asideContent?: unknown[];
+  asideContent?: Section[];
   /**@title Blog layout */
   layout?: Layout;
 }
@@ -141,14 +142,14 @@ export default function DetailPost(
               </>
             )}
           </div>
-          {asideCotent && asideCotent?.length > 0 && (
+          {asideContent && asideContent?.length > 0 && (
             <aside class={`n1-blog__aside md:w-[378px] mt-[40px] md:mt-0`}>
               <div
                 class={clx(
                   `flex flex-col gap-y-[30px] md:gap-y-[32px] static md:sticky top-[103px]`,
                 )}
               >
-                {asideCotent.map(({ Component, props }, index) => (
+                {asideContent.map(({ Component, props }, index) => (
                   <Component key={index} {...props} />
                 ))}
               </div>

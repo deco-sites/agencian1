@@ -49,7 +49,7 @@ function BlogAsideNewsletter({ newsletter }: Props) {
         if (!response.ok) return;
       } catch (err) {
         loadingElement?.classList.add("hidden");
-        console.log("error: ", err.message);
+        console.log("error: ", (err as Error).message);
       } finally {
         inputElement?.forEach((a) => (a.value = ""));
         loadingElement?.classList.add("hidden");
@@ -142,6 +142,10 @@ function BlogAsideNewsletter({ newsletter }: Props) {
       </div>
     </div>
   );
+}
+
+export function LoadingFallback() {
+  return <></>;
 }
 
 export default BlogAsideNewsletter;

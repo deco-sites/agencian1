@@ -5,6 +5,7 @@ import BlogImage from "$store/components/Blog/BlogImage.tsx";
 import BlogDescription from "$store/components/Blog/BlogDescription.tsx";
 import { Layout } from "$store/sections/Content/Blog/MainPost.tsx";
 import { clx } from "$store/sdk/clx.ts";
+import { type Section } from "@deco/deco/blocks";
 
 export default function BlogPosting({
   post,
@@ -13,7 +14,7 @@ export default function BlogPosting({
 }: {
   post: BlogPost;
   layout?: Layout;
-  asideContent?: unknown[];
+  asideContent?: Section[];
 }) {
   return (
     <div

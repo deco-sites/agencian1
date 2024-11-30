@@ -8,6 +8,8 @@ import handlePosts, {
 import { getRecordsByPath } from "apps/blog/utils/records.ts";
 import BlogContent from "$store/components/Blog/BlogContent.tsx";
 import { type SectionProps } from "@deco/deco";
+import { type Section } from "@deco/deco/blocks";
+
 export interface AsideSearch {
   /**
    * @title Titulo de bloco busca
@@ -140,7 +142,7 @@ export interface Props {
   posts?: BlogPost[];
   pagination?: Pagination;
   /**@title Ocultar seção Aside */
-  asideContent?: unknown[];
+  asideContent?: Section[];
   /**@title Blog layout */
   layout?: Layout;
 }
