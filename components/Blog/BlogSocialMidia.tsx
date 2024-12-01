@@ -1,5 +1,4 @@
 import { Picture, Source } from "apps/website/components/Picture.tsx";
-import { clx } from "$store/sdk/clx.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 
 interface ImageGeneric {
@@ -22,14 +21,9 @@ interface Content {
 function BlogSocialMidia({ socialMedia }: Content) {
   return (
     <>
-      <div
-        class={clx(`flex items-center gap-x-2.5`)}
-      >
-        <a href="">Compartilhar</a>
-
-        <ul
-          class={clx(`flex items-center gap-x-2.5`)}
-        >
+      <div class="flex items-center gap-x-2.5">
+        <span class="text-14">Compartilhar</span>
+        <ul class="flex items-center gap-x-2.5">
           {socialMedia && socialMedia.length > 0 &&
             socialMedia.map(({ alt, link, desktop, mobile }) => {
               return (

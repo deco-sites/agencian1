@@ -1,26 +1,32 @@
-import { clx } from "$store/sdk/clx.ts";
+import { clx } from "site/sdk/clx.ts";
 
 interface Props {
   description?: string;
+  clamp?: number;
   fontSizeDesk?: string;
   fontSizeMobile?: string;
 }
 
-function BlogDescription({ description, fontSizeDesk, fontSizeMobile }: Props) {
+function BlogDescription({
+  description,
+  clamp = 2,
+  fontSizeDesk,
+  fontSizeMobile,
+}: Props) {
+  if (!description) return null;
+
+  const classes = clx(
+    "n1-blog__description text-14",
+    fontSizeDesk ? fontSizeDesk : "",
+    fontSizeMobile ? fontSizeMobile : "",
+    `font-noto-sans leading-6 line-clamp-${clamp}`,
+  );
+
   return (
-    <>
-      {description && (
-        <div
-          class={clx(`
-                        n1-blog__description 
-                        ${fontSizeDesk ? fontSizeDesk : "text-14"} 
-                        ${fontSizeMobile ? fontSizeMobile : "text-14"} 
-                        font-noto-sans`)}
-          dangerouslySetInnerHTML={{ __html: description }}
-        >
-        </div>
-      )}
-    </>
+    <div
+      class={classes}
+      dangerouslySetInnerHTML={{ __html: description }}
+    />
   );
 }
 

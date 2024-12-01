@@ -151,9 +151,6 @@ const ACCESSOR = "post";
 export default function MainPost(
   { posts, asideContent, layout, pagination }: SectionProps<typeof loader>,
 ) {
-  if (!posts) {
-    return <></>;
-  }
   return (
     <>
       <BlogContent

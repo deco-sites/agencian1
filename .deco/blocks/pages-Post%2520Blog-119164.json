@@ -179,7 +179,38 @@
                   }
                 }
               ]
-            }
+            },
+            "asideContent": [
+              {
+                "__resolveType": "site/sections/Content/Blog/BlogAsideSearch.tsx",
+                "title": "Buscar no blog",
+                "placeholder": "Digite o que você procura"
+              },
+              {
+                "__resolveType": "site/sections/Content/Blog/BlogAsideNewsletter.tsx",
+                "title": "Cadastre-se para receber nossas novidades",
+                "namePlaceholder": "Nome",
+                "emailPlaceholder": "E-mail",
+                "submitButtonText": "Cadastrar"
+              },
+              {
+                "__resolveType": "site/sections/Content/Blog/BlogAsideCategories.tsx",
+                "title": "Categorias"
+              },
+              {
+                "__resolveType": "website/sections/Rendering/Lazy.tsx",
+                "section": {
+                  "__resolveType": "site/sections/Content/Blog/BlogAsideTags.tsx",
+                  "title": "Nuvem com tags",
+                  "tags": [
+                    {
+                      "name": "Tag",
+                      "link": "#"
+                    }
+                  ]
+                }
+              }
+            ]
           },
           {
             "__resolveType": "MorePostsBlog"

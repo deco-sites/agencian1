@@ -1,4 +1,4 @@
-import { clx } from "$store/sdk/clx.ts";
+import { clx } from "site/sdk/clx.ts";
 import { type AppContext } from "apps/blog/mod.ts";
 import { type Category as CategoryRecord } from "apps/blog/types.ts";
 import { getRecordsByPath } from "apps/blog/utils/records.ts";
@@ -17,41 +17,41 @@ interface Category {
 }
 
 interface Props extends AsideCategories {
-  categories?: Category[];
+  categories: Category[];
 }
 
 function BlogAsideCategories({ title, categories }: Props) {
+  if (!categories.length) return null;
   return (
-    <>
-      <div class={clx(`flex flex-col gap-y-[20px]`)}>
-        {title && (
-          <h2 class="text-24 font-archimoto-medium font-black">{title}</h2>
-        )}
-        {Boolean(categories?.length) && (
-          <ul class={clx(`flex flex-col gap-y-[10px]`)}>
-            {categories?.map((category) => {
-              return (
-                <>
-                  {category.name && (
-                    <a href={`/nosso-blog?categories=${category?.slug}`}>
-                      <li class="rounded-[30px] bg-[rgba(255,_255,_255,_0.10)] flex pl-[20px] pr-[8px] py-[8px] justify-between items-center font-noto-sans">
+    <div class={clx(`flex flex-col gap-y-[20px]`)}>
+      <h2 class="text-24 font-archimoto-medium font-black">
+        {title || "Categorias"}
+      </h2>
+      {Boolean(categories?.length) && (
+        <ul class={clx(`flex flex-col gap-y-[10px]`)}>
+          {categories?.map((category) => {
+            return (
+              <>
+                {category.name && (
+                  <a href={`/nosso-blog?categories=${category?.slug}`}>
+                    <li class="rounded-[30px] bg-[rgba(255,_255,_255,_0.10)] flex pl-[20px] pr-[8px] py-[8px] justify-between items-center font-noto-sans">
+                      <span class="text-14">
                         {category.name}
-
-                        {category?.count && (
-                          <span class="text-[#585858] text-14 leading-[22.4px] flex p-[7px] flex-col size-[30px] md:size-[36px] justify-center items-center rounded-[30px] bg-secondary font-noto-sans">
-                            {category.count}
-                          </span>
-                        )}
-                      </li>
-                    </a>
-                  )}
-                </>
-              );
-            })}
-          </ul>
-        )}
-      </div>
-    </>
+                      </span>
+                      {category?.count && (
+                        <span class="text-[#585858] text-14 leading-[22.4px] flex p-[7px] flex-col size-[30px] md:size-[36px] justify-center items-center rounded-[30px] bg-secondary font-noto-sans">
+                          {category.count}
+                        </span>
+                      )}
+                    </li>
+                  </a>
+                )}
+              </>
+            );
+          })}
+        </ul>
+      )}
+    </div>
   );
 }
 

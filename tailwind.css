@@ -530,7 +530,7 @@
     display: block;
     transform: rotate(-45deg);
     position: absolute;
-    top: 5px;
+    top: 4px;
     right: -20px;
     border-radius: 2px;
   }

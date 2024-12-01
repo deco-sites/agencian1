@@ -1,1 +1,5 @@
-export { default, loader } from "site/components/Blog/BlogAsideCategories.tsx";
+export {
+  default,
+  loader,
+  LoadingFallback,
+} from "site/components/Blog/BlogAsideCategories.tsx";

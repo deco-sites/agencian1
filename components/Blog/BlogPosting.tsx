@@ -1,11 +1,11 @@
-import { BlogPost } from "apps/blog/types.ts";
-import BlogTitle from "$store/components/Blog/BlogTitle.tsx";
-import BlogSocialMidia from "$store/components/Blog/BlogSocialMidia.tsx";
-import BlogImage from "$store/components/Blog/BlogImage.tsx";
-import BlogDescription from "$store/components/Blog/BlogDescription.tsx";
-import { Layout } from "$store/sections/Content/Blog/MainPost.tsx";
-import { clx } from "$store/sdk/clx.ts";
 import { type Section } from "@deco/deco/blocks";
+import { BlogPost } from "apps/blog/types.ts";
+import { Layout } from "site/sections/Content/Blog/MainPost.tsx";
+import { clx } from "site/sdk/clx.ts";
+import BlogTitle from "site/components/Blog/BlogTitle.tsx";
+import BlogSocialMidia from "site/components/Blog/BlogSocialMidia.tsx";
+import BlogImage from "site/components/Blog/BlogImage.tsx";
+import BlogDescription from "site/components/Blog/BlogDescription.tsx";
 
 export default function BlogPosting({
   post,
@@ -16,41 +16,48 @@ export default function BlogPosting({
   layout?: Layout;
   asideContent?: Section[];
 }) {
+  const link = `/nosso-blog/post?slug=${post?.slug}`;
   return (
     <div
-      class={`n1-blog__content-item ${
-        !(asideContent && asideContent?.length > 0) ? "my-0 mx-auto" : ""
-      } md:max-w-[790px] `}
+      class={clx(
+        "n1-blog__content-item px-[20px] py-[30px] rounded-[10px]",
+        !asideContent?.length ? "my-0 mx-auto" : "",
+        "md:max-w-[790px]",
+        "bg-[linear-gradient(181.01deg,_#FFFFFF_-176.1%,_rgba(255,_255,_255,_0.29)_-85.87%,_rgba(255,_255,_255,_0)_124.35%)]",
+      )}
     >
       <div
-        class={`n1-blog__content-subitem py-[30px] px-[20px] rounded-[10px]`}
+        class={`n1-blog__content-subitem rounded-[10px]`}
       >
         <div class={`n1-blog`}>
           <div>
             {post?.title && (
               <BlogTitle
-                title={post?.title}
-                fontSizeDesk={`md:[&_*]:text-32`}
-                fontSizeMobile={`[&_*]:text-20`}
-                link={`/nosso-blog/post?slug=${post?.slug}`}
+                title={post.title}
+                fontSizeDesk="text-32"
+                fontSizeMobile="mobile:text-20"
+                link={link}
               />
             )}
 
-            {layout && <BlogSocialMidia socialMedia={layout?.socialMedia} />}
+            {layout && <BlogSocialMidia socialMedia={layout.socialMedia} />}
 
-            {post?.image && <BlogImage imageBlog={post.image} />}
+            {post?.image && (
+              <BlogImage imageBlog={post.image} link={link} borderRadius={10} />
+            )}
 
             {post?.content && <BlogDescription description={post.content} />}
 
             {layout?.button?.text && (
               <a
-                href={`/nosso-blog/post?slug=${post?.slug}`}
+                href={link}
                 class={clx(
-                  `w-fit mt-[30px] py-[15px] px-[20px] rounded-[100px] hover:bg-[#ffffff] hover:text-[#585858] border border-[#ffffff] flex items-center
-                             text-[14px] leading-[14px] font-archimoto-medium font-black max-h-[40px]`,
+                  "inline-block w-fit h-[40px] mt-[20px] px-[20px] py-[10px] rounded-[100px]",
+                  "hover:bg-[#ffffff] hover:text-[#585858] border border-[#ffffff]",
+                  "text-[14px] font-archimoto-medium font-black duration-300",
                 )}
               >
-                {layout?.button.text}
+                {layout.button.text}
               </a>
             )}
           </div>

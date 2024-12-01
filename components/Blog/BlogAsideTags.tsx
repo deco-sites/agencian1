@@ -1,4 +1,6 @@
-interface Tag {
+import { clx } from "site/sdk/clx.ts";
+
+export interface Tag {
   /**
    * @title Nome da tag
    */
@@ -35,7 +37,11 @@ function BlogAsideTags({ title, tags }: Props) {
                 <li class="inline-flex">
                   <a
                     href={tag.link}
-                    class="flex px-[14px] py-[8px] items-center rounded-[30px] border border-[#ffffff] text-[14px] hover:bg-[#ffffff] hover:text-[#585858]  leading-[22.4px] font-noto-sans"
+                    class={clx(
+                      "flex px-[14px] text-center rounded-[30px] border border-[#ffffff]",
+                      "text-14 hover:bg-[#ffffff] hover:text-[#585858]  leading-[38px]",
+                      "font-noto-sans duration-300",
+                    )}
                   >
                     {tag.name}
                   </a>

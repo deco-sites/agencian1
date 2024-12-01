@@ -1,59 +1,44 @@
-import type { ImageWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
-import { clx } from "$store/sdk/clx.ts";
-
-interface ImageGeneric {
-  src?: ImageWidget;
-  width?: number;
-  height?: number;
-}
-
-interface ImageBlog {
-  alt?: string;
-  desktop?: ImageGeneric;
-  mobile?: ImageGeneric;
-}
 
 interface Content {
   imageBlog?: string;
+  link?: string;
+  borderRadius?: number;
 }
 
-function BlogImage({ imageBlog }: Content) {
-  return (
-    <>
-      <div
-        class={clx(`my-[20px]`)}
+function BlogImage({ imageBlog, link, borderRadius }: Content) {
+  if (!imageBlog) return null;
+
+  const borderRadiusClass = borderRadius ? `rounded-[${borderRadius}px]` : "";
+
+  const ImageContent = (
+    <div class="my-[20px]">
+      <Picture
+        class={`flex justify-center overflow-hidden ${borderRadiusClass}`}
       >
-        <Picture class={`flex justify-center`}>
-          {imageBlog && (
-            <Source
-              media="(min-width: 1025px)"
-              src={imageBlog}
-              width={750}
-              height={268}
-            />
-          )}
-          {imageBlog && (
-            <Source
-              media="(max-width: 1024px)"
-              src={imageBlog}
-              width={310}
-              height={170}
-            />
-          )}
-          {imageBlog && (
-            <img
-              class="rounded-[10px] md:rounded-none"
-              src={imageBlog}
-              width={750}
-              height={268}
-              loading={"lazy"}
-            />
-          )}
-        </Picture>
-      </div>
-    </>
+        <Source
+          media="(min-width: 1025px)"
+          src={imageBlog}
+          width={750}
+          height={268}
+        />
+        <Source
+          media="(max-width: 1024px)"
+          src={imageBlog}
+          width={310}
+          height={170}
+        />
+        <img
+          src={imageBlog}
+          width={750}
+          height={268}
+          loading={"lazy"}
+        />
+      </Picture>
+    </div>
   );
+
+  return link ? <a href={link}>{ImageContent}</a> : ImageContent;
 }
 
 export default BlogImage;

@@ -20,9 +20,12 @@ function Breadcrumb({ items }: Props) {
   return (
     <>
       <div class="n1-breadcrumb md:n1-container md:px-[120px] mobile:px-[20px] py-[40px] mobile:py-[20px] ">
-        <ul class="text-[#ffffff] flex gap-x-[35px] rounded-[100px] bg-[rgba(255,_255,_255,_0.10)] p-[20px] font-archimoto-medium text-14 font-black mobile:leading-normal">
+        <ul class="text-[#ffffff] h-[52px] flex items-center gap-x-[35px] rounded-[100px] bg-[rgba(255,_255,_255,_0.10)] px-[20px] font-archimoto-medium text-14 font-black">
           <li class="relative">
-            <a href={"/"} class="n1-breadcrumb__item hover:underline">
+            <a
+              href={"/"}
+              class="n1-breadcrumb__item hover:underline inline-block translate-y-[2px]"
+            >
               Home
             </a>
           </li>
@@ -34,7 +37,9 @@ function Breadcrumb({ items }: Props) {
                 return (
                   <>
                     <li class="relative">
-                      <a class="text-secondary">{category}</a>
+                      <a class="text-secondary inline-block translate-y-[2px]">
+                        {category}
+                      </a>
                     </li>
                   </>
                 );
@@ -45,7 +50,7 @@ function Breadcrumb({ items }: Props) {
                       <a
                         href={link}
                         style={{ pointerEvents: "all" }}
-                        class={`hover:underline n1-breadcrumb__item `}
+                        class="hover:underline n1-breadcrumb__item inline-block translate-y-[2px]"
                       >
                         {category}
                       </a>

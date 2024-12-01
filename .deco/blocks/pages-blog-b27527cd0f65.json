@@ -51,26 +51,10 @@
             "__resolveType": "header-principal"
           },
           {
-            "banners": [
-              {
-                "images": {
-                  "mobile": {
-                    "alt": "Nosso Blog Mobile",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0811d4b7-5443-4b97-b548-ca2020060701",
-                    "width": "390",
-                    "height": "260"
-                  },
-                  "desktop": {
-                    "alt": "Nosso Blog",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c576c861-704f-476b-9d44-254849aab6ed",
-                    "width": "1440",
-                    "height": "362"
-                  }
-                },
-                "matcher": "/nosso-blog"
-              }
-            ],
-            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+            "__resolveType": "site/sections/Content/Blog/Hero.tsx",
+            "title": "NOSSO BLOG",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing id elit lobortis nibh amet, bibendum nisi, adipiscing nunc.",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/ceb7cb8d-90c2-4e1d-aa14-dcfbd7265746/hero-image.png"
           },
           {
             "__resolveType": "site/sections/Content/Blog/BlogBreadcrumb.tsx"
@@ -238,62 +222,57 @@
                 "placeholder": "Digite o que você procura"
               },
               {
-                "__resolveType": "website/sections/Rendering/Lazy.tsx",
-                "section": {
-                  "__resolveType": "site/sections/Content/Blog/BlogAsideNewsletter.tsx",
-                  "newsletter": {
-                    "maskNewsletterName": "Nome",
-                    "maskNewsletterEmail": "E-mail",
-                    "textButton": "Cadastrar",
-                    "titleNewsletter": "<p>Cadastre-se para receber nossas novidades</p>"
+                "__resolveType": "site/sections/Content/Blog/BlogAsideNewsletter.tsx",
+                "newsletter": {
+                  "maskNewsletterName": "Nome",
+                  "maskNewsletterEmail": "E-mail",
+                  "textButton": "Cadastrar",
+                  "titleNewsletter": "<p>Cadastre-se para receber nossas novidades</p>"
+                },
+                "title": "Cadastre-se para receber nossas novidades",
+                "namePlaceholder": "Nome",
+                "emailPlaceholder": "E-mail",
+                "submitButtonText": "Cadastrar"
+              },
+              {
+                "__resolveType": "site/sections/Content/Blog/BlogAsideCategories.tsx",
+                "title": "Categorias",
+                "categories": [
+                  {
+                    "name": "Contato",
+                    "count": "1"
+                  },
+                  {
+                    "name": "Black Friday",
+                    "count": "2"
                   }
-                }
+                ]
               },
               {
-                "__resolveType": "website/sections/Rendering/Lazy.tsx",
-                "section": {
-                  "__resolveType": "site/sections/Content/Blog/BlogAsideCategories.tsx",
-                  "title": "Categorias",
-                  "categories": [
-                    {
-                      "name": "Contato",
-                      "count": "1"
-                    },
-                    {
-                      "name": "Black Friday",
-                      "count": "2"
-                    }
-                  ]
-                }
-              },
-              {
-                "__resolveType": "website/sections/Rendering/Lazy.tsx",
-                "section": {
-                  "__resolveType": "site/sections/Content/Blog/BlogAsideTags.tsx",
-                  "title": "Nuvem com tags",
-                  "tags": [
-                    {
-                      "name": "Social",
-                      "link": "#"
-                    },
-                    {
-                      "name": "2024",
-                      "link": "#"
-                    },
-                    {
-                      "name": "Black Friday",
-                      "link": "#"
-                    },
-                    {
-                      "name": "VTEX",
-                      "link": "#"
-                    },
-                    {
-                      "name": "Deco",
-                      "link": "#"
-                    }
-                  ]
-                }
+                "__resolveType": "site/sections/Content/Blog/BlogAsideTags.tsx",
+                "title": "Nuvem com tags",
+                "tags": [
+                  {
+                    "name": "Social",
+                    "link": "#"
+                  },
+                  {
+                    "name": "2024",
+                    "link": "#"
+                  },
+                  {
+                    "name": "Black Friday",
+                    "link": "#"
+                  },
+                  {
+                    "name": "VTEX",
+                    "link": "#"
+                  },
+                  {
+                    "name": "Deco",
+                    "link": "#"
+                  }
+                ]
               }
             ]
           },
