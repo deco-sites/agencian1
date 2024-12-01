@@ -15,100 +15,115 @@ export interface SocialItem {
   disabledSocial?: boolean;
 }
 
-export default function Social(
-  { content, vertical = false }: {
-    content?: { title?: string; items?: SocialItem[] };
-    vertical?: boolean;
-  },
-) {
+function SocialIcon({ label }: { label: SocialItem["label"] }) {
   return (
-    <>
-      {content && content.items && content.items.length > 0 && (
-        <div class="flex flex-col gap-4">
-          {content.title && (
-            <h3 class="text-24 uppercase text-base-150 mt-[10px] font-black">
-              {content.title}
-            </h3>
-          )}
-          <ul
-            class={clx(
-              `grid grid-cols-6-auto md:gap-4 mobile:gap-x-[10px] mobile:gap-y-[16px] ${
-                vertical
-                  ? "lg:flex-col lg:items-start"
-                  : "flex-wrap items-center"
-              }`,
-            )}
+    <span class="size-[40px] flex items-center justify-center">
+      <svg
+        width="40"
+        height="40"
+        viewBox="0 0 40 40"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="20"
+          cy="20"
+          r="19.25"
+          stroke="url(#paint0_linear_17397_1024)"
+          stroke-width="1.5"
+        />
+        <defs>
+          <linearGradient
+            id="paint0_linear_17397_1024"
+            x1="29.5"
+            y1="-16.9761"
+            x2="20"
+            y2="90.5239"
+            gradientUnits="userSpaceOnUse"
           >
-            {content.items.map((item) => {
-              if (item.label === "Email") {
-                return (
-                  <li
-                    class={`n1-footer__social relative mobile:order-first mobile:col-span-6 xl:ml-[60px] ${item.label}`}
-                  >
-                    <a
-                      href={`${
-                        item.link && item.link !== "#"
-                          ? "mailto:" + item.link
-                          : "javascript:void(0)"
-                      }`}
-                      style={{
-                        pointerEvents: `${
-                          item.link && item.link !== "#" ? "all" : "none"
-                        }`,
-                      }}
-                      rel="noopener noreferrer"
-                      aria-label={`${item.label} Logo`}
-                      class="flex gap-2 items-center"
-                    >
-                      <span class="block p-1 rounded-full n1-footer__bg-social">
-                        <Icon size={40} id={item.label} />
-                      </span>
-                      <span class="text-14 font-noto-sans font-normal text-base-150 tracking-[0.98px]">
-                        {item.link}
-                      </span>
-                      {vertical && (
-                        <div class="text-sm hidden lg:block">{item.label}</div>
-                      )}
-                    </a>
-                  </li>
-                );
-              } else {
-                if (!item?.disabledSocial) {
-                  return (
-                    <li class={`n1-footer__social relative ${item.label}`}>
-                      <a
-                        href={`${
-                          item.link && item.link !== "#"
-                            ? item.link
-                            : "javascript:void(0)"
-                        }`}
-                        style={{
-                          pointerEvents: `${
-                            item.link && item.link !== "#" ? "all" : "none"
-                          }`,
-                        }}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={`${item.label} Logo`}
-                        class="flex gap-2 items-center"
-                      >
-                        <span class="block p-1 rounded-full n1-footer__bg-social">
-                          <Icon size={40} id={item.label} />
-                        </span>
-                        {vertical && (
-                          <div class="text-sm hidden lg:block">
-                            {item.label}
-                          </div>
-                        )}
-                      </a>
-                    </li>
-                  );
-                }
-              }
-            })}
-          </ul>
-        </div>
+            <stop stop-color="white" />
+            <stop offset="0.568606" stop-color="#3CCBDA" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <Icon size={17} id={label} class="text-[#FFF] absolute" />
+    </span>
+  );
+}
+
+function SocialLink(
+  { item, vertical }: { item: SocialItem; vertical: boolean },
+) {
+  const isEmail = item.label === "Email";
+  const href = isEmail
+    ? item.link && item.link !== "#"
+      ? `mailto:${item.link}`
+      : "javascript:void(0)"
+    : item.link && item.link !== "#"
+    ? item.link
+    : "javascript:void(0)";
+
+  const pointerEvents = item.link && item.link !== "#" ? "all" : "none";
+
+  return (
+    <a
+      href={href}
+      style={{ pointerEvents }}
+      target={isEmail ? undefined : "_blank"}
+      rel="noopener noreferrer"
+      aria-label={`${item.label} Logo`}
+      class="flex gap-2 items-center"
+    >
+      <SocialIcon label={item.label} />
+      {isEmail && (
+        <span class="text-14 font-noto-sans font-bold text-base-150 tracking-[0.98px]">
+          {item.link}
+        </span>
       )}
-    </>
+      {vertical && <div class="text-sm hidden lg:block">{item.label}</div>}
+    </a>
+  );
+}
+
+export default function Social({
+  content,
+  vertical = false,
+}: {
+  content?: { title?: string; items?: SocialItem[] };
+  vertical?: boolean;
+}) {
+  if (!content?.items?.length) return null;
+
+  return (
+    <div class="flex flex-col gap-4">
+      {content.title && (
+        <h3 class="text-24 uppercase text-base-150 mt-[10px] font-black">
+          {content.title}
+        </h3>
+      )}
+      <ul
+        class={clx(
+          `grid grid-cols-[repeat(6,40px)] gap-4 w-full ${
+            vertical ? "lg:flex-col lg:items-start" : "flex-wrap items-center"
+          }`,
+        )}
+      >
+        {content.items.map((item) => {
+          if (item?.disabledSocial) return null;
+
+          return (
+            <li
+              class={`n1-footer__social relative w-fit ${
+                item.label === "Email"
+                  ? "mobile:order-first mobile:col-span-6 xl:ml-[60px]"
+                  : ""
+              } ${item.label}`}
+            >
+              <SocialLink item={item} vertical={vertical} />
+            </li>
+          );
+        })}
+      </ul>
+    </div>
   );
 }

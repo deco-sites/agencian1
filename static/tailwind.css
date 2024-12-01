@@ -4900,21 +4900,6 @@ details.collapse summary::-webkit-details-marker {
       transition: all .175s linear;
     }
   }
-.n1-footer__bg-social:before {
-    content: "";
-    border-radius: 50px;
-    padding: 2px;
-    background: linear-gradient(45deg, #FFFFFF, #3CCBDA);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    width: 50px;
-    height: 50px;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
 .n1-footer__overlay--bottom-left {
     bottom: -15%;
     left: -590px;
@@ -6430,6 +6415,10 @@ details.collapse summary::-webkit-details-marker {
   width: 30px;
   height: 30px;
 }
+.size-\[40px\] {
+  width: 40px;
+  height: 40px;
+}
 .\!h-\[40px\] {
   height: 40px !important;
 }
@@ -7284,9 +7273,6 @@ details.collapse summary::-webkit-details-marker {
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
-.grid-cols-6-auto {
-  grid-template-columns: repeat(6, auto);
-}
 .grid-cols-7 {
   grid-template-columns: repeat(7, minmax(0, 1fr));
 }
@@ -7322,6 +7308,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .grid-cols-\[repeat\(5\2c auto\)\] {
   grid-template-columns: repeat(5,auto);
+}
+.grid-cols-\[repeat\(6\2c 40px\)\] {
+  grid-template-columns: repeat(6,40px);
 }
 .grid-cols-none {
   grid-template-columns: none;
@@ -13239,11 +13228,6 @@ details.collapse summary::-webkit-details-marker {
     gap: 30px;
   }
 
-  .mobile\:gap-x-\[10px\] {
-    -moz-column-gap: 10px;
-         column-gap: 10px;
-  }
-
   .mobile\:gap-x-\[16px\] {
     -moz-column-gap: 16px;
          column-gap: 16px;
@@ -13261,10 +13245,6 @@ details.collapse summary::-webkit-details-marker {
 
   .mobile\:gap-y-\[14px\] {
     row-gap: 14px;
-  }
-
-  .mobile\:gap-y-\[16px\] {
-    row-gap: 16px;
   }
 
   .mobile\:gap-y-\[20px\] {
