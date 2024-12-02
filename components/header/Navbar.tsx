@@ -94,7 +94,7 @@ function Navbar({
             style={{ minHeight: navbarHeight }}
             aria-label="Store logo"
           >
-            <Logo class="w-auto h-12" />
+            <Logo class="w-auto h-[54px]" />
           </a>
         </div>
         <div class="hidden flex-none items-center justify-end gap-6 col-span-1">
