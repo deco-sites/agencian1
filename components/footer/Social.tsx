@@ -46,7 +46,11 @@ function SocialIcon({ label }: { label: SocialItem["label"] }) {
           </linearGradient>
         </defs>
       </svg>
-      <Icon size={17} id={label} class="text-[#FFF] absolute" />
+      <Icon
+        size={17}
+        id={label}
+        class="text-[#FFF] absolute lg:ml-[1px] lg:mb-[1px]"
+      />
     </span>
   );
 }

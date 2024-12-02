@@ -4,13 +4,14 @@ interface NameImage {
 
 function CertificationImage({ linkname }: NameImage) {
   return (
-    <>
-      <li>
-        <div>
-          <img src={`${linkname}`} />
-        </div>
-      </li>
-    </>
+    <li>
+      <img
+        src={`${linkname}`}
+        className="w-[150px] object-contain"
+        loading="lazy"
+        alt="Certification"
+      />
+    </li>
   );
 }
 

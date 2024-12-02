@@ -6755,6 +6755,9 @@ details.collapse summary::-webkit-details-marker {
 .w-\[144px\] {
   width: 144px;
 }
+.w-\[150px\] {
+  width: 150px;
+}
 .w-\[170px\] {
   width: 170px;
 }
@@ -11882,8 +11885,16 @@ details.collapse summary::-webkit-details-marker {
     margin-bottom: 1.5rem;
   }
 
+  .lg\:mb-\[1px\] {
+    margin-bottom: 1px;
+  }
+
   .lg\:mb-\[30px\] {
     margin-bottom: 30px;
+  }
+
+  .lg\:ml-\[1px\] {
+    margin-left: 1px;
   }
 
   .lg\:ml-\[20px\] {
