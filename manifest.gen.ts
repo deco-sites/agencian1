@@ -11,25 +11,25 @@ import * as $$$$$$1 from "./sections/Analytics/UrlCanonical.tsx";
 import * as $$$$$$2 from "./sections/Animation/Animation.tsx";
 import * as $$$$$$3 from "./sections/BannerWithTextColumn/BannerWithTextColumn.tsx";
 import * as $$$$$$4 from "./sections/BenefitsList/BenefitsList.tsx";
-import * as $$$$$$5 from "./sections/Cards/IconCardsCarousel.tsx";
-import * as $$$$$$6 from "./sections/Cards/IconCardsCarouselWithImage.tsx";
-import * as $$$$$$7 from "./sections/Cards/ImageCardsCarousel.tsx";
-import * as $$$$$$8 from "./sections/Cards/ImageCardsCarouselWithImage.tsx";
+import * as $$$$$$5 from "./sections/Blog/BlogAsideCategories.tsx";
+import * as $$$$$$6 from "./sections/Blog/BlogAsideNewsletter.tsx";
+import * as $$$$$$7 from "./sections/Blog/BlogAsideSearch.tsx";
+import * as $$$$$$8 from "./sections/Blog/BlogAsideTags.tsx";
+import * as $$$$$$9 from "./sections/Blog/BlogBreadcrumb.tsx";
+import * as $$$$$$10 from "./sections/Blog/DetailPost.tsx";
+import * as $$$$$$11 from "./sections/Blog/Hero.tsx";
+import * as $$$$$$12 from "./sections/Blog/MainPost.tsx";
+import * as $$$$$$13 from "./sections/Blog/MoreContentBlog.tsx";
+import * as $$$$$$14 from "./sections/Cards/IconCardsCarousel.tsx";
+import * as $$$$$$15 from "./sections/Cards/IconCardsCarouselWithImage.tsx";
+import * as $$$$$$16 from "./sections/Cards/ImageCardsCarousel.tsx";
+import * as $$$$$$17 from "./sections/Cards/ImageCardsCarouselWithImage.tsx";
 import * as $$$$$$92 from "./sections/cases/cases.tsx";
-import * as $$$$$$9 from "./sections/Category/CategoryBanner.tsx";
-import * as $$$$$$10 from "./sections/Category/CategoryGrid.tsx";
-import * as $$$$$$11 from "./sections/Category/CategoryList.tsx";
-import * as $$$$$$12 from "./sections/Challenges/challenges.tsx";
-import * as $$$$$$13 from "./sections/Content/Benefits.tsx";
-import * as $$$$$$14 from "./sections/Content/Blog/BlogAsideCategories.tsx";
-import * as $$$$$$15 from "./sections/Content/Blog/BlogAsideNewsletter.tsx";
-import * as $$$$$$16 from "./sections/Content/Blog/BlogAsideSearch.tsx";
-import * as $$$$$$17 from "./sections/Content/Blog/BlogAsideTags.tsx";
-import * as $$$$$$18 from "./sections/Content/Blog/BlogBreadcrumb.tsx";
-import * as $$$$$$19 from "./sections/Content/Blog/DetailPost.tsx";
-import * as $$$$$$20 from "./sections/Content/Blog/Hero.tsx";
-import * as $$$$$$21 from "./sections/Content/Blog/MainPost.tsx";
-import * as $$$$$$22 from "./sections/Content/Blog/MoreContentBlog.tsx";
+import * as $$$$$$18 from "./sections/Category/CategoryBanner.tsx";
+import * as $$$$$$19 from "./sections/Category/CategoryGrid.tsx";
+import * as $$$$$$20 from "./sections/Category/CategoryList.tsx";
+import * as $$$$$$21 from "./sections/Challenges/challenges.tsx";
+import * as $$$$$$22 from "./sections/Content/Benefits.tsx";
 import * as $$$$$$23 from "./sections/Content/BlogPosts.tsx";
 import * as $$$$$$24 from "./sections/Content/BrandAnimation.tsx";
 import * as $$$$$$25 from "./sections/Content/BrandImage.tsx";
@@ -111,25 +111,25 @@ const manifest = {
     "site/sections/Animation/Animation.tsx": $$$$$$2,
     "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx": $$$$$$3,
     "site/sections/BenefitsList/BenefitsList.tsx": $$$$$$4,
-    "site/sections/Cards/IconCardsCarousel.tsx": $$$$$$5,
-    "site/sections/Cards/IconCardsCarouselWithImage.tsx": $$$$$$6,
-    "site/sections/Cards/ImageCardsCarousel.tsx": $$$$$$7,
-    "site/sections/Cards/ImageCardsCarouselWithImage.tsx": $$$$$$8,
+    "site/sections/Blog/BlogAsideCategories.tsx": $$$$$$5,
+    "site/sections/Blog/BlogAsideNewsletter.tsx": $$$$$$6,
+    "site/sections/Blog/BlogAsideSearch.tsx": $$$$$$7,
+    "site/sections/Blog/BlogAsideTags.tsx": $$$$$$8,
+    "site/sections/Blog/BlogBreadcrumb.tsx": $$$$$$9,
+    "site/sections/Blog/DetailPost.tsx": $$$$$$10,
+    "site/sections/Blog/Hero.tsx": $$$$$$11,
+    "site/sections/Blog/MainPost.tsx": $$$$$$12,
+    "site/sections/Blog/MoreContentBlog.tsx": $$$$$$13,
+    "site/sections/Cards/IconCardsCarousel.tsx": $$$$$$14,
+    "site/sections/Cards/IconCardsCarouselWithImage.tsx": $$$$$$15,
+    "site/sections/Cards/ImageCardsCarousel.tsx": $$$$$$16,
+    "site/sections/Cards/ImageCardsCarouselWithImage.tsx": $$$$$$17,
     "site/sections/cases/cases.tsx": $$$$$$92,
-    "site/sections/Category/CategoryBanner.tsx": $$$$$$9,
-    "site/sections/Category/CategoryGrid.tsx": $$$$$$10,
-    "site/sections/Category/CategoryList.tsx": $$$$$$11,
-    "site/sections/Challenges/challenges.tsx": $$$$$$12,
-    "site/sections/Content/Benefits.tsx": $$$$$$13,
-    "site/sections/Content/Blog/BlogAsideCategories.tsx": $$$$$$14,
-    "site/sections/Content/Blog/BlogAsideNewsletter.tsx": $$$$$$15,
-    "site/sections/Content/Blog/BlogAsideSearch.tsx": $$$$$$16,
-    "site/sections/Content/Blog/BlogAsideTags.tsx": $$$$$$17,
-    "site/sections/Content/Blog/BlogBreadcrumb.tsx": $$$$$$18,
-    "site/sections/Content/Blog/DetailPost.tsx": $$$$$$19,
-    "site/sections/Content/Blog/Hero.tsx": $$$$$$20,
-    "site/sections/Content/Blog/MainPost.tsx": $$$$$$21,
-    "site/sections/Content/Blog/MoreContentBlog.tsx": $$$$$$22,
+    "site/sections/Category/CategoryBanner.tsx": $$$$$$18,
+    "site/sections/Category/CategoryGrid.tsx": $$$$$$19,
+    "site/sections/Category/CategoryList.tsx": $$$$$$20,
+    "site/sections/Challenges/challenges.tsx": $$$$$$21,
+    "site/sections/Content/Benefits.tsx": $$$$$$22,
     "site/sections/Content/BlogPosts.tsx": $$$$$$23,
     "site/sections/Content/BrandAnimation.tsx": $$$$$$24,
     "site/sections/Content/BrandImage.tsx": $$$$$$25,

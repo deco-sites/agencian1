@@ -1,8 +1,8 @@
-import { clx } from "$store/sdk/clx.ts";
-import { BlogPost } from "apps/blog/types.ts";
-import { Layout, Pagination } from "$store/sections/Content/Blog/MainPost.tsx";
-import BlogContentPartial from "$store/islands/BlogContentPartial.tsx";
 import { type Section } from "@deco/deco/blocks";
+import { clx } from "site/sdk/clx.ts";
+import { BlogPost } from "apps/blog/types.ts";
+import { Layout, Pagination } from "site/sections/Blog/MainPost.tsx";
+import BlogContentPartial from "site/islands/BlogContentPartial.tsx";
 
 export interface Props {
   posts: BlogPost[];

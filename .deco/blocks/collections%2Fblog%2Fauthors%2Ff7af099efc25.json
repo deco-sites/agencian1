@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/authors/f7af099efc25",
+  "__resolveType": "blog/loaders/Author.ts",
+  "author": {
+    "name": "Agência N1",
+    "email": "contato@n1.ag"
+  }
+}

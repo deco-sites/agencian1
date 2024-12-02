@@ -1,6 +1,6 @@
 import { type Section } from "@deco/deco/blocks";
 import { BlogPost } from "apps/blog/types.ts";
-import { Layout } from "site/sections/Content/Blog/MainPost.tsx";
+import { Layout } from "site/sections/Blog/MainPost.tsx";
 import { clx } from "site/sdk/clx.ts";
 import BlogTitle from "site/components/Blog/BlogTitle.tsx";
 import BlogCompartilhar from "site/components/Blog/BlogCompartilhar.tsx";

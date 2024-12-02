@@ -1,0 +1,23 @@
+{
+  "__resolveType": "site/sections/Blog/BlogAsideTags.tsx",
+  "title": "Nuvem com tags",
+  "tags": [
+    {
+      "name": "Black Friday",
+      "link": "#"
+    },
+    {
+      "name": "VTEX",
+      "link": "#"
+    },
+    {
+      "name": "Deco"
+    },
+    {
+      "name": "2024"
+    },
+    {
+      "name": "Cliente"
+    }
+  ]
+}

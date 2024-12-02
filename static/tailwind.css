@@ -11320,10 +11320,6 @@ details.collapse summary::-webkit-details-marker {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-2-auto {
-    grid-template-columns: repeat(2, auto);
-  }
-
   .md\:grid-cols-3-200 {
     grid-template-columns: repeat(3, 200px);
   }
@@ -11342,6 +11338,10 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:grid-cols-\[auto_1fr\] {
     grid-template-columns: auto 1fr;
+  }
+
+  .md\:grid-cols-\[repeat\(2\2c 380px\)\] {
+    grid-template-columns: repeat(2,380px);
   }
 
   .md\:flex-row {

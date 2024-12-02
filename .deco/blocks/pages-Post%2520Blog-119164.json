@@ -51,138 +51,52 @@
             "__resolveType": "header-principal"
           },
           {
-            "banners": [
-              {
-                "images": {
-                  "mobile": {
-                    "alt": "Nosso Blog Mobile",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0811d4b7-5443-4b97-b548-ca2020060701",
-                    "width": "390",
-                    "height": "260"
-                  },
-                  "desktop": {
-                    "alt": "Nosso Blog",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c576c861-704f-476b-9d44-254849aab6ed",
-                    "width": "1440",
-                    "height": "362"
-                  }
-                },
-                "matcher": "/nosso-blog/post"
-              }
-            ],
-            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+            "__resolveType": "blog-hero"
           },
           {
-            "__resolveType": "site/sections/Content/Blog/BlogBreadcrumb.tsx"
+            "__resolveType": "site/sections/Blog/BlogBreadcrumb.tsx"
           },
           {
-            "__resolveType": "site/sections/Content/Blog/DetailPost.tsx",
-            "asideCotent": [
-              {
-                "__resolveType": "site/sections/Content/Blog/BlogAsideSearch.tsx",
-                "search": {
-                  "titleSearch": "<p>Buscar no Blog</p>",
-                  "maskSearch": "Digite o que você procura"
-                }
-              },
-              {
-                "__resolveType": "site/sections/Content/Blog/BlogAsideNewsletter.tsx",
-                "newsletter": {
-                  "titleNewsletter": "<p>Cadastre-se para receber nossas novidades</p>",
-                  "maskNewsletterName": "Nome",
-                  "maskNewsletterEmail": "E-mail",
-                  "textButton": "Cadastrar"
-                }
-              },
-              {
-                "__resolveType": "site/sections/Content/Blog/BlogAsideCategories.tsx",
-                "categories": {
-                  "title": "<p>Categoria</p>"
-                }
-              },
-              {
-                "__resolveType": "site/sections/Content/Blog/BlogAsideTags.tsx",
-                "tag": {
-                  "title": "<p>Nuvem com Tags</p>",
-                  "nameTag": [
-                    "Lorem ipsum",
-                    "Lorem",
-                    "Lorem ipsum",
-                    "Lorem",
-                    "Lorem ipsum",
-                    "Lorem"
-                  ]
-                }
-              }
-            ],
+            "__resolveType": "site/sections/Blog/DetailPost.tsx",
             "post": {},
-            "tags": [
-              {
-                "name": "Lorem ipsum ",
-                "link": "/ "
-              },
-              {
-                "name": "Lorem",
-                "link": "/ "
-              }
-            ],
-            "layout": {
-              "socialMedia": [
-                {
-                  "label": "Facebook",
-                  "link": "https://www.facebook.com/somosn1.ag"
-                },
-                {
-                  "label": "X"
-                },
-                {
-                  "label": "Instagram",
-                  "link": "https://www.instagram.com/n1.ag_oficial"
-                },
-                {
-                  "label": "Linkedin",
-                  "link": "https://www.linkedin.com/company/n1-ag"
-                },
-                {
-                  "label": "WhatsApp",
-                  "link": "https://wa.me/5521965744132"
-                }
-              ]
-            },
             "asideContent": [
               {
-                "__resolveType": "site/sections/Content/Blog/BlogAsideSearch.tsx",
-                "title": "Buscar no blog",
-                "placeholder": "Digite o que você procura"
-              },
-              {
-                "__resolveType": "site/sections/Content/Blog/BlogAsideNewsletter.tsx",
-                "title": "Cadastre-se para receber nossas novidades",
-                "namePlaceholder": "Nome",
-                "emailPlaceholder": "E-mail",
-                "submitButtonText": "Cadastrar"
-              },
-              {
-                "__resolveType": "site/sections/Content/Blog/BlogAsideCategories.tsx",
-                "title": "Categorias"
+                "__resolveType": "website/sections/Rendering/Lazy.tsx",
+                "section": {
+                  "__resolveType": "blog-aside-search"
+                }
               },
               {
                 "__resolveType": "website/sections/Rendering/Lazy.tsx",
                 "section": {
-                  "__resolveType": "site/sections/Content/Blog/BlogAsideTags.tsx",
-                  "title": "Nuvem com tags",
-                  "tags": [
-                    {
-                      "name": "Tag",
-                      "link": "#"
-                    }
-                  ]
+                  "__resolveType": "blog-aside-newsletter"
                 }
+              },
+              {
+                "__resolveType": "website/sections/Rendering/Lazy.tsx",
+                "section": {
+                  "__resolveType": "blog-aside-categories"
+                }
+              },
+              {
+                "__resolveType": "website/sections/Rendering/Lazy.tsx",
+                "section": {
+                  "__resolveType": "blog-aside-tags"
+                }
+              }
+            ],
+            "tags": [
+              {
+                "name": "Teste",
+                "link": "#"
               }
             ]
           },
           {
-            "__resolveType": "MorePostsBlog"
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "blog-more-content"
+            }
           },
           {
             "__resolveType": "footer-principal"

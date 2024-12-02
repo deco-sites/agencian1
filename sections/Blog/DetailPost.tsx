@@ -29,8 +29,7 @@ interface Props {
 function BlogContent(
   { post, tags, layout }: { post: BlogPost; tags?: Tag[]; layout?: Layout },
 ) {
-  const postLink = `/nosso-blog/post?slug=${post?.slug}`;
-
+  const postLink = `/nosso-blog/post?slug=${post.slug}`;
   return (
     <div>
       {post?.title && (
@@ -105,7 +104,7 @@ function DetailPost(
               "bg-[linear-gradient(181.01deg,_#FFFFFF_-176.1%,_rgba(255,_255,_255,_0.29)_-85.87%,_rgba(255,_255,_255,_0)_124.35%)]",
             )}
           >
-            <div class="n1-blog__content-subitem pb-[30px] rounded-[10px]">
+            <div class="n1-blog__content-subitem rounded-[10px]">
               <div class="n1-blog">
                 <BlogContent post={post} tags={tags} layout={layout} />
               </div>

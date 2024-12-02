@@ -122,7 +122,7 @@ function BlogPostGrid({
         "mobile:flex mobile:gap-[30px] mobile:flex-col md:gap-[30px]",
         disableAside
           ? "flex flex-wrap md:max-w-[1440px]"
-          : "md:grid md:grid-cols-2-auto md:max-w-[790px]",
+          : "md:grid md:grid-cols-[repeat(2,380px)] md:max-w-[790px]",
       )}
     >
       {posts?.map((post, index) => {
@@ -183,4 +183,7 @@ function MoreContentBlog({
   );
 }
 
+export function LoadingFallback() {
+  return <></>;
+}
 export default MoreContentBlog;

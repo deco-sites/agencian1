@@ -1,8 +1,0 @@
-{
-  "name": "collections/blog/categories/64c085a8507f",
-  "__resolveType": "blog/loaders/Category.ts",
-  "category": {
-    "name": "BlackFriday",
-    "slug": "blackfriday"
-  }
-}

@@ -1,0 +1,7 @@
+{
+  "__resolveType": "site/sections/Blog/BlogAsideNewsletter.tsx",
+  "title": "Cadastre-se para receber nossas novidades",
+  "namePlaceholder": "Nome",
+  "emailPlaceholder": "E-mail",
+  "submitButtonText": "Cadastrar"
+}

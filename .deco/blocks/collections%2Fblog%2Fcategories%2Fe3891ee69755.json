@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/categories/e3891ee69755",
+  "__resolveType": "blog/loaders/Category.ts",
+  "category": {
+    "name": "Experiência do Usuário",
+    "slug": "experiencia-do-usuario"
+  }
+}
