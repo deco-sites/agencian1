@@ -315,7 +315,7 @@
             "items": [
               {
                 "category": "cases",
-                "subcategory": "oh boy"
+                "subcategory": "bagaggio"
               }
             ],
             "__resolveType": "site/sections/Content/BreadcrumbCustom.tsx"
@@ -534,19 +534,11 @@
             "cards": [
               {
                 "Iconcheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/f5ee2969-dd65-4129-b495-ec9f6b8b44c3",
-                "description": "<p>The technological update allowed a significant improvement in the site's performance, a direct result of the code optimization implemented during the project. VTEX IO's agile response to scalability and the flexibility of the headless architecture were crucial to achieving a more robust and efficient environment.</p>"
+                "description": "<p>The migration to deco HTMX brought exceptional results: the site's <strong>performance increased by more than 30%, raising the score from 68 to 90+ on the desktop</strong>, providing more agile navigation and making it easier to search for products.</p>"
               },
               {
                 "Iconcheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/70eca0f8-6113-4c3b-b32e-fbf181423f11",
-                "description": "<p>The incorporation of new features, such as \"Quick Purchase on the Shelf\" and \"Build Your Look with Quick Purchase\", not only simplified the purchasing process, but also increased interactivity and customer engagement. These improvements translated into a richer user experience, evidenced by increased conversion rates and average time spent on site.</p>"
-              },
-              {
-                "Iconcheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/323a6ff4-7b42-4880-82c2-da43f964553f",
-                "description": "<p>Simplified content editing also provided agility to the OH BOY! team, allowing a faster response to market trends and demands. As a result, the brand gained a more competitive position in the e-commerce scenario. The project resulted in a more solid and effective digital presence.</p>"
-              },
-              {
-                "Iconcheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d455cd14-ce14-4006-911e-0b8507f306bb",
-                "description": "<p>Facilitates and encourages collaboration between customers, allowing them to share products and carts, increasing sales and loyalty.</p>"
+                "description": "<p>HTMX's flexibility gives Bagaggio the ability to make<strong> updates and customizations</strong> to the platform <strong>quickly and efficiently</strong>, allowing the brand to keep up with market changes quickly.</p>"
               }
             ],
             "title": "<p><span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">/</span>Results achieved</p>",
