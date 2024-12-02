@@ -365,7 +365,7 @@
             },
             "contentText": {
               "title": "<p><span style=\"color: rgb(60, 203, 218)\">/</span>About Bagaggio</p>",
-              "description": "<p>/About Bagaggio</p><p>Founded in 1942 in Rio de Janeiro, Bagaggio has established itself as a benchmark brand in luggage and travel accessories in Brazil.</p><p>With more than 200 physical stores and a strong digital presence, Bagaggio is synonymous with tradition, quality and reliability. </p><p></p><p>The brand is recognized for accompanying its customers on all their journeys, whether they are traveling or going about their daily lives.</p>"
+              "description": "<p>Founded in 1942 in Rio de Janeiro, Bagaggio has established itself as a benchmark brand in luggage and travel accessories in Brazil.<br></p><p>With more than 200 physical stores and a strong digital presence, Bagaggio is synonymous with tradition, quality and reliability. The brand is recognized for accompanying its customers on all their journeys, whether they are traveling or going about their daily lives.</p>"
             },
             "marginBottom": "10px",
             "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
