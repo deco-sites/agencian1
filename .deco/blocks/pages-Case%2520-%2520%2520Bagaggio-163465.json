@@ -295,18 +295,18 @@
                 "images": {
                   "mobile": {
                     "alt": "Banner mobile",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/2f01fcae-07ec-4d50-ae5f-808f84e564ce",
+                    "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/c011203d-8362-4605-9b28-0604284bddf1/Case-bagaggio-(390-x-500-px)-(1).png",
                     "width": "390",
                     "height": "500"
                   },
                   "desktop": {
                     "alt": "Banner Implantação",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/e6c75391-5cb4-4877-a3da-92a4831677b1",
+                    "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/c10ec129-bb7e-4bc4-9c28-46b8a721d8a6/banner.jpg",
                     "width": "1440",
                     "height": "480"
                   }
                 },
-                "matcher": "/cases/oh-boy"
+                "matcher": "/cases/bagaggio"
               }
             ],
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
