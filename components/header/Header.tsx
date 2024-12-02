@@ -9,18 +9,7 @@ import LinkTelephoneWithOptionArrow from "../ui/LinkTelephoneWithOptionArrow.tsx
 import { getCookies, setCookie } from "std/http/mod.ts";
 import apiIp from "$store/sdk/useFetchIp.ts";
 import { type FnContext, type SectionProps } from "@deco/deco";
-export interface Logo {
-  src: ImageWidget;
-  alt: string;
-  width?: number;
-  height?: number;
-}
-export interface LogoMobile {
-  src: ImageWidget;
-  alt: string;
-  width?: number;
-  height?: number;
-}
+
 export interface Buttons {
   hideSearchButton?: boolean;
   hideAccountButton?: boolean;
@@ -95,21 +84,20 @@ export interface Props {
   /** @description (ex: conheça nosso site ) */
   btnTextMenu?: string;
   buttons?: Buttons;
+  selectedLanguage?: string;
 }
 function Header(props: SectionProps<ReturnType<typeof loader>>) {
   const {
     disabledHeader = false,
     alerts,
     navItems,
-    desktop,
-    mobile,
     drawer,
     logoPosition = "center",
     whatsapp,
     btnTextMenu,
     buttons,
     selectedLanguage,
-  } = props;
+  } = props as Props;
   const platform = usePlatform();
   const items = navItems ?? [];
   return (
@@ -132,8 +120,6 @@ function Header(props: SectionProps<ReturnType<typeof loader>>) {
                 {alerts && alerts.length > 0 && <Alert alerts={alerts} />}
                 <Navbar
                   items={items}
-                  desktop={desktop}
-                  mobile={mobile}
                   logoPosition={logoPosition}
                   buttons={buttons}
                   btnTextMenu={btnTextMenu}
