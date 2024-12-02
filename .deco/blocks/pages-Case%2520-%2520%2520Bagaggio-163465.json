@@ -387,11 +387,6 @@
                 "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6b53bb35-c267-4b2c-a42b-3bce0cf785d3",
                 "title": "<p>Collaborative management</p>",
                 "description": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://N1.AG\">N1.AG</a> worked collaboratively with Bagaggio throughout the process, applying its skills and tools to ensure that the project was delivered on time, meeting the client's expectations and demands.</p>"
-              },
-              {
-                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c19ecd5e-1eea-49f7-921c-5ba7631a2995",
-                "title": "<p>Scalability:</p>",
-                "description": "<p>As traffic increases, the website must be able to handle the additional load. Scaling infrastructure to accommodate traffic spikes is a technical challenge.</p>"
               }
             ],
             "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Main Challenges</p>",
@@ -402,8 +397,8 @@
           {
             "bannerImg": {
               "alt": "banner",
-              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/72dd2dbf-9211-40a1-93e7-3353baa71768",
-              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d018ae6b-c0ac-4e84-bba3-226f177aa602",
+              "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/a521f5cf-1d7f-405c-8fc6-71e78cfb78f2/banner-mockup.png",
+              "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/a521f5cf-1d7f-405c-8fc6-71e78cfb78f2/banner-mockup.png",
               "widthDesktop": 596.64,
               "heightDesktop": 451.569
             },
@@ -412,16 +407,16 @@
               "list": {
                 "textList": [
                   {
-                    "descriptionList": "<p>N1 Agency proposed migrating e-commerce from OH BOY! for VTEX IO, offering management focused on the user experience.</p>"
+                    "descriptionList": "<p><strong>The adoption of HTMX </strong>made it easier to create interactive and lightweight interfaces, reducing dependence on JavaScript and <strong>focusing on improving project performance.</strong></p>"
                   },
                   {
-                    "descriptionList": "<p>With VTEX IO, it was possible to create responsive and personalized layouts, optimized for mobile devices, providing unique shopping experiences, aligned with the brand's identity.</p>"
+                    "descriptionList": "<p>With the migration, Bagaggio achieved a <strong>PageSpeed score of 90+ points</strong>, a significant increase on previous scores.</p>"
                   },
                   {
-                    "descriptionList": "<p>VTEX IO technology also made it possible to overcome infrastructure challenges, enabling a total focus on solutions.</p>"
+                    "descriptionList": "<p>We worked closely with Bagaggio, from conception to implementation, ensuring that each stage was completed efficiently and on time.</p>"
                   },
                   {
-                    "descriptionList": "<p>With the migration to VTEX IO and the implementation of new features together with the specialized team at Agência N1, OH BOY! has provided its users with a better browsing experience.</p>"
+                    "descriptionList": "<p>The migration to <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Deco.cx\">Deco.cx</a>, which uses HTMX technology, <strong>resulted in significant improvements to the site's performance, loading speed and SEO</strong>, strengthening its potential for organic positioning.</p>"
                   }
                 ],
                 "iconCheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/509809ed-9793-4361-9b7f-f09787a9bf25",
@@ -429,8 +424,8 @@
               },
               "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>solutions:</p>",
               "button": {
-                "link": "https://www.ohboy.com.br/",
-                "textButton": "Visit the new website"
+                "textButton": "Visit the new website",
+                "link": "https://www.bagaggio.com.br/"
               }
             },
             "marginBottom": "120px",
