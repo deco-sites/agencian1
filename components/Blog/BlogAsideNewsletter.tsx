@@ -7,7 +7,7 @@ const isLoading = signal(false);
 const showSuccess = signal(false);
 
 export interface Props {
-  /**@title Título */
+  /**@title Título da seção */
   title?: string;
   /**@title Texto de exemplo para o campo nome */
   namePlaceholder?: string;
