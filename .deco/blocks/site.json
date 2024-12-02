@@ -11,29 +11,54 @@
     "titleTemplate": "%s",
     "descriptionTemplate": "%s"
   },
-  "theme": { "__resolveType": "Theme" },
+  "theme": {
+    "__resolveType": "Theme"
+  },
   "global": [
     {
-      "trackingIds": ["GTM-NPF8WV"],
+      "trackingIds": [
+        "GTM-NPF8WV"
+      ],
       "__resolveType": "website/sections/Analytics/Analytics.tsx",
       "dangerouslyRunOnMainThread": true
     }
   ],
   "routes": [
-    { "__resolveType": "website/loaders/pages.ts" },
-    { "__resolveType": "website/loaders/redirects.ts" },
+    {
+      "__resolveType": "website/loaders/pages.ts"
+    },
+    {
+      "__resolveType": "website/loaders/redirects.ts"
+    },
     {
       "__resolveType": "site/loaders/Sitemap/sitemap.ts",
       "includeSiteMap": [],
       "extraPathsToProxy": [],
       "generateDecoSiteMap": true,
-      "includeScriptsToHead": { "includes": [] },
-      "excludePathsFromDecoSiteMap": ["/home-2-teste"]
+      "includeScriptsToHead": {
+        "includes": []
+      },
+      "excludePathsFromDecoSiteMap": [
+        "/home-2-teste"
+      ]
     }
   ],
-  "caching": { "directives": [] },
-  "commerce": { "platform": "other" },
+  "caching": {
+    "directives": []
+  },
+  "commerce": {
+    "platform": "other"
+  },
   "platform": "vtex",
   "__resolveType": "site/apps/site.ts",
-  "firstByteThresholdMS": false
+  "firstByteThresholdMS": false,
+  "abTesting": {
+    "replaces": [],
+    "includeScriptsToHead": {
+      "includes": []
+    }
+  },
+  "flavor": {
+    "framework": "fresh"
+  }
 }

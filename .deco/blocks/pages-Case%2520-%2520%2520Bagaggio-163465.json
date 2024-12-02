@@ -572,7 +572,7 @@
                   },
                   "desktop": {
                     "alt": "Banner ",
-                    "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/5a66b159-29c4-4778-86ec-77230998252e/Case-bagaggio.png",
+                    "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/c10ec129-bb7e-4bc4-9c28-46b8a721d8a6/banner.jpg",
                     "width": "1442",
                     "height": "440"
                   }
@@ -620,9 +620,9 @@
             "bannerImg": {
               "alt": "banner",
               "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/c1bf7a0f-a4f9-40ae-8220-7abd0ead3b59/bagaggio-(500-x-300-px).png",
-              "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/e869511e-0ef1-4e92-9620-abd077afc654/bagaggio-(4).png",
               "widthDesktop": 632,
-              "heightDesktop": 372
+              "heightDesktop": 372,
+              "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/e7dcf12c-7b9e-43e5-a722-baeded1c5412/banner-2.svg"
             },
             "marginTop": "10px",
             "placement": "direito",
@@ -670,7 +670,7 @@
             "bannerImg": {
               "alt": "banner",
               "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/375eb951-6cf8-4939-a42e-edd949645e00/Design-sem-nome-(1).png",
-              "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/375eb951-6cf8-4939-a42e-edd949645e00/Design-sem-nome-(1).png",
+              "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/a521f5cf-1d7f-405c-8fc6-71e78cfb78f2/banner-mockup.png",
               "widthDesktop": 596.64,
               "heightDesktop": 451.569
             },
@@ -773,6 +773,13 @@
                       "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/435141e2-eb63-40c9-be64-e15c2d54aec5/Captura-de-tela-2024-11-14-183330.png",
                       "subTitle": "<p>{Compre junto}</p>",
                       "description": "<p>Impulsione seus resultados com nossa ferramenta que aumenta o valor médio das compras. Ao recomendar produtos perfeitos para cada cliente, você incentiva a compra de mais itens por pedido, elevando seus lucros e fidelizando clientes.</p>"
+                    },
+                    {
+                      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/434222de-bdf2-4f5c-94fa-31bc3b8a7e8c/destaque---flag.png",
+                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/434222de-bdf2-4f5c-94fa-31bc3b8a7e8c/destaque---flag.png",
+                      "alt": "Bagaggio",
+                      "subTitle": "<p>{personalização de flag na home e PDP}</p>",
+                      "description": "<p><span style=\"font-size: 12pt\">As flags de destaque editáveis, </span><span style=\"color: rgb(0, 0, 0); font-size: 12pt\">oferecem à operação a capacidade de realizar atualizações e personalizações na plataforma de maneira rápida e eficiente, permitindo que a marca acompanhe as mudanças do mercado com agilidade.</span></p>"
                     }
                   ],
                   "preload": true,
