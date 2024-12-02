@@ -334,8 +334,8 @@
                 "height": 124
               }
             },
-            "title": "successful partnership vtex.io",
-            "paragraph": "{With the migration to VTEX IO and the implementation of new features together with the specialized team at Agência N1, OH BOY! has provided its users with a better browsing experience. Discover how Agência N1 improved the consumer experience and boosted OH BOY’s results! with the VTEX platform.}",
+            "title": "Deco.cx partnership, with HTML technology",
+            "paragraph": "\nBagaggio chose N1.AG to boost its digital strategy, achieving a +30% increase in performance with the migration to the deco.cx - HTMX platform. In this project, we applied all our expertise, bringing together innovation and further strengthening the brand's digital presence.🔒💻",
             "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
             "backgroundImage": {
               "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7f1db9c-ae6c-4aa8-b7e0-1f200601771c",
@@ -347,8 +347,8 @@
           {
             "bannerImg": {
               "alt": "banner",
-              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0acb2bbe-7f56-4623-827e-fee6b17d2cdd",
-              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9eaae5f6-0e29-4a7e-83c5-783baad59902",
+              "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/e7dcf12c-7b9e-43e5-a722-baeded1c5412/banner-2.svg",
+              "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/e7dcf12c-7b9e-43e5-a722-baeded1c5412/banner-2.svg",
               "widthDesktop": 632,
               "heightDesktop": 372
             },
@@ -364,8 +364,8 @@
               "heightDesktop": 372
             },
             "contentText": {
-              "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>About the customer</p>",
-              "description": "<p>With more than 20 years in the market, 30 own stores and presence in more than 500 multi-brands, OH, BOY! is a Rio brand that reflects a young and urban essence. Its comfortable and relaxed collections mix styles, reflecting a modern and unique personality.</p><p><br data-mce-bogus=\"1\"></p><p>The brand maintains its originality, and understands that it needs to present itself in a fresh and innovative way to win over new generations.</p>"
+              "title": "<p><span style=\"color: rgb(60, 203, 218)\">/</span>About Bagaggio</p>",
+              "description": "<p>/About Bagaggio</p><p>Founded in 1942 in Rio de Janeiro, Bagaggio has established itself as a benchmark brand in luggage and travel accessories in Brazil.</p><p>With more than 200 physical stores and a strong digital presence, Bagaggio is synonymous with tradition, quality and reliability. </p><p></p><p>The brand is recognized for accompanying its customers on all their journeys, whether they are traveling or going about their daily lives.</p>"
             },
             "marginBottom": "10px",
             "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
@@ -375,18 +375,18 @@
             "cards": [
               {
                 "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b29e7878-a28b-48fb-a99b-1342e7b68023",
-                "title": "<p>UX Design</p>",
-                "description": "<p>Improve the consumer experience with UX improvements and obtain added value, competitive differentiation and increased sales.</p>"
+                "title": "<p>Front-end migration</p>",
+                "description": "<p>This strategy made it possible to measure the success of the new tool without external interference and accelerated the process, avoiding a redesign. The migration separated the user interface from the e-commerce back-end, maintaining the VTEXIO infrastructure and incorporating greater speed and flexibility.</p>"
               },
               {
                 "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/cb730e92-31b1-46e3-b979-28b5745b09f5",
-                "title": "<p>Performance</p>",
-                "description": "<p>Ensuring that all pages on your website load quickly is critical. The challenge is optimizing images, scripts and content to keep the site agile.</p>"
+                "title": "<p>HTMX technology</p>",
+                "description": "<p>The adoption of HTMX technology was essential to simplify development and create light, interactive interfaces, minimizing the use of JavaScript. This has brought more agility and reduced site loading times, directly impacting the user experience.</p>"
               },
               {
                 "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6b53bb35-c267-4b2c-a42b-3bce0cf785d3",
-                "title": "<p>Technical limitations</p>",
-                "description": "<p>THE OH BOY! faced technical limitations in its e-commerce, with bugs, instabilities and loading and speed problems compromising the customer experience.</p>"
+                "title": "<p>Collaborative management</p>",
+                "description": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://N1.AG\">N1.AG</a> worked collaboratively with Bagaggio throughout the process, applying its skills and tools to ensure that the project was delivered on time, meeting the client's expectations and demands.</p>"
               },
               {
                 "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c19ecd5e-1eea-49f7-921c-5ba7631a2995",
