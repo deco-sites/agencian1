@@ -476,17 +476,31 @@
                   "images": [
                     {
                       "alt": "oh boy",
-                      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/636100e1-2e4c-4daa-bb8a-20f2892daa36",
-                      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/1bb6aeca-85d7-4181-8662-b36016dee8ec",
-                      "subTitle": "<p>{Quick purchase on the Shelves}</p>",
-                      "description": "<p>The functionality allows the user to add an item to the cart, directly from the shelf, without having to click on the product, saving time and making the purchasing process more agile.</p>"
+                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/587e46af-0c74-4d79-ade1-674df29cd265/destaque---Personalizacao-de-produto.png",
+                      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/587e46af-0c74-4d79-ade1-674df29cd265/destaque---Personalizacao-de-produto.png",
+                      "subTitle": "<p>{Product customization}</p>",
+                      "description": "<p>Our product customization solution allows your customers to create personalized products. The result? A deeper connection with your brand and a significant increase in your sales.</p>"
                     },
                     {
                       "alt": "Oh BOY ",
-                      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/35cd12fc-b814-45ef-ad9f-98574aee1844",
-                      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fda9d24a-45f2-4f45-9655-f195c8866412",
-                      "subTitle": "<p>{Quick purchase on the Shelves}</p>",
-                      "description": "<p>The functionality with visualization of product variations offers a more convenient and efficient shopping experience. This allows customers to see product options without having to click on each item, saving time and making the purchasing process more agile.</p>"
+                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/434222de-bdf2-4f5c-94fa-31bc3b8a7e8c/destaque---flag.png",
+                      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/434222de-bdf2-4f5c-94fa-31bc3b8a7e8c/destaque---flag.png",
+                      "subTitle": "<p>{Flag customization on home and PDP}</p>",
+                      "description": "<p>The editable highlight flags give the operation the ability to make updates and customizations to the platform quickly and efficiently, allowing the brand to keep up with market changes quickly.</p>"
+                    },
+                    {
+                      "alt": "Bagaggio",
+                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/bb273de3-c1d7-44aa-99a9-be9e8d5930e0/destaque---Video-e-360.png",
+                      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/bb273de3-c1d7-44aa-99a9-be9e8d5930e0/destaque---Video-e-360.png",
+                      "subTitle": "<p>{video and 360º}</p>",
+                      "description": "<p>360° videos are the new frontier in digital marketing. With them, you capture your audience's attention for longer, increase viewing time and boost conversions.</p>"
+                    },
+                    {
+                      "alt": "Bagaggio",
+                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/c9481cdd-373b-4604-bea3-5546189eff23/destaque---Compre-junto.png",
+                      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/c9481cdd-373b-4604-bea3-5546189eff23/destaque---Compre-junto.png",
+                      "subTitle": "<p>{Buy together}</p>",
+                      "description": "<p>Boost your results with our tool that increases the average value of purchases. By recommending the perfect products for each customer, you encourage the purchase of more items per order, increasing your profits and customer loyalty.</p>"
                     }
                   ],
                   "preload": true,
