@@ -30,18 +30,17 @@
     {
       "__resolveType": "website/loaders/redirects.ts"
     },
-    {
-      "__resolveType": "site/loaders/Sitemap/sitemap.ts",
-      "includeSiteMap": [],
-      "extraPathsToProxy": [],
-      "generateDecoSiteMap": true,
-      "includeScriptsToHead": {
-        "includes": []
-      },
-      "excludePathsFromDecoSiteMap": [
-        "/home-2-teste"
-      ]
-    }
+    [
+      {
+        "handler": {
+          "value": {
+            "__resolveType": "website/handlers/sitemap.ts",
+            "excludePaths": []
+          }
+        },
+        "pathTemplate": "sitemap"
+      }
+    ]
   ],
   "caching": {
     "directives": []
