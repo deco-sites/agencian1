@@ -1,4 +1,3 @@
-import type { ImageWidget } from "apps/admin/widgets.ts";
 import type { RequestURLParam } from "apps/website/functions/requestToParam.ts";
 import { type SectionProps } from "@deco/deco";
 import { type Section } from "@deco/deco/blocks";
@@ -8,22 +7,14 @@ import { BlogPost } from "apps/blog/types.ts";
 import { clx } from "site/sdk/clx.ts";
 import BlogTitle from "site/components/Blog/BlogTitle.tsx";
 import BlogImage from "site/components/Blog/BlogImage.tsx";
-import BlogSocialMidia from "site/components/Blog/BlogSocialMidia.tsx";
-
-interface ImageGeneric {
-  src?: ImageWidget;
-  width?: number;
-  height?: number;
-}
-
-interface SocialMedia {
-  alt?: string;
-  link?: string;
-  desktop?: ImageGeneric;
-  mobile?: ImageGeneric;
-}
+import BlogCompartilhar, {
+  type SocialMedia,
+} from "site/components/Blog/BlogCompartilhar.tsx";
 
 interface Layout {
+  /**
+   * @title Redes sociais
+   */
   socialMedia?: SocialMedia[];
 }
 
@@ -51,7 +42,7 @@ function BlogContent(
         />
       )}
 
-      {layout && <BlogSocialMidia socialMedia={layout.socialMedia} />}
+      {layout && <BlogCompartilhar socialMedia={layout.socialMedia} />}
 
       {post?.image && <BlogImage imageBlog={post.image} borderRadius={10} />}
 

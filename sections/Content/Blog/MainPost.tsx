@@ -9,6 +9,7 @@ import { getRecordsByPath } from "apps/blog/utils/records.ts";
 import BlogContent from "$store/components/Blog/BlogContent.tsx";
 import { type SectionProps } from "@deco/deco";
 import { type Section } from "@deco/deco/blocks";
+import { SocialMedia } from "site/components/Blog/BlogCompartilhar.tsx";
 
 export interface AsideSearch {
   /**
@@ -74,10 +75,11 @@ export interface Aside {
   tag?: AsideTags;
 }
 export interface Button {
-  /**@title Texto do botão */
+  /**
+   * @title Texto do botão
+   * @description Deixe em branco para não exibir o botão
+   */
   text?: string;
-  /**@title Link do botão */
-  link?: string;
 }
 export interface ImageGeneric {
   /**@title Imagem */
@@ -93,26 +95,13 @@ export interface ImageGeneric {
    */
   height?: number;
 }
-/**@titleBy alt */
-export interface SocialMedia {
-  /**@title Nome da Mídia */
-  alt?: string;
-  /**@title Link da Mídia */
-  link?: string;
-  /**@title Desktop */
-  desktop?: ImageGeneric;
-  /**@title Mobile */
-  mobile?: ImageGeneric;
-}
 export interface Layout {
-  /**@title Botão do Blog */
-  button?: Button;
-  /**@title Botão de continue lendo? */
-  btnContinue?: boolean;
   /**
-   * @title Social Mídia
-   * @description (ex: máximo de 6 itens)
-   * @maxItems 6
+   * @title Botão inferior
+   */
+  button?: Button;
+  /**
+   * @title Redes sociais
    */
   socialMedia?: SocialMedia[];
 }

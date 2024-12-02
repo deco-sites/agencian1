@@ -3,7 +3,7 @@ import { BlogPost } from "apps/blog/types.ts";
 import { Layout } from "site/sections/Content/Blog/MainPost.tsx";
 import { clx } from "site/sdk/clx.ts";
 import BlogTitle from "site/components/Blog/BlogTitle.tsx";
-import BlogSocialMidia from "site/components/Blog/BlogSocialMidia.tsx";
+import BlogCompartilhar from "site/components/Blog/BlogCompartilhar.tsx";
 import BlogImage from "site/components/Blog/BlogImage.tsx";
 import BlogDescription from "site/components/Blog/BlogDescription.tsx";
 
@@ -40,7 +40,7 @@ export default function BlogPosting({
               />
             )}
 
-            {layout && <BlogSocialMidia socialMedia={layout.socialMedia} />}
+            {layout && <BlogCompartilhar socialMedia={layout.socialMedia} />}
 
             {post?.image && (
               <BlogImage imageBlog={post.image} link={link} borderRadius={10} />
