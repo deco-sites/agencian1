@@ -124,8 +124,8 @@
           {
             "bannerImg": {
               "alt": "banner",
-              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/72dd2dbf-9211-40a1-93e7-3353baa71768",
-              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d018ae6b-c0ac-4e84-bba3-226f177aa602",
+              "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/a521f5cf-1d7f-405c-8fc6-71e78cfb78f2/banner-mockup.png",
+              "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/a521f5cf-1d7f-405c-8fc6-71e78cfb78f2/banner-mockup.png",
               "widthDesktop": 596.64,
               "heightDesktop": 451.569
             },
@@ -134,25 +134,25 @@
               "list": {
                 "textList": [
                   {
-                    "descriptionList": "<p>A Agência N1 propôs migrar o e-commerce da OH BOY! para o VTEX IO, oferecendo uma gestão focada na experiência do usuário.</p>"
+                    "descriptionList": "<p><strong>La adopción de HTMX facilitó la creación de interfaces interactivas y ligeras</strong>, reduciendo la dependencia de JavaScript y centrándose en mejorar el rendimiento del proyecto.</p>"
                   },
                   {
-                    "descriptionList": "<p>Com o VTEX IO, foi possível criar layouts responsivos e personalizados, otimizados para dispositivos móveis, proporcionando experiências de compra únicas, alinhadas à identidade da marca.</p>"
+                    "descriptionList": "<p>Con la migración, Bagaggio consiguió una puntuación <strong>PageSpeed de más de 90 puntos</strong>, un aumento significativo respecto a las puntuaciones anteriores.</p>"
                   },
                   {
-                    "descriptionList": "<p>A tecnologia do VTEX IO também permitiu superar desafios de infraestrutura, possibilitando um foco total nas soluções.</p>"
+                    "descriptionList": "<p>Trabajamos en estrecha colaboración con Bagaggio, desde la concepción hasta la implementación, <strong>asegurándonos de que cada etapa se completara de manera eficiente y a tiempo.</strong></p>"
                   },
                   {
-                    "descriptionList": "<p>Com a migração para o VTEX IO e a implementação de novas features junto à equipe especializada da Agência N1, a OH BOY! tem proporcionado aos seus usuários melhor experiência de navegação.</p>"
+                    "descriptionList": "<p>La migración a <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Deco.cx\">Deco.cx</a>, que utiliza tecnología HTMX, se tradujo en<strong> mejoras significativas en el rendimiento del sitio, la velocidad de carga y el SEO</strong>, reforzando su potencial para el posicionamiento orgánico.</p>"
                   }
                 ],
                 "iconCheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/509809ed-9793-4361-9b7f-f09787a9bf25",
                 "widthContainerList": "500"
               },
-              "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>soluções:</p>",
+              "title": "<p><span style=\"color: rgb(60, 203, 218)\">/</span>soluciones</p>",
               "button": {
-                "link": "/",
-                "textButton": "Visite o novo site"
+                "textButton": "Visite o novo site",
+                "link": "www.bagaggio.com.br"
               }
             },
             "marginBottom": "120px",
@@ -198,22 +198,39 @@
                 },
                 "value": {
                   "dots": false,
-                  "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Destaques do projeto&nbsp;</p>",
+                  "title": "<p><span style=\"color: rgb(60, 203, 218)\">/</span>Aspectos destacados del proyecto</p>",
                   "arrows": true,
                   "images": [
                     {
-                      "alt": "oh boy",
-                      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/636100e1-2e4c-4daa-bb8a-20f2892daa36",
-                      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/1bb6aeca-85d7-4181-8662-b36016dee8ec",
-                      "subTitle": "<p>{Compra rápida nas Prateleiras}</p>",
-                      "description": "<p>A funcionalidade permite que o usuário adicione um item no carrinho, direto da prateleira, sem precisar clicar no produto, economizando tempo e tornando o processo de compra mais ágil.</p>"
+                      "alt": "Bagaggio",
+                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/434222de-bdf2-4f5c-94fa-31bc3b8a7e8c/destaque---flag.png",
+                      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/434222de-bdf2-4f5c-94fa-31bc3b8a7e8c/destaque---flag.png",
+                      "subTitle": "<p>{Personalización de banderas en la página de inicio y PDP}</p>",
+                      "description": "<p>Las banderas destacadas editables ofrecen a la operación la posibilidad de realizar actualizaciones y personalizaciones en la plataforma de forma rápida y eficaz, lo que permite a la marca seguir rápidamente el ritmo de los cambios del mercado.</p>"
                     },
                     {
-                      "alt": "Oh BOY ",
-                      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/35cd12fc-b814-45ef-ad9f-98574aee1844",
-                      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/fda9d24a-45f2-4f45-9655-f195c8866412",
-                      "subTitle": "<p>{Compra rápida nas Prateleiras}</p>",
-                      "description": "<p>A funcionalidade com visualização das variações dos produtos oferece uma experiência de compra mais conveniente e eficiente. Isso permite que os clientes vejam as opções de um produto sem precisar clicar em cada item, economizando tempo e tornando o processo de compra mais ágil.</p>"
+                      "alt": "Bagaggio",
+                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/bb273de3-c1d7-44aa-99a9-be9e8d5930e0/destaque---Video-e-360.png",
+                      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/bb273de3-c1d7-44aa-99a9-be9e8d5930e0/destaque---Video-e-360.png",
+                      "subTitle": "<p>{Vídeo y 360º}</p>",
+                      "description": "<p>Los vídeos de 360º son la nueva frontera del marketing digital. Con ellos, captarás la atención de tu audiencia durante más tiempo, aumentarás el tiempo de visionado y potenciarás las conversiones.</p>",
+                      "addKeysInWordsSlide": true
+                    },
+                    {
+                      "alt": "Bagaggio",
+                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/587e46af-0c74-4d79-ade1-674df29cd265/destaque---Personalizacao-de-produto.png",
+                      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/587e46af-0c74-4d79-ade1-674df29cd265/destaque---Personalizacao-de-produto.png",
+                      "subTitle": "<p>{personalización de productos}</p>",
+                      "description": "<p>Nuestra solución de personalización de productos permite a sus clientes crear productos personalizados. ¿Cuál es el resultado? Una conexión más profunda con su marca y un aumento significativo de sus ventas.</p>",
+                      "addKeysInWordsSlide": true
+                    },
+                    {
+                      "alt": "Bagaggio",
+                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/c9481cdd-373b-4604-bea3-5546189eff23/destaque---Compre-junto.png",
+                      "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/c9481cdd-373b-4604-bea3-5546189eff23/destaque---Compre-junto.png",
+                      "subTitle": "<p>{personalización de productos}</p>",
+                      "description": "<p>Nuestra solución de personalización de productos permite a sus clientes crear productos personalizados. ¿Cuál es el resultado? Una conexión más profunda con su marca y un aumento significativo de sus ventas.</p>",
+                      "addKeysInWordsSlide": true
                     }
                   ],
                   "preload": true,
@@ -247,19 +264,11 @@
             "cards": [
               {
                 "Iconcheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/f5ee2969-dd65-4129-b495-ec9f6b8b44c3",
-                "description": "<p>A atualização tecnológica permitiu uma significativa melhoria na performance do site, resultado direto da otimização do código implementada durante o projeto. A resposta ágil do VTEX IO à escalabilidade e a flexibilidade da arquitetura headless foram cruciais para alcançar um ambiente mais robusto e eficiente.</p>"
+                "description": "<p>La migración a deco HTMX trajo resultados excepcionales: el rendimiento del sitio aumentó más de un 30%, elevando la puntuación de 78 a 100 en el escritorio, proporcionando una navegación más ágil y facilitando la búsqueda de productos.</p>"
               },
               {
                 "Iconcheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/70eca0f8-6113-4c3b-b32e-fbf181423f11",
-                "description": "<p>A incorporação de novas funcionalidades, como a \"Compra Rápida na Prateleira\" e o \"Monte Seu Look com Compra Rápida\", não apenas simplificou o processo de compra, mas também aumentou a interatividade e envolvimento dos clientes. Essas melhorias se traduziram em uma experiência do usuário mais rica, evidenciada pelo aumento nas taxas de conversão e no tempo médio de permanência no site.</p>"
-              },
-              {
-                "Iconcheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/323a6ff4-7b42-4880-82c2-da43f964553f",
-                "description": "<p>A edição simplificada de conteúdo também proporcionou agilidade à equipe da OH BOY!, permitindo uma resposta mais rápida às tendências e demandas do mercado. Como resultado, a marca conquistou uma posição mais competitiva no cenário de e-commerce. O projeto refletiu em uma presença digital mais sólida e eficaz.</p>"
-              },
-              {
-                "Iconcheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/d455cd14-ce14-4006-911e-0b8507f306bb",
-                "description": "<p>Facilita e incentiva a colaboração entre clientes, permitindo que compartilhem produtos e carrinhos, aumentando as vendas e a fidelização.</p>"
+                "description": "<p>La flexibilidad de HTMX ofrece a Bagaggio la posibilidad de realizar actualizaciones y personalizaciones en la plataforma de forma rápida y eficaz, lo que permite a la marca seguir rápidamente el ritmo de los cambios del mercado.</p>"
               }
             ],
             "title": "<p>/Resultados alcançados</p>",
