@@ -62,7 +62,7 @@
               }
             },
             "title": "Asociación deco.cx - HTMX",
-            "paragraph": "Bagaggio eligió a N1.AG para impulsar su estrategia digital, logrando un aumento de +30% en el rendimiento con la migración a la plataforma deco.cx - HTMX. En este proyecto, aplicamos toda nuestra experiencia, combinando innovación y fortaleciendo aún más la presencia digital de la marca.🔒💻",
+            "paragraph": "Bagaggio dio un paso estratégico en el comercio electrónico al migrar a Deco.cx - HTMX, con el apoyo de N1.AG. ¿El resultado? Un aumento del rendimiento de más del 30%. En este proyecto, aplicamos nuestra experiencia para ofrecer innovación y una experiencia de compra fluida, consolidando aún más la presencia digital de la marca. ",
             "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
             "backgroundImage": {
               "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7f1db9c-ae6c-4aa8-b7e0-1f200601771c",
@@ -339,7 +339,7 @@
               }
             },
             "title": "Deco.cx partnership, with HTML technology",
-            "paragraph": "\nBagaggio chose N1.AG to boost its digital strategy, achieving a +30% increase in performance with the migration to the deco.cx - HTMX platform. In this project, we applied all our expertise, bringing together innovation and further strengthening the brand's digital presence.🔒💻",
+            "paragraph": "Bagaggio took a strategic step in e-commerce by migrating to Deco.cx - HTMX, with the support of N1.AG. The result? An increase in performance of more than 30%! In this project, we applied our expertise to deliver innovation and a fluid shopping experience, further consolidating the brand's digital presence. ",
             "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
             "backgroundImage": {
               "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7f1db9c-ae6c-4aa8-b7e0-1f200601771c",
@@ -611,7 +611,7 @@
               }
             },
             "title": "parceria deco.cx - HTMX",
-            "paragraph": "Bagaggio escolhe a N1.AG para potencializar sua estratégia digital, alcançando um aumento de +30% em performance com a migração para a plataforma deco.cx - HTMX. Nesse projeto, aplicamos toda nossa expertise, unindo inovação e fortalecendo ainda mais a presença digital da marca.🔒💻",
+            "paragraph": "A Bagaggio deu um passo estratégico no e-commerce ao migrar para a Deco.cx - HTMX, com o suporte da N1.AG. O resultado? Um aumento de mais de 30% em performance! Neste projeto, aplicamos nossa expertise para entregar inovação e uma experiência de compra fluida, consolidando ainda mais a presença digital da marca. ",
             "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
             "backgroundImage": {
               "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7f1db9c-ae6c-4aa8-b7e0-1f200601771c",
@@ -652,17 +652,17 @@
               {
                 "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/cb730e92-31b1-46e3-b979-28b5745b09f5",
                 "title": "<p>Migração do front-end</p>",
-                "description": "<p>Essa estratégia permitiu medir o sucesso da nova ferramenta sem interferências externas e acelerou o processo, evitando um redesign. A migração separou a interface do usuário do back-end do e-commerce, mantendo a infraestrutura VTEXIO e incorporando maior velocidade e flexibilidade.</p>"
+                "description": "<p>A migração separou a interface do usuário do back-end do e-commerce, preservando a infraestrutura VTEXIO e adicionando mais velocidade e flexibilidade. Essa abordagem possibilitou avaliar o desempenho da nova ferramenta de forma isolada, sem interferências externas, e acelerou o processo ao dispensar um redesign completo.</p>"
               },
               {
                 "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6b53bb35-c267-4b2c-a42b-3bce0cf785d3",
                 "title": "<p>Tecnologia HTMX</p>",
-                "description": "<p>A adoção da tecnologia HTMX foi essencial para simplificar o desenvolvimento e criar interfaces interativas e leves, minimizando o uso de JavaScript. Isso trouxe mais agilidade e reduziu o tempo de carregamento do site, impactando diretamente a experiência do usuário.<span style=\"color: rgb(0, 0, 0); font-size: 11pt\"><br></span></p>"
+                "description": "<p>A implementação do HTMX simplificou o desenvolvimento, possibilitando a criação de interfaces mais leves e interativas com menos dependência de JavaScript. O resultado? Maior agilidade, tempos de carregamento reduzidos e uma experiência do usuário significativamente aprimorada.<span style=\"color: rgb(0, 0, 0); font-size: 11pt\"><br></span></p>"
               },
               {
                 "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c19ecd5e-1eea-49f7-921c-5ba7631a2995",
                 "title": "<p>Gestão colaborativa</p>",
-                "description": "<p>A <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://N1.AG\">N1.AG</a> trabalhou de maneira colaborativa com a Bagaggio durante todo o processo, aplicando suas habilidades e ferramentas para garantir que o projeto fosse entregue dentro do prazo, atendendo às expectativas e demandas do cliente.</p>"
+                "description": "<p>A <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://N1.AG\">N1.AG</a> atuou em parceria com a Bagaggio ao longo de todo o processo, utilizando suas competências e ferramentas para assegurar a entrega do projeto dentro do prazo, superando expectativas e atendendo às necessidades do cliente.</p>"
               }
             ],
             "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Principais Desafios</p>",
