@@ -61,8 +61,8 @@
                 "height": 124
               }
             },
-            "title": "parceria de sucesso vtex.io",
-            "paragraph": "{Com a migração para o VTEX IO e a implementação de novas features junto à equipe especializada da Agência N1, a OH BOY! tem proporcionado aos seus usuários melhor experiência de navegação. Descubra como a Agência N1 melhorou a experiência do consumidor e impulsionou os resultados da OH BOY! com a plataforma VTEX.}",
+            "title": "Asociación deco.cx - HTMX",
+            "paragraph": "Bagaggio eligió a N1.AG para impulsar su estrategia digital, logrando un aumento de +30% en el rendimiento con la migración a la plataforma deco.cx - HTMX. En este proyecto, aplicamos toda nuestra experiencia, combinando innovación y fortaleciendo aún más la presencia digital de la marca.🔒💻",
             "__resolveType": "site/sections/Content/IconTitleAndTex.tsx",
             "backgroundImage": {
               "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c7f1db9c-ae6c-4aa8-b7e0-1f200601771c",
@@ -74,8 +74,8 @@
           {
             "bannerImg": {
               "alt": "banner",
-              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0acb2bbe-7f56-4623-827e-fee6b17d2cdd",
-              "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/9eaae5f6-0e29-4a7e-83c5-783baad59902",
+              "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/e7dcf12c-7b9e-43e5-a722-baeded1c5412/banner-2.svg",
+              "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/e7dcf12c-7b9e-43e5-a722-baeded1c5412/banner-2.svg",
               "widthDesktop": 632,
               "heightDesktop": 372
             },
@@ -91,8 +91,8 @@
               "heightDesktop": 372
             },
             "contentText": {
-              "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Sobre o cliente</p>",
-              "description": "<p>Com mais de 20 anos no mercado, 30 lojas próprias e presença em mais de 500 multimarcas, a OH, BOY! é uma marca carioca que reflete uma essência jovem e urbana. Suas coleções confortáveis e descontraídas misturam estilos, refletindo uma personalidade moderna e única.</p><p><br data-mce-bogus=\"1\"></p><p>A marca mantém sua originalidade, e entende que precisa se apresentar de um jeito fresh e inovador para conquistar as novas gerações.</p>"
+              "title": "<p><span style=\"color: rgb(60, 203, 218)\">/</span>Sobre Bagaggio</p>",
+              "description": "<p>Fundada en 1942 en Río de Janeiro, Bagaggio se ha consolidado como una marca líder en equipaje y accesorios de viaje en Brasil.<br></p><p>Con más de 200 tiendas físicas y una fuerte presencia digital, Bagaggio es sinónimo de tradición, calidad y fiabilidad. La marca es reconocida por acompañar a sus clientes en todos sus desplazamientos, ya sea en sus viajes o en su vida cotidiana.</p>"
             },
             "marginBottom": "10px",
             "__resolveType": "site/sections/BannerWithTextColumn/BannerWithTextColumn.tsx",
@@ -102,26 +102,21 @@
             "cards": [
               {
                 "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b29e7878-a28b-48fb-a99b-1342e7b68023",
-                "title": "<p>UX Design</p>",
-                "description": "<p>Aprimorar a experiência do consumidor com melhorias de UX e obter valor agregado, diferenciação competitiva e aumento nas vendas.</p>"
+                "title": "<p>Migración del front-end</p>",
+                "description": "<p>Esta estrategia permitió medir el éxito de la nueva herramienta sin interferencias externas y aceleró el proceso, evitando un rediseño. La migración separó la interfaz de usuario del back-end de comercio electrónico, manteniendo la infraestructura de VTEXIO e incorporando mayor velocidad y flexibilidad.</p>"
               },
               {
                 "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/cb730e92-31b1-46e3-b979-28b5745b09f5",
-                "title": "<p>Performance</p>",
-                "description": "<p>Garantir que todas as páginas do site carreguem rapidamente é fundamental. O desafio está em otimizar imagens, scripts e conteúdo para manter o site ágil.</p>"
+                "title": "<p>Tecnología HTMX</p>",
+                "description": "<p>La adopción de la tecnología HTMX fue esencial para simplificar el desarrollo y crear interfaces ligeras e interactivas, minimizando el uso de JavaScript. Esto ha aportado más agilidad y ha reducido los tiempos de carga del sitio, lo que ha repercutido directamente en la experiencia del usuario.</p>"
               },
               {
                 "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6b53bb35-c267-4b2c-a42b-3bce0cf785d3",
-                "title": "<p>Limitações técnicas</p>",
-                "description": "<p>A OH BOY! enfrentava limitações técnicas em seu e-commerce, com bugs, instabilidades e problemas de carregamento e velocidade comprometendo a experiência do cliente.</p>"
-              },
-              {
-                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c19ecd5e-1eea-49f7-921c-5ba7631a2995",
-                "title": "<p>Escalabilidade:</p>",
-                "description": "<p>À medida que o tráfego aumenta, o site deve ser capaz de lidar com a carga adicional. Escalar a infraestrutura para acomodar picos de tráfego é um desafio técnico.</p>"
+                "title": "<p>Gestión colaborativa</p>",
+                "description": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://N1.AG\">N1.AG</a> trabajó en colaboración con Bagaggio durante todo el proceso, aplicando sus conocimientos y herramientas para garantizar que el proyecto se entregara a tiempo y cumpliera las expectativas y exigencias del cliente.</p>"
               }
             ],
-            "title": "<p><span style=\"color: #3ccbda;\" data-mce-style=\"color: #3ccbda;\">/</span>Principais Desafios</p>",
+            "title": "<p><span style=\"color: rgb(60, 203, 218)\">/</span>Principales desafíos</p>",
             "marginTop": "120px",
             "marginBottom": "20px",
             "__resolveType": "site/sections/Challenges/challenges.tsx"
