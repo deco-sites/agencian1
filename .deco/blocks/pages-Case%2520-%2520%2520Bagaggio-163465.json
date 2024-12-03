@@ -582,8 +582,7 @@
                     "height": "440"
                   }
                 },
-                "matcher": "/cases/bagaggio",
-                "title": "Bagaggio"
+                "matcher": "/cases/bagaggio"
               }
             ],
             "__resolveType": "site/sections/Category/CategoryBanner.tsx"
@@ -624,7 +623,7 @@
           {
             "bannerImg": {
               "alt": "banner",
-              "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/c1bf7a0f-a4f9-40ae-8220-7abd0ead3b59/bagaggio-(500-x-300-px).png",
+              "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/e7dcf12c-7b9e-43e5-a722-baeded1c5412/banner-2.svg",
               "widthDesktop": 632,
               "heightDesktop": 372,
               "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/e7dcf12c-7b9e-43e5-a722-baeded1c5412/banner-2.svg"
@@ -674,7 +673,7 @@
           {
             "bannerImg": {
               "alt": "banner",
-              "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/375eb951-6cf8-4939-a42e-edd949645e00/Design-sem-nome-(1).png",
+              "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/a521f5cf-1d7f-405c-8fc6-71e78cfb78f2/banner-mockup.png",
               "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/a521f5cf-1d7f-405c-8fc6-71e78cfb78f2/banner-mockup.png",
               "widthDesktop": 596.64,
               "heightDesktop": 451.569
@@ -684,16 +683,16 @@
               "list": {
                 "textList": [
                   {
-                    "descriptionList": "<p><span style=\"font-size: 14px\">A adoção do HTMX facilitou a criação de interfaces interativas e leves, reduzindo a dependência de JavaScript e focando na melhoria da performance do projeto.</span></p>"
+                    "descriptionList": "<p><strong><span style=\"font-size: 14px\">A adoção do HTMX facilitou a criação de interfaces interativas e leves</span></strong><span style=\"font-size: 14px\">, reduzindo a dependência de JavaScript e focando na melhoria da performance do projeto.</span></p>"
                   },
                   {
                     "descriptionList": "<p><span style=\"font-size: 12pt\">Com a migralão a</span><span style=\"font-size: 12pt\"> Bagaggio alcançou a </span><strong><span style=\"font-size: 12pt\">pontuação de 90+ pontos no PageSpeed</span></strong><span style=\"font-size: 12pt\">, um aumento significativo em relação aos pontos anteriores.</span></p>"
                   },
                   {
-                    "descriptionList": "<p>Trabalhamos junto à Bagaggio, desde a concepção até a implementação, garantindo que cada etapa fosse concluída com eficiência e <strong>dentro dos prazos estabelecidos.</strong></p>"
+                    "descriptionList": "<p>Trabalhamos junto à Bagaggio, desde a concepção até a implementação, garantindo que cada etapa fosse concluída com eficiência e dentro dos<strong> prazos estabelecidos.</strong></p>"
                   },
                   {
-                    "descriptionList": "<p>A migração para <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://deco.cx\">Deco.cx</a>, que utiliza a tecnologia HTMX, resultou em melhorias significativas para o desempenho, velocidade de carregamento e SEO do site, fortalecendo seu potencial de posicionamento orgânico.</p>"
+                    "descriptionList": "<p><strong>A migração para </strong><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://deco.cx\"><strong>Deco.cx</strong></a>, que utiliza a tecnologia HTMX, resultou em melhorias significativas para o desempenho, velocidade de carregamento e SEO do site, fortalecendo seu potencial de posicionamento orgânico.</p>"
                   }
                 ],
                 "iconCheck": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/509809ed-9793-4361-9b7f-f09787a9bf25",
