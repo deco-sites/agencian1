@@ -11,6 +11,7 @@ import * as $AddToCartButton_shopify from "./islands/AddToCartButton/shopify.tsx
 import * as $AddToCartButton_vnda from "./islands/AddToCartButton/vnda.tsx";
 import * as $AddToCartButton_vtex from "./islands/AddToCartButton/vtex.tsx";
 import * as $AddToCartButton_wake from "./islands/AddToCartButton/wake.tsx";
+import * as $Blog_BlogNewsletter from "./islands/Blog/BlogNewsletter.tsx";
 import * as $BlogAsideNewsletter from "./islands/BlogAsideNewsletter.tsx";
 import * as $BlogAsideSearch from "./islands/BlogAsideSearch.tsx";
 import * as $BlogContentPartial from "./islands/BlogContentPartial.tsx";
@@ -54,6 +55,7 @@ const manifest = {
     "./islands/AddToCartButton/vnda.tsx": $AddToCartButton_vnda,
     "./islands/AddToCartButton/vtex.tsx": $AddToCartButton_vtex,
     "./islands/AddToCartButton/wake.tsx": $AddToCartButton_wake,
+    "./islands/Blog/BlogNewsletter.tsx": $Blog_BlogNewsletter,
     "./islands/BlogAsideNewsletter.tsx": $BlogAsideNewsletter,
     "./islands/BlogAsideSearch.tsx": $BlogAsideSearch,
     "./islands/BlogContentPartial.tsx": $BlogContentPartial,

@@ -2,6 +2,7 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
+import * as $$$$$$$$$0 from "./actions/blog/submitNewsletter.ts";
 import * as $$$$$$$$$$$0 from "./apps/deco/blog.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
 import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
@@ -201,6 +202,9 @@ const manifest = {
     "site/sections/Social/InstagramPosts.tsx": $$$$$$90,
     "site/sections/Social/WhatsApp.tsx": $$$$$$91,
     "site/sections/Theme/Theme.tsx": $$$$$$92,
+  },
+  "actions": {
+    "site/actions/blog/submitNewsletter.ts": $$$$$$$$$0,
   },
   "apps": {
     "site/apps/deco/blog.ts": $$$$$$$$$$$0,
