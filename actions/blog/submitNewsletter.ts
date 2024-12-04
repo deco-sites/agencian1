@@ -1,9 +1,16 @@
 import { AppContext } from "site/apps/site.ts";
-import { PORTAL_SUBDOMAIN } from "site/constants.tsx";
+
+const VTEX_DOMAIN = "https://agencian1.myvtex.com";
+
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export interface Props {
   name: string;
   email: string;
+}
+
+interface Error {
+  message: string;
 }
 
 /**
@@ -14,28 +21,36 @@ const action = async (
   props: Props,
   _req: Request,
   _ctx: AppContext,
-): Promise<void> => {
+): Promise<Error | void> => {
   const { name, email } = props;
 
-  console.log(name, email);
+  if (typeof name !== "string" || name.trim().length < 3) {
+    return {
+      message: "O nome deve ter pelo menos 3 caracteres",
+    };
+  }
 
-  await new Promise((resolve, reject) => setTimeout(reject, 3000));
+  if (typeof email !== "string" || !emailPattern.test(email.trim())) {
+    return {
+      message: "Por favor, insira um endereço de e-mail válido",
+    };
+  }
 
-  //   const response = await fetch(
-  //     `${PORTAL_SUBDOMAIN[0]}/api/dataentities/NE/documents`,
-  //     {
-  //       method: "POST",
-  //       body: JSON.stringify({ name, email }),
-  //       headers: {
-  //         "content-type": "application/json",
-  //         "accept": "application/json",
-  //       },
-  //     },
-  //   );
+  const response = await fetch(
+    `${VTEX_DOMAIN}/api/dataentities/NE/documents`,
+    {
+      method: "POST",
+      body: JSON.stringify({ name, email }),
+      headers: {
+        "content-type": "application/json",
+        "accept": "application/json",
+      },
+    },
+  );
 
-  //   if (!response.ok) {
-  //     throw new Error(`Failed to submit newsletter: ${response.statusText}`);
-  //   }
+  if (!response.ok) {
+    throw new Error(`Falha ao enviar newsletter: ${response.statusText}`);
+  }
 };
 
 export default action;
