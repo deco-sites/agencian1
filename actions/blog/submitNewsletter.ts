@@ -17,21 +17,25 @@ const action = async (
 ): Promise<void> => {
   const { name, email } = props;
 
-  const response = await fetch(
-    `${PORTAL_SUBDOMAIN[0]}/api/dataentities/NE/documents`,
-    {
-      method: "POST",
-      body: JSON.stringify({ name, email }),
-      headers: {
-        "content-type": "application/json",
-        "accept": "application/json",
-      },
-    },
-  );
+  console.log(name, email);
 
-  if (!response.ok) {
-    throw new Error(`Failed to submit newsletter: ${response.statusText}`);
-  }
+  await new Promise((resolve, reject) => setTimeout(reject, 3000));
+
+  //   const response = await fetch(
+  //     `${PORTAL_SUBDOMAIN[0]}/api/dataentities/NE/documents`,
+  //     {
+  //       method: "POST",
+  //       body: JSON.stringify({ name, email }),
+  //       headers: {
+  //         "content-type": "application/json",
+  //         "accept": "application/json",
+  //       },
+  //     },
+  //   );
+
+  //   if (!response.ok) {
+  //     throw new Error(`Failed to submit newsletter: ${response.statusText}`);
+  //   }
 };
 
 export default action;
