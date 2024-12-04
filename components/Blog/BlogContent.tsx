@@ -1,8 +1,11 @@
 import { type Section } from "@deco/deco/blocks";
 import { clx } from "site/sdk/clx.ts";
 import { BlogPost } from "apps/blog/types.ts";
-import { Layout, Pagination } from "site/sections/Blog/MainPost.tsx";
+// import { Layout, Pagination } from "site/sections/Blog/MainPost.tsx";
 import BlogContentPartial from "site/islands/BlogContentPartial.tsx";
+
+type Layout = unknown;
+type Pagination = unknown;
 
 export interface Props {
   posts: BlogPost[];

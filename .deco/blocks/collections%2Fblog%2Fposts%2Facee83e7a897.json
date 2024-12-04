@@ -1,0 +1,48 @@
+{
+  "name": "collections/blog/posts/acee83e7a897",
+  "__resolveType": "blog/loaders/Blogpost.ts",
+  "post": {
+    "authors": [
+      {
+        "name": "Agência N1",
+        "email": "contato@n1.ag"
+      }
+    ],
+    "categories": [
+      {
+        "name": "E-commerce",
+        "slug": "e-commerce"
+      },
+      {
+        "name": "Análise de Comportamento",
+        "slug": "analide-de-comportamento"
+      },
+      {
+        "name": "Otimização de Lojas Virtuais",
+        "slug": "otimizacao-de-lojas-virtuais"
+      }
+    ],
+    "extraProps": [
+      {
+        "key": "tags",
+        "value": "Mapa de Calor, Heat Map, Comportamento do Cliente, Análise de E-commerce, Otimização de Conversão"
+      },
+      {
+        "key": "keywords",
+        "value": "mapa de calor no e-commerce, análise de comportamento de clientes, heat map para lojas virtuais, otimização de conversão com heat map, jornada de compras no e-commerce"
+      }
+    ],
+    "title": "Avaliando o comportamento do cliente com o mapa de calor",
+    "excerpt": "Saiba como o mapa de calor pode ajudar a analisar o comportamento dos clientes no e-commerce, identificando áreas de maior interação e oportunidades de otimização.",
+    "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/60eb50ef-3962-4c4d-9314-46e281d61503/post-placeholder-3.webp",
+    "alt": "Representação gráfica de um mapa de calor em uma página de e-commerce, destacando áreas de maior interação com cores quentes.",
+    "date": "2024-12-04",
+    "slug": "avaliando-comportamento-cliente-mapa-calor",
+    "content": "<p><span style=\"color: rgb(0, 0, 0); font-size: 11pt\">Investir em estratégias que otimizam os resultados do seu negócio deve ir muito além da entrega da interface entre o cliente e seu empreendimento. Após finalizada a etapa do ambiente virtual de compras, uma avaliação periódica e com constância da performance do e-commerce pode mostrar resultados surpreendentes e esclarecedores.</span></p><p><br></p><p><span style=\"color: rgb(0, 0, 0); font-size: 11pt\">Dentre os recursos que existem para entender o comportamento dos usuários, o mapa de calor (heat map, em inglês) é uma ferramenta que funciona como importante aliada. Por meio de representação gráfica, o mapa de calor se utiliza de uma escala de cores quentes (mais atividade) e frias (menos atividade) que indicam quais são os pontos de uma página da internet onde as pessoas interagem mais.</span></p><p><br></p><p><span style=\"color: rgb(0, 0, 0); font-size: 11pt\">A partir de uma análise do resultado gerado pela ferramenta, é possível determinar se a funcionalidade daquele e-commerce é eficiente e, ainda, descobrir eventuais problemas que estejam prejudicando a jornada de compras dos clientes - como taxa de rejeição; carrinhos abandonados; baixa conversão; entre outros.</span></p><p><br><span style=\"color: rgb(0, 0, 0); font-size: 11pt\">Um dos serviços prestados pela Agência N1 é dedicado a entender a evolução da sua loja e conta com o mapa de calor entre os recursos utilizados na análise. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://agencian1.com.br/nossos-servicos/evolucao-da-loja/\"><u><span style=\"color: rgb(17, 85, 204); font-size: 11pt\">Saiba mais</span></u></a><span style=\"color: rgb(0, 0, 0); font-size: 11pt\">.</span></p>",
+    "seo": {
+      "title": "Como o mapa de calor pode otimizar a experiência do cliente no e-commerce",
+      "description": "Descubra como o mapa de calor identifica áreas de maior interação em seu e-commerce e como essa análise pode melhorar a experiência e os resultados do seu negócio."
+    },
+    "readTime": 3
+  }
+}

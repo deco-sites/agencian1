@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/categories/494ace0973b9",
+  "__resolveType": "blog/loaders/Category.ts",
+  "category": {
+    "name": "Compras Online",
+    "slug": "compras-online"
+  }
+}

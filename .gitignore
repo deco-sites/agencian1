@@ -73,3 +73,4 @@ import_map.local.json
 _fresh/
 
 deno.lock
+.cursorrules

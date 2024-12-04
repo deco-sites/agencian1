@@ -9,8 +9,10 @@ export default {
       center: true,
     },
     colors: {
+      "white": "#FFFFFF",
       "base-150": "#F3F4F7",
       "base-400": "#9B9B9B",
+      "gray-58": "#585858",
     },
     fontFamily: {
       "montserrat": "Montserrat",

@@ -1,9 +1,12 @@
 import { type Section } from "@deco/deco/blocks";
 import { clx } from "site/sdk/clx.ts";
 import { BlogPost } from "apps/blog/types.ts";
-import { Layout, Pagination } from "site/sections/Blog/MainPost.tsx";
+// import { Layout, Pagination } from "site/sections/Blog/MainPost.tsx";
 import { useState } from "preact/hooks";
 import BlogPosting from "site/components/Blog/BlogPosting.tsx";
+
+type Layout = unknown;
+type Pagination = unknown;
 
 interface Props {
   posts: BlogPost[];

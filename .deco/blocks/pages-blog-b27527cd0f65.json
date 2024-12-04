@@ -57,47 +57,13 @@
             "__resolveType": "site/sections/Blog/BlogBreadcrumb.tsx"
           },
           {
-            "__resolveType": "site/sections/Blog/MainPost.tsx",
-            "layout": {
-              "button": {
-                "text": "Continue lendo"
-              },
-              "socialMedia": [
-                {
-                  "label": "Facebook",
-                  "link": "https://www.facebook.com/somosn1.ag"
-                },
-                {
-                  "label": "X"
-                },
-                {
-                  "label": "Instagram",
-                  "link": "https://www.instagram.com/n1.ag_oficial"
-                },
-                {
-                  "label": "Linkedin",
-                  "link": "https://www.linkedin.com/company/n1-ag"
-                },
-                {
-                  "label": "WhatsApp",
-                  "link": "https://wa.me/5521965744132"
-                }
-              ]
-            },
-            "asideContent": [
+            "__resolveType": "site/sections/Blog/BlogPosts.tsx",
+            "sidebar": [
               {
-                "__resolveType": "blog-aside-search"
-              },
-              {
-                "__resolveType": "blog-aside-newsletter"
-              },
-              {
-                "__resolveType": "blog-aside-categories"
-              },
-              {
-                "__resolveType": "blog-aside-tags"
+                "__resolveType": "blog-sidebar"
               }
-            ]
+            ],
+            "postsPerPage": 2
           },
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",

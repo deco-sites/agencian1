@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/categories/bffb2748250b",
+  "__resolveType": "blog/loaders/Category.ts",
+  "category": {
+    "name": "Análise de Comportamento",
+    "slug": "analide-de-comportamento"
+  }
+}
