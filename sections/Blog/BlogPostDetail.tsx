@@ -1,15 +1,15 @@
+import { type AppContext } from "site/apps/site.ts";
 import { type Section } from "@deco/deco/blocks";
 import { type SectionProps } from "@deco/deco";
 import { type BlogPost } from "apps/blog/types.ts";
-import { type AppContext } from "apps/blog/mod.ts";
 import { type SocialMedia } from "site/components/Blog/PostShare.tsx";
 import { type Category } from "site/components/Blog/SidebarCategories.tsx";
 import { type Tag } from "site/components/Blog/SidebarTags.tsx";
 import {
   fetchPosts,
+  getMostReadPosts,
   getUniqueCategories,
   getUniqueTags,
-  mapMostReadPosts,
   type PreviewPost,
 } from "site/sdk/posts.ts";
 import { populateSidebar } from "site/sdk/blogSidebar.tsx";
@@ -46,6 +46,11 @@ interface BlogPostDetail {
    * @title Título da lista de posts mais acessados
    */
   mostReadPostsTitle?: string;
+  /**
+   * @title Quantidade de posts mais acessados
+   * @description Padrão: 4
+   */
+  mostReadPostsLimit?: number;
 }
 
 export default function BlogPostDetail({
@@ -86,17 +91,33 @@ export async function loader(
   const posts = await fetchPosts(ctx);
   const post = posts.find((post) => post.slug === slug);
 
-  const mostReadPosts = mapMostReadPosts(posts);
   const categories = getUniqueCategories(posts);
   const tags = getUniqueTags(posts);
 
   if (post?.seo) {
     ctx.seo = {
       ...ctx.seo,
-      title: post.seo.title ?? ctx.seo.title,
-      description: post.seo.description ?? ctx.seo.description,
+      title: post.seo.title ?? ctx.seo?.title,
+      description: post.seo.description ?? ctx.seo?.description,
     };
   }
+
+  if (post) {
+    await ctx.invoke("site/actions/blog/countView.ts", { postSlug: slug });
+  }
+
+  const { topViewedPosts } = await ctx.invoke.site.loaders.posts.views({
+    top: 4,
+  });
+
+  const mostReadSlugs = topViewedPosts.map(({ postSlug }) =>
+    postSlug
+  ) as string[];
+  const mostReadPosts = getMostReadPosts(
+    posts,
+    mostReadSlugs,
+    props.mostReadPostsLimit ?? 4,
+  );
 
   return {
     ...props,

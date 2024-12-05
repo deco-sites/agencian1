@@ -1,8 +1,8 @@
 {
   "imports": {
     "$store/": "./",
-    "deco/": "https://denopkg.com/deco-cx/deco@1.107.1/",
-    "apps/": "https://denopkg.com/deco-cx/apps@0.64.2/",
+    "deco/": "https://denopkg.com/deco-cx/deco@1.108.0/",
+    "apps/": "https://denopkg.com/deco-cx/apps@0.64.5/",
     "$fresh/": "https://deno.land/x/fresh@1.7.3/",
     "preact": "npm:preact@10.23.1",
     "preact-render-to-string": "npm:preact-render-to-string@6.4.2",
@@ -15,7 +15,10 @@
     "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
     "@deco/deco": "jsr:@deco/deco@1.107.0",
     "@deco/durable": "jsr:@deco/durable@0.5.3",
-    "@deco/dev": "jsr:@deco/dev@1.107.0"
+    "@deco/dev": "jsr:@deco/dev@1.107.0",
+    "drizzle-orm": "https://esm.sh/drizzle-orm@0.30.10",
+    "drizzle-orm/": "https://esm.sh/drizzle-orm@0.30.10/",
+    "drizzle-kit": "https://esm.sh/drizzle-kit@0.21.2"
   },
   "tasks": {
     "localhost": "DECO_SITE_NAME=agencian1 DECO_ENV_NAME=localhost deno task start",
@@ -33,7 +36,13 @@
     "build": "deno run -A dev.ts build",
     "preview": "deno run -A main.ts",
     "dev": "deno run -A --env --unstable-kv --unstable-hmr dev.ts",
-    "reload": "deno cache -r https://deco.cx/run"
+    "reload": "deno cache -r https://deco.cx/run",
+    "db:setup:deps": "deno cache -r --node-modules-dir npm:drizzle-orm@0.30.10 npm:drizzle-kit@0.21.2 npm:@libsql/client@0.6.0/node",
+    "db:check:credentials": "deno eval --env 'import{getDbCredentials}from\"apps/records/scripts/checkDbCredential.ts\";getDbCredentials();'",
+    "db:pull:prod": "deno eval --env 'import \"apps/records/scripts/pullProd.ts\"'",
+    "db:generate": "deno run -A --node-modules-dir npm:drizzle-kit@0.21.2 generate",
+    "db:migrate": "deno run -A --node-modules-dir --config=deno.json npm:drizzle-kit@0.21.2 migrate",
+    "db:schema:update": "DENO_FUTURE=1 deno task db:check:credentials && deno task db:generate && deno task db:migrate"
   },
   "githooks": {
     "pre-commit": "check"

@@ -277,3 +277,37 @@ export const mapMostReadPosts = (posts: BlogPost[]): PreviewPost[] => {
     alt: post.alt ?? "",
   }));
 };
+
+/**
+ * Returns a list of the most read posts, limited by the specified number.
+ *
+ * @param posts All available posts
+ * @param mostReadSlugs Slugs of the most read posts
+ * @param limit Number of posts to return
+ */
+export const getMostReadPosts = (
+  posts: BlogPost[],
+  mostReadSlugs: string[],
+  limit: number,
+): PreviewPost[] => {
+  const filteredPosts = posts.filter((post) => post.title);
+
+  const mostReadPosts = mostReadSlugs
+    .map((slug) => filteredPosts.find((post) => post.slug === slug))
+    .filter(Boolean) as BlogPost[];
+
+  if (mostReadPosts.length < limit) {
+    const additionalPosts = filteredPosts
+      .filter((post) => !mostReadSlugs.includes(post.slug))
+      .slice(0, limit - mostReadPosts.length);
+    mostReadPosts.push(...additionalPosts);
+  }
+
+  return mostReadPosts.slice(0, limit).map((post) => ({
+    title: post.title,
+    excerpt: post.excerpt,
+    slug: post.slug,
+    image: post.image ?? "",
+    alt: post.alt ?? "",
+  }));
+};

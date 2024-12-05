@@ -22,6 +22,10 @@ export default function SidebarSearch({
     const searchTerm = searchValue.value.trim();
     const url = new URL(globalThis.window.location.href);
 
+    const pathSegments = url.pathname.split("/").filter(Boolean);
+    const basePath = pathSegments.length > 0 ? `/${pathSegments[0]}` : "/";
+    url.pathname = basePath;
+
     if (searchTerm) {
       url.searchParams.set("search", searchTerm);
     } else {

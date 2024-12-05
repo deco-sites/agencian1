@@ -4,21 +4,22 @@ import { type AppContext } from "apps/blog/mod.ts";
 import { type SocialMedia } from "site/components/Blog/PostShare.tsx";
 import { type Category } from "site/components/Blog/SidebarCategories.tsx";
 import { type Tag } from "site/components/Blog/SidebarTags.tsx";
+import { type TopViewedPost } from "site/loaders/posts/views.ts";
 import {
   fetchPosts,
+  getMostReadPosts,
   getUniqueCategories,
   getUniqueTags,
-  mapMostReadPosts,
   mapPostPreviews,
   type PreviewPost,
   type SortBy,
 } from "site/sdk/posts.ts";
+import { populateSidebar } from "site/sdk/blogSidebar.tsx";
 import PostList from "site/components/Blog/PostList.tsx";
 import handlePosts from "site/sdk/posts.ts";
 import PostContainer from "site/components/Blog/PostContainer.tsx";
 import PostLoadMoreButton from "site/components/Blog/PostLoadMoreButton.tsx";
 import MostReadPostsList from "site/components/Blog/MostReadPostsList.tsx";
-import { populateSidebar } from "site/sdk/blogSidebar.tsx";
 
 interface BlogPosts {
   /**
@@ -58,6 +59,11 @@ interface BlogPosts {
    * @title Título da lista de posts mais acessados
    */
   mostReadPostsTitle?: string;
+  /**
+   * @title Quantidade de posts mais acessados
+   * @description Padrão: 4
+   */
+  mostReadPostsLimit?: number;
 }
 
 export default function BlogPosts({
@@ -117,9 +123,21 @@ export async function loader(
     category,
   });
   const mappedPosts = mapPostPreviews(filteredPosts.posts);
-  const mostReadPosts = mapMostReadPosts(posts);
   const categories = getUniqueCategories(posts);
   const tags = getUniqueTags(posts);
+
+  const { topViewedPosts } = await ctx.invoke.site.loaders.posts.views({
+    top: 4,
+  }) as { topViewedPosts: TopViewedPost[] };
+
+  const mostReadSlugs = topViewedPosts.map(({ postSlug }) =>
+    postSlug
+  ) as string[];
+  const mostReadPosts = getMostReadPosts(
+    posts,
+    mostReadSlugs,
+    props.mostReadPostsLimit ?? 4,
+  );
 
   return {
     ...props,
