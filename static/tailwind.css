@@ -7325,6 +7325,9 @@ details.collapse summary::-webkit-details-marker {
 .grid-cols-\[48px_1fr_48px\] {
   grid-template-columns: 48px 1fr 48px;
 }
+.grid-cols-\[repeat\(2\2c 380px\)\] {
+  grid-template-columns: repeat(2,380px);
+}
 .grid-cols-\[repeat\(2\2c _1fr\)\] {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -7519,6 +7522,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .gap-\[2px\] {
   gap: 2px;
+}
+.gap-\[30px\] {
+  gap: 30px;
 }
 .gap-\[3px\] {
   gap: 3px;

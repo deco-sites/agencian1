@@ -1,7 +1,6 @@
 import { type Section } from "@deco/deco/blocks";
 import { type SectionProps } from "@deco/deco";
 import { type AppContext } from "apps/blog/mod.ts";
-import { type BlogPost } from "apps/blog/types.ts";
 import { type SocialMedia } from "site/components/Blog/PostShare.tsx";
 import { type Category } from "site/components/Blog/SidebarCategories.tsx";
 import { type Tag } from "site/components/Blog/SidebarTags.tsx";
@@ -9,23 +8,30 @@ import {
   fetchPosts,
   getUniqueCategories,
   getUniqueTags,
+  mapMostReadPosts,
   mapPostPreviews,
+  type PreviewPost,
   type SortBy,
 } from "site/sdk/posts.ts";
 import PostList from "site/components/Blog/PostList.tsx";
 import handlePosts from "site/sdk/posts.ts";
 import PostContainer from "site/components/Blog/PostContainer.tsx";
 import PostLoadMoreButton from "site/components/Blog/PostLoadMoreButton.tsx";
+import PostsMostReadList from "site/components/Blog/PostsMostReadList.tsx";
 
 interface BlogPosts {
   /**
    * @ignore
    */
-  posts: BlogPost[];
+  posts: PreviewPost[];
   /**
    * @ignore
    */
   categories: Category[];
+  /**
+   * @ignore
+   */
+  mostReadPosts?: PreviewPost[];
   /**
    * @title Número de posts por página
    * @description Padrão: 5
@@ -47,6 +53,10 @@ interface BlogPosts {
    * @title Texto do botão "Ver mais"
    */
   buttonLoadMoreText?: string;
+  /**
+   * @title Título da lista de posts mais acessados
+   */
+  mostReadPostsTitle?: string;
 }
 
 export default function BlogPosts({
@@ -56,7 +66,9 @@ export default function BlogPosts({
   socialMedia,
   sidebar,
   hasMorePosts,
-  buttonLoadMoreText = "Ver mais notícias",
+  buttonLoadMoreText,
+  mostReadPostsTitle,
+  mostReadPosts,
 }: SectionProps<typeof loader>) {
   const Sidebar = populateSidebar(sidebar, categories, tags);
 
@@ -71,6 +83,12 @@ export default function BlogPosts({
           <PostLoadMoreButton buttonText={buttonLoadMoreText} />
         </PostContainer>
       )}
+      <PostContainer>
+        <PostsMostReadList
+          title={mostReadPostsTitle}
+          posts={mostReadPosts}
+        />
+      </PostContainer>
     </div>
   );
 }
@@ -83,14 +101,14 @@ export async function loader(
   const url = new URL(req.url);
   const urlParams = new URLSearchParams(url.search);
   const page = urlParams.get("page") ?? 1;
-  const sort: SortBy = urlParams.get("sort") ?? "date_desc";
+  const sort = urlParams.get("sort") ?? "date_desc";
   const search = urlParams.get("search") ?? "";
   const tag = urlParams.get("tag") ?? "";
   const category = urlParams.get("category") ?? "";
 
   const posts = await fetchPosts(ctx);
 
-  const filteredPosts = handlePosts(posts, sort, {
+  const filteredPosts = handlePosts(posts, sort as SortBy, {
     page: Number(page),
     postsPerPage: props.postsPerPage,
     keyword: search,
@@ -98,6 +116,7 @@ export async function loader(
     category,
   });
   const mappedPosts = mapPostPreviews(filteredPosts.posts);
+  const mostReadPosts = mapMostReadPosts(posts);
   const categories = getUniqueCategories(posts);
   const tags = getUniqueTags(posts);
 
@@ -108,6 +127,7 @@ export async function loader(
     total: filteredPosts.total,
     categories,
     tags,
+    mostReadPosts,
   };
 }
 

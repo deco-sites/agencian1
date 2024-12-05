@@ -66,12 +66,6 @@
             "postsPerPage": 3
           },
           {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "blog-more-content"
-            }
-          },
-          {
             "__resolveType": "footer-principal"
           },
           {

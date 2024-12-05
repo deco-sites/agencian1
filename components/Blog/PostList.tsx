@@ -1,5 +1,5 @@
-import { type BlogPost } from "apps/blog/types.ts";
 import { type SocialMedia } from "./PostShare.tsx";
+import { type PreviewPost } from "site/sdk/posts.ts";
 import { clx } from "site/sdk/clx.ts";
 import PostTitle from "site/components/Blog/PostTitle.tsx";
 import PostShare from "./PostShare.tsx";
@@ -8,7 +8,7 @@ import PostContent from "site/components/Blog/PostContent.tsx";
 import PostButton from "site/components/Blog/PostButton.tsx";
 
 interface Props {
-  posts: BlogPost[];
+  posts: PreviewPost[];
   socialMedia?: SocialMedia[];
 }
 
@@ -28,7 +28,7 @@ export default function PostList({ posts, socialMedia }: Props) {
 }
 
 function PostItem(
-  { title, image, slug, excerpt, socialMedia }: BlogPost & {
+  { title, image, slug, excerpt, socialMedia }: PreviewPost & {
     socialMedia?: SocialMedia[];
   },
 ) {
@@ -42,7 +42,13 @@ function PostItem(
     >
       <PostTitle link={link} title={title} />
       <PostShare socialMedia={socialMedia} />
-      <PostImage link={link} src={image} borderRadius={10} />
+      <PostImage
+        link={link}
+        src={image}
+        borderRadius={10}
+        height={265}
+        width={750}
+      />
       <PostContent content={excerpt} clamp={2} />
       <PostButton link={link} text="Continue lendo" />
     </article>

@@ -1,22 +1,32 @@
-const CLASS_NAMES =
-  "mb-[-10px] text-32 mobile:text-20 font-archimoto-medium font-black text-white";
+import { clx } from "site/sdk/clx.ts";
 
 export default function PostTitle({
   title,
   link,
+  clamp = 0,
+  fontSizeDesktop = 32,
+  fontSizeMobile = 20,
 }: {
   title: string;
   link?: string;
+  clamp?: number;
+  fontSizeDesktop?: number;
+  fontSizeMobile?: number;
 }) {
+  const classNames = clx(
+    `mb-[-10px] text-[${fontSizeDesktop}px] mobile:text-[${fontSizeMobile}px] font-archimoto-medium font-black text-white`,
+    clamp ? `line-clamp-${clamp}` : "",
+  );
+
   return link
     ? (
-      <h2 class={CLASS_NAMES}>
-        <a
-          href={link}
-        >
+      <a
+        href={link}
+      >
+        <h2 class={classNames}>
           {title}
-        </a>
-      </h2>
+        </h2>
+      </a>
     )
-    : <h2 class={CLASS_NAMES}>{title}</h2>;
+    : <h2 class={classNames}>{title}</h2>;
 }

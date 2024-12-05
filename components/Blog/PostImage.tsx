@@ -4,9 +4,13 @@ interface Props {
   src?: string;
   link?: string;
   borderRadius?: number;
+  height: number;
+  width: number;
 }
 
-export default function PostImage({ src, link, borderRadius }: Props) {
+export default function PostImage(
+  { src, link, borderRadius, height, width }: Props,
+) {
   if (!src) return null;
 
   const classNames = borderRadius ? `rounded-[${borderRadius}px]` : "";
@@ -14,8 +18,8 @@ export default function PostImage({ src, link, borderRadius }: Props) {
   return link
     ? (
       <a href={link}>
-        <Image src={src} class={classNames} height={265} width={750} />
+        <Image src={src} class={classNames} height={height} width={width} />
       </a>
     )
-    : <Image src={src} class={classNames} height={265} width={750} />;
+    : <Image src={src} class={classNames} height={height} width={width} />;
 }

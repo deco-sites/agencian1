@@ -1,10 +1,12 @@
 import { clx } from "site/sdk/clx.ts";
 
+interface Props {
+  buttonText?: string;
+}
+
 export default function PostLoadMoreButton({
-  buttonText,
-}: {
-  buttonText: string;
-}) {
+  buttonText = "Ver mais",
+}: Props) {
   // TODO: Add the functionality to load more posts
   return (
     <button
