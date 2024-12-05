@@ -97,9 +97,7 @@
               "description": "Agência N1 agora é N1.AG! Somos Agência VTEX, Agência Deco.cx, Partner oficialmente reconhecida e especializada nessas plataformas de e-commerce.",
               "descriptionTemplate": "Agência N1 agora é N1.AG! Somos Agência VTEX, Agência Deco.cx, Partner oficialmente reconhecida e especializada nessas plataformas de e-commerce.",
               "canonical": "https://www.n1.ag/",
-              "jsonLDs": [
-                {}
-              ]
+              "jsonLDs": []
             }
           },
           {

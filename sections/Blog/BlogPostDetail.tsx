@@ -94,14 +94,6 @@ export async function loader(
   const categories = getUniqueCategories(posts);
   const tags = getUniqueTags(posts);
 
-  if (post?.seo) {
-    ctx.seo = {
-      ...ctx.seo,
-      title: post.seo.title ?? ctx.seo?.title,
-      description: post.seo.description ?? ctx.seo?.description,
-    };
-  }
-
   if (post) {
     await ctx.invoke("site/actions/blog/countView.ts", { postSlug: slug });
   }

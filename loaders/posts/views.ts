@@ -16,12 +16,12 @@ async function loader(
   { invoke }: AppContext,
 ): Promise<{ topViewedPosts: TopViewedPost[] }> {
   const drizzle = await invoke.records.loaders.drizzle();
-  const viewsData = await drizzle
+  const topViewedPosts = await drizzle
     .select({
       postSlug: postViews.postSlug,
     }).from(postViews).orderBy(desc(postViews.views)).limit(top);
 
-  return { topViewedPosts: viewsData };
+  return { topViewedPosts };
 }
 
 export default loader;

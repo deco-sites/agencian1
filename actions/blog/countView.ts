@@ -1,4 +1,4 @@
-import type AppContext from "site/apps/deco/records.ts";
+import { type AppContext } from "site/apps/deco/records.ts";
 import { postViews } from "site/db/schema.ts";
 import { eq } from "drizzle-orm";
 
