@@ -6,10 +6,15 @@ import { type SocialMedia } from "site/components/Blog/PostShare.tsx";
 import { type Category } from "site/components/Blog/SidebarCategories.tsx";
 import { type Tag } from "site/components/Blog/SidebarTags.tsx";
 import { getRecordsByPath } from "apps/blog/utils/records.ts";
-import { getUniqueCategories, getUniqueTags } from "site/sdk/posts.ts";
+import {
+  getUniqueCategories,
+  getUniqueTags,
+  mapPostPreviews,
+} from "site/sdk/posts.ts";
 import PostList from "site/components/Blog/PostList.tsx";
 import handlePosts from "site/sdk/posts.ts";
 import PostContainer from "site/components/Blog/PostContainer.tsx";
+import PostLoadMoreButton from "site/components/Blog/PostLoadMoreButton.tsx";
 
 interface BlogPosts {
   /**
@@ -62,7 +67,7 @@ export default function BlogPosts({
       </PostContainer>
       {hasMorePosts && (
         <PostContainer>
-          <p class="m-auto">{buttonLoadMoreText}</p>
+          <PostLoadMoreButton buttonText={buttonLoadMoreText} />
         </PostContainer>
       )}
     </div>
@@ -94,12 +99,13 @@ export async function loader(
     tag,
     category,
   });
+  const mappedPosts = mapPostPreviews(filteredPosts.posts);
   const categories = getUniqueCategories(posts);
   const tags = getUniqueTags(posts);
 
   return {
     ...props,
-    posts: filteredPosts.posts,
+    posts: mappedPosts,
     hasMorePosts: filteredPosts.hasMorePosts,
     total: filteredPosts.total,
     categories,

@@ -218,3 +218,15 @@ export const getUniqueTags = (posts: BlogPost[]): TagType[] => {
     slug: slugify(tag, { lower: true }),
   }));
 };
+
+/**
+ * Maps blog posts to their preview format containing only essential fields
+ */
+export const mapPostPreviews = (posts: BlogPost[]) => {
+  return posts.map((post) => ({
+    title: post.title,
+    excerpt: post.excerpt,
+    slug: post.slug,
+    image: post.image ?? "",
+  }));
+};

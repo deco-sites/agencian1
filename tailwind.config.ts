@@ -13,6 +13,7 @@ export default {
       "base-150": "#F3F4F7",
       "base-400": "#9B9B9B",
       "gray-58": "#585858",
+      "accent-hover": "#F8BC33",
     },
     fontFamily: {
       "montserrat": "Montserrat",

@@ -8904,6 +8904,9 @@ details.collapse summary::-webkit-details-marker {
 .leading-\[38px\] {
   line-height: 38px;
 }
+.leading-\[48px\] {
+  line-height: 48px;
+}
 .leading-\[88px\] {
   line-height: 88px;
 }
@@ -10502,6 +10505,11 @@ details.collapse summary::-webkit-details-marker {
 
 .hover\:bg-\[rgba\(255\2c _255\2c _255\2c _0\.15\)\]:hover {
   background-color: rgba(255, 255, 255, 0.15);
+}
+
+.hover\:bg-accent-hover:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 188 51 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-base-content:hover {
@@ -13544,6 +13552,10 @@ details.collapse summary::-webkit-details-marker {
 
   .mobile\:leading-\[24px\] {
     line-height: 24px;
+  }
+
+  .mobile\:leading-\[38px\] {
+    line-height: 38px;
   }
 
   .mobile\:leading-\[56px\] {
