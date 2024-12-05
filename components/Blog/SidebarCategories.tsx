@@ -31,7 +31,7 @@ export default function SidebarCategories({
 }
 
 function CategoryItem({ name, slug, count }: Category) {
-  const link = `/nosso-blog?category=${slug}`;
+  const link = `/blog?category=${slug}`;
   return (
     <li
       class={clx(

@@ -31,7 +31,7 @@ function TagItem({ name, slug }: Tag) {
   return (
     <li class="inline-flex">
       <a
-        href={`/nosso-blog?tag=${slug}`}
+        href={`/blog?tag=${slug}`}
         class={clx(
           "flex px-[14px] rounded-[30px] border border-white",
           "text-14 text-white text-center font-noto-sans duration-300",
