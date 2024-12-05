@@ -1,5 +1,5 @@
 import type { Props as ActionProps } from "site/actions/blog/submitNewsletter.ts";
-import { signal } from "@preact/signals";
+import { useSignal } from "@preact/signals";
 import { clx } from "site/sdk/clx.ts";
 import { useCallback, useState } from "preact/hooks";
 import { invoke } from "site/runtime.ts";
@@ -10,11 +10,6 @@ import SuccessMessage from "site/components/Blog/SidebarNewsletter/SuccessMessag
 import ErrorMessage from "site/components/Blog/SidebarNewsletter/ErrorMessage.tsx";
 import Button from "site/components/Blog/SidebarNewsletter/Button.tsx";
 import LoadingSpinner from "site/components/Blog/SidebarNewsletter/LoadingSpinner.tsx";
-
-const isLoading = signal(false);
-const showSuccess = signal(false);
-const showError = signal(false);
-const errorMessage = signal("");
 
 export interface Props {
   title?: string;
@@ -29,6 +24,11 @@ export default function SidebarNewsletter({
   emailPlaceholder = "Email",
   submitButtonText = "Enviar",
 }: Props) {
+  const isLoading = useSignal(false);
+  const showSuccess = useSignal(false);
+  const showError = useSignal(false);
+  const errorMessage = useSignal("");
+
   const [formData, setFormData] = useState<ActionProps>({
     name: "",
     email: "",

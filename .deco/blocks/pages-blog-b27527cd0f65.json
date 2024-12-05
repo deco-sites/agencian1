@@ -81,6 +81,12 @@
                 {}
               ]
             }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Content/ButtonTop.tsx"
+            }
           }
         ]
       }

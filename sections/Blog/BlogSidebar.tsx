@@ -1,6 +1,6 @@
 import { type Category } from "site/components/Blog/SidebarCategories.tsx";
 import { type Tag } from "site/components/Blog/SidebarTags.tsx";
-import SidebarSearch from "site/components/Blog/SidebarSearch.tsx";
+import SidebarSearch from "site/islands/Blog/BlogSearch.tsx";
 import SidebarNewsletter from "site/islands/Blog/BlogNewsletter.tsx";
 import SidebarCategories from "site/components/Blog/SidebarCategories.tsx";
 import SidebarTags from "site/components/Blog/SidebarTags.tsx";
