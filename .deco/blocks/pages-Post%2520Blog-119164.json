@@ -57,6 +57,33 @@
             "__resolveType": "site/sections/Blog/BlogBreadcrumb.tsx"
           },
           {
+            "__resolveType": "site/sections/Blog/BlogPostDetail.tsx",
+            "post": {},
+            "sidebar": [
+              {
+                "__resolveType": "blog-sidebar"
+              }
+            ],
+            "socialMedia": [
+              {
+                "name": "Facebook"
+              },
+              {
+                "name": "X"
+              },
+              {
+                "name": "Instagram"
+              },
+              {
+                "name": "Linkedin"
+              },
+              {
+                "name": "WhatsApp"
+              }
+            ],
+            "mostReadPostsTitle": "Mais lidas do blog"
+          },
+          {
             "__resolveType": "footer-principal"
           }
         ]

@@ -28,7 +28,7 @@ export default function PostList({ posts, socialMedia }: Props) {
 }
 
 function PostItem(
-  { title, image, slug, excerpt, socialMedia }: PreviewPost & {
+  { title, image, alt, slug, excerpt, socialMedia }: PreviewPost & {
     socialMedia?: SocialMedia[];
   },
 ) {
@@ -45,6 +45,7 @@ function PostItem(
       <PostImage
         link={link}
         src={image}
+        alt={alt}
         borderRadius={10}
         height={265}
         width={750}

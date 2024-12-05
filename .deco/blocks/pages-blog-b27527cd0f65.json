@@ -80,7 +80,10 @@
               {
                 "name": "WhatsApp"
               }
-            ]
+            ],
+            "post": {},
+            "mostReadPostsTitle": "Mais lidas do blog",
+            "buttonLoadMoreText": "Ver mais notícias"
           },
           {
             "__resolveType": "footer-principal"

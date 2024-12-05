@@ -3,6 +3,7 @@ import { clx } from "site/sdk/clx.ts";
 
 interface Props {
   src?: string;
+  alt?: string;
   link?: string;
   borderRadius?: number;
   height: number;
@@ -10,7 +11,7 @@ interface Props {
 }
 
 export default function PostImage(
-  { src, link, borderRadius, height, width }: Props,
+  { src, link, borderRadius, height, width, alt }: Props,
 ) {
   if (!src) return null;
 
@@ -22,8 +23,22 @@ export default function PostImage(
   return link
     ? (
       <a href={link}>
-        <Image src={src} class={classNames} height={height} width={width} />
+        <Image
+          src={src}
+          class={classNames}
+          height={height}
+          width={width}
+          alt={alt}
+        />
       </a>
     )
-    : <Image src={src} class={classNames} height={height} width={width} />;
+    : (
+      <Image
+        src={src}
+        class={classNames}
+        height={height}
+        width={width}
+        alt={alt}
+      />
+    );
 }

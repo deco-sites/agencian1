@@ -34,6 +34,7 @@ function PostItem({
   image,
   excerpt,
   slug,
+  alt,
 }: PreviewPost) {
   const link = `/nosso-blog/post?slug=${slug}`;
   return (
@@ -46,6 +47,7 @@ function PostItem({
       <PostImage
         link={link}
         src={image}
+        alt={alt}
         borderRadius={10}
         height={300}
         width={340}

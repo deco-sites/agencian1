@@ -14,6 +14,7 @@ export interface PreviewPost {
   title: string;
   excerpt: string;
   image: string;
+  alt: string;
 }
 
 /**
@@ -258,6 +259,7 @@ export const mapPostPreviews = (posts: BlogPost[]): PreviewPost[] => {
     excerpt: post.excerpt,
     slug: post.slug,
     image: post.image ?? "",
+    alt: post.alt ?? "",
   }));
 };
 
@@ -272,5 +274,6 @@ export const mapMostReadPosts = (posts: BlogPost[]): PreviewPost[] => {
     excerpt: post.excerpt,
     slug: post.slug,
     image: post.image ?? "",
+    alt: post.alt ?? "",
   }));
 };

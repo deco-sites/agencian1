@@ -13649,6 +13649,11 @@ details.collapse summary::-webkit-details-marker {
   font-family: Noto Sans;
 }
 
+.\[\&_\*\]\:\!text-14 * {
+  font-size: 14px !important;
+  line-height: 19.6px !important;
+}
+
 .\[\&_\*\]\:\!text-48 * {
   font-size: 48px !important;
   line-height: 57.6px !important;
@@ -13711,6 +13716,10 @@ details.collapse summary::-webkit-details-marker {
 
 .\[\&_\*\]\:font-normal * {
   font-weight: 400;
+}
+
+.\[\&_\*\]\:\!leading-6 * {
+  line-height: 1.5rem !important;
 }
 
 .\[\&_\*\]\:\!leading-\[19\.4px\] * {
@@ -13897,6 +13906,11 @@ details.collapse summary::-webkit-details-marker {
   width: 35% !important;
 }
 
+.\[\&_a\]\:\!text-secondary a {
+  --tw-text-opacity: 1 !important;
+  color: var(--fallback-s,oklch(var(--s)/var(--tw-text-opacity))) !important;
+}
+
 @media (min-width: 1280px) {
 
   .xl\:\[\&_a\]\:\!w-\[25\%\] a {
@@ -13911,9 +13925,31 @@ details.collapse summary::-webkit-details-marker {
   }
 }
 
+.\[\&_a_span\]\:\!text-secondary a span {
+  --tw-text-opacity: 1 !important;
+  color: var(--fallback-s,oklch(var(--s)/var(--tw-text-opacity))) !important;
+}
+
+.\[\&_p\:empty\]\:hidden p:empty {
+  display: none;
+}
+
+.\[\&_p_span\:first-child\]\:mt-4 p span:first-child {
+  margin-top: 1rem;
+}
+
+.\[\&_p_span\:first-child\]\:inline-block p span:first-child {
+  display: inline-block;
+}
+
 .\[\&_span\]\:\!text-14 span {
   font-size: 14px !important;
   line-height: 19.6px !important;
+}
+
+.\[\&_span\]\:\!text-white span {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
 @media (min-width: 1280px) {
