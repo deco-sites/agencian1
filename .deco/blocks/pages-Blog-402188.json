@@ -54,7 +54,7 @@
             "__resolveType": "blog-hero"
           },
           {
-            "__resolveType": "site/sections/Blog/BlogBreadcrumb.tsx"
+            "__resolveType": "blog-breadcrumb"
           },
           {
             "__resolveType": "site/sections/Blog/BlogPosts.tsx",

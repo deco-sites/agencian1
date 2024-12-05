@@ -6344,6 +6344,12 @@ details.collapse summary::-webkit-details-marker {
 .box-border {
   box-sizing: border-box;
 }
+.\!line-clamp-1 {
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 1 !important;
+}
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;
@@ -7129,10 +7135,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .translate-y-\[200\%\] {
   --tw-translate-y: 200%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-.translate-y-\[2px\] {
-  --tw-translate-y: 2px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .-rotate-\[17deg\] {
@@ -12845,6 +12847,10 @@ details.collapse summary::-webkit-details-marker {
 
   .mobile\:mb-\[15px\] {
     margin-bottom: 15px;
+  }
+
+  .mobile\:mb-\[20px\] {
+    margin-bottom: 20px;
   }
 
   .mobile\:mb-\[23px\] {

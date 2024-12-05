@@ -1,99 +1,95 @@
 import { AppContext } from "apps/blog/mod.ts";
-import { BlogPost } from "apps/blog/types.ts";
-import { getRecordsByPath } from "apps/blog/utils/records.ts";
+import { fetchPostBySlug } from "site/sdk/posts.ts";
+import { clx } from "site/sdk/clx.ts";
 
 interface BreadcrumbItem {
-  /**@title Nome da Categoria */
-  /**@description (ex: Serviços) */
-  category?: string;
-  /**@title Link da Categoria */
+  category: string;
   link?: string;
 }
 
 interface Props {
-  /**@title Itens */
-  /**@maxItems 1 */
+  /**
+   * @title Título
+   */
+  title?: string;
+  /**
+   * @ignore
+   */
   items?: BreadcrumbItem[];
+}
+
+function BreadcrumbItem(
+  { category, link, isLast }: BreadcrumbItem & { isLast: boolean },
+) {
+  if (isLast) {
+    return (
+      <li class="relative flex items-center">
+        <span class="text-secondary inline-block !line-clamp-1">
+          {category}
+        </span>
+      </li>
+    );
+  }
+
+  return (
+    <li class="relative flex items-center">
+      <a
+        href={link}
+        class="hover:underline n1-breadcrumb__item inline-block"
+      >
+        {category}
+      </a>
+    </li>
+  );
 }
 
 function Breadcrumb({ items }: Props) {
   return (
-    <>
-      <div class="n1-breadcrumb md:n1-container md:px-[120px] mobile:px-[20px] py-[40px] mobile:py-[20px] ">
-        <ul class="text-[#ffffff] h-[52px] flex items-center gap-x-[35px] rounded-[100px] bg-[rgba(255,_255,_255,_0.10)] px-[20px] font-archimoto-medium text-14 font-black">
-          <li class="relative">
-            <a
-              href={"/"}
-              class="n1-breadcrumb__item hover:underline inline-block translate-y-[2px]"
-            >
-              Home
-            </a>
-          </li>
-          {items &&
-            items?.map(({ category, link }, idx) => {
-              const subcategory = items.length == idx + 1;
-
-              if (subcategory) {
-                return (
-                  <>
-                    <li class="relative">
-                      <a class="text-secondary inline-block translate-y-[2px]">
-                        {category}
-                      </a>
-                    </li>
-                  </>
-                );
-              } else {
-                return (
-                  <>
-                    <li class="relative">
-                      <a
-                        href={link}
-                        style={{ pointerEvents: "all" }}
-                        class="hover:underline n1-breadcrumb__item inline-block translate-y-[2px]"
-                      >
-                        {category}
-                      </a>
-                    </li>
-                  </>
-                );
-              }
-            })}
-        </ul>
-      </div>
-    </>
+    <div class="max-w-[1440px] mx-auto px-[20px] lg:px-[120px] mb-[40px] mobile:mb-[20px]">
+      <ul
+        class={clx(
+          "text-[#ffffff] h-[50px] px-[20px] pt-[4px]",
+          "flex items-center gap-x-[35px]",
+          "rounded-[100px] bg-[rgba(255,_255,_255,_0.10)]",
+          "font-archimoto-medium text-14 font-black",
+        )}
+      >
+        <BreadcrumbItem
+          category="Home"
+          link="/"
+          isLast={false}
+        />
+        {items?.map((item, idx) => (
+          <BreadcrumbItem
+            {...item}
+            isLast={items.length === idx + 1}
+            key={item.category}
+          />
+        ))}
+      </ul>
+    </div>
   );
 }
 
 export const loader = async (props: Props, req: Request, ctx: AppContext) => {
-  const hasDetailPage = new URLPattern({ pathname: "/blog/:slug" }).test(
-    new URL(req.url).pathname,
-  );
+  const url = new URL(req.url);
+  const hasDetailPage = url.pathname.includes("/blog/") &&
+    url.pathname !== "/blog";
 
-  const items: Props["items"] = [
+  const items: BreadcrumbItem[] = [
     {
-      category: "Nosso Blog",
+      category: props.title ?? "Blog",
       link: "/blog",
     },
   ];
 
   if (hasDetailPage) {
-    const url = new URL(req.url);
-    const params = url.searchParams;
-    const slug = params.get("slug") ?? "";
-    const COLLECTION_PATH = "collections/blog/posts";
-    const ACCESSOR = "post";
+    const slug = url.pathname.split("/blog/")[1];
+    const post = await fetchPostBySlug(ctx, slug);
 
-    const posts = await getRecordsByPath<BlogPost>(
-      ctx,
-      COLLECTION_PATH,
-      ACCESSOR,
-    );
-
-    const post = posts.find(({ slug: s }) => s == slug);
-    if (post) {
+    if (post?.title) {
       items.push({
-        category: post?.categories?.[0]?.name,
+        category: post.title,
         link: "",
       });
     }
