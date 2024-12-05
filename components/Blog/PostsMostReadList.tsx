@@ -22,7 +22,7 @@ export default function PostsMostReadList({
   return (
     <div class="flex flex-col gap-y-[30px]">
       <SidebarTitle title={title} />
-      <div class="grid grid-cols-[repeat(2,380px)] gap-[30px]">
+      <div class="grid grid-cols-[1fr] md:grid-cols-[repeat(2,380px)] gap-[30px]">
         {posts.map((post) => <PostItem key={post.slug} {...post} />)}
       </div>
     </div>

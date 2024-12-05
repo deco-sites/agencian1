@@ -14,7 +14,7 @@ export default function PostTitle({
   fontSizeMobile?: number;
 }) {
   const classNames = clx(
-    `mb-[-10px] text-[${fontSizeDesktop}px] mobile:text-[${fontSizeMobile}px] font-archimoto-medium font-black text-white`,
+    `mb-[-10px] text-[${fontSizeMobile}px] md:text-[${fontSizeDesktop}px] font-archimoto-medium font-black text-white`,
     clamp ? `line-clamp-${clamp}` : "",
   );
 

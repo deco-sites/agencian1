@@ -7316,17 +7316,14 @@ details.collapse summary::-webkit-details-marker {
 .grid-cols-\[0_1fr_0\] {
   grid-template-columns: 0 1fr 0;
 }
-.grid-cols-\[1fr_380px\] {
-  grid-template-columns: 1fr 380px;
+.grid-cols-\[1fr\] {
+  grid-template-columns: 1fr;
 }
 .grid-cols-\[1fr_auto\] {
   grid-template-columns: 1fr auto;
 }
 .grid-cols-\[48px_1fr_48px\] {
   grid-template-columns: 48px 1fr 48px;
-}
-.grid-cols-\[repeat\(2\2c 380px\)\] {
-  grid-template-columns: repeat(2,380px);
 }
 .grid-cols-\[repeat\(2\2c _1fr\)\] {
   grid-template-columns: repeat(2, 1fr);
@@ -7575,10 +7572,6 @@ details.collapse summary::-webkit-details-marker {
 .gap-x-\[22px\] {
   -moz-column-gap: 22px;
        column-gap: 22px;
-}
-.gap-x-\[30px\] {
-  -moz-column-gap: 30px;
-       column-gap: 30px;
 }
 .gap-x-\[32px\] {
   -moz-column-gap: 32px;
@@ -8290,10 +8283,6 @@ details.collapse summary::-webkit-details-marker {
 .px-\[10px\] {
   padding-left: 10px;
   padding-right: 10px;
-}
-.px-\[120px\] {
-  padding-left: 120px;
-  padding-right: 120px;
 }
 .px-\[12px\] {
   padding-left: 12px;
@@ -12306,6 +12295,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:grid-cols-9 {
     grid-template-columns: repeat(9, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-\[1fr_380px\] {
+    grid-template-columns: 1fr 380px;
   }
 
   .lg\:grid-cols-\[repeat\(3\2c _1fr\)\] {

@@ -73,7 +73,7 @@ export default function BlogPosts({
   const Sidebar = populateSidebar(sidebar, categories, tags);
 
   return (
-    <div class="max-w-[1440px] mx-auto">
+    <div class="flex flex-col max-w-[1440px] mx-auto">
       <PostContainer>
         <PostList posts={posts} socialMedia={socialMedia} />
         {Sidebar}

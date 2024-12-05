@@ -4,7 +4,7 @@ export default function PostContainer({
   children: preact.ComponentChildren;
 }) {
   return (
-    <div class="mb-[40px] px-[120px] grid grid-cols-[1fr_380px] gap-x-[30px]">
+    <div class="mb-[40px] px-[20px] lg:px-[120px] grid grid-cols-[1fr] lg:grid-cols-[1fr_380px] gap-[30px]">
       {children}
     </div>
   );
