@@ -5,11 +5,12 @@ import { type BlogPost } from "apps/blog/types.ts";
 import { type SocialMedia } from "site/components/Blog/PostShare.tsx";
 import { type Category } from "site/components/Blog/SidebarCategories.tsx";
 import { type Tag } from "site/components/Blog/SidebarTags.tsx";
-import { getRecordsByPath } from "apps/blog/utils/records.ts";
 import {
+  fetchPosts,
   getUniqueCategories,
   getUniqueTags,
   mapPostPreviews,
+  type SortBy,
 } from "site/sdk/posts.ts";
 import PostList from "site/components/Blog/PostList.tsx";
 import handlePosts from "site/sdk/posts.ts";
@@ -82,17 +83,14 @@ export async function loader(
   const url = new URL(req.url);
   const urlParams = new URLSearchParams(url.search);
   const page = urlParams.get("page") ?? 1;
+  const sort: SortBy = urlParams.get("sort") ?? "date_desc";
   const search = urlParams.get("search") ?? "";
   const tag = urlParams.get("tag") ?? "";
   const category = urlParams.get("category") ?? "";
 
-  const posts = await getRecordsByPath<BlogPost>(
-    ctx,
-    "collections/blog/posts",
-    "post",
-  );
+  const posts = await fetchPosts(ctx);
 
-  const filteredPosts = handlePosts(posts, "date_desc", {
+  const filteredPosts = handlePosts(posts, sort, {
     page: Number(page),
     postsPerPage: props.postsPerPage,
     keyword: search,

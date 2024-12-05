@@ -63,7 +63,7 @@
                 "__resolveType": "blog-sidebar"
               }
             ],
-            "postsPerPage": 2
+            "postsPerPage": 3
           },
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",

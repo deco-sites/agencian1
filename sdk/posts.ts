@@ -1,11 +1,24 @@
+import type { AppContext } from "@deco/deco";
 import type { BlogPost, Category } from "apps/blog/types.ts";
 import { type Category as CategoryType } from "site/components/Blog/SidebarCategories.tsx";
 import { type Tag as TagType } from "site/components/Blog/SidebarTags.tsx";
 import { slugify } from "https://deno.land/x/slugify@0.3.0/mod.ts";
+import { getRecordsByPath } from "apps/blog/utils/records.ts";
 
 export const VALID_SORT_ORDERS = ["asc", "desc"];
 
 export type SortBy = "date_desc" | "date_asc" | "title_asc" | "title_desc";
+
+/**
+ * Fetches all blog posts from the database
+ */
+export const fetchPosts = async (ctx: AppContext) => {
+  return await getRecordsByPath<BlogPost>(
+    ctx,
+    "collections/blog/posts",
+    "post",
+  );
+};
 
 /**
  * Returns an sorted BlogPost list
