@@ -66,21 +66,15 @@ function NavItem({ item, btnTextMenu }: Props) {
       <li
         class={clx(
           `n1-header__navlink ${
-            nameItemScape === "blog" ? "active--tooltip" : ""
-          }
-        ${
             children && children.length > 0
               ? "n1-header__navlink--active relative pr-[25px] pl-[10px] cursor-pointer hover:is-active hover:before:rotate-[135deg] hover:after:rotate-[45deg] hover:before:border-secondary hover:after:border-secondary hover:text-secondary"
               : ""
           } 
           group flex justify-between text-16 font-archimoto-medium uppercase whitespace-nowrap is-${nameItemScape} items-center`,
         )}
-        data-tip={`${nameItemScape === "blog" ? "Em breve" : ""}`}
       >
         <a
-          href={`${
-            url && nameItemScape !== "blog" ? url : "javascript:void(0)"
-          }`}
+          href={`${url ? url : "javascript:void(0)"}`}
           style={{ pointerEvents: `${url ? "all" : "none"}` }}
           class="overflow-y-hidden h-5 mr-[10px]"
         >

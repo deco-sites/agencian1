@@ -66,14 +66,14 @@ function Breadcrumb({ items }: Props) {
 }
 
 export const loader = async (props: Props, req: Request, ctx: AppContext) => {
-  const hasDetailPage = new URLPattern({ pathname: "/nosso-blog/post" }).test(
-    req.url,
+  const hasDetailPage = new URLPattern({ pathname: "/blog/:slug" }).test(
+    new URL(req.url).pathname,
   );
 
   const items: Props["items"] = [
     {
       category: "Nosso Blog",
-      link: "/nosso-blog",
+      link: "/blog",
     },
   ];
 

@@ -36,7 +36,7 @@ function PostItem({
   slug,
   alt,
 }: PreviewPost) {
-  const link = `/nosso-blog/post?slug=${slug}`;
+  const link = `/blog/${slug}`;
   return (
     <article
       class={clx(

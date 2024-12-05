@@ -78,9 +78,7 @@ function Menu({ items, whatsapp, selectedLanguage }: Props) {
       <ul class="flex-grow flex flex-col divide-y divide-neutral-300 ">
         {items.map((item) => {
           return (
-            <li
-              class={`pt-[16px] ${item.name === "Blog" ? "hidden" : ""}`}
-            >
+            <li class="pt-[16px]">
               <a
                 href={`${item?.url ? item?.url : "javascript:void(0)"}`}
               >

@@ -32,7 +32,7 @@ function PostItem(
     socialMedia?: SocialMedia[];
   },
 ) {
-  const link = `/nosso-blog/post?slug=${slug}`;
+  const link = `/blog/${slug}`;
   return (
     <article
       class={clx(

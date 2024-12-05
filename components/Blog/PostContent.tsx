@@ -7,7 +7,7 @@ export default function PostContent({
   content: string;
   clamp?: number;
 }) {
-  console.log(content);
+  // console.log(content);
   return (
     <div
       class={clx(

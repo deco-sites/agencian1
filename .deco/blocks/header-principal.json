@@ -181,7 +181,8 @@
       "name": "Blog",
       "image": [],
       "children": [],
-      "nameBlock": "blog"
+      "nameBlock": "blog",
+      "btnUrlMenu": "/blog"
     }
   ],
   "whatsapp": "5521965744132",
@@ -189,7 +190,10 @@
     "name": "q",
     "action": "/s",
     "loader": {
-      "data": { "products": [], "searches": [] },
+      "data": {
+        "products": [],
+        "searches": []
+      },
       "__resolveType": "resolved"
     },
     "placeholder": "What are you looking for?"

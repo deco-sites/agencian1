@@ -81,8 +81,7 @@ export async function loader(
   ctx: AppContext,
 ) {
   const url = new URL(req.url);
-  const urlParams = new URLSearchParams(url.search);
-  const slug = urlParams.get("slug") ?? "";
+  const slug = url.pathname.split("/blog/")[1] ?? "";
 
   const posts = await fetchPosts(ctx);
   const post = posts.find((post) => post.slug === slug);
@@ -90,6 +89,14 @@ export async function loader(
   const mostReadPosts = mapMostReadPosts(posts);
   const categories = getUniqueCategories(posts);
   const tags = getUniqueTags(posts);
+
+  if (post?.seo) {
+    ctx.seo = {
+      ...ctx.seo,
+      title: post.seo.title ?? ctx.seo.title,
+      description: post.seo.description ?? ctx.seo.description,
+    };
+  }
 
   return {
     ...props,

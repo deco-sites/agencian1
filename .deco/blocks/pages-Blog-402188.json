@@ -1,6 +1,6 @@
 {
-  "name": "Post Blog",
-  "path": "/nosso-blog/post",
+  "name": "Blog",
+  "path": "/blog",
   "sections": {
     "variants": [
       {
@@ -57,13 +57,13 @@
             "__resolveType": "site/sections/Blog/BlogBreadcrumb.tsx"
           },
           {
-            "__resolveType": "site/sections/Blog/BlogPostDetail.tsx",
-            "post": {},
+            "__resolveType": "site/sections/Blog/BlogPosts.tsx",
             "sidebar": [
               {
                 "__resolveType": "blog-sidebar"
               }
             ],
+            "postsPerPage": 3,
             "socialMedia": [
               {
                 "name": "Facebook"
@@ -81,18 +81,37 @@
                 "name": "WhatsApp"
               }
             ],
-            "mostReadPostsTitle": "Mais lidas do blog"
+            "post": {},
+            "mostReadPostsTitle": "Mais lidas do blog",
+            "buttonLoadMoreText": "Ver mais notícias"
           },
           {
             "__resolveType": "footer-principal"
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "website/sections/Seo/SeoV2.tsx",
+              "title": "N1.AG | Especializada em e-commerce e plataforma VTEX",
+              "titleTemplate": "N1.AG | Especializada em e-commerce e plataforma VTEX",
+              "description": "Agência N1 agora é N1.AG! Somos Agência VTEX, Agência Deco.cx, Partner oficialmente reconhecida e especializada nessas plataformas de e-commerce.",
+              "descriptionTemplate": "Agência N1 agora é N1.AG! Somos Agência VTEX, Agência Deco.cx, Partner oficialmente reconhecida e especializada nessas plataformas de e-commerce.",
+              "canonical": "https://www.n1.ag/",
+              "jsonLDs": [
+                {}
+              ]
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Content/ButtonTop.tsx"
+            }
           }
         ]
       }
     ],
     "__resolveType": "website/flags/multivariate.ts"
-  },
-  "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },
   "__resolveType": "website/pages/Page.tsx"
 }
