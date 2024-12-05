@@ -1,4 +1,5 @@
 import Image from "apps/website/components/Image.tsx";
+import { clx } from "site/sdk/clx.ts";
 
 interface Props {
   src?: string;
@@ -13,7 +14,10 @@ export default function PostImage(
 ) {
   if (!src) return null;
 
-  const classNames = borderRadius ? `rounded-[${borderRadius}px]` : "";
+  const classNames = clx(
+    `w-full h-auto lg:h-[${height}px] object-cover min-h-[170px]`,
+    borderRadius ? `rounded-[${borderRadius}px]` : "",
+  );
 
   return link
     ? (

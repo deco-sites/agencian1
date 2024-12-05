@@ -17,7 +17,7 @@ import PostList from "site/components/Blog/PostList.tsx";
 import handlePosts from "site/sdk/posts.ts";
 import PostContainer from "site/components/Blog/PostContainer.tsx";
 import PostLoadMoreButton from "site/components/Blog/PostLoadMoreButton.tsx";
-import PostsMostReadList from "site/components/Blog/PostsMostReadList.tsx";
+import MostReadPostsList from "site/components/Blog/MostReadPostsList.tsx";
 
 interface BlogPosts {
   /**
@@ -84,7 +84,7 @@ export default function BlogPosts({
         </PostContainer>
       )}
       <PostContainer>
-        <PostsMostReadList
+        <MostReadPostsList
           title={mostReadPostsTitle}
           posts={mostReadPosts}
         />

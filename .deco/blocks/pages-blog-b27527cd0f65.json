@@ -63,7 +63,24 @@
                 "__resolveType": "blog-sidebar"
               }
             ],
-            "postsPerPage": 3
+            "postsPerPage": 3,
+            "socialMedia": [
+              {
+                "name": "Facebook"
+              },
+              {
+                "name": "X"
+              },
+              {
+                "name": "Instagram"
+              },
+              {
+                "name": "Linkedin"
+              },
+              {
+                "name": "WhatsApp"
+              }
+            ]
           },
           {
             "__resolveType": "footer-principal"

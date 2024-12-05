@@ -57,48 +57,6 @@
             "__resolveType": "site/sections/Blog/BlogBreadcrumb.tsx"
           },
           {
-            "__resolveType": "site/sections/Blog/DetailPost.tsx",
-            "post": {},
-            "asideContent": [
-              {
-                "__resolveType": "website/sections/Rendering/Lazy.tsx",
-                "section": {
-                  "__resolveType": "blog-aside-search"
-                }
-              },
-              {
-                "__resolveType": "website/sections/Rendering/Lazy.tsx",
-                "section": {
-                  "__resolveType": "blog-aside-newsletter"
-                }
-              },
-              {
-                "__resolveType": "website/sections/Rendering/Lazy.tsx",
-                "section": {
-                  "__resolveType": "blog-aside-categories"
-                }
-              },
-              {
-                "__resolveType": "website/sections/Rendering/Lazy.tsx",
-                "section": {
-                  "__resolveType": "blog-aside-tags"
-                }
-              }
-            ],
-            "tags": [
-              {
-                "name": "Teste",
-                "link": "#"
-              }
-            ]
-          },
-          {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "blog-more-content"
-            }
-          },
-          {
             "__resolveType": "footer-principal"
           }
         ]

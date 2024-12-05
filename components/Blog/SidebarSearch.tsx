@@ -28,6 +28,8 @@ export default function SidebarSearch({
       url.searchParams.delete("search");
     }
 
+    url.searchParams.delete("tag");
+    url.searchParams.delete("category");
     url.searchParams.set("page", "1");
     globalThis.window.history.pushState({}, "", url.toString());
     globalThis.window.location.reload();
@@ -37,11 +39,12 @@ export default function SidebarSearch({
     <SidebarContainer>
       <SidebarTitle title={title} />
       <form onSubmit={handleSubmit} class="relative">
-        <Icon
-          id="MagnifyingGlass"
-          size={20}
-          class="absolute left-[15px] top-1/2 transform -translate-y-1/2 text-primary"
-        />
+        <button class="absolute left-[15px] top-1/2 transform -translate-y-1/2 text-primary">
+          <Icon
+            id="MagnifyingGlass"
+            size={20}
+          />
+        </button>
         <SidebarInput
           type="search"
           placeholder={placeholder}

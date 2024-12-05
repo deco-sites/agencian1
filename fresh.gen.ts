@@ -4,7 +4,6 @@
 
 import * as $_app from "./routes/_app.tsx";
 import * as $api_contactform from "./routes/api/contactform.tsx";
-import * as $api_newsletterform from "./routes/api/newsletterform.tsx";
 import * as $AddToCartButton_linx from "./islands/AddToCartButton/linx.tsx";
 import * as $AddToCartButton_nuvemshop from "./islands/AddToCartButton/nuvemshop.tsx";
 import * as $AddToCartButton_shopify from "./islands/AddToCartButton/shopify.tsx";
@@ -13,9 +12,6 @@ import * as $AddToCartButton_vtex from "./islands/AddToCartButton/vtex.tsx";
 import * as $AddToCartButton_wake from "./islands/AddToCartButton/wake.tsx";
 import * as $Blog_BlogNewsletter from "./islands/Blog/BlogNewsletter.tsx";
 import * as $Blog_BlogSearch from "./islands/Blog/BlogSearch.tsx";
-import * as $BlogAsideNewsletter from "./islands/BlogAsideNewsletter.tsx";
-import * as $BlogAsideSearch from "./islands/BlogAsideSearch.tsx";
-import * as $BlogContentPartial from "./islands/BlogContentPartial.tsx";
 import * as $BlueBallAnimation from "./islands/BlueBallAnimation.tsx";
 import * as $ButtonTop from "./islands/ButtonTop.tsx";
 import * as $CasesComponent from "./islands/CasesComponent.tsx";
@@ -47,7 +43,6 @@ const manifest = {
   routes: {
     "./routes/_app.tsx": $_app,
     "./routes/api/contactform.tsx": $api_contactform,
-    "./routes/api/newsletterform.tsx": $api_newsletterform,
   },
   islands: {
     "./islands/AddToCartButton/linx.tsx": $AddToCartButton_linx,
@@ -58,9 +53,6 @@ const manifest = {
     "./islands/AddToCartButton/wake.tsx": $AddToCartButton_wake,
     "./islands/Blog/BlogNewsletter.tsx": $Blog_BlogNewsletter,
     "./islands/Blog/BlogSearch.tsx": $Blog_BlogSearch,
-    "./islands/BlogAsideNewsletter.tsx": $BlogAsideNewsletter,
-    "./islands/BlogAsideSearch.tsx": $BlogAsideSearch,
-    "./islands/BlogContentPartial.tsx": $BlogContentPartial,
     "./islands/BlueBallAnimation.tsx": $BlueBallAnimation,
     "./islands/ButtonTop.tsx": $ButtonTop,
     "./islands/CasesComponent.tsx": $CasesComponent,

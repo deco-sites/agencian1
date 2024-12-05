@@ -3,7 +3,7 @@ import daisyui from "daisyui";
 export default {
   plugins: [daisyui],
   daisyui: { themes: [], logs: false },
-  content: ["./**/*.tsx"],
+  content: ["./**/**/*.{tsx}"],
   theme: {
     container: {
       center: true,
@@ -77,4 +77,11 @@ export default {
       },
     },
   },
+  safelist: [
+    "line-clamp-1",
+    "line-clamp-2",
+    "line-clamp-3",
+    "mobile:text-[20px]",
+    "text-[32px]",
+  ],
 };

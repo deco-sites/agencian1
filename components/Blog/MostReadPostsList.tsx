@@ -11,7 +11,7 @@ export interface Props {
   posts?: PreviewPost[];
 }
 
-export default function PostsMostReadList({
+export default function MostReadPostsList({
   title = "Posts mais acessados",
   posts,
 }: Props) {
@@ -56,6 +56,8 @@ function PostItem({
         clamp={2}
         fontSizeDesktop={24}
         fontSizeMobile={20}
+        leadingDesktop={28}
+        leadingMobile={24}
       />
       <PostContent content={excerpt} />
       <PostButton link={link} text="Saiba mais" />

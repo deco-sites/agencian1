@@ -6,15 +6,21 @@ export default function PostTitle({
   clamp = 0,
   fontSizeDesktop = 32,
   fontSizeMobile = 20,
+  leadingDesktop = 38,
+  leadingMobile = 24,
 }: {
   title: string;
   link?: string;
   clamp?: number;
   fontSizeDesktop?: number;
   fontSizeMobile?: number;
+  leadingDesktop?: number;
+  leadingMobile?: number;
 }) {
   const classNames = clx(
-    `mb-[-10px] text-[${fontSizeMobile}px] md:text-[${fontSizeDesktop}px] font-archimoto-medium font-black text-white`,
+    `mb-[-10px] font-archimoto-medium font-black text-white `,
+    `text-[${fontSizeDesktop}px] mobile:text-[${fontSizeMobile}px]`,
+    `leading-[${leadingDesktop}px] mobile:leading-[${leadingMobile}px]`,
     clamp ? `line-clamp-${clamp}` : "",
   );
 

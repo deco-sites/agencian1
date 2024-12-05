@@ -28,6 +28,16 @@ export const fetchPosts = async (ctx: AppContext) => {
 };
 
 /**
+ * Returns a post by slug from the database
+ */
+export const fetchPostBySlug = async (
+  ctx: AppContext,
+  slug: string,
+): Promise<BlogPost> => {
+  return await ctx.invoke.blog.loaders.BlogPostItem({ slug });
+};
+
+/**
  * Returns an sorted BlogPost list
  *
  * @param posts Posts to be sorted
