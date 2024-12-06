@@ -101,17 +101,17 @@
           {
             "cards": [
               {
-                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b29e7878-a28b-48fb-a99b-1342e7b68023",
+                "Icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/1d7c5612-4584-466d-8abc-1ac5207b6b00/front-end.svg",
                 "title": "<p>Migración del front-end</p>",
                 "description": "<p>La migración separó la interfaz de usuario del back-end de comercio electrónico, preservando la infraestructura de VTEXIO y añadiendo más velocidad y flexibilidad. Este enfoque permitió evaluar el rendimiento de la nueva herramienta de forma aislada, sin interferencias externas, y aceleró el proceso al prescindir de un rediseño completo.</p>"
               },
               {
-                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/cb730e92-31b1-46e3-b979-28b5745b09f5",
+                "Icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/d3645219-bd9f-4954-96f8-7fc9153bfa58/htmx.svg",
                 "title": "<p>Tecnología HTMX</p>",
                 "description": "<p>La implementación de HTMX ha simplificado el desarrollo, permitiendo crear interfaces más ligeras e interactivas con menor dependencia de JavaScript. ¿Cuál es el resultado? Mayor agilidad, tiempos de carga reducidos y una experiencia de usuario significativamente mejorada.</p>"
               },
               {
-                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6b53bb35-c267-4b2c-a42b-3bce0cf785d3",
+                "Icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/53e761c1-4aaa-48af-aa99-389b0a802f54/colaborativo.svg",
                 "title": "<p>Gestión colaborativa</p>",
                 "description": "<p>N1.AG colaboró con Bagaggio durante todo el proceso, utilizando sus conocimientos y herramientas para garantizar que el proyecto se entregara a tiempo, superando las expectativas y satisfaciendo las necesidades del cliente.</p>"
               }
@@ -378,17 +378,17 @@
           {
             "cards": [
               {
-                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/b29e7878-a28b-48fb-a99b-1342e7b68023",
+                "Icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/1d7c5612-4584-466d-8abc-1ac5207b6b00/front-end.svg",
                 "title": "<p>Front-end migration</p>",
                 "description": "<p>The migration separated the user interface from the e-commerce back-end, preserving the VTEXIO infrastructure and adding more speed and flexibility. This approach made it possible to evaluate the performance of the new tool in isolation, without external interference, and accelerated the process by dispensing with a complete redesign.</p>"
               },
               {
-                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/cb730e92-31b1-46e3-b979-28b5745b09f5",
+                "Icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/d3645219-bd9f-4954-96f8-7fc9153bfa58/htmx.svg",
                 "title": "<p>HTMX technology</p>",
                 "description": "<p>The implementation of HTMX has simplified development, making it possible to create lighter, more interactive interfaces with less dependence on JavaScript. The result? Greater agility, reduced loading times and a significantly improved user experience.</p>"
               },
               {
-                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6b53bb35-c267-4b2c-a42b-3bce0cf785d3",
+                "Icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/53e761c1-4aaa-48af-aa99-389b0a802f54/colaborativo.svg",
                 "title": "<p>Collaborative management</p>",
                 "description": "<p>N1.AG worked in partnership with Bagaggio throughout the process, using its skills and tools to ensure that the project was delivered on time, exceeding expectations and meeting the client's needs.</p>"
               }
@@ -650,17 +650,17 @@
           {
             "cards": [
               {
-                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/cb730e92-31b1-46e3-b979-28b5745b09f5",
+                "Icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/1d7c5612-4584-466d-8abc-1ac5207b6b00/front-end.svg",
                 "title": "<p>Migração do front-end</p>",
                 "description": "<p>A migração separou a interface do usuário do back-end do e-commerce, preservando a infraestrutura VTEXIO e adicionando mais velocidade e flexibilidade. Essa abordagem possibilitou avaliar o desempenho da nova ferramenta de forma isolada, sem interferências externas, e acelerou o processo ao dispensar um redesign completo.</p>"
               },
               {
-                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/6b53bb35-c267-4b2c-a42b-3bce0cf785d3",
+                "Icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/d3645219-bd9f-4954-96f8-7fc9153bfa58/htmx.svg",
                 "title": "<p>Tecnologia HTMX</p>",
                 "description": "<p>A implementação do HTMX simplificou o desenvolvimento, possibilitando a criação de interfaces mais leves e interativas com menos dependência de JavaScript. O resultado? Maior agilidade, tempos de carregamento reduzidos e uma experiência do usuário significativamente aprimorada.<span style=\"color: rgb(0, 0, 0); font-size: 11pt\"><br></span></p>"
               },
               {
-                "Icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/c19ecd5e-1eea-49f7-921c-5ba7631a2995",
+                "Icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/53e761c1-4aaa-48af-aa99-389b0a802f54/colaborativo.svg",
                 "title": "<p>Gestão colaborativa</p>",
                 "description": "<p>A <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://N1.AG\">N1.AG</a> atuou em parceria com a Bagaggio ao longo de todo o processo, utilizando suas competências e ferramentas para assegurar a entrega do projeto dentro do prazo, superando expectativas e atendendo às necessidades do cliente.</p>"
               }
