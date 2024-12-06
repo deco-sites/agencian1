@@ -2,7 +2,7 @@ import { type PreviewPost, type SortBy } from "site/sdk/posts.ts";
 import { type SocialMedia } from "site/components/Blog/PostShare.tsx";
 import { clx } from "site/sdk/clx.ts";
 import { invoke } from "site/runtime.ts";
-import { useRef } from "preact/hooks";
+import { useEffect, useRef } from "preact/hooks";
 import { render } from "preact";
 import { PostItem } from "site/components/Blog/PostList.tsx";
 import { useSignal } from "@preact/signals";
@@ -20,10 +20,45 @@ export default function PostLoadMoreButton({
 }: Props) {
   const buttonRef = useRef<HTMLButtonElement>(null);
   const isLoading = useSignal(false);
+  const postContainerRefs = useRef<HTMLElement[]>([]);
+
+  const renderPosts = (posts: PreviewPost[], postList: HTMLElement) => {
+    const fragment = document.createDocumentFragment();
+    postContainerRefs.current = [];
+
+    posts.forEach((post: PreviewPost) => {
+      const postElement = document.createElement("div");
+      render(<PostItem {...post} socialMedia={socialMedia} />, postElement);
+      postElement.style.cssText =
+        "opacity: 0; transform: translateY(20px); transition: all 0.3s ease";
+      fragment.appendChild(postElement);
+      postContainerRefs.current.push(postElement);
+    });
+
+    postList.appendChild(fragment);
+
+    requestAnimationFrame(() => {
+      postContainerRefs.current.forEach((element, index) => {
+        setTimeout(() => {
+          element.style.opacity = "1";
+          element.style.transform = "translateY(0)";
+        }, index * 100);
+      });
+    });
+  };
+
+  const updateURL = (nextPage: number) => {
+    const newUrl = new URL(globalThis.location.href);
+    newUrl.searchParams.set("page", nextPage.toString());
+    globalThis.history.pushState({}, "", newUrl.toString());
+  };
 
   async function handleClick() {
     if (isLoading.value) return;
     isLoading.value = true;
+
+    const postList = document.getElementById("post-list");
+    if (!postList) return;
 
     const urlParams = new URLSearchParams(globalThis.location.search);
     const nextPage = Number(urlParams.get("page") ?? 1) + 1;
@@ -38,49 +73,38 @@ export default function PostLoadMoreButton({
         sort: (urlParams.get("sort") as SortBy) ?? "date_desc",
       });
 
-      const postList = document.getElementById("post-list");
-      if (postList) {
-        let firstNewPostElement: HTMLElement | null = null;
+      renderPosts(posts, postList);
+      updateURL(nextPage);
 
-        posts.forEach((post: PreviewPost, index: number) => {
-          const postElement = document.createElement("div");
-          render(<PostItem {...post} socialMedia={socialMedia} />, postElement);
-          postElement.style.opacity = "0";
-          postElement.style.transform = "translateY(20px)";
-          postElement.style.transition = "all 0.3s ease";
-          postList.appendChild(postElement);
-
-          if (index === 0) {
-            firstNewPostElement = postElement;
-          }
-
-          setTimeout(() => {
-            postElement.style.opacity = "1";
-            postElement.style.transform = "translateY(0)";
-          }, index * 100);
-        });
-
-        if (firstNewPostElement) {
-          setTimeout(() => {
-            firstNewPostElement?.scrollIntoView({
-              behavior: "smooth",
-              block: "center",
-            });
-          }, 100);
-        }
+      if (postContainerRefs.current[0]) {
+        setTimeout(() => {
+          postContainerRefs.current[0]?.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          });
+        }, 100);
       }
-
-      const newUrl = new URL(globalThis.location.href);
-      newUrl.searchParams.set("page", nextPage.toString());
-      globalThis.history.pushState({}, "", newUrl.toString());
 
       if (!hasMorePosts && buttonRef.current) {
         buttonRef.current.remove();
       }
+    } catch (error) {
+      console.error("Failed to load more posts:", error);
     } finally {
       isLoading.value = false;
     }
   }
+
+  useEffect(() => {
+    return () => {
+      postContainerRefs.current.forEach((element) => {
+        if (element && element.parentNode) {
+          element.parentNode.removeChild(element);
+        }
+      });
+      postContainerRefs.current = [];
+    };
+  }, []);
 
   return (
     <button
