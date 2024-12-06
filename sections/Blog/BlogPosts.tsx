@@ -10,15 +10,15 @@ import {
   getMostReadPosts,
   getUniqueCategories,
   getUniqueTags,
+  handlePosts,
   mapPostPreviews,
   type PreviewPost,
   type SortBy,
 } from "site/sdk/posts.ts";
 import { populateSidebar } from "site/sdk/blogSidebar.tsx";
+import PostLoadMoreButton from "site/islands/Blog/PostLoadMoreButton.tsx";
 import PostList from "site/components/Blog/PostList.tsx";
-import handlePosts from "site/sdk/posts.ts";
 import PostContainer from "site/components/Blog/PostContainer.tsx";
-import PostLoadMoreButton from "site/components/Blog/PostLoadMoreButton.tsx";
 import MostReadPostsList from "site/components/Blog/MostReadPostsList.tsx";
 
 interface BlogPosts {

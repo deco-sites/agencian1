@@ -55,4 +55,8 @@ function ButtonTop() {
   );
 }
 
+export function LoadingFallback() {
+  return <></>;
+}
+
 export default ButtonTop;

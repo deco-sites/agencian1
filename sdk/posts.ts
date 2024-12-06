@@ -158,7 +158,7 @@ export const slicePosts = (
  * @param sortBy Sort option (must be: "date_desc" | "date_asc" | "title_asc" | "title_desc" )
  * @param slug Category slug to be filter
  */
-export default function handlePosts(
+export function handlePosts(
   posts: BlogPost[],
   sortBy: SortBy,
   {
