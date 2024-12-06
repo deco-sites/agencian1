@@ -1,13 +1,20 @@
 import Icon, { type AvailableIcons } from "site/components/ui/Icon.tsx";
 
+/**
+ * @titleBy name
+ */
 export interface SocialMedia {
   /**
    * @title Nome da rede social
    */
   name: "Facebook" | "X" | "Instagram" | "Linkedin" | "WhatsApp";
-  /**@title Link da rede social */
+  /**
+   * @title Link da rede social
+   */
   link?: string;
-  /**@title Desabilitar rede social */
+  /**
+   * @title Desabilitar rede social
+   */
   disabledSocial?: boolean;
 }
 

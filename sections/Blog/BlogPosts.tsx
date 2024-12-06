@@ -1,6 +1,6 @@
 import { type Section } from "@deco/deco/blocks";
 import { type SectionProps } from "@deco/deco";
-import { type AppContext } from "apps/blog/mod.ts";
+import { type AppContext } from "site/apps/site.ts";
 import { type SocialMedia } from "site/components/Blog/PostShare.tsx";
 import { type Category } from "site/components/Blog/SidebarCategories.tsx";
 import { type Tag } from "site/components/Blog/SidebarTags.tsx";

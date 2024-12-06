@@ -13,27 +13,34 @@ export interface Props {
 const action = async (
   { postSlug }: Props,
   _req: Request,
-  { invoke }: AppContext,
+  { invoke, monitoring }: AppContext,
 ): Promise<void> => {
-  const drizzle = await invoke.records.loaders.drizzle();
+  try {
+    const drizzle = await invoke.records.loaders.drizzle();
 
-  const existing = await drizzle.select()
-    .from(postViews)
-    .where(eq(postViews.postSlug, postSlug))
-    .get();
+    const existing = await drizzle.select()
+      .from(postViews)
+      .where(eq(postViews.postSlug, postSlug))
+      .get();
 
-  if (existing) {
-    await drizzle.update(postViews)
-      .set({
-        views: existing.views + 1,
+    if (existing) {
+      await drizzle.update(postViews)
+        .set({
+          views: existing.views + 1,
+          lastViewed: new Date().toISOString(),
+        })
+        .where(eq(postViews.postSlug, postSlug));
+    } else {
+      await drizzle.insert(postViews).values({
+        postSlug,
+        views: 1,
         lastViewed: new Date().toISOString(),
-      })
-      .where(eq(postViews.postSlug, postSlug));
-  } else {
-    await drizzle.insert(postViews).values({
+      });
+    }
+  } catch (err) {
+    monitoring?.logger.error("Error counting post views", {
+      error: err,
       postSlug,
-      views: 1,
-      lastViewed: new Date().toISOString(),
     });
   }
 };
