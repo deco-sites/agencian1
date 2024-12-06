@@ -38,7 +38,7 @@
             "excludePaths": []
           }
         },
-        "pathTemplate": "sitemap"
+        "pathTemplate": "sitemap.xml"
       }
     ]
   ],

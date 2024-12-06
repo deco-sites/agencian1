@@ -1,5 +1,5 @@
+import { type BlogPost } from "apps/blog/types.ts";
 import { clx } from "site/sdk/clx.ts";
-import { type PreviewPost } from "site/sdk/posts.ts";
 import SidebarTitle from "site/components/Blog/SidebarTitle.tsx";
 import PostTitle from "site/components/Blog/PostTitle.tsx";
 import PostImage from "site/components/Blog/PostImage.tsx";
@@ -8,7 +8,7 @@ import PostButton from "site/components/Blog/PostButton.tsx";
 
 export interface Props {
   title?: string;
-  posts?: PreviewPost[];
+  posts?: BlogPost[];
 }
 
 export default function MostReadPostsList({
@@ -35,7 +35,7 @@ function PostItem({
   excerpt,
   slug,
   alt,
-}: PreviewPost) {
+}: BlogPost) {
   const link = `/blog/${slug}`;
   return (
     <article

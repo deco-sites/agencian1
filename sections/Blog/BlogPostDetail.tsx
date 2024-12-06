@@ -10,7 +10,6 @@ import {
   getMostReadPosts,
   getUniqueCategories,
   getUniqueTags,
-  type PreviewPost,
 } from "site/sdk/posts.ts";
 import { populateSidebar } from "site/sdk/blogSidebar.tsx";
 import PostDetails from "site/components/Blog/PostDetails.tsx";
@@ -33,7 +32,11 @@ interface BlogPostDetail {
   /**
    * @ignore
    */
-  mostReadPosts?: PreviewPost[];
+  mostReadPosts?: BlogPost[];
+  /**
+   * @ignore
+   */
+  baseUrl?: string;
   /**
    * @title Redes sociais
    */
@@ -61,13 +64,14 @@ export default function BlogPostDetail({
   sidebar,
   mostReadPostsTitle,
   mostReadPosts,
+  baseUrl,
 }: SectionProps<typeof loader>) {
   const Sidebar = populateSidebar(sidebar, categories, tags);
 
   return (
     <div class="flex flex-col max-w-[1440px] mx-auto">
       <PostContainer>
-        <PostDetails post={post} socialMedia={socialMedia} />
+        <PostDetails post={post} socialMedia={socialMedia} baseUrl={baseUrl} />
         {Sidebar}
       </PostContainer>
       <PostContainer>
@@ -117,5 +121,6 @@ export async function loader(
     categories,
     tags,
     mostReadPosts,
+    baseUrl: url.origin,
   };
 }

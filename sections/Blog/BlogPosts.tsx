@@ -5,14 +5,13 @@ import { type SocialMedia } from "site/components/Blog/PostShare.tsx";
 import { type Category } from "site/components/Blog/SidebarCategories.tsx";
 import { type Tag } from "site/components/Blog/SidebarTags.tsx";
 import { type TopViewedPost } from "site/loaders/posts/views.ts";
+import { type BlogPost } from "apps/blog/types.ts";
 import {
   fetchPosts,
   getMostReadPosts,
   getUniqueCategories,
   getUniqueTags,
   handlePosts,
-  mapPostPreviews,
-  type PreviewPost,
   type SortBy,
 } from "site/sdk/posts.ts";
 import { populateSidebar } from "site/sdk/blogSidebar.tsx";
@@ -20,12 +19,13 @@ import PostLoadMoreButton from "site/islands/Blog/PostLoadMoreButton.tsx";
 import PostList from "site/components/Blog/PostList.tsx";
 import PostContainer from "site/components/Blog/PostContainer.tsx";
 import MostReadPostsList from "site/components/Blog/MostReadPostsList.tsx";
+import PostListSEO from "site/components/Blog/SEO/PostListSEO.tsx";
 
 interface BlogPosts {
   /**
    * @ignore
    */
-  posts: PreviewPost[];
+  posts: BlogPost[];
   /**
    * @ignore
    */
@@ -33,7 +33,7 @@ interface BlogPosts {
   /**
    * @ignore
    */
-  mostReadPosts?: PreviewPost[];
+  mostReadPosts?: BlogPost[];
   /**
    * @title Número de posts por página
    * @description Padrão: 5
@@ -81,27 +81,30 @@ export default function BlogPosts({
   const Sidebar = populateSidebar(sidebar, categories, tags);
 
   return (
-    <div class="flex flex-col max-w-[1440px] mx-auto">
-      <PostContainer>
-        <PostList posts={posts} socialMedia={socialMedia} />
-        {Sidebar}
-      </PostContainer>
-      {hasMorePosts && (
+    <>
+      <div class="flex flex-col max-w-[1440px] mx-auto">
         <PostContainer>
-          <PostLoadMoreButton
-            buttonText={buttonLoadMoreText}
-            postsPerPage={postsPerPage}
-            socialMedia={socialMedia}
+          <PostList posts={posts} socialMedia={socialMedia} />
+          {Sidebar}
+        </PostContainer>
+        {hasMorePosts && (
+          <PostContainer>
+            <PostLoadMoreButton
+              buttonText={buttonLoadMoreText}
+              postsPerPage={postsPerPage}
+              socialMedia={socialMedia}
+            />
+          </PostContainer>
+        )}
+        <PostContainer>
+          <MostReadPostsList
+            title={mostReadPostsTitle}
+            posts={mostReadPosts}
           />
         </PostContainer>
-      )}
-      <PostContainer>
-        <MostReadPostsList
-          title={mostReadPostsTitle}
-          posts={mostReadPosts}
-        />
-      </PostContainer>
-    </div>
+      </div>
+      <PostListSEO posts={[...posts, ...mostReadPosts]} />
+    </>
   );
 }
 
@@ -127,7 +130,6 @@ export async function loader(
     tag,
     category,
   });
-  const mappedPosts = mapPostPreviews(filteredPosts.posts);
   const categories = getUniqueCategories(posts);
   const tags = getUniqueTags(posts);
 
@@ -146,7 +148,7 @@ export async function loader(
 
   return {
     ...props,
-    posts: mappedPosts,
+    posts: filteredPosts.posts,
     hasMorePosts: filteredPosts.hasMorePosts,
     total: filteredPosts.total,
     categories,

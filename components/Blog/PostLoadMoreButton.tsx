@@ -1,4 +1,5 @@
-import { type PreviewPost, type SortBy } from "site/sdk/posts.ts";
+import { type BlogPost } from "apps/blog/types.ts";
+import { type SortBy } from "site/sdk/posts.ts";
 import { type SocialMedia } from "site/components/Blog/PostShare.tsx";
 import { useRef } from "preact/hooks";
 import { render } from "preact";
@@ -22,11 +23,11 @@ export default function PostLoadMoreButton({
   const isLoading = useSignal(false);
   const postContainerRefs = useRef<HTMLElement[]>([]);
 
-  const renderPosts = (posts: PreviewPost[], postList: HTMLElement) => {
+  const renderPosts = (posts: BlogPost[], postList: HTMLElement) => {
     const fragment = document.createDocumentFragment();
     postContainerRefs.current = [];
 
-    posts.forEach((post: PreviewPost) => {
+    posts.forEach((post: BlogPost) => {
       const postElement = document.createElement("div");
       render(<PostItem {...post} socialMedia={socialMedia} />, postElement);
       postElement.style.cssText =

@@ -9,14 +9,6 @@ export const VALID_SORT_ORDERS = ["asc", "desc"];
 
 export type SortBy = "date_desc" | "date_asc" | "title_asc" | "title_desc";
 
-export interface PreviewPost {
-  slug: string;
-  title: string;
-  excerpt: string;
-  image: string;
-  alt: string;
-}
-
 /**
  * Fetches all blog posts from the database
  */
@@ -251,34 +243,6 @@ export const getUniqueTags = (posts: BlogPost[]): TagType[] => {
 };
 
 /**
- * Maps blog posts to their preview format containing only essential fields
- */
-export const mapPostPreviews = (posts: BlogPost[]): PreviewPost[] => {
-  return posts.map((post) => ({
-    title: post.title,
-    excerpt: post.excerpt,
-    slug: post.slug,
-    image: post.image ?? "",
-    alt: post.alt ?? "",
-  }));
-};
-
-/**
- * Maps blog posts to their preview format containing only essential fields
- */
-export const mapMostReadPosts = (posts: BlogPost[]): PreviewPost[] => {
-  const filteredPosts = posts.filter((post) => post.title);
-  // TODO: Add the logic to get the most read posts
-  return filteredPosts.map((post) => ({
-    title: post.title,
-    excerpt: post.excerpt,
-    slug: post.slug,
-    image: post.image ?? "",
-    alt: post.alt ?? "",
-  }));
-};
-
-/**
  * Returns a list of the most read posts, limited by the specified number.
  *
  * @param posts All available posts
@@ -289,7 +253,7 @@ export const getMostReadPosts = (
   posts: BlogPost[],
   mostReadSlugs: string[],
   limit: number,
-): PreviewPost[] => {
+): BlogPost[] => {
   const filteredPosts = posts.filter((post) => post.title);
 
   const mostReadPosts = mostReadSlugs
@@ -303,11 +267,5 @@ export const getMostReadPosts = (
     mostReadPosts.push(...additionalPosts);
   }
 
-  return mostReadPosts.slice(0, limit).map((post) => ({
-    title: post.title,
-    excerpt: post.excerpt,
-    slug: post.slug,
-    image: post.image ?? "",
-    alt: post.alt ?? "",
-  }));
+  return mostReadPosts.slice(0, limit);
 };

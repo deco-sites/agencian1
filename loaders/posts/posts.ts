@@ -1,11 +1,6 @@
 import { type AppContext } from "site/apps/deco/blog.ts";
-import {
-  fetchPosts,
-  handlePosts,
-  mapPostPreviews,
-  type PreviewPost,
-  type SortBy,
-} from "site/sdk/posts.ts";
+import { type BlogPost } from "apps/blog/types.ts";
+import { fetchPosts, handlePosts, type SortBy } from "site/sdk/posts.ts";
 
 export interface Props {
   page: number;
@@ -20,21 +15,16 @@ async function loader(
   { page, postsPerPage, keyword, tag, category, sort }: Props,
   _req: Request,
   ctx: AppContext,
-): Promise<{ posts: PreviewPost[]; hasMorePosts: boolean }> {
+): Promise<{ posts: BlogPost[]; hasMorePosts: boolean }> {
   const posts = await fetchPosts(ctx);
 
-  const filteredPosts = handlePosts(posts, sort as SortBy, {
+  return handlePosts(posts, sort as SortBy, {
     page: Number(page),
     postsPerPage,
     keyword,
     tag,
     category,
   });
-
-  return {
-    posts: mapPostPreviews(filteredPosts.posts),
-    hasMorePosts: filteredPosts.hasMorePosts,
-  };
 }
 
 export default loader;
