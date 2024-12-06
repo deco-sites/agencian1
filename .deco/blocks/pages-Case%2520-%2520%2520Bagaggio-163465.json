@@ -571,7 +571,7 @@
                 "images": {
                   "mobile": {
                     "alt": "Banner mobile",
-                    "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/c011203d-8362-4605-9b28-0604284bddf1/Case-bagaggio-(390-x-500-px)-(1).png",
+                    "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/1c5795f4-33d8-4f2f-97a8-82642a14e71f/banner.svg",
                     "width": "390",
                     "height": "500"
                   },
@@ -623,7 +623,7 @@
           {
             "bannerImg": {
               "alt": "banner",
-              "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/e7dcf12c-7b9e-43e5-a722-baeded1c5412/banner-2.svg",
+              "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/b10dbfa2-829f-440c-9d53-f0e119623e79/BANNER-2-(2).svg",
               "widthDesktop": 632,
               "heightDesktop": 372,
               "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/e7dcf12c-7b9e-43e5-a722-baeded1c5412/banner-2.svg"
@@ -673,7 +673,7 @@
           {
             "bannerImg": {
               "alt": "banner",
-              "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/a521f5cf-1d7f-405c-8fc6-71e78cfb78f2/banner-mockup.png",
+              "imageMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/e7bc537c-2a53-4622-8da1-74a5e9225919/Image.png",
               "imageDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/a521f5cf-1d7f-405c-8fc6-71e78cfb78f2/banner-mockup.png",
               "widthDesktop": 596.64,
               "heightDesktop": 451.569
@@ -759,28 +759,28 @@
                   "images": [
                     {
                       "alt": "Bagaggio",
-                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/63d928e8-a47a-4e61-843f-16cd2371a062/Captura-de-tela-2024-11-14-122501.png",
+                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/b6cd0c8d-a913-4ea6-a85c-295cb75acea9/Image-1.png",
                       "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/63d928e8-a47a-4e61-843f-16cd2371a062/Captura-de-tela-2024-11-14-122501.png",
                       "subTitle": "<p>{personalização do produto}</p>",
                       "description": "<p>Nossa solução de personalização de produtos permite que seus clientes criem produtos personalizados. O resultado? Uma conexão mais profunda com sua marca e um aumento significativo nas suas vendas.</p>"
                     },
                     {
                       "alt": "Bagaggio",
-                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/bb273de3-c1d7-44aa-99a9-be9e8d5930e0/destaque---Video-e-360.png",
+                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/d3bd8b90-55f1-4bc6-b1cb-9018b5b3187e/Image.png",
                       "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/bb273de3-c1d7-44aa-99a9-be9e8d5930e0/destaque---Video-e-360.png",
                       "subTitle": "<p>{vídeo e 360º}</p>",
                       "description": "<p><span style=\"color: #ffffff\">Vídeos 360° são a nova fronteira do marketing digital. Com eles, você captura a atenção do seu público por mais tempo, aumenta o tempo de visualização e impulsiona as conversões.</span></p>"
                     },
                     {
                       "alt": "Bagaggio",
-                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/435141e2-eb63-40c9-be64-e15c2d54aec5/Captura-de-tela-2024-11-14-183330.png",
+                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/9c8bb0c6-56f4-4e1b-8f0b-9f45ab297c0c/Image.png",
                       "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/435141e2-eb63-40c9-be64-e15c2d54aec5/Captura-de-tela-2024-11-14-183330.png",
                       "subTitle": "<p>{Compre junto}</p>",
                       "description": "<p>Impulsione seus resultados com nossa ferramenta que aumenta o valor médio das compras. Ao recomendar produtos perfeitos para cada cliente, você incentiva a compra de mais itens por pedido, elevando seus lucros e fidelizando clientes.</p>"
                     },
                     {
                       "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/434222de-bdf2-4f5c-94fa-31bc3b8a7e8c/destaque---flag.png",
-                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/434222de-bdf2-4f5c-94fa-31bc3b8a7e8c/destaque---flag.png",
+                      "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/58ea9cca-b4a7-46e6-9632-effc067d4ddc/Image.png",
                       "alt": "Bagaggio",
                       "subTitle": "<p>{personalização de flag na home e PDP}</p>",
                       "description": "<p><span style=\"font-size: 12pt\">As flags de destaque editáveis, </span><span style=\"color: rgb(0, 0, 0); font-size: 12pt\">oferecem à operação a capacidade de realizar atualizações e personalizações na plataforma de maneira rápida e eficiente, permitindo que a marca acompanhe as mudanças do mercado com agilidade.</span></p>"
