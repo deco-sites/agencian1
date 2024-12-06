@@ -19,7 +19,7 @@ export default function PostList({ posts, socialMedia }: Props) {
     );
   }
   return (
-    <main class="flex flex-col gap-y-[30px]">
+    <main class="flex flex-col gap-y-[30px]" id="post-list">
       {posts.map((post) => (
         <PostItem key={post.slug} {...post} socialMedia={socialMedia} />
       ))}
@@ -27,7 +27,7 @@ export default function PostList({ posts, socialMedia }: Props) {
   );
 }
 
-function PostItem(
+export function PostItem(
   { title, image, alt, slug, excerpt, socialMedia }: PreviewPost & {
     socialMedia?: SocialMedia[];
   },

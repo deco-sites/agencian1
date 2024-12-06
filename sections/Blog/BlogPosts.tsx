@@ -76,6 +76,7 @@ export default function BlogPosts({
   buttonLoadMoreText,
   mostReadPostsTitle,
   mostReadPosts,
+  postsPerPage = 5,
 }: SectionProps<typeof loader>) {
   const Sidebar = populateSidebar(sidebar, categories, tags);
 
@@ -87,7 +88,11 @@ export default function BlogPosts({
       </PostContainer>
       {hasMorePosts && (
         <PostContainer>
-          <PostLoadMoreButton buttonText={buttonLoadMoreText} />
+          <PostLoadMoreButton
+            buttonText={buttonLoadMoreText}
+            postsPerPage={postsPerPage}
+            socialMedia={socialMedia}
+          />
         </PostContainer>
       )}
       <PostContainer>
