@@ -1,4 +1,4 @@
-import { type PreviewPost } from "site/sdk/posts.ts";
+import { type PreviewPost, type SortBy } from "site/sdk/posts.ts";
 import { type SocialMedia } from "site/components/Blog/PostShare.tsx";
 import { clx } from "site/sdk/clx.ts";
 import { invoke } from "site/runtime.ts";
@@ -29,7 +29,7 @@ export default function PostLoadMoreButton({
       keyword: urlParams.get("keyword") ?? "",
       tag: urlParams.get("tag") ?? "",
       category: urlParams.get("category") ?? "",
-      sort: urlParams.get("sort") ?? "date_desc",
+      sort: (urlParams.get("sort") as SortBy) ?? "date_desc",
     });
 
     const postList = document.getElementById("post-list");
