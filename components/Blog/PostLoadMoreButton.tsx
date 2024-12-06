@@ -1,11 +1,11 @@
 import { type PreviewPost, type SortBy } from "site/sdk/posts.ts";
 import { type SocialMedia } from "site/components/Blog/PostShare.tsx";
+import { useRef } from "preact/hooks";
+import { render } from "preact";
+import { useSignal } from "@preact/signals";
 import { clx } from "site/sdk/clx.ts";
 import { invoke } from "site/runtime.ts";
-import { useEffect, useRef } from "preact/hooks";
-import { render } from "preact";
 import { PostItem } from "site/components/Blog/PostList.tsx";
-import { useSignal } from "@preact/signals";
 
 interface Props {
   buttonText?: string;
@@ -94,17 +94,6 @@ export default function PostLoadMoreButton({
       isLoading.value = false;
     }
   }
-
-  useEffect(() => {
-    return () => {
-      postContainerRefs.current.forEach((element) => {
-        if (element && element.parentNode) {
-          element.parentNode.removeChild(element);
-        }
-      });
-      postContainerRefs.current = [];
-    };
-  }, []);
 
   return (
     <button
