@@ -10558,8 +10558,16 @@ details.collapse summary::-webkit-details-marker {
   display: none;
 }
 
+.disabled\:cursor-wait:disabled {
+  cursor: wait;
+}
+
 .disabled\:opacity-50:disabled {
   opacity: 0.5;
+}
+
+.disabled\:opacity-70:disabled {
+  opacity: 0.7;
 }
 
 .group[open] .group-open\:border-b-\[4px\] {
