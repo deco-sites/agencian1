@@ -1,8 +1,6 @@
 import { AppContext } from "site/apps/site.ts";
-
-const VTEX_DOMAIN = "https://agencian1.myvtex.com";
-
-const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+import { validateEmail } from "site/sdk/validation.ts";
+import { N1_VTEX_DOMAIN } from "site/sdk/contants.tsx";
 
 export interface Props {
   name: string;
@@ -30,14 +28,14 @@ const action = async (
     };
   }
 
-  if (typeof email !== "string" || !emailPattern.test(email.trim())) {
+  if (typeof email !== "string" || !validateEmail(email.trim())) {
     return {
       message: "Por favor, insira um endereço de e-mail válido",
     };
   }
 
   const response = await fetch(
-    `${VTEX_DOMAIN}/api/dataentities/NE/documents`,
+    `${N1_VTEX_DOMAIN}/api/dataentities/NE/documents`,
     {
       method: "POST",
       body: JSON.stringify({ name, email }),
