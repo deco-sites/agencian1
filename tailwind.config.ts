@@ -14,6 +14,15 @@ export default {
       "base-400": "#9B9B9B",
       "gray-58": "#585858",
       "accent-hover": "#F8BC33",
+      // Brand Colors
+      "primary": "#0C1F59",
+      "secondary": "#3CCBDA",
+      "tertiary": "#F6AB00",
+      // Status Colors
+      "info": "#3C71C0",
+      "success": "#307B40",
+      "warning": "#E5B330",
+      "error": "#D8442C",
     },
     fontFamily: {
       "montserrat": "Montserrat",
