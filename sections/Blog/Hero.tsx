@@ -1,17 +1,30 @@
-import { ImageWidget } from "apps/admin/widgets.ts";
+import { type SectionProps } from "@deco/deco";
+import { type ImageWidget } from "apps/admin/widgets.ts";
 import { clx } from "site/sdk/clx.ts";
 
-export interface Props {
+interface HeroProps {
   /** @title Título */
   title: string;
   /** @title Descrição */
   description: string;
   /** @title Imagem */
   image: ImageWidget;
+  /**
+   * @ignore
+   */
+  isBlogListPage: boolean;
 }
 
-export default function BlogHero({ title, description, image }: Props) {
+export default function BlogHero({
+  title,
+  description,
+  image,
+  isBlogListPage,
+}: SectionProps<typeof loader>) {
   if (!title || !description) return null;
+
+  const HeadingTag = isBlogListPage ? "h1" : "span";
+
   return (
     <div
       class={clx(
@@ -29,11 +42,11 @@ export default function BlogHero({ title, description, image }: Props) {
       >
         {/* Left Content */}
         <div class="w-[440px] text-[#FFF] tablet:w-full mobile:w-full">
-          <h1 class="text-60 mobile:text-40 font-mono font-bold font-archimoto-black text-left">
+          <div class="inline-flex items-center text-60 mobile:text-40 font-mono font-bold font-archimoto-black text-left">
             <span class="text-secondary">{"{"}</span>
-            <span>{title}</span>
+            <HeadingTag>{title}</HeadingTag>
             <span class="text-secondary">{"}"}</span>
-          </h1>
+          </div>
           {description && (
             <p class="text-18 leading-7 mobile:text-14 max-w-md font-noto-sans mt-2 text-left">
               {description}
@@ -53,4 +66,11 @@ export default function BlogHero({ title, description, image }: Props) {
       </div>
     </div>
   );
+}
+
+export function loader(props: HeroProps, req: Request) {
+  const path = req.url.split("/blog")[1] || "";
+  const isBlogListPage = path === "" || path === "/";
+
+  return { ...props, isBlogListPage };
 }

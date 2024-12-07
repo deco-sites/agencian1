@@ -35,7 +35,7 @@ export default function PostDetails({ post, socialMedia, baseUrl }: Props) {
             "bg-[linear-gradient(181.01deg,_#FFFFFF_-176.1%,_rgba(255,_255,_255,_0.29)_-85.87%,_rgba(255,_255,_255,_0)_124.35%)]",
           )}
         >
-          <PostTitle title={title} />
+          <PostTitle title={title} heading="h1" />
           <PostShare socialMedia={socialMedia} seoTitle={seo?.title} />
           <PostImage
             src={image}
@@ -45,7 +45,7 @@ export default function PostDetails({ post, socialMedia, baseUrl }: Props) {
             width={750}
           />
           <PostContent content={content} />
-          <SidebarTags title="Nuvem com tags" tags={tags} />
+          <SidebarTags title="Nuvem com tags" heading="h2" tags={tags} />
         </article>
       </main>
       <PostDetailsSEO post={post} baseUrl={baseUrl} />

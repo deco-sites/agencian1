@@ -10,16 +10,18 @@ export interface Tag {
 interface SidebarTagsProps {
   title?: string;
   tags?: Tag[];
+  heading?: "h2" | "h3";
 }
 
 export default function SidebarTags({
   title = "Tags",
   tags,
+  heading = "h3",
 }: SidebarTagsProps) {
   if (!tags?.length) return null;
   return (
     <SidebarContainer>
-      <SidebarTitle title={title} />
+      <SidebarTitle title={title} heading={heading} />
       <ul class="flex flex-wrap gap-[10px]">
         {tags?.map((tag) => <TagItem {...tag} key={tag.name} />)}
       </ul>

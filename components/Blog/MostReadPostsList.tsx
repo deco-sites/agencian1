@@ -1,6 +1,5 @@
 import { type BlogPost } from "apps/blog/types.ts";
 import { clx } from "site/sdk/clx.ts";
-import SidebarTitle from "site/components/Blog/SidebarTitle.tsx";
 import PostTitle from "site/components/Blog/PostTitle.tsx";
 import PostImage from "site/components/Blog/PostImage.tsx";
 import PostContent from "site/components/Blog/PostContent.tsx";
@@ -21,7 +20,9 @@ export default function MostReadPostsList({
 
   return (
     <div class="flex flex-col gap-y-[30px]">
-      <SidebarTitle title={title} />
+      <h2 class="text-24 font-archimoto-medium font-black text-white">
+        {title}
+      </h2>
       <div class="grid grid-cols-[1fr] md:grid-cols-[repeat(2,380px)] gap-[30px]">
         {posts.map((post) => <PostItem key={post.slug} {...post} />)}
       </div>
@@ -55,6 +56,7 @@ function PostItem({
       <PostTitle
         link={link}
         title={title}
+        heading="h3"
         clamp={2}
         fontSizeDesktop={24}
         fontSizeMobile={20}

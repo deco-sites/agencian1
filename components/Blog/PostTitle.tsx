@@ -8,6 +8,7 @@ export default function PostTitle({
   fontSizeMobile = 20,
   leadingDesktop = 38,
   leadingMobile = 24,
+  heading = "h2",
 }: {
   title: string;
   link?: string;
@@ -16,6 +17,7 @@ export default function PostTitle({
   fontSizeMobile?: number;
   leadingDesktop?: number;
   leadingMobile?: number;
+  heading?: "h1" | "h2" | "h3";
 }) {
   const classNames = clx(
     `mb-[-10px] font-archimoto-medium font-black text-white `,
@@ -24,15 +26,17 @@ export default function PostTitle({
     clamp ? `line-clamp-${clamp}` : "",
   );
 
+  const HeadingTag = heading;
+
   return link
     ? (
       <a
         href={link}
       >
-        <h2 class={classNames}>
+        <HeadingTag class={classNames}>
           {title}
-        </h2>
+        </HeadingTag>
       </a>
     )
-    : <h2 class={classNames}>{title}</h2>;
+    : <HeadingTag class={classNames}>{title}</HeadingTag>;
 }

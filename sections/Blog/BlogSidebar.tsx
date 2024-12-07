@@ -86,6 +86,7 @@ export default function Sidebar({
   return (
     // 96px = 86px (altura do header) + 10px (padding)
     <aside class="lg:sticky lg:top-[96px] flex flex-col gap-y-[30px]">
+      <h2 class="sr-only">Sidebar</h2>
       <SidebarSearch {...search} />
       <SidebarNewsletter {...newsletter} />
       <SidebarCategories {...categories ?? {}} />
