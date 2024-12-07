@@ -1,5 +1,6 @@
 import { useSignal } from "@preact/signals";
 import { useCallback } from "preact/hooks";
+import { clx } from "site/sdk/clx.ts";
 import Icon from "site/components/ui/Icon.tsx";
 import SidebarInput from "site/components/Blog/SidebarInput.tsx";
 import SidebarTitle from "site/components/Blog/SidebarTitle.tsx";
@@ -18,6 +19,7 @@ export default function SidebarSearch({
   const searchValue = useSignal("");
 
   const handleSubmit = useCallback((event: Event) => {
+    loading.value = true;
     event.preventDefault();
     const searchTerm = searchValue.value.trim();
     const url = new URL(globalThis.window.location.href);
@@ -35,8 +37,22 @@ export default function SidebarSearch({
     url.searchParams.delete("tag");
     url.searchParams.delete("category");
     url.searchParams.set("page", "1");
+
     globalThis.window.history.pushState({}, "", url.toString());
-    globalThis.window.location.reload();
+
+    const element = document.getElementById("post-list");
+    if (element) {
+      const elementPosition = element.getBoundingClientRect().top +
+        globalThis.window.scrollY - 90;
+      globalThis.window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth",
+      });
+    }
+
+    setTimeout(() => {
+      globalThis.window.location.reload();
+    }, 1000);
   }, []);
 
   return (
@@ -50,9 +66,8 @@ export default function SidebarSearch({
           />
         </button>
         <SidebarInput
-          type="search"
           placeholder={placeholder}
-          className="pl-[45px]"
+          className={clx("pl-[45px]", loading.value && "opacity-50")}
           disabled={loading.value}
           value={searchValue.value}
           onInput={(e) => {

@@ -14,6 +14,7 @@ import {
   handlePosts,
   type SortBy,
 } from "site/sdk/posts.ts";
+import { detectDevice } from "site/sdk/deviceDetection.ts";
 import { populateSidebar } from "site/sdk/blogSidebar.tsx";
 import PostLoadMoreButton from "site/islands/Blog/PostLoadMoreButton.tsx";
 import PostList from "site/components/Blog/PostList.tsx";
@@ -37,16 +38,24 @@ interface BlogPosts {
   /**
    * @ignore
    */
+  searchQuery?: string;
+  /**
+   * @ignore
+   */
   baseUrl?: string;
+  /**
+   * @ignore
+   */
+  isMobile?: boolean;
+  /**
+   * @ignore
+   */
+  tags: Tag[];
   /**
    * @title Número de posts por página
    * @description Padrão: 5
    */
   postsPerPage?: number;
-  /**
-   * @ignore
-   */
-  tags: Tag[];
   /**
    * @title Redes sociais
    */
@@ -81,19 +90,22 @@ export default function BlogPosts({
   mostReadPostsTitle,
   mostReadPosts,
   postsPerPage = 5,
+  searchQuery,
   baseUrl,
+  isMobile,
 }: SectionProps<typeof loader>) {
   const Sidebar = populateSidebar(sidebar, categories, tags);
-
-  console.log("posts content", posts[0].content);
-  console.log("mostReadPosts content", mostReadPosts[0].content);
 
   return (
     <>
       <div class="flex flex-col max-w-[1440px] mx-auto">
         <PostContainer>
-          <PostList posts={posts} socialMedia={socialMedia} />
-          {Sidebar}
+          <PostList
+            posts={posts}
+            socialMedia={socialMedia}
+            searchQuery={searchQuery}
+          />
+          {!isMobile && Sidebar}
         </PostContainer>
         {hasMorePosts && (
           <PostContainer>
@@ -110,6 +122,7 @@ export default function BlogPosts({
             posts={mostReadPosts}
           />
         </PostContainer>
+        {isMobile && Sidebar}
       </div>
       <PostListSEO posts={[...posts, ...mostReadPosts]} baseUrl={baseUrl} />
     </>
@@ -156,6 +169,8 @@ export async function loader(
     true,
   );
 
+  const { isMobile } = detectDevice(req.headers.get("user-agent") ?? "");
+
   return {
     ...props,
     posts: filteredPosts.posts,
@@ -164,6 +179,8 @@ export async function loader(
     categories,
     tags,
     mostReadPosts,
+    searchQuery: search,
     baseUrl: url.origin,
+    isMobile,
   };
 }

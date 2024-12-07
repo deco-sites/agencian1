@@ -14,11 +14,7 @@ interface Props {
 }
 
 export default function PostDetails({ post, socialMedia }: Props) {
-  if (!post) {
-    return (
-      <p class="mx-auto text-white text-[20px]">Nenhuma postagem encontrada</p>
-    );
-  }
+  if (!post) return <PostNotFound />;
 
   const { title, image, alt, content, seo } = post;
 
@@ -45,5 +41,29 @@ export default function PostDetails({ post, socialMedia }: Props) {
         <SidebarTags title="Nuvem com tags" heading="h2" tags={tags} />
       </article>
     </main>
+  );
+}
+
+function PostNotFound() {
+  return (
+    <div class="flex flex-col items-center gap-6">
+      <h2 class="font-archimoto-medium text-32 text-white text-center">
+        Ops! Postagem não encontrada
+      </h2>
+      <p class="font-montserrat text-20 text-base-400 text-center max-w-xl">
+        Não conseguimos encontrar a postagem que você está procurando. Que tal
+        explorar outros conteúdos do nosso blog?
+      </p>
+      <a
+        href="/blog"
+        class={clx(
+          "mx-auto rounded-[100px] px-[30px] pt-[2px] leading-[48px] mobile:leading-[38px]",
+          "bg-tertiary hover:bg-accent-hover duration-300",
+          "text-primary font-archimoto-medium text-16 mobile:text-14 font-black",
+        )}
+      >
+        Voltar para o Blog
+      </a>
+    </div>
   );
 }

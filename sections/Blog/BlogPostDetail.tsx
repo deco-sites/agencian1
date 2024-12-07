@@ -11,6 +11,7 @@ import {
   getUniqueCategories,
   getUniqueTags,
 } from "site/sdk/posts.ts";
+import { detectDevice } from "site/sdk/deviceDetection.ts";
 import { populateSidebar } from "site/sdk/blogSidebar.tsx";
 import PostDetails from "site/components/Blog/PostDetails.tsx";
 import PostContainer from "site/components/Blog/PostContainer.tsx";
@@ -39,6 +40,10 @@ interface BlogPostDetail {
    */
   baseUrl?: string;
   /**
+   * @ignore
+   */
+  isMobile?: boolean;
+  /**
    * @title Redes sociais
    */
   socialMedia?: SocialMedia[];
@@ -66,6 +71,7 @@ export default function BlogPostDetail({
   mostReadPostsTitle,
   mostReadPosts,
   baseUrl,
+  isMobile,
 }: SectionProps<typeof loader>) {
   const Sidebar = populateSidebar(sidebar, categories, tags);
 
@@ -77,7 +83,7 @@ export default function BlogPostDetail({
             post={post}
             socialMedia={socialMedia}
           />
-          {Sidebar}
+          {!isMobile && Sidebar}
         </PostContainer>
         <PostContainer>
           <MostReadPostsList
@@ -85,6 +91,7 @@ export default function BlogPostDetail({
             posts={mostReadPosts}
           />
         </PostContainer>
+        {isMobile && Sidebar}
       </div>
       <PostDetailsSEO
         post={post}
@@ -126,6 +133,8 @@ export async function loader(
     props.mostReadPostsLimit ?? 4,
   );
 
+  const { isMobile } = detectDevice(req.headers.get("user-agent") ?? "");
+
   return {
     ...props,
     post,
@@ -133,5 +142,6 @@ export async function loader(
     tags,
     mostReadPosts,
     baseUrl: url.origin,
+    isMobile,
   };
 }
