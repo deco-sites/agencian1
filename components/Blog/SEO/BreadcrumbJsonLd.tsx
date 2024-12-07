@@ -1,7 +1,6 @@
 import { Head } from "$fresh/runtime.ts";
 import { type BreadcrumbItem } from "site/sections/Blog/BlogBreadcrumb.tsx";
-
-const FALLBACK_BASE_URL = "https://n1.ag";
+import { FALLBACK_BASE_URL } from "site/sdk/contants.tsx";
 
 export default function BreadcrumbJsonLd({
   items,
@@ -28,9 +27,14 @@ export default function BreadcrumbJsonLd({
       },
       ...items.map((item, idx) => ({
         "@type": "ListItem",
-        position: idx + 3,
-        name: item.title,
-        item: item.link,
+        "position": idx + 3,
+        "name": item.title,
+        "item": item.link
+          ? `${baseUrl ?? FALLBACK_BASE_URL}${item.link}`
+          : undefined,
+        "@id": item.link
+          ? `${baseUrl ?? FALLBACK_BASE_URL}${item.link}`
+          : undefined,
       })),
     ],
   };

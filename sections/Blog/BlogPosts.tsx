@@ -35,6 +35,10 @@ interface BlogPosts {
    */
   mostReadPosts?: BlogPost[];
   /**
+   * @ignore
+   */
+  baseUrl?: string;
+  /**
    * @title Número de posts por página
    * @description Padrão: 5
    */
@@ -77,6 +81,7 @@ export default function BlogPosts({
   mostReadPostsTitle,
   mostReadPosts,
   postsPerPage = 5,
+  baseUrl,
 }: SectionProps<typeof loader>) {
   const Sidebar = populateSidebar(sidebar, categories, tags);
 
@@ -103,7 +108,7 @@ export default function BlogPosts({
           />
         </PostContainer>
       </div>
-      <PostListSEO posts={[...posts, ...mostReadPosts]} />
+      <PostListSEO posts={[...posts, ...mostReadPosts]} baseUrl={baseUrl} />
     </>
   );
 }
@@ -154,5 +159,6 @@ export async function loader(
     categories,
     tags,
     mostReadPosts,
+    baseUrl: url.origin,
   };
 }
