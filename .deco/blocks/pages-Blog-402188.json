@@ -92,8 +92,8 @@
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
               "__resolveType": "website/sections/Seo/SeoV2.tsx",
-              "title": "N1.AG | Especializada em e-commerce e plataforma VTEX",
-              "titleTemplate": "N1.AG | Especializada em e-commerce e plataforma VTEX",
+              "title": "N1.AG | Blog",
+              "titleTemplate": "N1.AG | Blog",
               "description": "Agência N1 agora é N1.AG! Somos Agência VTEX, Agência Deco.cx, Partner oficialmente reconhecida e especializada nessas plataformas de e-commerce.",
               "descriptionTemplate": "Agência N1 agora é N1.AG! Somos Agência VTEX, Agência Deco.cx, Partner oficialmente reconhecida e especializada nessas plataformas de e-commerce.",
               "canonical": "https://www.n1.ag/",

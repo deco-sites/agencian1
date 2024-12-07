@@ -3,8 +3,9 @@ import { Head } from "$fresh/runtime.ts";
 import { FALLBACK_BASE_URL } from "site/sdk/contants.tsx";
 
 interface Props {
-  post: BlogPost;
+  post?: BlogPost;
   baseUrl?: string;
+  mostReadPosts?: BlogPost[];
 }
 
 function createSEOMetadata(post: BlogPost, baseUrl = "") {
@@ -23,7 +24,10 @@ function createSEOMetadata(post: BlogPost, baseUrl = "") {
   };
 }
 
-function createSchemaOrgData(post: BlogPost, baseUrl = "") {
+function createSchemaOrgData(
+  { post, mostReadPosts }: { post: BlogPost; mostReadPosts: BlogPost[] },
+  baseUrl = "",
+) {
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -38,13 +42,13 @@ function createSchemaOrgData(post: BlogPost, baseUrl = "") {
     keywords: post.extraProps?.find((p) => p.key === "keywords")?.value || "",
     author: {
       "@type": "Organization",
-      name: post.authors?.[0]?.name ?? "Agência N1",
+      name: post.authors?.[0]?.name ?? "N1.AG",
       email: post.authors?.[0]?.email,
       "@id": `${baseUrl ?? FALLBACK_BASE_URL}/quem-somos`,
     },
     publisher: {
       "@type": "Organization",
-      name: "Agência N1",
+      name: "N1.AG",
       logo: {
         "@type": "ImageObject",
         url: `${baseUrl ?? FALLBACK_BASE_URL}/favicon-32x32.png`,
@@ -56,12 +60,32 @@ function createSchemaOrgData(post: BlogPost, baseUrl = "") {
       "@type": "WebPage",
       "@id": `${baseUrl}/blog/${post.slug}`,
     },
+    isPartOf: {
+      "@type": "Blog",
+      "@id": `${baseUrl ?? FALLBACK_BASE_URL}/blog`,
+      "name": "N1.AG | Blog",
+    },
+    "hasPart": mostReadPosts?.map((relatedPost) => ({
+      "@type": "BlogPosting",
+      "headline": relatedPost.title,
+      "url": `${baseUrl ?? FALLBACK_BASE_URL}/blog/${relatedPost.slug}`,
+      "datePublished": relatedPost.date,
+      "image": relatedPost.image,
+      "author": {
+        "@type": "Organization",
+        "name": relatedPost.authors?.[0]?.name ?? "N1.AG",
+      },
+    })) ?? [],
   };
 }
 
-export default function PostDetailsSEO({ post, baseUrl = "" }: Props) {
+export default function PostDetailsSEO(
+  { post, baseUrl = "", mostReadPosts = [] }: Props,
+) {
+  if (!post) return null;
+
   const seo = createSEOMetadata(post, baseUrl);
-  const schemaOrg = createSchemaOrgData(post, baseUrl);
+  const schemaOrg = createSchemaOrgData({ post, mostReadPosts }, baseUrl);
 
   return (
     <Head>
@@ -74,7 +98,7 @@ export default function PostDetailsSEO({ post, baseUrl = "" }: Props) {
       <meta property="og:description" content={seo.description} />
       <meta property="og:url" content={seo.canonical} />
       {seo.image && <meta property="og:image" content={seo.image} />}
-      <meta property="og:site_name" content="Agência N1 Blog" />
+      <meta property="og:site_name" content="N1.AG | Blog" />
       <meta property="og:locale" content="pt_BR" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
@@ -85,8 +109,8 @@ export default function PostDetailsSEO({ post, baseUrl = "" }: Props) {
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:description" content={seo.description} />
       {seo.image && <meta name="twitter:image" content={seo.image} />}
-      <meta name="twitter:site" content="@AgenciaN1" />
-      <meta name="twitter:creator" content="@AgenciaN1" />
+      <meta name="twitter:site" content="@N1_AG" />
+      <meta name="twitter:creator" content="@N1_AG" />
       <meta name="twitter:label1" content="Tempo de leitura" />
       <meta name="twitter:data1" content={`${post.readTime} minutos`} />
       <meta name="twitter:label2" content="Categoria" />

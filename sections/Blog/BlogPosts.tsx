@@ -85,6 +85,9 @@ export default function BlogPosts({
 }: SectionProps<typeof loader>) {
   const Sidebar = populateSidebar(sidebar, categories, tags);
 
+  console.log("posts content", posts[0].content);
+  console.log("mostReadPosts content", mostReadPosts[0].content);
+
   return (
     <>
       <div class="flex flex-col max-w-[1440px] mx-auto">
@@ -134,6 +137,7 @@ export async function loader(
     keyword: search,
     tag,
     category,
+    isListPage: true,
   });
   const categories = getUniqueCategories(posts);
   const tags = getUniqueTags(posts);
@@ -149,6 +153,7 @@ export async function loader(
     posts,
     mostReadSlugs,
     props.mostReadPostsLimit ?? 4,
+    true,
   );
 
   return {

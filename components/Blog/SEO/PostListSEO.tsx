@@ -15,13 +15,13 @@ export default function PostListSEO({ posts, baseUrl }: Props) {
   const data = {
     "@context": "https://schema.org",
     "@type": "Blog",
-    name: "Blog da Agência N1",
+    name: "N1.AG | Blog",
     description: "Artigos sobre e-commerce, marketing digital e tecnologia",
     url: `${baseUrl ?? FALLBACK_BASE_URL}/blog`,
     inLanguage: "pt-BR",
     publisher: {
       "@type": "Organization",
-      name: "Agência N1",
+      name: "N1.AG",
       "@id": `${baseUrl ?? FALLBACK_BASE_URL}/quem-somos`,
     },
     blogPost: uniquePosts.map((post) => ({

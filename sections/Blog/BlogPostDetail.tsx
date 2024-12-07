@@ -15,6 +15,7 @@ import { populateSidebar } from "site/sdk/blogSidebar.tsx";
 import PostDetails from "site/components/Blog/PostDetails.tsx";
 import PostContainer from "site/components/Blog/PostContainer.tsx";
 import MostReadPostsList from "site/components/Blog/MostReadPostsList.tsx";
+import PostDetailsSEO from "site/components/Blog/SEO/PostDetailsSEO.tsx";
 
 interface BlogPostDetail {
   /**
@@ -69,18 +70,28 @@ export default function BlogPostDetail({
   const Sidebar = populateSidebar(sidebar, categories, tags);
 
   return (
-    <div class="flex flex-col max-w-[1440px] mx-auto">
-      <PostContainer>
-        <PostDetails post={post} socialMedia={socialMedia} baseUrl={baseUrl} />
-        {Sidebar}
-      </PostContainer>
-      <PostContainer>
-        <MostReadPostsList
-          title={mostReadPostsTitle}
-          posts={mostReadPosts}
-        />
-      </PostContainer>
-    </div>
+    <>
+      <div class="flex flex-col max-w-[1440px] mx-auto">
+        <PostContainer>
+          <PostDetails
+            post={post}
+            socialMedia={socialMedia}
+          />
+          {Sidebar}
+        </PostContainer>
+        <PostContainer>
+          <MostReadPostsList
+            title={mostReadPostsTitle}
+            posts={mostReadPosts}
+          />
+        </PostContainer>
+      </div>
+      <PostDetailsSEO
+        post={post}
+        mostReadPosts={mostReadPosts}
+        baseUrl={baseUrl}
+      />
+    </>
   );
 }
 

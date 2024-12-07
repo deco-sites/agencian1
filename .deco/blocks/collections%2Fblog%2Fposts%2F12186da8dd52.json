@@ -4,7 +4,7 @@
   "post": {
     "authors": [
       {
-        "name": "Agência N1",
+        "name": "N1.AG",
         "email": "contato@n1.ag"
       }
     ],
@@ -42,6 +42,7 @@
       "description": "Aprenda como melhorar a experiência do usuário em sua loja virtual com dicas práticas de design responsivo, navegação intuitiva e otimização do checkout."
     },
     "readTime": 4,
-    "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/11224e94-6cd3-4a69-93d9-a18b4ffd077d/post-placeholder.webp"
+    "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/11224e94-6cd3-4a69-93d9-a18b4ffd077d/post-placeholder.webp",
+    "alt": "Cliente satisfeito navegando em uma loja virtual intuitiva."
   }
 }
