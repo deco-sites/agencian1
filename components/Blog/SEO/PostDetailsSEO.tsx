@@ -22,7 +22,7 @@ export default function PostDetailsSEO({ post, baseUrl }: Props) {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": post.title,
-    "description": seoDescription,
+    "description": post.content || seoDescription,
     "datePublished": post.date,
     "dateModified": post.date,
     "image": seoImage,
