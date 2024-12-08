@@ -34,7 +34,6 @@
     ],
     "title": "Avaliando o comportamento do cliente com o mapa de calor",
     "excerpt": "Saiba como o mapa de calor pode ajudar a analisar o comportamento dos clientes no e-commerce, identificando áreas de maior interação e oportunidades de otimização.",
-    "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/ea6ae163-0a26-461f-baeb-27b8e6e76c4d/post-3.webp",
     "alt": "Representação gráfica de um mapa de calor em uma página de e-commerce, destacando áreas de maior interação com cores quentes.",
     "date": "2024-12-04",
     "slug": "avaliando-comportamento-cliente-mapa-calor",
@@ -43,6 +42,7 @@
       "title": "Como o mapa de calor pode otimizar a experiência do cliente no e-commerce",
       "description": "Descubra como o mapa de calor identifica áreas de maior interação em seu e-commerce e como essa análise pode melhorar a experiência e os resultados do seu negócio."
     },
-    "readTime": 3
+    "readTime": 3,
+    "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/ea6ae163-0a26-461f-baeb-27b8e6e76c4d/post-3.webp"
   }
 }

@@ -89,14 +89,16 @@ export default function PostDetailsSEO(
 
   return (
     <Head>
-      <title>{seo.title}</title>
-      <meta name="description" content={seo.description} />
+      {
+        /* <title>{seo.title}</title>
+      <meta name="description" content={seo.description} /> */
+      }
 
       {/* Open Graph */}
       <meta property="og:type" content="article" />
       <meta property="og:title" content={seo.title} />
       <meta property="og:description" content={seo.description} />
-      <meta property="og:url" content={seo.canonical} />
+      {/* <meta property="og:url" content={seo.canonical} /> */}
       {seo.image && <meta property="og:image" content={seo.image} />}
       <meta property="og:site_name" content="N1.AG | Blog" />
       <meta property="og:locale" content="pt_BR" />
@@ -126,7 +128,7 @@ export default function PostDetailsSEO(
       />
       <meta property="article:read_time" content={`${post.readTime} minutes`} />
 
-      <link rel="canonical" href={seo.canonical} />
+      {/* <link rel="canonical" href={seo.canonical} /> */}
 
       <script
         type="application/ld+json"
