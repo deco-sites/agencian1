@@ -8,10 +8,11 @@ interface Props {
   borderRadius?: number;
   height: number;
   width: number;
+  eager?: boolean;
 }
 
 export default function PostImage(
-  { src, link, borderRadius, height, width, alt }: Props,
+  { src, link, borderRadius, height, width, alt, eager }: Props,
 ) {
   if (!src) return null;
 
@@ -29,6 +30,7 @@ export default function PostImage(
           height={height}
           width={width}
           alt={alt}
+          loading={eager ? "eager" : "lazy"}
         />
       </a>
     )

@@ -19,17 +19,25 @@ export default function PostList({ posts, socialMedia, searchQuery }: Props) {
   }
   return (
     <main class="flex flex-col gap-y-[30px]" id="post-list">
-      {posts.map((post) => (
-        <PostItem key={post.slug} {...post} socialMedia={socialMedia} />
+      {posts.map((post, index) => (
+        <PostItem
+          key={post.slug}
+          {...post}
+          socialMedia={socialMedia}
+          isFirst={index === 0}
+        />
       ))}
     </main>
   );
 }
 
 export function PostItem(
-  { title, image, alt, slug, excerpt, socialMedia, seo }: BlogPost & {
-    socialMedia?: SocialMedia[];
-  },
+  { title, image, alt, slug, excerpt, socialMedia, seo, isFirst = false }:
+    & BlogPost
+    & {
+      socialMedia?: SocialMedia[];
+      isFirst?: boolean;
+    },
 ) {
   const link = `/blog/${slug}`;
   return (
@@ -48,6 +56,7 @@ export function PostItem(
         borderRadius={10}
         height={265}
         width={750}
+        eager={isFirst}
       />
       <PostContent content={excerpt} clamp={2} />
       <PostButton link={link} text="Continue lendo" />

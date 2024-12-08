@@ -51,20 +51,22 @@ export default function BlogHero({
   return (
     <div
       class={clx(
-        "w-full bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 min-h-[360px] mobile:min-h-[260px] relative",
-        image ? "flex" : "flex-col",
+        "w-full bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800",
+        "h-[360px] mobile:h-[260px]",
+        "flex relative",
       )}
     >
       <div class="absolute inset-0 bg-gradient-to-t from-transparent via-[#3CCBDA]/30 to-transparent backdrop-blur-sm">
       </div>
       <div
         class={clx(
-          "md:n1-container md:px-[120px] mobile:px-[20px] py-[40px] mobile:py-[20px]",
-          "flex justify-center items-center tablet:justify-start mobile:justify-start py-3 gap-[50px] relative",
+          "md:n1-container md:px-[120px] mobile:px-[20px]",
+          "flex justify-between items-center mobile:justify-start py-[40px] mobile:py-[20px]",
+          "w-full relative",
         )}
       >
         {/* Left Content */}
-        <div class="w-[440px] text-[#FFF] tablet:w-full mobile:w-full">
+        <div class="w-[440px] text-[#FFF] tablet:w-full mobile:w-full flex-shrink-0">
           <div class="inline-flex items-center text-60 mobile:text-40 font-mono font-bold font-archimoto-black text-left">
             <span class="text-secondary">{"{"}</span>
             <HeadingTag>{title}</HeadingTag>
@@ -78,18 +80,18 @@ export default function BlogHero({
         </div>
 
         {/* Right Content - Illustration */}
-        {image && (
-          <div class="w-1/2 mobile:hidden tablet:hidden">
+        <div class="w-1/2 mobile:hidden tablet:hidden flex-shrink-0">
+          {image && (
             <Image
               src={image}
-              class="w-full max-w-lg object-contain"
+              class="w-full h-[280px] object-contain"
               width={imageWidth}
               height={imageHeight}
               loading="eager"
               alt={imageAlt || ""}
             />
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </div>
   );
