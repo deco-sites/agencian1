@@ -96,9 +96,7 @@
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
-              "__resolveType": "website/sections/Seo/SeoV2.tsx",
-              "title": "N1.AG | Blog",
-              "description": "Agência N1 agora é N1.AG! Somos Agência VTEX, Agência Deco.cx, Partner oficialmente reconhecida e especializada nessas plataformas de e-commerce."
+              "__resolveType": "website/sections/Seo/SeoV2.tsx"
             }
           }
         ]
@@ -107,7 +105,19 @@
     "__resolveType": "website/flags/multivariate.ts"
   },
   "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "canonical": "https://www.n1.ag/blog",
+    "type": "article",
+    "title": "N1.AG | Blog: Insights e Soluções para E-commerce",
+    "description": "Agência N1 agora é N1.AG! Somos Agência VTEX, Agência Deco.cx, Partner oficialmente reconhecida e especializada nessas plataformas de e-commerce.",
+    "jsonLD": {
+      "@type": "BlogPostPage",
+      "post": {
+        "authors": [],
+        "categories": [],
+        "extraProps": []
+      }
+    }
   },
   "__resolveType": "website/pages/Page.tsx"
 }

@@ -3518,30 +3518,28 @@
             "__resolveType": "footer-principal"
           },
           {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0ce5c73c-aa3b-4928-9d38-d8af27775e7d",
-            "title": "N1.AG | Especializada em e-commerce e plataforma VTEX",
-            "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7d1c8269-a925-467e-9e83-244a3b04ed99",
-            "canonical": "https://www.n1.ag/",
-            "description": "Agência N1 agora é N1.AG! Somos Agência VTEX, Agência Deco.cx, Partner oficialmente reconhecida e especializada nessas plataformas de e-commerce.",
-            "__resolveType": "website/sections/Seo/SeoV2.tsx",
-            "titleTemplate": "N1.AG | Especializada em e-commerce e plataforma VTEX",
-            "descriptionTemplate": "Agência N1 agora é N1.AG! Somos Agência VTEX, Agência Deco.cx, Partner oficialmente reconhecida e especializada nessas plataformas de e-commerce."
-          },
-          {
-            "text": "<p>Para proporcionar uma experiência personalizada, utilizamos <span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">{</span>cookies<span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">} </span>neste site.<strong>Ao continuar navegando, você concorda com nossa <a title=\"política de privacidade\" href=\"../../../politica-de-privacidade\" style=\"text-decoration: underline !important; text-decoration-color: currentColor !important;\" data-mce-style=\"text-decoration: underline !important; text-decoration-color: currentColor !important;\" data-mce-href=\"../../../politica-de-privacidade\">política de privacidade.</a></strong></p>",
             "image": {
               "alt": "Cookie",
               "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/89b6aa96-2e91-4c85-a61b-38a90137fc23",
               "width": 48,
               "height": 48
             },
-            "textBtn": "concordo e fechar",
-            "__resolveType": "site/sections/Content/PopupLgpt.tsx"
+            "__resolveType": "site/sections/Content/PopupLgpt.tsx",
+            "text": "<p>Para proporcionar uma experiência personalizada, utilizamos <span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">{</span>cookies<span style=\"color: rgb(60, 203, 218);\" data-mce-style=\"color: rgb(60, 203, 218);\">} </span>neste site.<strong>Ao continuar navegando, você concorda com nossa <a title=\"política de privacidade\" href=\"../../../politica-de-privacidade\" style=\"text-decoration: underline !important; text-decoration-color: currentColor !important;\" data-mce-style=\"text-decoration: underline !important; text-decoration-color: currentColor !important;\" data-mce-href=\"../../../politica-de-privacidade\">política de privacidade.</a></strong></p>",
+            "textBtn": "concordo e fechar"
           }
         ]
       }
     ],
     "__resolveType": "website/flags/multivariate.ts"
   },
-  "__resolveType": "website/pages/Page.tsx"
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "title": "N1.AG | Especializada em e-commerce e plataforma VTEX",
+    "description": "Agência N1 agora é N1.AG! Somos Agência VTEX, Agência Deco.cx, Partner oficialmente reconhecida e especializada nessas plataformas de e-commerce.",
+    "canonical": "https://www.n1.ag/",
+    "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/7d1c8269-a925-467e-9e83-244a3b04ed99",
+    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4346/0ce5c73c-aa3b-4928-9d38-d8af27775e7d"
+  }
 }
