@@ -59,7 +59,10 @@ export default function SidebarSearch({
     <SidebarContainer>
       <SidebarTitle title={title} />
       <form onSubmit={handleSubmit} class="relative">
-        <button class="absolute left-[15px] top-1/2 transform -translate-y-1/2 text-primary">
+        <button
+          class="absolute left-1 top-1/2 transform -translate-y-1/2 text-primary p-3 hover:text-primary/80"
+          aria-label="Buscar"
+        >
           <Icon
             id="MagnifyingGlass"
             size={20}
@@ -67,7 +70,7 @@ export default function SidebarSearch({
         </button>
         <SidebarInput
           placeholder={placeholder}
-          className={clx("pl-[45px]", loading.value && "opacity-50")}
+          className={clx("pl-[52px]", loading.value && "opacity-50")}
           disabled={loading.value}
           value={searchValue.value}
           onInput={(e) => {

@@ -121,6 +121,7 @@ export default function PostShare({ socialMedia, seoTitle }: Props) {
                 id={`share-${item.name.toLowerCase()}`}
                 class="cursor-pointer"
                 onClick={() => handleShare(item.name)}
+                aria-label={`Compartilhar no ${item.name}`}
               >
                 <Icon
                   size={20}

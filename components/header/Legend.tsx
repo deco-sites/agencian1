@@ -25,11 +25,11 @@ function Legend({ nameItemScape, mobile, selectedLanguage }: Props) {
     { language: "Português", code: "pt-br" },
   ];
 
-  const idioma = [
-    { "pt-br": "Idioma" },
-    { "es-es": "Idioma" },
-    { "en-en": "Language" },
-  ];
+  const idioma = {
+    "pt-br": "Idioma",
+    "es-es": "Idioma",
+    "en-en": "Language",
+  };
 
   return (
     <>
@@ -45,21 +45,18 @@ function Legend({ nameItemScape, mobile, selectedLanguage }: Props) {
         <img
           class="hidden md:flex w-[36px] h-[24px] min-w-[36px]"
           src={`/image/header-item-menu-${selectedLanguage}.png`}
+          alt={`${selectedLanguage} - ${
+            idioma[selectedLanguage as keyof typeof idioma]
+          }`}
           loading="lazy"
         />
 
         {selectedLanguage && (
-          idioma?.map((i) => {
-            return (
-              <>
-                <span
-                  class={`mobile:ml-[10px] mobile:flex hidden text-14 font-archimoto-medium text-accent-content`}
-                >
-                  {i[selectedLanguage as keyof typeof i]}
-                </span>
-              </>
-            );
-          })
+          <span
+            class={`mobile:ml-[10px] mobile:flex hidden text-14 font-archimoto-medium text-accent-content`}
+          >
+            {idioma[selectedLanguage as keyof typeof idioma]}
+          </span>
         )}
         <ul
           class={clx(

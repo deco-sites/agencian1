@@ -6,7 +6,6 @@ import { useUI } from "$store/sdk/useUI.ts";
 import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import type { ComponentChildren } from "preact";
 import { lazy, Suspense } from "preact/compat";
-import { LogoMobile } from "$store/components/header/Header.tsx";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 
@@ -21,7 +20,6 @@ interface ImageGeneric {
   height?: number;
 }
 export interface Props {
-  logoMobile?: LogoMobile;
   menu: MenuProps;
   /**
    * @ignore_gen true
@@ -116,7 +114,11 @@ const Aside = (
             </h1>
           )}
           {onClose && (
-            <Button class="btn btn-ghost" onClick={onClose}>
+            <Button
+              class="btn btn-ghost"
+              onClick={onClose}
+              ariaLabel="Fechar"
+            >
               <Icon id="XMark" size={24} strokeWidth={2} />
             </Button>
           )}

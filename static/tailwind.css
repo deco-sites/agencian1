@@ -5753,6 +5753,9 @@ details.collapse summary::-webkit-details-marker {
 .left-0 {
   left: 0px;
 }
+.left-1 {
+  left: 0.25rem;
+}
 .left-1\/2 {
   left: 50%;
 }
@@ -5770,9 +5773,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .left-\[0\] {
   left: 0;
-}
-.left-\[15px\] {
-  left: 15px;
 }
 .left-\[260px\] {
   left: 260px;
@@ -8528,8 +8528,8 @@ details.collapse summary::-webkit-details-marker {
 .pl-\[30px\] {
   padding-left: 30px;
 }
-.pl-\[45px\] {
-  padding-left: 45px;
+.pl-\[52px\] {
+  padding-left: 52px;
 }
 .pr-2 {
   padding-right: 0.5rem;
@@ -10554,6 +10554,10 @@ details.collapse summary::-webkit-details-marker {
 .hover\:text-gray-58:hover {
   --tw-text-opacity: 1;
   color: rgb(88 88 88 / var(--tw-text-opacity));
+}
+
+.hover\:text-primary\/80:hover {
+  color: var(--fallback-p,oklch(var(--p)/0.8));
 }
 
 .hover\:text-secondary:hover {

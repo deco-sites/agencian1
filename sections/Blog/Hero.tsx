@@ -1,14 +1,34 @@
 import { type SectionProps } from "@deco/deco";
 import { type ImageWidget } from "apps/admin/widgets.ts";
 import { clx } from "site/sdk/clx.ts";
+import Image from "apps/website/components/Image.tsx";
 
 interface HeroProps {
-  /** @title Título */
+  /**
+   * @title Título
+   */
   title: string;
-  /** @title Descrição */
+  /**
+   * @title Descrição
+   */
   description: string;
-  /** @title Imagem */
+  /**
+   * @title Imagem
+   * @description A imagem será exibida apenas no Desktop
+   */
   image: ImageWidget;
+  /**
+   * @title Largura da imagem
+   */
+  imageWidth: number;
+  /**
+   * @title Altura da imagem
+   */
+  imageHeight: number;
+  /**
+   * @title Alt da imagem
+   */
+  imageAlt: string;
   /**
    * @ignore
    */
@@ -19,6 +39,9 @@ export default function BlogHero({
   title,
   description,
   image,
+  imageAlt,
+  imageWidth,
+  imageHeight,
   isBlogListPage,
 }: SectionProps<typeof loader>) {
   if (!title || !description) return null;
@@ -57,9 +80,13 @@ export default function BlogHero({
         {/* Right Content - Illustration */}
         {image && (
           <div class="w-1/2 mobile:hidden tablet:hidden">
-            <img
+            <Image
               src={image}
               class="w-full max-w-lg object-contain"
+              width={imageWidth}
+              height={imageHeight}
+              loading="eager"
+              alt={imageAlt || ""}
             />
           </div>
         )}

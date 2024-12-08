@@ -63,7 +63,7 @@
                 "__resolveType": "blog-sidebar"
               }
             ],
-            "postsPerPage": 1,
+            "postsPerPage": 3,
             "socialMedia": [
               {
                 "name": "Facebook"
