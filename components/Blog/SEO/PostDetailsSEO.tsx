@@ -51,7 +51,7 @@ function createSchemaOrgData(
       name: "N1.AG",
       logo: {
         "@type": "ImageObject",
-        url: `${baseUrl ?? FALLBACK_BASE_URL}/favicon-32x32.png`,
+        url: `${baseUrl ?? FALLBACK_BASE_URL}/logo.png`,
         "@id": `${baseUrl ?? FALLBACK_BASE_URL}/#logo`,
       },
       "@id": `${baseUrl ?? FALLBACK_BASE_URL}/quem-somos`,
