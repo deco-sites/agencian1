@@ -1,3 +1,5 @@
+import Image from "apps/website/components/Image.tsx";
+
 interface NameImage {
   linkname?: string;
 }
@@ -5,11 +7,13 @@ interface NameImage {
 function CertificationImage({ linkname }: NameImage) {
   return (
     <li>
-      <img
+      <Image
         src={`${linkname}`}
-        className="w-[150px] object-contain"
+        class="w-[150px] object-contain"
         loading="lazy"
         alt="Certification"
+        width={150}
+        height={60}
       />
     </li>
   );

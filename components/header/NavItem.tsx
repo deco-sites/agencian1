@@ -168,6 +168,7 @@ function NavItem({ item, btnTextMenu }: Props) {
                                   class="n1-header__navlink-children--image"
                                   src={i?.url}
                                   alt={node?.name}
+                                  loading="lazy"
                                 />
                               );
                             })}
