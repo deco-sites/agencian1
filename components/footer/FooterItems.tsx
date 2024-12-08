@@ -61,24 +61,13 @@ export default function FooterItems(
                                     item.label?.split("-")[0] === "deco"
                                   ? (
                                     <CertificationImage
-                                      linkname={`/image/footer-img-${item.label}.png`}
+                                      src={`/image/footer-img-${item.label}.png`}
                                     />
                                   )
                                   : (
                                     <li>
                                       <a
-                                        href={`${
-                                          item?.href && item.href !== "#"
-                                            ? item?.href
-                                            : "javascript:void(0)"
-                                        }`}
-                                        style={{
-                                          pointerEvents: `${
-                                            item?.href && item?.href !== "#"
-                                              ? "all"
-                                              : "none"
-                                          }`,
-                                        }}
+                                        href={item?.href || "#"}
                                         class={clx(
                                           `text-[14px] leading-[21.6px] block py-1 link link-hover md:text-16 font-noto-sans font-normal text-base-150`,
                                         )}
@@ -116,18 +105,7 @@ export default function FooterItems(
                         {section.items?.map((item) => (
                           <li>
                             <a
-                              href={`${
-                                item?.href && item.href !== "#"
-                                  ? item?.href
-                                  : "javascript:void(0)"
-                              }`}
-                              style={{
-                                pointerEvents: `${
-                                  item?.href && item?.href !== "#"
-                                    ? "all"
-                                    : "none"
-                                }`,
-                              }}
+                              href={item?.href || "#"}
                               class="block py-1 link link-hover"
                             >
                               {item.label}

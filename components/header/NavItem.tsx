@@ -73,18 +73,36 @@ function NavItem({ item, btnTextMenu }: Props) {
           group flex justify-between text-16 font-archimoto-medium uppercase whitespace-nowrap is-${nameItemScape} items-center`,
         )}
       >
-        <a
-          href={`${url ? url : "javascript:void(0)"}`}
-          style={{ pointerEvents: `${url ? "all" : "none"}` }}
-          class="overflow-y-hidden h-5 mr-[10px]"
-        >
-          <span
-            data-title={name}
-            class="after:content-[attr(data-title)] -translate-y-5 flex-col group-hover:translate-y-0 leading-5 transition-all text-xs flex moveFromTop duration-500 font-black n1-links--repeat"
-          >
-            {name}
-          </span>
-        </a>
+        {url
+          ? (
+            <a
+              href={url}
+              class="overflow-y-hidden h-5 mr-[10px]"
+            >
+              <span
+                data-title={name}
+                class="after:content-[attr(data-title)] -translate-y-5 flex-col group-hover:translate-y-0 leading-5 transition-all text-xs flex moveFromTop duration-500 font-black n1-links--repeat"
+              >
+                {name}
+              </span>
+            </a>
+          )
+          : (
+            <button
+              type="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-label={`${name} menu`}
+              class="overflow-y-hidden h-5 mr-[10px] text-left"
+            >
+              <span
+                data-title={name}
+                class="after:content-[attr(data-title)] -translate-y-5 flex-col group-hover:translate-y-0 leading-5 transition-all text-xs flex moveFromTop duration-500 font-black n1-links--repeat"
+              >
+                {name}
+              </span>
+            </button>
+          )}
 
         {children && children.length > 0 &&
           (
@@ -152,27 +170,43 @@ function NavItem({ item, btnTextMenu }: Props) {
                     {children.map((node) => {
                       return (
                         <li class="py-6 n1-header__navlink-children">
-                          <a
-                            href={`${
-                              node?.url ? node?.url : "javascript:void(0)"
-                            }`}
-                            style={{
-                              pointerEvents: `${node?.url ? "all" : "none"}`,
-                            }}
-                            class="hover:underline overflow-hidden block rounded-[8px]"
-                          >
-                            {node.image?.map((i) => {
-                              if (!i) return null;
-                              return (
-                                <img
-                                  class="n1-header__navlink-children--image"
-                                  src={i?.url}
-                                  alt={node?.name}
-                                  loading="lazy"
-                                />
-                              );
-                            })}
-                          </a>
+                          {node?.url
+                            ? (
+                              <a
+                                href={node.url}
+                                class="hover:underline overflow-hidden block rounded-[8px]"
+                              >
+                                {node.image?.map((i) => {
+                                  if (!i) return null;
+                                  return (
+                                    <img
+                                      class="n1-header__navlink-children--image"
+                                      src={i?.url}
+                                      alt={node?.name}
+                                      loading="lazy"
+                                    />
+                                  );
+                                })}
+                              </a>
+                            )
+                            : (
+                              <button
+                                class="hover:underline overflow-hidden block rounded-[8px] w-full"
+                                type="button"
+                              >
+                                {node.image?.map((i) => {
+                                  if (!i) return null;
+                                  return (
+                                    <img
+                                      class="n1-header__navlink-children--image"
+                                      src={i?.url}
+                                      alt={node?.name}
+                                      loading="lazy"
+                                    />
+                                  );
+                                })}
+                              </button>
+                            )}
 
                           <ul class="flex flex-col gap-1 mt-4">
                             {node.children?.map((leaf) => (

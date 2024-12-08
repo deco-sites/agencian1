@@ -60,19 +60,12 @@ function SocialLink(
 ) {
   const isEmail = item.label === "Email";
   const href = isEmail
-    ? item.link && item.link !== "#"
-      ? `mailto:${item.link}`
-      : "javascript:void(0)"
-    : item.link && item.link !== "#"
-    ? item.link
-    : "javascript:void(0)";
-
-  const pointerEvents = item.link && item.link !== "#" ? "all" : "none";
+    ? item.link ? `mailto:${item.link}` : "#"
+    : item.link || "#";
 
   return (
     <a
       href={href}
-      style={{ pointerEvents }}
       target={isEmail ? undefined : "_blank"}
       rel="noopener noreferrer"
       aria-label={`${item.label} Logo`}

@@ -88,6 +88,7 @@ const Aside = (
             <Button
               onClick={onClose}
               class="btn btn-ghost absolute right-[-50px] top-[10px] p-0"
+              aria-label="Fechar"
             >
               <Icon id="CloseMenuMobile" size={38} strokeWidth={2} />
             </Button>

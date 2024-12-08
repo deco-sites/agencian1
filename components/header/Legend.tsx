@@ -42,22 +42,31 @@ function Legend({ nameItemScape, mobile, selectedLanguage }: Props) {
            md:hover:text-secondary is-${nameItemScape}`,
         )}
       >
-        <img
-          class="hidden md:flex w-[36px] h-[24px] min-w-[36px]"
-          src={`/image/header-item-menu-${selectedLanguage}.png`}
-          alt={`${selectedLanguage} - ${
-            idioma[selectedLanguage as keyof typeof idioma]
-          }`}
-          loading="lazy"
-        />
+        <button
+          type="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+          aria-label={`${idioma[selectedLanguage as keyof typeof idioma]} menu`}
+          class="flex items-center"
+        >
+          <img
+            class="hidden md:flex w-[36px] h-[24px] min-w-[36px]"
+            src={`/image/header-item-menu-${selectedLanguage}.png`}
+            alt={`${selectedLanguage} - ${
+              idioma[selectedLanguage as keyof typeof idioma]
+            }`}
+            loading="lazy"
+          />
 
-        {selectedLanguage && (
-          <span
-            class={`mobile:ml-[10px] mobile:flex hidden text-14 font-archimoto-medium text-accent-content`}
-          >
-            {idioma[selectedLanguage as keyof typeof idioma]}
-          </span>
-        )}
+          {selectedLanguage && (
+            <span
+              class={`mobile:ml-[10px] mobile:flex hidden text-14 font-archimoto-medium text-accent-content`}
+            >
+              {idioma[selectedLanguage as keyof typeof idioma]}
+            </span>
+          )}
+        </button>
+
         <ul
           class={clx(
             `mobile:ml-[10px] md:absolute md:hidden top-full hover:flex right-[-50px] 
@@ -65,39 +74,40 @@ function Legend({ nameItemScape, mobile, selectedLanguage }: Props) {
           )}
         >
           <li
-            class={`mobile:px-0 mobile:py-0 mobile:gap-x-[20px] flex bg-[#fff] rounded-[10px]  items-start md:flex-col w-full gap-y-[8px] px-[8px] py-[10px] mt-[15px]`}
+            class={`mobile:px-0 mobile:py-0 mobile:gap-x-[20px] flex bg-[#fff] rounded-[10px] items-start md:flex-col w-full gap-y-[8px] px-[8px] py-[10px] mt-[15px]`}
           >
-            {legend.map(({ language, code }) => {
-              return (
-                <>
-                  <a
-                    onClick={() => handleOnClick(code)}
-                    class={clx(
-                      `mobile:px-0 mobile:py-0 mobile:mx-0 mobile:my-0 flex items-center capitalize rounded-[10px] cursor-pointer
-                       py-[8px] bg-[#fff] duration-100 text-primary w-full md:hover:bg-primary hover:text-[#fff]`,
-                    )}
-                  >
-                    {mobile && (
+            {legend.map(({ language, code }) => (
+              <button
+                key={code}
+                onClick={() => handleOnClick(code)}
+                type="button"
+                class={clx(
+                  `mobile:px-0 mobile:py-0 mobile:mx-0 mobile:my-0 flex items-center capitalize rounded-[10px] cursor-pointer
+                   py-[8px] bg-[#fff] duration-100 text-primary w-full md:hover:bg-primary hover:text-[#fff]`,
+                )}
+              >
+                {mobile
+                  ? (
+                    <img
+                      class="pointer-events-none mx-0"
+                      src={`/image/header-sub-menu-${code}-mobile.png`}
+                      width={40}
+                      height={40}
+                      alt={language}
+                    />
+                  )
+                  : (
+                    <>
                       <img
-                        class="pointer-events-none mx-0"
-                        src={`/image/header-sub-menu-${code}-mobile.png`}
-                        width={40}
-                        height={40}
+                        class="w-[20px] h-[20px] mr-[10px] ml-[20px]"
+                        src={`/image/header-sub-menu-${code}.png`}
+                        alt={language}
                       />
-                    )}
-                    {!mobile && (
-                      <>
-                        <img
-                          class="w-[20px] h-[20px] mr-[10px] ml-[20px]"
-                          src={`/image/header-sub-menu-${code}.png`}
-                        />
-                        <span class="text-14 font-noto-sans">{language}</span>
-                      </>
-                    )}
-                  </a>
-                </>
-              );
-            })}
+                      <span class="text-14 font-noto-sans">{language}</span>
+                    </>
+                  )}
+              </button>
+            ))}
           </li>
         </ul>
       </li>

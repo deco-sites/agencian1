@@ -1,14 +1,12 @@
-import Image from "apps/website/components/Image.tsx";
-
 interface NameImage {
-  linkname?: string;
+  src?: string;
 }
 
-function CertificationImage({ linkname }: NameImage) {
+function CertificationImage({ src }: NameImage) {
   return (
     <li>
-      <Image
-        src={`${linkname}`}
+      <img
+        src={src || ""}
         class="w-[150px] object-contain"
         loading="lazy"
         alt="Certification"
