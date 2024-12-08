@@ -1,7 +1,7 @@
 import { type BlogPost } from "apps/blog/types.ts";
 import { clx } from "site/sdk/clx.ts";
-import PostTitle from "site/components/Blog/PostTitle.tsx";
 import PostImage from "site/components/Blog/PostImage.tsx";
+import PostTitle from "site/components/Blog/PostTitle.tsx";
 import PostContent from "site/components/Blog/PostContent.tsx";
 import PostButton from "site/components/Blog/PostButton.tsx";
 

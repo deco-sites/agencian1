@@ -1,5 +1,6 @@
-import Image from "apps/website/components/Image.tsx";
+import { Head } from "$fresh/runtime.ts";
 import { clx } from "site/sdk/clx.ts";
+import Image from "apps/website/components/Image.tsx";
 
 interface Props {
   src?: string;
@@ -17,30 +18,29 @@ export default function PostImage(
   if (!src) return null;
 
   const classNames = clx(
-    `w-full h-auto lg:h-[${height}px] object-cover min-h-[170px]`,
+    "w-full h-auto object-cover min-h-[170px]",
     borderRadius ? `rounded-[${borderRadius}px]` : "",
   );
 
-  return link
-    ? (
-      <a href={link}>
-        <Image
-          src={src}
-          class={classNames}
-          height={height}
-          width={width}
-          alt={alt}
-          loading={eager ? "eager" : "lazy"}
-        />
-      </a>
-    )
-    : (
-      <Image
-        src={src}
-        class={classNames}
-        height={height}
-        width={width}
-        alt={alt}
-      />
-    );
+  const ImageComponent = (
+    <Image
+      src={src}
+      class={classNames}
+      height={height}
+      width={width}
+      alt={alt}
+      loading={eager ? "eager" : "lazy"}
+    />
+  );
+
+  return (
+    <>
+      {eager && (
+        <Head>
+          <link rel="preload" as="image" href={src} />
+        </Head>
+      )}
+      {link ? <a href={link}>{ImageComponent}</a> : ImageComponent}
+    </>
+  );
 }

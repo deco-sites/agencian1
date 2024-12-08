@@ -3,8 +3,8 @@ import { type SocialMedia } from "site/components/Blog/PostShare.tsx";
 import { clx } from "site/sdk/clx.ts";
 import { getUniqueTags } from "site/sdk/posts.ts";
 import PostShare from "site/islands/Blog/PostShare.tsx";
-import PostTitle from "site/components/Blog/PostTitle.tsx";
 import PostImage from "site/components/Blog/PostImage.tsx";
+import PostTitle from "site/components/Blog/PostTitle.tsx";
 import PostContent from "site/components/Blog/PostContent.tsx";
 import SidebarTags from "site/components/Blog/SidebarTags.tsx";
 

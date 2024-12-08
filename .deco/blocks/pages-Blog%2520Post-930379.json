@@ -89,7 +89,15 @@
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
-              "__resolveType": "website/sections/Seo/SeoV2.tsx"
+              "__resolveType": "site/sections/Content/ButtonTop.tsx"
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "website/sections/Seo/SeoV2.tsx",
+              "title": "N1.AG | Blog",
+              "description": "Agência N1 agora é N1.AG! Somos Agência VTEX, Agência Deco.cx, Partner oficialmente reconhecida e especializada nessas plataformas de e-commerce."
             }
           }
         ]

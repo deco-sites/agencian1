@@ -128,7 +128,7 @@ export async function loader(
     postSlug
   ) as string[];
   const mostReadPosts = getMostReadPosts(
-    posts,
+    [...posts],
     mostReadSlugs,
     props.mostReadPostsLimit ?? 4,
   );
