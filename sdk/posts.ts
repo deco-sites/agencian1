@@ -159,14 +159,12 @@ export function handlePosts(
     tag = "",
     page = 1,
     postsPerPage = 5,
-    isListPage = false,
   }: {
     keyword?: string;
     category?: string;
     tag?: string;
     page?: number;
     postsPerPage?: number;
-    isListPage?: boolean;
   } = {},
 ) {
   let filteredPosts = posts.filter((post) => post.title);
@@ -186,10 +184,6 @@ export function handlePosts(
   const sortedPosts = sortPosts(filteredPosts, sortBy);
   const paginatedPosts = slicePosts(sortedPosts, page, postsPerPage);
   const hasMorePosts = sortedPosts.length > page * postsPerPage;
-
-  if (isListPage) {
-    paginatedPosts.forEach(removeContent);
-  }
 
   return {
     posts: paginatedPosts,
@@ -259,7 +253,6 @@ export const getMostReadPosts = (
   posts: BlogPost[],
   mostReadSlugs: string[],
   limit: number,
-  isListPage = false,
 ): BlogPost[] => {
   const filteredPosts = posts.filter((post) => post.title);
 
@@ -274,14 +267,5 @@ export const getMostReadPosts = (
     mostReadPosts.push(...additionalPosts);
   }
 
-  if (isListPage) {
-    mostReadPosts.forEach(removeContent);
-  }
-
   return mostReadPosts.slice(0, limit);
 };
-
-export function removeContent(post: BlogPost) {
-  post.content = "";
-  return post;
-}

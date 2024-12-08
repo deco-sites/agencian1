@@ -24,7 +24,7 @@ interface HeroProps {
   imageWidth: number;
   /**
    * @title Altura da imagem
-   * @description A altura será limitada a 280px
+   * @description A altura será limitada a 330px
    */
   imageHeight: number;
   /**
@@ -88,7 +88,7 @@ export default function BlogHero({
               src={image}
               class="w-full object-contain"
               width={imageWidth > 500 ? imageWidth : 500}
-              height={imageHeight > 280 ? imageHeight : 280}
+              height={imageHeight > 330 ? imageHeight : 330}
               loading="eager"
               alt={imageAlt || ""}
             />

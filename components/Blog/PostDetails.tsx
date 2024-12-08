@@ -36,6 +36,7 @@ export default function PostDetails({ post, socialMedia }: Props) {
           borderRadius={10}
           height={265}
           width={750}
+          eager
         />
         <PostContent content={content} />
         <SidebarTags title="Nuvem com tags" heading="h2" tags={tags} />

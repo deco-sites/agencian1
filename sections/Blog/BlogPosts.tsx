@@ -150,7 +150,6 @@ export async function loader(
     keyword: search,
     tag,
     category,
-    isListPage: true,
   });
   const categories = getUniqueCategories(posts);
   const tags = getUniqueTags(posts);
@@ -166,7 +165,6 @@ export async function loader(
     posts,
     mostReadSlugs,
     props.mostReadPostsLimit ?? 4,
-    true,
   );
 
   const { isMobile } = detectDevice(req.headers.get("user-agent") ?? "");
