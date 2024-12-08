@@ -6505,9 +6505,6 @@ details.collapse summary::-webkit-details-marker {
 .h-\[270px\] {
   height: 270px;
 }
-.h-\[280px\] {
-  height: 280px;
-}
 .h-\[28px\] {
   height: 28px;
 }
@@ -6531,9 +6528,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .h-\[342px\] {
   height: 342px;
-}
-.h-\[360px\] {
-  height: 360px;
 }
 .h-\[38px\] {
   height: 38px;
@@ -6591,6 +6585,10 @@ details.collapse summary::-webkit-details-marker {
 }
 .h-auto {
   height: auto;
+}
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .h-full {
   height: 100%;
@@ -7025,6 +7023,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .max-w-\[490px\] {
   max-width: 490px;
+}
+.max-w-\[500px\] {
+  max-width: 500px;
 }
 .max-w-\[522px\] {
   max-width: 522px;
@@ -13568,10 +13569,6 @@ details.collapse summary::-webkit-details-marker {
 
   .tablet\:grid {
     display: grid;
-  }
-
-  .tablet\:hidden {
-    display: none;
   }
 
   .tablet\:w-\[31\.666\%\] {

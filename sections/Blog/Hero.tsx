@@ -19,10 +19,12 @@ interface HeroProps {
   image: ImageWidget;
   /**
    * @title Largura da imagem
+   * @description A largura será limitada a 500px
    */
   imageWidth: number;
   /**
    * @title Altura da imagem
+   * @description A altura será limitada a 280px
    */
   imageHeight: number;
   /**
@@ -52,7 +54,7 @@ export default function BlogHero({
     <div
       class={clx(
         "w-full bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800",
-        "h-[360px] mobile:h-[260px]",
+        "h-fit mobile:h-[260px]",
         "flex relative",
       )}
     >
@@ -61,32 +63,32 @@ export default function BlogHero({
       <div
         class={clx(
           "md:n1-container md:px-[120px] mobile:px-[20px]",
-          "flex justify-between items-center mobile:justify-start py-[40px] mobile:py-[20px]",
+          "flex justify-center items-center gap-8",
           "w-full relative",
         )}
       >
         {/* Left Content */}
         <div class="w-[440px] text-[#FFF] tablet:w-full mobile:w-full flex-shrink-0">
-          <div class="inline-flex items-center text-60 mobile:text-40 font-mono font-bold font-archimoto-black text-left">
+          <div class="inline-flex items-center text-60 mobile:text-40 font-mono font-bold font-archimoto-black w-full">
             <span class="text-secondary">{"{"}</span>
             <HeadingTag>{title}</HeadingTag>
             <span class="text-secondary">{"}"}</span>
           </div>
           {description && (
-            <p class="text-18 leading-7 mobile:text-14 max-w-md font-noto-sans mt-2 text-left">
+            <p class="text-18 leading-7 mobile:text-14 max-w-md font-noto-sans mt-2">
               {description}
             </p>
           )}
         </div>
 
         {/* Right Content - Illustration */}
-        <div class="w-1/2 mobile:hidden tablet:hidden flex-shrink-0">
+        <div class="max-w-[500px] hidden lg:flex flex-shrink-0 justify-center">
           {image && (
             <Image
               src={image}
-              class="w-full h-[280px] object-contain"
-              width={imageWidth}
-              height={imageHeight}
+              class="w-full object-contain"
+              width={imageWidth > 500 ? imageWidth : 500}
+              height={imageHeight > 280 ? imageHeight : 280}
               loading="eager"
               alt={imageAlt || ""}
             />
