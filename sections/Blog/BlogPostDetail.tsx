@@ -44,9 +44,29 @@ interface BlogPostDetail {
    */
   isMobile?: boolean;
   /**
-   * @title Redes sociais
+   * @title Título da mensagem de post não encontrado
+   */
+  postNotFoundTitle?: string;
+  /**
+   * @title Texto da mensagem de post não encontrado
+   */
+  postNotFoundText?: string;
+  /**
+   * @title Texto do botão de post não encontrado
+   */
+  postNotFoundLinkText?: string;
+  /**
+   * @title Link do botão de post não encontrado
+   */
+  postNotFoundLink?: string;
+  /**
+   * @title Rede social para compartilhar o post
    */
   socialMedia?: SocialMedia[];
+  /**
+   * @title Título das tags
+   */
+  tagsTitle?: string;
   /**
    * @title Sidebar
    */
@@ -60,16 +80,26 @@ interface BlogPostDetail {
    * @description Padrão: 4
    */
   mostReadPostsLimit?: number;
+  /**
+   * @title Texto do botão dos posts mais acessados
+   */
+  mostReadPostsButtonText?: string;
 }
 
 export default function BlogPostDetail({
   post,
   categories,
   tags,
+  postNotFoundTitle,
+  postNotFoundText,
+  postNotFoundLinkText,
+  postNotFoundLink,
   socialMedia,
+  tagsTitle,
   sidebar,
   mostReadPostsTitle,
   mostReadPosts,
+  mostReadPostsButtonText,
   baseUrl,
   isMobile,
 }: SectionProps<typeof loader>) {
@@ -82,6 +112,11 @@ export default function BlogPostDetail({
           <PostDetails
             post={post}
             socialMedia={socialMedia}
+            tagsTitle={tagsTitle}
+            postNotFoundTitle={postNotFoundTitle}
+            postNotFoundText={postNotFoundText}
+            postNotFoundLinkText={postNotFoundLinkText}
+            postNotFoundLink={postNotFoundLink}
           />
           {!isMobile && Sidebar}
         </PostContainer>
@@ -89,6 +124,7 @@ export default function BlogPostDetail({
           <MostReadPostsList
             title={mostReadPostsTitle}
             posts={mostReadPosts}
+            buttonText={mostReadPostsButtonText}
           />
         </PostContainer>
         {isMobile && Sidebar}

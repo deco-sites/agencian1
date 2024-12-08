@@ -71,7 +71,7 @@ export default function BlogHero({
         <div
           class={clx(
             "md:n1-container md:px-[120px] mobile:px-[20px]",
-            "flex max-[1230px]:justify-center items-center gap-8",
+            "flex justify-center items-center gap-8",
             "w-full relative",
           )}
         >
@@ -91,7 +91,7 @@ export default function BlogHero({
 
           {/* Right Content - Illustration */}
           {!isMobile && (
-            <div class="max-w-[500px] flex portatil:hidden flex-shrink-0 justify-center">
+            <div class="max-w-[500px] flex flex-shrink-0 justify-center">
               {image && (
                 <Image
                   src={image}
@@ -99,7 +99,7 @@ export default function BlogHero({
                   width={imageWidth > 500 ? imageWidth : 500}
                   height={imageHeight > 330 ? imageHeight : 330}
                   loading="eager"
-                  alt={imageAlt || ""}
+                  alt={imageAlt || "Hero image"}
                 />
               )}
             </div>

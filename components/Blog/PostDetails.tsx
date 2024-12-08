@@ -11,10 +11,17 @@ import SidebarTags from "site/components/Blog/SidebarTags.tsx";
 interface Props {
   post?: BlogPost;
   socialMedia?: SocialMedia[];
+  tagsTitle?: string;
+  postNotFoundTitle?: string;
+  postNotFoundText?: string;
+  postNotFoundLinkText?: string;
+  postNotFoundLink?: string;
 }
 
-export default function PostDetails({ post, socialMedia }: Props) {
-  if (!post) return <PostNotFound />;
+export default function PostDetails(
+  { post, socialMedia, tagsTitle = "Tags", ...props }: Props,
+) {
+  if (!post) return <PostNotFound {...props} />;
 
   const { title, image, alt, content, seo } = post;
 
@@ -39,31 +46,36 @@ export default function PostDetails({ post, socialMedia }: Props) {
           eager
         />
         <PostContent content={content} />
-        <SidebarTags title="Nuvem com tags" heading="h2" tags={tags} />
+        <SidebarTags title={tagsTitle} heading="h2" tags={tags} />
       </article>
     </main>
   );
 }
 
-function PostNotFound() {
+function PostNotFound({
+  postNotFoundTitle = "Ops! Postagem não encontrada",
+  postNotFoundText =
+    "Não conseguimos encontrar a postagem que você está procurando. Que tal explorar outros conteúdos do nosso blog?",
+  postNotFoundLinkText = "Voltar para o Blog",
+  postNotFoundLink = "/blog",
+}: Props) {
   return (
     <div class="flex flex-col items-center gap-6">
       <h2 class="font-archimoto-medium text-32 text-white text-center">
-        Ops! Postagem não encontrada
+        {postNotFoundTitle}
       </h2>
       <p class="font-montserrat text-20 text-base-400 text-center max-w-xl">
-        Não conseguimos encontrar a postagem que você está procurando. Que tal
-        explorar outros conteúdos do nosso blog?
+        {postNotFoundText}
       </p>
       <a
-        href="/blog"
+        href={postNotFoundLink}
         class={clx(
           "mx-auto rounded-[100px] px-[30px] pt-[2px] leading-[48px] mobile:leading-[38px]",
           "bg-tertiary hover:bg-accent-hover duration-300",
           "text-primary font-archimoto-medium text-16 mobile:text-14 font-black",
         )}
       >
-        Voltar para o Blog
+        {postNotFoundLinkText}
       </a>
     </div>
   );

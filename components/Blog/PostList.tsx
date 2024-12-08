@@ -11,9 +11,12 @@ interface Props {
   posts: BlogPost[];
   socialMedia?: SocialMedia[];
   searchQuery?: string;
+  postButtonText?: string;
 }
 
-export default function PostList({ posts, socialMedia, searchQuery }: Props) {
+export default function PostList(
+  { posts, socialMedia, searchQuery, postButtonText }: Props,
+) {
   if (posts.length === 0) {
     return <NoPostsFound searchQuery={searchQuery} />;
   }
@@ -24,6 +27,7 @@ export default function PostList({ posts, socialMedia, searchQuery }: Props) {
           key={post.slug}
           {...post}
           socialMedia={socialMedia}
+          postButtonText={postButtonText}
           isFirst={index === 0}
         />
       ))}
@@ -32,11 +36,22 @@ export default function PostList({ posts, socialMedia, searchQuery }: Props) {
 }
 
 export function PostItem(
-  { title, image, alt, slug, excerpt, socialMedia, seo, isFirst = false }:
+  {
+    title,
+    image,
+    alt,
+    slug,
+    excerpt,
+    socialMedia,
+    seo,
+    isFirst = false,
+    postButtonText = "Continue lendo",
+  }:
     & BlogPost
     & {
       socialMedia?: SocialMedia[];
       isFirst?: boolean;
+      postButtonText?: string;
     },
 ) {
   const link = `/blog/${slug}`;
@@ -59,7 +74,7 @@ export function PostItem(
         eager={isFirst}
       />
       <PostContent content={excerpt} clamp={2} />
-      <PostButton link={link} text="Continue lendo" />
+      <PostButton link={link} text={postButtonText} />
     </article>
   );
 }

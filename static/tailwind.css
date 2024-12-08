@@ -13660,10 +13660,6 @@ details.collapse summary::-webkit-details-marker {
     margin-left: 30px;
   }
 
-  .portatil\:hidden {
-    display: none;
-  }
-
   .portatil\:\!w-\[270px\] {
     width: 270px !important;
   }

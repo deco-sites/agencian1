@@ -8,11 +8,13 @@ import PostButton from "site/components/Blog/PostButton.tsx";
 export interface Props {
   title?: string;
   posts?: BlogPost[];
+  buttonText?: string;
 }
 
 export default function MostReadPostsList({
   title = "Posts mais acessados",
   posts,
+  buttonText = "Saiba mais",
 }: Props) {
   if (!posts?.length) {
     return null;
@@ -24,7 +26,9 @@ export default function MostReadPostsList({
         {title}
       </h2>
       <div class="grid grid-cols-[1fr] md:grid-cols-[repeat(2,380px)] gap-[30px]">
-        {posts.map((post) => <PostItem key={post.slug} {...post} />)}
+        {posts.map((post) => (
+          <PostItem key={post.slug} {...post} postButtonText={buttonText} />
+        ))}
       </div>
     </div>
   );
@@ -36,7 +40,8 @@ function PostItem({
   excerpt,
   slug,
   alt,
-}: BlogPost) {
+  postButtonText = "Saiba mais",
+}: BlogPost & { postButtonText?: string }) {
   const link = `/blog/${slug}`;
   return (
     <article
@@ -64,7 +69,7 @@ function PostItem({
         leadingMobile={24}
       />
       <PostContent content={excerpt} />
-      <PostButton link={link} text="Saiba mais" />
+      <PostButton link={link} text={postButtonText} />
     </article>
   );
 }

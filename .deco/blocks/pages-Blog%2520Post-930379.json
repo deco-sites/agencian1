@@ -81,7 +81,8 @@
                 "name": "WhatsApp"
               }
             ],
-            "mostReadPostsTitle": "Mais lidas do blog"
+            "mostReadPostsTitle": "Mais lidas do blog",
+            "tagsTitle": "Nuvem com tags"
           },
           {
             "__resolveType": "footer-principal"

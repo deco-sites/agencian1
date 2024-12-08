@@ -10,9 +10,15 @@ export interface BreadcrumbItem {
 
 interface Props {
   /**
-   * @title Título
+   * @title Título do Breadcrumb
+   * @description O texto que será exibido após o "Home". Padrão: "Blog"
    */
   title?: string;
+  /**
+   * @title Link do Breadcrumb
+   * @description O link que adicionado ao título. Padrão: "/blog"
+   */
+  link?: string;
   /**
    * @ignore
    */
@@ -86,7 +92,7 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
   const items: BreadcrumbItem[] = [
     {
       title: props.title ?? "Blog",
-      link: "/blog",
+      link: props.link ?? "/blog",
     },
   ];
 

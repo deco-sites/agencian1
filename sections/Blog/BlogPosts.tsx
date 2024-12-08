@@ -57,9 +57,13 @@ interface BlogPosts {
    */
   postsPerPage?: number;
   /**
-   * @title Redes sociais
+   * @title Rede social para compartilhar o post
    */
   socialMedia?: SocialMedia[];
+  /**
+   * @title Texto do botão do post
+   */
+  postButtonText?: string;
   /**
    * @title Sidebar
    */
@@ -77,6 +81,10 @@ interface BlogPosts {
    * @description Padrão: 4
    */
   mostReadPostsLimit?: number;
+  /**
+   * @title Texto do botão dos posts mais acessados
+   */
+  mostReadPostsButtonText?: string;
 }
 
 export default function BlogPosts({
@@ -84,11 +92,13 @@ export default function BlogPosts({
   categories,
   tags,
   socialMedia,
+  postButtonText,
   sidebar,
   hasMorePosts,
   buttonLoadMoreText,
   mostReadPostsTitle,
   mostReadPosts,
+  mostReadPostsButtonText,
   postsPerPage = 5,
   searchQuery,
   baseUrl,
@@ -104,6 +114,7 @@ export default function BlogPosts({
             posts={posts}
             socialMedia={socialMedia}
             searchQuery={searchQuery}
+            postButtonText={postButtonText}
           />
           {!isMobile && Sidebar}
         </PostContainer>
@@ -120,6 +131,7 @@ export default function BlogPosts({
           <MostReadPostsList
             title={mostReadPostsTitle}
             posts={mostReadPosts}
+            buttonText={mostReadPostsButtonText}
           />
         </PostContainer>
         {isMobile && Sidebar}

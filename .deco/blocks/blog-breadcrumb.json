@@ -1,4 +1,5 @@
 {
   "__resolveType": "site/sections/Blog/BlogBreadcrumb.tsx",
-  "title": "Blog"
+  "title": "Blog",
+  "link": "/blog"
 }
