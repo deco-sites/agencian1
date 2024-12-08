@@ -91,7 +91,6 @@ function Header(props: SectionProps<ReturnType<typeof loader>>) {
     disabledHeader = false,
     alerts,
     navItems,
-    drawer,
     logoPosition = "center",
     whatsapp,
     btnTextMenu,
@@ -107,7 +106,6 @@ function Header(props: SectionProps<ReturnType<typeof loader>>) {
           <Drawers
             menu={{ items, whatsapp }}
             platform={platform}
-            drawer={drawer}
             selectedLanguage={selectedLanguage}
           >
             <div
