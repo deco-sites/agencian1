@@ -1,4 +1,3 @@
-import { Head } from "$fresh/runtime.ts";
 import { clx } from "site/sdk/clx.ts";
 import Image from "apps/website/components/Image.tsx";
 
@@ -33,14 +32,5 @@ export default function PostImage(
     />
   );
 
-  return (
-    <>
-      {eager && (
-        <Head>
-          <link rel="preload" as="image" href={src} />
-        </Head>
-      )}
-      {link ? <a href={link}>{ImageComponent}</a> : ImageComponent}
-    </>
-  );
+  return link ? <a href={link}>{ImageComponent}</a> : ImageComponent;
 }

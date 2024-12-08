@@ -1,7 +1,7 @@
 import { type BlogPost } from "apps/blog/types.ts";
 import { type SortBy } from "site/sdk/posts.ts";
 import { type SocialMedia } from "site/components/Blog/PostShare.tsx";
-import { useRef } from "preact/hooks";
+import { useEffect, useRef } from "preact/hooks";
 import { render } from "preact";
 import { useSignal } from "@preact/signals";
 import { clx } from "site/sdk/clx.ts";
@@ -54,6 +54,13 @@ export default function PostLoadMoreButton({
     globalThis.history.pushState({}, "", newUrl.toString());
   };
 
+  useEffect(() => {
+    return () => {
+      postContainerRefs.current = [];
+      buttonRef.current = null;
+    };
+  }, []);
+
   async function handleClick() {
     if (isLoading.value) return;
     isLoading.value = true;
@@ -87,7 +94,11 @@ export default function PostLoadMoreButton({
       }
 
       if (!hasMorePosts && buttonRef.current) {
-        buttonRef.current.remove();
+        const parentElement = buttonRef.current.parentElement;
+        if (parentElement) {
+          render(null, parentElement);
+          parentElement.remove();
+        }
       }
     } catch (error) {
       console.error("Failed to load more posts:", error);
