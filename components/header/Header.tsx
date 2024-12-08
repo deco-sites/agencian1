@@ -113,7 +113,7 @@ function Header(props: SectionProps<ReturnType<typeof loader>>) {
               style={{ height: headerHeight }}
             >
               <div
-                class={"grid grid-cols-2-auto md:n1-container md:px-[120px] items-center portatil:max-w-[90%] portatil:px-0"}
+                class={"grid grid-cols-2-auto md:n1-container md:px-[120px] items-center portatil:px-2 portatil:justify-center"}
               >
                 {alerts && alerts.length > 0 && <Alert alerts={alerts} />}
                 <Navbar

@@ -3,6 +3,7 @@ import { type ImageWidget } from "apps/admin/widgets.ts";
 import { Head } from "$fresh/runtime.ts";
 import { clx } from "site/sdk/clx.ts";
 import Image from "apps/website/components/Image.tsx";
+import { detectDevice } from "site/sdk/deviceDetection.ts";
 
 interface HeroProps {
   /**
@@ -36,6 +37,10 @@ interface HeroProps {
    * @ignore
    */
   isBlogListPage: boolean;
+  /**
+   * @ignore
+   */
+  isMobile: boolean;
 }
 
 export default function BlogHero({
@@ -46,6 +51,7 @@ export default function BlogHero({
   imageWidth,
   imageHeight,
   isBlogListPage,
+  isMobile,
 }: SectionProps<typeof loader>) {
   if (!title || !description) return null;
 
@@ -60,17 +66,17 @@ export default function BlogHero({
           "flex relative",
         )}
       >
-        <div class="absolute inset-0 bg-gradient-to-t from-transparent via-[#3CCBDA]/30 to-transparent backdrop-blur-sm">
+        <div class="absolute inset-0 bg-gradient-to-t from-transparent via-secondary/30 to-transparent backdrop-blur-sm">
         </div>
         <div
           class={clx(
             "md:n1-container md:px-[120px] mobile:px-[20px]",
-            "flex justify-center items-center gap-8",
+            "flex max-[1230px]:justify-center items-center gap-8",
             "w-full relative",
           )}
         >
           {/* Left Content */}
-          <div class="w-[440px] text-[#FFF] tablet:w-full mobile:w-full flex-shrink-0">
+          <div class="w-[440px] py-[30px] text-white tablet:w-full mobile:w-full flex-shrink-0">
             <div class="inline-flex items-center text-60 mobile:text-40 font-mono font-bold font-archimoto-black w-full">
               <span class="text-secondary">{"{"}</span>
               <HeadingTag>{title}</HeadingTag>
@@ -84,21 +90,23 @@ export default function BlogHero({
           </div>
 
           {/* Right Content - Illustration */}
-          <div class="max-w-[500px] hidden lg:flex flex-shrink-0 justify-center">
-            {image && (
-              <Image
-                src={image}
-                class="w-full object-contain"
-                width={imageWidth > 500 ? imageWidth : 500}
-                height={imageHeight > 330 ? imageHeight : 330}
-                loading="eager"
-                alt={imageAlt || ""}
-              />
-            )}
-          </div>
+          {!isMobile && (
+            <div class="max-w-[500px] flex portatil:hidden flex-shrink-0 justify-center">
+              {image && (
+                <Image
+                  src={image}
+                  class="w-full object-contain"
+                  width={imageWidth > 500 ? imageWidth : 500}
+                  height={imageHeight > 330 ? imageHeight : 330}
+                  loading="eager"
+                  alt={imageAlt || ""}
+                />
+              )}
+            </div>
+          )}
         </div>
       </div>
-      {image && (
+      {image && !isMobile && (
         <Head>
           <link rel="preload" as="image" href={image} />
         </Head>
@@ -111,5 +119,7 @@ export function loader(props: HeroProps, req: Request) {
   const path = req.url.split("/blog")[1] || "";
   const isBlogListPage = path === "" || path === "/";
 
-  return { ...props, isBlogListPage };
+  const { isMobile } = detectDevice(req.headers.get("user-agent") || "");
+
+  return { ...props, isBlogListPage, isMobile };
 }

@@ -8161,9 +8161,9 @@ details.collapse summary::-webkit-details-marker {
 .from-\[length\:var\(--dot-progress\)\] {
   --tw-gradient-from-position: var(--dot-progress);
 }
-.via-\[\#3CCBDA\]\/30 {
-  --tw-gradient-to: rgb(60 203 218 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), rgb(60 203 218 / 0.3) var(--tw-gradient-via-position), var(--tw-gradient-to);
+.via-secondary\/30 {
+  --tw-gradient-to: rgb(255 255 255 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--fallback-s,oklch(var(--s)/0.3)) var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 .to-\[rgba\(255\2c 255\2c 255\2c 0\.4\)\] {
   --tw-gradient-to: rgba(255,255,255,0.4) var(--tw-gradient-to-position);
@@ -13660,6 +13660,10 @@ details.collapse summary::-webkit-details-marker {
     margin-left: 30px;
   }
 
+  .portatil\:hidden {
+    display: none;
+  }
+
   .portatil\:\!w-\[270px\] {
     width: 270px !important;
   }
@@ -13672,16 +13676,16 @@ details.collapse summary::-webkit-details-marker {
     min-width: 50%;
   }
 
-  .portatil\:max-w-\[90\%\] {
-    max-width: 90%;
-  }
-
   .portatil\:grid-cols-2-200 {
     grid-template-columns: repeat(2, 200px);
   }
 
   .portatil\:flex-col {
     flex-direction: column;
+  }
+
+  .portatil\:justify-center {
+    justify-content: center;
   }
 
   .portatil\:gap-x-\[10px\] {
@@ -13694,9 +13698,9 @@ details.collapse summary::-webkit-details-marker {
          column-gap: 20px;
   }
 
-  .portatil\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
+  .portatil\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .portatil\:\[\&\>\*\:last-of-type\]\:col-end-3>*:last-of-type {
