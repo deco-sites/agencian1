@@ -28,7 +28,9 @@ export default function PostImage(
       height={height}
       width={width}
       alt={alt}
+      preload={eager}
       loading={eager ? "eager" : "lazy"}
+      fetchPriority={eager ? "high" : "auto"}
     />
   );
 

@@ -96,7 +96,9 @@ export default function BlogHero({
                 class="w-full object-contain"
                 width={imageWidth > 500 ? imageWidth : 500}
                 height={imageHeight > 330 ? imageHeight : 330}
+                preload
                 loading="eager"
+                fetchPriority="high"
                 alt={imageAlt || "Hero image"}
               />
             )}
