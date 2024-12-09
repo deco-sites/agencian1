@@ -1,5 +1,10 @@
-import { clx } from "$store/sdk/clx.ts";
 import type { JSX } from "preact";
+import { clx } from "site/sdk/clx.ts";
+import { signal } from "@preact/signals";
+import { useRef } from "preact/hooks";
+
+const isLoading = signal(false);
+const showSuccess = signal(false);
 
 export interface Props {
   /**@title Título */
@@ -18,44 +23,36 @@ function BlogAsideNewsletter({
   emailPlaceholder,
   submitButtonText = "Cadastrar",
 }: Props) {
+  const formRef = useRef<HTMLFormElement>(null);
+
   const handleSubmit: JSX.GenericEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
+    isLoading.value = true;
 
-    const email = (e.currentTarget.elements.namedItem("email") as RadioNodeList)
-      ?.value;
-    const name = (e.currentTarget.elements.namedItem("name") as RadioNodeList)
-      ?.value;
+    const formData = new FormData(e.currentTarget);
+    const email = formData.get("email")?.toString().trim();
+    const name = formData.get("name")?.toString().trim();
 
-    if (!email?.trim() || !name?.trim()) return;
-
-    const news = e.currentTarget.closest(".news");
-    const form = news?.querySelector<HTMLElement>("form");
-    const inputs = news?.querySelectorAll<HTMLInputElement>("input");
-    const loading = news?.querySelector<HTMLElement>(".is-loading");
-    const success = news?.querySelector<HTMLElement>(".is-success");
+    if (!email || !name) return;
 
     try {
-      loading?.classList.remove("hidden");
-
       const response = await fetch("/api/newsletterform", {
         method: "POST",
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, name }),
         headers: {
           "content-type": "application/json",
-          accept: "application/json",
+          "accept": "application/json",
         },
       });
 
       if (!response.ok) return;
 
-      inputs?.forEach((input) => input.value = "");
-      form?.classList.add("hidden");
-      success?.classList.remove("hidden");
-      success?.classList.add("flex");
+      formRef.current?.reset();
+      showSuccess.value = true;
     } catch (err) {
       console.error("Newsletter submission error:", err);
     } finally {
-      loading?.classList.add("hidden");
+      isLoading.value = false;
     }
   };
 
@@ -65,16 +62,24 @@ function BlogAsideNewsletter({
         {title}
       </h2>
 
-      <form class={clx("flex flex-col gap-y-[10px]")} onSubmit={handleSubmit}>
+      <form
+        ref={formRef}
+        class={clx(
+          "flex flex-col gap-y-[10px] relative",
+          showSuccess.value && "hidden",
+        )}
+        onSubmit={handleSubmit}
+      >
         <input
           id="name"
           name="name"
-          type="text"
           placeholder={namePlaceholder}
+          disabled={isLoading.value}
           class={clx(
             "rounded-[100px] py-[14px] px-[20px] max-h-[48px] bg-[#ffffff]",
             "font-normal text-primary text-[14px] leading-[18.2px]",
             "font-noto-sans outline-none",
+            isLoading.value && "opacity-50 cursor-not-allowed",
           )}
         />
         <input
@@ -82,27 +87,45 @@ function BlogAsideNewsletter({
           name="email"
           type="email"
           placeholder={emailPlaceholder}
+          disabled={isLoading.value}
           class={clx(
             "rounded-[100px] py-[14px] px-[20px] max-h-[48px] bg-[#ffffff]",
             "font-normal text-primary text-[14px] leading-[18.2px]",
             "font-noto-sans outline-none",
+            isLoading.value && "opacity-50 cursor-not-allowed",
           )}
         />
         <div>
           <button
+            disabled={isLoading.value}
             class={clx(
               "mt-[10px] px-[20px] pt-[15px] pb-[11px] rounded-[100px]",
               "bg-accent hover:bg-[#F8BC33] text-primary",
               "text-14 font-archimoto-medium font-black",
               "leading-none inline-block",
+              isLoading.value && "opacity-50 cursor-not-allowed",
             )}
           >
             {submitButtonText}
           </button>
         </div>
+        <div
+          class={clx(
+            "absolute inset-0 bg-white/50 flex items-center justify-center",
+            isLoading.value ? "flex" : "hidden",
+          )}
+        >
+          <div class="w-8 h-8 border-4 border-[#3CCBDA] border-t-transparent rounded-full animate-spin">
+          </div>
+        </div>
       </form>
-      <div class="hidden is-loading"></div>
-      <div class="is-success hidden h-[150px] flex-col gap-[20px] rounded-[10px] bg-[#232a3d] items-center justify-center self-stretch">
+
+      <div
+        class={clx(
+          "flex-col gap-[20px] rounded-[10px] bg-[#232a3d] items-center justify-center self-stretch p-8",
+          showSuccess.value ? "flex" : "hidden",
+        )}
+      >
         <svg
           width="40"
           height="41"
@@ -118,7 +141,7 @@ function BlogAsideNewsletter({
           />
         </svg>
         <span class="text-14 font-normal text-white">
-          Cadastro feito com sucesso!
+          Cadastro realizado com sucesso!
         </span>
       </div>
     </div>

@@ -6464,6 +6464,9 @@ details.collapse summary::-webkit-details-marker {
 .h-6 {
   height: 1.5rem;
 }
+.h-8 {
+  height: 2rem;
+}
 .h-9 {
   height: 2.25rem;
 }
@@ -6475,9 +6478,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .h-\[130px\] {
   height: 130px;
-}
-.h-\[150px\] {
-  height: 150px;
 }
 .h-\[174px\] {
   height: 174px;
@@ -7921,6 +7921,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .border-transparent {
   border-color: transparent;
+}
+.border-t-transparent {
+  border-top-color: transparent;
 }
 .bg-\[\#000080\] {
   --tw-bg-opacity: 1;
