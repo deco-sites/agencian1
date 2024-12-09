@@ -13,7 +13,7 @@ export interface Props {
 const action = async (
   { postSlug }: Props,
   _req: Request,
-  { invoke, monitoring }: AppContext,
+  { invoke }: AppContext,
 ): Promise<void> => {
   try {
     const drizzle = await invoke.records.loaders.drizzle();
@@ -38,10 +38,7 @@ const action = async (
       });
     }
   } catch (err) {
-    monitoring?.logger.error("Error counting post views", {
-      error: err,
-      postSlug,
-    });
+    console.error("Error counting view:", err);
   }
 };
 

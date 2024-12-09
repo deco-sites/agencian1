@@ -15,13 +15,29 @@ async function loader(
   _req: Request,
   { invoke }: AppContext,
 ): Promise<{ topViewedPosts: TopViewedPost[] }> {
-  const drizzle = await invoke.records.loaders.drizzle();
-  const topViewedPosts = await drizzle
-    .select({
-      postSlug: postViews.postSlug,
-    }).from(postViews).orderBy(desc(postViews.views)).limit(top);
+  try {
+    const drizzle = await invoke.records.loaders.drizzle();
 
-  return { topViewedPosts };
+    if (!drizzle || typeof drizzle.select !== "function") {
+      console.error(
+        "Error fetching top viewed posts: drizzle.select is not a function",
+      );
+      return { topViewedPosts: [] };
+    }
+
+    const topViewedPosts = await drizzle
+      .select({
+        postSlug: postViews.postSlug,
+      })
+      .from(postViews)
+      .orderBy(desc(postViews.views))
+      .limit(top);
+
+    return { topViewedPosts };
+  } catch (error) {
+    console.error("Error fetching top viewed posts:", error);
+    return { topViewedPosts: [] };
+  }
 }
 
 export default loader;
