@@ -18,18 +18,15 @@ export default function SidebarSearch({
   const loading = useSignal(false);
   const searchValue = useSignal("");
 
-  const handleSubmit = useCallback((event: Event) => {
-    loading.value = true;
-    event.preventDefault();
-    const searchTerm = searchValue.value.trim();
+  const updateURL = useCallback((searchTerm: string) => {
     const url = new URL(globalThis.window.location.href);
-
     const pathSegments = url.pathname.split("/").filter(Boolean);
     const basePath = pathSegments.length > 0 ? `/${pathSegments[0]}` : "/";
+
     url.pathname = basePath;
 
     if (searchTerm) {
-      url.searchParams.set("search", searchTerm);
+      url.searchParams.set("search", searchTerm.trim());
     } else {
       url.searchParams.delete("search");
     }
@@ -38,46 +35,61 @@ export default function SidebarSearch({
     url.searchParams.delete("category");
     url.searchParams.set("page", "1");
 
-    globalThis.window.history.pushState({}, "", url.toString());
-
-    const element = document.getElementById("post-list");
-    if (element) {
-      const elementPosition = element.getBoundingClientRect().top +
-        globalThis.window.scrollY - 90;
-      globalThis.window.scrollTo({
-        top: elementPosition,
-        behavior: "smooth",
-      });
-    }
-
-    setTimeout(() => {
-      globalThis.window.location.reload();
-    }, 1000);
+    return url;
   }, []);
+
+  const handleSearch = useCallback(() => {
+    if (loading.value) return;
+    loading.value = true;
+
+    try {
+      const url = updateURL(searchValue.value);
+      globalThis.window.location.href = url.toString();
+    } catch (error) {
+      console.error("Error during search:", error);
+    } finally {
+      loading.value = false;
+    }
+  }, [searchValue.value]);
+
+  const handleKeyPress = useCallback((e: KeyboardEvent) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      handleSearch();
+    }
+  }, [handleSearch]);
 
   return (
     <SidebarContainer>
       <SidebarTitle title={title} />
-      <form onSubmit={handleSubmit} class="relative">
+      <div class="relative">
         <button
+          onClick={handleSearch}
           class="absolute left-1 top-1/2 transform -translate-y-1/2 text-primary p-3 hover:text-primary/80"
           aria-label="Buscar"
+          type="button"
+          disabled={loading.value}
         >
           <Icon
             id="MagnifyingGlass"
             size={20}
+            class={loading.value ? "animate-pulse" : ""}
           />
         </button>
         <SidebarInput
           placeholder={placeholder}
-          className={clx("pl-[52px]", loading.value && "opacity-50")}
+          className={clx(
+            "pl-[52px]",
+            loading.value && "opacity-50",
+          )}
           disabled={loading.value}
           value={searchValue.value}
-          onInput={(e) => {
-            searchValue.value = (e.target as HTMLInputElement).value;
-          }}
+          onKeyDown={handleKeyPress}
+          onChange={(e) =>
+            searchValue.value = (e.target as HTMLInputElement).value}
+          type="search"
         />
-      </form>
+      </div>
     </SidebarContainer>
   );
 }

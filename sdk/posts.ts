@@ -1,9 +1,10 @@
-import { type AppContext } from "apps/blog/mod.ts";
 import type { BlogPost, Category } from "apps/blog/types.ts";
+import { type AppContext } from "apps/blog/mod.ts";
 import { type Category as CategoryType } from "site/components/Blog/SidebarCategories.tsx";
 import { type Tag as TagType } from "site/components/Blog/SidebarTags.tsx";
 import { slugify } from "https://deno.land/x/slugify@0.3.0/mod.ts";
 import { getRecordsByPath } from "apps/blog/utils/records.ts";
+import { removeDiacritics } from "site/sdk/utils.ts";
 
 export const VALID_SORT_ORDERS = ["asc", "desc"];
 
@@ -109,20 +110,25 @@ export const filterPostsByTag = (posts: BlogPost[], tag?: string) =>
 export const filterPostsByKeyword = (posts: BlogPost[], keyword?: string) => {
   if (!keyword) return posts;
 
-  const searchTerm = keyword.toLowerCase();
+  const decodedKeyword = decodeURIComponent(keyword);
+  const searchTerms = removeDiacritics(decodedKeyword)
+    .toLowerCase()
+    .split(" ")
+    .filter((term) => term.length > 0);
+
   return posts.filter((post) => {
-    const titleMatch = post.title?.toLowerCase().includes(searchTerm);
-    const descriptionMatch = post.content?.toLowerCase().includes(
-      searchTerm,
+    const searchableContent = [
+      post.title || "",
+      post.excerpt || "",
+      post.content || "",
+      post.extraProps?.find((prop) => prop.key === "keywords")?.value || "",
+      post.extraProps?.find((prop) => prop.key === "tags")?.value || "",
+      post.categories?.map((c) => c.name).join(" ") || "",
+    ].map((text) => removeDiacritics(text).toLowerCase());
+
+    return searchTerms.every((term) =>
+      searchableContent.some((content) => content.includes(term))
     );
-    const contentMatch = post.content?.toLowerCase().includes(searchTerm);
-
-    const keywordsString = post.extraProps?.find((prop) =>
-      prop.key === "keywords"
-    )?.value;
-    const keywordMatch = keywordsString?.toLowerCase().includes(searchTerm);
-
-    return titleMatch || descriptionMatch || contentMatch || keywordMatch;
   });
 };
 
