@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/categories/2b9217ca2166",
+  "__resolveType": "blog/loaders/Category.ts",
+  "category": {
+    "name": "Tendências de E-commerce",
+    "slug": "tendencias-de-e-commerce"
+  }
+}

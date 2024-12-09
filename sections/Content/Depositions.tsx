@@ -1,10 +1,9 @@
-import { FnContext, SectionProps } from "deco/mod.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { clx } from "$store/sdk/clx.ts";
 import DepositionsDesktop from "$store/components/ui/DepositionsDesktop.tsx";
 import DepositionsMobile from "$store/components/ui/DepositionsMobile.tsx";
 import { useId } from "$store/sdk/useId.ts";
-
+import { type FnContext, type SectionProps } from "@deco/deco";
 interface ImageGeneric {
   /**@title Imagem */
   src?: ImageWidget;
@@ -13,7 +12,6 @@ interface ImageGeneric {
   /**@title Altura */
   height?: number;
 }
-
 /**@titleBy alt */
 interface Image {
   /**@title Desktop */
@@ -21,7 +19,6 @@ interface Image {
   /**@title Mobile */
   mobile?: ImageGeneric;
 }
-
 /**@titleBy alt */
 interface DepositionAndImage {
   /**@title Nome do Bloco */
@@ -31,7 +28,6 @@ interface DepositionAndImage {
   /**@title Imagem */
   image?: Image;
 }
-
 interface Deposition {
   /**
    * @title Descrição
@@ -43,7 +39,6 @@ interface Deposition {
   /**@title Cargo */
   jobPosition?: string;
 }
-
 interface TextPrincipal {
   /**
    * @title Título
@@ -62,7 +57,6 @@ interface TextPrincipal {
    */
   description?: string;
 }
-
 interface Props {
   /** @title Texto Principal */
   textPrincipal?: TextPrincipal;
@@ -75,12 +69,9 @@ interface Props {
   /**@title Desabilitar seção? */
   disabledSection?: boolean;
 }
-
 function Depositions(props: SectionProps<ReturnType<typeof loader>>) {
   const { textPrincipal, depositionAndImage, disabledSection, device } = props;
-
   const id = useId();
-
   return (
     <>
       {!disabledSection && (
@@ -89,9 +80,7 @@ function Depositions(props: SectionProps<ReturnType<typeof loader>>) {
           id={id}
         >
           <div>
-            <div
-              class={clx(`mobile:px-[20px]`)}
-            >
+            <div class={clx(`mobile:px-[20px]`)}>
               {textPrincipal?.title && (
                 <div
                   class={clx(`
@@ -139,12 +128,10 @@ function Depositions(props: SectionProps<ReturnType<typeof loader>>) {
     </>
   );
 }
-
 export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   return {
     ...props,
     device: ctx.device,
   };
 };
-
 export default Depositions;

@@ -1,9 +1,8 @@
-import { FnContext, SectionProps } from "deco/mod.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import LinkWithOptionArrow from "$store/components/ui/LinkWithOptionArrow.tsx";
 import { clx } from "$store/sdk/clx.ts";
-
+import { type FnContext, type SectionProps } from "@deco/deco";
 interface CtaProps {
   /** @title link */
   href?: string;
@@ -12,7 +11,6 @@ interface CtaProps {
   /** @title Cor do botão transparent */
   colorLink?: boolean;
 }
-
 /** @titleBy name */
 interface ImageGeneric {
   /** @title Imagem */
@@ -22,7 +20,6 @@ interface ImageGeneric {
   /** @title Altura da imagem */
   height?: string;
 }
-
 /** @titleBy name */
 interface SubtitleWithTag {
   /** @title Nome da Tag */
@@ -35,7 +32,6 @@ interface SubtitleWithTag {
     mobile?: ImageGeneric;
   };
 }
-
 /** @titleBy name */
 interface MiniImage {
   /** @title Nome da mini imagem */
@@ -48,14 +44,12 @@ interface MiniImage {
     mobile?: ImageGeneric;
   };
 }
-
 interface ImagemDeskAndMobile {
   desktop?: ImageGeneric;
   mobile?: ImageGeneric;
   /** @title Ativar eclipse na imagem de fundo? */
   activeEclipse?: boolean;
 }
-
 interface BlockTextProps {
   /** @title Largura do bloco */
   /** @description (ex: 50 - somente números, o resultado é porcentagem) */
@@ -85,11 +79,9 @@ interface BlockTextProps {
   miniImage?: MiniImage[];
   /** @title Links? */
   cta?: CtaProps;
-
   /** @title Ativar eclipse no texto? */
   activeEclipseText?: boolean;
 }
-
 interface DisabledProps {
   /** @title Ícones */
   icon?: boolean;
@@ -98,21 +90,16 @@ interface DisabledProps {
   /** @title Mini imagens */
   miniImage?: boolean;
 }
-
 export interface Props {
   /** @title Bloco de Textos, Tags, icons, links e mini imagens */
   blockText: BlockTextProps;
-
   /** @title Título */
   /** @format rich-text */
   titleCenter?: string;
-
   /** @title Imagem */
   image: ImagemDeskAndMobile;
-
   /** @title Imagem espiral de fundo? */
   bgSpital?: boolean;
-
   /** @title Posicionamento */
   placement: "esquerdo" | "direito";
   /** @title Desabilitar espaçamento? */
@@ -120,23 +107,19 @@ export interface Props {
     top?: boolean;
     bottom?: boolean;
   };
-
   /** @title Desabilitar? */
   disabledProps?: DisabledProps;
 }
-
 const PLACEMENT = {
   esquerdo: "flex-col lg:flex-row-reverse",
   direito: "flex-col lg:flex-row",
 };
-
 const KEYSINICONSCOLOR = {
   "Sim":
     'before:content-["{"] after:content-["}"] before:text-secondary after:text-secondary',
   "Não":
     'before:content-["{"] after:content-["}"] before:text-[#ffffff] after:text-[#ffffff]',
 };
-
 export default function ImageSection(
   props: SectionProps<ReturnType<typeof loader>>,
 ) {
@@ -165,7 +148,6 @@ export default function ImageSection(
     addKeysInWords,
     addBar,
   } = blockText;
-
   return (
     <div class="relative">
       {bgSpital && (
@@ -390,7 +372,6 @@ export default function ImageSection(
     </div>
   );
 }
-
 export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   return {
     ...props,

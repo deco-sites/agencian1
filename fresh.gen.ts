@@ -4,13 +4,16 @@
 
 import * as $_app from "./routes/_app.tsx";
 import * as $api_contactform from "./routes/api/contactform.tsx";
-import * as $api_newsletterform from "./routes/api/newsletterform.tsx";
 import * as $AddToCartButton_linx from "./islands/AddToCartButton/linx.tsx";
 import * as $AddToCartButton_nuvemshop from "./islands/AddToCartButton/nuvemshop.tsx";
 import * as $AddToCartButton_shopify from "./islands/AddToCartButton/shopify.tsx";
 import * as $AddToCartButton_vnda from "./islands/AddToCartButton/vnda.tsx";
 import * as $AddToCartButton_vtex from "./islands/AddToCartButton/vtex.tsx";
 import * as $AddToCartButton_wake from "./islands/AddToCartButton/wake.tsx";
+import * as $Blog_BlogNewsletter from "./islands/Blog/BlogNewsletter.tsx";
+import * as $Blog_BlogSearch from "./islands/Blog/BlogSearch.tsx";
+import * as $Blog_PostLoadMoreButton from "./islands/Blog/PostLoadMoreButton.tsx";
+import * as $Blog_PostShare from "./islands/Blog/PostShare.tsx";
 import * as $BlueBallAnimation from "./islands/BlueBallAnimation.tsx";
 import * as $ButtonTop from "./islands/ButtonTop.tsx";
 import * as $CasesComponent from "./islands/CasesComponent.tsx";
@@ -34,15 +37,15 @@ import * as $PopupLgpt from "./islands/PopupLgpt.tsx";
 import * as $ProductImageZoom from "./islands/ProductImageZoom.tsx";
 import * as $ShippingSimulation from "./islands/ShippingSimulation.tsx";
 import * as $SliderJS from "./islands/SliderJS.tsx";
+import * as $Toast from "./islands/Toast.tsx";
 import * as $WishlistButton_vtex from "./islands/WishlistButton/vtex.tsx";
 import * as $WishlistButton_wake from "./islands/WishlistButton/wake.tsx";
-import { type Manifest } from "$fresh/server.ts";
+import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
     "./routes/_app.tsx": $_app,
     "./routes/api/contactform.tsx": $api_contactform,
-    "./routes/api/newsletterform.tsx": $api_newsletterform,
   },
   islands: {
     "./islands/AddToCartButton/linx.tsx": $AddToCartButton_linx,
@@ -51,6 +54,10 @@ const manifest = {
     "./islands/AddToCartButton/vnda.tsx": $AddToCartButton_vnda,
     "./islands/AddToCartButton/vtex.tsx": $AddToCartButton_vtex,
     "./islands/AddToCartButton/wake.tsx": $AddToCartButton_wake,
+    "./islands/Blog/BlogNewsletter.tsx": $Blog_BlogNewsletter,
+    "./islands/Blog/BlogSearch.tsx": $Blog_BlogSearch,
+    "./islands/Blog/PostLoadMoreButton.tsx": $Blog_PostLoadMoreButton,
+    "./islands/Blog/PostShare.tsx": $Blog_PostShare,
     "./islands/BlueBallAnimation.tsx": $BlueBallAnimation,
     "./islands/ButtonTop.tsx": $ButtonTop,
     "./islands/CasesComponent.tsx": $CasesComponent,
@@ -74,6 +81,7 @@ const manifest = {
     "./islands/ProductImageZoom.tsx": $ProductImageZoom,
     "./islands/ShippingSimulation.tsx": $ShippingSimulation,
     "./islands/SliderJS.tsx": $SliderJS,
+    "./islands/Toast.tsx": $Toast,
     "./islands/WishlistButton/vtex.tsx": $WishlistButton_vtex,
     "./islands/WishlistButton/wake.tsx": $WishlistButton_wake,
   },

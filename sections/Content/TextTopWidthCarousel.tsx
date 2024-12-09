@@ -2,11 +2,10 @@ import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import { useId } from "$store/sdk/useId.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import { FnContext, SectionProps } from "deco/mod.ts";
 import Icon from "$store/components/ui/Icon.tsx";
 import { clx } from "$store/sdk/clx.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
-
+import { type FnContext, type SectionProps } from "@deco/deco";
 /** @titleBy name */
 interface InfoProps {
   /**@title Nome*/
@@ -22,7 +21,6 @@ interface InfoProps {
   /**@description (ex: https://agencian1.com.br/)*/
   href?: string;
 }
-
 interface ImageGeneric {
   /**@title Imagem */
   src?: ImageWidget;
@@ -31,28 +29,23 @@ interface ImageGeneric {
   /**@title Altura */
   height?: number;
 }
-
 /** @titleBy alt */
 export interface ImageCarousel {
   settingsInfo?: InfoProps;
-
   /**@description Estilo do button */
   buttonStyle?: "normal" | "ads";
-
   /** @title Imagem Desktop */
   desktop?: ImageGeneric;
   mobile?: ImageGeneric;
   /** @title Nome da imagem */
   alt?: string;
 }
-
 interface MobileMargin {
   /**@title Margem superior */
   top?: number;
   /**@title Margem inferior */
   bottom?: number;
 }
-
 export interface Props {
   /**@title Título  */
   /**@format rich-text  */
@@ -64,7 +57,6 @@ export interface Props {
   /**@title Texto  */
   /**@format rich-text  */
   text?: string;
-
   images?: ImageCarousel[];
   /** @title (Marque esta opção quando este banner for a maior imagem na tela para otimizações de imagem)  */
   preload?: boolean;
@@ -77,19 +69,18 @@ export interface Props {
   /** @title Mobile Margem */
   mobileMargin?: MobileMargin;
 }
-
 const variant = {
   normal:
     "border border-[#fff] hover:bg-[#ffffff] text-[#ffffff]   mobile:w-[55%] md:w-[43%]",
   ads:
     "bg-accent hover:bg-[#F8BC33] text-primary border-none lg:w-[60%] w-[70%]",
 };
-
-function ImageCarouselItem(
-  { image, lcp, id }: { image: ImageCarousel; lcp?: boolean; id: string },
-) {
+function ImageCarouselItem({ image, lcp, id }: {
+  image: ImageCarousel;
+  lcp?: boolean;
+  id: string;
+}) {
   const { alt, desktop, mobile, settingsInfo, buttonStyle } = image;
-
   return (
     <a
       href={buttonStyle !== "ads"
@@ -193,7 +184,6 @@ function ImageCarouselItem(
     </a>
   );
 }
-
 function Dots({ images }: Props) {
   return (
     <>
@@ -237,34 +227,24 @@ function Dots({ images }: Props) {
     </>
   );
 }
-
 function Buttons() {
   return (
     <>
       <div class="absolute w-full flex mobile:justify-center mobile:items-end justify-between h-full mobile:top-[68px] top-[0] items-center pb-[10px] md:-left-[10px]">
         <div class="flex items-center justify-start z-10 col-start-1 row-start-2 mobile:mr-[30px] -translate-x-[50px]">
           <Slider.PrevButton class="btn btn-circle bg-[#ffffff] w-[40px] !h-[40px]">
-            <Icon
-              size={18}
-              id="Banner-arrow-left"
-              strokeWidth={3}
-            />
+            <Icon size={18} id="Banner-arrow-left" strokeWidth={3} />
           </Slider.PrevButton>
         </div>
         <div class="flex items-center justify-end z-10 col-start-3 row-start-2 mobile:-ml-[70px] translate-x-[50px]">
           <Slider.NextButton class="btn btn-circle bg-[#ffffff] w-[40px] !h-[40px]">
-            <Icon
-              size={18}
-              id="Banner-arrow-right"
-              strokeWidth={3}
-            />
+            <Icon size={18} id="Banner-arrow-right" strokeWidth={3} />
           </Slider.NextButton>
         </div>
       </div>
     </>
   );
 }
-
 function TextTopWidthCarousel(props: SectionProps<ReturnType<typeof loader>>) {
   const id = useId();
   const {
@@ -277,7 +257,6 @@ function TextTopWidthCarousel(props: SectionProps<ReturnType<typeof loader>>) {
     addKeysInWords,
     mobileMargin,
   } = props;
-
   return (
     <>
       <div id={id} class="relative mobile:pb-[60px]">
@@ -358,12 +337,10 @@ function TextTopWidthCarousel(props: SectionProps<ReturnType<typeof loader>>) {
     </>
   );
 }
-
 export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   return {
     ...props,
     device: ctx.device,
   };
 };
-
 export default TextTopWidthCarousel;

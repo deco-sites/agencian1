@@ -1,0 +1,1 @@
+This is a deco.cx project that uses preact and tailwindcss. Use globalThis to access the window object.

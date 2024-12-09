@@ -1,9 +1,8 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import LinkTelephoneWithOptionArrow from "../../components/ui/LinkTelephoneWithOptionArrow.tsx";
-import { FnContext, SectionProps } from "deco/mod.ts";
 import { clx } from "$store/sdk/clx.ts";
-
+import { type FnContext, type SectionProps } from "@deco/deco";
 /** @title {{{alt}}}  */
 interface PropsImage {
   /** @title Insira a imagem */
@@ -26,7 +25,6 @@ interface PropsImage {
    */
   height: number;
 }
-
 interface PropsText {
   /**
    * @title Insira o subtítulo
@@ -43,7 +41,6 @@ interface PropsText {
    */
   paragraph?: string;
 }
-
 interface Props {
   /** @title Texto - config */
   settingsText?: PropsText;
@@ -53,23 +50,18 @@ interface Props {
   /** @description (limite de 5 imagens) */
   /** @maxItems 5 */
   allImage?: PropsImage[];
-
   /** @title Texto do botão/link  */
   textbutton?: string;
-
   /** @title WhatsApp */
   /** @description (ex: 99-99999-9999) */
   telephone?: string;
-
   /** @title Deseja botão com seta? */
   activeArrow?: boolean;
-
   /**
    * @title Tamanho do botão
    * @description (ex: 300)
    */
   width?: string;
-
   /** @title Deseja animação ? */
   animationAction?: boolean;
   /** @title Imagem de fundo */
@@ -90,7 +82,6 @@ interface Props {
   /** @title Ativar imagem de fundo? */
   backgroundImageActive?: boolean;
 }
-
 function TextWithImageAnimation(
   props: SectionProps<ReturnType<typeof loader>>,
 ) {
@@ -111,7 +102,6 @@ function TextWithImageAnimation(
     backgroundImageActive,
     device,
   } = props;
-
   return (
     <>
       <div class="relative z-0">
@@ -254,12 +244,10 @@ function TextWithImageAnimation(
     </>
   );
 }
-
 export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   return {
     ...props,
     device: ctx.device,
   };
 };
-
 export default TextWithImageAnimation;

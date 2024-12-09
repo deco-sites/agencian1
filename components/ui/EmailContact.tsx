@@ -1,49 +1,40 @@
-import { FnContext } from "deco/mod.ts";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-
+import { type FnContext } from "@deco/deco";
 export interface content {
   /** @format rich-text */
   title?: string;
-
   /** @format rich-text */
   email?: string;
   /** @format rich-text */
   description?: string;
 }
-
 export interface Props {
   content?: content;
-
   layout?: {
     /** @tilte Margin top */
     /** @description Espaçamento entre uma section e outro ex:10px*/
     marginTop?: string;
-
     /** @tilte Margin Bottom */
     /** @description spaçamento entre uma section  e outro ex:10px*/
     marginBottom?: string;
-
     /** @description espaçamento entre uma section e outra ex:10px*/
     marginTopMobile?: string;
-
     /** @description espaçamento entre uma section e outra ex:10px*/
     marginBottomMobile?: string;
-
     /** Icon Background */
     icon?: ImageWidget;
   };
 }
-
 const defaultContent = {
   title: "Envie seu portfólio + currículo atualizado para",
   email: "contato@agencian1.com.br",
   description:
     "Dê o próximo passo em sua jornada conosco! Aguardamos ansiosamente para conhecê-lo melhor 💖",
 };
-export default function EmailContact(
-  { layout, content, device }: Props & { device?: string },
-) {
+export default function EmailContact({ layout, content, device }: Props & {
+  device?: string;
+}) {
   const { title, email, description } = content || defaultContent;
   const { marginTop, marginBottom, marginBottomMobile, marginTopMobile, icon } =
     layout || {};
@@ -121,7 +112,6 @@ export default function EmailContact(
     </div>
   );
 }
-
 export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   return {
     ...props,

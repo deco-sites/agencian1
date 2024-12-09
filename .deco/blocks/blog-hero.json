@@ -1,0 +1,9 @@
+{
+  "__resolveType": "site/sections/Blog/Hero.tsx",
+  "title": "NOSSO BLOG",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing id elit lobortis nibh amet, bibendum nisi, adipiscing nunc.",
+  "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/d20355cc-02a6-4859-b876-bd964af6a26b/hero-image.webp",
+  "imageWidth": 500,
+  "imageHeight": 330,
+  "imageAlt": "Ilustração 3D de um laptop azul com barra de pesquisa, cursor e ícones digitais."
+}

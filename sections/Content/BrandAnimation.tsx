@@ -1,7 +1,6 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import { FnContext, SectionProps } from "deco/mod.ts";
-
+import { type FnContext, type SectionProps } from "@deco/deco";
 /** @title {{{alt}}}  */
 interface PropsImage {
   /** @title Insira a imagem */
@@ -21,7 +20,6 @@ interface PropsImage {
    */
   height?: number;
 }
-
 /** @title Marca */
 interface Props {
   /** @title Imagem  */
@@ -40,7 +38,6 @@ interface Props {
    */
   columnGap?: string;
 }
-
 function BrandAnimation(props: SectionProps<ReturnType<typeof loader>>) {
   const { allImage, animationAction, backgroundColor, columnGap, device } =
     props;
@@ -53,7 +50,6 @@ function BrandAnimation(props: SectionProps<ReturnType<typeof loader>>) {
     arryTest.reduce((acc, curr) => acc && curr && (acc + curr));
   const sumWidthTotal = sumAllWidthImage && sumColumn &&
     sumAllWidthImage + sumColumn + (50 * 12);
-
   return (
     <>
       <div class="n1-brand-animation mobile:h-[250px] h-[300px] 2xl:h-[340px] overflow-x-hidden relative">
@@ -85,8 +81,9 @@ function BrandAnimation(props: SectionProps<ReturnType<typeof loader>>) {
               >
                 {allImage &&
                   allImage.map(({ alt, image, width, height, href }) => {
-                    if (!image) return null;
-
+                    if (!image) {
+                      return null;
+                    }
                     return (
                       <>
                         {image && (
@@ -117,12 +114,10 @@ function BrandAnimation(props: SectionProps<ReturnType<typeof loader>>) {
     </>
   );
 }
-
 export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   return {
     ...props,
     device: ctx.device,
   };
 };
-
 export default BrandAnimation;

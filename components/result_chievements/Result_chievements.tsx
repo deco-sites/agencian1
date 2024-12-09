@@ -1,20 +1,16 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-
-import type { FnContext } from "deco/types.ts";
-
+import { type FnContext } from "@deco/deco";
 export interface TagsIcons {
   /**@title Tags Desktop*/
   IconsDesktop: ImageWidget;
   widthDesktop?: number;
   heightDesktop?: number;
-
   /**@title Tags Mobile*/
   IconsMobile: ImageWidget;
   widthMobile?: number;
   heightMobile?: number;
 }
-
 export interface Card {
   /**@title Icon Seal Check */
   Iconcheck: ImageWidget;
@@ -22,32 +18,24 @@ export interface Card {
   /** @format rich-text */
   description: string;
 }
-
 export interface Props {
   /** @title Título */
   /** @format rich-text */
   title?: string;
-
   tags?: TagsIcons[];
   cards?: Card[];
-
   /** @tilte Margin top */
   /** @description Espaçamento entre uma section e outra ex:10px*/
   marginTop?: string;
-
   /** @tilte Margin Bottom*/
   /** @description spaçamento entre uma section e outra ex:10px*/
   marginBottom?: string;
 }
-
-export default function Result_achievements({
-  title,
-  tags,
-  cards,
-  device,
-  marginTop,
-  marginBottom,
-}: Props & { device: string }) {
+export default function Result_achievements(
+  { title, tags, cards, device, marginTop, marginBottom }: Props & {
+    device: string;
+  },
+) {
   return (
     <div
       class={`w-full max-w-[1200px] m-auto px-5 lg:py-0 `}
@@ -120,12 +108,7 @@ export default function Result_achievements({
     </div>
   );
 }
-
-export const loader = (
-  props: Props,
-  _req: Request,
-  ctx: FnContext,
-) => {
+export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   const device = ctx.device;
   return {
     ...props,

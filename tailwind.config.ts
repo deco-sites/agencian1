@@ -3,22 +3,34 @@ import daisyui from "daisyui";
 export default {
   plugins: [daisyui],
   daisyui: { themes: [], logs: false },
-  content: ["./**/*.tsx"],
+  content: ["./**/**/*.{tsx}"],
   theme: {
     container: {
       center: true,
     },
     colors: {
+      "white": "#FFFFFF",
       "base-150": "#F3F4F7",
       "base-400": "#9B9B9B",
+      "gray-58": "#585858",
+      "accent-hover": "#F8BC33",
+      // Brand Colors
+      "primary": "#0C1F59",
+      "secondary": "#3CCBDA",
+      "tertiary": "#F6AB00",
+      // Status Colors
+      "info": "#3C71C0",
+      "success": "#307B40",
+      "warning": "#E5B330",
+      "error": "#D8442C",
     },
     fontFamily: {
       "montserrat": "Montserrat",
       "noto-sans": "Noto Sans",
-      "archimoto-thin": ["ArchimotoN1-Thin", "Montserrat"],
-      "archimoto-regular": ["ArchimotoN1-Regular", "Montserrat"],
-      "archimoto-medium": ["ArchimotoV01-Medium", "Montserrat"],
-      "archimoto-black": ["ArchimotoN1-Black", "Montserrat"],
+      "archimoto-thin": ["ArchimotoN1-Thin", "sans-serif"],
+      "archimoto-regular": ["ArchimotoN1-Regular", "sans-serif"],
+      "archimoto-medium": ["ArchimotoV01-Medium", "sans-serif"],
+      "archimoto-black": ["ArchimotoN1-Black", "sans-serif"],
     },
     fontSize: {
       12: ["12px", "22.4px"],
@@ -74,4 +86,11 @@ export default {
       },
     },
   },
+  safelist: [
+    "line-clamp-1",
+    "line-clamp-2",
+    "line-clamp-3",
+    "mobile:text-[20px]",
+    "text-[32px]",
+  ],
 };

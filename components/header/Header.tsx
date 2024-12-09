@@ -6,59 +6,41 @@ import Alert from "./Alert.tsx";
 import Navbar from "./Navbar.tsx";
 import { headerHeight } from "./constants.ts";
 import LinkTelephoneWithOptionArrow from "../ui/LinkTelephoneWithOptionArrow.tsx";
-import { FnContext, SectionProps } from "deco/mod.ts";
 import { getCookies, setCookie } from "std/http/mod.ts";
 import apiIp from "$store/sdk/useFetchIp.ts";
+import { type FnContext, type SectionProps } from "@deco/deco";
 
-export interface Logo {
-  src: ImageWidget;
-  alt: string;
-  width?: number;
-  height?: number;
-}
-export interface LogoMobile {
-  src: ImageWidget;
-  alt: string;
-  width?: number;
-  height?: number;
-}
 export interface Buttons {
   hideSearchButton?: boolean;
   hideAccountButton?: boolean;
   hideWishlistButton?: boolean;
   hideCartButton?: boolean;
 }
-
 /**@titleBy nameBlock */
 export interface PropsChildren extends SiteNavigationElement {
   /**@title Nome do Bloco */
   nameBlock?: string;
-  /** 
+  /**
    * @title Título Submenu
    * @format rich-text
-   * */
+   */
   titleSubMenu?: string;
-
-  /** 
-   * @title Descrição Submenu 
+  /**
+   * @title Descrição Submenu
    * @format rich-text
-   * */
+   */
   descriptionSubMenu?: string;
-
   /** @title Texto para do botão */
   /** @description (ex: conheça mais dos nossos serviços ) */
   btnTextMenu?: string;
-
   /** @title Link do botão */
   /** @description (ex: https://agencian1.com.br/ ) */
   btnUrlMenu?: string;
-
   /** @title Ativar título descrição? */
   activePropsText?: boolean;
   /** @title Ativar texto do botão?? */
   activePropsButton?: boolean;
 }
-
 interface ImageGeneric {
   /**@title Imagem */
   src?: ImageWidget;
@@ -67,12 +49,11 @@ interface ImageGeneric {
   /**@title Altura */
   height?: number;
 }
-
-export interface Props { 
+export interface Props {
   /**
- * @title Desativar o Header? 
- * */
-  disabledHeader?: boolean;   
+   * @title Desativar o Header?
+   */
+  disabledHeader?: boolean;
   alerts?: string[];
   /**
    * @title Itens de navegação
@@ -80,10 +61,8 @@ export interface Props {
    * @maxItems 6
    */
   navItems?: PropsChildren[] | null;
-
   /**@title Logo do menu mobile */
   drawer?: ImageGeneric;
-
   /**
    * @title Logo
    * @description (Desktop)
@@ -98,35 +77,28 @@ export interface Props {
   alt?: string;
   /**@title Posição do logo */
   logoPosition?: "left" | "center";
-
   /** @title WhatsApp */
   /** @description (ex: 99-99999-9999) */
   whatsapp?: string;
-
   /** @title Texto do botão (texto) */
   /** @description (ex: conheça nosso site ) */
   btnTextMenu?: string;
-
   buttons?: Buttons;
+  selectedLanguage?: string;
 }
-
 function Header(props: SectionProps<ReturnType<typeof loader>>) {
   const {
     disabledHeader = false,
     alerts,
     navItems,
-    desktop,
-    mobile,
-    drawer,
     logoPosition = "center",
     whatsapp,
     btnTextMenu,
     buttons,
     selectedLanguage,
-  } = props;
+  } = props as Props;
   const platform = usePlatform();
   const items = navItems ?? [];
-
   return (
     <>
       {!disabledHeader && (
@@ -134,7 +106,6 @@ function Header(props: SectionProps<ReturnType<typeof loader>>) {
           <Drawers
             menu={{ items, whatsapp }}
             platform={platform}
-            drawer={drawer}
             selectedLanguage={selectedLanguage}
           >
             <div
@@ -142,13 +113,11 @@ function Header(props: SectionProps<ReturnType<typeof loader>>) {
               style={{ height: headerHeight }}
             >
               <div
-                class={"grid grid-cols-2-auto md:n1-container md:px-[120px] items-center portatil:max-w-[90%] portatil:px-0"}
+                class={"grid grid-cols-2-auto md:n1-container md:px-[120px] items-center portatil:px-2 portatil:justify-center"}
               >
                 {alerts && alerts.length > 0 && <Alert alerts={alerts} />}
                 <Navbar
                   items={items}
-                  desktop={desktop}
-                  mobile={mobile}
                   logoPosition={logoPosition}
                   buttons={buttons}
                   btnTextMenu={btnTextMenu}
@@ -171,16 +140,14 @@ function Header(props: SectionProps<ReturnType<typeof loader>>) {
     </>
   );
 }
-
 export const loader = (props: Props, req: Request, ctx: FnContext) => {
   const cookies = getCookies(req.headers);
   const selectedLanguage = cookies["N1_SelectedLanguage"] || "pt-br";
-
   const userIp = apiIp;
   let countryCode;
-
-  if (!userIp?.countryCode) return countryCode = "pt-br";
-
+  if (!userIp?.countryCode) {
+    return countryCode = "pt-br";
+  }
   switch (userIp?.countryCode) {
     case "BR":
       countryCode = "pt-br";
@@ -272,11 +239,9 @@ export const loader = (props: Props, req: Request, ctx: FnContext) => {
     case "VE":
       countryCode = "es-es";
       break; // Venezuela
-
     default:
       countryCode = "en-en";
   }
-
   if (!cookies["N1_SelectedLanguage"]) {
     setCookie(ctx.response.headers, {
       name: "N1_SelectedLanguage",
@@ -284,11 +249,9 @@ export const loader = (props: Props, req: Request, ctx: FnContext) => {
       path: "/",
     });
   }
-
   return {
     ...props,
     selectedLanguage,
   };
 };
-
 export default Header;

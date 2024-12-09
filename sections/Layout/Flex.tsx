@@ -1,8 +1,7 @@
 import { clx } from "$store/sdk/clx.ts";
-import type { Section } from "deco/blocks/section.ts";
 import type { ComponentChildren } from "preact";
 import { flex } from "../../constants.tsx";
-
+import { type Section } from "@deco/deco/blocks";
 /**
  * @title Flex
  */
@@ -40,7 +39,6 @@ export interface Props {
     desktop?: "Wrap" | "Nowrap" | "Wrap-reverse";
   };
 }
-
 function SectionComponent(
   { gap, direction, align, justify, wrap, children, sectionChildrens }: Props,
 ) {
@@ -72,5 +70,4 @@ function SectionComponent(
     </div>
   );
 }
-
 export default SectionComponent;

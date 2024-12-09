@@ -1,7 +1,6 @@
 import { grid, VNode } from "../../constants.tsx";
 import { clx } from "../../sdk/clx.ts";
-import { Section } from "deco/blocks/section.ts";
-
+import { type Section } from "@deco/deco/blocks";
 export interface GridMobile {
   /** @default Col */
   flow?: "Row" | "Col";
@@ -24,7 +23,6 @@ export interface GridMobile {
   /** @default Center */
   placeItems?: "Center" | "Start" | "End" | "Baseline" | "Stretch";
 }
-
 export interface GridDesktop {
   /** @default Row */
   flow?: "Row" | "Col";
@@ -47,7 +45,6 @@ export interface GridDesktop {
   /** @default Center */
   placeItems?: "Center" | "Start" | "End" | "Baseline" | "Stretch";
 }
-
 /**
  * @title Grid
  */
@@ -60,7 +57,6 @@ export interface Props {
   mobile?: GridMobile;
   desktop?: GridDesktop;
 }
-
 function Grid({ mobile, desktop, sectionChildrens, children }: Props) {
   return (
     <div
@@ -86,5 +82,4 @@ function Grid({ mobile, desktop, sectionChildrens, children }: Props) {
     </div>
   );
 }
-
 export default Grid;

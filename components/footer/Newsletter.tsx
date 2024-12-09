@@ -104,7 +104,7 @@ function Newsletter(
           if (!response.ok) return;
         } catch (err) {
           loadingElement?.classList.add("hidden");
-          console.log("error: ", err.message);
+          console.log("error: ", (err as Error).message);
         } finally {
           if (inputElement instanceof HTMLInputElement) inputElement.value = "";
           target?.classList.add("hidden");
@@ -166,8 +166,8 @@ function Newsletter(
               name="email"
               type="email"
               class={clx(
-                `md:w-full n1-input--error bg-[#ffffff] flex-auto md:flex-none input input-bordered 
-                 bg-white text-base-content font-noto-sans rounded-[90px] text-14 n1-text-base-400`,
+                "md:w-full n1-input--error flex-auto md:flex-none input input-bordered",
+                "bg-white text-base-content font-noto-sans rounded-[90px] text-14 n1-text-base-400",
               )}
               placeholder={content?.form?.placeholder || "Digite seu email"}
             />
@@ -177,8 +177,8 @@ function Newsletter(
             <button
               type="submit"
               class={clx(
-                `btn disabled:loading w-[144px] md:w-[123px] border-0 bg-accent n1-btn-header-item--rounded  mobile:py-[14px]
-                text-16 font-archimoto-medium pt-[3px] uppercase hover:bg-[#F8BC33] duration-300 text-primary`,
+                "btn disabled:loading w-[144px] md:w-[123px] border-0 bg-accent n1-btn-header-item--rounded  mobile:py-[14px]",
+                "text-16 font-archimoto-medium pt-[3px] uppercase hover:bg-[#F8BC33] duration-300 text-primary",
               )}
             >
               {content?.form?.buttonText || "Inscrever"}

@@ -5,6 +5,7 @@
 @layer base {
   body {
     background-color: #0B1227;
+    overflow-x: hidden;
   }
 
   /* Allow changing font family via CMS */
@@ -530,7 +531,7 @@
     display: block;
     transform: rotate(-45deg);
     position: absolute;
-    top: 5px;
+    top: 4px;
     right: -20px;
     border-radius: 2px;
   }
@@ -553,22 +554,6 @@
       cursor: none;
       transition: all .175s linear;
     }
-  }
-
-  .n1-footer__bg-social:before {
-    content: "";
-    border-radius: 50px;
-    padding: 2px;
-    background: linear-gradient(45deg, #FFFFFF, #3CCBDA);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    width: 50px;
-    height: 50px;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
   }
 
   .n1-footer__overlay--bottom-left {
@@ -1389,5 +1374,19 @@
 
   to {
     --dot-progress: 100%
+  }
+}
+
+@layer utilities {
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
   }
 }

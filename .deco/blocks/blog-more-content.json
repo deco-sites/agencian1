@@ -1,0 +1,32 @@
+{
+  "__resolveType": "site/sections/Blog/MoreContentBlog.tsx",
+  "title": "Mais lidas do blog",
+  "layout": {
+    "button": {
+      "text": "Saiba mais"
+    }
+  },
+  "posts": [
+    {
+      "authors": [
+        {
+          "name": "Agencian1",
+          "email": "Agencian1@n1"
+        }
+      ],
+      "categories": [
+        {
+          "name": "BlackFriday",
+          "slug": "blackfriday"
+        }
+      ],
+      "extraProps": [],
+      "title": "IA no e-commerce: Como grandes empresas utilizam a Inteligência Artificial",
+      "excerpt": "Lorem ipsum",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/1ebc57f0-6544-42e0-88ac-c3b0e2fc51ed/image-(17).png",
+      "slug": "ia",
+      "date": "2024-12-02",
+      "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing id elit lobortis nibh amet, bibendum nisi, adipiscing nunc</p>"
+    }
+  ]
+}

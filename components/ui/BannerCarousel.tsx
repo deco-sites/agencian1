@@ -9,8 +9,7 @@ import SliderJS from "$store/islands/SliderJS.tsx";
 import { useId } from "$store/sdk/useId.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
-import { FnContext, SectionProps } from "deco/mod.ts";
-
+import { type FnContext, type SectionProps } from "@deco/deco";
 /**
  * @titleBy title
  */
@@ -25,7 +24,6 @@ interface ActionProps {
   /** @title Texto do botão */
   label?: string;
 }
-
 /**
  * @titleBy alt
  */
@@ -40,7 +38,6 @@ export interface Banner {
   addBarSlide?: boolean;
   addKeysInWordsSlide?: boolean;
 }
-
 export interface Props {
   images?: Banner[];
   /**
@@ -63,7 +60,6 @@ export interface Props {
    */
   interval?: number;
 }
-
 const DEFAULT_PROPS = {
   images: [
     {
@@ -108,17 +104,12 @@ const DEFAULT_PROPS = {
   ],
   preload: true,
 };
-
-function BannerItem(
-  { image, lcp, id }: { image: Banner; lcp?: boolean; id: string },
-) {
-  const {
-    alt,
-    mobile,
-    desktop,
-    action,
-  } = image;
-
+function BannerItem({ image, lcp, id }: {
+  image: Banner;
+  lcp?: boolean;
+  id: string;
+}) {
+  const { alt, mobile, desktop, action } = image;
   return (
     <a
       id={id}
@@ -168,7 +159,6 @@ function BannerItem(
     </a>
   );
 }
-
 function Dots({ images, interval = 0 }: Props) {
   return (
     <>
@@ -200,36 +190,25 @@ function Dots({ images, interval = 0 }: Props) {
     </>
   );
 }
-
 function Buttons() {
   return (
     <>
       <div class="flex items-center justify-end z-10 col-start-1 row-start-2">
         <Slider.PrevButton class="btn btn-circle bg-[#ffffff] w-[40px] !h-[40px]">
-          <Icon
-            size={18}
-            id="Banner-arrow-left"
-            strokeWidth={3}
-          />
+          <Icon size={18} id="Banner-arrow-left" strokeWidth={3} />
         </Slider.PrevButton>
       </div>
       <div class="flex items-center justify-start z-10 col-start-3 row-start-2">
         <Slider.NextButton class="btn btn-circle bg-[#ffffff] w-[40px] !h-[40px]">
-          <Icon
-            size={18}
-            id="Banner-arrow-right"
-            strokeWidth={3}
-          />
+          <Icon size={18} id="Banner-arrow-right" strokeWidth={3} />
         </Slider.NextButton>
       </div>
     </>
   );
 }
-
 function BannerCarousel(props: SectionProps<ReturnType<typeof loader>>) {
   const id = useId();
   const { images, preload, interval } = { ...DEFAULT_PROPS, ...props };
-
   return (
     <div
       id={id}
@@ -266,12 +245,10 @@ function BannerCarousel(props: SectionProps<ReturnType<typeof loader>>) {
     </div>
   );
 }
-
 export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   return {
     ...props,
     device: ctx.device,
   };
 };
-
 export default BannerCarousel;

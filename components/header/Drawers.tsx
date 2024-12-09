@@ -6,9 +6,8 @@ import { useUI } from "$store/sdk/useUI.ts";
 import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import type { ComponentChildren } from "preact";
 import { lazy, Suspense } from "preact/compat";
-import { LogoMobile } from "$store/components/header/Header.tsx";
-import { Picture, Source } from "apps/website/components/Picture.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
+import Logo from "site/components/header/Logo.tsx";
 
 const Menu = lazy(() => import("$store/components/header/Menu.tsx"));
 
@@ -21,7 +20,6 @@ interface ImageGeneric {
   height?: number;
 }
 export interface Props {
-  logoMobile?: LogoMobile;
   menu: MenuProps;
   /**
    * @ignore_gen true
@@ -29,10 +27,6 @@ export interface Props {
   children?: ComponentChildren;
   platform: ReturnType<typeof usePlatform>;
   selectedLanguage?: string;
-  /**@title Logo do menu mobile */
-  drawer?: ImageGeneric;
-  /**@title Nome da imagem */
-  alt?: string;
 }
 
 interface PropsAside {
@@ -47,7 +41,7 @@ interface PropsAside {
 }
 
 const Aside = (
-  { title, onClose, children, drawer, alt }: PropsAside,
+  { title, onClose, children }: PropsAside,
 ) => {
   const titleScape = title ? "is-" + title?.toLocaleLowerCase() : "";
 
@@ -55,41 +49,14 @@ const Aside = (
     return (
       <div class="bg-[#ffffff] grid grid-rows-[auto_1fr] h-full divide-y w-[85%] px-[20px] pt-[20px] pb-[40px]">
         <div class={`flex justify-between items-center ${titleScape}`}>
-          {drawer?.src && drawer?.src && (
-            <a class="n1-header-mobile__logo" href="/">
-              <Picture>
-                {drawer?.src && drawer?.width && drawer?.height && (
-                  <Source
-                    media="(max-width: 767px)"
-                    src={drawer.src}
-                    width={drawer.width}
-                    height={drawer.height}
-                  />
-                )}
-                {drawer?.src && drawer?.width && drawer?.height &&
-                  (
-                    <Source
-                      media="(min-width: 768px)"
-                      src={drawer.src}
-                      width={drawer.width}
-                      height={drawer.height}
-                    />
-                  )}
-
-                <img
-                  src={drawer.src}
-                  loading={"lazy"}
-                  width={drawer.width}
-                  height={drawer.height}
-                  alt={alt}
-                />
-              </Picture>
-            </a>
-          )}
+          <a href="/">
+            <Logo class="w-auto h-[44px]" variant="dark" />
+          </a>
           {onClose && (
             <Button
               onClick={onClose}
               class="btn btn-ghost absolute right-[-50px] top-[10px] p-0"
+              aria-label="Fechar"
             >
               <Icon id="CloseMenuMobile" size={38} strokeWidth={2} />
             </Button>
@@ -116,7 +83,11 @@ const Aside = (
             </h1>
           )}
           {onClose && (
-            <Button class="btn btn-ghost" onClick={onClose}>
+            <Button
+              class="btn btn-ghost"
+              onClick={onClose}
+              ariaLabel="Fechar"
+            >
               <Icon id="XMark" size={24} strokeWidth={2} />
             </Button>
           )}
@@ -135,7 +106,7 @@ const Aside = (
   }
 };
 
-function Drawers({ menu, children, drawer, selectedLanguage }: Props) {
+function Drawers({ menu, children, selectedLanguage }: Props) {
   const { displayMenu, displaySearchDrawer } = useUI();
 
   return (
@@ -153,7 +124,6 @@ function Drawers({ menu, children, drawer, selectedLanguage }: Props) {
               displaySearchDrawer.value = false;
             }}
             title={displayMenu.value ? "Menu" : ""}
-            drawer={drawer}
           >
             {displayMenu.value && (
               <Menu {...menu} selectedLanguage={selectedLanguage} />

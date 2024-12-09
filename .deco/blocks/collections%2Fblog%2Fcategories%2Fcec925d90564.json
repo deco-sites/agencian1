@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/categories/cec925d90564",
+  "__resolveType": "blog/loaders/Category.ts",
+  "category": {
+    "name": "Otimização de Lojas Virtuais",
+    "slug": "otimizacao-de-lojas-virtuais"
+  }
+}

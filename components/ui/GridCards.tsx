@@ -1,10 +1,8 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import { clx } from "site/sdk/clx.ts";
-import { FnContext } from "deco/mod.ts";
-
+import { type FnContext } from "@deco/deco";
 /** @title {{{title}}} */
-
 export interface Card {
   /**@title Icon  */
   Icon: ImageWidget;
@@ -15,7 +13,6 @@ export interface Card {
   /** @format rich-text */
   description?: string;
 }
-
 export interface Props {
   /** @tilte Title */
   /** @format rich-text */
@@ -24,26 +21,20 @@ export interface Props {
   addBar?: boolean;
   /** @title adicionar chaves "{}" antes e depois da frase? */
   addKeysInWords?: boolean;
-
   cards?: Card[];
-
   layout?: {
     /** @tilte Margin top */
     /** @description Espaçamento entre uma section e outro ex:10px*/
     marginTop?: string;
-
     /** @tilte Margin Bottom */
     /** @description spaçamento entre uma section  e outro ex:10px*/
     marginBottom?: string;
-
     /** @description espaçamento entre uma section e outra ex:10px*/
     marginTopMobile?: string;
-
     /** @description espaçamento entre uma section e outra ex:10px*/
     marginBottomMobile?: string;
   };
 }
-
 export default function GridCards(
   { title, cards, layout, addBar, addKeysInWords, device }: Props & {
     device?: string;
@@ -52,7 +43,6 @@ export default function GridCards(
   const { marginTop, marginBottom, marginBottomMobile, marginTopMobile } =
     layout || {};
   const isDesktop = device === "desktop";
-
   return (
     <div
       class={`w-full max-w-[1200px] m-auto px-5 lg:py-0 flex flex-col gap-8 lg:gap-10 `}
@@ -119,7 +109,6 @@ export default function GridCards(
     </div>
   );
 }
-
 export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   return {
     ...props,

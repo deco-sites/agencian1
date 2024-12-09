@@ -1,7 +1,6 @@
-import { FnContext, SectionProps } from "deco/mod.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
-
+import { type FnContext, type SectionProps } from "@deco/deco";
 /**@titleBy alt */
 interface ImageGeneric {
   /**@title Imagem */
@@ -11,7 +10,6 @@ interface ImageGeneric {
   /**@title Altura da Imagem */
   height?: number;
 }
-
 interface ImageDevice {
   /**@title Nome da Imagem */
   alt?: string;
@@ -20,7 +18,6 @@ interface ImageDevice {
   /**@title Imagem Mobile */
   mobile?: ImageGeneric;
 }
-
 interface Props {
   /**@title Icon */
   /** @maxItems 1 */
@@ -35,29 +32,23 @@ interface Props {
   backgroundImage?: ImageGeneric;
   /**@title Ativar imagem de fundo? */
   activeBackground?: boolean;
-
   button?: {
     textButton: string;
     link: string;
   };
-
   layout?: {
     /** @tilte Margin top */
     /** @description Espaçamento entre uma section e outra ex:10px*/
     marginTop?: string;
-
     /** @tilte Margin Bottom*/
     /** @description espaçamento entre uma section e outra ex:10px*/
     marginBottom?: string;
-
     /** @description espaçamento entre uma section e outra ex:10px*/
     marginTopMobile?: string;
-
     /** @description espaçamento entre uma section e outra ex:10px*/
     marginBottomMobile?: string;
   };
 }
-
 function IconTitleAndTex(props: SectionProps<ReturnType<typeof loader>>) {
   const {
     icon,
@@ -72,12 +63,9 @@ function IconTitleAndTex(props: SectionProps<ReturnType<typeof loader>>) {
   const validBackground = device == "desktop" && activeBackground &&
     backgroundImage && backgroundImage?.src && backgroundImage?.width &&
     backgroundImage?.height;
-
   const isDesktop = device === "desktop";
-
   const { marginBottom, marginTop, marginBottomMobile, marginTopMobile } =
     layout ?? {};
-
   return (
     <>
       <div
@@ -176,12 +164,10 @@ function IconTitleAndTex(props: SectionProps<ReturnType<typeof loader>>) {
     </>
   );
 }
-
 export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   return {
     ...props,
     device: ctx.device,
   };
 };
-
 export default IconTitleAndTex;

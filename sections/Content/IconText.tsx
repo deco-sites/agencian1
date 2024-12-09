@@ -20,9 +20,9 @@ interface Image {
 
 interface Icon {
   /**
-   * @title Subtítulo 
+   * @title Subtítulo
    * @format rich-text
-   * */
+   */
   subtitle?: string;
   /** @title adicionar barra "/" antes da frase? */
   addBar?: boolean;

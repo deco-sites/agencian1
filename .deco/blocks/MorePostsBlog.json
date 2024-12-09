@@ -1,0 +1,54 @@
+{
+  "__resolveType": "site/sections/Content/Blog/MoreContentBlog.tsx",
+  "title": "Mais lidas do Blog",
+  "layout": {
+    "button": {
+      "text": " saiba mais",
+      "link": "/"
+    }
+  },
+  "posts": [
+    {
+      "authors": [
+        {
+          "name": "Agencian1",
+          "email": "Agencian1@n1"
+        }
+      ],
+      "categories": [
+        {
+          "name": "BlackFriday",
+          "slug": "blackfriday"
+        }
+      ],
+      "title": "IA no e-commerce: Como grandes empresas utilizam a inteligência artificial para potencializar suas vendas on-line",
+      "excerpt": "ddaa",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/1ebc57f0-6544-42e0-88ac-c3b0e2fc51ed/image-(17).png",
+      "content": "<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing id elit lobortis nibh amet, bibendum nisi, adipiscing nunc</span></p>",
+      "slug": "vvvvvvavfr",
+      "date": "2024-11-18",
+      "extraProps": []
+    },
+    {
+      "authors": [
+        {
+          "name": "Agencian1",
+          "email": "Agencian1@n1"
+        }
+      ],
+      "categories": [
+        {
+          "name": "BlackFriday",
+          "slug": "blackfriday"
+        }
+      ],
+      "title": "IA no e-commerce: Como grandes empresas utilizam a inteligência artificial para potencializar suas vendas on-line",
+      "excerpt": "ddaa",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/agencian1/1ebc57f0-6544-42e0-88ac-c3b0e2fc51ed/image-(17).png",
+      "content": "<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing id elit lobortis nibh amet, bibendum nisi, adipiscing nunc</span></p>",
+      "slug": "vvvvvvavfr",
+      "date": "2024-11-18",
+      "extraProps": []
+    }
+  ]
+}

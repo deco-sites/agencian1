@@ -1,9 +1,8 @@
 import { Picture, Source } from "apps/website/components/Picture.tsx";
-import { FnContext, SectionProps } from "deco/mod.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import LinkTelephoneWithOptionArrow from "$store/components/ui/LinkTelephoneWithOptionArrow.tsx";
 import { clx } from "$store/sdk/clx.ts";
-
+import { type FnContext, type SectionProps } from "@deco/deco";
 interface ImageGeneric {
   /**@title Imagem */
   src?: ImageWidget;
@@ -12,14 +11,12 @@ interface ImageGeneric {
   /**@title Altura */
   height?: number;
 }
-
 interface DeviceImage {
   /**@title Desktop */
   desktop?: ImageGeneric;
   /**@title Mobile */
   mobile?: ImageGeneric;
 }
-
 interface TextGeneric {
   /**
    * @title Título
@@ -38,7 +35,6 @@ interface TextGeneric {
    */
   description?: string;
 }
-
 /**@titleBy alt */
 interface Props {
   /**@title Textos */
@@ -54,10 +50,8 @@ interface Props {
   /**@title Imagem de fundo */
   bgImage?: DeviceImage;
 }
-
 function ConclusionArea(props: SectionProps<ReturnType<typeof loader>>) {
   const { text, whatsapp, btnText, responsive, alt, bgImage, device } = props;
-
   return (
     <>
       <div
@@ -196,12 +190,10 @@ function ConclusionArea(props: SectionProps<ReturnType<typeof loader>>) {
     </>
   );
 }
-
 export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   return {
     ...props,
     device: ctx.device,
   };
 };
-
 export default ConclusionArea;

@@ -1,0 +1,123 @@
+{
+  "name": "Blog Post",
+  "path": "/blog/:slug",
+  "sections": {
+    "variants": [
+      {
+        "rule": {
+          "name": "N1_SelectedLanguage",
+          "value": "es-es",
+          "__resolveType": "website/matchers/cookie.ts"
+        },
+        "value": [
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-espanhol"
+          },
+          {
+            "__resolveType": "Footer-Spanish"
+          }
+        ]
+      },
+      {
+        "rule": {
+          "name": "N1_SelectedLanguage",
+          "value": "en-en",
+          "__resolveType": "website/matchers/cookie.ts"
+        },
+        "value": [
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "Header-english"
+          },
+          {
+            "__resolveType": "footer-English"
+          }
+        ]
+      },
+      {
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
+        "value": [
+          {
+            "__resolveType": "Theme"
+          },
+          {
+            "__resolveType": "header-principal"
+          },
+          {
+            "__resolveType": "blog-hero"
+          },
+          {
+            "__resolveType": "blog-breadcrumb"
+          },
+          {
+            "__resolveType": "site/sections/Blog/BlogPostDetail.tsx",
+            "post": {},
+            "sidebar": [
+              {
+                "__resolveType": "blog-sidebar"
+              }
+            ],
+            "socialMedia": [
+              {
+                "name": "Facebook"
+              },
+              {
+                "name": "X"
+              },
+              {
+                "name": "Instagram"
+              },
+              {
+                "name": "LinkedIn"
+              },
+              {
+                "name": "WhatsApp"
+              }
+            ],
+            "mostReadPostsTitle": "Mais lidas do blog",
+            "tagsTitle": "Nuvem com tags"
+          },
+          {
+            "__resolveType": "footer-principal"
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Content/ButtonTop.tsx"
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "website/sections/Seo/SeoV2.tsx"
+            }
+          }
+        ]
+      }
+    ],
+    "__resolveType": "website/flags/multivariate.ts"
+  },
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "canonical": "https://www.n1.ag/blog",
+    "type": "article",
+    "title": "N1.AG | Blog: Insights e Soluções para E-commerce",
+    "description": "Agência N1 agora é N1.AG! Somos Agência VTEX, Agência Deco.cx, Partner oficialmente reconhecida e especializada nessas plataformas de e-commerce.",
+    "jsonLD": {
+      "@type": "BlogPostPage",
+      "post": {
+        "authors": [],
+        "categories": [],
+        "extraProps": []
+      }
+    }
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
